@@ -1,12 +1,12 @@
 FROM openjdk:11
 
-LABEL Nima Karimipour <karimipour.nima@gmail.com>
+LABEL maintainer="Nima Karimipour <karimipour.nima@gmail.com>"
 
 # Install basic software support
 RUN apt-get update && \
     apt-get install --yes software-properties-common
 
-ENV JAVA_HOME /usr/local/openjdk-11
+ENV JAVA_HOME=/usr/local/openjdk-11
 RUN export JAVA_HOME
 
 # Install required softwares (curl & zip & wget)
@@ -34,8 +34,8 @@ RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
   && rm -f /tmp/apache-maven.tar.gz \
   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
 
-ENV MAVEN_HOME /usr/share/maven
-ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
+ENV MAVEN_HOME=/usr/share/maven
+ENV MAVEN_CONFIG="$USER_HOME_DIR/.m2"
 
 # update
 RUN apt-get update -y
@@ -49,7 +49,7 @@ RUN apt-get install -y git
 
 #Install Android SDK
 ARG ANDROID_SDK_VERSION=6858069
-ENV ANDROID_SDK_ROOT /opt/android-sdk
+ENV ANDROID_SDK_ROOT=/opt/android-sdk
 RUN mkdir -p ${ANDROID_SDK_ROOT}/cmdline-tools && \
     wget -q https://dl.google.com/android/repository/commandlinetools-linux-${ANDROID_SDK_VERSION}_latest.zip && \
     unzip *tools*linux*.zip -d ${ANDROID_SDK_ROOT}/cmdline-tools && \
@@ -57,10 +57,10 @@ RUN mkdir -p ${ANDROID_SDK_ROOT}/cmdline-tools && \
     rm *tools*linux*.zip
 
 # set the environment variables
-ENV PATH ${PATH}:${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin:${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin:${ANDROID_SDK_ROOT}/platform-tools:${ANDROID_SDK_ROOT}/emulator
-ENV LD_LIBRARY_PATH ${ANDROID_SDK_ROOT}/emulator/lib64:${ANDROID_SDK_ROOT}/emulator/lib64/qt/lib
-ENV QTWEBENGINE_DISABLE_SANDBOX 1
-ENV ANDROID_HOME /opt/android-sdk
+ENV PATH=${PATH}:${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin:${ANDROID_SDK_ROOT}/cmdline-tools/tools/bin:${ANDROID_SDK_ROOT}/platform-tools:${ANDROID_SDK_ROOT}/emulator
+ENV LD_LIBRARY_PATH=${ANDROID_SDK_ROOT}/emulator/lib64:${ANDROID_SDK_ROOT}/emulator/lib64/qt/lib
+ENV QTWEBENGINE_DISABLE_SANDBOX=1
+ENV ANDROID_HOME=/opt/android-sdk
 
 # accept the license agreements of the SDK components
 COPY ./license_accepter.sh /opt/
@@ -68,6 +68,7 @@ RUN chmod +x /opt/license_accepter.sh && /opt/license_accepter.sh $ANDROID_SDK_R
 
 # copy NJR
 COPY ./NJR /opt/NJR
+ENV NJR=/opt/NJR
 
 # copy Benchmark
 COPY ./Benchmarks /opt/Benchmarks
