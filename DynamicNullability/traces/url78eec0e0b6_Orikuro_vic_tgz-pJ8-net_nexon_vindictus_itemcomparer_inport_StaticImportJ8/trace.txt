@@ -1,0 +1,38 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 3 times.  Unmatched entries are ignored!
+Unterminated calls:
+  net.nexon.vindictus.itemcomparer.inport.StaticImport.main(java.lang.String[]) : 1 invocation
+  net.nexon.vindictus.itemcomparer.inport.StaticImport.staticImAndExport() : 1 invocation
+  net.nexon.vindictus.itemcomparer.inport.StaticImport.generateWonderland() : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+net.nexon.vindictus.itemcomparer.modell.ItemSetBonus:::OBJECT
+this.str one of { 0, 18, 27 }
+this.vint one of { 0, 84, 125 }
+this.agi == 0
+this.atk == 0
+this.sta == 0
+===========================================================================
+net.nexon.vindictus.itemcomparer.modell.ItemSetBonus.ItemSetBonus(int, int, int, int, int):::ENTER
+arg1 one of { 0, 18, 27 }
+arg2 one of { 0, 84, 125 }
+arg3 == 0
+arg4 == 0
+===========================================================================
+net.nexon.vindictus.itemcomparer.modell.ItemSetBonus.ItemSetBonus(int, int, int, int, int):::EXIT
+this.def == orig(arg0)
+this.str == orig(arg1)
+this.vint == orig(arg2)
+this.agi == orig(arg3)
+this.atk == orig(arg4)
+===========================================================================
+net.nexon.vindictus.itemcomparer.modell.enu.VChar:::OBJECT
+===========================================================================
+net.nexon.vindictus.itemcomparer.modell.enu.VChar.VChar(java.lang.String, int):::ENTER
+===========================================================================
+net.nexon.vindictus.itemcomparer.modell.enu.VChar.VChar(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+Exiting Daikon.

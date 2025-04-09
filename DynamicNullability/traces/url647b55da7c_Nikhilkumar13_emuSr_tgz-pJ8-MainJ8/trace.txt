@@ -1,0 +1,1056 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 2 times.  Unmatched entries are ignored!
+Unterminated calls:
+  Main.main(java.lang.String[]) : 1 invocation
+  frontend.FrontEnd.FrontEnd() : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+backend.Emit:::CLASS
+backend.Emit.ht has only one value
+backend.Emit.ins == null
+===========================================================================
+backend.Emit:::OBJECT
+this has only one value
+===========================================================================
+backend.Emit.Emit():::EXIT
+===========================================================================
+backend.Emit.createHash():::ENTER
+===========================================================================
+backend.Emit.createHash():::EXIT
+backend.Emit.ht == orig(backend.Emit.ht)
+backend.Emit.ins == orig(backend.Emit.ins)
+===========================================================================
+backend.InstructionSet$ADD:::CLASS
+backend.InstructionSet$ADD.ADD has only one value
+backend.InstructionSet$ADD.ADDU has only one value
+backend.InstructionSet$ADD.ADDH has only one value
+backend.InstructionSet$ADD.$VALUES has only one value
+backend.InstructionSet$ADD.$VALUES.getClass().getName() == backend.InstructionSet$ADD[].class
+backend.InstructionSet$ADD.$VALUES[] contains no nulls and has only one value, of length 3
+backend.InstructionSet$ADD.$VALUES[].getClass().getName() == [backend.InstructionSet.ADD, backend.InstructionSet.ADD, backend.InstructionSet.ADD]
+backend.InstructionSet$ADD.$VALUES[].getClass().getName() elements == backend.InstructionSet.ADD.class
+size(backend.InstructionSet$ADD.$VALUES[]) == 3
+===========================================================================
+backend.InstructionSet$ADD:::OBJECT
+===========================================================================
+backend.InstructionSet$ADD.ADD(java.lang.String, int):::ENTER
+arg0.toString one of { "ADD", "ADDH", "ADDU" }
+arg1 one of { 0, 1, 2 }
+===========================================================================
+backend.InstructionSet$ADD.ADD(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "ADD", "ADDH", "ADDU" }
+===========================================================================
+backend.InstructionSet$ADD.values():::ENTER
+===========================================================================
+backend.InstructionSet$ADD.values():::EXIT
+backend.InstructionSet$ADD.ADD == orig(backend.InstructionSet$ADD.ADD)
+backend.InstructionSet$ADD.ADDU == orig(backend.InstructionSet$ADD.ADDU)
+backend.InstructionSet$ADD.ADDH == orig(backend.InstructionSet$ADD.ADDH)
+backend.InstructionSet$ADD.$VALUES == orig(backend.InstructionSet$ADD.$VALUES)
+backend.InstructionSet$ADD.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$ADD.$VALUES.getClass().getName() == orig(backend.InstructionSet$ADD.$VALUES.getClass().getName())
+backend.InstructionSet$ADD.$VALUES[] == orig(backend.InstructionSet$ADD.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 3
+size(return[]) == 3
+backend.InstructionSet$ADD.ADD in return[]
+backend.InstructionSet$ADD.ADDU in return[]
+backend.InstructionSet$ADD.ADDH in return[]
+===========================================================================
+backend.InstructionSet$AND:::CLASS
+backend.InstructionSet$AND.AND has only one value
+backend.InstructionSet$AND.ANDU has only one value
+backend.InstructionSet$AND.ANDH has only one value
+backend.InstructionSet$AND.$VALUES has only one value
+backend.InstructionSet$AND.$VALUES.getClass().getName() == backend.InstructionSet$AND[].class
+backend.InstructionSet$AND.$VALUES[] contains no nulls and has only one value, of length 3
+backend.InstructionSet$AND.$VALUES[].getClass().getName() == [backend.InstructionSet.AND, backend.InstructionSet.AND, backend.InstructionSet.AND]
+backend.InstructionSet$AND.$VALUES[].getClass().getName() elements == backend.InstructionSet.AND.class
+size(backend.InstructionSet$AND.$VALUES[]) == 3
+===========================================================================
+backend.InstructionSet$AND:::OBJECT
+===========================================================================
+backend.InstructionSet$AND.AND(java.lang.String, int):::ENTER
+arg0.toString one of { "AND", "ANDH", "ANDU" }
+arg1 one of { 0, 1, 2 }
+===========================================================================
+backend.InstructionSet$AND.AND(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "AND", "ANDH", "ANDU" }
+===========================================================================
+backend.InstructionSet$AND.values():::ENTER
+===========================================================================
+backend.InstructionSet$AND.values():::EXIT
+backend.InstructionSet$AND.AND == orig(backend.InstructionSet$AND.AND)
+backend.InstructionSet$AND.ANDU == orig(backend.InstructionSet$AND.ANDU)
+backend.InstructionSet$AND.ANDH == orig(backend.InstructionSet$AND.ANDH)
+backend.InstructionSet$AND.$VALUES == orig(backend.InstructionSet$AND.$VALUES)
+backend.InstructionSet$AND.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$AND.$VALUES.getClass().getName() == orig(backend.InstructionSet$AND.$VALUES.getClass().getName())
+backend.InstructionSet$AND.$VALUES[] == orig(backend.InstructionSet$AND.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 3
+size(return[]) == 3
+backend.InstructionSet$AND.AND in return[]
+backend.InstructionSet$AND.ANDU in return[]
+backend.InstructionSet$AND.ANDH in return[]
+===========================================================================
+backend.InstructionSet$ASR:::CLASS
+backend.InstructionSet$ASR.ASR has only one value
+backend.InstructionSet$ASR.$VALUES has only one value
+backend.InstructionSet$ASR.$VALUES.getClass().getName() == backend.InstructionSet$ASR[].class
+backend.InstructionSet$ASR.$VALUES[] contains no nulls and has only one value, of length 1
+backend.InstructionSet$ASR.$VALUES[] elements has only one value
+backend.InstructionSet$ASR.$VALUES[].getClass().getName() == [backend.InstructionSet.ASR]
+backend.InstructionSet$ASR.$VALUES[].getClass().getName() elements == backend.InstructionSet.ASR.class
+size(backend.InstructionSet$ASR.$VALUES[]) == 1
+===========================================================================
+backend.InstructionSet$ASR:::OBJECT
+this has only one value
+===========================================================================
+backend.InstructionSet$ASR.ASR(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "ASR"
+arg1 == 0
+===========================================================================
+backend.InstructionSet$ASR.ASR(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "ASR"
+===========================================================================
+backend.InstructionSet$ASR.values():::ENTER
+===========================================================================
+backend.InstructionSet$ASR.values():::EXIT
+backend.InstructionSet$ASR.ASR == orig(backend.InstructionSet$ASR.ASR)
+backend.InstructionSet$ASR.$VALUES == orig(backend.InstructionSet$ASR.$VALUES)
+backend.InstructionSet$ASR.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$ASR.$VALUES.getClass().getName() == orig(backend.InstructionSet$ASR.$VALUES.getClass().getName())
+backend.InstructionSet$ASR.$VALUES[] == orig(backend.InstructionSet$ASR.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+size(return[]) == 1
+backend.InstructionSet$ASR.ASR in return[]
+return[] elements == backend.InstructionSet$ASR.ASR
+===========================================================================
+backend.InstructionSet$B:::CLASS
+backend.InstructionSet$B.B has only one value
+backend.InstructionSet$B.$VALUES has only one value
+backend.InstructionSet$B.$VALUES.getClass().getName() == backend.InstructionSet$B[].class
+backend.InstructionSet$B.$VALUES[] contains no nulls and has only one value, of length 1
+backend.InstructionSet$B.$VALUES[] elements has only one value
+backend.InstructionSet$B.$VALUES[].getClass().getName() == [backend.InstructionSet.B]
+backend.InstructionSet$B.$VALUES[].getClass().getName() elements == backend.InstructionSet.B.class
+size(backend.InstructionSet$B.$VALUES[]) == 1
+===========================================================================
+backend.InstructionSet$B:::OBJECT
+this has only one value
+===========================================================================
+backend.InstructionSet$B.B(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "B"
+arg1 == 0
+===========================================================================
+backend.InstructionSet$B.B(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "B"
+===========================================================================
+backend.InstructionSet$B.values():::ENTER
+===========================================================================
+backend.InstructionSet$B.values():::EXIT
+backend.InstructionSet$B.B == orig(backend.InstructionSet$B.B)
+backend.InstructionSet$B.$VALUES == orig(backend.InstructionSet$B.$VALUES)
+backend.InstructionSet$B.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$B.$VALUES.getClass().getName() == orig(backend.InstructionSet$B.$VALUES.getClass().getName())
+backend.InstructionSet$B.$VALUES[] == orig(backend.InstructionSet$B.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+size(return[]) == 1
+backend.InstructionSet$B.B in return[]
+return[] elements == backend.InstructionSet$B.B
+===========================================================================
+backend.InstructionSet$BEQ:::CLASS
+backend.InstructionSet$BEQ.BEQ has only one value
+backend.InstructionSet$BEQ.$VALUES has only one value
+backend.InstructionSet$BEQ.$VALUES.getClass().getName() == backend.InstructionSet$BEQ[].class
+backend.InstructionSet$BEQ.$VALUES[] contains no nulls and has only one value, of length 1
+backend.InstructionSet$BEQ.$VALUES[] elements has only one value
+backend.InstructionSet$BEQ.$VALUES[].getClass().getName() == [backend.InstructionSet.BEQ]
+backend.InstructionSet$BEQ.$VALUES[].getClass().getName() elements == backend.InstructionSet.BEQ.class
+size(backend.InstructionSet$BEQ.$VALUES[]) == 1
+===========================================================================
+backend.InstructionSet$BEQ:::OBJECT
+this has only one value
+===========================================================================
+backend.InstructionSet$BEQ.BEQ(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "BEQ"
+arg1 == 0
+===========================================================================
+backend.InstructionSet$BEQ.BEQ(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "BEQ"
+===========================================================================
+backend.InstructionSet$BEQ.values():::ENTER
+===========================================================================
+backend.InstructionSet$BEQ.values():::EXIT
+backend.InstructionSet$BEQ.BEQ == orig(backend.InstructionSet$BEQ.BEQ)
+backend.InstructionSet$BEQ.$VALUES == orig(backend.InstructionSet$BEQ.$VALUES)
+backend.InstructionSet$BEQ.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$BEQ.$VALUES.getClass().getName() == orig(backend.InstructionSet$BEQ.$VALUES.getClass().getName())
+backend.InstructionSet$BEQ.$VALUES[] == orig(backend.InstructionSet$BEQ.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+size(return[]) == 1
+backend.InstructionSet$BEQ.BEQ in return[]
+return[] elements == backend.InstructionSet$BEQ.BEQ
+===========================================================================
+backend.InstructionSet$BGT:::CLASS
+backend.InstructionSet$BGT.BGT has only one value
+backend.InstructionSet$BGT.$VALUES has only one value
+backend.InstructionSet$BGT.$VALUES.getClass().getName() == backend.InstructionSet$BGT[].class
+backend.InstructionSet$BGT.$VALUES[] contains no nulls and has only one value, of length 1
+backend.InstructionSet$BGT.$VALUES[] elements has only one value
+backend.InstructionSet$BGT.$VALUES[].getClass().getName() == [backend.InstructionSet.BGT]
+backend.InstructionSet$BGT.$VALUES[].getClass().getName() elements == backend.InstructionSet.BGT.class
+size(backend.InstructionSet$BGT.$VALUES[]) == 1
+===========================================================================
+backend.InstructionSet$BGT:::OBJECT
+this has only one value
+===========================================================================
+backend.InstructionSet$BGT.BGT(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "BGT"
+arg1 == 0
+===========================================================================
+backend.InstructionSet$BGT.BGT(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "BGT"
+===========================================================================
+backend.InstructionSet$BGT.values():::ENTER
+===========================================================================
+backend.InstructionSet$BGT.values():::EXIT
+backend.InstructionSet$BGT.BGT == orig(backend.InstructionSet$BGT.BGT)
+backend.InstructionSet$BGT.$VALUES == orig(backend.InstructionSet$BGT.$VALUES)
+backend.InstructionSet$BGT.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$BGT.$VALUES.getClass().getName() == orig(backend.InstructionSet$BGT.$VALUES.getClass().getName())
+backend.InstructionSet$BGT.$VALUES[] == orig(backend.InstructionSet$BGT.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+size(return[]) == 1
+backend.InstructionSet$BGT.BGT in return[]
+return[] elements == backend.InstructionSet$BGT.BGT
+===========================================================================
+backend.InstructionSet$CALL:::CLASS
+backend.InstructionSet$CALL.CALL has only one value
+backend.InstructionSet$CALL.$VALUES has only one value
+backend.InstructionSet$CALL.$VALUES.getClass().getName() == backend.InstructionSet$CALL[].class
+backend.InstructionSet$CALL.$VALUES[] contains no nulls and has only one value, of length 1
+backend.InstructionSet$CALL.$VALUES[] elements has only one value
+backend.InstructionSet$CALL.$VALUES[].getClass().getName() == [backend.InstructionSet.CALL]
+backend.InstructionSet$CALL.$VALUES[].getClass().getName() elements == backend.InstructionSet.CALL.class
+size(backend.InstructionSet$CALL.$VALUES[]) == 1
+===========================================================================
+backend.InstructionSet$CALL:::OBJECT
+this has only one value
+===========================================================================
+backend.InstructionSet$CALL.CALL(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "CALL"
+arg1 == 0
+===========================================================================
+backend.InstructionSet$CALL.CALL(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "CALL"
+===========================================================================
+backend.InstructionSet$CALL.values():::ENTER
+===========================================================================
+backend.InstructionSet$CALL.values():::EXIT
+backend.InstructionSet$CALL.CALL == orig(backend.InstructionSet$CALL.CALL)
+backend.InstructionSet$CALL.$VALUES == orig(backend.InstructionSet$CALL.$VALUES)
+backend.InstructionSet$CALL.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$CALL.$VALUES.getClass().getName() == orig(backend.InstructionSet$CALL.$VALUES.getClass().getName())
+backend.InstructionSet$CALL.$VALUES[] == orig(backend.InstructionSet$CALL.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+size(return[]) == 1
+backend.InstructionSet$CALL.CALL in return[]
+return[] elements == backend.InstructionSet$CALL.CALL
+===========================================================================
+backend.InstructionSet$CMP:::CLASS
+backend.InstructionSet$CMP.CMP has only one value
+backend.InstructionSet$CMP.CMPU has only one value
+backend.InstructionSet$CMP.CMPH has only one value
+backend.InstructionSet$CMP.$VALUES has only one value
+backend.InstructionSet$CMP.$VALUES.getClass().getName() == backend.InstructionSet$CMP[].class
+backend.InstructionSet$CMP.$VALUES[] contains no nulls and has only one value, of length 3
+backend.InstructionSet$CMP.$VALUES[].getClass().getName() == [backend.InstructionSet.CMP, backend.InstructionSet.CMP, backend.InstructionSet.CMP]
+backend.InstructionSet$CMP.$VALUES[].getClass().getName() elements == backend.InstructionSet.CMP.class
+size(backend.InstructionSet$CMP.$VALUES[]) == 3
+===========================================================================
+backend.InstructionSet$CMP:::OBJECT
+===========================================================================
+backend.InstructionSet$CMP.CMP(java.lang.String, int):::ENTER
+arg0.toString one of { "CMP", "CMPH", "CMPU" }
+arg1 one of { 0, 1, 2 }
+===========================================================================
+backend.InstructionSet$CMP.CMP(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "CMP", "CMPH", "CMPU" }
+===========================================================================
+backend.InstructionSet$CMP.values():::ENTER
+===========================================================================
+backend.InstructionSet$CMP.values():::EXIT
+backend.InstructionSet$CMP.CMP == orig(backend.InstructionSet$CMP.CMP)
+backend.InstructionSet$CMP.CMPU == orig(backend.InstructionSet$CMP.CMPU)
+backend.InstructionSet$CMP.CMPH == orig(backend.InstructionSet$CMP.CMPH)
+backend.InstructionSet$CMP.$VALUES == orig(backend.InstructionSet$CMP.$VALUES)
+backend.InstructionSet$CMP.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$CMP.$VALUES.getClass().getName() == orig(backend.InstructionSet$CMP.$VALUES.getClass().getName())
+backend.InstructionSet$CMP.$VALUES[] == orig(backend.InstructionSet$CMP.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 3
+size(return[]) == 3
+backend.InstructionSet$CMP.CMP in return[]
+backend.InstructionSet$CMP.CMPU in return[]
+backend.InstructionSet$CMP.CMPH in return[]
+===========================================================================
+backend.InstructionSet$DIV:::CLASS
+backend.InstructionSet$DIV.DIV has only one value
+backend.InstructionSet$DIV.DIVU has only one value
+backend.InstructionSet$DIV.DIVH has only one value
+backend.InstructionSet$DIV.$VALUES has only one value
+backend.InstructionSet$DIV.$VALUES.getClass().getName() == backend.InstructionSet$DIV[].class
+backend.InstructionSet$DIV.$VALUES[] contains no nulls and has only one value, of length 3
+backend.InstructionSet$DIV.$VALUES[].getClass().getName() == [backend.InstructionSet.DIV, backend.InstructionSet.DIV, backend.InstructionSet.DIV]
+backend.InstructionSet$DIV.$VALUES[].getClass().getName() elements == backend.InstructionSet.DIV.class
+size(backend.InstructionSet$DIV.$VALUES[]) == 3
+===========================================================================
+backend.InstructionSet$DIV:::OBJECT
+===========================================================================
+backend.InstructionSet$DIV.DIV(java.lang.String, int):::ENTER
+arg0.toString one of { "DIV", "DIVH", "DIVU" }
+arg1 one of { 0, 1, 2 }
+===========================================================================
+backend.InstructionSet$DIV.DIV(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "DIV", "DIVH", "DIVU" }
+===========================================================================
+backend.InstructionSet$DIV.values():::ENTER
+===========================================================================
+backend.InstructionSet$DIV.values():::EXIT
+backend.InstructionSet$DIV.DIV == orig(backend.InstructionSet$DIV.DIV)
+backend.InstructionSet$DIV.DIVU == orig(backend.InstructionSet$DIV.DIVU)
+backend.InstructionSet$DIV.DIVH == orig(backend.InstructionSet$DIV.DIVH)
+backend.InstructionSet$DIV.$VALUES == orig(backend.InstructionSet$DIV.$VALUES)
+backend.InstructionSet$DIV.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$DIV.$VALUES.getClass().getName() == orig(backend.InstructionSet$DIV.$VALUES.getClass().getName())
+backend.InstructionSet$DIV.$VALUES[] == orig(backend.InstructionSet$DIV.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 3
+size(return[]) == 3
+backend.InstructionSet$DIV.DIV in return[]
+backend.InstructionSet$DIV.DIVU in return[]
+backend.InstructionSet$DIV.DIVH in return[]
+===========================================================================
+backend.InstructionSet$LD:::CLASS
+backend.InstructionSet$LD.LD has only one value
+backend.InstructionSet$LD.$VALUES has only one value
+backend.InstructionSet$LD.$VALUES.getClass().getName() == backend.InstructionSet$LD[].class
+backend.InstructionSet$LD.$VALUES[] contains no nulls and has only one value, of length 1
+backend.InstructionSet$LD.$VALUES[] elements has only one value
+backend.InstructionSet$LD.$VALUES[].getClass().getName() == [backend.InstructionSet.LD]
+backend.InstructionSet$LD.$VALUES[].getClass().getName() elements == backend.InstructionSet.LD.class
+size(backend.InstructionSet$LD.$VALUES[]) == 1
+===========================================================================
+backend.InstructionSet$LD:::OBJECT
+this has only one value
+===========================================================================
+backend.InstructionSet$LD.LD(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "LD"
+arg1 == 0
+===========================================================================
+backend.InstructionSet$LD.LD(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "LD"
+===========================================================================
+backend.InstructionSet$LD.values():::ENTER
+===========================================================================
+backend.InstructionSet$LD.values():::EXIT
+backend.InstructionSet$LD.LD == orig(backend.InstructionSet$LD.LD)
+backend.InstructionSet$LD.$VALUES == orig(backend.InstructionSet$LD.$VALUES)
+backend.InstructionSet$LD.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$LD.$VALUES.getClass().getName() == orig(backend.InstructionSet$LD.$VALUES.getClass().getName())
+backend.InstructionSet$LD.$VALUES[] == orig(backend.InstructionSet$LD.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+size(return[]) == 1
+backend.InstructionSet$LD.LD in return[]
+return[] elements == backend.InstructionSet$LD.LD
+===========================================================================
+backend.InstructionSet$LSL:::CLASS
+backend.InstructionSet$LSL.LSL has only one value
+backend.InstructionSet$LSL.$VALUES has only one value
+backend.InstructionSet$LSL.$VALUES.getClass().getName() == backend.InstructionSet$LSL[].class
+backend.InstructionSet$LSL.$VALUES[] contains no nulls and has only one value, of length 1
+backend.InstructionSet$LSL.$VALUES[] elements has only one value
+backend.InstructionSet$LSL.$VALUES[].getClass().getName() == [backend.InstructionSet.LSL]
+backend.InstructionSet$LSL.$VALUES[].getClass().getName() elements == backend.InstructionSet.LSL.class
+size(backend.InstructionSet$LSL.$VALUES[]) == 1
+===========================================================================
+backend.InstructionSet$LSL:::OBJECT
+this has only one value
+===========================================================================
+backend.InstructionSet$LSL.LSL(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "LSL"
+arg1 == 0
+===========================================================================
+backend.InstructionSet$LSL.LSL(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "LSL"
+===========================================================================
+backend.InstructionSet$LSL.values():::ENTER
+===========================================================================
+backend.InstructionSet$LSL.values():::EXIT
+backend.InstructionSet$LSL.LSL == orig(backend.InstructionSet$LSL.LSL)
+backend.InstructionSet$LSL.$VALUES == orig(backend.InstructionSet$LSL.$VALUES)
+backend.InstructionSet$LSL.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$LSL.$VALUES.getClass().getName() == orig(backend.InstructionSet$LSL.$VALUES.getClass().getName())
+backend.InstructionSet$LSL.$VALUES[] == orig(backend.InstructionSet$LSL.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+size(return[]) == 1
+backend.InstructionSet$LSL.LSL in return[]
+return[] elements == backend.InstructionSet$LSL.LSL
+===========================================================================
+backend.InstructionSet$LSR:::CLASS
+backend.InstructionSet$LSR.LSR has only one value
+backend.InstructionSet$LSR.$VALUES has only one value
+backend.InstructionSet$LSR.$VALUES.getClass().getName() == backend.InstructionSet$LSR[].class
+backend.InstructionSet$LSR.$VALUES[] contains no nulls and has only one value, of length 1
+backend.InstructionSet$LSR.$VALUES[] elements has only one value
+backend.InstructionSet$LSR.$VALUES[].getClass().getName() == [backend.InstructionSet.LSR]
+backend.InstructionSet$LSR.$VALUES[].getClass().getName() elements == backend.InstructionSet.LSR.class
+size(backend.InstructionSet$LSR.$VALUES[]) == 1
+===========================================================================
+backend.InstructionSet$LSR:::OBJECT
+this has only one value
+===========================================================================
+backend.InstructionSet$LSR.LSR(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "LSR"
+arg1 == 0
+===========================================================================
+backend.InstructionSet$LSR.LSR(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "LSR"
+===========================================================================
+backend.InstructionSet$LSR.values():::ENTER
+===========================================================================
+backend.InstructionSet$LSR.values():::EXIT
+backend.InstructionSet$LSR.LSR == orig(backend.InstructionSet$LSR.LSR)
+backend.InstructionSet$LSR.$VALUES == orig(backend.InstructionSet$LSR.$VALUES)
+backend.InstructionSet$LSR.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$LSR.$VALUES.getClass().getName() == orig(backend.InstructionSet$LSR.$VALUES.getClass().getName())
+backend.InstructionSet$LSR.$VALUES[] == orig(backend.InstructionSet$LSR.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+size(return[]) == 1
+backend.InstructionSet$LSR.LSR in return[]
+return[] elements == backend.InstructionSet$LSR.LSR
+===========================================================================
+backend.InstructionSet$MOD:::CLASS
+backend.InstructionSet$MOD.MOD has only one value
+backend.InstructionSet$MOD.MODU has only one value
+backend.InstructionSet$MOD.MODH has only one value
+backend.InstructionSet$MOD.$VALUES has only one value
+backend.InstructionSet$MOD.$VALUES.getClass().getName() == backend.InstructionSet$MOD[].class
+backend.InstructionSet$MOD.$VALUES[] contains no nulls and has only one value, of length 3
+backend.InstructionSet$MOD.$VALUES[].getClass().getName() == [backend.InstructionSet.MOD, backend.InstructionSet.MOD, backend.InstructionSet.MOD]
+backend.InstructionSet$MOD.$VALUES[].getClass().getName() elements == backend.InstructionSet.MOD.class
+size(backend.InstructionSet$MOD.$VALUES[]) == 3
+===========================================================================
+backend.InstructionSet$MOD:::OBJECT
+===========================================================================
+backend.InstructionSet$MOD.MOD(java.lang.String, int):::ENTER
+arg0.toString one of { "MOD", "MODH", "MODU" }
+arg1 one of { 0, 1, 2 }
+===========================================================================
+backend.InstructionSet$MOD.MOD(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "MOD", "MODH", "MODU" }
+===========================================================================
+backend.InstructionSet$MOD.values():::ENTER
+===========================================================================
+backend.InstructionSet$MOD.values():::EXIT
+backend.InstructionSet$MOD.MOD == orig(backend.InstructionSet$MOD.MOD)
+backend.InstructionSet$MOD.MODU == orig(backend.InstructionSet$MOD.MODU)
+backend.InstructionSet$MOD.MODH == orig(backend.InstructionSet$MOD.MODH)
+backend.InstructionSet$MOD.$VALUES == orig(backend.InstructionSet$MOD.$VALUES)
+backend.InstructionSet$MOD.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$MOD.$VALUES.getClass().getName() == orig(backend.InstructionSet$MOD.$VALUES.getClass().getName())
+backend.InstructionSet$MOD.$VALUES[] == orig(backend.InstructionSet$MOD.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 3
+size(return[]) == 3
+backend.InstructionSet$MOD.MOD in return[]
+backend.InstructionSet$MOD.MODU in return[]
+backend.InstructionSet$MOD.MODH in return[]
+===========================================================================
+backend.InstructionSet$MOV:::CLASS
+backend.InstructionSet$MOV.MOV has only one value
+backend.InstructionSet$MOV.MOVU has only one value
+backend.InstructionSet$MOV.MOVH has only one value
+backend.InstructionSet$MOV.$VALUES has only one value
+backend.InstructionSet$MOV.$VALUES.getClass().getName() == backend.InstructionSet$MOV[].class
+backend.InstructionSet$MOV.$VALUES[] contains no nulls and has only one value, of length 3
+backend.InstructionSet$MOV.$VALUES[].getClass().getName() == [backend.InstructionSet.MOV, backend.InstructionSet.MOV, backend.InstructionSet.MOV]
+backend.InstructionSet$MOV.$VALUES[].getClass().getName() elements == backend.InstructionSet.MOV.class
+size(backend.InstructionSet$MOV.$VALUES[]) == 3
+===========================================================================
+backend.InstructionSet$MOV:::OBJECT
+===========================================================================
+backend.InstructionSet$MOV.MOV(java.lang.String, int):::ENTER
+arg0.toString one of { "MOV", "MOVH", "MOVU" }
+arg1 one of { 0, 1, 2 }
+===========================================================================
+backend.InstructionSet$MOV.MOV(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "MOV", "MOVH", "MOVU" }
+===========================================================================
+backend.InstructionSet$MOV.values():::ENTER
+===========================================================================
+backend.InstructionSet$MOV.values():::EXIT
+backend.InstructionSet$MOV.MOV == orig(backend.InstructionSet$MOV.MOV)
+backend.InstructionSet$MOV.MOVU == orig(backend.InstructionSet$MOV.MOVU)
+backend.InstructionSet$MOV.MOVH == orig(backend.InstructionSet$MOV.MOVH)
+backend.InstructionSet$MOV.$VALUES == orig(backend.InstructionSet$MOV.$VALUES)
+backend.InstructionSet$MOV.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$MOV.$VALUES.getClass().getName() == orig(backend.InstructionSet$MOV.$VALUES.getClass().getName())
+backend.InstructionSet$MOV.$VALUES[] == orig(backend.InstructionSet$MOV.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 3
+size(return[]) == 3
+backend.InstructionSet$MOV.MOV in return[]
+backend.InstructionSet$MOV.MOVU in return[]
+backend.InstructionSet$MOV.MOVH in return[]
+===========================================================================
+backend.InstructionSet$MUL:::CLASS
+backend.InstructionSet$MUL.MUL has only one value
+backend.InstructionSet$MUL.MULU has only one value
+backend.InstructionSet$MUL.MULH has only one value
+backend.InstructionSet$MUL.$VALUES has only one value
+backend.InstructionSet$MUL.$VALUES.getClass().getName() == backend.InstructionSet$MUL[].class
+backend.InstructionSet$MUL.$VALUES[] contains no nulls and has only one value, of length 3
+backend.InstructionSet$MUL.$VALUES[].getClass().getName() == [backend.InstructionSet.MUL, backend.InstructionSet.MUL, backend.InstructionSet.MUL]
+backend.InstructionSet$MUL.$VALUES[].getClass().getName() elements == backend.InstructionSet.MUL.class
+size(backend.InstructionSet$MUL.$VALUES[]) == 3
+===========================================================================
+backend.InstructionSet$MUL:::OBJECT
+===========================================================================
+backend.InstructionSet$MUL.MUL(java.lang.String, int):::ENTER
+arg0.toString one of { "MUL", "MULH", "MULU" }
+arg1 one of { 0, 1, 2 }
+===========================================================================
+backend.InstructionSet$MUL.MUL(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "MUL", "MULH", "MULU" }
+===========================================================================
+backend.InstructionSet$MUL.values():::ENTER
+===========================================================================
+backend.InstructionSet$MUL.values():::EXIT
+backend.InstructionSet$MUL.MUL == orig(backend.InstructionSet$MUL.MUL)
+backend.InstructionSet$MUL.MULU == orig(backend.InstructionSet$MUL.MULU)
+backend.InstructionSet$MUL.MULH == orig(backend.InstructionSet$MUL.MULH)
+backend.InstructionSet$MUL.$VALUES == orig(backend.InstructionSet$MUL.$VALUES)
+backend.InstructionSet$MUL.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$MUL.$VALUES.getClass().getName() == orig(backend.InstructionSet$MUL.$VALUES.getClass().getName())
+backend.InstructionSet$MUL.$VALUES[] == orig(backend.InstructionSet$MUL.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 3
+size(return[]) == 3
+backend.InstructionSet$MUL.MUL in return[]
+backend.InstructionSet$MUL.MULU in return[]
+backend.InstructionSet$MUL.MULH in return[]
+===========================================================================
+backend.InstructionSet$NOP:::CLASS
+backend.InstructionSet$NOP.NOP has only one value
+backend.InstructionSet$NOP.$VALUES has only one value
+backend.InstructionSet$NOP.$VALUES.getClass().getName() == backend.InstructionSet$NOP[].class
+backend.InstructionSet$NOP.$VALUES[] contains no nulls and has only one value, of length 1
+backend.InstructionSet$NOP.$VALUES[] elements has only one value
+backend.InstructionSet$NOP.$VALUES[].getClass().getName() == [backend.InstructionSet.NOP]
+backend.InstructionSet$NOP.$VALUES[].getClass().getName() elements == backend.InstructionSet.NOP.class
+size(backend.InstructionSet$NOP.$VALUES[]) == 1
+===========================================================================
+backend.InstructionSet$NOP:::OBJECT
+this has only one value
+===========================================================================
+backend.InstructionSet$NOP.NOP(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "NOP"
+arg1 == 0
+===========================================================================
+backend.InstructionSet$NOP.NOP(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "NOP"
+===========================================================================
+backend.InstructionSet$NOP.values():::ENTER
+===========================================================================
+backend.InstructionSet$NOP.values():::EXIT
+backend.InstructionSet$NOP.NOP == orig(backend.InstructionSet$NOP.NOP)
+backend.InstructionSet$NOP.$VALUES == orig(backend.InstructionSet$NOP.$VALUES)
+backend.InstructionSet$NOP.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$NOP.$VALUES.getClass().getName() == orig(backend.InstructionSet$NOP.$VALUES.getClass().getName())
+backend.InstructionSet$NOP.$VALUES[] == orig(backend.InstructionSet$NOP.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+size(return[]) == 1
+backend.InstructionSet$NOP.NOP in return[]
+return[] elements == backend.InstructionSet$NOP.NOP
+===========================================================================
+backend.InstructionSet$NOT:::CLASS
+backend.InstructionSet$NOT.NOT has only one value
+backend.InstructionSet$NOT.NOTU has only one value
+backend.InstructionSet$NOT.NOTH has only one value
+backend.InstructionSet$NOT.$VALUES has only one value
+backend.InstructionSet$NOT.$VALUES.getClass().getName() == backend.InstructionSet$NOT[].class
+backend.InstructionSet$NOT.$VALUES[] contains no nulls and has only one value, of length 3
+backend.InstructionSet$NOT.$VALUES[].getClass().getName() == [backend.InstructionSet.NOT, backend.InstructionSet.NOT, backend.InstructionSet.NOT]
+backend.InstructionSet$NOT.$VALUES[].getClass().getName() elements == backend.InstructionSet.NOT.class
+size(backend.InstructionSet$NOT.$VALUES[]) == 3
+===========================================================================
+backend.InstructionSet$NOT:::OBJECT
+===========================================================================
+backend.InstructionSet$NOT.NOT(java.lang.String, int):::ENTER
+arg0.toString one of { "NOT", "NOTH", "NOTU" }
+arg1 one of { 0, 1, 2 }
+===========================================================================
+backend.InstructionSet$NOT.NOT(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "NOT", "NOTH", "NOTU" }
+===========================================================================
+backend.InstructionSet$NOT.values():::ENTER
+===========================================================================
+backend.InstructionSet$NOT.values():::EXIT
+backend.InstructionSet$NOT.NOT == orig(backend.InstructionSet$NOT.NOT)
+backend.InstructionSet$NOT.NOTU == orig(backend.InstructionSet$NOT.NOTU)
+backend.InstructionSet$NOT.NOTH == orig(backend.InstructionSet$NOT.NOTH)
+backend.InstructionSet$NOT.$VALUES == orig(backend.InstructionSet$NOT.$VALUES)
+backend.InstructionSet$NOT.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$NOT.$VALUES.getClass().getName() == orig(backend.InstructionSet$NOT.$VALUES.getClass().getName())
+backend.InstructionSet$NOT.$VALUES[] == orig(backend.InstructionSet$NOT.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 3
+size(return[]) == 3
+backend.InstructionSet$NOT.NOT in return[]
+backend.InstructionSet$NOT.NOTU in return[]
+backend.InstructionSet$NOT.NOTH in return[]
+===========================================================================
+backend.InstructionSet$OR:::CLASS
+backend.InstructionSet$OR.OR has only one value
+backend.InstructionSet$OR.ORH has only one value
+backend.InstructionSet$OR.ORU has only one value
+backend.InstructionSet$OR.$VALUES has only one value
+backend.InstructionSet$OR.$VALUES.getClass().getName() == backend.InstructionSet$OR[].class
+backend.InstructionSet$OR.$VALUES[] contains no nulls and has only one value, of length 3
+backend.InstructionSet$OR.$VALUES[].getClass().getName() == [backend.InstructionSet.OR, backend.InstructionSet.OR, backend.InstructionSet.OR]
+backend.InstructionSet$OR.$VALUES[].getClass().getName() elements == backend.InstructionSet.OR.class
+size(backend.InstructionSet$OR.$VALUES[]) == 3
+===========================================================================
+backend.InstructionSet$OR:::OBJECT
+===========================================================================
+backend.InstructionSet$OR.OR(java.lang.String, int):::ENTER
+arg0.toString one of { "OR", "ORH", "ORU" }
+arg1 one of { 0, 1, 2 }
+===========================================================================
+backend.InstructionSet$OR.OR(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "OR", "ORH", "ORU" }
+===========================================================================
+backend.InstructionSet$OR.values():::ENTER
+===========================================================================
+backend.InstructionSet$OR.values():::EXIT
+backend.InstructionSet$OR.OR == orig(backend.InstructionSet$OR.OR)
+backend.InstructionSet$OR.ORH == orig(backend.InstructionSet$OR.ORH)
+backend.InstructionSet$OR.ORU == orig(backend.InstructionSet$OR.ORU)
+backend.InstructionSet$OR.$VALUES == orig(backend.InstructionSet$OR.$VALUES)
+backend.InstructionSet$OR.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$OR.$VALUES.getClass().getName() == orig(backend.InstructionSet$OR.$VALUES.getClass().getName())
+backend.InstructionSet$OR.$VALUES[] == orig(backend.InstructionSet$OR.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 3
+size(return[]) == 3
+backend.InstructionSet$OR.OR in return[]
+backend.InstructionSet$OR.ORH in return[]
+backend.InstructionSet$OR.ORU in return[]
+===========================================================================
+backend.InstructionSet$PRINT:::CLASS
+backend.InstructionSet$PRINT.PRINT has only one value
+backend.InstructionSet$PRINT.$VALUES has only one value
+backend.InstructionSet$PRINT.$VALUES.getClass().getName() == backend.InstructionSet$PRINT[].class
+backend.InstructionSet$PRINT.$VALUES[] contains no nulls and has only one value, of length 1
+backend.InstructionSet$PRINT.$VALUES[] elements has only one value
+backend.InstructionSet$PRINT.$VALUES[].getClass().getName() == [backend.InstructionSet.PRINT]
+backend.InstructionSet$PRINT.$VALUES[].getClass().getName() elements == backend.InstructionSet.PRINT.class
+size(backend.InstructionSet$PRINT.$VALUES[]) == 1
+===========================================================================
+backend.InstructionSet$PRINT:::OBJECT
+this has only one value
+===========================================================================
+backend.InstructionSet$PRINT.PRINT(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "PRINT"
+arg1 == 0
+===========================================================================
+backend.InstructionSet$PRINT.PRINT(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "PRINT"
+===========================================================================
+backend.InstructionSet$PRINT.values():::ENTER
+===========================================================================
+backend.InstructionSet$PRINT.values():::EXIT
+backend.InstructionSet$PRINT.PRINT == orig(backend.InstructionSet$PRINT.PRINT)
+backend.InstructionSet$PRINT.$VALUES == orig(backend.InstructionSet$PRINT.$VALUES)
+backend.InstructionSet$PRINT.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$PRINT.$VALUES.getClass().getName() == orig(backend.InstructionSet$PRINT.$VALUES.getClass().getName())
+backend.InstructionSet$PRINT.$VALUES[] == orig(backend.InstructionSet$PRINT.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+size(return[]) == 1
+backend.InstructionSet$PRINT.PRINT in return[]
+return[] elements == backend.InstructionSet$PRINT.PRINT
+===========================================================================
+backend.InstructionSet$RET:::CLASS
+backend.InstructionSet$RET.RET has only one value
+backend.InstructionSet$RET.$VALUES has only one value
+backend.InstructionSet$RET.$VALUES.getClass().getName() == backend.InstructionSet$RET[].class
+backend.InstructionSet$RET.$VALUES[] contains no nulls and has only one value, of length 1
+backend.InstructionSet$RET.$VALUES[] elements has only one value
+backend.InstructionSet$RET.$VALUES[].getClass().getName() == [backend.InstructionSet.RET]
+backend.InstructionSet$RET.$VALUES[].getClass().getName() elements == backend.InstructionSet.RET.class
+size(backend.InstructionSet$RET.$VALUES[]) == 1
+===========================================================================
+backend.InstructionSet$RET:::OBJECT
+this has only one value
+===========================================================================
+backend.InstructionSet$RET.RET(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "RET"
+arg1 == 0
+===========================================================================
+backend.InstructionSet$RET.RET(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "RET"
+===========================================================================
+backend.InstructionSet$RET.values():::ENTER
+===========================================================================
+backend.InstructionSet$RET.values():::EXIT
+backend.InstructionSet$RET.RET == orig(backend.InstructionSet$RET.RET)
+backend.InstructionSet$RET.$VALUES == orig(backend.InstructionSet$RET.$VALUES)
+backend.InstructionSet$RET.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$RET.$VALUES.getClass().getName() == orig(backend.InstructionSet$RET.$VALUES.getClass().getName())
+backend.InstructionSet$RET.$VALUES[] == orig(backend.InstructionSet$RET.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+size(return[]) == 1
+backend.InstructionSet$RET.RET in return[]
+return[] elements == backend.InstructionSet$RET.RET
+===========================================================================
+backend.InstructionSet$ST:::CLASS
+backend.InstructionSet$ST.ST has only one value
+backend.InstructionSet$ST.$VALUES has only one value
+backend.InstructionSet$ST.$VALUES.getClass().getName() == backend.InstructionSet$ST[].class
+backend.InstructionSet$ST.$VALUES[] contains no nulls and has only one value, of length 1
+backend.InstructionSet$ST.$VALUES[] elements has only one value
+backend.InstructionSet$ST.$VALUES[].getClass().getName() == [backend.InstructionSet.ST]
+backend.InstructionSet$ST.$VALUES[].getClass().getName() elements == backend.InstructionSet.ST.class
+size(backend.InstructionSet$ST.$VALUES[]) == 1
+===========================================================================
+backend.InstructionSet$ST:::OBJECT
+this has only one value
+===========================================================================
+backend.InstructionSet$ST.ST(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "ST"
+arg1 == 0
+===========================================================================
+backend.InstructionSet$ST.ST(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "ST"
+===========================================================================
+backend.InstructionSet$ST.values():::ENTER
+===========================================================================
+backend.InstructionSet$ST.values():::EXIT
+backend.InstructionSet$ST.ST == orig(backend.InstructionSet$ST.ST)
+backend.InstructionSet$ST.$VALUES == orig(backend.InstructionSet$ST.$VALUES)
+backend.InstructionSet$ST.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$ST.$VALUES.getClass().getName() == orig(backend.InstructionSet$ST.$VALUES.getClass().getName())
+backend.InstructionSet$ST.$VALUES[] == orig(backend.InstructionSet$ST.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+size(return[]) == 1
+backend.InstructionSet$ST.ST in return[]
+return[] elements == backend.InstructionSet$ST.ST
+===========================================================================
+backend.InstructionSet$SUB:::CLASS
+backend.InstructionSet$SUB.SUB has only one value
+backend.InstructionSet$SUB.SUBU has only one value
+backend.InstructionSet$SUB.SUBH has only one value
+backend.InstructionSet$SUB.$VALUES has only one value
+backend.InstructionSet$SUB.$VALUES.getClass().getName() == backend.InstructionSet$SUB[].class
+backend.InstructionSet$SUB.$VALUES[] contains no nulls and has only one value, of length 3
+backend.InstructionSet$SUB.$VALUES[].getClass().getName() == [backend.InstructionSet.SUB, backend.InstructionSet.SUB, backend.InstructionSet.SUB]
+backend.InstructionSet$SUB.$VALUES[].getClass().getName() elements == backend.InstructionSet.SUB.class
+size(backend.InstructionSet$SUB.$VALUES[]) == 3
+===========================================================================
+backend.InstructionSet$SUB:::OBJECT
+===========================================================================
+backend.InstructionSet$SUB.SUB(java.lang.String, int):::ENTER
+arg0.toString one of { "SUB", "SUBH", "SUBU" }
+arg1 one of { 0, 1, 2 }
+===========================================================================
+backend.InstructionSet$SUB.SUB(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "SUB", "SUBH", "SUBU" }
+===========================================================================
+backend.InstructionSet$SUB.values():::ENTER
+===========================================================================
+backend.InstructionSet$SUB.values():::EXIT
+backend.InstructionSet$SUB.SUB == orig(backend.InstructionSet$SUB.SUB)
+backend.InstructionSet$SUB.SUBU == orig(backend.InstructionSet$SUB.SUBU)
+backend.InstructionSet$SUB.SUBH == orig(backend.InstructionSet$SUB.SUBH)
+backend.InstructionSet$SUB.$VALUES == orig(backend.InstructionSet$SUB.$VALUES)
+backend.InstructionSet$SUB.$VALUES.getClass().getName() == return.getClass().getName()
+backend.InstructionSet$SUB.$VALUES.getClass().getName() == orig(backend.InstructionSet$SUB.$VALUES.getClass().getName())
+backend.InstructionSet$SUB.$VALUES[] == orig(backend.InstructionSet$SUB.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 3
+size(return[]) == 3
+backend.InstructionSet$SUB.SUB in return[]
+backend.InstructionSet$SUB.SUBU in return[]
+backend.InstructionSet$SUB.SUBH in return[]
+===========================================================================
+backend.Memory:::CLASS
+backend.Memory.memory has only one value
+backend.Memory.disp_mem == null
+backend.Memory.n has only one value
+===========================================================================
+backend.Memory:::OBJECT
+this has only one value
+===========================================================================
+backend.Memory.Memory():::EXIT
+===========================================================================
+backend.NFlagRegister:::CLASS
+backend.NFlagRegister.GT == 0
+backend.NFlagRegister.E == 0
+===========================================================================
+backend.NFlagRegister:::OBJECT
+this has only one value
+===========================================================================
+backend.NFlagRegister.NFlagRegister():::EXIT
+===========================================================================
+backend.Register:::CLASS
+backend.Register.r has only one value
+backend.Register.r.getClass().getName() == backend.Register_spec[].class
+backend.Register.r[] contains no nulls and has only one value, of length 17
+backend.Register.r[].getClass().getName() == [backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec, backend.Register_spec]
+backend.Register.r[].getClass().getName() elements == backend.Register_spec.class
+backend.Register.r[].b contains no nulls and has only one value, of length 17
+size(backend.Register.r[]) == 17
+===========================================================================
+backend.Register:::OBJECT
+this has only one value
+===========================================================================
+backend.Register.Register():::EXIT
+===========================================================================
+backend.Register_spec:::OBJECT
+this.b != null
+===========================================================================
+backend.Register_spec.Register_spec():::EXIT
+===========================================================================
+backend.instructions.ADD:::CLASS
+backend.instructions.ADD.no == 0
+backend.instructions.ADD.no2 == 0
+backend.instructions.ADD.no3 == 0
+backend.instructions.ADD.chck == 0
+backend.instructions.ADD.operand_2 == 0
+===========================================================================
+backend.instructions.ADD:::OBJECT
+===========================================================================
+backend.instructions.ADD.ADD():::EXIT
+===========================================================================
+backend.instructions.AND:::CLASS
+backend.instructions.AND.no == null
+backend.instructions.AND.no2 == null
+backend.instructions.AND.no3 == null
+backend.instructions.AND.operand_2 == 0
+===========================================================================
+backend.instructions.AND:::OBJECT
+===========================================================================
+backend.instructions.AND.AND():::EXIT
+===========================================================================
+backend.instructions.ASR:::CLASS
+backend.instructions.ASR.no == 0
+backend.instructions.ASR.no2 == 0
+===========================================================================
+backend.instructions.ASR:::OBJECT
+this has only one value
+===========================================================================
+backend.instructions.ASR.ASR():::EXIT
+===========================================================================
+backend.instructions.B:::OBJECT
+this has only one value
+===========================================================================
+backend.instructions.B.B():::EXIT
+===========================================================================
+backend.instructions.BEQ:::OBJECT
+this has only one value
+===========================================================================
+backend.instructions.BEQ.BEQ():::EXIT
+===========================================================================
+backend.instructions.BGT:::OBJECT
+this has only one value
+===========================================================================
+backend.instructions.BGT.BGT():::EXIT
+===========================================================================
+backend.instructions.CALL:::CLASS
+backend.instructions.CALL.linkregister has only one value
+===========================================================================
+backend.instructions.CALL:::OBJECT
+this has only one value
+===========================================================================
+backend.instructions.CALL.CALL():::EXIT
+===========================================================================
+backend.instructions.CMP:::CLASS
+backend.instructions.CMP.binaryconvert == null
+backend.instructions.CMP.no2 == 0
+backend.instructions.CMP.no3 == 0
+backend.instructions.CMP.chck == 0
+backend.instructions.CMP.b == 0
+backend.instructions.CMP.operand_2 == 0
+===========================================================================
+backend.instructions.CMP:::OBJECT
+===========================================================================
+backend.instructions.CMP.CMP():::EXIT
+===========================================================================
+backend.instructions.DIV:::CLASS
+backend.instructions.DIV.no == 0
+backend.instructions.DIV.no2 == 0
+===========================================================================
+backend.instructions.DIV:::OBJECT
+===========================================================================
+backend.instructions.DIV.DIV():::EXIT
+===========================================================================
+backend.instructions.LD:::OBJECT
+this has only one value
+===========================================================================
+backend.instructions.LD.LD():::EXIT
+===========================================================================
+backend.instructions.LSL:::CLASS
+backend.instructions.LSL.no == 0
+backend.instructions.LSL.no2 == 0
+===========================================================================
+backend.instructions.LSL:::OBJECT
+this has only one value
+===========================================================================
+backend.instructions.LSL.LSL():::EXIT
+===========================================================================
+backend.instructions.LSR:::CLASS
+backend.instructions.LSR.no == 0
+backend.instructions.LSR.no2 == 0
+===========================================================================
+backend.instructions.LSR:::OBJECT
+this has only one value
+===========================================================================
+backend.instructions.LSR.LSR():::EXIT
+===========================================================================
+backend.instructions.MOD:::CLASS
+backend.instructions.MOD.no == 0
+backend.instructions.MOD.no2 == 0
+===========================================================================
+backend.instructions.MOD:::OBJECT
+===========================================================================
+backend.instructions.MOD.MOD():::EXIT
+===========================================================================
+backend.instructions.MOV:::CLASS
+backend.instructions.MOV.no2 == 0
+backend.instructions.MOV.no3 == 0
+===========================================================================
+backend.instructions.MOV:::OBJECT
+===========================================================================
+backend.instructions.MOV.MOV():::EXIT
+===========================================================================
+backend.instructions.MUL:::CLASS
+backend.instructions.MUL.no == 0
+backend.instructions.MUL.no2 == 0
+backend.instructions.MUL.no3 == 0
+===========================================================================
+backend.instructions.MUL:::OBJECT
+===========================================================================
+backend.instructions.MUL.MUL():::EXIT
+===========================================================================
+backend.instructions.NOP:::OBJECT
+this has only one value
+===========================================================================
+backend.instructions.NOP.NOP():::EXIT
+===========================================================================
+backend.instructions.NOT:::CLASS
+backend.instructions.NOT.no == null
+backend.instructions.NOT.no2 == null
+backend.instructions.NOT.operand_2 == 0
+===========================================================================
+backend.instructions.NOT:::OBJECT
+===========================================================================
+backend.instructions.NOT.NOT():::EXIT
+===========================================================================
+backend.instructions.OR:::CLASS
+backend.instructions.OR.no == null
+backend.instructions.OR.no2 == null
+===========================================================================
+backend.instructions.OR:::OBJECT
+===========================================================================
+backend.instructions.OR.OR():::EXIT
+===========================================================================
+backend.instructions.PRINT:::OBJECT
+this has only one value
+===========================================================================
+backend.instructions.PRINT.PRINT():::EXIT
+===========================================================================
+backend.instructions.RET:::OBJECT
+this has only one value
+===========================================================================
+backend.instructions.RET.RET():::EXIT
+===========================================================================
+backend.instructions.ST:::OBJECT
+this has only one value
+===========================================================================
+backend.instructions.ST.ST():::EXIT
+===========================================================================
+backend.instructions.SUB:::CLASS
+backend.instructions.SUB.binaryconvert == null
+backend.instructions.SUB.no == 0
+backend.instructions.SUB.no2 == 0
+backend.instructions.SUB.no3 == 0
+backend.instructions.SUB.chck == 0
+===========================================================================
+backend.instructions.SUB:::OBJECT
+===========================================================================
+backend.instructions.SUB.SUB():::EXIT
+Exiting Daikon.

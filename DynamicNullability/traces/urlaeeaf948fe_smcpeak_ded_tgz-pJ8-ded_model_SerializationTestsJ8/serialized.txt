@@ -1,0 +1,4 @@
+FIELD	ded.model.RelationEndpoint	null	entity	null
+FIELD	ded.model.RelationEndpoint	null	pt	null
+METHOD	util.Util	copyArray(int[])	null	null
+FIELD	ded.model.RelationEndpoint	null	inheritance	null

@@ -1,0 +1,59 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 3 times.  Unmatched entries are ignored!
+Unterminated calls:
+  xscript.interactive.Main.main(java.lang.String[]) : 1 invocation
+  xscript.interactive.Main.run(java.lang.String[]) : 1 invocation
+  xscript.XScriptEngineFactory.getScriptEngine() : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+xscript.XArrayList:::OBJECT
+this.array.getClass().getName() == java.lang.String[].class
+this.array[].getClass().getName() elements == java.lang.String.class
+size(this.array[]) one of { 0, 1, 2 }
+===========================================================================
+xscript.XArrayList.XArrayList(java.lang.Object[]):::ENTER
+arg0.getClass().getName() == java.lang.String[].class
+size(arg0[]) one of { 0, 1, 2 }
+===========================================================================
+xscript.XArrayList.XArrayList(java.lang.Object[]):::EXIT
+this.array == orig(arg0)
+this.array.getClass().getName() == orig(arg0.getClass().getName())
+arg0[] == orig(arg0[])
+===========================================================================
+xscript.XScriptEngineFactory:::CLASS
+xscript.XScriptEngineFactory.PARAMETERS has only one value
+xscript.XScriptEngineFactory.PARAMETERS.getClass().getName() == java.util.HashMap.class
+xscript.XScriptEngineFactory.defaultEngineFactory has only one value
+===========================================================================
+xscript.XScriptEngineFactory:::OBJECT
+this has only one value
+===========================================================================
+xscript.XScriptEngineFactory.XScriptEngineFactory():::EXIT
+===========================================================================
+xscript.executils.Utils:::CLASS
+xscript.executils.Utils.console == null
+===========================================================================
+xscript.executils.Utils.getOwnName(java.lang.Class):::ENTER
+arg0 has only one value
+===========================================================================
+xscript.executils.Utils.getOwnName(java.lang.Class):::EXIT126
+===========================================================================
+xscript.executils.Utils.getOwnName(java.lang.Class):::EXIT
+xscript.executils.Utils.console == orig(xscript.executils.Utils.console)
+return has only one value
+return.toString == "url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8.jar"
+===========================================================================
+xscript.executils.Utils.initConsoleIfNeeded(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8.jar"
+===========================================================================
+xscript.executils.Utils.initConsoleIfNeeded(java.lang.String):::EXIT33
+===========================================================================
+xscript.executils.Utils.initConsoleIfNeeded(java.lang.String):::EXIT
+xscript.executils.Utils.console == orig(xscript.executils.Utils.console)
+arg0.toString == orig(arg0.toString)
+arg0.toString == "url5583f3dbb2_XOR19_XScript_tgz-pJ8-xscript_interactive_MainJ8.jar"
+Exiting Daikon.

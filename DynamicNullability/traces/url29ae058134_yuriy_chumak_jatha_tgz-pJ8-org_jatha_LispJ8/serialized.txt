@@ -1,0 +1,1 @@
+METHOD	org.jatha.util.SymbolTable	get(java.lang.String)	null	null

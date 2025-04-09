@@ -1,0 +1,5 @@
+METHOD	com.google.common.collect.BstMutationResult	getOriginalTarget()	null	null
+METHOD	ch.thn.util.tree.ListTreeIterator	internalPrevious(boolean)	null	null
+METHOD	com.google.common.collect.BstModificationResult	getOriginalTarget()	null	null
+METHOD	com.google.common.collect.TreeMultiset$1	computeNext(com.google.common.collect.BstInOrderPath)	null	null
+METHOD	ch.thn.util.tree.core.AbstractGenericTreeIterator	internalNext(boolean,boolean)	null	null

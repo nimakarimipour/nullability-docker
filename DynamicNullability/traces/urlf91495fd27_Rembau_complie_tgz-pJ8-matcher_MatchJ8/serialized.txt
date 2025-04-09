@@ -1,0 +1,3 @@
+METHOD	NFAToDNA.ToDFA	getNotMark()	null	null
+METHOD	NFAToDNA.ToDFA	getNewNode(java.util.TreeSet)	null	null
+METHOD	matcher.MatchGroups$MatchGroup	getString(java.lang.String)	null	null

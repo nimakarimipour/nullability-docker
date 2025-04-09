@@ -1,0 +1,6 @@
+METHOD	DATA.WeekTable	getMWWH()	null	null
+METHOD	DATA.Filler	findClassRoom(DATA.ClassType,DATA.Slot)	null	null
+FIELD	DATA.WeekTable	null	owner	null
+FIELD	DATA.DataStore	null	MWWH	null
+FIELD	DATA.WeekTable	null	defaultWeek	null
+METHOD	DATA.HashMap	get(java.lang.Object)	null	null

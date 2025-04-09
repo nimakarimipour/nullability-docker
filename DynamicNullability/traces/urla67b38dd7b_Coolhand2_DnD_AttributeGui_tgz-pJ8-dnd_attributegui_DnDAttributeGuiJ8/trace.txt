@@ -1,0 +1,1278 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 2 times.  Unmatched entries are ignored!
+Unterminated calls:
+  dnd.attributegui.DnDAttributeGui$1.run() : 1 invocation
+  dnd.attributegui.ui.MainInterface.MainInterface(dnd.attributegui.Character) : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+dnd.attributegui.Character:::CLASS
+dnd.attributegui.Character.CLASSES has only one value
+dnd.attributegui.Character.CLASSES.getClass().getName() == dnd.attributegui.classes.BaseClass[].class
+dnd.attributegui.Character.CLASSES[] contains no nulls and has only one value, of length 22
+dnd.attributegui.Character.CLASSES[].getClass().getName() == [dnd.attributegui.classes.Ardent, dnd.attributegui.classes.Avenger, dnd.attributegui.classes.Barbarian, dnd.attributegui.classes.Bard, dnd.attributegui.classes.Battlemind, dnd.attributegui.classes.Cleric, dnd.attributegui.classes.Druid, dnd.attributegui.classes.Fighter, dnd.attributegui.classes.Invoker, dnd.attributegui.classes.Monk, dnd.attributegui.classes.Paladin, dnd.attributegui.classes.Psion, dnd.attributegui.classes.Ranger, dnd.attributegui.classes.Rogue, dnd.attributegui.classes.RunePriest, dnd.attributegui.classes.Seeker, dnd.attributegui.classes.Shaman, dnd.attributegui.classes.Sorcerer, dnd.attributegui.classes.Warden, dnd.attributegui.classes.Warlock, dnd.attributegui.classes.Warlord, dnd.attributegui.classes.Wizard]
+dnd.attributegui.Character.CLASSES[]._ranks contains no nulls and has only one value, of length 22
+dnd.attributegui.Character.CLASSES[]._preferred contains no nulls and has only one value, of length 22
+dnd.attributegui.Character.RACES has only one value
+dnd.attributegui.Character.RACES.getClass().getName() == dnd.attributegui.races.BaseRace[].class
+dnd.attributegui.Character.RACES[] contains no nulls and has only one value, of length 26
+dnd.attributegui.Character.RACES[].getClass().getName() == [dnd.attributegui.races.Deva, dnd.attributegui.races.Dragonborn, dnd.attributegui.races.Dwarf, dnd.attributegui.races.Eladrin, dnd.attributegui.races.Elf, dnd.attributegui.races.Githzerai, dnd.attributegui.races.Githzerai, dnd.attributegui.races.Gnome, dnd.attributegui.races.Goliath, dnd.attributegui.races.HalfElf, dnd.attributegui.races.HalfOrc, dnd.attributegui.races.Halfling, dnd.attributegui.races.Human, dnd.attributegui.races.Human, dnd.attributegui.races.Human, dnd.attributegui.races.Human, dnd.attributegui.races.Human, dnd.attributegui.races.Human, dnd.attributegui.races.Minotaur, dnd.attributegui.races.Minotaur, dnd.attributegui.races.Shardmind, dnd.attributegui.races.Shardmind, dnd.attributegui.races.Shifter, dnd.attributegui.races.Tiefling, dnd.attributegui.races.Wilden, dnd.attributegui.races.Wilden]
+dnd.attributegui.Character.RACES[]._bonuses contains no nulls and has only one value, of length 26
+dnd.attributegui.Character.GENERATORS has only one value
+dnd.attributegui.Character.GENERATORS.getClass().getName() == dnd.attributegui.generators.BaseGenerator[].class
+dnd.attributegui.Character.GENERATORS[] contains no nulls and has only one value, of length 5
+dnd.attributegui.Character.GENERATORS[].getClass().getName() == [dnd.attributegui.generators.NormalSpread, dnd.attributegui.generators.SpecialSpread, dnd.attributegui.generators.DualSpecSpread, dnd.attributegui.generators.NormalRoll, dnd.attributegui.generators.PowerRoll]
+size(dnd.attributegui.Character.CLASSES[]) == 22
+size(dnd.attributegui.Character.RACES[]) == 26
+size(dnd.attributegui.Character.GENERATORS[]) == 5
+===========================================================================
+dnd.attributegui.Character:::OBJECT
+this has only one value
+this._listeners has only one value
+this._listeners[] == []
+this._listeners[].getClass().getName() == []
+this._listeners.getClass().getName() == java.util.ArrayList.class
+this._generator has only one value
+this._race has only one value
+this._race._bonuses has only one value
+this._race._bonuses[] == [0, 0, 0, 2, 2, 0]
+this._race._bonuses[] elements one of { 0, 2 }
+this._class has only one value
+this._class._ranks has only one value
+this._class._ranks[] == [0, 0, 0, 0, 0, 0]
+this._class._ranks[] elements == 0
+this._class._preferred has only one value
+this._class._preferred[] == [0, 1, 2]
+this._class._preferred[] elements one of { 0, 1, 2 }
+this._attributes == null
+this._level == 1
+this._classMap has only one value
+this._classMap[] contains no nulls and has only one value, of length 572
+this._classMap[].getClass().getName() == [dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap, dnd.attributegui.ClassMap]
+this._classMap[].getClass().getName() elements == dnd.attributegui.ClassMap.class
+size(this._race._bonuses[]) == 6
+size(this._class._ranks[]) == 6
+size(this._class._preferred[]) == 3
+size(this._classMap[]) == 572
+===========================================================================
+dnd.attributegui.Character.Character():::EXIT
+===========================================================================
+dnd.attributegui.ClassMap:::OBJECT
+this._class != null
+this._class._ranks != null
+this._class._ranks[] == [0, 0, 0, 0, 0, 0]
+this._class._ranks[] elements == 0
+this._class._preferred != null
+this._class._preferred[] == [0, 1, 2]
+this._class._preferred[] elements one of { 0, 1, 2 }
+this._class._preferred[] sorted by <
+this._race != null
+this._race._bonuses != null
+this._race._bonuses[] elements one of { 0, 2 }
+this._average one of { 14, 15, 16 }
+size(this._class._ranks[]) == 6
+size(this._class._preferred[]) == 3
+size(this._race._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.ClassMap.ClassMap(dnd.attributegui.classes.BaseClass, dnd.attributegui.races.BaseRace, long):::ENTER
+arg0 != null
+arg0._ranks != null
+arg0._ranks[] == [0, 0, 0, 0, 0, 0]
+arg0._ranks[] elements == 0
+arg0._preferred != null
+arg0._preferred[] == [0, 1, 2]
+arg0._preferred[] elements one of { 0, 1, 2 }
+arg0._preferred[] sorted by <
+arg1 != null
+arg1._bonuses != null
+arg1._bonuses[] elements one of { 0, 2 }
+arg2 one of { 14, 15, 16 }
+size(arg0._ranks[]) == 6
+size(arg0._preferred[]) == 3
+size(arg1._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.ClassMap.ClassMap(dnd.attributegui.classes.BaseClass, dnd.attributegui.races.BaseRace, long):::EXIT
+arg0._ranks == orig(arg0._ranks)
+arg0._ranks[] == orig(arg0._ranks[])
+arg0._preferred == orig(arg0._preferred)
+arg0._preferred[] == orig(arg0._preferred[])
+arg1._bonuses == orig(arg1._bonuses)
+arg1._bonuses[] == orig(arg1._bonuses[])
+arg0._ranks != null
+arg0._ranks[] == [0, 0, 0, 0, 0, 0]
+arg0._ranks[] elements == 0
+arg0._preferred != null
+arg0._preferred[] == [0, 1, 2]
+arg0._preferred[] elements one of { 0, 1, 2 }
+arg0._preferred[] sorted by <
+arg1._bonuses != null
+arg1._bonuses[] elements one of { 0, 2 }
+size(arg0._ranks[]) == 6
+size(arg0._preferred[]) == 3
+size(arg1._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.DnDAttributeGui$1:::OBJECT
+this has only one value
+===========================================================================
+dnd.attributegui.DnDAttributeGui$1.():::EXIT
+===========================================================================
+dnd.attributegui.DnDAttributeGui.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+dnd.attributegui.DnDAttributeGui.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+dnd.attributegui.classes.Ardent:::OBJECT
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Ardent.Ardent():::EXIT
+===========================================================================
+dnd.attributegui.classes.Ardent.getPreferred():::ENTER
+this has only one value
+this._ranks has only one value
+this._preferred has only one value
+===========================================================================
+dnd.attributegui.classes.Ardent.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+this._ranks has only one value
+this._preferred has only one value
+return != null
+return[] == [5, 2, 4]
+return[] elements one of { 2, 4, 5 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Ardent.getRanks():::ENTER
+this has only one value
+this._ranks has only one value
+this._preferred has only one value
+===========================================================================
+dnd.attributegui.classes.Ardent.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+this._ranks has only one value
+this._preferred has only one value
+return != null
+return[] == [3, 4, 1, 5, 2, 0]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Avenger:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Avenger.Avenger():::EXIT
+===========================================================================
+dnd.attributegui.classes.Avenger.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Avenger.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [4, 1, 3]
+return[] elements one of { 1, 3, 4 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Avenger.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Avenger.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [4, 1, 3, 2, 0, 5]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Barbarian:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Barbarian.Barbarian():::EXIT
+===========================================================================
+dnd.attributegui.classes.Barbarian.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Barbarian.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 2, 5]
+return[] elements one of { 0, 2, 5 }
+return[] sorted by <
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Barbarian.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Barbarian.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 3, 1, 4, 5, 2]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Bard:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Bard.Bard():::EXIT
+===========================================================================
+dnd.attributegui.classes.Bard.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Bard.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [5, 3, 2]
+return[] elements one of { 2, 3, 5 }
+return[] sorted by >
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Bard.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Bard.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [3, 4, 2, 1, 5, 0]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.BaseClass:::OBJECT
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.BaseClass.BaseClass():::EXIT
+===========================================================================
+dnd.attributegui.classes.Battlemind:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Battlemind.Battlemind():::EXIT
+===========================================================================
+dnd.attributegui.classes.Battlemind.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Battlemind.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [2, 4, 5]
+return[] elements one of { 2, 4, 5 }
+return[] sorted by <
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Battlemind.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Battlemind.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [3, 4, 0, 5, 1, 2]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Cleric:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Cleric.Cleric():::EXIT
+===========================================================================
+dnd.attributegui.classes.Cleric.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Cleric.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [4, 0, 5]
+return[] elements one of { 0, 4, 5 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Cleric.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Cleric.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [1, 4, 3, 5, 0, 2]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Druid:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Druid.Druid():::EXIT
+===========================================================================
+dnd.attributegui.classes.Druid.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Druid.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [4, 1, 2]
+return[] elements one of { 1, 2, 4 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Druid.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Druid.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [3, 1, 2, 4, 0, 5]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Fighter:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Fighter.Fighter():::EXIT
+===========================================================================
+dnd.attributegui.classes.Fighter.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Fighter.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 1, 4]
+return[] elements one of { 0, 1, 4 }
+return[] sorted by <
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Fighter.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Fighter.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 1, 3, 4, 2, 5]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Invoker:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Invoker.Invoker():::EXIT
+===========================================================================
+dnd.attributegui.classes.Invoker.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Invoker.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [4, 2, 3]
+return[] elements one of { 2, 3, 4 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Invoker.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Invoker.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [3, 4, 1, 2, 0, 5]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Monk:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Monk.Monk():::EXIT
+===========================================================================
+dnd.attributegui.classes.Monk.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Monk.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [1, 0, 4]
+return[] elements one of { 0, 1, 4 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Monk.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Monk.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [1, 0, 3, 4, 2, 5]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Paladin:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Paladin.Paladin():::EXIT
+===========================================================================
+dnd.attributegui.classes.Paladin.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Paladin.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 5, 4]
+return[] elements one of { 0, 4, 5 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Paladin.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Paladin.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 4, 3, 5, 2, 1]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Psion:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Psion.Psion():::EXIT
+===========================================================================
+dnd.attributegui.classes.Psion.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Psion.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [3, 5, 4]
+return[] elements one of { 3, 4, 5 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Psion.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Psion.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [5, 4, 3, 0, 2, 1]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Ranger:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Ranger.Ranger():::EXIT
+===========================================================================
+dnd.attributegui.classes.Ranger.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Ranger.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 1, 4]
+return[] elements one of { 0, 1, 4 }
+return[] sorted by <
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Ranger.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Ranger.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 1, 3, 4, 2, 5]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Rogue:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Rogue.Rogue():::EXIT
+===========================================================================
+dnd.attributegui.classes.Rogue.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Rogue.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [1, 0, 5]
+return[] elements one of { 0, 1, 5 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Rogue.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Rogue.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [1, 0, 3, 4, 5, 2]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.RunePriest:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.RunePriest.RunePriest():::EXIT
+===========================================================================
+dnd.attributegui.classes.RunePriest.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.RunePriest.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 2, 4]
+return[] elements one of { 0, 2, 4 }
+return[] sorted by <
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.RunePriest.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.RunePriest.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 3, 1, 4, 2, 5]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Seeker:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Seeker.Seeker():::EXIT
+===========================================================================
+dnd.attributegui.classes.Seeker.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Seeker.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [4, 0, 1]
+return[] elements one of { 0, 1, 4 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Seeker.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Seeker.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [1, 2, 3, 4, 0, 5]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Shaman:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Shaman.Shaman():::EXIT
+===========================================================================
+dnd.attributegui.classes.Shaman.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Shaman.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [4, 2, 3]
+return[] elements one of { 2, 3, 4 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Shaman.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Shaman.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [3, 4, 1, 2, 0, 5]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Sorcerer:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Sorcerer.Sorcerer():::EXIT
+===========================================================================
+dnd.attributegui.classes.Sorcerer.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Sorcerer.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [5, 1, 0]
+return[] elements one of { 0, 1, 5 }
+return[] sorted by >
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Sorcerer.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Sorcerer.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [2, 1, 3, 4, 5, 0]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Warden:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Warden.Warden():::EXIT
+===========================================================================
+dnd.attributegui.classes.Warden.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Warden.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 2, 4]
+return[] elements one of { 0, 2, 4 }
+return[] sorted by <
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Warden.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Warden.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 3, 1, 4, 2, 5]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Warlock:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Warlock.Warlock():::EXIT
+===========================================================================
+dnd.attributegui.classes.Warlock.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Warlock.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [5, 2, 3]
+return[] elements one of { 2, 3, 5 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Warlock.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Warlock.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [3, 4, 1, 2, 5, 0]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Warlord:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Warlord.Warlord():::EXIT
+===========================================================================
+dnd.attributegui.classes.Warlord.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Warlord.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 3, 5]
+return[] elements one of { 0, 3, 5 }
+return[] sorted by <
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Warlord.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Warlord.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [0, 4, 3, 1, 5, 2]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.classes.Wizard:::OBJECT
+this has only one value
+this._ranks has only one value
+this._ranks != null
+this._ranks[] == [0, 0, 0, 0, 0, 0]
+this._ranks[] elements == 0
+this._preferred has only one value
+this._preferred != null
+this._preferred[] == [0, 1, 2]
+this._preferred[] elements one of { 0, 1, 2 }
+this._preferred[] sorted by <
+size(this._ranks[]) == 6
+size(this._preferred[]) == 3
+===========================================================================
+dnd.attributegui.classes.Wizard.Wizard():::EXIT
+===========================================================================
+dnd.attributegui.classes.Wizard.getPreferred():::ENTER
+===========================================================================
+dnd.attributegui.classes.Wizard.getPreferred():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [3, 4, 1]
+return[] elements one of { 1, 3, 4 }
+size(return[]) == 3
+===========================================================================
+dnd.attributegui.classes.Wizard.getRanks():::ENTER
+===========================================================================
+dnd.attributegui.classes.Wizard.getRanks():::EXIT
+this._ranks == orig(this._ranks)
+this._ranks[] == orig(this._ranks[])
+this._preferred == orig(this._preferred)
+this._preferred[] == orig(this._preferred[])
+return != null
+return[] == [4, 2, 3, 0, 1, 5]
+return[] elements >= 0
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.generators.BaseGenerator:::OBJECT
+===========================================================================
+dnd.attributegui.generators.BaseGenerator.BaseGenerator():::EXIT
+===========================================================================
+dnd.attributegui.generators.DualSpecSpread:::OBJECT
+this has only one value
+===========================================================================
+dnd.attributegui.generators.DualSpecSpread.DualSpecSpread():::EXIT
+===========================================================================
+dnd.attributegui.generators.NormalRoll:::OBJECT
+this has only one value
+===========================================================================
+dnd.attributegui.generators.NormalRoll.NormalRoll():::EXIT
+===========================================================================
+dnd.attributegui.generators.NormalSpread:::OBJECT
+===========================================================================
+dnd.attributegui.generators.NormalSpread.NormalSpread():::EXIT
+===========================================================================
+dnd.attributegui.generators.PowerRoll:::OBJECT
+this has only one value
+===========================================================================
+dnd.attributegui.generators.PowerRoll.PowerRoll():::EXIT
+===========================================================================
+dnd.attributegui.generators.SpecialSpread:::OBJECT
+===========================================================================
+dnd.attributegui.generators.SpecialSpread.SpecialSpread():::EXIT
+===========================================================================
+dnd.attributegui.generators.SpecialSpread.getAttributes():::ENTER
+this has only one value
+===========================================================================
+dnd.attributegui.generators.SpecialSpread.getAttributes():::EXIT
+return != null
+return[] == [18, 14, 11, 10, 10, 8]
+return[] sorted by >=
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.races.BaseRace:::OBJECT
+this._bonuses != null
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.BaseRace.BaseRace(int):::ENTER
+===========================================================================
+dnd.attributegui.races.BaseRace.BaseRace(int):::EXIT
+this._bonuses[orig(arg0)] == 2
+===========================================================================
+dnd.attributegui.races.BaseRace.BaseRace(int, int):::ENTER
+arg0 >= 0
+arg0 != arg1
+===========================================================================
+dnd.attributegui.races.BaseRace.BaseRace(int, int):::EXIT
+this._bonuses[orig(arg0)] == this._bonuses[orig(arg1)]
+this._bonuses[orig(arg0)] == 2
+this._bonuses[] elements <= this._bonuses[orig(arg0)]
+orig(arg0) < size(this._bonuses[])-1
+orig(arg1) <= size(this._bonuses[])-1
+this._bonuses[orig(arg0)] >= this._bonuses[orig(arg1)-1]
+===========================================================================
+dnd.attributegui.races.BaseRace.getBonuses():::ENTER
+===========================================================================
+dnd.attributegui.races.BaseRace.getBonuses():::EXIT
+this._bonuses == orig(this._bonuses)
+this._bonuses[] == orig(this._bonuses[])
+return != null
+return[] elements one of { 0, 2 }
+size(return[]) == 6
+===========================================================================
+dnd.attributegui.races.Deva:::OBJECT
+this._bonuses[] == [0, 0, 0, 2, 2, 0]
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.Deva.Deva():::EXIT
+===========================================================================
+dnd.attributegui.races.Dragonborn:::OBJECT
+this has only one value
+this._bonuses has only one value
+this._bonuses[] == [2, 0, 0, 0, 0, 2]
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.Dragonborn.Dragonborn():::EXIT
+===========================================================================
+dnd.attributegui.races.Dwarf:::OBJECT
+this has only one value
+this._bonuses has only one value
+this._bonuses[] == [0, 0, 2, 0, 2, 0]
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.Dwarf.Dwarf():::EXIT
+===========================================================================
+dnd.attributegui.races.Eladrin:::OBJECT
+this has only one value
+this._bonuses has only one value
+this._bonuses[] == [0, 2, 0, 2, 0, 0]
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.Eladrin.Eladrin():::EXIT
+===========================================================================
+dnd.attributegui.races.Elf:::OBJECT
+this has only one value
+this._bonuses has only one value
+this._bonuses[] == [0, 2, 0, 0, 2, 0]
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.Elf.Elf():::EXIT
+===========================================================================
+dnd.attributegui.races.Githzerai:::OBJECT
+this._i one of { 1, 3 }
+this._bonuses[] elements one of { 0, 2 }
+this._bonuses[] one of { [0, 0, 0, 2, 2, 0], [0, 2, 0, 0, 2, 0] }
+size(this._bonuses[]) == 6
+this._bonuses[this._i] == 2
+this._bonuses[this._i-1] == 0
+===========================================================================
+dnd.attributegui.races.Githzerai.Githzerai(int):::ENTER
+arg0 one of { 1, 3 }
+===========================================================================
+dnd.attributegui.races.Githzerai.Githzerai(int):::EXIT
+this._i == orig(arg0)
+===========================================================================
+dnd.attributegui.races.Gnome:::OBJECT
+this has only one value
+this._bonuses has only one value
+this._bonuses[] == [0, 0, 0, 2, 0, 2]
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.Gnome.Gnome():::EXIT
+===========================================================================
+dnd.attributegui.races.Goliath:::OBJECT
+this has only one value
+this._bonuses has only one value
+this._bonuses[] == [2, 0, 2, 0, 0, 0]
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.Goliath.Goliath():::EXIT
+===========================================================================
+dnd.attributegui.races.HalfElf:::OBJECT
+this has only one value
+this._bonuses has only one value
+this._bonuses[] == [0, 0, 2, 0, 0, 2]
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.HalfElf.HalfElf():::EXIT
+===========================================================================
+dnd.attributegui.races.HalfOrc:::OBJECT
+this has only one value
+this._bonuses has only one value
+this._bonuses[] == [2, 2, 0, 0, 0, 0]
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.HalfOrc.HalfOrc():::EXIT
+===========================================================================
+dnd.attributegui.races.Halfling:::OBJECT
+this has only one value
+this._bonuses has only one value
+this._bonuses[] == [0, 2, 0, 0, 0, 2]
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.Halfling.Halfling():::EXIT
+===========================================================================
+dnd.attributegui.races.Human:::OBJECT
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+this._bonuses[this._i] == 2
+===========================================================================
+dnd.attributegui.races.Human.Human(int):::ENTER
+===========================================================================
+dnd.attributegui.races.Human.Human(int):::EXIT
+this._i == orig(arg0)
+===========================================================================
+dnd.attributegui.races.Minotaur:::OBJECT
+this._i one of { 2, 4 }
+this._bonuses[] elements one of { 0, 2 }
+this._bonuses[] one of { [2, 0, 0, 0, 2, 0], [2, 0, 2, 0, 0, 0] }
+size(this._bonuses[]) == 6
+this._bonuses[this._i] == 2
+this._bonuses[this._i-1] == 0
+===========================================================================
+dnd.attributegui.races.Minotaur.Minotaur(int):::ENTER
+arg0 one of { 2, 4 }
+===========================================================================
+dnd.attributegui.races.Minotaur.Minotaur(int):::EXIT
+this._i == orig(arg0)
+===========================================================================
+dnd.attributegui.races.Shardmind:::OBJECT
+this._i one of { 4, 5 }
+this._bonuses[] elements one of { 0, 2 }
+this._bonuses[] one of { [0, 0, 0, 2, 0, 2], [0, 0, 0, 2, 2, 0] }
+size(this._bonuses[]) == 6
+this._bonuses[this._i] == 2
+===========================================================================
+dnd.attributegui.races.Shardmind.Shardmind(int):::ENTER
+arg0 one of { 4, 5 }
+===========================================================================
+dnd.attributegui.races.Shardmind.Shardmind(int):::EXIT
+this._i == orig(arg0)
+===========================================================================
+dnd.attributegui.races.Shifter:::OBJECT
+this has only one value
+this._bonuses has only one value
+this._bonuses[] == [2, 0, 0, 0, 2, 0]
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.Shifter.Shifter():::EXIT
+===========================================================================
+dnd.attributegui.races.Tiefling:::OBJECT
+this has only one value
+this._bonuses has only one value
+this._bonuses[] == [2, 0, 0, 0, 0, 2]
+this._bonuses[] elements one of { 0, 2 }
+size(this._bonuses[]) == 6
+===========================================================================
+dnd.attributegui.races.Tiefling.Tiefling():::EXIT
+===========================================================================
+dnd.attributegui.races.Wilden:::OBJECT
+this._i one of { 1, 2 }
+this._bonuses[] elements one of { 0, 2 }
+this._bonuses[] one of { [0, 0, 2, 0, 2, 0], [0, 2, 0, 0, 2, 0] }
+size(this._bonuses[]) == 6
+this._bonuses[this._i] == 2
+this._bonuses[this._i-1] == 0
+===========================================================================
+dnd.attributegui.races.Wilden.Wilden(int):::ENTER
+arg0 one of { 1, 2 }
+===========================================================================
+dnd.attributegui.races.Wilden.Wilden(int):::EXIT
+this._i == orig(arg0)
+Exiting Daikon.

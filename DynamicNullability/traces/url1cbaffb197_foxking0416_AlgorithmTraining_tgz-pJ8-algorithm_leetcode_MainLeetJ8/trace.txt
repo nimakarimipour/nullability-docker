@@ -1,0 +1,2129 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+algorithm.leetcode.LeetTest$1:::OBJECT
+this has only one value
+===========================================================================
+algorithm.leetcode.LeetTest$1.():::EXIT
+===========================================================================
+algorithm.leetcode.LeetTest$1.compare(java.lang.String, java.lang.String):::ENTER
+===========================================================================
+algorithm.leetcode.LeetTest$1.compare(java.lang.String, java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+===========================================================================
+algorithm.leetcode.LeetTest.addBinaryTest(java.lang.String, java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "1"
+arg1 has only one value
+arg1.toString == "11"
+===========================================================================
+algorithm.leetcode.LeetTest.addBinaryTest(java.lang.String, java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg0.toString == "1"
+arg1.toString == "11"
+return has only one value
+return.toString == "100"
+===========================================================================
+algorithm.leetcode.LeetTest.anagrams(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] contains no nulls and has only one value, of length 7
+arg0[].toString == [dog, tcc, god, cat, tca, ogd, odg]
+size(arg0[]) == 7
+===========================================================================
+algorithm.leetcode.LeetTest.anagrams(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 7
+arg0[].toString == [dog, tcc, god, cat, tca, ogd, odg]
+return has only one value
+return[] contains no nulls and has only one value, of length 6
+return[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+return[].getClass().getName() elements == java.lang.String.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 6
+===========================================================================
+algorithm.leetcode.LeetTest.atoi(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "-+2"
+===========================================================================
+algorithm.leetcode.LeetTest.atoi(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "-+2"
+return == 0
+===========================================================================
+algorithm.leetcode.LeetTest.calculateMinimumHP(int[][]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == int[][].class
+arg0[] contains no nulls and has only one value, of length 3
+size(arg0[]) == 3
+===========================================================================
+algorithm.leetcode.LeetTest.calculateMinimumHP(int[][]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 3
+return == 7
+===========================================================================
+algorithm.leetcode.LeetTest.canJump(int[]):::ENTER
+arg0 has only one value
+arg0[] == [3, 2, 1, 0, 4]
+size(arg0[]) == 5
+size(arg0[])-1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.canJump(int[]):::EXIT2261
+===========================================================================
+algorithm.leetcode.LeetTest.canJump(int[]):::EXIT2261;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.canJump(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [3, 2, 1, 0, 4]
+return == false
+size(arg0[])-1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.canJump(int[]):::EXIT;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.candy(int[]):::ENTER
+arg0 has only one value
+arg0[] == [1, 2]
+arg0[] elements one of { 1, 2 }
+size(arg0[]) == 2
+===========================================================================
+algorithm.leetcode.LeetTest.candy(int[]):::EXIT4310
+===========================================================================
+algorithm.leetcode.LeetTest.candy(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [1, 2]
+arg0[] elements one of { 1, 2 }
+return == 3
+===========================================================================
+algorithm.leetcode.LeetTest.combinationSum(int[], int):::ENTER
+arg0 has only one value
+arg0[] == [2, 3, 6, 7]
+arg1 == 7
+size(arg0[]) == 4
+arg1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.combinationSum(int[], int):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [2, 3, 6, 7]
+return has only one value
+return[] contains no nulls and has only one value, of length 2
+return[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList]
+return[].getClass().getName() elements == java.util.ArrayList.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 2
+orig(arg1) in arg0[]
+return.getClass().getName() in return[].getClass().getName()
+===========================================================================
+algorithm.leetcode.LeetTest.combinationSum2(int[], int):::ENTER
+arg0 has only one value
+arg0[] == [10, 1, 2, 7, 6, 1, 5]
+arg1 == 8
+size(arg0[]) == 7
+===========================================================================
+algorithm.leetcode.LeetTest.combinationSum2(int[], int):::EXIT
+arg0[] == [1, 1, 2, 5, 6, 7, 10]
+return has only one value
+return[] contains no nulls and has only one value, of length 4
+return[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+return[].getClass().getName() elements == java.util.ArrayList.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 4
+return.getClass().getName() in return[].getClass().getName()
+===========================================================================
+algorithm.leetcode.LeetTest.combinationSum2Helper(java.util.List, java.util.List, int[], int, int):::ENTER
+arg0.getClass().getName() == arg1.getClass().getName()
+arg0 has only one value
+arg0 != null
+arg0[] elements != null
+arg0[].getClass().getName() elements == java.util.ArrayList.class
+arg0.getClass().getName() == java.util.ArrayList.class
+arg1 != null
+arg1[] elements != null
+arg1[].getClass().getName() elements == java.lang.Integer.class
+arg2 has only one value
+arg2 != null
+arg2[] == [1, 1, 2, 5, 6, 7, 10]
+arg2[] elements >= 1
+arg2[] sorted by <=
+arg3 >= 1
+size(arg2[]) == 7
+arg4 <= size(arg2[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.combinationSum2Helper(java.util.List, java.util.List, int[], int, int):::EXIT
+arg1[] == orig(arg1[])
+arg2[] == orig(arg2[])
+arg0[] elements != null
+arg0[].getClass().getName() elements == java.util.ArrayList.class
+arg1[] elements != null
+arg1[].getClass().getName() elements == java.lang.Integer.class
+arg2[] == [1, 1, 2, 5, 6, 7, 10]
+arg2[] elements >= 1
+arg2[] sorted by <=
+orig(arg4) <= size(arg2[])-1
+size(arg0[])-1 >= orig(size(arg0[]))-1
+===========================================================================
+algorithm.leetcode.LeetTest.combinationSumHelper(java.util.List, java.util.List, int[], int, int):::ENTER
+arg0.getClass().getName() == arg1.getClass().getName()
+arg0 has only one value
+arg0[] elements has only one value
+arg0[].getClass().getName() elements == java.util.ArrayList.class
+arg0[].getClass().getName() one of { [], [java.util.ArrayList] }
+arg0.getClass().getName() == java.util.ArrayList.class
+arg1[].getClass().getName() elements == java.lang.Integer.class
+arg2 has only one value
+arg2[] == [2, 3, 6, 7]
+arg2[] elements >= 2
+arg2[] sorted by <
+arg3 >= 1
+arg4 one of { 0, 1, 2 }
+size(arg0[]) one of { 0, 1 }
+size(arg2[]) == 4
+arg2[arg4] one of { 2, 3, 6 }
+arg3 != arg2[arg4]
+arg4 < size(arg2[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.combinationSumHelper(java.util.List, java.util.List, int[], int, int):::EXIT
+arg1[] == orig(arg1[])
+arg2[] == orig(arg2[])
+arg0[].getClass().getName() elements == java.util.ArrayList.class
+arg1[].getClass().getName() elements == java.lang.Integer.class
+arg2[] == [2, 3, 6, 7]
+arg2[] elements >= 2
+arg2[] sorted by <
+arg2[orig(arg4)] one of { 2, 3, 6 }
+orig(arg3) != arg2[orig(arg4)]
+orig(arg4) < size(arg2[])-1
+size(arg0[])-1 >= orig(size(arg0[]))-1
+===========================================================================
+algorithm.leetcode.LeetTest.combine(int, int):::ENTER
+arg0 == 4
+arg1 == 3
+===========================================================================
+algorithm.leetcode.LeetTest.combine(int, int):::EXIT
+return has only one value
+return[] contains no nulls and has only one value, of length 4
+return[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+return[].getClass().getName() elements == java.util.ArrayList.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 4
+return.getClass().getName() in return[].getClass().getName()
+===========================================================================
+algorithm.leetcode.LeetTest.combineHelper(int, int, int, java.util.ArrayList):::ENTER
+arg0 == 4
+arg1 >= 0
+arg3 has only one value
+arg3 != null
+arg3[] elements != null
+arg3[].getClass().getName() elements == java.lang.Integer.class
+===========================================================================
+algorithm.leetcode.LeetTest.combineHelper(int, int, int, java.util.ArrayList):::EXIT943
+arg3[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer]
+return[].getClass().getName() == [java.util.ArrayList]
+orig(arg1) == 0
+orig(arg2) one of { 4, 5 }
+size(return[]) == 1
+orig(size(arg3[])) == 3
+return.getClass().getName() in return[].getClass().getName()
+===========================================================================
+algorithm.leetcode.LeetTest.combineHelper(int, int, int, java.util.ArrayList):::EXIT953
+orig(arg1) one of { 1, 2, 3 }
+orig(size(arg3[])) one of { 0, 1, 2 }
+===========================================================================
+algorithm.leetcode.LeetTest.combineHelper(int, int, int, java.util.ArrayList):::EXIT
+arg3[] == orig(arg3[])
+(orig(arg1) == 0)  <==>  (orig(size(arg3[])) == 3)
+(orig(arg1) == 0)  ==>  (arg3[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer])
+(orig(arg1) == 0)  ==>  (orig(arg2) one of { 4, 5 })
+(orig(arg1) == 0)  ==>  (return.getClass().getName() in return[].getClass().getName())
+(orig(arg1) == 0)  ==>  (return[].getClass().getName() == [java.util.ArrayList])
+(orig(arg1) == 0)  ==>  (size(return[]) == 1)
+(orig(arg1) one of { 1, 2, 3 })  <==>  (orig(size(arg3[])) one of { 0, 1, 2 })
+arg3[] elements != null
+arg3[].getClass().getName() elements == java.lang.Integer.class
+return != null
+return[] elements != null
+return[].getClass().getName() elements == java.util.ArrayList.class
+return.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+algorithm.leetcode.LeetTest.compareVersion(java.lang.String, java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "1"
+arg1 has only one value
+arg1.toString == "1.0.1"
+===========================================================================
+algorithm.leetcode.LeetTest.compareVersion(java.lang.String, java.lang.String):::EXIT3589
+===========================================================================
+algorithm.leetcode.LeetTest.compareVersion(java.lang.String, java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "1"
+return == -1
+===========================================================================
+algorithm.leetcode.LeetTest.convert(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "abcdefghijklmnopqrstu"
+arg1 == 2
+===========================================================================
+algorithm.leetcode.LeetTest.convert(java.lang.String, int):::EXIT3660
+===========================================================================
+algorithm.leetcode.LeetTest.convert(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "abcdefghijklmnopqrstu"
+return has only one value
+return.toString == "acegikmoqsubdfhjlnprt"
+===========================================================================
+algorithm.leetcode.LeetTest.convertToTitle(int):::ENTER
+arg0 == 29
+===========================================================================
+algorithm.leetcode.LeetTest.convertToTitle(int):::EXIT
+return has only one value
+return.toString == "AC"
+===========================================================================
+algorithm.leetcode.LeetTest.countAndSay(int):::ENTER
+arg0 == 9
+===========================================================================
+algorithm.leetcode.LeetTest.countAndSay(int):::EXIT
+return has only one value
+return.toString == "31131211131221"
+===========================================================================
+algorithm.leetcode.LeetTest.divide(int, int):::ENTER
+arg0 == 1100540749
+arg1 == -1090366779
+===========================================================================
+algorithm.leetcode.LeetTest.divide(int, int):::EXIT2156
+===========================================================================
+algorithm.leetcode.LeetTest.divide(int, int):::EXIT
+return == -1
+===========================================================================
+algorithm.leetcode.LeetTest.evalRPN(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] contains no nulls and has only one value, of length 3
+arg0[].toString == [3, -4, +]
+arg0[].toString elements one of { "+", "-4", "3" }
+size(arg0[]) == 3
+===========================================================================
+algorithm.leetcode.LeetTest.evalRPN(java.lang.String[]):::EXIT1529
+===========================================================================
+algorithm.leetcode.LeetTest.evalRPN(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 3
+arg0[].toString == [3, -4, +]
+arg0[].toString elements one of { "+", "-4", "3" }
+return == -1
+===========================================================================
+algorithm.leetcode.LeetTest.exist(char[][], java.lang.String):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == char[][].class
+arg0[] contains no nulls and has only one value, of length 3
+arg1 has only one value
+arg1.toString == "abcb"
+size(arg0[]) == 3
+===========================================================================
+algorithm.leetcode.LeetTest.exist(char[][], java.lang.String):::EXIT2924
+===========================================================================
+algorithm.leetcode.LeetTest.exist(char[][], java.lang.String):::EXIT2924;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.exist(char[][], java.lang.String):::EXIT
+arg0[] == orig(arg0[])
+arg1.toString == orig(arg1.toString)
+arg0[] contains no nulls and has only one value, of length 3
+arg1.toString == "abcb"
+return == false
+===========================================================================
+algorithm.leetcode.LeetTest.exist(char[][], java.lang.String):::EXIT;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.existHelper(char[][], java.lang.String, int, int):::ENTER
+arg0 has only one value
+arg0 != null
+arg0.getClass().getName() == char[][].class
+arg0[] contains no nulls and has only one value, of length 3
+arg0[] elements != null
+arg1 != null
+arg2 >= 0
+arg3 one of { 0, 1, 2 }
+size(arg0[]) == 3
+arg3 <= size(arg0[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.existHelper(char[][], java.lang.String, int, int):::EXIT2932
+===========================================================================
+algorithm.leetcode.LeetTest.existHelper(char[][], java.lang.String, int, int):::EXIT2932;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.existHelper(char[][], java.lang.String, int, int):::EXIT2965
+arg1.toString one of { "abcb", "bcb", "cb" }
+orig(arg2) one of { 0, 1, 2 }
+orig(arg3) one of { 0, 2 }
+===========================================================================
+algorithm.leetcode.LeetTest.existHelper(char[][], java.lang.String, int, int):::EXIT2965;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.existHelper(char[][], java.lang.String, int, int):::EXIT
+arg0[] == orig(arg0[])
+arg1.toString == orig(arg1.toString)
+arg0[] contains no nulls and has only one value, of length 3
+arg0[] elements != null
+return == false
+orig(arg3) <= size(arg0[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.existHelper(char[][], java.lang.String, int, int):::EXIT;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.expand(java.lang.String, int, int):::ENTER
+arg0 has only one value
+arg0 != null
+arg0.toString == "aabcksvregervdgdfg"
+arg1 <= arg2
+===========================================================================
+algorithm.leetcode.LeetTest.expand(java.lang.String, int, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "aabcksvregervdgdfg"
+return != null
+===========================================================================
+algorithm.leetcode.LeetTest.findMin(int[]):::ENTER
+arg0 has only one value
+arg0[] == [3, 1, 1, 2, 2]
+arg0[] elements one of { 1, 2, 3 }
+size(arg0[]) == 5
+===========================================================================
+algorithm.leetcode.LeetTest.findMin(int[]):::EXIT994
+===========================================================================
+algorithm.leetcode.LeetTest.findMin(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [3, 1, 1, 2, 2]
+arg0[] elements one of { 1, 2, 3 }
+return == 1
+return in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.findPeakElement(int[]):::ENTER
+arg0 has only one value
+arg0[] == [1, 2]
+arg0[] elements one of { 1, 2 }
+size(arg0[]) == 2
+===========================================================================
+algorithm.leetcode.LeetTest.findPeakElement(int[]):::EXIT1654
+===========================================================================
+algorithm.leetcode.LeetTest.findPeakElement(int[]):::EXIT
+arg0[] == orig(arg0[])
+return == size(arg0[])-1
+return == orig(size(arg0[]))-1
+arg0[] == [1, 2]
+arg0[] elements one of { 1, 2 }
+arg0[return] == 2
+arg0[return-1] == 1
+===========================================================================
+algorithm.leetcode.LeetTest.findRepeatedDnaSequences(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
+===========================================================================
+algorithm.leetcode.LeetTest.findRepeatedDnaSequences(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
+return has only one value
+return[] contains no nulls and has only one value, of length 2
+return[].getClass().getName() == [java.lang.String, java.lang.String]
+return[].getClass().getName() elements == java.lang.String.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 2
+===========================================================================
+algorithm.leetcode.LeetTest.findSingleNumber(int[]):::ENTER
+arg0 has only one value
+arg0[] == [5, 9, 3, 4, 1, 5, 2, 4, 7, 3, 2, 9, 7]
+size(arg0[]) == 13
+===========================================================================
+algorithm.leetcode.LeetTest.findSingleNumber(int[]):::EXIT184
+===========================================================================
+algorithm.leetcode.LeetTest.findSingleNumber(int[]):::EXIT
+arg0[] == [1, 2, 2, 3, 3, 4, 4, 5, 5, 7, 7, 9, 9]
+return == 1
+return in arg0[]
+return in orig(arg0[])
+===========================================================================
+algorithm.leetcode.LeetTest.findSingleNumberPart2Solution2(int[]):::ENTER
+arg0 has only one value
+arg0[] == [5, 2, 9, 7, 3, 4, 9, 1, 5, 3, 4, 2, 4, 5, 7, 3, 2, 9, 7]
+size(arg0[]) == 19
+===========================================================================
+algorithm.leetcode.LeetTest.findSingleNumberPart2Solution2(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [5, 2, 9, 7, 3, 4, 9, 1, 5, 3, 4, 2, 4, 5, 7, 3, 2, 9, 7]
+return == 1
+return in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.findSingleNumberPart2Test():::EXIT
+return == 1
+===========================================================================
+algorithm.leetcode.LeetTest.findSingleNumberSolution2(int[]):::ENTER
+arg0 has only one value
+arg0[] == [5, 9, 3, 4, 1, 5, 2, 4, 7, 3, 2, 9, 7]
+size(arg0[]) == 13
+===========================================================================
+algorithm.leetcode.LeetTest.findSingleNumberSolution2(int[]):::EXIT203
+===========================================================================
+algorithm.leetcode.LeetTest.findSingleNumberSolution2(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [5, 9, 3, 4, 1, 5, 2, 4, 7, 3, 2, 9, 7]
+return == 1
+===========================================================================
+algorithm.leetcode.LeetTest.findSingleNumberSolution3(int[]):::ENTER
+arg0 has only one value
+arg0[] == [5, 9, 3, 4, 1, 5, 2, 4, 7, 3, 2, 9, 7]
+size(arg0[]) == 13
+===========================================================================
+algorithm.leetcode.LeetTest.findSingleNumberSolution3(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [5, 9, 3, 4, 1, 5, 2, 4, 7, 3, 2, 9, 7]
+return == 1
+return in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.findSingleNumberTest():::EXIT
+return == 1
+===========================================================================
+algorithm.leetcode.LeetTest.firstMissingPositive(int[]):::ENTER
+arg0 has only one value
+arg0[] == [3, 7, -1, 1]
+size(arg0[]) == 4
+size(arg0[])-1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.firstMissingPositive(int[]):::EXIT4758
+===========================================================================
+algorithm.leetcode.LeetTest.firstMissingPositive(int[]):::EXIT
+size(arg0[])-1 == arg0[return]
+arg0[return-1] == orig(arg0[post(return)-1])
+arg0[] == [1, 7, 3, -1]
+return == 2
+arg0[return-1] == 7
+orig(arg0[post(return)]) == -1
+orig(arg0[post(return)]) in arg0[]
+size(arg0[])-1 in orig(arg0[])
+===========================================================================
+algorithm.leetcode.LeetTest.fourSum(int[], int):::ENTER
+arg0 has only one value
+arg0[] == [0, 0, 0, 0]
+arg0[] elements == 0
+arg1 == 0
+size(arg0[]) == 4
+arg0[] elements == arg1
+arg1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.fourSum(int[], int):::EXIT1417
+===========================================================================
+algorithm.leetcode.LeetTest.fourSum(int[], int):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [0, 0, 0, 0]
+arg0[] elements == 0
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+return[].getClass().getName() == [java.util.ArrayList]
+return[].getClass().getName() elements == java.util.ArrayList.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 1
+arg0[] elements == orig(arg1)
+orig(arg1) in arg0[]
+return.getClass().getName() in return[].getClass().getName()
+===========================================================================
+algorithm.leetcode.LeetTest.generateMatrix(int):::ENTER
+arg0 == 5
+===========================================================================
+algorithm.leetcode.LeetTest.generateMatrix(int):::EXIT903
+===========================================================================
+algorithm.leetcode.LeetTest.generateMatrix(int):::EXIT
+orig(arg0) == size(return[])
+return has only one value
+return.getClass().getName() == int[][].class
+return[] contains no nulls and has only one value, of length 5
+return[orig(arg0)-1] has only one value
+===========================================================================
+algorithm.leetcode.LeetTest.generateParenthesis(int):::ENTER
+arg0 == 3
+===========================================================================
+algorithm.leetcode.LeetTest.generateParenthesis(int):::EXIT
+return has only one value
+return[] contains no nulls and has only one value, of length 5
+return[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+return[].getClass().getName() elements == java.lang.String.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 5
+===========================================================================
+algorithm.leetcode.LeetTest.generatePascalTriangleInLoop(int):::ENTER
+arg0 == 6
+===========================================================================
+algorithm.leetcode.LeetTest.generatePascalTriangleInLoop(int):::EXIT
+return has only one value
+return[] contains no nulls and has only one value, of length 6
+return[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+return[].getClass().getName() elements == java.util.ArrayList.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 6
+return.getClass().getName() in return[].getClass().getName()
+===========================================================================
+algorithm.leetcode.LeetTest.getPermutation(int, int):::ENTER
+arg0 == 5
+arg1 == 24
+===========================================================================
+algorithm.leetcode.LeetTest.getPermutation(int, int):::EXIT
+return has only one value
+return.toString == "15432"
+===========================================================================
+algorithm.leetcode.LeetTest.getRow(int):::ENTER
+arg0 == 1
+===========================================================================
+algorithm.leetcode.LeetTest.getRow(int):::EXIT3718
+===========================================================================
+algorithm.leetcode.LeetTest.getRow(int):::EXIT
+return has only one value
+return[] contains no nulls and has only one value, of length 2
+return[] elements has only one value
+return[].getClass().getName() == [java.lang.Integer, java.lang.Integer]
+return[].getClass().getName() elements == java.lang.Integer.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 2
+===========================================================================
+algorithm.leetcode.LeetTest.grayCode(int):::ENTER
+arg0 == 5
+===========================================================================
+algorithm.leetcode.LeetTest.grayCode(int):::EXIT1446
+===========================================================================
+algorithm.leetcode.LeetTest.grayCode(int):::EXIT
+return has only one value
+return[] contains no nulls and has only one value, of length 32
+return[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+return[].getClass().getName() elements == java.lang.Integer.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 32
+===========================================================================
+algorithm.leetcode.LeetTest.helper(java.lang.String, java.util.List, int, int, int):::ENTER
+arg0 != null
+arg1 has only one value
+arg1 != null
+arg1[] elements != null
+arg1[].getClass().getName() elements == java.lang.String.class
+arg1.getClass().getName() == java.util.ArrayList.class
+arg2 == 3
+arg4 one of { 0, 1, 2 }
+arg2 >= arg3
+arg2 > arg4
+arg3 >= arg4
+===========================================================================
+algorithm.leetcode.LeetTest.helper(java.lang.String, java.util.List, int, int, int):::EXIT1758
+orig(arg2) == orig(arg3)
+size(arg1[])-1 == orig(size(arg1[]))
+orig(arg4) == 2
+===========================================================================
+algorithm.leetcode.LeetTest.helper(java.lang.String, java.util.List, int, int, int):::EXIT1770
+===========================================================================
+algorithm.leetcode.LeetTest.helper(java.lang.String, java.util.List, int, int, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1[] elements != null
+arg1[].getClass().getName() elements == java.lang.String.class
+size(arg1[])-1 >= orig(size(arg1[]))
+===========================================================================
+algorithm.leetcode.LeetTest.intToRoman(int):::ENTER
+arg0 == 999
+===========================================================================
+algorithm.leetcode.LeetTest.intToRoman(int):::EXIT
+return has only one value
+return.toString == "CMXCIX"
+===========================================================================
+algorithm.leetcode.LeetTest.intToRomanHelper(int, int):::ENTER
+arg0 == 9
+arg1 one of { 1, 2, 3 }
+===========================================================================
+algorithm.leetcode.LeetTest.intToRomanHelper(int, int):::EXIT
+return.toString one of { "CM", "IX", "XC" }
+===========================================================================
+algorithm.leetcode.LeetTest.isAnagrams(java.lang.String, java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "abccdde"
+arg1 has only one value
+arg1.toString == "adedccb"
+===========================================================================
+algorithm.leetcode.LeetTest.isAnagrams(java.lang.String, java.lang.String):::EXIT2449
+===========================================================================
+algorithm.leetcode.LeetTest.isAnagrams(java.lang.String, java.lang.String):::EXIT2449;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isAnagrams(java.lang.String, java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg0.toString == "abccdde"
+arg1.toString == "adedccb"
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isAnagrams(java.lang.String, java.lang.String):::EXIT;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isColumnValid(char, char[][], int):::ENTER
+arg1 has only one value
+arg1 != null
+arg1.getClass().getName() == char[][].class
+arg1[] contains no nulls and has only one value, of length 9
+arg1[] elements != null
+arg2 >= 0
+size(arg1[]) == 9
+arg2 <= size(arg1[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.isColumnValid(char, char[][], int):::EXIT3861
+return == false
+===========================================================================
+algorithm.leetcode.LeetTest.isColumnValid(char, char[][], int):::EXIT3861;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.isColumnValid(char, char[][], int):::EXIT3864
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isColumnValid(char, char[][], int):::EXIT3864;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isColumnValid(char, char[][], int):::EXIT
+arg1[] == orig(arg1[])
+arg1[] contains no nulls and has only one value, of length 9
+arg1[] elements != null
+orig(arg2) <= size(arg1[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.isColumnValid(char, char[][], int):::EXIT;condition="return == true"
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isColumnValid(char, char[][], int):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleave(java.lang.String, java.lang.String, java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "aabcc"
+arg1 has only one value
+arg1.toString == "dbbca"
+arg2 has only one value
+arg2.toString == "aadbbcbcac"
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleave(java.lang.String, java.lang.String, java.lang.String):::EXIT3895
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleave(java.lang.String, java.lang.String, java.lang.String):::EXIT3895;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleave(java.lang.String, java.lang.String, java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg2.toString == orig(arg2.toString)
+arg0.toString == "aabcc"
+arg1.toString == "dbbca"
+arg2.toString == "aadbbcbcac"
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleave(java.lang.String, java.lang.String, java.lang.String):::EXIT;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::ENTER
+arg0 has only one value
+arg0.toString == "aabcc"
+arg1 has only one value
+arg1.toString == "dbbca"
+arg2 has only one value
+arg2.toString == "aadbbcbcac"
+arg6 has only one value
+arg6.getClass().getName() == java.util.HashMap.class
+arg3 <= arg5
+arg4 < arg5
+arg3 + arg4 - arg5 == 0
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT3921
+arg0.toString == orig(arg0.toString)
+arg0.toString == "aabcc"
+return == false
+orig(arg3) == 5
+orig(arg4) == 3
+orig(arg5) == 8
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT3921;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT3926
+arg1.toString == orig(arg1.toString)
+arg1.toString == "dbbca"
+return == true
+orig(arg3) == 4
+orig(arg4) == 5
+orig(arg5) == 9
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT3926;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT3937
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg2.toString == orig(arg2.toString)
+arg0.toString == "aabcc"
+arg1.toString == "dbbca"
+arg2.toString == "aadbbcbcac"
+return == true
+orig(arg3) one of { 1, 3 }
+orig(arg4) one of { 0, 2 }
+orig(arg5) one of { 1, 5 }
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT3937;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT3940
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg2.toString == orig(arg2.toString)
+arg0.toString == "aabcc"
+arg1.toString == "dbbca"
+arg2.toString == "aadbbcbcac"
+return == true
+orig(arg3) one of { 2, 3, 4 }
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT3940;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT3946
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg2.toString == orig(arg2.toString)
+arg0.toString == "aabcc"
+arg1.toString == "dbbca"
+arg2.toString == "aadbbcbcac"
+return == true
+orig(arg3) == 2
+orig(arg4) == 1
+orig(arg5) == 3
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT3946;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT3950
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg2.toString == orig(arg2.toString)
+arg0.toString == "aabcc"
+arg1.toString == "dbbca"
+arg2.toString == "aadbbcbcac"
+return == true
+orig(arg3) == 4
+orig(arg4) == 3
+orig(arg5) == 7
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT3950;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT
+(arg1.toString == "ca")  <==>  (arg2.toString == "ac")
+(arg1.toString == "ca")  <==>  (orig(arg3) == 5)
+(arg1.toString == "ca")  <==>  (return == false)
+(arg1.toString == "ca")  ==>  (arg0 == orig(arg0))
+(arg1.toString == "ca")  ==>  (arg0 has only one value)
+(arg1.toString == "ca")  ==>  (arg0.toString == "aabcc")
+(arg1.toString == "ca")  ==>  (arg0.toString == orig(arg0.toString))
+(arg1.toString == "ca")  ==>  (arg2 has only one value)
+(arg1.toString == "ca")  ==>  (orig(arg4) == 3)
+(arg1.toString == "ca")  ==>  (orig(arg5) == 8)
+(arg1.toString == "dbbca")  <==>  (arg1.toString == orig(arg1.toString))
+(arg1.toString == "dbbca")  <==>  (arg2.toString one of { "aadbbcbcac", "c" })
+(arg1.toString == "dbbca")  <==>  (return == true)
+(arg1.toString == "dbbca")  ==>  (arg0.toString one of { "aabcc", "c" })
+(arg1.toString == "dbbca")  ==>  (arg1 == orig(arg1))
+(arg1.toString == "dbbca")  ==>  (orig(arg3) + orig(arg4) - orig(arg5) == 0)
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT;condition="return == true"
+arg1.toString == orig(arg1.toString)
+arg1.toString == "dbbca"
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isInterleaveHelper(java.lang.String, java.lang.String, java.lang.String, int, int, int, java.util.Map):::EXIT;condition="not(return == true)"
+arg0.toString == orig(arg0.toString)
+arg0.toString == "aabcc"
+return == false
+orig(arg3) == 5
+orig(arg4) == 3
+orig(arg5) == 8
+===========================================================================
+algorithm.leetcode.LeetTest.isMatch(java.lang.String, java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "aa"
+arg1 has only one value
+arg1.toString == "a"
+===========================================================================
+algorithm.leetcode.LeetTest.isMatch(java.lang.String, java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg0.toString == "aa"
+arg1.toString == "a"
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isMatch(java.lang.String, java.lang.String):::EXIT;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome(java.lang.String):::ENTER
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome(java.lang.String):::EXIT489
+return == false
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome(java.lang.String):::EXIT489;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome(java.lang.String):::EXIT494
+arg0.toString one of { "abcba", "bcb" }
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome(java.lang.String):::EXIT494;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+(return == true)  ==>  (arg0.toString one of { "abcba", "bcb" })
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome(java.lang.String):::EXIT;condition="return == true"
+arg0.toString one of { "abcba", "bcb" }
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome(java.lang.String):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome2(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == ".,"
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome2(java.lang.String):::EXIT533
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome2(java.lang.String):::EXIT533;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome2(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == ".,"
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindrome2(java.lang.String):::EXIT;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindromeNumber(int):::ENTER
+arg0 == 10203
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindromeNumber(int):::EXIT53
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindromeNumber(int):::EXIT53;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindromeNumber(int):::EXIT
+return == false
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindromeNumber(int):::EXIT;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindromeString(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "aabcksvregervdgdfg"
+===========================================================================
+algorithm.leetcode.LeetTest.isPalindromeString(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "aabcksvregervdgdfg"
+return == 7
+===========================================================================
+algorithm.leetcode.LeetTest.isRowValid(char, char[][], int):::ENTER
+arg1 has only one value
+arg1 != null
+arg1.getClass().getName() == char[][].class
+arg1[] contains no nulls and has only one value, of length 9
+arg1[] elements != null
+arg2 >= 0
+size(arg1[]) == 9
+arg2 <= size(arg1[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.isRowValid(char, char[][], int):::EXIT3850
+return == false
+===========================================================================
+algorithm.leetcode.LeetTest.isRowValid(char, char[][], int):::EXIT3850;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.isRowValid(char, char[][], int):::EXIT3853
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isRowValid(char, char[][], int):::EXIT3853;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isRowValid(char, char[][], int):::EXIT
+arg1[] == orig(arg1[])
+arg1[] contains no nulls and has only one value, of length 9
+arg1[] elements != null
+orig(arg2) <= size(arg1[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.isRowValid(char, char[][], int):::EXIT;condition="return == true"
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isRowValid(char, char[][], int):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+algorithm.leetcode.LeetTest.isScramble(java.lang.String, java.lang.String):::ENTER
+arg0 != null
+arg1 != null
+===========================================================================
+algorithm.leetcode.LeetTest.isScramble(java.lang.String, java.lang.String):::EXIT4180
+===========================================================================
+algorithm.leetcode.LeetTest.isScramble(java.lang.String, java.lang.String):::EXIT4180;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.isScramble(java.lang.String, java.lang.String):::EXIT4203
+arg0.toString one of { "abcd", "abcdefghijklmnopq" }
+arg1.toString one of { "cadb", "efghijklmnopqcadb" }
+===========================================================================
+algorithm.leetcode.LeetTest.isScramble(java.lang.String, java.lang.String):::EXIT4203;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.isScramble(java.lang.String, java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+return == false
+===========================================================================
+algorithm.leetcode.LeetTest.isScramble(java.lang.String, java.lang.String):::EXIT;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.isSquareValid(char, char[][], int, int):::ENTER
+arg1 has only one value
+arg1 != null
+arg1.getClass().getName() == char[][].class
+arg1[] contains no nulls and has only one value, of length 9
+arg1[] elements != null
+arg2 >= 0
+arg3 >= 0
+size(arg1[]) == 9
+arg2 <= size(arg1[])-1
+arg3 <= size(arg1[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.isSquareValid(char, char[][], int, int):::EXIT3877
+return == false
+orig(arg2) < size(arg1[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.isSquareValid(char, char[][], int, int):::EXIT3877;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.isSquareValid(char, char[][], int, int):::EXIT3880
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isSquareValid(char, char[][], int, int):::EXIT3880;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isSquareValid(char, char[][], int, int):::EXIT
+arg1[] == orig(arg1[])
+(return == false)  ==>  (orig(arg2) < size(arg1[])-1)
+arg1[] contains no nulls and has only one value, of length 9
+arg1[] elements != null
+orig(arg2) <= size(arg1[])-1
+orig(arg3) <= size(arg1[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.isSquareValid(char, char[][], int, int):::EXIT;condition="return == true"
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isSquareValid(char, char[][], int, int):::EXIT;condition="not(return == true)"
+return == false
+orig(arg2) < size(arg1[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.isValidParentheses(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "()[]{}"
+===========================================================================
+algorithm.leetcode.LeetTest.isValidParentheses(java.lang.String):::EXIT1165
+===========================================================================
+algorithm.leetcode.LeetTest.isValidParentheses(java.lang.String):::EXIT1165;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.isValidParentheses(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "()[]{}"
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.isValidParentheses(java.lang.String):::EXIT;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.jump(int[]):::ENTER
+arg0 has only one value
+arg0[] == [2, 3, 1, 1, 4]
+size(arg0[]) == 5
+size(arg0[])-1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.jump(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [2, 3, 1, 1, 4]
+return == 2
+size(arg0[])-1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.ladderLength(java.lang.String, java.lang.String, java.util.Set):::ENTER
+arg1 has only one value
+arg1.toString == "cog"
+arg2.getClass().getName() == java.util.HashSet.class
+===========================================================================
+algorithm.leetcode.LeetTest.ladderLength(java.lang.String, java.lang.String, java.util.Set):::EXIT1007
+arg0.toString one of { "dog", "log" }
+return == 2
+===========================================================================
+algorithm.leetcode.LeetTest.ladderLength(java.lang.String, java.lang.String, java.util.Set):::EXIT1033
+return one of { 3, 4, 5 }
+===========================================================================
+algorithm.leetcode.LeetTest.ladderLength(java.lang.String, java.lang.String, java.util.Set):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg1.toString == "cog"
+===========================================================================
+algorithm.leetcode.LeetTest.ladderLengthHelper(java.lang.String, java.lang.String):::ENTER
+arg0 != null
+arg1 != null
+===========================================================================
+algorithm.leetcode.LeetTest.ladderLengthHelper(java.lang.String, java.lang.String):::EXIT1101
+return == 2
+===========================================================================
+algorithm.leetcode.LeetTest.ladderLengthHelper(java.lang.String, java.lang.String):::EXIT1105
+return == 1
+===========================================================================
+algorithm.leetcode.LeetTest.ladderLengthHelper(java.lang.String, java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+return one of { 1, 2 }
+===========================================================================
+algorithm.leetcode.LeetTest.largestNumber(int[]):::ENTER
+arg0 has only one value
+arg0[] == [3, 30, 34, 5, 9]
+size(arg0[]) == 5
+===========================================================================
+algorithm.leetcode.LeetTest.largestNumber(int[]):::EXIT4817
+===========================================================================
+algorithm.leetcode.LeetTest.largestNumber(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [3, 30, 34, 5, 9]
+return has only one value
+return.toString == "9534330"
+===========================================================================
+algorithm.leetcode.LeetTest.largestRectangleArea(int[]):::ENTER
+arg0 has only one value
+arg0[] == [2, 1, 5, 6, 2, 3]
+size(arg0[]) == 6
+size(arg0[]) in arg0[]
+size(arg0[])-1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.largestRectangleArea(int[]):::EXIT4535
+===========================================================================
+algorithm.leetcode.LeetTest.largestRectangleArea(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [2, 1, 5, 6, 2, 3]
+return == 10
+size(arg0[])-1 in arg0[]
+orig(size(arg0[])) in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.largestRectangleAreaFast(int[]):::ENTER
+arg0 has only one value
+arg0[] == [2, 1, 5, 6, 2, 3]
+size(arg0[]) == 6
+size(arg0[]) in arg0[]
+size(arg0[])-1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.largestRectangleAreaFast(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [2, 1, 5, 6, 2, 3]
+return == 10
+size(arg0[])-1 in arg0[]
+orig(size(arg0[])) in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.lengthOfLastWord(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "HelloWorld"
+===========================================================================
+algorithm.leetcode.LeetTest.lengthOfLastWord(java.lang.String):::EXIT457
+===========================================================================
+algorithm.leetcode.LeetTest.lengthOfLastWord(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "HelloWorld"
+return == 10
+===========================================================================
+algorithm.leetcode.LeetTest.lengthOfLongestSubstring(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "wlrbbmqbhcdarzowkkyhiddqscdxrjmowfrxsjybldbefsarcbynecdyggxxpklorellnmpapqfwkhopkmco"
+===========================================================================
+algorithm.leetcode.LeetTest.lengthOfLongestSubstring(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "wlrbbmqbhcdarzowkkyhiddqscdxrjmowfrxsjybldbefsarcbynecdyggxxpklorellnmpapqfwkhopkmco"
+return == 12
+===========================================================================
+algorithm.leetcode.LeetTest.letterCombinations(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == ""
+===========================================================================
+algorithm.leetcode.LeetTest.letterCombinations(java.lang.String):::EXIT2975
+===========================================================================
+algorithm.leetcode.LeetTest.letterCombinations(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == ""
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+return[].getClass().getName() == [java.lang.String]
+return[].getClass().getName() elements == java.lang.String.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 1
+===========================================================================
+algorithm.leetcode.LeetTest.longestCommonPrefix(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] contains no nulls and has only one value, of length 3
+arg0[].toString == [abc, abd, ab]
+arg0[].toString elements one of { "ab", "abc", "abd" }
+size(arg0[]) == 3
+===========================================================================
+algorithm.leetcode.LeetTest.longestCommonPrefix(java.lang.String[]):::EXIT3444
+===========================================================================
+algorithm.leetcode.LeetTest.longestCommonPrefix(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 3
+arg0[].toString == [abc, abd, ab]
+arg0[].toString elements one of { "ab", "abc", "abd" }
+return has only one value
+return.toString == "ab"
+===========================================================================
+algorithm.leetcode.LeetTest.longestConsecutive(int[]):::ENTER
+arg0 has only one value
+arg0[] == [4, 0, -4, -2, 2, 5, 2, 0, -8, -8, -8, -8, -1, 7, 4, 5, 5, -4, 6, 6, -3]
+size(arg0[]) == 21
+===========================================================================
+algorithm.leetcode.LeetTest.longestConsecutive(int[]):::EXIT4355
+===========================================================================
+algorithm.leetcode.LeetTest.longestConsecutive(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [4, 0, -4, -2, 2, 5, 2, 0, -8, -8, -8, -8, -1, 7, 4, 5, 5, -4, 6, 6, -3]
+return == 5
+return in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.longestPalindrome(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "bb"
+===========================================================================
+algorithm.leetcode.LeetTest.longestPalindrome(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+return == orig(arg0)
+arg0.toString == "bb"
+return has only one value
+return.toString == "bb"
+===========================================================================
+algorithm.leetcode.LeetTest.longestValidParentheses(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "()()"
+===========================================================================
+algorithm.leetcode.LeetTest.longestValidParentheses(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "()()"
+return == 4
+===========================================================================
+algorithm.leetcode.LeetTest.majorityElement(int[]):::ENTER
+arg0 has only one value
+arg0[] == [8, 8, 7, 7, 7]
+arg0[] elements one of { 7, 8 }
+size(arg0[]) == 5
+===========================================================================
+algorithm.leetcode.LeetTest.majorityElement(int[]):::EXIT3753
+===========================================================================
+algorithm.leetcode.LeetTest.majorityElement(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [8, 8, 7, 7, 7]
+arg0[] elements one of { 7, 8 }
+return == 7
+return in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.maxPoints(algorithm.leetcode.Point[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == algorithm.leetcode.Point[].class
+arg0[] contains no nulls and has only one value, of length 3
+arg0[].x == [0, -1, 2]
+arg0[].x elements one of { -1, 0, 2 }
+arg0[].y == [0, -1, 2]
+arg0[].y elements one of { -1, 0, 2 }
+size(arg0[]) == 3
+===========================================================================
+algorithm.leetcode.LeetTest.maxPoints(algorithm.leetcode.Point[]):::EXIT4428
+===========================================================================
+algorithm.leetcode.LeetTest.maxPoints(algorithm.leetcode.Point[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[].x == orig(arg0[].x)
+arg0[].y == orig(arg0[].y)
+arg0[] contains no nulls and has only one value, of length 3
+arg0[].x == [0, -1, 2]
+arg0[].x elements one of { -1, 0, 2 }
+arg0[].y == [0, -1, 2]
+arg0[].y elements one of { -1, 0, 2 }
+return == 3
+===========================================================================
+algorithm.leetcode.LeetTest.maxProductSubArrayTest():::EXIT
+return == 57153600
+===========================================================================
+algorithm.leetcode.LeetTest.maxProfitI(int[]):::ENTER
+arg0 has only one value
+arg0[] == [3, 3, 5, 0, 0, 3, 1, 4]
+size(arg0[]) == 8
+===========================================================================
+algorithm.leetcode.LeetTest.maxProfitI(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [3, 3, 5, 0, 0, 3, 1, 4]
+return == 4
+return in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.maxProfitIIII(int[]):::ENTER
+arg0 has only one value
+arg0[] == [2, 1, 4, 5, 2, 9, 7]
+size(arg0[]) == 7
+===========================================================================
+algorithm.leetcode.LeetTest.maxProfitIIII(int[]):::EXIT707
+===========================================================================
+algorithm.leetcode.LeetTest.maxProfitIIII(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [2, 1, 4, 5, 2, 9, 7]
+return == 11
+===========================================================================
+algorithm.leetcode.LeetTest.maxProfitV(int, int[]):::ENTER
+arg0 == 2
+arg1 has only one value
+arg1[] == [2, 1, 4, 5, 2, 9, 7]
+size(arg1[]) == 7
+arg1[arg0] == 4
+arg1[arg0-1] == 1
+===========================================================================
+algorithm.leetcode.LeetTest.maxProfitV(int, int[]):::EXIT722
+===========================================================================
+algorithm.leetcode.LeetTest.maxProfitV(int, int[]):::EXIT
+arg1[] == orig(arg1[])
+arg1[] == [2, 1, 4, 5, 2, 9, 7]
+return == 11
+arg1[orig(arg0)] == 4
+arg1[orig(arg0)-1] == 1
+===========================================================================
+algorithm.leetcode.LeetTest.maximumGap(int[]):::ENTER
+arg0 has only one value
+arg0[] == [1, 1, 1, 1, 1, 5, 5, 5, 5, 5]
+arg0[] elements one of { 1, 5 }
+size(arg0[]) == 10
+===========================================================================
+algorithm.leetcode.LeetTest.maximumGap(int[]):::EXIT4258
+===========================================================================
+algorithm.leetcode.LeetTest.maximumGap(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[return] == arg0[return-1]
+arg0[return] == orig(arg0[post(return)-1])
+arg0[] == [1, 1, 1, 1, 1, 5, 5, 5, 5, 5]
+arg0[] elements one of { 1, 5 }
+return == 4
+arg0[return] == 1
+===========================================================================
+algorithm.leetcode.LeetTest.maximumProductSubArraySolution(int[]):::ENTER
+arg0 has only one value
+arg0[] == [5, 9, 3, 4, -1, 5, 2, 4, 7, -1, 3, 2, 9, 7]
+size(arg0[]) == 14
+===========================================================================
+algorithm.leetcode.LeetTest.maximumProductSubArraySolution(int[]):::EXIT370
+===========================================================================
+algorithm.leetcode.LeetTest.maximumProductSubArraySolution(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [5, 9, 3, 4, -1, 5, 2, 4, 7, -1, 3, 2, 9, 7]
+return == 57153600
+===========================================================================
+algorithm.leetcode.LeetTest.merge(int[], int, int[], int):::ENTER
+arg1 == arg3
+arg1 == size(arg2[])
+arg0 has only one value
+arg0[] == [2, 3, 5, 7, 0, 0, 0, 0, 0]
+arg0[] elements >= 0
+arg1 == 4
+arg2 has only one value
+arg2[] == [1, 4, 6, 8]
+size(arg0[]) == 9
+arg0[arg1] == 0
+arg0[arg1-1] == 7
+arg2[arg1-1] == 8
+===========================================================================
+algorithm.leetcode.LeetTest.merge(int[], int, int[], int):::EXIT840
+===========================================================================
+algorithm.leetcode.LeetTest.merge(int[], int, int[], int):::EXIT
+arg0[] == return[]
+arg2[] == orig(arg2[])
+return == orig(arg0)
+size(return[]) == orig(size(arg0[]))
+arg0[] == [1, 2, 3, 4, 5, 6, 7, 8, 0]
+arg2[] == [1, 4, 6, 8]
+return has only one value
+size(return[]) == 9
+arg0[orig(arg1)] == 5
+arg0[orig(arg1)-1] == 4
+arg2[orig(arg1)-1] == 8
+arg2[orig(arg1)-1] in arg0[]
+orig(arg0[arg1]) in arg0[]
+orig(arg0[arg1-1]) in arg0[]
+arg0[orig(arg1)-1] in arg2[]
+arg0[orig(arg1)] in orig(arg0[])
+===========================================================================
+algorithm.leetcode.LeetTest.minCut(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "bcca"
+===========================================================================
+algorithm.leetcode.LeetTest.minCut(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "bcca"
+return == 2
+===========================================================================
+algorithm.leetcode.LeetTest.minDistance(java.lang.String, java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "ABD"
+arg1 has only one value
+arg1.toString == "ABC"
+===========================================================================
+algorithm.leetcode.LeetTest.minDistance(java.lang.String, java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg0.toString == "ABD"
+arg1.toString == "ABC"
+return == 1
+===========================================================================
+algorithm.leetcode.LeetTest.minWindow(java.lang.String, java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "ADOBECODEBANC"
+arg1 has only one value
+arg1.toString == "ABC"
+===========================================================================
+algorithm.leetcode.LeetTest.minWindow(java.lang.String, java.lang.String):::EXIT4038
+===========================================================================
+algorithm.leetcode.LeetTest.minWindow(java.lang.String, java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg0.toString == "ADOBECODEBANC"
+arg1.toString == "ABC"
+return has only one value
+return.toString == "BANC"
+===========================================================================
+algorithm.leetcode.LeetTest.minimumTotal(java.util.List):::ENTER
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 5
+arg0[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0[].getClass().getName() elements == java.util.ArrayList.class
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 5
+arg0.getClass().getName() in arg0[].getClass().getName()
+===========================================================================
+algorithm.leetcode.LeetTest.minimumTotal(java.util.List):::EXIT1492
+===========================================================================
+algorithm.leetcode.LeetTest.minimumTotal(java.util.List):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 5
+arg0[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0[].getClass().getName() elements == java.util.ArrayList.class
+return == 12
+orig(arg0.getClass().getName()) in arg0[].getClass().getName()
+===========================================================================
+algorithm.leetcode.LeetTest.multiply(java.lang.String, java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "123"
+arg1 has only one value
+arg1.toString == "5678"
+===========================================================================
+algorithm.leetcode.LeetTest.multiply(java.lang.String, java.lang.String):::EXIT2522
+===========================================================================
+algorithm.leetcode.LeetTest.multiply(java.lang.String, java.lang.String):::EXIT
+return has only one value
+return.toString == "698394"
+===========================================================================
+algorithm.leetcode.LeetTest.nextPermutation(int[]):::ENTER
+arg0 has only one value
+arg0[] == [100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+size(arg0[]) == 100
+===========================================================================
+algorithm.leetcode.LeetTest.nextPermutation(int[]):::EXIT3372
+===========================================================================
+algorithm.leetcode.LeetTest.nextPermutation(int[]):::EXIT
+arg0[] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+arg0[] + orig(arg0[]) - 101 == 0
+arg0[] is the reverse of orig(arg0[])
+===========================================================================
+algorithm.leetcode.LeetTest.numDecodingsIteration(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "1213"
+===========================================================================
+algorithm.leetcode.LeetTest.numDecodingsIteration(java.lang.String):::EXIT804
+===========================================================================
+algorithm.leetcode.LeetTest.numDecodingsIteration(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "1213"
+return == 5
+===========================================================================
+algorithm.leetcode.LeetTest.numDistinct(java.lang.String, java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "ADOBECODEBANC"
+arg1 has only one value
+arg1.toString == "ABC"
+===========================================================================
+algorithm.leetcode.LeetTest.numDistinct(java.lang.String, java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg0.toString == "ADOBECODEBANC"
+arg1.toString == "ABC"
+return == 0
+===========================================================================
+algorithm.leetcode.LeetTest.partition(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "abcba"
+===========================================================================
+algorithm.leetcode.LeetTest.partition(java.lang.String):::EXIT3228
+===========================================================================
+algorithm.leetcode.LeetTest.partition(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "abcba"
+return has only one value
+return[] contains no nulls and has only one value, of length 3
+return[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+return[].getClass().getName() elements == java.util.ArrayList.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 3
+return.getClass().getName() in return[].getClass().getName()
+===========================================================================
+algorithm.leetcode.LeetTest.partitionHelper(java.util.List, java.util.List, java.lang.String):::ENTER
+arg0.getClass().getName() == arg1.getClass().getName()
+arg0 has only one value
+arg0[] elements has only one value
+arg0[].getClass().getName() elements == java.util.ArrayList.class
+arg0[].getClass().getName() one of { [], [java.util.ArrayList] }
+arg0.getClass().getName() == java.util.ArrayList.class
+arg1[].getClass().getName() elements == java.lang.String.class
+size(arg0[]) one of { 0, 1 }
+===========================================================================
+algorithm.leetcode.LeetTest.partitionHelper(java.util.List, java.util.List, java.lang.String):::EXIT
+arg1[] == orig(arg1[])
+arg2.toString == orig(arg2.toString)
+arg0[].getClass().getName() elements == java.util.ArrayList.class
+arg1[].getClass().getName() elements == java.lang.String.class
+orig(arg0.getClass().getName()) in arg0[].getClass().getName()
+===========================================================================
+algorithm.leetcode.LeetTest.permute(int[]):::ENTER
+arg0 has only one value
+arg0[] == [1, -1, 1, 2, -1, 2, 2, -1]
+arg0[] elements one of { -1, 1, 2 }
+size(arg0[]) == 8
+===========================================================================
+algorithm.leetcode.LeetTest.permute(int[]):::EXIT
+arg0[] == [-1, -1, -1, 1, 1, 2, 2, 2]
+arg0[] elements one of { -1, 1, 2 }
+return has only one value
+return[] == []
+return[].getClass().getName() == []
+return.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+algorithm.leetcode.LeetTest.permuteHelper(java.util.List, java.util.List, int[], java.util.Map):::ENTER
+arg0.getClass().getName() == arg1.getClass().getName()
+arg0 has only one value
+arg0 != null
+arg0[] == []
+arg0[].getClass().getName() == []
+arg0.getClass().getName() == java.util.ArrayList.class
+arg1 has only one value
+arg1 != null
+arg1[] elements != null
+arg1[].getClass().getName() elements == java.lang.Integer.class
+arg2 has only one value
+arg2 != null
+arg2[] == [-1, -1, -1, 1, 1, 2, 2, 2]
+arg2[] elements one of { -1, 1, 2 }
+arg2[] sorted by <=
+arg3 has only one value
+arg3 != null
+arg3.getClass().getName() == java.util.HashMap.class
+size(arg2[]) == 8
+arg0.getClass().getName() != arg3.getClass().getName()
+arg2[] elements < size(arg2[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.permuteHelper(java.util.List, java.util.List, int[], java.util.Map):::EXIT
+arg0[] == orig(arg0[])
+arg1[] == orig(arg1[])
+arg2[] == orig(arg2[])
+arg0[] == []
+arg0[].getClass().getName() == []
+arg1[] elements != null
+arg1[].getClass().getName() elements == java.lang.Integer.class
+arg2[] == [-1, -1, -1, 1, 1, 2, 2, 2]
+arg2[] elements one of { -1, 1, 2 }
+arg2[] sorted by <=
+arg2[] elements < size(arg2[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.plusOne(int[]):::ENTER
+arg0 has only one value
+arg0[] == [0]
+arg0[] elements == 0
+size(arg0[]) == 1
+===========================================================================
+algorithm.leetcode.LeetTest.plusOne(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [0]
+arg0[] elements == 0
+return has only one value
+return[] == [1]
+return[] elements == 1
+size(return[]) == 1
+===========================================================================
+algorithm.leetcode.LeetTest.pow(double, int):::ENTER
+arg0 == 2.0
+arg1 one of { 0, 1, 3 }
+===========================================================================
+algorithm.leetcode.LeetTest.pow(double, int):::EXIT2528
+return == 1.0
+orig(arg1) == 0
+===========================================================================
+algorithm.leetcode.LeetTest.pow(double, int):::EXIT2544
+return one of { 2.0, 8.0 }
+orig(arg1) one of { 1, 3 }
+===========================================================================
+algorithm.leetcode.LeetTest.pow(double, int):::EXIT
+(return == 1.0)  <==>  (orig(arg1) == 0)
+(return one of { 2.0, 8.0 })  <==>  (orig(arg1) one of { 1, 3 })
+return one of { 1.0, 2.0, 8.0 }
+===========================================================================
+algorithm.leetcode.LeetTest.removeDuplicates(int[]):::ENTER
+arg0 has only one value
+arg0[] == [1, 1, 1, 1, 3, 3]
+arg0[] elements one of { 1, 3 }
+size(arg0[]) == 6
+===========================================================================
+algorithm.leetcode.LeetTest.removeDuplicates(int[]):::EXIT2911
+===========================================================================
+algorithm.leetcode.LeetTest.removeDuplicates(int[]):::EXIT
+arg0[return] == orig(arg0[post(return)])
+arg0[return] == orig(arg0[post(return)-1])
+arg0[] == [1, 3, 1, 1, 3, 3]
+arg0[] elements one of { 1, 3 }
+return == 2
+arg0[return] == 1
+arg0[return-1] == 3
+arg0[return-1] in orig(arg0[])
+===========================================================================
+algorithm.leetcode.LeetTest.restoreIpAddresses(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "010010"
+===========================================================================
+algorithm.leetcode.LeetTest.restoreIpAddresses(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "010010"
+return has only one value
+return[] contains no nulls and has only one value, of length 2
+return[].getClass().getName() == [java.lang.String, java.lang.String]
+return[].getClass().getName() elements == java.lang.String.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 2
+===========================================================================
+algorithm.leetcode.LeetTest.reverse(int):::ENTER
+arg0 == -321
+===========================================================================
+algorithm.leetcode.LeetTest.reverse(int):::EXIT550
+===========================================================================
+algorithm.leetcode.LeetTest.reverse(int):::EXIT
+return == -123
+===========================================================================
+algorithm.leetcode.LeetTest.reverseWordsSequence(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "hello world!"
+===========================================================================
+algorithm.leetcode.LeetTest.reverseWordsSequence(java.lang.String):::EXIT
+return has only one value
+return.toString == "world! hello"
+===========================================================================
+algorithm.leetcode.LeetTest.romanToInt(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "CMXCIX"
+===========================================================================
+algorithm.leetcode.LeetTest.romanToInt(java.lang.String):::EXIT3400
+===========================================================================
+algorithm.leetcode.LeetTest.romanToInt(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "CMXCIX"
+return == 999
+===========================================================================
+algorithm.leetcode.LeetTest.romanToIntHelper(char):::ENTER
+===========================================================================
+algorithm.leetcode.LeetTest.romanToIntHelper(char):::EXIT3407
+return == 1
+orig(arg0) == 73
+===========================================================================
+algorithm.leetcode.LeetTest.romanToIntHelper(char):::EXIT3411
+return == 10
+orig(arg0) == 88
+===========================================================================
+algorithm.leetcode.LeetTest.romanToIntHelper(char):::EXIT3415
+return == 100
+orig(arg0) == 67
+===========================================================================
+algorithm.leetcode.LeetTest.romanToIntHelper(char):::EXIT3419
+return == 1000
+orig(arg0) == 77
+===========================================================================
+algorithm.leetcode.LeetTest.romanToIntHelper(char):::EXIT
+===========================================================================
+algorithm.leetcode.LeetTest.search(int[], int):::ENTER
+arg0 has only one value
+arg0[] == [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 1, 2, 3, 4]
+arg1 == 21
+size(arg0[]) == 20
+===========================================================================
+algorithm.leetcode.LeetTest.search(int[], int):::EXIT2824
+===========================================================================
+algorithm.leetcode.LeetTest.search(int[], int):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 1, 2, 3, 4]
+return == -1
+===========================================================================
+algorithm.leetcode.LeetTest.search2(int[], int):::ENTER
+arg0 has only one value
+arg0[] == [1, 1, 3, 1]
+arg0[] elements one of { 1, 3 }
+arg1 == 3
+size(arg0[]) == 4
+arg1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.search2(int[], int):::EXIT2882
+===========================================================================
+algorithm.leetcode.LeetTest.search2(int[], int):::EXIT2882;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.search2(int[], int):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [1, 1, 3, 1]
+arg0[] elements one of { 1, 3 }
+return == true
+orig(arg1) in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.search2(int[], int):::EXIT;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.searchMatrix(int[][], int):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == int[][].class
+arg0[] contains no nulls and has only one value, of length 2
+arg1 == 2
+size(arg0[]) == 2
+===========================================================================
+algorithm.leetcode.LeetTest.searchMatrix(int[][], int):::EXIT2036
+===========================================================================
+algorithm.leetcode.LeetTest.searchMatrix(int[][], int):::EXIT2036;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.searchMatrix(int[][], int):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 2
+return == false
+===========================================================================
+algorithm.leetcode.LeetTest.searchMatrix(int[][], int):::EXIT;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.searchRange(int[], int):::ENTER
+arg0 has only one value
+arg0[] == [5, 7, 7, 8, 8, 10]
+arg1 == 8
+size(arg0[]) == 6
+arg1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.searchRange(int[], int):::EXIT3217
+===========================================================================
+algorithm.leetcode.LeetTest.searchRange(int[], int):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [5, 7, 7, 8, 8, 10]
+return has only one value
+return[] == [3, 4]
+return[] elements one of { 3, 4 }
+size(return[]) == 2
+orig(arg1) in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.setZeroes(int[][]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == int[][].class
+arg0[] contains no nulls and has only one value, of length 5
+size(arg0[]) == 5
+===========================================================================
+algorithm.leetcode.LeetTest.setZeroes(int[][]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 5
+===========================================================================
+algorithm.leetcode.LeetTest.simplifyPath(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "/a/./b/../../c/"
+===========================================================================
+algorithm.leetcode.LeetTest.simplifyPath(java.lang.String):::EXIT
+return has only one value
+return.toString == "/c"
+===========================================================================
+algorithm.leetcode.LeetTest.solve(char[][]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == char[][].class
+arg0[] contains no nulls and has only one value, of length 5
+size(arg0[]) == 5
+===========================================================================
+algorithm.leetcode.LeetTest.solve(char[][]):::EXIT3111
+===========================================================================
+algorithm.leetcode.LeetTest.solve(char[][]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 5
+===========================================================================
+algorithm.leetcode.LeetTest.solveNQueens(int):::ENTER
+arg0 == 5
+===========================================================================
+algorithm.leetcode.LeetTest.solveNQueens(int):::EXIT4604
+===========================================================================
+algorithm.leetcode.LeetTest.solveNQueens(int):::EXIT
+return has only one value
+return[] contains no nulls and has only one value, of length 10
+return[].getClass().getName() == [java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String[]]
+return[].getClass().getName() elements == java.lang.String[].class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 10
+===========================================================================
+algorithm.leetcode.LeetTest.solveNQueensHelper(java.util.List, int, char[][], int):::ENTER
+arg1 == size(arg2[])
+arg0 has only one value
+arg0 != null
+arg0[] elements != null
+arg0[].getClass().getName() elements == java.lang.String[].class
+arg0.getClass().getName() == java.util.ArrayList.class
+arg1 == 5
+arg2 has only one value
+arg2 != null
+arg2.getClass().getName() == char[][].class
+arg2[] contains no nulls and has only one value, of length 5
+arg2[] elements != null
+arg2[arg1-1] has only one value
+arg0.getClass().getName() != arg2.getClass().getName()
+arg3 <= size(arg2[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.solveNQueensHelper(java.util.List, int, char[][], int):::EXIT
+arg2[] == orig(arg2[])
+arg0[] elements != null
+arg0[].getClass().getName() elements == java.lang.String[].class
+arg2[] contains no nulls and has only one value, of length 5
+arg2[] elements != null
+arg2[orig(arg1)-1] has only one value
+orig(arg3) <= size(arg2[])-1
+size(arg0[])-1 >= orig(size(arg0[]))-1
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudoku(char[][]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == char[][].class
+arg0[] contains no nulls and has only one value, of length 9
+size(arg0[]) == 9
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudoku(char[][]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 9
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::ENTER
+arg0 has only one value
+arg0 != null
+arg0.getClass().getName() == char[][].class
+arg0[] contains no nulls and has only one value, of length 9
+arg0[] elements != null
+size(arg0[]) == 9
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT3815
+return == true
+orig(arg1) == 81
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT3815;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT3828
+return == true
+orig(arg1) != orig(size(arg0[]))
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT3828;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT3834
+return == false
+orig(arg1) != orig(size(arg0[]))
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT3834;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT3838
+return == true
+orig(arg1) != size(arg0[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT3838;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT3840
+return == false
+orig(arg1) != size(arg0[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT3840;condition="not(return == true)"
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 9
+arg0[] elements != null
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT;condition="return == true"
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.solveSudokuHelper(char[][], int):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+algorithm.leetcode.LeetTest.sortColors(int[]):::ENTER
+arg0 has only one value
+arg0[] == [0, 1, 2, 0, 1, 2, 0, 1, 2]
+arg0[] elements one of { 0, 1, 2 }
+size(arg0[]) == 9
+===========================================================================
+algorithm.leetcode.LeetTest.sortColors(int[]):::EXIT
+arg0[] == [0, 0, 0, 1, 1, 1, 2, 2, 2]
+arg0[] elements one of { 0, 1, 2 }
+===========================================================================
+algorithm.leetcode.LeetTest.spiralOrder(int[][]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == int[][].class
+arg0[] contains no nulls and has only one value, of length 5
+size(arg0[]) == 5
+===========================================================================
+algorithm.leetcode.LeetTest.spiralOrder(int[][]):::EXIT860
+===========================================================================
+algorithm.leetcode.LeetTest.spiralOrder(int[][]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 5
+return has only one value
+return[] contains no nulls and has only one value, of length 25
+return[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+return[].getClass().getName() elements == java.lang.Integer.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 25
+===========================================================================
+algorithm.leetcode.LeetTest.sqrt(int):::ENTER
+arg0 == 3
+===========================================================================
+algorithm.leetcode.LeetTest.sqrt(int):::EXIT2573
+===========================================================================
+algorithm.leetcode.LeetTest.sqrt(int):::EXIT
+return == 1
+===========================================================================
+algorithm.leetcode.LeetTest.subsets(int[]):::ENTER
+arg0 has only one value
+arg0[] == [1, 2, 3]
+arg0[] elements one of { 1, 2, 3 }
+size(arg0[]) == 3
+size(arg0[]) in arg0[]
+size(arg0[])-1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.subsets(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [1, 2, 3]
+arg0[] elements one of { 1, 2, 3 }
+return has only one value
+return[] contains no nulls and has only one value, of length 8
+return[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+return[].getClass().getName() elements == java.util.ArrayList.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 8
+size(arg0[])-1 in arg0[]
+orig(size(arg0[])) in arg0[]
+return.getClass().getName() in return[].getClass().getName()
+===========================================================================
+algorithm.leetcode.LeetTest.subsetsHelper(java.util.List, int[], int):::ENTER
+arg0[].getClass().getName() elements == java.lang.Integer.class
+arg0.getClass().getName() == java.util.ArrayList.class
+arg1 has only one value
+arg1[] == [1, 2, 3]
+arg1[] elements one of { 1, 2, 3 }
+arg1[] sorted by <
+size(arg1[]) == 3
+arg1[] elements <= size(arg1[])
+size(arg1[]) in arg1[]
+size(arg1[])-1 in arg1[]
+arg2 <= size(arg1[])
+===========================================================================
+algorithm.leetcode.LeetTest.subsetsHelper(java.util.List, int[], int):::EXIT
+arg0[] == orig(arg0[])
+arg1[] == orig(arg1[])
+return.getClass().getName() == orig(arg0.getClass().getName())
+arg0[].getClass().getName() elements == java.lang.Integer.class
+arg1[] == [1, 2, 3]
+arg1[] elements one of { 1, 2, 3 }
+arg1[] sorted by <
+return[].getClass().getName() elements == java.util.ArrayList.class
+return.getClass().getName() == java.util.ArrayList.class
+size(arg1[])-1 in arg1[]
+arg1[] elements <= orig(size(arg1[]))
+orig(size(arg1[])) in arg1[]
+===========================================================================
+algorithm.leetcode.LeetTest.subsetsWithDup(int[]):::ENTER
+arg0 has only one value
+arg0[] == [1, 2, 2]
+arg0[] elements one of { 1, 2 }
+size(arg0[]) == 3
+===========================================================================
+algorithm.leetcode.LeetTest.subsetsWithDup(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [1, 2, 2]
+arg0[] elements one of { 1, 2 }
+return has only one value
+return[] contains no nulls and has only one value, of length 6
+return[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+return[].getClass().getName() elements == java.util.ArrayList.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 6
+return.getClass().getName() in return[].getClass().getName()
+===========================================================================
+algorithm.leetcode.LeetTest.subsetsWithDupHelper(int[], int, java.util.List):::ENTER
+arg0 has only one value
+arg0[] == [1, 2, 2]
+arg0[] elements one of { 1, 2 }
+arg2[].getClass().getName() elements == java.lang.Integer.class
+arg2.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 3
+===========================================================================
+algorithm.leetcode.LeetTest.subsetsWithDupHelper(int[], int, java.util.List):::EXIT
+arg0[] == orig(arg0[])
+arg2[] == orig(arg2[])
+return.getClass().getName() == orig(arg2.getClass().getName())
+arg0[] == [1, 2, 2]
+arg0[] elements one of { 1, 2 }
+arg2[].getClass().getName() elements == java.lang.Integer.class
+return[].getClass().getName() elements == java.util.ArrayList.class
+return.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+algorithm.leetcode.LeetTest.threeSumClosest(int[], int):::ENTER
+arg0 has only one value
+arg0[] == [-1, 2, 1, 4]
+arg1 == 1
+size(arg0[]) == 4
+arg1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.threeSumClosest(int[], int):::EXIT1330
+===========================================================================
+algorithm.leetcode.LeetTest.threeSumClosest(int[], int):::EXIT
+arg0[] == [-1, 1, 2, 4]
+return == 2
+return in arg0[]
+orig(arg1) in arg0[]
+return in orig(arg0[])
+===========================================================================
+algorithm.leetcode.LeetTest.titleToNumber(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "AB"
+===========================================================================
+algorithm.leetcode.LeetTest.titleToNumber(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "AB"
+return == 28
+===========================================================================
+algorithm.leetcode.LeetTest.totalNQueens(int):::ENTER
+arg0 == 5
+===========================================================================
+algorithm.leetcode.LeetTest.totalNQueens(int):::EXIT
+return == 10
+===========================================================================
+algorithm.leetcode.LeetTest.totalNQueensHelper(int, int, char[][], int):::ENTER
+arg0 == size(arg2[])
+arg0 == 5
+arg1 >= 0
+arg2 has only one value
+arg2 != null
+arg2.getClass().getName() == char[][].class
+arg2[] contains no nulls and has only one value, of length 5
+arg2[] elements != null
+arg2[arg0-1] has only one value
+arg3 <= size(arg2[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.totalNQueensHelper(int, int, char[][], int):::EXIT
+arg2[] == orig(arg2[])
+arg2[] contains no nulls and has only one value, of length 5
+arg2[] elements != null
+return >= 1
+arg2[orig(arg0)-1] has only one value
+return >= orig(arg1)
+orig(arg3) <= size(arg2[])-1
+===========================================================================
+algorithm.leetcode.LeetTest.trailingZeroes(int):::ENTER
+arg0 == 1808548329
+===========================================================================
+algorithm.leetcode.LeetTest.trailingZeroes(int):::EXIT
+return == 452137076
+===========================================================================
+algorithm.leetcode.LeetTest.trap(int[]):::ENTER
+arg0 has only one value
+arg0[] == [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
+arg0[] elements >= 0
+size(arg0[]) == 12
+===========================================================================
+algorithm.leetcode.LeetTest.trap(int[]):::EXIT4473
+===========================================================================
+algorithm.leetcode.LeetTest.trap(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
+arg0[] elements >= 0
+return == 6
+arg0[return] == 1
+arg0[return-1] == 0
+===========================================================================
+algorithm.leetcode.LeetTest.twoSum(int[], int):::ENTER
+arg0 has only one value
+arg0[] == [1, 2, 3, 4, 5, 6, 7, 8]
+arg1 == 15
+size(arg0[]) == 8
+size(arg0[]) in arg0[]
+size(arg0[])-1 in arg0[]
+===========================================================================
+algorithm.leetcode.LeetTest.twoSum(int[], int):::EXIT1202
+===========================================================================
+algorithm.leetcode.LeetTest.twoSum(int[], int):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == [1, 2, 3, 4, 5, 6, 7, 8]
+return has only one value
+return[] == [7, 8]
+return[] elements one of { 7, 8 }
+size(return[]) == 2
+size(arg0[])-1 in arg0[]
+orig(size(arg0[])) in arg0[]
+size(arg0[])-1 in return[]
+orig(size(arg0[])) in return[]
+===========================================================================
+algorithm.leetcode.LeetTest.uniquePaths(int, int):::ENTER
+arg0 == 3
+arg1 == 7
+===========================================================================
+algorithm.leetcode.LeetTest.uniquePaths(int, int):::EXIT
+return == 28
+===========================================================================
+algorithm.leetcode.LeetTest.uniquePathsWithObstacles(int[][]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == int[][].class
+arg0[] contains no nulls and has only one value, of length 1
+arg0[] elements has only one value
+size(arg0[]) == 1
+===========================================================================
+algorithm.leetcode.LeetTest.uniquePathsWithObstacles(int[][]):::EXIT2206
+===========================================================================
+algorithm.leetcode.LeetTest.uniquePathsWithObstacles(int[][]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 1
+arg0[] elements has only one value
+return == 0
+===========================================================================
+algorithm.leetcode.LeetTest.wordBreak(java.lang.String, java.util.Set):::ENTER
+arg0 has only one value
+arg0.toString == "catsanddog"
+arg1 has only one value
+arg1.getClass().getName() == java.util.HashSet.class
+===========================================================================
+algorithm.leetcode.LeetTest.wordBreak(java.lang.String, java.util.Set):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "catsanddog"
+return == true
+===========================================================================
+algorithm.leetcode.LeetTest.wordBreak(java.lang.String, java.util.Set):::EXIT;condition="return == true"
+===========================================================================
+algorithm.leetcode.LeetTest.wordBreakII(java.lang.String, java.util.Set):::ENTER
+arg0 has only one value
+arg0.toString == "catsanddog"
+arg1 has only one value
+arg1.getClass().getName() == java.util.HashSet.class
+===========================================================================
+algorithm.leetcode.LeetTest.wordBreakII(java.lang.String, java.util.Set):::EXIT2629
+===========================================================================
+algorithm.leetcode.LeetTest.wordBreakII(java.lang.String, java.util.Set):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "catsanddog"
+return has only one value
+return[] contains no nulls and has only one value, of length 2
+return[].getClass().getName() == [java.lang.String, java.lang.String]
+return[].getClass().getName() elements == java.lang.String.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 2
+===========================================================================
+algorithm.leetcode.LeetTest.wordBreakIIHelperRecursion(java.lang.String, java.lang.String, java.util.Set):::ENTER
+arg2 has only one value
+arg2.getClass().getName() == java.util.HashSet.class
+===========================================================================
+algorithm.leetcode.LeetTest.wordBreakIIHelperRecursion(java.lang.String, java.lang.String, java.util.Set):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+return[].getClass().getName() elements == java.lang.String.class
+return[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) one of { 1, 2 }
+===========================================================================
+algorithm.leetcode.MainLeet.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+algorithm.leetcode.MainLeet.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+algorithm.leetcode.Point:::OBJECT
+this.x one of { -1, 0, 2 }
+this.y one of { -1, 0, 2 }
+===========================================================================
+algorithm.leetcode.Point.Point(int, int):::ENTER
+arg0 one of { -1, 0, 2 }
+arg1 one of { -1, 0, 2 }
+===========================================================================
+algorithm.leetcode.Point.Point(int, int):::EXIT
+this.x == orig(arg0)
+this.y == orig(arg1)
+Exiting Daikon.

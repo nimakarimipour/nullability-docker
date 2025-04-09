@@ -1,0 +1,4184 @@
+// Declarations for test.runner.TestRunner
+// Declarations written 2025-04-06T02:54:04.877526 by daikon.DynComp
+
+decl-version 2.0
+var-comparability implicit
+
+ppt test.runner.TestRunner:::CLASS
+ppt-type class
+
+ppt test.runner.TestRunner:::OBJECT
+ppt-type object
+variable this
+  var-kind variable
+  dec-type test.runner.TestRunner
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+
+ppt test.runner.TestRunner.TestRunner():::ENTER
+ppt-type enter
+
+ppt test.runner.TestRunner.TestRunner():::EXIT3
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.runner.TestRunner
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+
+ppt test.runner.TestRunner.main(java.lang.String[]):::ENTER
+ppt-type enter
+variable arg0
+  var-kind variable
+  dec-type java.lang.String[]
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable arg0.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args arg0
+  flags synthetic classname non_null
+  comparability 1
+variable arg0[..]
+  var-kind array
+  array 1
+  dec-type java.lang.String[]
+  rep-type hashcode[]
+  comparability 3[5]
+variable arg0[..].toString
+  var-kind function toString()
+  array 1
+  dec-type java.lang.String[]
+  rep-type java.lang.String[]
+  function-args arg0[]
+  flags synthetic to_string
+  comparability 4[6]
+
+ppt test.runner.TestRunner.main(java.lang.String[]):::EXIT10
+ppt-type subexit
+variable arg0
+  var-kind variable
+  dec-type java.lang.String[]
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable arg0.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args arg0
+  flags synthetic classname non_null
+  comparability 1
+variable arg0[..]
+  var-kind array
+  array 1
+  dec-type java.lang.String[]
+  rep-type hashcode[]
+  comparability 3[5]
+variable arg0[..].toString
+  var-kind function toString()
+  array 1
+  dec-type java.lang.String[]
+  rep-type java.lang.String[]
+  function-args arg0[]
+  flags synthetic to_string
+  comparability 4[6]
+
+ppt test.runner.TestRunner.equals(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.runner.TestRunner
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt test.runner.TestRunner.equals(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.runner.TestRunner
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+
+ppt test.runner.TestRunner.equals_dcomp_instrumented(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.runner.TestRunner
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt test.runner.TestRunner.equals_dcomp_instrumented(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.runner.TestRunner
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+
+ppt test.runner.StrategyEvaluatorTestRunner:::CLASS
+ppt-type class
+
+ppt test.runner.StrategyEvaluatorTestRunner:::OBJECT
+ppt-type object
+variable this
+  var-kind variable
+  dec-type test.runner.StrategyEvaluatorTestRunner
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+
+ppt test.runner.StrategyEvaluatorTestRunner.StrategyEvaluatorTestRunner():::ENTER
+ppt-type enter
+
+ppt test.runner.StrategyEvaluatorTestRunner.StrategyEvaluatorTestRunner():::EXIT5
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.runner.StrategyEvaluatorTestRunner
+  rep-type hashcode
+  flags is_param non_null
+  comparability 2
+
+ppt test.runner.StrategyEvaluatorTestRunner.main(java.lang.String[]):::ENTER
+ppt-type enter
+variable arg0
+  var-kind variable
+  dec-type java.lang.String[]
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable arg0.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args arg0
+  flags synthetic classname non_null
+  comparability 1
+variable arg0[..]
+  var-kind array
+  array 1
+  dec-type java.lang.String[]
+  rep-type hashcode[]
+  comparability 3[5]
+variable arg0[..].toString
+  var-kind function toString()
+  array 1
+  dec-type java.lang.String[]
+  rep-type java.lang.String[]
+  function-args arg0[]
+  flags synthetic to_string
+  comparability 4[6]
+
+ppt test.runner.StrategyEvaluatorTestRunner.main(java.lang.String[]):::EXIT8
+ppt-type subexit
+variable arg0
+  var-kind variable
+  dec-type java.lang.String[]
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable arg0.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args arg0
+  flags synthetic classname non_null
+  comparability 1
+variable arg0[..]
+  var-kind array
+  array 1
+  dec-type java.lang.String[]
+  rep-type hashcode[]
+  comparability 3[5]
+variable arg0[..].toString
+  var-kind function toString()
+  array 1
+  dec-type java.lang.String[]
+  rep-type java.lang.String[]
+  function-args arg0[]
+  flags synthetic to_string
+  comparability 4[6]
+
+ppt test.runner.StrategyEvaluatorTestRunner.run():::ENTER
+ppt-type enter
+
+ppt test.runner.StrategyEvaluatorTestRunner.run():::EXIT18
+ppt-type subexit
+
+ppt test.runner.StrategyEvaluatorTestRunner.equals(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.runner.StrategyEvaluatorTestRunner
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt test.runner.StrategyEvaluatorTestRunner.equals(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.runner.StrategyEvaluatorTestRunner
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+
+ppt test.runner.StrategyEvaluatorTestRunner.equals_dcomp_instrumented(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.runner.StrategyEvaluatorTestRunner
+  rep-type hashcode
+  flags is_param non_null
+  comparability 3
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt test.runner.StrategyEvaluatorTestRunner.equals_dcomp_instrumented(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.runner.StrategyEvaluatorTestRunner
+  rep-type hashcode
+  flags is_param non_null
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+
+ppt test.evaluator.TradeStrategyEvaluatorTest:::CLASS
+ppt-type class
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest:::OBJECT
+ppt-type object
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.TradeStrategyEvaluatorTest():::ENTER
+ppt-type enter
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.TradeStrategyEvaluatorTest():::EXIT18
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.setUp():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.setUp():::EXIT35
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.tearDown():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.tearDown():::EXIT40
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testCalculateProfitLoss():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testCalculateProfitLoss():::EXIT51
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testCalculateBreakEven():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testCalculateBreakEven():::EXIT60
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testCalculatePositive():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testCalculatePositive():::EXIT70
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testCalculateNegative():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testCalculateNegative():::EXIT80
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testNegativeTradeList():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testNegativeTradeList():::EXIT92
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 20
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 19
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 4
+variable return
+  var-kind return
+  dec-type java.util.List
+  rep-type hashcode
+  comparability 2
+variable return[..]
+  var-kind array
+  array 1
+  dec-type java.util.List
+  rep-type hashcode[]
+  comparability 3[21]
+variable return[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args return[]
+  flags synthetic classname non_null
+  comparability 1[22]
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testPositiveTradeList():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testPositiveTradeList():::EXIT105
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 20
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 19
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 4
+variable return
+  var-kind return
+  dec-type java.util.List
+  rep-type hashcode
+  comparability 2
+variable return[..]
+  var-kind array
+  array 1
+  dec-type java.util.List
+  rep-type hashcode[]
+  comparability 3[21]
+variable return[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args return[]
+  flags synthetic classname non_null
+  comparability 1[22]
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testEvenTradeList():::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 3
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 2
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testEvenTradeList():::EXIT116
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 20
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 19
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 4
+variable return
+  var-kind return
+  dec-type java.util.List
+  rep-type hashcode
+  comparability 2
+variable return[..]
+  var-kind array
+  array 1
+  dec-type java.util.List
+  rep-type hashcode[]
+  comparability 3[21]
+variable return[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args return[]
+  flags synthetic classname non_null
+  comparability 1[22]
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testTradeList(java.util.List, java.util.List):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 22
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 20
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 21
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 19
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 6
+variable bidList
+  var-kind variable
+  dec-type java.util.List
+  rep-type hashcode
+  flags is_param
+  comparability 4
+variable bidList[..]
+  var-kind array
+  array 1
+  dec-type java.util.List
+  rep-type hashcode[]
+  comparability 5[23]
+variable bidList[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args bidList[]
+  flags synthetic classname non_null
+  comparability 1[24]
+variable bidList.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args bidList
+  flags synthetic classname non_null
+  comparability 1
+variable askList
+  var-kind variable
+  dec-type java.util.List
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable askList[..]
+  var-kind array
+  array 1
+  dec-type java.util.List
+  rep-type hashcode[]
+  comparability 3[25]
+variable askList[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args askList[]
+  flags synthetic classname non_null
+  comparability 1[26]
+variable askList.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args askList
+  flags synthetic classname non_null
+  comparability 1
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.testTradeList(java.util.List, java.util.List):::EXIT130
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 24
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 19
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 20
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 22
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 23
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 21
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 8
+variable bidList
+  var-kind variable
+  dec-type java.util.List
+  rep-type hashcode
+  flags is_param
+  comparability 4
+variable bidList[..]
+  var-kind array
+  array 1
+  dec-type java.util.List
+  rep-type hashcode[]
+  comparability 5[25]
+variable bidList[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args bidList[]
+  flags synthetic classname non_null
+  comparability 1[26]
+variable bidList.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args bidList
+  flags synthetic classname non_null
+  comparability 1
+variable askList
+  var-kind variable
+  dec-type java.util.List
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable askList[..]
+  var-kind array
+  array 1
+  dec-type java.util.List
+  rep-type hashcode[]
+  comparability 3[27]
+variable askList[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args askList[]
+  flags synthetic classname non_null
+  comparability 1[28]
+variable askList.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args askList
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type java.util.List
+  rep-type hashcode
+  comparability 6
+variable return[..]
+  var-kind array
+  array 1
+  dec-type java.util.List
+  rep-type hashcode[]
+  comparability 7[29]
+variable return[..].getClass().getName()
+  var-kind function getClass().getName()
+  array 1
+  dec-type java.lang.Class[]
+  rep-type java.lang.String[]
+  function-args return[]
+  flags synthetic classname non_null
+  comparability 1[30]
+variable return.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args return
+  flags synthetic classname non_null
+  comparability 1
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.equals(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 19
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 3
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.equals(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 20
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 19
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.equals_dcomp_instrumented(java.lang.Object):::ENTER
+ppt-type enter
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 19
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 4
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 3
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+
+ppt test.evaluator.TradeStrategyEvaluatorTest.equals_dcomp_instrumented(java.lang.Object):::EXIT1
+ppt-type subexit
+variable this
+  var-kind variable
+  dec-type test.evaluator.TradeStrategyEvaluatorTest
+  rep-type hashcode
+  flags is_param non_null
+  comparability 20
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 6
+variable test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.INSTRUMENT
+  flags synthetic to_string
+  comparability 7
+variable test.evaluator.TradeStrategyEvaluatorTest.DATE
+  var-kind variable
+  dec-type java.util.Date
+  rep-type hashcode
+  flags nomod
+  comparability 5
+variable test.evaluator.TradeStrategyEvaluatorTest.PRICE
+  var-kind variable
+  dec-type double
+  rep-type double
+  flags nomod
+  comparability 12
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 15
+variable test.evaluator.TradeStrategyEvaluatorTest.VOLUME.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.VOLUME
+  flags synthetic to_string
+  comparability 16
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 10
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_BID
+  flags synthetic to_string
+  comparability 11
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 8
+variable test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.ORDER_ASK
+  flags synthetic to_string
+  comparability 9
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.RANDOM_BROKER_ID
+  flags synthetic to_string
+  comparability 14
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.buyerBrokerID
+  flags synthetic to_string
+  comparability 18
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.sellerBrokerID
+  flags synthetic to_string
+  comparability 19
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  var-kind variable
+  dec-type java.lang.String
+  rep-type hashcode
+  flags nomod
+  comparability 13
+variable test.evaluator.TradeStrategyEvaluatorTest.brokerID.toString
+  var-kind function toString()
+  dec-type java.lang.String
+  rep-type java.lang.String
+  function-args test.evaluator.TradeStrategyEvaluatorTest.brokerID
+  flags synthetic to_string
+  comparability 17
+variable test.evaluator.TradeStrategyEvaluatorTest.$assertionsDisabled
+  var-kind variable
+  dec-type boolean
+  rep-type boolean
+  flags nomod
+  comparability 4
+variable obj
+  var-kind variable
+  dec-type java.lang.Object
+  rep-type hashcode
+  flags is_param
+  comparability 2
+variable obj.getClass().getName()
+  var-kind function getClass().getName()
+  dec-type java.lang.Class
+  rep-type java.lang.String
+  function-args obj
+  flags synthetic classname non_null
+  comparability 1
+variable return
+  var-kind return
+  dec-type boolean
+  rep-type boolean
+  comparability 3
+

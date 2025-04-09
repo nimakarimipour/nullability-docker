@@ -1,0 +1,3 @@
+METHOD	org.argparser.ArgParser	getRecord(java.lang.String,org.argparser.ArgHolder)	null	null
+FIELD	org.argparser.ArgHolder	null	value	null
+METHOD	org.argparser.ArgParserTest	getMatchResult(java.lang.String[],int,int,java.lang.String,int)	null	null

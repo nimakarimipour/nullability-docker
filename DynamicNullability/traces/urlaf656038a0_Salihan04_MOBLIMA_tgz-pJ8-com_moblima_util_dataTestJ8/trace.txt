@@ -1,0 +1,1505 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 5 times.  Unmatched entries are ignored!
+Unterminated calls:
+  com.moblima.util.dataTest.main(java.lang.String[]) : 1 invocation
+  com.moblima.util.dataGenerator.dataGenerator() : 1 invocation
+  com.moblima.businesslogic.TicketPriceBL.TicketPriceBL() : 1 invocation
+  com.moblima.dataaccess.TicketPriceDAOImpl.getInstance() : 1 invocation
+  com.moblima.dataaccess.TicketPriceDAOImpl.TicketPriceDAOImpl() : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+com.moblima.dataaccess.CinemaDAOImpl:::CLASS
+com.moblima.dataaccess.CinemaDAOImpl.cinemaDAO.getClass().getName() == com.moblima.dataaccess.CinemaDAOImpl.class
+===========================================================================
+com.moblima.dataaccess.CinemaDAOImpl:::OBJECT
+this.serializeDB == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+this has only one value
+com.moblima.dataaccess.CinemaDAOImpl.cinemaDAO == null
+this.serializeDB.cineplexes == null
+this.serializeDB.cinemas == null
+this.serializeDB.seats == null
+this.serializeDB.movies == null
+this.serializeDB.showTimes == null
+this.serializeDB.movieGoers == null
+this.serializeDB.movieTickets == null
+this.serializeDB.transactions == null
+this.serializeDB.bookings == null
+this.serializeDB.publicHolidays == null
+this.serializeDB.ticketPrices == null
+this.serializeDB.staffs == null
+this.serializeDB.cineplexID == null
+this.serializeDB.seatID == null
+this.serializeDB.movieID == null
+this.serializeDB.showTimeID == null
+this.serializeDB.movieGoerID == null
+this.serializeDB.movieTicketID == null
+this.serializeDB.bookingID == null
+this.serializeDB.publicHolidayID == null
+this.serializeDB.staffID == null
+com.moblima.dataaccess.SerializeDB.fileName has only one value
+com.moblima.dataaccess.SerializeDB.fileName.toString == "serializeDB.dat"
+com.moblima.dataaccess.SerializeDB.instance has only one value
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == null
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == null
+this.cinemas == null
+===========================================================================
+com.moblima.dataaccess.CinemaDAOImpl.CinemaDAOImpl():::EXIT
+===========================================================================
+com.moblima.dataaccess.CinemaDAOImpl.getInstance():::ENTER
+com.moblima.dataaccess.CinemaDAOImpl.cinemaDAO == null
+===========================================================================
+com.moblima.dataaccess.CinemaDAOImpl.getInstance():::EXIT
+com.moblima.dataaccess.CinemaDAOImpl.cinemaDAO == return
+com.moblima.dataaccess.CinemaDAOImpl.cinemaDAO.getClass().getName() == return.getClass().getName()
+com.moblima.dataaccess.CinemaDAOImpl.cinemaDAO has only one value
+===========================================================================
+com.moblima.dataaccess.CineplexDAOImpl:::CLASS
+com.moblima.dataaccess.CineplexDAOImpl.cineplexDAO.getClass().getName() == com.moblima.dataaccess.CineplexDAOImpl.class
+===========================================================================
+com.moblima.dataaccess.CineplexDAOImpl:::OBJECT
+this.serializeDB == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+this has only one value
+com.moblima.dataaccess.CineplexDAOImpl.cineplexDAO == null
+this.serializeDB.cineplexes == null
+this.serializeDB.cinemas == null
+this.serializeDB.seats == null
+this.serializeDB.movies == null
+this.serializeDB.showTimes == null
+this.serializeDB.movieGoers == null
+this.serializeDB.movieTickets == null
+this.serializeDB.transactions == null
+this.serializeDB.bookings == null
+this.serializeDB.publicHolidays == null
+this.serializeDB.ticketPrices == null
+this.serializeDB.staffs == null
+this.serializeDB.cineplexID == null
+this.serializeDB.seatID == null
+this.serializeDB.movieID == null
+this.serializeDB.showTimeID == null
+this.serializeDB.movieGoerID == null
+this.serializeDB.movieTicketID == null
+this.serializeDB.bookingID == null
+this.serializeDB.publicHolidayID == null
+this.serializeDB.staffID == null
+com.moblima.dataaccess.SerializeDB.fileName has only one value
+com.moblima.dataaccess.SerializeDB.fileName.toString == "serializeDB.dat"
+com.moblima.dataaccess.SerializeDB.instance has only one value
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == null
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == null
+this.cineplexes == null
+===========================================================================
+com.moblima.dataaccess.CineplexDAOImpl.CineplexDAOImpl():::EXIT
+===========================================================================
+com.moblima.dataaccess.CineplexDAOImpl.getInstance():::ENTER
+com.moblima.dataaccess.CineplexDAOImpl.cineplexDAO == null
+===========================================================================
+com.moblima.dataaccess.CineplexDAOImpl.getInstance():::EXIT
+com.moblima.dataaccess.CineplexDAOImpl.cineplexDAO == return
+com.moblima.dataaccess.CineplexDAOImpl.cineplexDAO.getClass().getName() == return.getClass().getName()
+com.moblima.dataaccess.CineplexDAOImpl.cineplexDAO has only one value
+===========================================================================
+com.moblima.dataaccess.MovieDAOImpl:::CLASS
+com.moblima.dataaccess.MovieDAOImpl.movieDAO.getClass().getName() == com.moblima.dataaccess.MovieDAOImpl.class
+===========================================================================
+com.moblima.dataaccess.MovieDAOImpl:::OBJECT
+this.serializeDB == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+this has only one value
+com.moblima.dataaccess.MovieDAOImpl.movieDAO == null
+this.serializeDB.cineplexes == null
+this.serializeDB.cinemas == null
+this.serializeDB.seats == null
+this.serializeDB.movies == null
+this.serializeDB.showTimes == null
+this.serializeDB.movieGoers == null
+this.serializeDB.movieTickets == null
+this.serializeDB.transactions == null
+this.serializeDB.bookings == null
+this.serializeDB.publicHolidays == null
+this.serializeDB.ticketPrices == null
+this.serializeDB.staffs == null
+this.serializeDB.cineplexID == null
+this.serializeDB.seatID == null
+this.serializeDB.movieID == null
+this.serializeDB.showTimeID == null
+this.serializeDB.movieGoerID == null
+this.serializeDB.movieTicketID == null
+this.serializeDB.bookingID == null
+this.serializeDB.publicHolidayID == null
+this.serializeDB.staffID == null
+com.moblima.dataaccess.SerializeDB.fileName has only one value
+com.moblima.dataaccess.SerializeDB.fileName.toString == "serializeDB.dat"
+com.moblima.dataaccess.SerializeDB.instance has only one value
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == null
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == null
+this.movies == null
+===========================================================================
+com.moblima.dataaccess.MovieDAOImpl.MovieDAOImpl():::EXIT
+===========================================================================
+com.moblima.dataaccess.MovieDAOImpl.getInstance():::ENTER
+com.moblima.dataaccess.MovieDAOImpl.movieDAO == null
+===========================================================================
+com.moblima.dataaccess.MovieDAOImpl.getInstance():::EXIT
+com.moblima.dataaccess.MovieDAOImpl.movieDAO == return
+com.moblima.dataaccess.MovieDAOImpl.movieDAO.getClass().getName() == return.getClass().getName()
+com.moblima.dataaccess.MovieDAOImpl.movieDAO has only one value
+===========================================================================
+com.moblima.dataaccess.MovieGoerDAOImpl:::CLASS
+com.moblima.dataaccess.MovieGoerDAOImpl.movieGoerDAO.getClass().getName() == com.moblima.dataaccess.MovieGoerDAOImpl.class
+===========================================================================
+com.moblima.dataaccess.MovieGoerDAOImpl:::OBJECT
+this.serializeDB == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+this has only one value
+com.moblima.dataaccess.MovieGoerDAOImpl.movieGoerDAO == null
+this.serializeDB.cineplexes == null
+this.serializeDB.cinemas == null
+this.serializeDB.seats == null
+this.serializeDB.movies == null
+this.serializeDB.showTimes == null
+this.serializeDB.movieGoers == null
+this.serializeDB.movieTickets == null
+this.serializeDB.transactions == null
+this.serializeDB.bookings == null
+this.serializeDB.publicHolidays == null
+this.serializeDB.ticketPrices == null
+this.serializeDB.staffs == null
+this.serializeDB.cineplexID == null
+this.serializeDB.seatID == null
+this.serializeDB.movieID == null
+this.serializeDB.showTimeID == null
+this.serializeDB.movieGoerID == null
+this.serializeDB.movieTicketID == null
+this.serializeDB.bookingID == null
+this.serializeDB.publicHolidayID == null
+this.serializeDB.staffID == null
+com.moblima.dataaccess.SerializeDB.fileName has only one value
+com.moblima.dataaccess.SerializeDB.fileName.toString == "serializeDB.dat"
+com.moblima.dataaccess.SerializeDB.instance has only one value
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == null
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == null
+this.movieGoers == null
+===========================================================================
+com.moblima.dataaccess.MovieGoerDAOImpl.MovieGoerDAOImpl():::EXIT
+===========================================================================
+com.moblima.dataaccess.MovieGoerDAOImpl.getInstance():::ENTER
+com.moblima.dataaccess.MovieGoerDAOImpl.movieGoerDAO == null
+===========================================================================
+com.moblima.dataaccess.MovieGoerDAOImpl.getInstance():::EXIT
+com.moblima.dataaccess.MovieGoerDAOImpl.movieGoerDAO == return
+com.moblima.dataaccess.MovieGoerDAOImpl.movieGoerDAO.getClass().getName() == return.getClass().getName()
+com.moblima.dataaccess.MovieGoerDAOImpl.movieGoerDAO has only one value
+===========================================================================
+com.moblima.dataaccess.MovieTicketDAOImpl:::CLASS
+com.moblima.dataaccess.MovieTicketDAOImpl.movieTicketDAO.getClass().getName() == com.moblima.dataaccess.MovieTicketDAOImpl.class
+===========================================================================
+com.moblima.dataaccess.MovieTicketDAOImpl:::OBJECT
+this.serializeDB == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+this has only one value
+com.moblima.dataaccess.MovieTicketDAOImpl.movieTicketDAO == null
+this.serializeDB.cineplexes == null
+this.serializeDB.cinemas == null
+this.serializeDB.seats == null
+this.serializeDB.movies == null
+this.serializeDB.showTimes == null
+this.serializeDB.movieGoers == null
+this.serializeDB.movieTickets == null
+this.serializeDB.transactions == null
+this.serializeDB.bookings == null
+this.serializeDB.publicHolidays == null
+this.serializeDB.ticketPrices == null
+this.serializeDB.staffs == null
+this.serializeDB.cineplexID == null
+this.serializeDB.seatID == null
+this.serializeDB.movieID == null
+this.serializeDB.showTimeID == null
+this.serializeDB.movieGoerID == null
+this.serializeDB.movieTicketID == null
+this.serializeDB.bookingID == null
+this.serializeDB.publicHolidayID == null
+this.serializeDB.staffID == null
+com.moblima.dataaccess.SerializeDB.fileName has only one value
+com.moblima.dataaccess.SerializeDB.fileName.toString == "serializeDB.dat"
+com.moblima.dataaccess.SerializeDB.instance has only one value
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == null
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == null
+this.movieTickets == null
+===========================================================================
+com.moblima.dataaccess.MovieTicketDAOImpl.MovieTicketDAOImpl():::EXIT
+===========================================================================
+com.moblima.dataaccess.MovieTicketDAOImpl.getInstance():::ENTER
+com.moblima.dataaccess.MovieTicketDAOImpl.movieTicketDAO == null
+===========================================================================
+com.moblima.dataaccess.MovieTicketDAOImpl.getInstance():::EXIT
+com.moblima.dataaccess.MovieTicketDAOImpl.movieTicketDAO == return
+com.moblima.dataaccess.MovieTicketDAOImpl.movieTicketDAO.getClass().getName() == return.getClass().getName()
+com.moblima.dataaccess.MovieTicketDAOImpl.movieTicketDAO has only one value
+===========================================================================
+com.moblima.dataaccess.PublicHolidayDAOImpl:::CLASS
+com.moblima.dataaccess.PublicHolidayDAOImpl.publicHolidayDAO.getClass().getName() == com.moblima.dataaccess.PublicHolidayDAOImpl.class
+===========================================================================
+com.moblima.dataaccess.PublicHolidayDAOImpl:::OBJECT
+this.serializeDB == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+this has only one value
+com.moblima.dataaccess.PublicHolidayDAOImpl.publicHolidayDAO == null
+this.serializeDB.cineplexes == null
+this.serializeDB.cinemas == null
+this.serializeDB.seats == null
+this.serializeDB.movies == null
+this.serializeDB.showTimes == null
+this.serializeDB.movieGoers == null
+this.serializeDB.movieTickets == null
+this.serializeDB.transactions == null
+this.serializeDB.bookings == null
+this.serializeDB.publicHolidays == null
+this.serializeDB.ticketPrices == null
+this.serializeDB.staffs == null
+this.serializeDB.cineplexID == null
+this.serializeDB.seatID == null
+this.serializeDB.movieID == null
+this.serializeDB.showTimeID == null
+this.serializeDB.movieGoerID == null
+this.serializeDB.movieTicketID == null
+this.serializeDB.bookingID == null
+this.serializeDB.publicHolidayID == null
+this.serializeDB.staffID == null
+com.moblima.dataaccess.SerializeDB.fileName has only one value
+com.moblima.dataaccess.SerializeDB.fileName.toString == "serializeDB.dat"
+com.moblima.dataaccess.SerializeDB.instance has only one value
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == null
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == null
+this.publicHolidays == null
+===========================================================================
+com.moblima.dataaccess.PublicHolidayDAOImpl.PublicHolidayDAOImpl():::EXIT
+===========================================================================
+com.moblima.dataaccess.PublicHolidayDAOImpl.getInstance():::ENTER
+com.moblima.dataaccess.PublicHolidayDAOImpl.publicHolidayDAO == null
+===========================================================================
+com.moblima.dataaccess.PublicHolidayDAOImpl.getInstance():::EXIT
+com.moblima.dataaccess.PublicHolidayDAOImpl.publicHolidayDAO == return
+com.moblima.dataaccess.PublicHolidayDAOImpl.publicHolidayDAO.getClass().getName() == return.getClass().getName()
+com.moblima.dataaccess.PublicHolidayDAOImpl.publicHolidayDAO has only one value
+===========================================================================
+com.moblima.dataaccess.SeatDAOImpl:::CLASS
+com.moblima.dataaccess.SeatDAOImpl.seatDAO.getClass().getName() == com.moblima.dataaccess.SeatDAOImpl.class
+===========================================================================
+com.moblima.dataaccess.SeatDAOImpl:::OBJECT
+this.serializeDB == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+this has only one value
+com.moblima.dataaccess.SeatDAOImpl.seatDAO == null
+this.serializeDB.cineplexes == null
+this.serializeDB.cinemas == null
+this.serializeDB.seats == null
+this.serializeDB.movies == null
+this.serializeDB.showTimes == null
+this.serializeDB.movieGoers == null
+this.serializeDB.movieTickets == null
+this.serializeDB.transactions == null
+this.serializeDB.bookings == null
+this.serializeDB.publicHolidays == null
+this.serializeDB.ticketPrices == null
+this.serializeDB.staffs == null
+this.serializeDB.cineplexID == null
+this.serializeDB.seatID == null
+this.serializeDB.movieID == null
+this.serializeDB.showTimeID == null
+this.serializeDB.movieGoerID == null
+this.serializeDB.movieTicketID == null
+this.serializeDB.bookingID == null
+this.serializeDB.publicHolidayID == null
+this.serializeDB.staffID == null
+com.moblima.dataaccess.SerializeDB.fileName has only one value
+com.moblima.dataaccess.SerializeDB.fileName.toString == "serializeDB.dat"
+com.moblima.dataaccess.SerializeDB.instance has only one value
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == null
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == null
+this.seats == null
+===========================================================================
+com.moblima.dataaccess.SeatDAOImpl.SeatDAOImpl():::EXIT
+===========================================================================
+com.moblima.dataaccess.SeatDAOImpl.getInstance():::ENTER
+com.moblima.dataaccess.SeatDAOImpl.seatDAO == null
+===========================================================================
+com.moblima.dataaccess.SeatDAOImpl.getInstance():::EXIT
+com.moblima.dataaccess.SeatDAOImpl.seatDAO == return
+com.moblima.dataaccess.SeatDAOImpl.seatDAO.getClass().getName() == return.getClass().getName()
+com.moblima.dataaccess.SeatDAOImpl.seatDAO has only one value
+===========================================================================
+com.moblima.dataaccess.SerializeDB:::CLASS
+com.moblima.dataaccess.SerializeDB.fileName has only one value
+com.moblima.dataaccess.SerializeDB.fileName != null
+com.moblima.dataaccess.SerializeDB.fileName.toString == "serializeDB.dat"
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == null
+com.moblima.dataaccess.SerializeDB.instance.cinemas == null
+com.moblima.dataaccess.SerializeDB.instance.seats == null
+com.moblima.dataaccess.SerializeDB.instance.movies == null
+com.moblima.dataaccess.SerializeDB.instance.showTimes == null
+com.moblima.dataaccess.SerializeDB.instance.movieGoers == null
+com.moblima.dataaccess.SerializeDB.instance.movieTickets == null
+com.moblima.dataaccess.SerializeDB.instance.transactions == null
+com.moblima.dataaccess.SerializeDB.instance.bookings == null
+com.moblima.dataaccess.SerializeDB.instance.publicHolidays == null
+com.moblima.dataaccess.SerializeDB.instance.ticketPrices == null
+com.moblima.dataaccess.SerializeDB.instance.staffs == null
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == null
+com.moblima.dataaccess.SerializeDB.instance.seatID == null
+com.moblima.dataaccess.SerializeDB.instance.movieID == null
+com.moblima.dataaccess.SerializeDB.instance.showTimeID == null
+com.moblima.dataaccess.SerializeDB.instance.movieGoerID == null
+com.moblima.dataaccess.SerializeDB.instance.movieTicketID == null
+com.moblima.dataaccess.SerializeDB.instance.bookingID == null
+com.moblima.dataaccess.SerializeDB.instance.publicHolidayID == null
+com.moblima.dataaccess.SerializeDB.instance.staffID == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB:::OBJECT
+this has only one value
+this.cineplexes == null
+this.cinemas == null
+this.seats == null
+this.movies == null
+this.showTimes == null
+this.movieGoers == null
+this.movieTickets == null
+this.transactions == null
+this.bookings == null
+this.publicHolidays == null
+this.ticketPrices == null
+this.staffs == null
+this.cineplexID == null
+this.seatID == null
+this.movieID == null
+this.showTimeID == null
+this.movieGoerID == null
+this.movieTicketID == null
+this.bookingID == null
+this.publicHolidayID == null
+this.staffID == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.SerializeDB():::EXIT
+com.moblima.dataaccess.SerializeDB.instance == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getCinemas():::ENTER
+this == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance has only one value
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getCinemas():::EXIT
+this.cineplexes == orig(this.cineplexes)
+this.cinemas == orig(this.cinemas)
+this.seats == orig(this.seats)
+this.movies == orig(this.movies)
+this.showTimes == orig(this.showTimes)
+this.movieGoers == orig(this.movieGoers)
+this.movieTickets == orig(this.movieTickets)
+this.transactions == orig(this.transactions)
+this.bookings == orig(this.bookings)
+this.publicHolidays == orig(this.publicHolidays)
+this.ticketPrices == orig(this.ticketPrices)
+this.staffs == orig(this.staffs)
+this.cineplexID == orig(this.cineplexID)
+this.seatID == orig(this.seatID)
+this.movieID == orig(this.movieID)
+this.showTimeID == orig(this.showTimeID)
+this.movieGoerID == orig(this.movieGoerID)
+this.movieTicketID == orig(this.movieTicketID)
+this.bookingID == orig(this.bookingID)
+this.publicHolidayID == orig(this.publicHolidayID)
+this.staffID == orig(this.staffID)
+com.moblima.dataaccess.SerializeDB.fileName == orig(com.moblima.dataaccess.SerializeDB.fileName)
+com.moblima.dataaccess.SerializeDB.fileName.toString == orig(com.moblima.dataaccess.SerializeDB.fileName.toString)
+com.moblima.dataaccess.SerializeDB.instance == orig(this)
+com.moblima.dataaccess.SerializeDB.instance == orig(com.moblima.dataaccess.SerializeDB.instance)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cinemas)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.seats)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movies)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.showTimes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoers)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieTickets)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.transactions)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.bookings)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidays)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.ticketPrices)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.staffs)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.seatID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.showTimeID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoerID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieTicketID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.bookingID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidayID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.staffID)
+com.moblima.dataaccess.SerializeDB.instance has only one value
+return == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getCineplexes():::ENTER
+this == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance has only one value
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getCineplexes():::EXIT
+this.cineplexes == orig(this.cineplexes)
+this.cinemas == orig(this.cinemas)
+this.seats == orig(this.seats)
+this.movies == orig(this.movies)
+this.showTimes == orig(this.showTimes)
+this.movieGoers == orig(this.movieGoers)
+this.movieTickets == orig(this.movieTickets)
+this.transactions == orig(this.transactions)
+this.bookings == orig(this.bookings)
+this.publicHolidays == orig(this.publicHolidays)
+this.ticketPrices == orig(this.ticketPrices)
+this.staffs == orig(this.staffs)
+this.cineplexID == orig(this.cineplexID)
+this.seatID == orig(this.seatID)
+this.movieID == orig(this.movieID)
+this.showTimeID == orig(this.showTimeID)
+this.movieGoerID == orig(this.movieGoerID)
+this.movieTicketID == orig(this.movieTicketID)
+this.bookingID == orig(this.bookingID)
+this.publicHolidayID == orig(this.publicHolidayID)
+this.staffID == orig(this.staffID)
+com.moblima.dataaccess.SerializeDB.fileName == orig(com.moblima.dataaccess.SerializeDB.fileName)
+com.moblima.dataaccess.SerializeDB.fileName.toString == orig(com.moblima.dataaccess.SerializeDB.fileName.toString)
+com.moblima.dataaccess.SerializeDB.instance == orig(this)
+com.moblima.dataaccess.SerializeDB.instance == orig(com.moblima.dataaccess.SerializeDB.instance)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cinemas)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.seats)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movies)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.showTimes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoers)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieTickets)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.transactions)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.bookings)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidays)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.ticketPrices)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.staffs)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.seatID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.showTimeID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoerID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieTicketID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.bookingID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidayID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.staffID)
+com.moblima.dataaccess.SerializeDB.instance has only one value
+return == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getInstance():::ENTER
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getInstance():::EXIT
+com.moblima.dataaccess.SerializeDB.fileName == orig(com.moblima.dataaccess.SerializeDB.fileName)
+com.moblima.dataaccess.SerializeDB.fileName.toString == orig(com.moblima.dataaccess.SerializeDB.fileName.toString)
+com.moblima.dataaccess.SerializeDB.instance == return
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexID)
+com.moblima.dataaccess.SerializeDB.instance has only one value
+return.cineplexes == null
+return.cinemas == null
+return.seats == null
+return.movies == null
+return.showTimes == null
+return.movieGoers == null
+return.movieTickets == null
+return.transactions == null
+return.bookings == null
+return.publicHolidays == null
+return.ticketPrices == null
+return.staffs == null
+return.cineplexID == null
+return.seatID == null
+return.movieID == null
+return.showTimeID == null
+return.movieGoerID == null
+return.movieTicketID == null
+return.bookingID == null
+return.publicHolidayID == null
+return.staffID == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getMovieGoers():::ENTER
+this == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance has only one value
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getMovieGoers():::EXIT
+this.cineplexes == orig(this.cineplexes)
+this.cinemas == orig(this.cinemas)
+this.seats == orig(this.seats)
+this.movies == orig(this.movies)
+this.showTimes == orig(this.showTimes)
+this.movieGoers == orig(this.movieGoers)
+this.movieTickets == orig(this.movieTickets)
+this.transactions == orig(this.transactions)
+this.bookings == orig(this.bookings)
+this.publicHolidays == orig(this.publicHolidays)
+this.ticketPrices == orig(this.ticketPrices)
+this.staffs == orig(this.staffs)
+this.cineplexID == orig(this.cineplexID)
+this.seatID == orig(this.seatID)
+this.movieID == orig(this.movieID)
+this.showTimeID == orig(this.showTimeID)
+this.movieGoerID == orig(this.movieGoerID)
+this.movieTicketID == orig(this.movieTicketID)
+this.bookingID == orig(this.bookingID)
+this.publicHolidayID == orig(this.publicHolidayID)
+this.staffID == orig(this.staffID)
+com.moblima.dataaccess.SerializeDB.fileName == orig(com.moblima.dataaccess.SerializeDB.fileName)
+com.moblima.dataaccess.SerializeDB.fileName.toString == orig(com.moblima.dataaccess.SerializeDB.fileName.toString)
+com.moblima.dataaccess.SerializeDB.instance == orig(this)
+com.moblima.dataaccess.SerializeDB.instance == orig(com.moblima.dataaccess.SerializeDB.instance)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cinemas)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.seats)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movies)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.showTimes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoers)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieTickets)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.transactions)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.bookings)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidays)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.ticketPrices)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.staffs)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.seatID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.showTimeID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoerID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieTicketID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.bookingID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidayID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.staffID)
+com.moblima.dataaccess.SerializeDB.instance has only one value
+return == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getMovieTickets():::ENTER
+this == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance has only one value
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getMovieTickets():::EXIT
+this.cineplexes == orig(this.cineplexes)
+this.cinemas == orig(this.cinemas)
+this.seats == orig(this.seats)
+this.movies == orig(this.movies)
+this.showTimes == orig(this.showTimes)
+this.movieGoers == orig(this.movieGoers)
+this.movieTickets == orig(this.movieTickets)
+this.transactions == orig(this.transactions)
+this.bookings == orig(this.bookings)
+this.publicHolidays == orig(this.publicHolidays)
+this.ticketPrices == orig(this.ticketPrices)
+this.staffs == orig(this.staffs)
+this.cineplexID == orig(this.cineplexID)
+this.seatID == orig(this.seatID)
+this.movieID == orig(this.movieID)
+this.showTimeID == orig(this.showTimeID)
+this.movieGoerID == orig(this.movieGoerID)
+this.movieTicketID == orig(this.movieTicketID)
+this.bookingID == orig(this.bookingID)
+this.publicHolidayID == orig(this.publicHolidayID)
+this.staffID == orig(this.staffID)
+com.moblima.dataaccess.SerializeDB.fileName == orig(com.moblima.dataaccess.SerializeDB.fileName)
+com.moblima.dataaccess.SerializeDB.fileName.toString == orig(com.moblima.dataaccess.SerializeDB.fileName.toString)
+com.moblima.dataaccess.SerializeDB.instance == orig(this)
+com.moblima.dataaccess.SerializeDB.instance == orig(com.moblima.dataaccess.SerializeDB.instance)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cinemas)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.seats)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movies)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.showTimes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoers)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieTickets)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.transactions)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.bookings)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidays)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.ticketPrices)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.staffs)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.seatID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.showTimeID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoerID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieTicketID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.bookingID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidayID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.staffID)
+com.moblima.dataaccess.SerializeDB.instance has only one value
+return == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getMovies():::ENTER
+this == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance has only one value
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getMovies():::EXIT
+this.cineplexes == orig(this.cineplexes)
+this.cinemas == orig(this.cinemas)
+this.seats == orig(this.seats)
+this.movies == orig(this.movies)
+this.showTimes == orig(this.showTimes)
+this.movieGoers == orig(this.movieGoers)
+this.movieTickets == orig(this.movieTickets)
+this.transactions == orig(this.transactions)
+this.bookings == orig(this.bookings)
+this.publicHolidays == orig(this.publicHolidays)
+this.ticketPrices == orig(this.ticketPrices)
+this.staffs == orig(this.staffs)
+this.cineplexID == orig(this.cineplexID)
+this.seatID == orig(this.seatID)
+this.movieID == orig(this.movieID)
+this.showTimeID == orig(this.showTimeID)
+this.movieGoerID == orig(this.movieGoerID)
+this.movieTicketID == orig(this.movieTicketID)
+this.bookingID == orig(this.bookingID)
+this.publicHolidayID == orig(this.publicHolidayID)
+this.staffID == orig(this.staffID)
+com.moblima.dataaccess.SerializeDB.fileName == orig(com.moblima.dataaccess.SerializeDB.fileName)
+com.moblima.dataaccess.SerializeDB.fileName.toString == orig(com.moblima.dataaccess.SerializeDB.fileName.toString)
+com.moblima.dataaccess.SerializeDB.instance == orig(this)
+com.moblima.dataaccess.SerializeDB.instance == orig(com.moblima.dataaccess.SerializeDB.instance)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cinemas)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.seats)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movies)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.showTimes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoers)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieTickets)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.transactions)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.bookings)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidays)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.ticketPrices)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.staffs)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.seatID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.showTimeID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoerID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieTicketID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.bookingID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidayID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.staffID)
+com.moblima.dataaccess.SerializeDB.instance has only one value
+return == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getPublicHolidays():::ENTER
+this == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance has only one value
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getPublicHolidays():::EXIT
+this.cineplexes == orig(this.cineplexes)
+this.cinemas == orig(this.cinemas)
+this.seats == orig(this.seats)
+this.movies == orig(this.movies)
+this.showTimes == orig(this.showTimes)
+this.movieGoers == orig(this.movieGoers)
+this.movieTickets == orig(this.movieTickets)
+this.transactions == orig(this.transactions)
+this.bookings == orig(this.bookings)
+this.publicHolidays == orig(this.publicHolidays)
+this.ticketPrices == orig(this.ticketPrices)
+this.staffs == orig(this.staffs)
+this.cineplexID == orig(this.cineplexID)
+this.seatID == orig(this.seatID)
+this.movieID == orig(this.movieID)
+this.showTimeID == orig(this.showTimeID)
+this.movieGoerID == orig(this.movieGoerID)
+this.movieTicketID == orig(this.movieTicketID)
+this.bookingID == orig(this.bookingID)
+this.publicHolidayID == orig(this.publicHolidayID)
+this.staffID == orig(this.staffID)
+com.moblima.dataaccess.SerializeDB.fileName == orig(com.moblima.dataaccess.SerializeDB.fileName)
+com.moblima.dataaccess.SerializeDB.fileName.toString == orig(com.moblima.dataaccess.SerializeDB.fileName.toString)
+com.moblima.dataaccess.SerializeDB.instance == orig(this)
+com.moblima.dataaccess.SerializeDB.instance == orig(com.moblima.dataaccess.SerializeDB.instance)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cinemas)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.seats)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movies)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.showTimes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoers)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieTickets)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.transactions)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.bookings)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidays)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.ticketPrices)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.staffs)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.seatID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.showTimeID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoerID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieTicketID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.bookingID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidayID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.staffID)
+com.moblima.dataaccess.SerializeDB.instance has only one value
+return == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getSeats():::ENTER
+this == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance has only one value
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getSeats():::EXIT
+this.cineplexes == orig(this.cineplexes)
+this.cinemas == orig(this.cinemas)
+this.seats == orig(this.seats)
+this.movies == orig(this.movies)
+this.showTimes == orig(this.showTimes)
+this.movieGoers == orig(this.movieGoers)
+this.movieTickets == orig(this.movieTickets)
+this.transactions == orig(this.transactions)
+this.bookings == orig(this.bookings)
+this.publicHolidays == orig(this.publicHolidays)
+this.ticketPrices == orig(this.ticketPrices)
+this.staffs == orig(this.staffs)
+this.cineplexID == orig(this.cineplexID)
+this.seatID == orig(this.seatID)
+this.movieID == orig(this.movieID)
+this.showTimeID == orig(this.showTimeID)
+this.movieGoerID == orig(this.movieGoerID)
+this.movieTicketID == orig(this.movieTicketID)
+this.bookingID == orig(this.bookingID)
+this.publicHolidayID == orig(this.publicHolidayID)
+this.staffID == orig(this.staffID)
+com.moblima.dataaccess.SerializeDB.fileName == orig(com.moblima.dataaccess.SerializeDB.fileName)
+com.moblima.dataaccess.SerializeDB.fileName.toString == orig(com.moblima.dataaccess.SerializeDB.fileName.toString)
+com.moblima.dataaccess.SerializeDB.instance == orig(this)
+com.moblima.dataaccess.SerializeDB.instance == orig(com.moblima.dataaccess.SerializeDB.instance)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cinemas)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.seats)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movies)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.showTimes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoers)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieTickets)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.transactions)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.bookings)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidays)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.ticketPrices)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.staffs)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.seatID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.showTimeID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoerID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieTicketID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.bookingID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidayID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.staffID)
+com.moblima.dataaccess.SerializeDB.instance has only one value
+return == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getShowTimes():::ENTER
+this == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance has only one value
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getShowTimes():::EXIT
+this.cineplexes == orig(this.cineplexes)
+this.cinemas == orig(this.cinemas)
+this.seats == orig(this.seats)
+this.movies == orig(this.movies)
+this.showTimes == orig(this.showTimes)
+this.movieGoers == orig(this.movieGoers)
+this.movieTickets == orig(this.movieTickets)
+this.transactions == orig(this.transactions)
+this.bookings == orig(this.bookings)
+this.publicHolidays == orig(this.publicHolidays)
+this.ticketPrices == orig(this.ticketPrices)
+this.staffs == orig(this.staffs)
+this.cineplexID == orig(this.cineplexID)
+this.seatID == orig(this.seatID)
+this.movieID == orig(this.movieID)
+this.showTimeID == orig(this.showTimeID)
+this.movieGoerID == orig(this.movieGoerID)
+this.movieTicketID == orig(this.movieTicketID)
+this.bookingID == orig(this.bookingID)
+this.publicHolidayID == orig(this.publicHolidayID)
+this.staffID == orig(this.staffID)
+com.moblima.dataaccess.SerializeDB.fileName == orig(com.moblima.dataaccess.SerializeDB.fileName)
+com.moblima.dataaccess.SerializeDB.fileName.toString == orig(com.moblima.dataaccess.SerializeDB.fileName.toString)
+com.moblima.dataaccess.SerializeDB.instance == orig(this)
+com.moblima.dataaccess.SerializeDB.instance == orig(com.moblima.dataaccess.SerializeDB.instance)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cinemas)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.seats)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movies)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.showTimes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoers)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieTickets)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.transactions)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.bookings)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidays)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.ticketPrices)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.staffs)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.seatID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.showTimeID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoerID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieTicketID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.bookingID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidayID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.staffID)
+com.moblima.dataaccess.SerializeDB.instance has only one value
+return == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getTicketPrices():::ENTER
+this == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance has only one value
+===========================================================================
+com.moblima.dataaccess.SerializeDB.getTicketPrices():::EXIT
+this.cineplexes == orig(this.cineplexes)
+this.cinemas == orig(this.cinemas)
+this.seats == orig(this.seats)
+this.movies == orig(this.movies)
+this.showTimes == orig(this.showTimes)
+this.movieGoers == orig(this.movieGoers)
+this.movieTickets == orig(this.movieTickets)
+this.transactions == orig(this.transactions)
+this.bookings == orig(this.bookings)
+this.publicHolidays == orig(this.publicHolidays)
+this.ticketPrices == orig(this.ticketPrices)
+this.staffs == orig(this.staffs)
+this.cineplexID == orig(this.cineplexID)
+this.seatID == orig(this.seatID)
+this.movieID == orig(this.movieID)
+this.showTimeID == orig(this.showTimeID)
+this.movieGoerID == orig(this.movieGoerID)
+this.movieTicketID == orig(this.movieTicketID)
+this.bookingID == orig(this.bookingID)
+this.publicHolidayID == orig(this.publicHolidayID)
+this.staffID == orig(this.staffID)
+com.moblima.dataaccess.SerializeDB.fileName == orig(com.moblima.dataaccess.SerializeDB.fileName)
+com.moblima.dataaccess.SerializeDB.fileName.toString == orig(com.moblima.dataaccess.SerializeDB.fileName.toString)
+com.moblima.dataaccess.SerializeDB.instance == orig(this)
+com.moblima.dataaccess.SerializeDB.instance == orig(com.moblima.dataaccess.SerializeDB.instance)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.cinemas)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.seats)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movies)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.showTimes)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoers)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.movieTickets)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.transactions)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.bookings)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidays)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.ticketPrices)
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == orig(com.moblima.dataaccess.SerializeDB.instance.staffs)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.cineplexID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.seatID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.showTimeID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieGoerID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.movieTicketID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.bookingID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.publicHolidayID)
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == orig(com.moblima.dataaccess.SerializeDB.instance.staffID)
+com.moblima.dataaccess.SerializeDB.instance has only one value
+return == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.loadData():::ENTER
+com.moblima.dataaccess.SerializeDB.instance == null
+===========================================================================
+com.moblima.dataaccess.SerializeDB.loadData():::EXIT
+this.cineplexes == orig(this.cineplexes)
+this.cinemas == orig(this.cinemas)
+this.seats == orig(this.seats)
+this.movies == orig(this.movies)
+this.showTimes == orig(this.showTimes)
+this.movieGoers == orig(this.movieGoers)
+this.movieTickets == orig(this.movieTickets)
+this.transactions == orig(this.transactions)
+this.bookings == orig(this.bookings)
+this.publicHolidays == orig(this.publicHolidays)
+this.ticketPrices == orig(this.ticketPrices)
+this.staffs == orig(this.staffs)
+this.cineplexID == orig(this.cineplexID)
+this.seatID == orig(this.seatID)
+this.movieID == orig(this.movieID)
+this.showTimeID == orig(this.showTimeID)
+this.movieGoerID == orig(this.movieGoerID)
+this.movieTicketID == orig(this.movieTicketID)
+this.bookingID == orig(this.bookingID)
+this.publicHolidayID == orig(this.publicHolidayID)
+this.staffID == orig(this.staffID)
+com.moblima.dataaccess.SerializeDB.fileName == orig(com.moblima.dataaccess.SerializeDB.fileName)
+com.moblima.dataaccess.SerializeDB.fileName.toString == orig(com.moblima.dataaccess.SerializeDB.fileName.toString)
+com.moblima.dataaccess.SerializeDB.instance == orig(com.moblima.dataaccess.SerializeDB.instance)
+com.moblima.dataaccess.SerializeDB.instance == null
+===========================================================================
+com.moblima.dataaccess.ShowTimeDAOImpl:::CLASS
+com.moblima.dataaccess.ShowTimeDAOImpl.showTimeDAO.getClass().getName() == com.moblima.dataaccess.ShowTimeDAOImpl.class
+===========================================================================
+com.moblima.dataaccess.ShowTimeDAOImpl:::OBJECT
+this.serializeDB == com.moblima.dataaccess.SerializeDB.instance
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.cinemas
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.seats
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movies
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.showTimes
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieGoers
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.movieTickets
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.transactions
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.bookings
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.publicHolidays
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.ticketPrices
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == com.moblima.dataaccess.SerializeDB.instance.staffs
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.seatID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.showTimeID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieGoerID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.movieTicketID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.bookingID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.publicHolidayID
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == com.moblima.dataaccess.SerializeDB.instance.staffID
+this has only one value
+com.moblima.dataaccess.ShowTimeDAOImpl.showTimeDAO == null
+this.serializeDB.cineplexes == null
+this.serializeDB.cinemas == null
+this.serializeDB.seats == null
+this.serializeDB.movies == null
+this.serializeDB.showTimes == null
+this.serializeDB.movieGoers == null
+this.serializeDB.movieTickets == null
+this.serializeDB.transactions == null
+this.serializeDB.bookings == null
+this.serializeDB.publicHolidays == null
+this.serializeDB.ticketPrices == null
+this.serializeDB.staffs == null
+this.serializeDB.cineplexID == null
+this.serializeDB.seatID == null
+this.serializeDB.movieID == null
+this.serializeDB.showTimeID == null
+this.serializeDB.movieGoerID == null
+this.serializeDB.movieTicketID == null
+this.serializeDB.bookingID == null
+this.serializeDB.publicHolidayID == null
+this.serializeDB.staffID == null
+com.moblima.dataaccess.SerializeDB.fileName has only one value
+com.moblima.dataaccess.SerializeDB.fileName.toString == "serializeDB.dat"
+com.moblima.dataaccess.SerializeDB.instance has only one value
+com.moblima.dataaccess.SerializeDB.instance.cineplexes == null
+com.moblima.dataaccess.SerializeDB.instance.cineplexID == null
+this.showTimes == null
+===========================================================================
+com.moblima.dataaccess.ShowTimeDAOImpl.ShowTimeDAOImpl():::EXIT
+===========================================================================
+com.moblima.dataaccess.ShowTimeDAOImpl.getInstance():::ENTER
+com.moblima.dataaccess.ShowTimeDAOImpl.showTimeDAO == null
+===========================================================================
+com.moblima.dataaccess.ShowTimeDAOImpl.getInstance():::EXIT
+com.moblima.dataaccess.ShowTimeDAOImpl.showTimeDAO == return
+com.moblima.dataaccess.ShowTimeDAOImpl.showTimeDAO.getClass().getName() == return.getClass().getName()
+com.moblima.dataaccess.ShowTimeDAOImpl.showTimeDAO has only one value
+Exiting Daikon.

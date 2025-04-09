@@ -1,0 +1,1401 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+missing variables in newEnterExitRel:
+  parent = org.twentygototen.pipeline.pipes.PipeList$3.(org.twentygototen.pipeline.pipes.PipeList, java.util.concurrent.atomic.AtomicInteger, org.twentygototen.pipeline.Callbacks$Callback, java.util.ArrayList, int):::ENTER
+  child = org.twentygototen.pipeline.pipes.PipeList$3.(org.twentygototen.pipeline.pipes.PipeList, java.util.concurrent.atomic.AtomicInteger, org.twentygototen.pipeline.Callbacks$Callback, java.util.ArrayList, int):::EXIT
+  parent.var_infos = [Ldaikon.VarInfo;@625abb97
+parent varinfos missing from parent_to_child_map:
+   org.twentygototen.pipeline.pipes.PipeList.this[arg4]
+   org.twentygototen.pipeline.pipes.PipeList.this[arg4-1]
+   org.twentygototen.pipeline.pipes.PipeList.this.pipes[arg4]
+   org.twentygototen.pipeline.pipes.PipeList.this.pipes[arg4-1]
+rel.parent_to_child_map:
+    org.twentygototen.pipeline.pipes.PipeList.this => orig(org.twentygototen.pipeline.pipes.PipeList.this)
+    org.twentygototen.pipeline.pipes.PipeList.this[..] => orig(org.twentygototen.pipeline.pipes.PipeList.this[..])
+    org.twentygototen.pipeline.pipes.PipeList.this[..].getClass().getName() => orig(org.twentygototen.pipeline.pipes.PipeList.this[..].getClass().getName())
+    org.twentygototen.pipeline.pipes.PipeList.this.pipes => orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes)
+    org.twentygototen.pipeline.pipes.PipeList.this.pipes[..] => orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes[..])
+    org.twentygototen.pipeline.pipes.PipeList.this.pipes[..].getClass().getName() => orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes[..].getClass().getName())
+    org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName() => orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName())
+    arg1 => orig(arg1)
+    arg2 => orig(arg2)
+    arg2.getClass().getName() => orig(arg2.getClass().getName())
+    arg3 => orig(arg3)
+    arg3[..] => orig(arg3[..])
+    arg3[..].getClass().getName() => orig(arg3[..].getClass().getName())
+    arg4 => orig(arg4)
+    size(org.twentygototen.pipeline.pipes.PipeList.this[..]) => orig(size(org.twentygototen.pipeline.pipes.PipeList.this[..]))
+    size(org.twentygototen.pipeline.pipes.PipeList.this[..])-1 => orig(size(org.twentygototen.pipeline.pipes.PipeList.this[..]))-1
+    size(org.twentygototen.pipeline.pipes.PipeList.this.pipes[..]) => orig(size(org.twentygototen.pipeline.pipes.PipeList.this.pipes[..]))
+    size(org.twentygototen.pipeline.pipes.PipeList.this.pipes[..])-1 => orig(size(org.twentygototen.pipeline.pipes.PipeList.this.pipes[..]))-1
+    size(arg3[..]) => orig(size(arg3[..]))
+    size(arg3[..])-1 => orig(size(arg3[..]))-1
+child.var_infos:
+    this
+    this.val$count
+    this.val$callback
+    this.val$callback.getClass().getName()
+    this.val$output
+    this.val$output[..]
+    this.val$output[..].getClass().getName()
+    this.val$j
+    org.twentygototen.pipeline.pipes.PipeList.this
+    org.twentygototen.pipeline.pipes.PipeList.this[..]
+    org.twentygototen.pipeline.pipes.PipeList.this[..].getClass().getName()
+    org.twentygototen.pipeline.pipes.PipeList.this.pipes
+    org.twentygototen.pipeline.pipes.PipeList.this.pipes[..]
+    org.twentygototen.pipeline.pipes.PipeList.this.pipes[..].getClass().getName()
+    org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName()
+    arg1
+    arg2
+    arg2.getClass().getName()
+    arg3
+    arg3[..]
+    arg3[..].getClass().getName()
+    arg4
+    orig(org.twentygototen.pipeline.pipes.PipeList.this)
+    orig(org.twentygototen.pipeline.pipes.PipeList.this[..])
+    orig(org.twentygototen.pipeline.pipes.PipeList.this[..].getClass().getName())
+    orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes)
+    orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes[..])
+    orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes[..].getClass().getName())
+    orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName())
+    orig(arg1)
+    orig(arg2)
+    orig(arg2.getClass().getName())
+    orig(arg3)
+    orig(arg3[..])
+    orig(arg3[..].getClass().getName())
+    orig(arg4)
+    size(this.val$output[..])
+    size(this.val$output[..])-1
+    size(org.twentygototen.pipeline.pipes.PipeList.this[..])
+    size(org.twentygototen.pipeline.pipes.PipeList.this[..])-1
+    size(org.twentygototen.pipeline.pipes.PipeList.this.pipes[..])
+    size(org.twentygototen.pipeline.pipes.PipeList.this.pipes[..])-1
+    size(arg3[..])
+    size(arg3[..])-1
+    orig(size(org.twentygototen.pipeline.pipes.PipeList.this[..]))
+    orig(size(org.twentygototen.pipeline.pipes.PipeList.this[..]))-1
+    orig(size(org.twentygototen.pipeline.pipes.PipeList.this.pipes[..]))
+    orig(size(org.twentygototen.pipeline.pipes.PipeList.this.pipes[..]))-1
+    orig(size(arg3[..]))
+    orig(size(arg3[..]))-1
+End of diagnostics for newEnterExitRel(org.twentygototen.pipeline.pipes.PipeList$3.(org.twentygototen.pipeline.pipes.PipeList, java.util.concurrent.atomic.AtomicInteger, org.twentygototen.pipeline.Callbacks$Callback, java.util.ArrayList, int):::ENTER, org.twentygototen.pipeline.pipes.PipeList$3.(org.twentygototen.pipeline.pipes.PipeList, java.util.concurrent.atomic.AtomicInteger, org.twentygototen.pipeline.Callbacks$Callback, java.util.ArrayList, int):::EXIT)
+===========================================================================
+org.twentygototen.pipeline.Callbacks$1:::OBJECT
+this has only one value
+===========================================================================
+org.twentygototen.pipeline.Callbacks$1.():::EXIT
+===========================================================================
+org.twentygototen.pipeline.Callbacks$Callback:::OBJECT
+===========================================================================
+org.twentygototen.pipeline.Callbacks$Callback.Callback():::EXIT
+===========================================================================
+org.twentygototen.pipeline.Callbacks$FutureResult:::OBJECT
+this.queue != null
+this.queue.getClass().getName() == java.util.concurrent.LinkedBlockingQueue.class
+this.error != null
+this.ended != null
+===========================================================================
+org.twentygototen.pipeline.Callbacks$FutureResult.FutureResult():::EXIT
+===========================================================================
+org.twentygototen.pipeline.Callbacks$FutureResult.get():::ENTER
+===========================================================================
+org.twentygototen.pipeline.Callbacks$FutureResult.get():::EXIT
+this.queue == orig(this.queue)
+this.queue.getClass().getName() == orig(this.queue.getClass().getName())
+this.error == orig(this.error)
+this.ended == orig(this.ended)
+===========================================================================
+org.twentygototen.pipeline.Callbacks$FutureResult.onSuccess(java.lang.Object):::ENTER
+===========================================================================
+org.twentygototen.pipeline.Callbacks$FutureResult.onSuccess(java.lang.Object):::EXIT
+this.queue == orig(this.queue)
+this.queue.getClass().getName() == orig(this.queue.getClass().getName())
+this.error == orig(this.error)
+this.ended == orig(this.ended)
+===========================================================================
+org.twentygototen.pipeline.Callbacks$PrintCallback:::OBJECT
+this.print has only one value
+this.print != null
+===========================================================================
+org.twentygototen.pipeline.Callbacks$PrintCallback.PrintCallback(java.io.PrintStream):::ENTER
+arg0 has only one value
+===========================================================================
+org.twentygototen.pipeline.Callbacks$PrintCallback.PrintCallback(java.io.PrintStream):::EXIT
+this.print == orig(arg0)
+===========================================================================
+org.twentygototen.pipeline.Callbacks$PrintCallback.onComplete():::ENTER
+this has only one value
+===========================================================================
+org.twentygototen.pipeline.Callbacks$PrintCallback.onComplete():::EXIT
+this.print == orig(this.print)
+===========================================================================
+org.twentygototen.pipeline.Callbacks$PrintCallback.onSuccess(java.lang.Object):::ENTER
+===========================================================================
+org.twentygototen.pipeline.Callbacks$PrintCallback.onSuccess(java.lang.Object):::EXIT
+this.print == orig(this.print)
+===========================================================================
+org.twentygototen.pipeline.Callbacks$SinkCallback:::OBJECT
+this.sink != null
+===========================================================================
+org.twentygototen.pipeline.Callbacks$SinkCallback.SinkCallback(org.twentygototen.pipeline.Pipeline$Sink):::ENTER
+===========================================================================
+org.twentygototen.pipeline.Callbacks$SinkCallback.SinkCallback(org.twentygototen.pipeline.Pipeline$Sink):::EXIT
+this.sink == orig(arg0)
+this.sink.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.Callbacks$SinkCallback.onComplete():::ENTER
+===========================================================================
+org.twentygototen.pipeline.Callbacks$SinkCallback.onComplete():::EXIT
+this.sink == orig(this.sink)
+this.sink.getClass().getName() == orig(this.sink.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.Callbacks$SinkCallback.onSuccess(java.lang.Object):::ENTER
+this.sink.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.Callbacks$SinkCallback.onSuccess(java.lang.Object):::EXIT
+this.sink == orig(this.sink)
+this.sink.getClass().getName() == orig(this.sink.getClass().getName())
+this.sink.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.Callbacks:::CLASS
+org.twentygototen.pipeline.Callbacks.NOOP has only one value
+org.twentygototen.pipeline.Callbacks.NOOP.getClass().getName() == org.twentygototen.pipeline.Callbacks$1.class
+===========================================================================
+org.twentygototen.pipeline.Callbacks.syserr():::ENTER
+===========================================================================
+org.twentygototen.pipeline.Callbacks.syserr():::EXIT
+org.twentygototen.pipeline.Callbacks.NOOP == orig(org.twentygototen.pipeline.Callbacks.NOOP)
+org.twentygototen.pipeline.Callbacks.NOOP.getClass().getName() == orig(org.twentygototen.pipeline.Callbacks.NOOP.getClass().getName())
+return.getClass().getName() == org.twentygototen.pipeline.Callbacks$PrintCallback.class
+===========================================================================
+org.twentygototen.pipeline.Example$1:::OBJECT
+this has only one value
+===========================================================================
+org.twentygototen.pipeline.Example$1.():::EXIT
+===========================================================================
+org.twentygototen.pipeline.Example$1.process(java.lang.Integer):::ENTER
+arg0 != null
+===========================================================================
+org.twentygototen.pipeline.Example$1.process(java.lang.Integer):::EXIT
+return != null
+===========================================================================
+org.twentygototen.pipeline.Example$2:::OBJECT
+this has only one value
+===========================================================================
+org.twentygototen.pipeline.Example$2.():::EXIT
+===========================================================================
+org.twentygototen.pipeline.Example$2.processAsync(java.lang.Integer, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg0 has only one value
+arg1 has only one value
+arg1.getClass().getName() == org.twentygototen.pipeline.Callbacks$FutureResult.class
+===========================================================================
+org.twentygototen.pipeline.Example$2.processAsync(java.lang.Integer, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+===========================================================================
+org.twentygototen.pipeline.Example$3:::OBJECT
+this has only one value
+===========================================================================
+org.twentygototen.pipeline.Example$3.():::EXIT
+===========================================================================
+org.twentygototen.pipeline.Example$3.accept(java.io.File):::ENTER
+arg0 != null
+===========================================================================
+org.twentygototen.pipeline.Example$3.accept(java.io.File):::EXIT
+===========================================================================
+org.twentygototen.pipeline.Example$3.accept(java.io.File):::EXIT;condition="return == true"
+return == true
+===========================================================================
+org.twentygototen.pipeline.Example$3.accept(java.io.File):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+org.twentygototen.pipeline.Example$4:::OBJECT
+this has only one value
+===========================================================================
+org.twentygototen.pipeline.Example$4.():::EXIT
+===========================================================================
+org.twentygototen.pipeline.Example$4.process(java.util.List):::ENTER
+arg0[].getClass().getName() elements == java.lang.String.class
+arg0.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+org.twentygototen.pipeline.Example$4.process(java.util.List):::EXIT
+arg0[] == orig(arg0[])
+arg0[].getClass().getName() elements == java.lang.String.class
+===========================================================================
+org.twentygototen.pipeline.Example$5:::OBJECT
+this has only one value
+===========================================================================
+org.twentygototen.pipeline.Example$5.():::EXIT
+this.total == 0
+===========================================================================
+org.twentygototen.pipeline.Example$5.aggregate(org.twentygototen.pipeline.util.Pair):::ENTER
+arg0.first.getClass().getName() == java.io.File.class
+arg0.second.getClass().getName() == java.lang.Integer.class
+===========================================================================
+org.twentygototen.pipeline.Example$5.aggregate(org.twentygototen.pipeline.util.Pair):::EXIT
+arg0.first == orig(arg0.first)
+arg0.first.getClass().getName() == orig(arg0.first.getClass().getName())
+arg0.second == orig(arg0.second)
+arg0.second.getClass().getName() == orig(arg0.second.getClass().getName())
+arg0.first.getClass().getName() == java.io.File.class
+arg0.second.getClass().getName() == java.lang.Integer.class
+===========================================================================
+org.twentygototen.pipeline.Example$5.result():::ENTER
+this.total == 318
+===========================================================================
+org.twentygototen.pipeline.Example$5.result():::EXIT
+this.total == orig(this.total)
+this.total == 318
+return has only one value
+===========================================================================
+org.twentygototen.pipeline.Example$Mod:::OBJECT
+this has only one value
+this.modulus == 2
+===========================================================================
+org.twentygototen.pipeline.Example$Mod.Mod(int):::ENTER
+arg0 == 2
+===========================================================================
+org.twentygototen.pipeline.Example$Mod.Mod(int):::EXIT
+this.modulus == orig(arg0)
+===========================================================================
+org.twentygototen.pipeline.Example$Mod.process(java.lang.Integer):::ENTER
+===========================================================================
+org.twentygototen.pipeline.Example$Mod.process(java.lang.Integer):::EXIT
+this.modulus == orig(this.modulus)
+===========================================================================
+org.twentygototen.pipeline.Example.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+org.twentygototen.pipeline.Example.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+org.twentygototen.pipeline.Pipeline$1:::OBJECT
+this.val$object.getClass().getName() == java.util.Arrays$ArrayList.class
+===========================================================================
+org.twentygototen.pipeline.Pipeline$1.(java.lang.Object):::ENTER
+arg0.getClass().getName() == java.util.Arrays$ArrayList.class
+===========================================================================
+org.twentygototen.pipeline.Pipeline$1.(java.lang.Object):::EXIT
+this.val$object == orig(arg0)
+this.val$object.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.Pipeline$1.emit():::ENTER
+===========================================================================
+org.twentygototen.pipeline.Pipeline$1.emit():::EXIT85
+this.val$object == return
+return == orig(this.val$object)
+return.getClass().getName() == orig(this.val$object.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.Pipeline$1.emit():::EXIT87
+return == null
+===========================================================================
+org.twentygototen.pipeline.Pipeline$1.emit():::EXIT
+this.done == orig(this.done)
+this.val$object == orig(this.val$object)
+this.val$object.getClass().getName() == return.getClass().getName()
+this.val$object.getClass().getName() == orig(this.val$object.getClass().getName())
+return.getClass().getName() == java.util.Arrays$ArrayList.class
+===========================================================================
+org.twentygototen.pipeline.Pipeline$2:::OBJECT
+===========================================================================
+org.twentygototen.pipeline.Pipeline$2.(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+===========================================================================
+org.twentygototen.pipeline.Pipeline$2.(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+this.val$pipe == orig(arg0)
+this.val$pipe.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.Pipeline$2.process(java.util.List):::ENTER
+arg0[].getClass().getName() elements == java.lang.Integer.class
+arg0[].getClass().getName() one of { [java.lang.Integer, java.lang.Integer, java.lang.Integer], [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer] }
+size(arg0[]) one of { 3, 4 }
+===========================================================================
+org.twentygototen.pipeline.Pipeline$2.process(java.util.List):::EXIT
+this.val$pipe == orig(this.val$pipe)
+this.val$pipe.getClass().getName() == orig(this.val$pipe.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[].getClass().getName() elements == java.lang.Integer.class
+arg0[].getClass().getName() one of { [java.lang.Integer, java.lang.Integer, java.lang.Integer], [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer] }
+return[].getClass().getName() elements == java.lang.Integer.class
+return[].getClass().getName() one of { [java.lang.Integer, java.lang.Integer, java.lang.Integer], [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer] }
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) one of { 3, 4 }
+===========================================================================
+org.twentygototen.pipeline.Pipeline$3:::OBJECT
+this.val$source != null
+this.val$sink != null
+this.val$source.getClass().getName() != this.val$sink.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.Pipeline$3.(org.twentygototen.pipeline.Pipeline$Source, org.twentygototen.pipeline.Pipeline$Sink):::ENTER
+===========================================================================
+org.twentygototen.pipeline.Pipeline$3.(org.twentygototen.pipeline.Pipeline$Source, org.twentygototen.pipeline.Pipeline$Sink):::EXIT
+this.val$source == orig(arg0)
+this.val$source.getClass().getName() == orig(arg0.getClass().getName())
+this.val$sink == orig(arg1)
+this.val$sink.getClass().getName() == orig(arg1.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.Pipeline$3.run():::ENTER
+===========================================================================
+org.twentygototen.pipeline.Pipeline$3.run():::EXIT
+this.val$source == orig(this.val$source)
+this.val$source.getClass().getName() == orig(this.val$source.getClass().getName())
+this.val$sink == orig(this.val$sink)
+this.val$sink.getClass().getName() == orig(this.val$sink.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.Pipeline.aggregate(org.twentygototen.pipeline.pipes.AggregatePipe$Aggregate):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.twentygototen.pipeline.Example$5.class
+===========================================================================
+org.twentygototen.pipeline.Pipeline.aggregate(org.twentygototen.pipeline.pipes.AggregatePipe$Aggregate):::EXIT
+return has only one value
+return.getClass().getName() == org.twentygototen.pipeline.pipes.AggregatePipe.class
+===========================================================================
+org.twentygototen.pipeline.Pipeline.asList(org.twentygototen.pipeline.Pipeline$Pipe[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.twentygototen.pipeline.Pipeline$Pipe[].class
+arg0[] contains no nulls and has only one value, of length 4
+arg0[] elements has only one value
+size(arg0[]) == 4
+===========================================================================
+org.twentygototen.pipeline.Pipeline.asList(org.twentygototen.pipeline.Pipeline$Pipe[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 4
+arg0[] elements has only one value
+return has only one value
+return[] contains no nulls and has only one value, of length 4
+return[] elements has only one value
+return[].getClass().getName() == [org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe]
+return[].getClass().getName() elements == org.twentygototen.pipeline.pipes.JoinedPipe.class
+return.pipes has only one value
+return.pipes[] contains no nulls and has only one value, of length 4
+return.pipes[] elements has only one value
+return.pipes[].getClass().getName() == [org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe]
+return.pipes[].getClass().getName() elements == org.twentygototen.pipeline.pipes.JoinedPipe.class
+return.pipes.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 4
+size(return.pipes[]) == 4
+===========================================================================
+org.twentygototen.pipeline.Pipeline.map(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+===========================================================================
+org.twentygototen.pipeline.Pipeline.map(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+return.getClass().getName() == org.twentygototen.pipeline.Pipeline$2.class
+===========================================================================
+org.twentygototen.pipeline.Pipeline.next(org.twentygototen.pipeline.Pipeline$Pipe, org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+===========================================================================
+org.twentygototen.pipeline.Pipeline.next(org.twentygototen.pipeline.Pipeline$Pipe, org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+return.getClass().getName() == org.twentygototen.pipeline.pipes.JoinedPipe.class
+return.getClass().getName() != orig(arg1.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.Pipeline.pour(java.lang.Object):::ENTER
+arg0.getClass().getName() == java.util.Arrays$ArrayList.class
+===========================================================================
+org.twentygototen.pipeline.Pipeline.pour(java.lang.Object):::EXIT
+return.getClass().getName() == org.twentygototen.pipeline.Pipeline$1.class
+===========================================================================
+org.twentygototen.pipeline.Pipeline.pour(java.lang.Object[]):::ENTER
+arg0.getClass().getName() == java.lang.Integer[].class
+arg0[] contains no nulls and has only one value, of length 4
+size(arg0[]) == 4
+===========================================================================
+org.twentygototen.pipeline.Pipeline.pour(java.lang.Object[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 4
+return.getClass().getName() == org.twentygototen.pipeline.Pipeline$1.class
+===========================================================================
+org.twentygototen.pipeline.Pipeline.sink(org.twentygototen.pipeline.Pipeline$Source, org.twentygototen.pipeline.Pipeline$Sink):::ENTER
+===========================================================================
+org.twentygototen.pipeline.Pipeline.sink(org.twentygototen.pipeline.Pipeline$Source, org.twentygototen.pipeline.Pipeline$Sink):::EXIT
+return.getClass().getName() == org.twentygototen.pipeline.Pipeline$3.class
+===========================================================================
+org.twentygototen.pipeline.Pipeline.sysout():::EXIT
+return.getClass().getName() == org.twentygototen.pipeline.sinks.PrintStreamSink.class
+===========================================================================
+org.twentygototen.pipeline.Pipeline.tee(org.twentygototen.pipeline.Pipeline$Pipe, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg1.getClass().getName() == org.twentygototen.pipeline.Callbacks$PrintCallback.class
+===========================================================================
+org.twentygototen.pipeline.Pipeline.tee(org.twentygototen.pipeline.Pipeline$Pipe, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+return.getClass().getName() == org.twentygototen.pipeline.pipes.PipeTee.class
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1$1:::OBJECT
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink != null
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink.getClass().getName() == org.twentygototen.pipeline.sinks.PrintStreamSink.class
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink.getClass().getName() != org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1$1.(org.twentygototen.pipeline.pipes.AbstractPipe$1):::ENTER
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink.getClass().getName() == org.twentygototen.pipeline.sinks.PrintStreamSink.class
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1$1.(org.twentygototen.pipeline.pipes.AbstractPipe$1):::EXIT
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this == orig(org.twentygototen.pipeline.pipes.AbstractPipe$1.this)
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink == orig(org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink)
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink.getClass().getName() == orig(org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink.getClass().getName())
+org.twentygototen.pipeline.pipes.AbstractPipe.this == orig(org.twentygototen.pipeline.pipes.AbstractPipe.this)
+org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName() == orig(org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1$1.onComplete():::ENTER
+this has only one value
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this has only one value
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink has only one value
+org.twentygototen.pipeline.pipes.AbstractPipe.this has only one value
+org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName() == org.twentygototen.pipeline.pipes.PipeTee.class
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1$1.onComplete():::EXIT
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this == orig(org.twentygototen.pipeline.pipes.AbstractPipe$1.this)
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink == orig(org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink)
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink.getClass().getName() == orig(org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink.getClass().getName())
+org.twentygototen.pipeline.pipes.AbstractPipe.this == orig(org.twentygototen.pipeline.pipes.AbstractPipe.this)
+org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName() == orig(org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName())
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this has only one value
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink has only one value
+org.twentygototen.pipeline.pipes.AbstractPipe.this has only one value
+org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName() == org.twentygototen.pipeline.pipes.PipeTee.class
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1$1.onSuccess(java.lang.Object):::ENTER
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1$1.onSuccess(java.lang.Object):::EXIT
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this == orig(org.twentygototen.pipeline.pipes.AbstractPipe$1.this)
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink == orig(org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink)
+org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink.getClass().getName() == orig(org.twentygototen.pipeline.pipes.AbstractPipe$1.this.val$sink.getClass().getName())
+org.twentygototen.pipeline.pipes.AbstractPipe.this == orig(org.twentygototen.pipeline.pipes.AbstractPipe.this)
+org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName() == orig(org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1:::OBJECT
+this.val$sink != null
+this.val$sink.getClass().getName() == org.twentygototen.pipeline.sinks.PrintStreamSink.class
+this.val$sink.getClass().getName() != org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1.(org.twentygototen.pipeline.pipes.AbstractPipe, org.twentygototen.pipeline.Pipeline$Sink):::ENTER
+arg1.getClass().getName() == org.twentygototen.pipeline.sinks.PrintStreamSink.class
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1.(org.twentygototen.pipeline.pipes.AbstractPipe, org.twentygototen.pipeline.Pipeline$Sink):::EXIT
+this.val$sink == orig(arg1)
+this.val$sink.getClass().getName() == orig(arg1.getClass().getName())
+org.twentygototen.pipeline.pipes.AbstractPipe.this == orig(org.twentygototen.pipeline.pipes.AbstractPipe.this)
+org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName() == orig(org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1.complete():::ENTER
+this has only one value
+this.val$sink has only one value
+org.twentygototen.pipeline.pipes.AbstractPipe.this has only one value
+org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName() == org.twentygototen.pipeline.pipes.PipeTee.class
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1.complete():::EXIT
+this.val$sink == orig(this.val$sink)
+this.val$sink.getClass().getName() == orig(this.val$sink.getClass().getName())
+org.twentygototen.pipeline.pipes.AbstractPipe.this == orig(org.twentygototen.pipeline.pipes.AbstractPipe.this)
+org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName() == orig(org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName())
+this.val$sink has only one value
+org.twentygototen.pipeline.pipes.AbstractPipe.this has only one value
+org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName() == org.twentygototen.pipeline.pipes.PipeTee.class
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1.consume(java.lang.Object):::ENTER
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe$1.consume(java.lang.Object):::EXIT
+this.val$sink == orig(this.val$sink)
+this.val$sink.getClass().getName() == orig(this.val$sink.getClass().getName())
+org.twentygototen.pipeline.pipes.AbstractPipe.this == orig(org.twentygototen.pipeline.pipes.AbstractPipe.this)
+org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName() == orig(org.twentygototen.pipeline.pipes.AbstractPipe.this.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe:::OBJECT
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe.AbstractPipe():::EXIT
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe.next(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe.next(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+return.getClass().getName() == org.twentygototen.pipeline.pipes.JoinedPipe.class
+return.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe.next(org.twentygototen.pipeline.Pipeline$Sink):::ENTER
+arg0.getClass().getName() == org.twentygototen.pipeline.sinks.PrintStreamSink.class
+===========================================================================
+org.twentygototen.pipeline.pipes.AbstractPipe.next(org.twentygototen.pipeline.Pipeline$Sink):::EXIT
+return.getClass().getName() == org.twentygototen.pipeline.pipes.AbstractPipe$1.class
+===========================================================================
+org.twentygototen.pipeline.pipes.AggregatePipe:::OBJECT
+this has only one value
+this.callback.getClass().getName() == org.twentygototen.pipeline.pipes.PipeTee$1.class
+this.agg has only one value
+this.agg.getClass().getName() == org.twentygototen.pipeline.Example$5.class
+this.callback.getClass().getName() != this.agg.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.AggregatePipe.AggregatePipe(org.twentygototen.pipeline.pipes.AggregatePipe$Aggregate):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.twentygototen.pipeline.Example$5.class
+===========================================================================
+org.twentygototen.pipeline.pipes.AggregatePipe.AggregatePipe(org.twentygototen.pipeline.pipes.AggregatePipe$Aggregate):::EXIT
+this.agg == orig(arg0)
+this.callback == null
+===========================================================================
+org.twentygototen.pipeline.pipes.AggregatePipe.complete():::ENTER
+this.callback has only one value
+===========================================================================
+org.twentygototen.pipeline.pipes.AggregatePipe.complete():::EXIT
+this.callback == orig(this.callback)
+this.callback.getClass().getName() == orig(this.callback.getClass().getName())
+this.agg == orig(this.agg)
+this.agg.getClass().getName() == orig(this.agg.getClass().getName())
+this.callback has only one value
+===========================================================================
+org.twentygototen.pipeline.pipes.AggregatePipe.processAsync(java.lang.Object, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+this.callback.getClass().getName() == arg1.getClass().getName()
+arg0.getClass().getName() == org.twentygototen.pipeline.util.Pair.class
+arg1.getClass().getName() == org.twentygototen.pipeline.pipes.PipeTee$1.class
+===========================================================================
+org.twentygototen.pipeline.pipes.AggregatePipe.processAsync(java.lang.Object, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.callback == orig(arg1)
+this.callback.getClass().getName() == orig(this.callback.getClass().getName())
+this.callback.getClass().getName() == orig(arg1.getClass().getName())
+this.agg == orig(this.agg)
+this.agg.getClass().getName() == orig(this.agg.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.AsyncPipe:::OBJECT
+===========================================================================
+org.twentygototen.pipeline.pipes.AsyncPipe.AsyncPipe():::EXIT
+===========================================================================
+org.twentygototen.pipeline.pipes.AsyncPipe.complete():::ENTER
+this has only one value
+this.getClass().getName() == org.twentygototen.pipeline.util.Pair$2.class
+===========================================================================
+org.twentygototen.pipeline.pipes.AsyncPipe.complete():::EXIT
+===========================================================================
+org.twentygototen.pipeline.pipes.AsyncPipe.process(java.lang.Object):::ENTER
+===========================================================================
+org.twentygototen.pipeline.pipes.AsyncPipe.process(java.lang.Object):::EXIT
+===========================================================================
+org.twentygototen.pipeline.pipes.FileReaderPipe:::OBJECT
+this has only one value
+===========================================================================
+org.twentygototen.pipeline.pipes.FileReaderPipe.FileReaderPipe():::EXIT
+===========================================================================
+org.twentygototen.pipeline.pipes.FileReaderPipe.process(java.io.File):::ENTER
+===========================================================================
+org.twentygototen.pipeline.pipes.FileReaderPipe.process(java.io.File):::EXIT
+return.first == orig(arg0)
+return.first.getClass().getName() == java.io.File.class
+return.second.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+org.twentygototen.pipeline.pipes.JoinedPipe$1:::OBJECT
+this.val$callback != null
+org.twentygototen.pipeline.pipes.JoinedPipe.this.first != null
+org.twentygototen.pipeline.pipes.JoinedPipe.this.second != null
+this.val$callback.getClass().getName() != org.twentygototen.pipeline.pipes.JoinedPipe.this.first.getClass().getName()
+this.val$callback.getClass().getName() != org.twentygototen.pipeline.pipes.JoinedPipe.this.second.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.JoinedPipe$1.(org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+org.twentygototen.pipeline.pipes.JoinedPipe.this != null
+org.twentygototen.pipeline.pipes.JoinedPipe.this.first != null
+org.twentygototen.pipeline.pipes.JoinedPipe.this.second != null
+arg1 != null
+org.twentygototen.pipeline.pipes.JoinedPipe.this.first.getClass().getName() != arg1.getClass().getName()
+org.twentygototen.pipeline.pipes.JoinedPipe.this.second.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.JoinedPipe$1.(org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.val$callback == orig(arg1)
+this.val$callback.getClass().getName() == orig(arg1.getClass().getName())
+org.twentygototen.pipeline.pipes.JoinedPipe.this == orig(org.twentygototen.pipeline.pipes.JoinedPipe.this)
+org.twentygototen.pipeline.pipes.JoinedPipe.this.first == orig(org.twentygototen.pipeline.pipes.JoinedPipe.this.first)
+org.twentygototen.pipeline.pipes.JoinedPipe.this.first.getClass().getName() == orig(org.twentygototen.pipeline.pipes.JoinedPipe.this.first.getClass().getName())
+org.twentygototen.pipeline.pipes.JoinedPipe.this.second == orig(org.twentygototen.pipeline.pipes.JoinedPipe.this.second)
+org.twentygototen.pipeline.pipes.JoinedPipe.this.second.getClass().getName() == orig(org.twentygototen.pipeline.pipes.JoinedPipe.this.second.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.JoinedPipe$1.onSuccess(java.lang.Object):::ENTER
+arg0 != null
+this.val$callback.getClass().getName() != arg0.getClass().getName()
+org.twentygototen.pipeline.pipes.JoinedPipe.this.first.getClass().getName() != arg0.getClass().getName()
+org.twentygototen.pipeline.pipes.JoinedPipe.this.second.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.JoinedPipe$1.onSuccess(java.lang.Object):::EXIT
+this.val$callback == orig(this.val$callback)
+this.val$callback.getClass().getName() == orig(this.val$callback.getClass().getName())
+org.twentygototen.pipeline.pipes.JoinedPipe.this == orig(org.twentygototen.pipeline.pipes.JoinedPipe.this)
+org.twentygototen.pipeline.pipes.JoinedPipe.this.first == orig(org.twentygototen.pipeline.pipes.JoinedPipe.this.first)
+org.twentygototen.pipeline.pipes.JoinedPipe.this.first.getClass().getName() == orig(org.twentygototen.pipeline.pipes.JoinedPipe.this.first.getClass().getName())
+org.twentygototen.pipeline.pipes.JoinedPipe.this.second == orig(org.twentygototen.pipeline.pipes.JoinedPipe.this.second)
+org.twentygototen.pipeline.pipes.JoinedPipe.this.second.getClass().getName() == orig(org.twentygototen.pipeline.pipes.JoinedPipe.this.second.getClass().getName())
+this.val$callback.getClass().getName() != orig(arg0.getClass().getName())
+org.twentygototen.pipeline.pipes.JoinedPipe.this.first.getClass().getName() != orig(arg0.getClass().getName())
+org.twentygototen.pipeline.pipes.JoinedPipe.this.second.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.JoinedPipe:::OBJECT
+this.first != null
+this.second != null
+===========================================================================
+org.twentygototen.pipeline.pipes.JoinedPipe.JoinedPipe(org.twentygototen.pipeline.Pipeline$Pipe, org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+===========================================================================
+org.twentygototen.pipeline.pipes.JoinedPipe.JoinedPipe(org.twentygototen.pipeline.Pipeline$Pipe, org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+this.first == orig(arg0)
+this.first.getClass().getName() == orig(arg0.getClass().getName())
+this.second == orig(arg1)
+this.second.getClass().getName() == orig(arg1.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.JoinedPipe.complete():::ENTER
+this.first.getClass().getName() == org.twentygototen.pipeline.pipes.PipeTee.class
+===========================================================================
+org.twentygototen.pipeline.pipes.JoinedPipe.complete():::EXIT
+this.first == orig(this.first)
+this.first.getClass().getName() == orig(this.first.getClass().getName())
+this.second == orig(this.second)
+this.second.getClass().getName() == orig(this.second.getClass().getName())
+this.first.getClass().getName() == org.twentygototen.pipeline.pipes.PipeTee.class
+===========================================================================
+org.twentygototen.pipeline.pipes.JoinedPipe.processAsync(java.lang.Object, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg0 != null
+arg1 != null
+this.first.getClass().getName() != arg0.getClass().getName()
+this.first.getClass().getName() != arg1.getClass().getName()
+this.second.getClass().getName() != arg0.getClass().getName()
+this.second.getClass().getName() != arg1.getClass().getName()
+arg0.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.JoinedPipe.processAsync(java.lang.Object, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.first == orig(this.first)
+this.first.getClass().getName() == orig(this.first.getClass().getName())
+this.second == orig(this.second)
+this.second.getClass().getName() == orig(this.second.getClass().getName())
+this.first.getClass().getName() != orig(arg0.getClass().getName())
+this.first.getClass().getName() != orig(arg1.getClass().getName())
+this.second.getClass().getName() != orig(arg0.getClass().getName())
+this.second.getClass().getName() != orig(arg1.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$1$1:::OBJECT
+this has only one value
+this.val$callback has only one value
+this.val$callback.getClass().getName() == org.twentygototen.pipeline.pipes.AbstractPipe$1$1.class
+this.val$input has only one value
+this.val$input[] contains no nulls and has only one value, of length 4
+this.val$input[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+this.val$input[].getClass().getName() elements == java.lang.Integer.class
+this.val$input.getClass().getName() == java.util.ArrayList.class
+org.twentygototen.pipeline.pipes.PipeList$1.this has only one value
+org.twentygototen.pipeline.pipes.PipeList$1.this.val$pipe has only one value
+org.twentygototen.pipeline.pipes.PipeList$1.this.val$pipe.getClass().getName() == org.twentygototen.pipeline.Example$1.class
+size(this.val$input[]) == 4
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$1$1.(org.twentygototen.pipeline.pipes.PipeList$1, org.twentygototen.pipeline.Callbacks$Callback, java.util.List):::ENTER
+org.twentygototen.pipeline.pipes.PipeList$1.this has only one value
+org.twentygototen.pipeline.pipes.PipeList$1.this.val$pipe has only one value
+org.twentygototen.pipeline.pipes.PipeList$1.this.val$pipe.getClass().getName() == org.twentygototen.pipeline.Example$1.class
+arg1 has only one value
+arg1.getClass().getName() == org.twentygototen.pipeline.pipes.AbstractPipe$1$1.class
+arg2 has only one value
+arg2[] contains no nulls and has only one value, of length 4
+arg2[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg2[].getClass().getName() elements == java.lang.Integer.class
+arg2.getClass().getName() == java.util.ArrayList.class
+size(arg2[]) == 4
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$1$1.(org.twentygototen.pipeline.pipes.PipeList$1, org.twentygototen.pipeline.Callbacks$Callback, java.util.List):::EXIT
+this.val$callback == orig(arg1)
+this.val$callback.getClass().getName() == orig(arg1.getClass().getName())
+this.val$input == orig(arg2)
+this.val$input.getClass().getName() == orig(arg2.getClass().getName())
+org.twentygototen.pipeline.pipes.PipeList$1.this == orig(org.twentygototen.pipeline.pipes.PipeList$1.this)
+org.twentygototen.pipeline.pipes.PipeList$1.this.val$pipe == orig(org.twentygototen.pipeline.pipes.PipeList$1.this.val$pipe)
+org.twentygototen.pipeline.pipes.PipeList$1.this.val$pipe.getClass().getName() == orig(org.twentygototen.pipeline.pipes.PipeList$1.this.val$pipe.getClass().getName())
+arg2[] == orig(arg2[])
+arg2[] contains no nulls and has only one value, of length 4
+arg2[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg2[].getClass().getName() elements == java.lang.Integer.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$1$1.onSuccess(java.lang.Object):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.Integer.class
+arg0.getClass().getName() in this.val$input[].getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$1$1.onSuccess(java.lang.Object):::EXIT
+this.val$callback == orig(this.val$callback)
+this.val$callback.getClass().getName() == orig(this.val$callback.getClass().getName())
+this.val$input == orig(this.val$input)
+this.val$input[] == orig(this.val$input[])
+this.val$input.getClass().getName() == orig(this.val$input.getClass().getName())
+org.twentygototen.pipeline.pipes.PipeList$1.this == orig(org.twentygototen.pipeline.pipes.PipeList$1.this)
+org.twentygototen.pipeline.pipes.PipeList$1.this.val$pipe == orig(org.twentygototen.pipeline.pipes.PipeList$1.this.val$pipe)
+org.twentygototen.pipeline.pipes.PipeList$1.this.val$pipe.getClass().getName() == orig(org.twentygototen.pipeline.pipes.PipeList$1.this.val$pipe.getClass().getName())
+orig(arg0.getClass().getName()) in this.val$input[].getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$1:::OBJECT
+this has only one value
+this.val$pipe has only one value
+this.val$pipe.getClass().getName() == org.twentygototen.pipeline.Example$1.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$1.(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.twentygototen.pipeline.Example$1.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$1.(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+this.val$pipe == orig(arg0)
+this.val$pipe.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$1.processAsync(java.util.List, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 4
+arg0[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg0[].getClass().getName() elements == java.lang.Integer.class
+arg0.getClass().getName() == java.util.ArrayList.class
+arg1 has only one value
+arg1.getClass().getName() == org.twentygototen.pipeline.pipes.AbstractPipe$1$1.class
+size(arg0[]) == 4
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$1.processAsync(java.util.List, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.val$pipe == orig(this.val$pipe)
+this.val$pipe.getClass().getName() == orig(this.val$pipe.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 4
+arg0[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg0[].getClass().getName() elements == java.lang.Integer.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$2$1:::OBJECT
+this has only one value
+this.val$callback has only one value
+this.val$callback.getClass().getName() == org.twentygototen.pipeline.pipes.JoinedPipe$1.class
+this.val$input has only one value
+this.val$input[] contains no nulls and has only one value, of length 4
+this.val$input[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+this.val$input[].getClass().getName() elements == java.lang.Integer.class
+this.val$input.getClass().getName() == java.util.ArrayList.class
+org.twentygototen.pipeline.pipes.PipeList$2.this has only one value
+org.twentygototen.pipeline.pipes.PipeList$2.this.val$pipe has only one value
+org.twentygototen.pipeline.pipes.PipeList$2.this.val$pipe.getClass().getName() == org.twentygototen.pipeline.Pipeline$2.class
+size(this.val$input[]) == 4
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$2$1.(org.twentygototen.pipeline.pipes.PipeList$2, org.twentygototen.pipeline.Callbacks$Callback, java.util.List):::ENTER
+org.twentygototen.pipeline.pipes.PipeList$2.this has only one value
+org.twentygototen.pipeline.pipes.PipeList$2.this.val$pipe has only one value
+org.twentygototen.pipeline.pipes.PipeList$2.this.val$pipe.getClass().getName() == org.twentygototen.pipeline.Pipeline$2.class
+arg1 has only one value
+arg1.getClass().getName() == org.twentygototen.pipeline.pipes.JoinedPipe$1.class
+arg2 has only one value
+arg2[] contains no nulls and has only one value, of length 4
+arg2[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg2[].getClass().getName() elements == java.lang.Integer.class
+arg2.getClass().getName() == java.util.ArrayList.class
+size(arg2[]) == 4
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$2$1.(org.twentygototen.pipeline.pipes.PipeList$2, org.twentygototen.pipeline.Callbacks$Callback, java.util.List):::EXIT
+this.val$callback == orig(arg1)
+this.val$callback.getClass().getName() == orig(arg1.getClass().getName())
+this.val$input == orig(arg2)
+this.val$input.getClass().getName() == orig(arg2.getClass().getName())
+org.twentygototen.pipeline.pipes.PipeList$2.this == orig(org.twentygototen.pipeline.pipes.PipeList$2.this)
+org.twentygototen.pipeline.pipes.PipeList$2.this.val$pipe == orig(org.twentygototen.pipeline.pipes.PipeList$2.this.val$pipe)
+org.twentygototen.pipeline.pipes.PipeList$2.this.val$pipe.getClass().getName() == orig(org.twentygototen.pipeline.pipes.PipeList$2.this.val$pipe.getClass().getName())
+arg2[] == orig(arg2[])
+arg2[] contains no nulls and has only one value, of length 4
+arg2[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg2[].getClass().getName() elements == java.lang.Integer.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$2$1.onSuccess(java.util.List):::ENTER
+this.val$input.getClass().getName() == arg0.getClass().getName()
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 3
+arg0[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg0[].getClass().getName() elements == java.lang.Integer.class
+size(arg0[]) == 3
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$2$1.onSuccess(java.util.List):::EXIT
+this.val$callback == orig(this.val$callback)
+this.val$callback.getClass().getName() == orig(this.val$callback.getClass().getName())
+this.val$input == orig(this.val$input)
+this.val$input[] == orig(this.val$input[])
+this.val$input.getClass().getName() == orig(this.val$input.getClass().getName())
+this.val$input.getClass().getName() == orig(arg0.getClass().getName())
+org.twentygototen.pipeline.pipes.PipeList$2.this == orig(org.twentygototen.pipeline.pipes.PipeList$2.this)
+org.twentygototen.pipeline.pipes.PipeList$2.this.val$pipe == orig(org.twentygototen.pipeline.pipes.PipeList$2.this.val$pipe)
+org.twentygototen.pipeline.pipes.PipeList$2.this.val$pipe.getClass().getName() == orig(org.twentygototen.pipeline.pipes.PipeList$2.this.val$pipe.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 3
+arg0[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg0[].getClass().getName() elements == java.lang.Integer.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$2:::OBJECT
+this has only one value
+this.val$pipe has only one value
+this.val$pipe.getClass().getName() == org.twentygototen.pipeline.Pipeline$2.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$2.(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.twentygototen.pipeline.Pipeline$2.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$2.(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+this.val$pipe == orig(arg0)
+this.val$pipe.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$2.processAsync(java.util.List, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 4
+arg0[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg0[].getClass().getName() elements == java.lang.Integer.class
+arg0.getClass().getName() == java.util.ArrayList.class
+arg1 has only one value
+arg1.getClass().getName() == org.twentygototen.pipeline.pipes.JoinedPipe$1.class
+size(arg0[]) == 4
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$2.processAsync(java.util.List, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.val$pipe == orig(this.val$pipe)
+this.val$pipe.getClass().getName() == orig(this.val$pipe.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 4
+arg0[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg0[].getClass().getName() elements == java.lang.Integer.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$3:::OBJECT
+this.val$count != null
+this.val$callback != null
+this.val$output != null
+this.val$j >= 0
+org.twentygototen.pipeline.pipes.PipeList.this has only one value
+org.twentygototen.pipeline.pipes.PipeList.this[] contains no nulls and has only one value, of length 4
+org.twentygototen.pipeline.pipes.PipeList.this[] elements has only one value
+org.twentygototen.pipeline.pipes.PipeList.this[] elements != null
+org.twentygototen.pipeline.pipes.PipeList.this[].getClass().getName() == [org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe]
+org.twentygototen.pipeline.pipes.PipeList.this[].getClass().getName() elements == org.twentygototen.pipeline.pipes.JoinedPipe.class
+org.twentygototen.pipeline.pipes.PipeList.this.pipes has only one value
+org.twentygototen.pipeline.pipes.PipeList.this.pipes != null
+org.twentygototen.pipeline.pipes.PipeList.this.pipes[] contains no nulls and has only one value, of length 4
+org.twentygototen.pipeline.pipes.PipeList.this.pipes[] elements has only one value
+org.twentygototen.pipeline.pipes.PipeList.this.pipes[] elements != null
+org.twentygototen.pipeline.pipes.PipeList.this.pipes[].getClass().getName() == [org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe]
+org.twentygototen.pipeline.pipes.PipeList.this.pipes[].getClass().getName() elements == org.twentygototen.pipeline.pipes.JoinedPipe.class
+org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName() == java.util.ArrayList.class
+size(this.val$output[]) >= 1
+size(org.twentygototen.pipeline.pipes.PipeList.this[]) == 4
+size(org.twentygototen.pipeline.pipes.PipeList.this.pipes[]) == 4
+this.val$callback.getClass().getName() != org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$3.(org.twentygototen.pipeline.pipes.PipeList, java.util.concurrent.atomic.AtomicInteger, org.twentygototen.pipeline.Callbacks$Callback, java.util.ArrayList, int):::ENTER
+org.twentygototen.pipeline.pipes.PipeList.this has only one value
+org.twentygototen.pipeline.pipes.PipeList.this != null
+org.twentygototen.pipeline.pipes.PipeList.this[] contains no nulls and has only one value, of length 4
+org.twentygototen.pipeline.pipes.PipeList.this[] elements has only one value
+org.twentygototen.pipeline.pipes.PipeList.this[] elements != null
+org.twentygototen.pipeline.pipes.PipeList.this[].getClass().getName() == [org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe]
+org.twentygototen.pipeline.pipes.PipeList.this[].getClass().getName() elements == org.twentygototen.pipeline.pipes.JoinedPipe.class
+org.twentygototen.pipeline.pipes.PipeList.this.pipes has only one value
+org.twentygototen.pipeline.pipes.PipeList.this.pipes != null
+org.twentygototen.pipeline.pipes.PipeList.this.pipes[] contains no nulls and has only one value, of length 4
+org.twentygototen.pipeline.pipes.PipeList.this.pipes[] elements has only one value
+org.twentygototen.pipeline.pipes.PipeList.this.pipes[] elements != null
+org.twentygototen.pipeline.pipes.PipeList.this.pipes[].getClass().getName() == [org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe]
+org.twentygototen.pipeline.pipes.PipeList.this.pipes[].getClass().getName() elements == org.twentygototen.pipeline.pipes.JoinedPipe.class
+org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName() == java.util.ArrayList.class
+arg1 != null
+arg2 != null
+arg3 != null
+arg4 >= 0
+size(org.twentygototen.pipeline.pipes.PipeList.this[]) == 4
+size(org.twentygototen.pipeline.pipes.PipeList.this.pipes[]) == 4
+size(arg3[]) >= 1
+org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName() != arg2.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$3.(org.twentygototen.pipeline.pipes.PipeList, java.util.concurrent.atomic.AtomicInteger, org.twentygototen.pipeline.Callbacks$Callback, java.util.ArrayList, int):::EXIT
+this.val$count == orig(arg1)
+this.val$callback == orig(arg2)
+this.val$callback.getClass().getName() == orig(arg2.getClass().getName())
+this.val$output == orig(arg3)
+org.twentygototen.pipeline.pipes.PipeList.this == orig(org.twentygototen.pipeline.pipes.PipeList.this)
+org.twentygototen.pipeline.pipes.PipeList.this[] == orig(org.twentygototen.pipeline.pipes.PipeList.this[])
+org.twentygototen.pipeline.pipes.PipeList.this.pipes == orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes)
+org.twentygototen.pipeline.pipes.PipeList.this.pipes[] == orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes[])
+org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName() == orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName())
+arg3[] == orig(arg3[])
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$3.onSuccess(java.lang.Object):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.lang.Integer.class
+this.val$callback.getClass().getName() != arg0.getClass().getName()
+org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList$3.onSuccess(java.lang.Object):::EXIT
+this.val$count == orig(this.val$count)
+this.val$callback == orig(this.val$callback)
+this.val$callback.getClass().getName() == orig(this.val$callback.getClass().getName())
+this.val$output == orig(this.val$output)
+this.val$j == orig(this.val$j)
+org.twentygototen.pipeline.pipes.PipeList.this == orig(org.twentygototen.pipeline.pipes.PipeList.this)
+org.twentygototen.pipeline.pipes.PipeList.this[] == orig(org.twentygototen.pipeline.pipes.PipeList.this[])
+org.twentygototen.pipeline.pipes.PipeList.this.pipes == orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes)
+org.twentygototen.pipeline.pipes.PipeList.this.pipes[] == orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes[])
+org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName() == orig(org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName())
+size(this.val$output[]) == orig(size(this.val$output[]))
+this.val$output[] elements != null
+this.val$output[].getClass().getName() elements == java.lang.Integer.class
+this.val$callback.getClass().getName() != orig(arg0.getClass().getName())
+orig(arg0.getClass().getName()) in this.val$output[].getClass().getName()
+org.twentygototen.pipeline.pipes.PipeList.this.pipes.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList:::OBJECT
+this has only one value
+this.pipes has only one value
+this.pipes != null
+this.pipes[] elements has only one value
+this.pipes[] elements != null
+this.pipes[].getClass().getName() elements == org.twentygototen.pipeline.pipes.JoinedPipe.class
+this.pipes.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList.PipeList():::EXIT
+this.pipes[] == []
+this.pipes[].getClass().getName() == []
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList.add(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.twentygototen.pipeline.pipes.JoinedPipe.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList.add(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+this.pipes == orig(this.pipes)
+this.pipes.getClass().getName() == orig(this.pipes.getClass().getName())
+size(this.pipes[])-1 == orig(size(this.pipes[]))
+return == true
+orig(arg0.getClass().getName()) in this.pipes[].getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList.add(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT;condition="return == true"
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList.head(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.twentygototen.pipeline.Example$1.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList.head(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+return has only one value
+return.getClass().getName() == org.twentygototen.pipeline.pipes.PipeList$1.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList.processAsync(java.util.List, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+this.pipes[] contains no nulls and has only one value, of length 4
+this.pipes[].getClass().getName() == [org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe]
+arg0[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg0[].getClass().getName() elements == java.lang.Integer.class
+size(this.pipes[]) == 4
+size(arg0[]) == 4
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList.processAsync(java.util.List, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.pipes == orig(this.pipes)
+this.pipes[] == orig(this.pipes[])
+this.pipes.getClass().getName() == orig(this.pipes.getClass().getName())
+arg0[] == orig(arg0[])
+this.pipes[] contains no nulls and has only one value, of length 4
+this.pipes[].getClass().getName() == [org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe, org.twentygototen.pipeline.pipes.JoinedPipe]
+arg0[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg0[].getClass().getName() elements == java.lang.Integer.class
+size(this.pipes[]) == 4
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList.tail(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.twentygototen.pipeline.Pipeline$2.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeList.tail(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+return has only one value
+return.getClass().getName() == org.twentygototen.pipeline.pipes.PipeList$2.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee$1:::OBJECT
+this.val$call != null
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe != null
+org.twentygototen.pipeline.pipes.PipeTee.this.callback != null
+org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName() == org.twentygototen.pipeline.Callbacks$PrintCallback.class
+this.val$call.getClass().getName() != org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName()
+this.val$call.getClass().getName() != org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName()
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName() != org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee$1.(org.twentygototen.pipeline.pipes.PipeTee, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+org.twentygototen.pipeline.pipes.PipeTee.this != null
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe != null
+org.twentygototen.pipeline.pipes.PipeTee.this.callback != null
+org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName() == org.twentygototen.pipeline.Callbacks$PrintCallback.class
+arg1 != null
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName() != org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName()
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName() != arg1.getClass().getName()
+org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee$1.(org.twentygototen.pipeline.pipes.PipeTee, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.val$call == orig(arg1)
+this.val$call.getClass().getName() == orig(arg1.getClass().getName())
+org.twentygototen.pipeline.pipes.PipeTee.this == orig(org.twentygototen.pipeline.pipes.PipeTee.this)
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe == orig(org.twentygototen.pipeline.pipes.PipeTee.this.pipe)
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName() == orig(org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName())
+org.twentygototen.pipeline.pipes.PipeTee.this.callback == orig(org.twentygototen.pipeline.pipes.PipeTee.this.callback)
+org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName() == orig(org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee$1.onComplete():::ENTER
+this has only one value
+this.val$call has only one value
+this.val$call.getClass().getName() == org.twentygototen.pipeline.pipes.AbstractPipe$1$1.class
+org.twentygototen.pipeline.pipes.PipeTee.this has only one value
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe has only one value
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName() == org.twentygototen.pipeline.pipes.JoinedPipe.class
+org.twentygototen.pipeline.pipes.PipeTee.this.callback has only one value
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee$1.onComplete():::EXIT
+this.val$call == orig(this.val$call)
+this.val$call.getClass().getName() == orig(this.val$call.getClass().getName())
+org.twentygototen.pipeline.pipes.PipeTee.this == orig(org.twentygototen.pipeline.pipes.PipeTee.this)
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe == orig(org.twentygototen.pipeline.pipes.PipeTee.this.pipe)
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName() == orig(org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName())
+org.twentygototen.pipeline.pipes.PipeTee.this.callback == orig(org.twentygototen.pipeline.pipes.PipeTee.this.callback)
+org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName() == orig(org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName())
+this.val$call has only one value
+this.val$call.getClass().getName() == org.twentygototen.pipeline.pipes.AbstractPipe$1$1.class
+org.twentygototen.pipeline.pipes.PipeTee.this has only one value
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe has only one value
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName() == org.twentygototen.pipeline.pipes.JoinedPipe.class
+org.twentygototen.pipeline.pipes.PipeTee.this.callback has only one value
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee$1.onSuccess(java.lang.Object):::ENTER
+this.val$call.getClass().getName() != arg0.getClass().getName()
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName() != arg0.getClass().getName()
+org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee$1.onSuccess(java.lang.Object):::EXIT
+this.val$call == orig(this.val$call)
+this.val$call.getClass().getName() == orig(this.val$call.getClass().getName())
+org.twentygototen.pipeline.pipes.PipeTee.this == orig(org.twentygototen.pipeline.pipes.PipeTee.this)
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe == orig(org.twentygototen.pipeline.pipes.PipeTee.this.pipe)
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName() == orig(org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName())
+org.twentygototen.pipeline.pipes.PipeTee.this.callback == orig(org.twentygototen.pipeline.pipes.PipeTee.this.callback)
+org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName() == orig(org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName())
+this.val$call.getClass().getName() != orig(arg0.getClass().getName())
+org.twentygototen.pipeline.pipes.PipeTee.this.pipe.getClass().getName() != orig(arg0.getClass().getName())
+org.twentygototen.pipeline.pipes.PipeTee.this.callback.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee:::OBJECT
+this.pipe != null
+this.callback != null
+this.callback.getClass().getName() == org.twentygototen.pipeline.Callbacks$PrintCallback.class
+this.pipe.getClass().getName() != this.callback.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee.PipeTee(org.twentygototen.pipeline.Pipeline$Pipe, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg1.getClass().getName() == org.twentygototen.pipeline.Callbacks$PrintCallback.class
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee.PipeTee(org.twentygototen.pipeline.Pipeline$Pipe, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.pipe == orig(arg0)
+this.pipe.getClass().getName() == orig(arg0.getClass().getName())
+this.callback == orig(arg1)
+this.callback.getClass().getName() == orig(arg1.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee.complete():::ENTER
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee.complete():::EXIT
+this.pipe == orig(this.pipe)
+this.pipe.getClass().getName() == orig(this.pipe.getClass().getName())
+this.callback == orig(this.callback)
+this.callback.getClass().getName() == orig(this.callback.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee.processAsync(java.lang.Object, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg0 != null
+arg1 != null
+this.pipe.getClass().getName() != arg0.getClass().getName()
+this.pipe.getClass().getName() != arg1.getClass().getName()
+this.callback.getClass().getName() != arg0.getClass().getName()
+this.callback.getClass().getName() != arg1.getClass().getName()
+arg0.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.PipeTee.processAsync(java.lang.Object, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.pipe == orig(this.pipe)
+this.pipe.getClass().getName() == orig(this.pipe.getClass().getName())
+this.callback == orig(this.callback)
+this.callback.getClass().getName() == orig(this.callback.getClass().getName())
+this.pipe.getClass().getName() != orig(arg0.getClass().getName())
+this.pipe.getClass().getName() != orig(arg1.getClass().getName())
+this.callback.getClass().getName() != orig(arg0.getClass().getName())
+this.callback.getClass().getName() != orig(arg1.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.pipes.SyncPipe:::OBJECT
+===========================================================================
+org.twentygototen.pipeline.pipes.SyncPipe.SyncPipe():::EXIT
+===========================================================================
+org.twentygototen.pipeline.pipes.SyncPipe.complete():::ENTER
+this has only one value
+this.getClass().getName() == org.twentygototen.pipeline.pipes.FileReaderPipe.class
+===========================================================================
+org.twentygototen.pipeline.pipes.SyncPipe.complete():::EXIT
+===========================================================================
+org.twentygototen.pipeline.pipes.SyncPipe.processAsync(java.lang.Object, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg0 != null
+arg1 != null
+this.getClass().getName() != arg0.getClass().getName()
+this.getClass().getName() != arg1.getClass().getName()
+arg0.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.pipes.SyncPipe.processAsync(java.lang.Object, org.twentygototen.pipeline.Callbacks$Callback):::EXIT27
+===========================================================================
+org.twentygototen.pipeline.pipes.SyncPipe.processAsync(java.lang.Object, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+===========================================================================
+org.twentygototen.pipeline.sinks.PrintStreamSink:::OBJECT
+this.out has only one value
+this.out != null
+===========================================================================
+org.twentygototen.pipeline.sinks.PrintStreamSink.PrintStreamSink(java.io.PrintStream):::ENTER
+arg0 has only one value
+===========================================================================
+org.twentygototen.pipeline.sinks.PrintStreamSink.PrintStreamSink(java.io.PrintStream):::EXIT
+this.out == orig(arg0)
+===========================================================================
+org.twentygototen.pipeline.sinks.PrintStreamSink.complete():::ENTER
+===========================================================================
+org.twentygototen.pipeline.sinks.PrintStreamSink.complete():::EXIT
+this.out == orig(this.out)
+===========================================================================
+org.twentygototen.pipeline.sinks.PrintStreamSink.consume(java.lang.Object):::ENTER
+===========================================================================
+org.twentygototen.pipeline.sinks.PrintStreamSink.consume(java.lang.Object):::EXIT
+this.out == orig(this.out)
+===========================================================================
+org.twentygototen.pipeline.sources.AsyncSource:::OBJECT
+this has only one value
+this.getClass().getName() == org.twentygototen.pipeline.sources.DirectoryList.class
+===========================================================================
+org.twentygototen.pipeline.sources.AsyncSource.AsyncSource():::EXIT
+===========================================================================
+org.twentygototen.pipeline.sources.AsyncSource.next(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.twentygototen.pipeline.pipes.FileReaderPipe.class
+===========================================================================
+org.twentygototen.pipeline.sources.AsyncSource.next(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+return has only one value
+return.getClass().getName() == org.twentygototen.pipeline.sources.SourceWithPipe.class
+===========================================================================
+org.twentygototen.pipeline.sources.AsyncSource.next(org.twentygototen.pipeline.Pipeline$Sink):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.twentygototen.pipeline.sinks.PrintStreamSink.class
+===========================================================================
+org.twentygototen.pipeline.sources.AsyncSource.next(org.twentygototen.pipeline.Pipeline$Sink):::EXIT
+return has only one value
+return.getClass().getName() == org.twentygototen.pipeline.Pipeline$3.class
+===========================================================================
+org.twentygototen.pipeline.sources.DirectoryList:::OBJECT
+this has only one value
+this.dir has only one value
+this.dir != null
+this.fileFilter has only one value
+this.fileFilter != null
+this.fileFilter.getClass().getName() == org.twentygototen.pipeline.Example$3.class
+===========================================================================
+org.twentygototen.pipeline.sources.DirectoryList.DirectoryList(java.io.File, java.io.FileFilter):::ENTER
+arg0 has only one value
+arg1 has only one value
+arg1.getClass().getName() == org.twentygototen.pipeline.Example$3.class
+===========================================================================
+org.twentygototen.pipeline.sources.DirectoryList.DirectoryList(java.io.File, java.io.FileFilter):::EXIT
+this.dir == orig(arg0)
+this.fileFilter == orig(arg1)
+this.fileFilter.getClass().getName() == orig(arg1.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.sources.DirectoryList.emitAsync(org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg0.getClass().getName() == org.twentygototen.pipeline.Callbacks$SinkCallback.class
+===========================================================================
+org.twentygototen.pipeline.sources.DirectoryList.emitAsync(org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.dir == orig(this.dir)
+this.fileFilter == orig(this.fileFilter)
+this.fileFilter.getClass().getName() == orig(this.fileFilter.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.sources.DirectoryList.walkTree(java.io.File, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg0 != null
+arg1 != null
+arg1.getClass().getName() == org.twentygototen.pipeline.Callbacks$SinkCallback.class
+this.fileFilter.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.sources.DirectoryList.walkTree(java.io.File, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.dir == orig(this.dir)
+this.fileFilter == orig(this.fileFilter)
+this.fileFilter.getClass().getName() == orig(this.fileFilter.getClass().getName())
+this.fileFilter.getClass().getName() != orig(arg1.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.sources.SourceWithPipe:::OBJECT
+this.pipe != null
+this.source != null
+this.pipe.getClass().getName() != this.source.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.sources.SourceWithPipe.SourceWithPipe(org.twentygototen.pipeline.Pipeline$Source, org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+arg0 != null
+arg1 != null
+arg0.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.sources.SourceWithPipe.SourceWithPipe(org.twentygototen.pipeline.Pipeline$Source, org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+this.pipe == orig(arg1)
+this.pipe.getClass().getName() == orig(arg1.getClass().getName())
+this.source == orig(arg0)
+this.source.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.sources.SourceWithPipe.next(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+this.source.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.sources.SourceWithPipe.next(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+this.pipe == orig(this.pipe)
+this.pipe.getClass().getName() == orig(this.pipe.getClass().getName())
+this.source == orig(this.source)
+this.source.getClass().getName() == orig(this.source.getClass().getName())
+return.getClass().getName() == org.twentygototen.pipeline.sources.SourceWithPipe.class
+this.pipe.getClass().getName() != return.getClass().getName()
+this.source.getClass().getName() != return.getClass().getName()
+this.source.getClass().getName() != orig(arg0.getClass().getName())
+return.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.sources.SourceWithPipe.next(org.twentygototen.pipeline.Pipeline$Sink):::ENTER
+arg0.getClass().getName() == org.twentygototen.pipeline.sinks.PrintStreamSink.class
+===========================================================================
+org.twentygototen.pipeline.sources.SourceWithPipe.next(org.twentygototen.pipeline.Pipeline$Sink):::EXIT
+this.pipe == orig(this.pipe)
+this.pipe.getClass().getName() == orig(this.pipe.getClass().getName())
+this.source == orig(this.source)
+this.source.getClass().getName() == orig(this.source.getClass().getName())
+return.getClass().getName() == org.twentygototen.pipeline.Pipeline$3.class
+===========================================================================
+org.twentygototen.pipeline.sources.SourceWithPipe.tee(org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg0.getClass().getName() == org.twentygototen.pipeline.Callbacks$PrintCallback.class
+===========================================================================
+org.twentygototen.pipeline.sources.SourceWithPipe.tee(org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.pipe == orig(this.pipe)
+this.pipe.getClass().getName() == orig(this.pipe.getClass().getName())
+this.source == orig(this.source)
+this.source.getClass().getName() == orig(this.source.getClass().getName())
+return.getClass().getName() == org.twentygototen.pipeline.sources.SourceWithPipe.class
+===========================================================================
+org.twentygototen.pipeline.sources.SyncSource:::OBJECT
+this.getClass().getName() == org.twentygototen.pipeline.Pipeline$1.class
+===========================================================================
+org.twentygototen.pipeline.sources.SyncSource.SyncSource():::EXIT
+===========================================================================
+org.twentygototen.pipeline.sources.SyncSource.emitAsync(org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg0.getClass().getName() == org.twentygototen.pipeline.Callbacks$SinkCallback.class
+===========================================================================
+org.twentygototen.pipeline.sources.SyncSource.emitAsync(org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+===========================================================================
+org.twentygototen.pipeline.sources.SyncSource.next(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+===========================================================================
+org.twentygototen.pipeline.sources.SyncSource.next(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+return.getClass().getName() == org.twentygototen.pipeline.sources.SourceWithPipe.class
+===========================================================================
+org.twentygototen.pipeline.util.Pair$2$1:::OBJECT
+this.val$callback != null
+this.val$callback.getClass().getName() == org.twentygototen.pipeline.pipes.PipeTee$1.class
+this.val$inputPair != null
+this.val$inputPair.first != null
+this.val$inputPair.first.getClass().getName() == java.io.File.class
+this.val$inputPair.second != null
+this.val$inputPair.second.getClass().getName() == java.util.ArrayList.class
+org.twentygototen.pipeline.util.Pair$2.this has only one value
+org.twentygototen.pipeline.util.Pair$2.this.val$arrow has only one value
+org.twentygototen.pipeline.util.Pair$2.this.val$arrow != null
+org.twentygototen.pipeline.util.Pair$2.this.val$arrow.getClass().getName() == org.twentygototen.pipeline.Example$4.class
+this.val$callback.getClass().getName() != this.val$inputPair.first.getClass().getName()
+this.val$callback.getClass().getName() != this.val$inputPair.second.getClass().getName()
+this.val$callback.getClass().getName() != org.twentygototen.pipeline.util.Pair$2.this.val$arrow.getClass().getName()
+this.val$inputPair.first.getClass().getName() != this.val$inputPair.second.getClass().getName()
+this.val$inputPair.first.getClass().getName() != org.twentygototen.pipeline.util.Pair$2.this.val$arrow.getClass().getName()
+this.val$inputPair.second.getClass().getName() != org.twentygototen.pipeline.util.Pair$2.this.val$arrow.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.util.Pair$2$1.(org.twentygototen.pipeline.util.Pair$2, org.twentygototen.pipeline.Callbacks$Callback, org.twentygototen.pipeline.util.Pair):::ENTER
+org.twentygototen.pipeline.util.Pair$2.this has only one value
+org.twentygototen.pipeline.util.Pair$2.this.val$arrow has only one value
+org.twentygototen.pipeline.util.Pair$2.this.val$arrow.getClass().getName() == org.twentygototen.pipeline.Example$4.class
+arg1.getClass().getName() == org.twentygototen.pipeline.pipes.PipeTee$1.class
+arg2.first.getClass().getName() == java.io.File.class
+arg2.second.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+org.twentygototen.pipeline.util.Pair$2$1.(org.twentygototen.pipeline.util.Pair$2, org.twentygototen.pipeline.Callbacks$Callback, org.twentygototen.pipeline.util.Pair):::EXIT
+this.val$callback == orig(arg1)
+this.val$callback.getClass().getName() == orig(arg1.getClass().getName())
+this.val$inputPair == orig(arg2)
+this.val$inputPair.first == arg2.first
+this.val$inputPair.first.getClass().getName() == arg2.first.getClass().getName()
+this.val$inputPair.second == arg2.second
+this.val$inputPair.second.getClass().getName() == arg2.second.getClass().getName()
+org.twentygototen.pipeline.util.Pair$2.this == orig(org.twentygototen.pipeline.util.Pair$2.this)
+org.twentygototen.pipeline.util.Pair$2.this.val$arrow == orig(org.twentygototen.pipeline.util.Pair$2.this.val$arrow)
+org.twentygototen.pipeline.util.Pair$2.this.val$arrow.getClass().getName() == orig(org.twentygototen.pipeline.util.Pair$2.this.val$arrow.getClass().getName())
+arg2.first == orig(arg2.first)
+arg2.first.getClass().getName() == orig(arg2.first.getClass().getName())
+arg2.second == orig(arg2.second)
+arg2.second.getClass().getName() == orig(arg2.second.getClass().getName())
+arg2.first.getClass().getName() == java.io.File.class
+arg2.second.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+org.twentygototen.pipeline.util.Pair$2$1.onSuccess(java.lang.Object):::ENTER
+arg0.getClass().getName() == java.lang.Integer.class
+===========================================================================
+org.twentygototen.pipeline.util.Pair$2$1.onSuccess(java.lang.Object):::EXIT
+this.val$callback == orig(this.val$callback)
+this.val$callback.getClass().getName() == orig(this.val$callback.getClass().getName())
+this.val$inputPair == orig(this.val$inputPair)
+this.val$inputPair.first == orig(this.val$inputPair.first)
+this.val$inputPair.first.getClass().getName() == orig(this.val$inputPair.first.getClass().getName())
+this.val$inputPair.second == orig(this.val$inputPair.second)
+this.val$inputPair.second.getClass().getName() == orig(this.val$inputPair.second.getClass().getName())
+org.twentygototen.pipeline.util.Pair$2.this == orig(org.twentygototen.pipeline.util.Pair$2.this)
+org.twentygototen.pipeline.util.Pair$2.this.val$arrow == orig(org.twentygototen.pipeline.util.Pair$2.this.val$arrow)
+org.twentygototen.pipeline.util.Pair$2.this.val$arrow.getClass().getName() == orig(org.twentygototen.pipeline.util.Pair$2.this.val$arrow.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.util.Pair$2:::OBJECT
+this has only one value
+this.val$arrow has only one value
+this.val$arrow.getClass().getName() == org.twentygototen.pipeline.Example$4.class
+===========================================================================
+org.twentygototen.pipeline.util.Pair$2.(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.twentygototen.pipeline.Example$4.class
+===========================================================================
+org.twentygototen.pipeline.util.Pair$2.(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+this.val$arrow == orig(arg0)
+this.val$arrow.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+org.twentygototen.pipeline.util.Pair$2.processAsync(org.twentygototen.pipeline.util.Pair, org.twentygototen.pipeline.Callbacks$Callback):::ENTER
+arg0.first.getClass().getName() == java.io.File.class
+arg0.second.getClass().getName() == java.util.ArrayList.class
+arg1.getClass().getName() == org.twentygototen.pipeline.pipes.PipeTee$1.class
+===========================================================================
+org.twentygototen.pipeline.util.Pair$2.processAsync(org.twentygototen.pipeline.util.Pair, org.twentygototen.pipeline.Callbacks$Callback):::EXIT
+this.val$arrow == orig(this.val$arrow)
+this.val$arrow.getClass().getName() == orig(this.val$arrow.getClass().getName())
+arg0.first == orig(arg0.first)
+arg0.first.getClass().getName() == orig(arg0.first.getClass().getName())
+arg0.second == orig(arg0.second)
+arg0.second.getClass().getName() == orig(arg0.second.getClass().getName())
+arg0.first.getClass().getName() == java.io.File.class
+arg0.second.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+org.twentygototen.pipeline.util.Pair:::OBJECT
+this.first != null
+this.first.getClass().getName() == java.io.File.class
+this.second != null
+===========================================================================
+org.twentygototen.pipeline.util.Pair.Pair(java.lang.Object, java.lang.Object):::ENTER
+arg0.getClass().getName() == java.io.File.class
+arg0.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.util.Pair.Pair(java.lang.Object, java.lang.Object):::EXIT
+this.first == orig(arg0)
+this.first.getClass().getName() == orig(arg0.getClass().getName())
+this.second == orig(arg1)
+this.second.getClass().getName() == orig(arg1.getClass().getName())
+this.first.getClass().getName() != this.second.getClass().getName()
+===========================================================================
+org.twentygototen.pipeline.util.Pair.make(java.lang.Object, java.lang.Object):::ENTER
+arg0.getClass().getName() == java.io.File.class
+arg1.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+org.twentygototen.pipeline.util.Pair.make(java.lang.Object, java.lang.Object):::EXIT
+return.first == orig(arg0)
+return.first.getClass().getName() == orig(arg0.getClass().getName())
+return.second == orig(arg1)
+return.second.getClass().getName() == orig(arg1.getClass().getName())
+return.first.getClass().getName() == java.io.File.class
+return.second.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+org.twentygototen.pipeline.util.Pair.second(org.twentygototen.pipeline.Pipeline$Pipe):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.twentygototen.pipeline.Example$4.class
+===========================================================================
+org.twentygototen.pipeline.util.Pair.second(org.twentygototen.pipeline.Pipeline$Pipe):::EXIT
+return has only one value
+return.getClass().getName() == org.twentygototen.pipeline.util.Pair$2.class
+===========================================================================
+org.twentygototen.pipeline.util.Pair.toString():::ENTER
+===========================================================================
+org.twentygototen.pipeline.util.Pair.toString():::EXIT
+this.first == orig(this.first)
+this.first.getClass().getName() == orig(this.first.getClass().getName())
+this.second == orig(this.second)
+this.second.getClass().getName() == orig(this.second.getClass().getName())
+Exiting Daikon.

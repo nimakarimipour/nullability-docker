@@ -1,0 +1,697 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+assignments.farmer.FarmerImpl:::OBJECT
+this.season != null
+this.season.getClass().getName() != this.plowStrategy.getClass().getName()
+this.season.getClass().getName() != this.plantStrategy.getClass().getName()
+this.season.getClass().getName() != this.weedControlStrategy.getClass().getName()
+this.season.getClass().getName() != this.harvestStrategy.getClass().getName()
+this.season.getClass().getName() != this.marketStrategy.getClass().getName()
+this.plowStrategy.getClass().getName() != this.plantStrategy.getClass().getName()
+this.plowStrategy.getClass().getName() != this.weedControlStrategy.getClass().getName()
+this.plowStrategy.getClass().getName() != this.harvestStrategy.getClass().getName()
+this.plowStrategy.getClass().getName() != this.marketStrategy.getClass().getName()
+this.plantStrategy.getClass().getName() != this.weedControlStrategy.getClass().getName()
+this.plantStrategy.getClass().getName() != this.harvestStrategy.getClass().getName()
+this.plantStrategy.getClass().getName() != this.marketStrategy.getClass().getName()
+this.weedControlStrategy.getClass().getName() != this.harvestStrategy.getClass().getName()
+this.weedControlStrategy.getClass().getName() != this.marketStrategy.getClass().getName()
+this.harvestStrategy.getClass().getName() != this.marketStrategy.getClass().getName()
+===========================================================================
+assignments.farmer.FarmerImpl.FarmerImpl():::EXIT
+this.season.getClass().getName() == assignments.farmer.seasonstates.SpringState.class
+this.plowStrategy == null
+this.plantStrategy == null
+this.weedControlStrategy == null
+this.harvestStrategy == null
+this.marketStrategy == null
+===========================================================================
+assignments.farmer.FarmerImpl.harvest():::ENTER
+this.plowStrategy != null
+this.plantStrategy != null
+this.weedControlStrategy != null
+this.harvestStrategy != null
+this.marketStrategy != null
+===========================================================================
+assignments.farmer.FarmerImpl.harvest():::EXIT
+this.season == orig(this.season)
+this.season.getClass().getName() == orig(this.season.getClass().getName())
+this.plowStrategy == orig(this.plowStrategy)
+this.plowStrategy.getClass().getName() == orig(this.plowStrategy.getClass().getName())
+this.plantStrategy == orig(this.plantStrategy)
+this.plantStrategy.getClass().getName() == orig(this.plantStrategy.getClass().getName())
+this.weedControlStrategy == orig(this.weedControlStrategy)
+this.weedControlStrategy.getClass().getName() == orig(this.weedControlStrategy.getClass().getName())
+this.harvestStrategy == orig(this.harvestStrategy)
+this.harvestStrategy.getClass().getName() == orig(this.harvestStrategy.getClass().getName())
+this.marketStrategy == orig(this.marketStrategy)
+this.marketStrategy.getClass().getName() == orig(this.marketStrategy.getClass().getName())
+this.plowStrategy != null
+this.plantStrategy != null
+this.weedControlStrategy != null
+this.harvestStrategy != null
+this.marketStrategy != null
+===========================================================================
+assignments.farmer.FarmerImpl.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+assignments.farmer.FarmerImpl.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+assignments.farmer.FarmerImpl.market():::ENTER
+this.plowStrategy != null
+this.plantStrategy != null
+this.weedControlStrategy != null
+this.harvestStrategy != null
+this.marketStrategy != null
+===========================================================================
+assignments.farmer.FarmerImpl.market():::EXIT
+this.season == orig(this.season)
+this.season.getClass().getName() == orig(this.season.getClass().getName())
+this.plowStrategy == orig(this.plowStrategy)
+this.plowStrategy.getClass().getName() == orig(this.plowStrategy.getClass().getName())
+this.plantStrategy == orig(this.plantStrategy)
+this.plantStrategy.getClass().getName() == orig(this.plantStrategy.getClass().getName())
+this.weedControlStrategy == orig(this.weedControlStrategy)
+this.weedControlStrategy.getClass().getName() == orig(this.weedControlStrategy.getClass().getName())
+this.harvestStrategy == orig(this.harvestStrategy)
+this.harvestStrategy.getClass().getName() == orig(this.harvestStrategy.getClass().getName())
+this.marketStrategy == orig(this.marketStrategy)
+this.marketStrategy.getClass().getName() == orig(this.marketStrategy.getClass().getName())
+this.plowStrategy != null
+this.plantStrategy != null
+this.weedControlStrategy != null
+this.harvestStrategy != null
+this.marketStrategy != null
+===========================================================================
+assignments.farmer.FarmerImpl.plant():::ENTER
+this.plowStrategy != null
+this.plantStrategy != null
+this.weedControlStrategy != null
+this.harvestStrategy != null
+this.marketStrategy != null
+===========================================================================
+assignments.farmer.FarmerImpl.plant():::EXIT
+this.season == orig(this.season)
+this.season.getClass().getName() == orig(this.season.getClass().getName())
+this.plowStrategy == orig(this.plowStrategy)
+this.plowStrategy.getClass().getName() == orig(this.plowStrategy.getClass().getName())
+this.plantStrategy == orig(this.plantStrategy)
+this.plantStrategy.getClass().getName() == orig(this.plantStrategy.getClass().getName())
+this.weedControlStrategy == orig(this.weedControlStrategy)
+this.weedControlStrategy.getClass().getName() == orig(this.weedControlStrategy.getClass().getName())
+this.harvestStrategy == orig(this.harvestStrategy)
+this.harvestStrategy.getClass().getName() == orig(this.harvestStrategy.getClass().getName())
+this.marketStrategy == orig(this.marketStrategy)
+this.marketStrategy.getClass().getName() == orig(this.marketStrategy.getClass().getName())
+this.plowStrategy != null
+this.plantStrategy != null
+this.weedControlStrategy != null
+this.harvestStrategy != null
+this.marketStrategy != null
+===========================================================================
+assignments.farmer.FarmerImpl.plow():::ENTER
+this.plowStrategy != null
+this.plantStrategy != null
+this.weedControlStrategy != null
+this.harvestStrategy != null
+this.marketStrategy != null
+===========================================================================
+assignments.farmer.FarmerImpl.plow():::EXIT
+this.season == orig(this.season)
+this.season.getClass().getName() == orig(this.season.getClass().getName())
+this.plowStrategy == orig(this.plowStrategy)
+this.plowStrategy.getClass().getName() == orig(this.plowStrategy.getClass().getName())
+this.plantStrategy == orig(this.plantStrategy)
+this.plantStrategy.getClass().getName() == orig(this.plantStrategy.getClass().getName())
+this.weedControlStrategy == orig(this.weedControlStrategy)
+this.weedControlStrategy.getClass().getName() == orig(this.weedControlStrategy.getClass().getName())
+this.harvestStrategy == orig(this.harvestStrategy)
+this.harvestStrategy.getClass().getName() == orig(this.harvestStrategy.getClass().getName())
+this.marketStrategy == orig(this.marketStrategy)
+this.marketStrategy.getClass().getName() == orig(this.marketStrategy.getClass().getName())
+this.plowStrategy != null
+this.plantStrategy != null
+this.weedControlStrategy != null
+this.harvestStrategy != null
+this.marketStrategy != null
+===========================================================================
+assignments.farmer.FarmerImpl.setSeasonState(assignments.farmer.SeasonState):::ENTER
+this.plowStrategy != null
+this.plantStrategy != null
+this.weedControlStrategy != null
+this.harvestStrategy != null
+this.marketStrategy != null
+arg0 != null
+this.season.getClass().getName() != arg0.getClass().getName()
+this.plowStrategy.getClass().getName() != arg0.getClass().getName()
+this.plantStrategy.getClass().getName() != arg0.getClass().getName()
+this.weedControlStrategy.getClass().getName() != arg0.getClass().getName()
+this.harvestStrategy.getClass().getName() != arg0.getClass().getName()
+this.marketStrategy.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+assignments.farmer.FarmerImpl.setSeasonState(assignments.farmer.SeasonState):::EXIT
+this.season == orig(arg0)
+this.season.getClass().getName() == orig(arg0.getClass().getName())
+this.plowStrategy == orig(this.plowStrategy)
+this.plowStrategy.getClass().getName() == orig(this.plowStrategy.getClass().getName())
+this.plantStrategy == orig(this.plantStrategy)
+this.plantStrategy.getClass().getName() == orig(this.plantStrategy.getClass().getName())
+this.weedControlStrategy == orig(this.weedControlStrategy)
+this.weedControlStrategy.getClass().getName() == orig(this.weedControlStrategy.getClass().getName())
+this.harvestStrategy == orig(this.harvestStrategy)
+this.harvestStrategy.getClass().getName() == orig(this.harvestStrategy.getClass().getName())
+this.marketStrategy == orig(this.marketStrategy)
+this.marketStrategy.getClass().getName() == orig(this.marketStrategy.getClass().getName())
+this.plowStrategy != null
+this.plantStrategy != null
+this.weedControlStrategy != null
+this.harvestStrategy != null
+this.marketStrategy != null
+this.season.getClass().getName() != orig(this.season.getClass().getName())
+this.plowStrategy.getClass().getName() != orig(this.season.getClass().getName())
+this.plantStrategy.getClass().getName() != orig(this.season.getClass().getName())
+this.weedControlStrategy.getClass().getName() != orig(this.season.getClass().getName())
+this.harvestStrategy.getClass().getName() != orig(this.season.getClass().getName())
+this.marketStrategy.getClass().getName() != orig(this.season.getClass().getName())
+===========================================================================
+assignments.farmer.FarmerImpl.setStrategies(assignments.farmer.actionstrategies.PlowStrategy, assignments.farmer.actionstrategies.PlantStrategy, assignments.farmer.actionstrategies.WeedControlStrategy, assignments.farmer.actionstrategies.HarvestStrategy, assignments.farmer.actionstrategies.MarketStrategy):::ENTER
+this.season.getClass().getName() == assignments.farmer.seasonstates.SpringState.class
+this.plowStrategy == null
+this.plantStrategy == null
+this.weedControlStrategy == null
+this.harvestStrategy == null
+this.marketStrategy == null
+===========================================================================
+assignments.farmer.FarmerImpl.setStrategies(assignments.farmer.actionstrategies.PlowStrategy, assignments.farmer.actionstrategies.PlantStrategy, assignments.farmer.actionstrategies.WeedControlStrategy, assignments.farmer.actionstrategies.HarvestStrategy, assignments.farmer.actionstrategies.MarketStrategy):::EXIT
+this.season == orig(this.season)
+this.season.getClass().getName() == orig(this.season.getClass().getName())
+this.plowStrategy == orig(arg0)
+this.plowStrategy.getClass().getName() == orig(arg0.getClass().getName())
+this.plantStrategy == orig(arg1)
+this.plantStrategy.getClass().getName() == orig(arg1.getClass().getName())
+this.weedControlStrategy == orig(arg2)
+this.weedControlStrategy.getClass().getName() == orig(arg2.getClass().getName())
+this.harvestStrategy == orig(arg3)
+this.harvestStrategy.getClass().getName() == orig(arg3.getClass().getName())
+this.marketStrategy == orig(arg4)
+this.marketStrategy.getClass().getName() == orig(arg4.getClass().getName())
+this.season.getClass().getName() == assignments.farmer.seasonstates.SpringState.class
+===========================================================================
+assignments.farmer.FarmerImpl.weedControl():::ENTER
+this.plowStrategy != null
+this.plantStrategy != null
+this.weedControlStrategy != null
+this.harvestStrategy != null
+this.marketStrategy != null
+===========================================================================
+assignments.farmer.FarmerImpl.weedControl():::EXIT
+this.season == orig(this.season)
+this.season.getClass().getName() == orig(this.season.getClass().getName())
+this.plowStrategy == orig(this.plowStrategy)
+this.plowStrategy.getClass().getName() == orig(this.plowStrategy.getClass().getName())
+this.plantStrategy == orig(this.plantStrategy)
+this.plantStrategy.getClass().getName() == orig(this.plantStrategy.getClass().getName())
+this.weedControlStrategy == orig(this.weedControlStrategy)
+this.weedControlStrategy.getClass().getName() == orig(this.weedControlStrategy.getClass().getName())
+this.harvestStrategy == orig(this.harvestStrategy)
+this.harvestStrategy.getClass().getName() == orig(this.harvestStrategy.getClass().getName())
+this.marketStrategy == orig(this.marketStrategy)
+this.marketStrategy.getClass().getName() == orig(this.marketStrategy.getClass().getName())
+this.plowStrategy != null
+this.plantStrategy != null
+this.weedControlStrategy != null
+this.harvestStrategy != null
+this.marketStrategy != null
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.AmishHarvestStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.AmishHarvestStrategy.AmishHarvestStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.AmishHarvestStrategy.harvestInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.AmishHarvestStrategy.harvestInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.AmishHarvestStrategy.harvestInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.AmishHarvestStrategy.harvestInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.AmishHarvestStrategy.harvestInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.AmishHarvestStrategy.harvestInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.ConventionalHarvestStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.ConventionalHarvestStrategy.ConventionalHarvestStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.ConventionalHarvestStrategy.harvestInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.ConventionalHarvestStrategy.harvestInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.ConventionalHarvestStrategy.harvestInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.ConventionalHarvestStrategy.harvestInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.ConventionalHarvestStrategy.harvestInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.ConventionalHarvestStrategy.harvestInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.OrganicHarvestStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.OrganicHarvestStrategy.OrganicHarvestStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.OrganicHarvestStrategy.harvestInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.OrganicHarvestStrategy.harvestInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.OrganicHarvestStrategy.harvestInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.OrganicHarvestStrategy.harvestInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.OrganicHarvestStrategy.harvestInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.harveststrategies.OrganicHarvestStrategy.harvestInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.AmishMarketStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.AmishMarketStrategy.AmishMarketStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.AmishMarketStrategy.marketInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.AmishMarketStrategy.marketInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.AmishMarketStrategy.marketInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.AmishMarketStrategy.marketInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.AmishMarketStrategy.marketInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.AmishMarketStrategy.marketInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.ConventionalMarketStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.ConventionalMarketStrategy.ConventionalMarketStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.ConventionalMarketStrategy.marketInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.ConventionalMarketStrategy.marketInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.ConventionalMarketStrategy.marketInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.ConventionalMarketStrategy.marketInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.ConventionalMarketStrategy.marketInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.ConventionalMarketStrategy.marketInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.OrganicMarketStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.OrganicMarketStrategy.OrganicMarketStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.OrganicMarketStrategy.marketInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.OrganicMarketStrategy.marketInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.OrganicMarketStrategy.marketInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.OrganicMarketStrategy.marketInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.OrganicMarketStrategy.marketInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.marketstrategies.OrganicMarketStrategy.marketInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.AmishPlantStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.AmishPlantStrategy.AmishPlantStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.AmishPlantStrategy.plantInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.AmishPlantStrategy.plantInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.AmishPlantStrategy.plantInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.AmishPlantStrategy.plantInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.AmishPlantStrategy.plantInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.AmishPlantStrategy.plantInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.ConventionalPlantStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.ConventionalPlantStrategy.ConventionalPlantStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.ConventionalPlantStrategy.plantInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.ConventionalPlantStrategy.plantInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.ConventionalPlantStrategy.plantInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.ConventionalPlantStrategy.plantInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.ConventionalPlantStrategy.plantInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.ConventionalPlantStrategy.plantInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.OrganicPlantStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.OrganicPlantStrategy.OrganicPlantStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.OrganicPlantStrategy.plantInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.OrganicPlantStrategy.plantInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.OrganicPlantStrategy.plantInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.OrganicPlantStrategy.plantInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.OrganicPlantStrategy.plantInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plantstrategies.OrganicPlantStrategy.plantInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.AmishPlowStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.AmishPlowStrategy.AmishPlowStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.AmishPlowStrategy.plowInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.AmishPlowStrategy.plowInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.AmishPlowStrategy.plowInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.AmishPlowStrategy.plowInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.AmishPlowStrategy.plowInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.AmishPlowStrategy.plowInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.ConventionalPlowStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.ConventionalPlowStrategy.ConventionalPlowStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.ConventionalPlowStrategy.plowInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.ConventionalPlowStrategy.plowInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.ConventionalPlowStrategy.plowInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.ConventionalPlowStrategy.plowInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.ConventionalPlowStrategy.plowInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.ConventionalPlowStrategy.plowInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.OrganicPlowStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.OrganicPlowStrategy.OrganicPlowStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.OrganicPlowStrategy.plowInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.OrganicPlowStrategy.plowInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.OrganicPlowStrategy.plowInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.OrganicPlowStrategy.plowInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.OrganicPlowStrategy.plowInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.plowstrategies.OrganicPlowStrategy.plowInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.AmishWeedControlStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.AmishWeedControlStrategy.AmishWeedControlStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.AmishWeedControlStrategy.weedControlInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.AmishWeedControlStrategy.weedControlInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.AmishWeedControlStrategy.weedControlInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.AmishWeedControlStrategy.weedControlInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.AmishWeedControlStrategy.weedControlInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.AmishWeedControlStrategy.weedControlInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.ConventionalWeedControlStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.ConventionalWeedControlStrategy.ConventionalWeedControlStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.ConventionalWeedControlStrategy.weedControlInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.ConventionalWeedControlStrategy.weedControlInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.ConventionalWeedControlStrategy.weedControlInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.ConventionalWeedControlStrategy.weedControlInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.ConventionalWeedControlStrategy.weedControlInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.ConventionalWeedControlStrategy.weedControlInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.OrganicWeedControlStrategy:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.OrganicWeedControlStrategy.OrganicWeedControlStrategy():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.OrganicWeedControlStrategy.weedControlInTheFall():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.OrganicWeedControlStrategy.weedControlInTheFall():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.OrganicWeedControlStrategy.weedControlInTheSpring():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.OrganicWeedControlStrategy.weedControlInTheSpring():::EXIT
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.OrganicWeedControlStrategy.weedControlInTheSummer():::ENTER
+===========================================================================
+assignments.farmer.actionstrategies.weedcontrolstrategies.OrganicWeedControlStrategy.weedControlInTheSummer():::EXIT
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.AmishFarmerFactory():::EXIT
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.create(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Amish"
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.create(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "Amish"
+return has only one value
+return.getClass().getName() == assignments.farmer.FarmerImpl.class
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.createHarvestStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.createHarvestStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.harveststrategies.AmishHarvestStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.createMarketStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.createMarketStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.marketstrategies.AmishMarketStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.createPlantStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.createPlantStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.plantstrategies.AmishPlantStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.createPlowStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.createPlowStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.plowstrategies.AmishPlowStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.createWeedControlStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.AmishFarmerFactory.createWeedControlStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.weedcontrolstrategies.AmishWeedControlStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.ConventionalFarmerFactory():::EXIT
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.create(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Conv"
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.create(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "Conv"
+return has only one value
+return.getClass().getName() == assignments.farmer.FarmerImpl.class
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.createHarvestStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.createHarvestStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.harveststrategies.ConventionalHarvestStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.createMarketStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.createMarketStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.marketstrategies.ConventionalMarketStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.createPlantStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.createPlantStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.plantstrategies.ConventionalPlantStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.createPlowStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.createPlowStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.plowstrategies.ConventionalPlowStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.createWeedControlStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.ConventionalFarmerFactory.createWeedControlStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.weedcontrolstrategies.ConventionalWeedControlStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.OrganicFarmerFactory():::EXIT
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.create(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Organic"
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.create(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "Organic"
+return has only one value
+return.getClass().getName() == assignments.farmer.FarmerImpl.class
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.createHarvestStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.createHarvestStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.harveststrategies.OrganicHarvestStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.createMarketStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.createMarketStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.marketstrategies.OrganicMarketStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.createPlantStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.createPlantStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.plantstrategies.OrganicPlantStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.createPlowStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.createPlowStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.plowstrategies.OrganicPlowStrategy.class
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.createWeedControlStrategy():::ENTER
+===========================================================================
+assignments.farmer.farmerfactories.OrganicFarmerFactory.createWeedControlStrategy():::EXIT
+return has only one value
+return.getClass().getName() == assignments.farmer.actionstrategies.weedcontrolstrategies.OrganicWeedControlStrategy.class
+===========================================================================
+assignments.farmer.seasonstates.FallState:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.seasonstates.FallState.FallState():::EXIT
+===========================================================================
+assignments.farmer.seasonstates.FallState.harvest(assignments.farmer.actionstrategies.HarvestStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.FallState.harvest(assignments.farmer.actionstrategies.HarvestStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.FallState.market(assignments.farmer.actionstrategies.MarketStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.FallState.market(assignments.farmer.actionstrategies.MarketStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.FallState.plant(assignments.farmer.actionstrategies.PlantStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.FallState.plant(assignments.farmer.actionstrategies.PlantStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.FallState.plow(assignments.farmer.actionstrategies.PlowStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.FallState.plow(assignments.farmer.actionstrategies.PlowStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.FallState.weedControl(assignments.farmer.actionstrategies.WeedControlStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.FallState.weedControl(assignments.farmer.actionstrategies.WeedControlStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.SpringState:::OBJECT
+===========================================================================
+assignments.farmer.seasonstates.SpringState.SpringState():::EXIT
+===========================================================================
+assignments.farmer.seasonstates.SpringState.harvest(assignments.farmer.actionstrategies.HarvestStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.SpringState.harvest(assignments.farmer.actionstrategies.HarvestStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.SpringState.market(assignments.farmer.actionstrategies.MarketStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.SpringState.market(assignments.farmer.actionstrategies.MarketStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.SpringState.plant(assignments.farmer.actionstrategies.PlantStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.SpringState.plant(assignments.farmer.actionstrategies.PlantStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.SpringState.plow(assignments.farmer.actionstrategies.PlowStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.SpringState.plow(assignments.farmer.actionstrategies.PlowStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.SpringState.weedControl(assignments.farmer.actionstrategies.WeedControlStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.SpringState.weedControl(assignments.farmer.actionstrategies.WeedControlStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.SummerState:::OBJECT
+this has only one value
+===========================================================================
+assignments.farmer.seasonstates.SummerState.SummerState():::EXIT
+===========================================================================
+assignments.farmer.seasonstates.SummerState.harvest(assignments.farmer.actionstrategies.HarvestStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.SummerState.harvest(assignments.farmer.actionstrategies.HarvestStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.SummerState.market(assignments.farmer.actionstrategies.MarketStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.SummerState.market(assignments.farmer.actionstrategies.MarketStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.SummerState.plant(assignments.farmer.actionstrategies.PlantStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.SummerState.plant(assignments.farmer.actionstrategies.PlantStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.SummerState.plow(assignments.farmer.actionstrategies.PlowStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.SummerState.plow(assignments.farmer.actionstrategies.PlowStrategy):::EXIT
+===========================================================================
+assignments.farmer.seasonstates.SummerState.weedControl(assignments.farmer.actionstrategies.WeedControlStrategy):::ENTER
+===========================================================================
+assignments.farmer.seasonstates.SummerState.weedControl(assignments.farmer.actionstrategies.WeedControlStrategy):::EXIT
+Exiting Daikon.

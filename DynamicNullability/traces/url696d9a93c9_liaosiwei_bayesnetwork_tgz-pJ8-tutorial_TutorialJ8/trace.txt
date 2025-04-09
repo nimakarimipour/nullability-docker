@@ -1,0 +1,1425 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 1 time.  Unmatched entries are ignored!
+Unterminated calls:
+  tutorial.Tutorial.main(java.lang.String[]) : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+org.eclipse.recommenders.internal.jayes.util.BidirectionalMap:::OBJECT
+this.keyValue.getClass().getName() == this.valueKey.getClass().getName()
+this.keyValue != null
+this.keyValue.getClass().getName() == java.util.HashMap.class
+this.valueKey != null
+===========================================================================
+org.eclipse.recommenders.internal.jayes.util.BidirectionalMap.BidirectionalMap():::EXIT
+===========================================================================
+org.eclipse.recommenders.internal.jayes.util.BidirectionalMap.containsValue(java.lang.Object):::ENTER
+arg0.getClass().getName() == java.lang.Integer.class
+this.keyValue.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+org.eclipse.recommenders.internal.jayes.util.BidirectionalMap.containsValue(java.lang.Object):::EXIT
+this.keyValue == orig(this.keyValue)
+this.keyValue.getClass().getName() == orig(this.keyValue.getClass().getName())
+this.keyValue.getClass().getName() == orig(this.valueKey.getClass().getName())
+this.valueKey == orig(this.valueKey)
+return == false
+this.keyValue.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+org.eclipse.recommenders.internal.jayes.util.BidirectionalMap.containsValue(java.lang.Object):::EXIT;condition="not(return == true)"
+===========================================================================
+org.eclipse.recommenders.internal.jayes.util.BidirectionalMap.put(java.lang.Object, java.lang.Object):::ENTER
+arg0.getClass().getName() == java.lang.String.class
+arg1.getClass().getName() == java.lang.Integer.class
+this.keyValue.getClass().getName() != arg0.getClass().getName()
+this.keyValue.getClass().getName() != arg1.getClass().getName()
+arg0.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+org.eclipse.recommenders.internal.jayes.util.BidirectionalMap.put(java.lang.Object, java.lang.Object):::EXIT
+this.keyValue == orig(this.keyValue)
+this.keyValue.getClass().getName() == orig(this.keyValue.getClass().getName())
+this.keyValue.getClass().getName() == orig(this.valueKey.getClass().getName())
+this.valueKey == orig(this.valueKey)
+return == null
+this.keyValue.getClass().getName() != orig(arg0.getClass().getName())
+this.keyValue.getClass().getName() != orig(arg1.getClass().getName())
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNet:::OBJECT
+this has only one value
+this.nodes has only one value
+this.nodes != null
+this.nodes[] elements != null
+this.nodes[].getClass().getName() elements == org.eclipse.recommenders.jayes.BayesNode.class
+this.nodes.getClass().getName() == java.util.ArrayList.class
+this.nodeMap has only one value
+this.nodeMap != null
+this.nodeMap.getClass().getName() == java.util.HashMap.class
+this.name has only one value
+this.name != null
+this.name.toString == "Bayesian Network"
+this.nodes.getClass().getName() != this.nodeMap.getClass().getName()
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNet.BayesNet():::EXIT
+this.nodes[] == []
+this.nodes[].getClass().getName() == []
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNet.addNode(org.eclipse.recommenders.jayes.BayesNode):::ENTER
+this.nodes.getClass().getName() == arg0.children.getClass().getName()
+this.nodes.getClass().getName() == arg0.parents.getClass().getName()
+this.nodes.getClass().getName() == arg0.outcomesList.getClass().getName()
+this.nodeMap.getClass().getName() == arg0.outcomeIndices.keyValue.getClass().getName()
+this.nodeMap.getClass().getName() == arg0.outcomeIndices.valueKey.getClass().getName()
+arg0.name.toString one of { "a", "b", "c" }
+arg0.children[] == []
+arg0.children[].getClass().getName() == []
+arg0.parents[] == []
+arg0.parents[].getClass().getName() == []
+arg0.outcomes == 0
+arg0.factor.getClass().getName() == org.eclipse.recommenders.jayes.factor.DenseFactor.class
+arg0.factor.dimensions[] == []
+arg0.factor.dimensionIDs[] == []
+arg0.factor.values.getClass().getName() == org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.class
+arg0.factor.selections[] == []
+arg0.factor.isCutValid == false
+arg0.factor.isLogScale == false
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == false
+arg0.id == -1
+arg0.outcomesList[] == []
+arg0.outcomesList[].getClass().getName() == []
+size(this.nodes[]) one of { 0, 1, 2 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNet.addNode(org.eclipse.recommenders.jayes.BayesNode):::EXIT
+this.nodes == orig(this.nodes)
+this.nodes.getClass().getName() == arg0.children.getClass().getName()
+this.nodes.getClass().getName() == arg0.parents.getClass().getName()
+this.nodes.getClass().getName() == arg0.outcomesList.getClass().getName()
+this.nodes.getClass().getName() == orig(this.nodes.getClass().getName())
+this.nodes.getClass().getName() == orig(arg0.children.getClass().getName())
+this.nodes.getClass().getName() == orig(arg0.parents.getClass().getName())
+this.nodes.getClass().getName() == orig(arg0.outcomesList.getClass().getName())
+this.nodeMap == orig(this.nodeMap)
+this.nodeMap.getClass().getName() == arg0.outcomeIndices.keyValue.getClass().getName()
+this.nodeMap.getClass().getName() == arg0.outcomeIndices.valueKey.getClass().getName()
+this.nodeMap.getClass().getName() == orig(this.nodeMap.getClass().getName())
+this.nodeMap.getClass().getName() == orig(arg0.outcomeIndices.keyValue.getClass().getName())
+this.nodeMap.getClass().getName() == orig(arg0.outcomeIndices.valueKey.getClass().getName())
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+arg0.children == orig(arg0.children)
+arg0.children[] == orig(arg0.children[])
+arg0.parents == orig(arg0.parents)
+arg0.parents[] == orig(arg0.parents[])
+arg0.outcomes == orig(arg0.outcomes)
+arg0.outcomeIndices == orig(arg0.outcomeIndices)
+arg0.outcomeIndices.keyValue == orig(arg0.outcomeIndices.keyValue)
+arg0.outcomeIndices.valueKey == orig(arg0.outcomeIndices.valueKey)
+arg0.factor == orig(arg0.factor)
+arg0.factor.getClass().getName() == orig(arg0.factor.getClass().getName())
+arg0.factor.dimensions == orig(arg0.factor.dimensions)
+arg0.factor.dimensions[] == orig(arg0.factor.dimensions[])
+arg0.factor.dimensionIDs == orig(arg0.factor.dimensionIDs)
+arg0.factor.dimensionIDs[] == orig(arg0.factor.dimensionIDs[])
+arg0.factor.values == orig(arg0.factor.values)
+arg0.factor.values.getClass().getName() == orig(arg0.factor.values.getClass().getName())
+arg0.factor.selections == orig(arg0.factor.selections)
+arg0.factor.selections[] == orig(arg0.factor.selections[])
+arg0.factor.cut == orig(arg0.factor.cut)
+arg0.factor.isCutValid == orig(arg0.factor.isCutValid)
+arg0.factor.isLogScale == orig(arg0.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+arg0.id == return
+arg0.outcomesList == orig(arg0.outcomesList)
+arg0.outcomesList[] == orig(arg0.outcomesList[])
+size(this.nodes[])-1 == orig(size(this.nodes[]))
+arg0.name.toString one of { "a", "b", "c" }
+arg0.children[] == []
+arg0.children[].getClass().getName() == []
+arg0.parents[] == []
+arg0.parents[].getClass().getName() == []
+arg0.outcomes == 0
+arg0.factor.getClass().getName() == org.eclipse.recommenders.jayes.factor.DenseFactor.class
+arg0.factor.dimensions[] == []
+arg0.factor.dimensionIDs[] == []
+arg0.factor.values.getClass().getName() == org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.class
+arg0.factor.selections[] == []
+arg0.factor.isCutValid == false
+arg0.factor.isLogScale == false
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == false
+arg0.outcomesList[] == []
+arg0.outcomesList[].getClass().getName() == []
+return one of { 0, 1, 2 }
+size(this.nodes[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNet.createNode(java.lang.String):::ENTER
+arg0.toString one of { "a", "b", "c" }
+size(this.nodes[]) one of { 0, 1, 2 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNet.createNode(java.lang.String):::EXIT
+this.nodes == orig(this.nodes)
+this.nodes.getClass().getName() == return.children.getClass().getName()
+this.nodes.getClass().getName() == return.parents.getClass().getName()
+this.nodes.getClass().getName() == return.outcomesList.getClass().getName()
+this.nodes.getClass().getName() == orig(this.nodes.getClass().getName())
+this.nodeMap == orig(this.nodeMap)
+this.nodeMap.getClass().getName() == return.outcomeIndices.keyValue.getClass().getName()
+this.nodeMap.getClass().getName() == return.outcomeIndices.valueKey.getClass().getName()
+this.nodeMap.getClass().getName() == orig(this.nodeMap.getClass().getName())
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+arg0.toString == orig(arg0.toString)
+return.name == orig(arg0)
+size(this.nodes[])-1 == orig(size(this.nodes[]))
+arg0.toString one of { "a", "b", "c" }
+return.name.toString one of { "a", "b", "c" }
+return.children[] == []
+return.children[].getClass().getName() == []
+return.parents[] == []
+return.parents[].getClass().getName() == []
+return.outcomes == 0
+return.factor.getClass().getName() == org.eclipse.recommenders.jayes.factor.DenseFactor.class
+return.factor.dimensions[] == []
+return.factor.dimensionIDs[] == []
+return.factor.values.getClass().getName() == org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.class
+return.factor.selections[] == []
+return.factor.isCutValid == false
+return.factor.isLogScale == false
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == false
+return.id one of { 0, 1, 2 }
+return.outcomesList[] == []
+return.outcomesList[].getClass().getName() == []
+size(this.nodes[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode:::OBJECT
+this.name != null
+this.name.toString one of { "a", "b", "c" }
+this.children != null
+this.children[] elements != null
+this.children[].getClass().getName() elements == org.eclipse.recommenders.jayes.BayesNode.class
+this.children.getClass().getName() == java.util.ArrayList.class
+this.parents != null
+this.parents[] elements != null
+this.parents[].getClass().getName() elements == org.eclipse.recommenders.jayes.BayesNode.class
+this.outcomes one of { 0, 2, 3 }
+this.outcomeIndices != null
+this.outcomeIndices.keyValue != null
+this.outcomeIndices.keyValue.getClass().getName() == java.util.HashMap.class
+this.outcomeIndices.valueKey != null
+this.outcomeIndices.valueKey.getClass().getName() == java.util.HashMap.class
+this.factor != null
+this.factor.getClass().getName() == org.eclipse.recommenders.jayes.factor.DenseFactor.class
+this.factor.dimensions != null
+this.factor.dimensions[] elements one of { 2, 3 }
+this.factor.dimensionIDs != null
+this.factor.dimensionIDs[] elements one of { 0, 1, 2 }
+this.factor.dimensionIDs[] sorted by <
+this.factor.values != null
+this.factor.values.getClass().getName() == org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.class
+this.factor.selections != null
+this.factor.selections[] elements == -1
+this.factor.cut != null
+this.factor.cut.factor != null
+this.factor.cut.factor.getClass().getName() == org.eclipse.recommenders.jayes.factor.DenseFactor.class
+this.factor.cut.start == 0
+this.factor.cut.stepSize == 0
+this.factor.cut.length == 0
+this.factor.cut.subtreeStepsize == 0
+this.factor.cut.rootDimension == 0
+this.factor.cut.leafDimension == 0
+this.factor.cut.subCut == null
+this.factor.isCutValid == false
+this.factor.isLogScale == false
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == false
+this.id <= 2
+this.outcomesList != null
+this.outcomesList[] elements != null
+this.outcomesList[].getClass().getName() elements == java.lang.String.class
+this.outcomesList.getClass().getName() == java.util.ArrayList.class
+size(this.children[]) one of { 0, 1, 2 }
+size(this.parents[]) one of { 0, 1, 2 }
+size(this.outcomesList[]) one of { 0, 2, 3 }
+size(this.outcomesList[])-1 != 0
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.BayesNode(java.lang.String):::ENTER
+arg0.toString one of { "a", "b", "c" }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.BayesNode(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+this.children[] == []
+this.children[].getClass().getName() == []
+this.parents[] == []
+this.parents[].getClass().getName() == []
+this.parents.getClass().getName() == java.util.ArrayList.class
+this.outcomes == 0
+this.factor.dimensions[] == []
+this.factor.dimensionIDs[] == []
+this.factor.selections[] == []
+this.id == -1
+this.outcomesList[] == []
+this.outcomesList[].getClass().getName() == []
+arg0.toString one of { "a", "b", "c" }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.addOutcomes(java.lang.String[]):::ENTER
+this.children[] == []
+this.children[].getClass().getName() == []
+this.parents[] == []
+this.parents[].getClass().getName() == []
+this.parents.getClass().getName() == java.util.ArrayList.class
+this.outcomes == 0
+this.factor.dimensions[] == []
+this.factor.dimensionIDs[] == []
+this.factor.selections[] == []
+this.id one of { 0, 1, 2 }
+this.outcomesList[] == []
+this.outcomesList[].getClass().getName() == []
+arg0.getClass().getName() == java.lang.String[].class
+arg0[].toString one of { [one, two, three], [true, false] }
+size(arg0[]) one of { 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.addOutcomes(java.lang.String[]):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.children == orig(this.children)
+this.children[] == orig(this.children[])
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+this.parents == orig(this.parents)
+this.parents[] == orig(this.parents[])
+this.parents.getClass().getName() == orig(this.parents.getClass().getName())
+this.outcomeIndices == orig(this.outcomeIndices)
+this.outcomeIndices.keyValue == orig(this.outcomeIndices.keyValue)
+this.outcomeIndices.keyValue.getClass().getName() == orig(this.outcomeIndices.keyValue.getClass().getName())
+this.outcomeIndices.valueKey == orig(this.outcomeIndices.valueKey)
+this.outcomeIndices.valueKey.getClass().getName() == orig(this.outcomeIndices.valueKey.getClass().getName())
+this.factor == orig(this.factor)
+this.factor.getClass().getName() == orig(this.factor.getClass().getName())
+this.factor.values == orig(this.factor.values)
+this.factor.values.getClass().getName() == orig(this.factor.values.getClass().getName())
+this.factor.cut == orig(this.factor.cut)
+this.factor.cut.factor == orig(this.factor.cut.factor)
+this.factor.cut.factor.getClass().getName() == orig(this.factor.cut.factor.getClass().getName())
+this.factor.cut.start == orig(this.factor.cut.start)
+this.factor.cut.stepSize == orig(this.factor.cut.stepSize)
+this.factor.cut.length == orig(this.factor.cut.length)
+this.factor.cut.subtreeStepsize == orig(this.factor.cut.subtreeStepsize)
+this.factor.cut.rootDimension == orig(this.factor.cut.rootDimension)
+this.factor.cut.leafDimension == orig(this.factor.cut.leafDimension)
+this.factor.cut.subCut == orig(this.factor.cut.subCut)
+this.factor.isCutValid == orig(this.factor.isCutValid)
+this.factor.isLogScale == orig(this.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.id == orig(this.id)
+this.outcomesList == orig(this.outcomesList)
+this.outcomesList.getClass().getName() == orig(this.outcomesList.getClass().getName())
+arg0[] == orig(arg0[])
+size(this.factor.dimensions[])-1 == orig(size(this.factor.dimensions[]))
+size(this.factor.dimensionIDs[])-1 == orig(size(this.factor.dimensionIDs[]))
+size(this.factor.selections[])-1 == orig(size(this.factor.selections[]))
+this.children[] == []
+this.children[].getClass().getName() == []
+this.parents[] == []
+this.parents[].getClass().getName() == []
+this.parents.getClass().getName() == java.util.ArrayList.class
+this.outcomes one of { 2, 3 }
+this.factor.dimensions[] one of { [2], [3] }
+this.factor.dimensionIDs[] one of { [0], [1], [2] }
+this.factor.selections[] == [-1]
+this.id one of { 0, 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+arg0[].toString one of { [one, two, three], [true, false] }
+size(this.factor.dimensions[]) == 1
+size(this.factor.dimensionIDs[]) == 1
+size(this.factor.selections[]) == 1
+size(this.outcomesList[]) one of { 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.adjustFactordimensions():::ENTER
+this.children[] == []
+this.children[].getClass().getName() == []
+this.outcomes one of { 2, 3 }
+this.id one of { 0, 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+size(this.outcomesList[]) one of { 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.adjustFactordimensions():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.children == orig(this.children)
+this.children[] == orig(this.children[])
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+this.parents == orig(this.parents)
+this.parents[] == orig(this.parents[])
+this.parents.getClass().getName() == orig(this.parents.getClass().getName())
+this.outcomes == orig(this.outcomes)
+this.outcomeIndices == orig(this.outcomeIndices)
+this.outcomeIndices.keyValue == orig(this.outcomeIndices.keyValue)
+this.outcomeIndices.keyValue.getClass().getName() == orig(this.outcomeIndices.keyValue.getClass().getName())
+this.outcomeIndices.valueKey == orig(this.outcomeIndices.valueKey)
+this.outcomeIndices.valueKey.getClass().getName() == orig(this.outcomeIndices.valueKey.getClass().getName())
+this.factor == orig(this.factor)
+this.factor.getClass().getName() == orig(this.factor.getClass().getName())
+this.factor.values == orig(this.factor.values)
+this.factor.values.getClass().getName() == orig(this.factor.values.getClass().getName())
+this.factor.cut == orig(this.factor.cut)
+this.factor.cut.factor == orig(this.factor.cut.factor)
+this.factor.cut.factor.getClass().getName() == orig(this.factor.cut.factor.getClass().getName())
+this.factor.cut.start == orig(this.factor.cut.start)
+this.factor.cut.stepSize == orig(this.factor.cut.stepSize)
+this.factor.cut.length == orig(this.factor.cut.length)
+this.factor.cut.subtreeStepsize == orig(this.factor.cut.subtreeStepsize)
+this.factor.cut.rootDimension == orig(this.factor.cut.rootDimension)
+this.factor.cut.leafDimension == orig(this.factor.cut.leafDimension)
+this.factor.cut.subCut == orig(this.factor.cut.subCut)
+this.factor.isCutValid == orig(this.factor.isCutValid)
+this.factor.isLogScale == orig(this.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.id == orig(this.id)
+this.outcomesList == orig(this.outcomesList)
+this.outcomesList[] == orig(this.outcomesList[])
+this.outcomesList.getClass().getName() == orig(this.outcomesList.getClass().getName())
+this.children[] == []
+this.children[].getClass().getName() == []
+this.outcomes one of { 2, 3 }
+this.factor.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+this.id one of { 0, 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+size(this.factor.dimensions[]) one of { 1, 2, 3 }
+size(this.factor.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.factor.selections[]) one of { 1, 2, 3 }
+size(this.outcomesList[]) one of { 2, 3 }
+this.factor.selections[] >= orig(this.factor.selections[]) (lexically)
+size(this.factor.dimensions[]) >= orig(size(this.factor.dimensions[]))
+size(this.factor.dimensions[])-1 >= orig(size(this.factor.dimensions[]))-1
+size(this.factor.dimensionIDs[]) >= orig(size(this.factor.dimensionIDs[]))
+size(this.factor.dimensionIDs[])-1 >= orig(size(this.factor.dimensionIDs[]))-1
+size(this.factor.selections[]) >= orig(size(this.factor.selections[]))
+size(this.factor.selections[])-1 >= orig(size(this.factor.selections[]))-1
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.fillWithParentDimensions(int[], int[]):::ENTER
+this.children[] == []
+this.children[].getClass().getName() == []
+this.outcomes one of { 2, 3 }
+this.id one of { 0, 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+arg0[] elements == 0
+arg0[] one of { [0], [0, 0], [0, 0, 0] }
+arg1[] elements == 0
+arg1[] one of { [0], [0, 0], [0, 0, 0] }
+size(this.outcomesList[]) one of { 2, 3 }
+size(arg0[]) one of { 1, 2, 3 }
+size(arg1[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.fillWithParentDimensions(int[], int[]):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.children == orig(this.children)
+this.children[] == orig(this.children[])
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+this.parents == orig(this.parents)
+this.parents[] == orig(this.parents[])
+this.parents.getClass().getName() == orig(this.parents.getClass().getName())
+this.outcomes == orig(this.outcomes)
+this.outcomeIndices == orig(this.outcomeIndices)
+this.outcomeIndices.keyValue == orig(this.outcomeIndices.keyValue)
+this.outcomeIndices.keyValue.getClass().getName() == orig(this.outcomeIndices.keyValue.getClass().getName())
+this.outcomeIndices.valueKey == orig(this.outcomeIndices.valueKey)
+this.outcomeIndices.valueKey.getClass().getName() == orig(this.outcomeIndices.valueKey.getClass().getName())
+this.factor == orig(this.factor)
+this.factor.getClass().getName() == orig(this.factor.getClass().getName())
+this.factor.dimensions == orig(this.factor.dimensions)
+this.factor.dimensions[] == orig(this.factor.dimensions[])
+this.factor.dimensionIDs == orig(this.factor.dimensionIDs)
+this.factor.dimensionIDs[] == orig(this.factor.dimensionIDs[])
+this.factor.values == orig(this.factor.values)
+this.factor.values.getClass().getName() == orig(this.factor.values.getClass().getName())
+this.factor.selections == orig(this.factor.selections)
+this.factor.selections[] == orig(this.factor.selections[])
+this.factor.cut == orig(this.factor.cut)
+this.factor.cut.factor == orig(this.factor.cut.factor)
+this.factor.cut.factor.getClass().getName() == orig(this.factor.cut.factor.getClass().getName())
+this.factor.cut.start == orig(this.factor.cut.start)
+this.factor.cut.stepSize == orig(this.factor.cut.stepSize)
+this.factor.cut.length == orig(this.factor.cut.length)
+this.factor.cut.subtreeStepsize == orig(this.factor.cut.subtreeStepsize)
+this.factor.cut.rootDimension == orig(this.factor.cut.rootDimension)
+this.factor.cut.leafDimension == orig(this.factor.cut.leafDimension)
+this.factor.cut.subCut == orig(this.factor.cut.subCut)
+this.factor.isCutValid == orig(this.factor.isCutValid)
+this.factor.isLogScale == orig(this.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.id == orig(this.id)
+this.outcomesList == orig(this.outcomesList)
+this.outcomesList[] == orig(this.outcomesList[])
+this.outcomesList.getClass().getName() == orig(this.outcomesList.getClass().getName())
+this.children[] == []
+this.children[].getClass().getName() == []
+this.outcomes one of { 2, 3 }
+this.id one of { 0, 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+arg0[] elements one of { 0, 2, 3 }
+arg0[] one of { [0], [2, 0], [2, 3, 0] }
+arg1[] elements one of { 0, 1 }
+arg1[] one of { [0], [0, 0], [0, 1, 0] }
+size(this.outcomesList[]) one of { 2, 3 }
+arg0[] >= orig(arg0[]) (elementwise)
+arg1[] >= orig(arg1[]) (elementwise)
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.getId():::ENTER
+this.id one of { 0, 1, 2 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.getId():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.children == orig(this.children)
+this.children[] == orig(this.children[])
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+this.parents == orig(this.parents)
+this.parents[] == orig(this.parents[])
+this.parents.getClass().getName() == orig(this.parents.getClass().getName())
+this.outcomes == orig(this.outcomes)
+this.outcomeIndices == orig(this.outcomeIndices)
+this.outcomeIndices.keyValue == orig(this.outcomeIndices.keyValue)
+this.outcomeIndices.keyValue.getClass().getName() == orig(this.outcomeIndices.keyValue.getClass().getName())
+this.outcomeIndices.valueKey == orig(this.outcomeIndices.valueKey)
+this.outcomeIndices.valueKey.getClass().getName() == orig(this.outcomeIndices.valueKey.getClass().getName())
+this.factor == orig(this.factor)
+this.factor.getClass().getName() == orig(this.factor.getClass().getName())
+this.factor.dimensions == orig(this.factor.dimensions)
+this.factor.dimensions[] == orig(this.factor.dimensions[])
+this.factor.dimensionIDs == orig(this.factor.dimensionIDs)
+this.factor.dimensionIDs[] == orig(this.factor.dimensionIDs[])
+this.factor.values == orig(this.factor.values)
+this.factor.values.getClass().getName() == orig(this.factor.values.getClass().getName())
+this.factor.selections == orig(this.factor.selections)
+this.factor.selections[] == orig(this.factor.selections[])
+this.factor.cut == orig(this.factor.cut)
+this.factor.cut.factor == orig(this.factor.cut.factor)
+this.factor.cut.factor.getClass().getName() == orig(this.factor.cut.factor.getClass().getName())
+this.factor.cut.start == orig(this.factor.cut.start)
+this.factor.cut.stepSize == orig(this.factor.cut.stepSize)
+this.factor.cut.length == orig(this.factor.cut.length)
+this.factor.cut.subtreeStepsize == orig(this.factor.cut.subtreeStepsize)
+this.factor.cut.rootDimension == orig(this.factor.cut.rootDimension)
+this.factor.cut.leafDimension == orig(this.factor.cut.leafDimension)
+this.factor.cut.subCut == orig(this.factor.cut.subCut)
+this.factor.isCutValid == orig(this.factor.isCutValid)
+this.factor.isLogScale == orig(this.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.id == orig(this.id)
+this.outcomesList == orig(this.outcomesList)
+this.outcomesList[] == orig(this.outcomesList[])
+this.outcomesList.getClass().getName() == orig(this.outcomesList.getClass().getName())
+this.id one of { 0, 1, 2 }
+return one of { 0, 1, 2 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.getName():::ENTER
+this.children[] == []
+this.children[].getClass().getName() == []
+this.parents[] == []
+this.parents[].getClass().getName() == []
+this.parents.getClass().getName() == java.util.ArrayList.class
+this.outcomes == 0
+this.factor.dimensions[] == []
+this.factor.dimensionIDs[] == []
+this.factor.selections[] == []
+this.id one of { 0, 1, 2 }
+this.outcomesList[] == []
+this.outcomesList[].getClass().getName() == []
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.getName():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.children == orig(this.children)
+this.children[] == orig(this.children[])
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+this.parents == orig(this.parents)
+this.parents[] == orig(this.parents[])
+this.parents.getClass().getName() == orig(this.parents.getClass().getName())
+this.outcomes == orig(this.outcomes)
+this.outcomeIndices == orig(this.outcomeIndices)
+this.outcomeIndices.keyValue == orig(this.outcomeIndices.keyValue)
+this.outcomeIndices.keyValue.getClass().getName() == orig(this.outcomeIndices.keyValue.getClass().getName())
+this.outcomeIndices.valueKey == orig(this.outcomeIndices.valueKey)
+this.outcomeIndices.valueKey.getClass().getName() == orig(this.outcomeIndices.valueKey.getClass().getName())
+this.factor == orig(this.factor)
+this.factor.getClass().getName() == orig(this.factor.getClass().getName())
+this.factor.dimensions == orig(this.factor.dimensions)
+this.factor.dimensions[] == orig(this.factor.dimensions[])
+this.factor.dimensionIDs == orig(this.factor.dimensionIDs)
+this.factor.dimensionIDs[] == orig(this.factor.dimensionIDs[])
+this.factor.values == orig(this.factor.values)
+this.factor.values.getClass().getName() == orig(this.factor.values.getClass().getName())
+this.factor.selections == orig(this.factor.selections)
+this.factor.selections[] == orig(this.factor.selections[])
+this.factor.cut == orig(this.factor.cut)
+this.factor.cut.factor == orig(this.factor.cut.factor)
+this.factor.cut.factor.getClass().getName() == orig(this.factor.cut.factor.getClass().getName())
+this.factor.cut.start == orig(this.factor.cut.start)
+this.factor.cut.stepSize == orig(this.factor.cut.stepSize)
+this.factor.cut.length == orig(this.factor.cut.length)
+this.factor.cut.subtreeStepsize == orig(this.factor.cut.subtreeStepsize)
+this.factor.cut.rootDimension == orig(this.factor.cut.rootDimension)
+this.factor.cut.leafDimension == orig(this.factor.cut.leafDimension)
+this.factor.cut.subCut == orig(this.factor.cut.subCut)
+this.factor.isCutValid == orig(this.factor.isCutValid)
+this.factor.isLogScale == orig(this.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.id == orig(this.id)
+this.outcomesList == orig(this.outcomesList)
+this.outcomesList[] == orig(this.outcomesList[])
+this.outcomesList.getClass().getName() == orig(this.outcomesList.getClass().getName())
+this.children[] == []
+this.children[].getClass().getName() == []
+this.parents[] == []
+this.parents[].getClass().getName() == []
+this.parents.getClass().getName() == java.util.ArrayList.class
+this.outcomes == 0
+this.factor.dimensions[] == []
+this.factor.dimensionIDs[] == []
+this.factor.selections[] == []
+this.id one of { 0, 1, 2 }
+this.outcomesList[] == []
+this.outcomesList[].getClass().getName() == []
+return.toString one of { "a", "b", "c" }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.getOutcomeCount():::ENTER
+this.outcomes one of { 2, 3 }
+this.id one of { 0, 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+size(this.outcomesList[]) one of { 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.getOutcomeCount():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.children == orig(this.children)
+this.children[] == orig(this.children[])
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+this.parents == orig(this.parents)
+this.parents[] == orig(this.parents[])
+this.parents.getClass().getName() == orig(this.parents.getClass().getName())
+this.outcomes == orig(this.outcomes)
+this.outcomeIndices == orig(this.outcomeIndices)
+this.outcomeIndices.keyValue == orig(this.outcomeIndices.keyValue)
+this.outcomeIndices.keyValue.getClass().getName() == orig(this.outcomeIndices.keyValue.getClass().getName())
+this.outcomeIndices.valueKey == orig(this.outcomeIndices.valueKey)
+this.outcomeIndices.valueKey.getClass().getName() == orig(this.outcomeIndices.valueKey.getClass().getName())
+this.factor == orig(this.factor)
+this.factor.getClass().getName() == orig(this.factor.getClass().getName())
+this.factor.dimensions == orig(this.factor.dimensions)
+this.factor.dimensions[] == orig(this.factor.dimensions[])
+this.factor.dimensionIDs == orig(this.factor.dimensionIDs)
+this.factor.dimensionIDs[] == orig(this.factor.dimensionIDs[])
+this.factor.values == orig(this.factor.values)
+this.factor.values.getClass().getName() == orig(this.factor.values.getClass().getName())
+this.factor.selections == orig(this.factor.selections)
+this.factor.selections[] == orig(this.factor.selections[])
+this.factor.cut == orig(this.factor.cut)
+this.factor.cut.factor == orig(this.factor.cut.factor)
+this.factor.cut.factor.getClass().getName() == orig(this.factor.cut.factor.getClass().getName())
+this.factor.cut.start == orig(this.factor.cut.start)
+this.factor.cut.stepSize == orig(this.factor.cut.stepSize)
+this.factor.cut.length == orig(this.factor.cut.length)
+this.factor.cut.subtreeStepsize == orig(this.factor.cut.subtreeStepsize)
+this.factor.cut.rootDimension == orig(this.factor.cut.rootDimension)
+this.factor.cut.leafDimension == orig(this.factor.cut.leafDimension)
+this.factor.cut.subCut == orig(this.factor.cut.subCut)
+this.factor.isCutValid == orig(this.factor.isCutValid)
+this.factor.isLogScale == orig(this.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.id == orig(this.id)
+this.outcomesList == orig(this.outcomesList)
+this.outcomesList[] == orig(this.outcomesList[])
+this.outcomesList.getClass().getName() == orig(this.outcomesList.getClass().getName())
+this.outcomes one of { 2, 3 }
+this.id one of { 0, 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+return one of { 2, 3 }
+size(this.outcomesList[]) one of { 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.insertSelf(int[], int[]):::ENTER
+this.children[] == []
+this.children[].getClass().getName() == []
+this.outcomes one of { 2, 3 }
+this.id one of { 0, 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+arg0[] elements one of { 0, 2, 3 }
+arg0[] one of { [0], [2, 0], [2, 3, 0] }
+arg1[] elements one of { 0, 1 }
+arg1[] one of { [0], [0, 0], [0, 1, 0] }
+size(this.outcomesList[]) one of { 2, 3 }
+size(arg0[]) one of { 1, 2, 3 }
+size(arg1[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.insertSelf(int[], int[]):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.children == orig(this.children)
+this.children[] == orig(this.children[])
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+this.parents == orig(this.parents)
+this.parents[] == orig(this.parents[])
+this.parents.getClass().getName() == orig(this.parents.getClass().getName())
+this.outcomes == orig(this.outcomes)
+this.outcomeIndices == orig(this.outcomeIndices)
+this.outcomeIndices.keyValue == orig(this.outcomeIndices.keyValue)
+this.outcomeIndices.keyValue.getClass().getName() == orig(this.outcomeIndices.keyValue.getClass().getName())
+this.outcomeIndices.valueKey == orig(this.outcomeIndices.valueKey)
+this.outcomeIndices.valueKey.getClass().getName() == orig(this.outcomeIndices.valueKey.getClass().getName())
+this.factor == orig(this.factor)
+this.factor.getClass().getName() == orig(this.factor.getClass().getName())
+this.factor.dimensions == orig(this.factor.dimensions)
+this.factor.dimensions[] == orig(this.factor.dimensions[])
+this.factor.dimensionIDs == orig(this.factor.dimensionIDs)
+this.factor.dimensionIDs[] == orig(this.factor.dimensionIDs[])
+this.factor.values == orig(this.factor.values)
+this.factor.values.getClass().getName() == orig(this.factor.values.getClass().getName())
+this.factor.selections == orig(this.factor.selections)
+this.factor.selections[] == orig(this.factor.selections[])
+this.factor.cut == orig(this.factor.cut)
+this.factor.cut.factor == orig(this.factor.cut.factor)
+this.factor.cut.factor.getClass().getName() == orig(this.factor.cut.factor.getClass().getName())
+this.factor.cut.start == orig(this.factor.cut.start)
+this.factor.cut.stepSize == orig(this.factor.cut.stepSize)
+this.factor.cut.length == orig(this.factor.cut.length)
+this.factor.cut.subtreeStepsize == orig(this.factor.cut.subtreeStepsize)
+this.factor.cut.rootDimension == orig(this.factor.cut.rootDimension)
+this.factor.cut.leafDimension == orig(this.factor.cut.leafDimension)
+this.factor.cut.subCut == orig(this.factor.cut.subCut)
+this.factor.isCutValid == orig(this.factor.isCutValid)
+this.factor.isLogScale == orig(this.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.id == orig(this.id)
+this.outcomesList == orig(this.outcomesList)
+this.outcomesList[] == orig(this.outcomesList[])
+this.outcomesList.getClass().getName() == orig(this.outcomesList.getClass().getName())
+this.children[] == []
+this.children[].getClass().getName() == []
+this.outcomes one of { 2, 3 }
+this.id one of { 0, 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+arg0[] elements one of { 2, 3 }
+arg1[] elements one of { 0, 1, 2 }
+arg1[] sorted by <
+size(this.outcomesList[]) one of { 2, 3 }
+arg0[] > orig(arg0[]) (lexically)
+arg0[] >= orig(arg0[]) (elementwise)
+orig(arg0[]) % arg0[] == 0 (elementwise)
+arg1[] >= orig(arg1[]) (elementwise)
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.setId(int):::ENTER
+this.children[] == []
+this.children[].getClass().getName() == []
+this.parents[] == []
+this.parents[].getClass().getName() == []
+this.parents.getClass().getName() == java.util.ArrayList.class
+this.outcomes == 0
+this.factor.dimensions[] == []
+this.factor.dimensionIDs[] == []
+this.factor.selections[] == []
+this.id == -1
+this.outcomesList[] == []
+this.outcomesList[].getClass().getName() == []
+arg0 one of { 0, 1, 2 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.setId(int):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.children == orig(this.children)
+this.children[] == orig(this.children[])
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+this.parents == orig(this.parents)
+this.parents[] == orig(this.parents[])
+this.parents.getClass().getName() == orig(this.parents.getClass().getName())
+this.outcomes == orig(this.outcomes)
+this.outcomeIndices == orig(this.outcomeIndices)
+this.outcomeIndices.keyValue == orig(this.outcomeIndices.keyValue)
+this.outcomeIndices.keyValue.getClass().getName() == orig(this.outcomeIndices.keyValue.getClass().getName())
+this.outcomeIndices.valueKey == orig(this.outcomeIndices.valueKey)
+this.outcomeIndices.valueKey.getClass().getName() == orig(this.outcomeIndices.valueKey.getClass().getName())
+this.factor == orig(this.factor)
+this.factor.getClass().getName() == orig(this.factor.getClass().getName())
+this.factor.dimensions == orig(this.factor.dimensions)
+this.factor.dimensions[] == orig(this.factor.dimensions[])
+this.factor.dimensionIDs == orig(this.factor.dimensionIDs)
+this.factor.dimensionIDs[] == orig(this.factor.dimensionIDs[])
+this.factor.values == orig(this.factor.values)
+this.factor.values.getClass().getName() == orig(this.factor.values.getClass().getName())
+this.factor.selections == orig(this.factor.selections)
+this.factor.selections[] == orig(this.factor.selections[])
+this.factor.cut == orig(this.factor.cut)
+this.factor.cut.factor == orig(this.factor.cut.factor)
+this.factor.cut.factor.getClass().getName() == orig(this.factor.cut.factor.getClass().getName())
+this.factor.cut.start == orig(this.factor.cut.start)
+this.factor.cut.stepSize == orig(this.factor.cut.stepSize)
+this.factor.cut.length == orig(this.factor.cut.length)
+this.factor.cut.subtreeStepsize == orig(this.factor.cut.subtreeStepsize)
+this.factor.cut.rootDimension == orig(this.factor.cut.rootDimension)
+this.factor.cut.leafDimension == orig(this.factor.cut.leafDimension)
+this.factor.cut.subCut == orig(this.factor.cut.subCut)
+this.factor.isCutValid == orig(this.factor.isCutValid)
+this.factor.isLogScale == orig(this.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.outcomesList == orig(this.outcomesList)
+this.outcomesList[] == orig(this.outcomesList[])
+this.outcomesList.getClass().getName() == orig(this.outcomesList.getClass().getName())
+this.children[] == []
+this.children[].getClass().getName() == []
+this.parents[] == []
+this.parents[].getClass().getName() == []
+this.parents.getClass().getName() == java.util.ArrayList.class
+this.outcomes == 0
+this.factor.dimensions[] == []
+this.factor.dimensionIDs[] == []
+this.factor.selections[] == []
+this.id one of { 0, 1, 2 }
+this.outcomesList[] == []
+this.outcomesList[].getClass().getName() == []
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.setParents(java.util.List):::ENTER
+this.name.toString one of { "b", "c" }
+this.children[] == []
+this.children[].getClass().getName() == []
+this.parents[] == []
+this.parents[].getClass().getName() == []
+this.parents.getClass().getName() == java.util.ArrayList.class
+this.outcomes one of { 2, 3 }
+this.factor.dimensions[] one of { [2], [3] }
+this.factor.dimensionIDs[] elements one of { 1, 2 }
+this.factor.dimensionIDs[] one of { [1], [2] }
+this.factor.selections[] == [-1]
+this.id one of { 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+arg0[].getClass().getName() elements == org.eclipse.recommenders.jayes.BayesNode.class
+arg0[].getClass().getName() one of { [org.eclipse.recommenders.jayes.BayesNode], [org.eclipse.recommenders.jayes.BayesNode, org.eclipse.recommenders.jayes.BayesNode] }
+arg0.getClass().getName() == java.util.Arrays$ArrayList.class
+size(this.factor.dimensions[]) == 1
+size(this.factor.dimensionIDs[]) == 1
+size(this.factor.selections[]) == 1
+size(this.outcomesList[]) one of { 2, 3 }
+size(arg0[]) one of { 1, 2 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.setParents(java.util.List):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.children == orig(this.children)
+this.children[] == orig(this.children[])
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+this.outcomes == orig(this.outcomes)
+this.outcomeIndices == orig(this.outcomeIndices)
+this.outcomeIndices.keyValue == orig(this.outcomeIndices.keyValue)
+this.outcomeIndices.keyValue.getClass().getName() == orig(this.outcomeIndices.keyValue.getClass().getName())
+this.outcomeIndices.valueKey == orig(this.outcomeIndices.valueKey)
+this.outcomeIndices.valueKey.getClass().getName() == orig(this.outcomeIndices.valueKey.getClass().getName())
+this.factor == orig(this.factor)
+this.factor.getClass().getName() == orig(this.factor.getClass().getName())
+this.factor.values == orig(this.factor.values)
+this.factor.values.getClass().getName() == orig(this.factor.values.getClass().getName())
+this.factor.cut == orig(this.factor.cut)
+this.factor.cut.factor == orig(this.factor.cut.factor)
+this.factor.cut.factor.getClass().getName() == orig(this.factor.cut.factor.getClass().getName())
+this.factor.cut.start == orig(this.factor.cut.start)
+this.factor.cut.stepSize == orig(this.factor.cut.stepSize)
+this.factor.cut.length == orig(this.factor.cut.length)
+this.factor.cut.subtreeStepsize == orig(this.factor.cut.subtreeStepsize)
+this.factor.cut.rootDimension == orig(this.factor.cut.rootDimension)
+this.factor.cut.leafDimension == orig(this.factor.cut.leafDimension)
+this.factor.cut.subCut == orig(this.factor.cut.subCut)
+this.factor.isCutValid == orig(this.factor.isCutValid)
+this.factor.isLogScale == orig(this.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.id == orig(this.id)
+this.outcomesList == orig(this.outcomesList)
+this.outcomesList[] == orig(this.outcomesList[])
+this.outcomesList.getClass().getName() == orig(this.outcomesList.getClass().getName())
+arg0[] == orig(arg0[])
+this.name.toString one of { "b", "c" }
+this.children[] == []
+this.children[].getClass().getName() == []
+this.parents[].getClass().getName() one of { [org.eclipse.recommenders.jayes.BayesNode], [org.eclipse.recommenders.jayes.BayesNode, org.eclipse.recommenders.jayes.BayesNode] }
+this.parents.getClass().getName() == java.util.Arrays$ArrayList.class
+this.outcomes one of { 2, 3 }
+this.factor.dimensions[] one of { [2, 3], [2, 3, 2] }
+this.factor.dimensionIDs[] one of { [0, 1], [0, 1, 2] }
+this.factor.selections[] one of { [-1, -1], [-1, -1, -1] }
+this.id one of { 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+arg0[].getClass().getName() elements == org.eclipse.recommenders.jayes.BayesNode.class
+arg0[].getClass().getName() one of { [org.eclipse.recommenders.jayes.BayesNode], [org.eclipse.recommenders.jayes.BayesNode, org.eclipse.recommenders.jayes.BayesNode] }
+size(this.parents[]) one of { 1, 2 }
+size(this.factor.dimensions[]) one of { 2, 3 }
+size(this.factor.dimensionIDs[]) one of { 2, 3 }
+size(this.factor.selections[]) one of { 2, 3 }
+size(this.outcomesList[]) one of { 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.setProbabilities(double[]):::ENTER
+this.children[] == []
+this.children[].getClass().getName() == []
+this.outcomes one of { 2, 3 }
+this.factor.dimensions[] one of { [2], [2, 3], [2, 3, 2] }
+this.factor.dimensionIDs[] one of { [0], [0, 1], [0, 1, 2] }
+this.factor.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+this.id one of { 0, 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+arg0[] one of { [0.1, 0.4, 0.5, 0.3, 0.4, 0.3], [0.1, 0.9, 0.0, 1.0, 0.5, 0.5, 0.2, 0.8, 0.0, 1.0, 0.7, 0.3], [0.2, 0.8] }
+size(this.factor.dimensions[]) one of { 1, 2, 3 }
+size(this.factor.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.factor.selections[]) one of { 1, 2, 3 }
+size(this.outcomesList[]) one of { 2, 3 }
+size(arg0[]) one of { 2, 6, 12 }
+===========================================================================
+org.eclipse.recommenders.jayes.BayesNode.setProbabilities(double[]):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.children == orig(this.children)
+this.children[] == orig(this.children[])
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+this.parents == orig(this.parents)
+this.parents[] == orig(this.parents[])
+this.parents.getClass().getName() == orig(this.parents.getClass().getName())
+this.outcomes == orig(this.outcomes)
+this.outcomeIndices == orig(this.outcomeIndices)
+this.outcomeIndices.keyValue == orig(this.outcomeIndices.keyValue)
+this.outcomeIndices.keyValue.getClass().getName() == orig(this.outcomeIndices.keyValue.getClass().getName())
+this.outcomeIndices.valueKey == orig(this.outcomeIndices.valueKey)
+this.outcomeIndices.valueKey.getClass().getName() == orig(this.outcomeIndices.valueKey.getClass().getName())
+this.factor == orig(this.factor)
+this.factor.getClass().getName() == orig(this.factor.getClass().getName())
+this.factor.dimensions[] == orig(this.factor.dimensions[])
+this.factor.dimensionIDs[] == orig(this.factor.dimensionIDs[])
+this.factor.values.getClass().getName() == orig(this.factor.values.getClass().getName())
+this.factor.selections[] == orig(this.factor.selections[])
+this.factor.cut == orig(this.factor.cut)
+this.factor.cut.factor == orig(this.factor.cut.factor)
+this.factor.cut.factor.getClass().getName() == orig(this.factor.cut.factor.getClass().getName())
+this.factor.cut.start == orig(this.factor.cut.start)
+this.factor.cut.stepSize == orig(this.factor.cut.stepSize)
+this.factor.cut.length == orig(this.factor.cut.length)
+this.factor.cut.subtreeStepsize == orig(this.factor.cut.subtreeStepsize)
+this.factor.cut.rootDimension == orig(this.factor.cut.rootDimension)
+this.factor.cut.leafDimension == orig(this.factor.cut.leafDimension)
+this.factor.cut.subCut == orig(this.factor.cut.subCut)
+this.factor.isCutValid == orig(this.factor.isCutValid)
+this.factor.isLogScale == orig(this.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.id == orig(this.id)
+this.outcomesList == orig(this.outcomesList)
+this.outcomesList[] == orig(this.outcomesList[])
+this.outcomesList.getClass().getName() == orig(this.outcomesList.getClass().getName())
+arg0[] == orig(arg0[])
+this.children[] == []
+this.children[].getClass().getName() == []
+this.outcomes one of { 2, 3 }
+this.factor.dimensions[] one of { [2], [2, 3], [2, 3, 2] }
+this.factor.dimensionIDs[] one of { [0], [0, 1], [0, 1, 2] }
+this.factor.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+this.id one of { 0, 1, 2 }
+this.outcomesList[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+arg0[] one of { [0.1, 0.4, 0.5, 0.3, 0.4, 0.3], [0.1, 0.9, 0.0, 1.0, 0.5, 0.5, 0.2, 0.8, 0.0, 1.0, 0.7, 0.3], [0.2, 0.8] }
+size(this.factor.dimensions[]) one of { 1, 2, 3 }
+size(this.factor.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.factor.selections[]) one of { 1, 2, 3 }
+size(this.outcomesList[]) one of { 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.factor.AbstractFactor:::OBJECT
+this.getClass().getName() == org.eclipse.recommenders.jayes.factor.DenseFactor.class
+this.dimensions != null
+this.dimensions[] elements one of { 2, 3 }
+this.dimensionIDs != null
+this.dimensionIDs[] elements one of { 0, 1, 2 }
+this.values != null
+this.values.getClass().getName() == org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.class
+this.selections != null
+this.selections[] elements one of { -1, 0 }
+this.selections[] elements are equal
+this.cut != null
+this.cut.factor != null
+this.cut.factor.getClass().getName() == org.eclipse.recommenders.jayes.factor.DenseFactor.class
+this.cut.factor.dimensions != null
+this.cut.factor.dimensions[] elements one of { 2, 3 }
+this.cut.factor.dimensionIDs != null
+this.cut.factor.dimensionIDs[] elements one of { 0, 1, 2 }
+this.cut.factor.values != null
+this.cut.factor.values.getClass().getName() == org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.class
+this.cut.factor.selections != null
+this.cut.factor.selections[] elements one of { -1, 0 }
+this.cut.factor.selections[] elements are equal
+this.cut.factor.cut != null
+this.cut.factor.isCutValid == false
+this.cut.factor.isLogScale == false
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == false
+this.cut.start == 0
+this.cut.stepSize == 0
+this.cut.length == 0
+this.cut.subtreeStepsize == 0
+this.cut.rootDimension == 0
+this.cut.leafDimension == 0
+this.cut.subCut == null
+this.isCutValid == false
+this.isLogScale == false
+===========================================================================
+org.eclipse.recommenders.jayes.factor.AbstractFactor.AbstractFactor():::EXIT
+this.dimensions[] == []
+this.dimensionIDs[] == []
+this.selections[] == []
+this.cut.factor.dimensions[] == []
+this.cut.factor.dimensionIDs[] == []
+this.cut.factor.selections[] == []
+===========================================================================
+org.eclipse.recommenders.jayes.factor.AbstractFactor.getDimensions():::ENTER
+this.dimensions[] one of { [2], [2, 3], [2, 3, 2] }
+this.dimensionIDs[] one of { [0], [0, 1], [0, 1, 2] }
+this.selections[] elements == -1
+this.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+this.cut.factor.dimensions[] one of { [2], [2, 3], [2, 3, 2] }
+this.cut.factor.dimensionIDs[] one of { [0], [0, 1], [0, 1, 2] }
+this.cut.factor.selections[] elements == -1
+this.cut.factor.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+size(this.dimensions[]) one of { 1, 2, 3 }
+size(this.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.selections[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensions[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.cut.factor.selections[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.factor.AbstractFactor.getDimensions():::EXIT
+this.dimensions == orig(this.dimensions)
+this.dimensions[] == orig(this.dimensions[])
+this.dimensionIDs == orig(this.dimensionIDs)
+this.dimensionIDs[] == orig(this.dimensionIDs[])
+this.values == orig(this.values)
+this.values.getClass().getName() == orig(this.values.getClass().getName())
+this.selections == orig(this.selections)
+this.selections[] == orig(this.selections[])
+this.cut == orig(this.cut)
+this.cut.factor == orig(this.cut.factor)
+this.cut.factor.getClass().getName() == orig(this.cut.factor.getClass().getName())
+this.cut.factor.dimensions == orig(this.cut.factor.dimensions)
+this.cut.factor.dimensions[] == orig(this.cut.factor.dimensions[])
+this.cut.factor.dimensionIDs == orig(this.cut.factor.dimensionIDs)
+this.cut.factor.dimensionIDs[] == orig(this.cut.factor.dimensionIDs[])
+this.cut.factor.values == orig(this.cut.factor.values)
+this.cut.factor.values.getClass().getName() == orig(this.cut.factor.values.getClass().getName())
+this.cut.factor.selections == orig(this.cut.factor.selections)
+this.cut.factor.selections[] == orig(this.cut.factor.selections[])
+this.cut.factor.cut == orig(this.cut.factor.cut)
+this.cut.factor.isCutValid == orig(this.cut.factor.isCutValid)
+this.cut.factor.isLogScale == orig(this.cut.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.cut.start == orig(this.cut.start)
+this.cut.stepSize == orig(this.cut.stepSize)
+this.cut.length == orig(this.cut.length)
+this.cut.subtreeStepsize == orig(this.cut.subtreeStepsize)
+this.cut.rootDimension == orig(this.cut.rootDimension)
+this.cut.leafDimension == orig(this.cut.leafDimension)
+this.cut.subCut == orig(this.cut.subCut)
+this.isCutValid == orig(this.isCutValid)
+this.isLogScale == orig(this.isLogScale)
+this.dimensions[] one of { [2], [2, 3], [2, 3, 2] }
+this.dimensionIDs[] one of { [0], [0, 1], [0, 1, 2] }
+this.selections[] elements == -1
+this.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+this.cut.factor.dimensions[] one of { [2], [2, 3], [2, 3, 2] }
+this.cut.factor.dimensionIDs[] one of { [0], [0, 1], [0, 1, 2] }
+this.cut.factor.selections[] elements == -1
+this.cut.factor.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+return[] elements one of { 2, 3 }
+return[] one of { [2], [2, 3], [2, 3, 2] }
+size(this.dimensions[]) one of { 1, 2, 3 }
+size(this.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.selections[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensions[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.cut.factor.selections[]) one of { 1, 2, 3 }
+size(return[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.factor.AbstractFactor.resetSelections():::ENTER
+this.dimensionIDs[] sorted by <
+this.selections[] elements == 0
+this.selections[] one of { [0], [0, 0], [0, 0, 0] }
+this.cut.factor.dimensionIDs[] sorted by <
+this.cut.factor.selections[] elements == 0
+this.cut.factor.selections[] one of { [0], [0, 0], [0, 0, 0] }
+size(this.dimensions[]) one of { 1, 2, 3 }
+size(this.selections[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensions[]) one of { 1, 2, 3 }
+size(this.cut.factor.selections[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.factor.AbstractFactor.resetSelections():::EXIT
+this.dimensions == orig(this.dimensions)
+this.dimensions[] == orig(this.dimensions[])
+this.dimensionIDs == orig(this.dimensionIDs)
+this.dimensionIDs[] == orig(this.dimensionIDs[])
+this.values == orig(this.values)
+this.values.getClass().getName() == orig(this.values.getClass().getName())
+this.selections == orig(this.selections)
+this.cut == orig(this.cut)
+this.cut.factor == orig(this.cut.factor)
+this.cut.factor.getClass().getName() == orig(this.cut.factor.getClass().getName())
+this.cut.factor.dimensions == orig(this.cut.factor.dimensions)
+this.cut.factor.dimensions[] == orig(this.cut.factor.dimensions[])
+this.cut.factor.dimensionIDs == orig(this.cut.factor.dimensionIDs)
+this.cut.factor.dimensionIDs[] == orig(this.cut.factor.dimensionIDs[])
+this.cut.factor.values == orig(this.cut.factor.values)
+this.cut.factor.values.getClass().getName() == orig(this.cut.factor.values.getClass().getName())
+this.cut.factor.selections == orig(this.cut.factor.selections)
+this.cut.factor.cut == orig(this.cut.factor.cut)
+this.cut.factor.isCutValid == orig(this.cut.factor.isCutValid)
+this.cut.factor.isLogScale == orig(this.cut.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.cut.start == orig(this.cut.start)
+this.cut.stepSize == orig(this.cut.stepSize)
+this.cut.length == orig(this.cut.length)
+this.cut.subtreeStepsize == orig(this.cut.subtreeStepsize)
+this.cut.rootDimension == orig(this.cut.rootDimension)
+this.cut.leafDimension == orig(this.cut.leafDimension)
+this.cut.subCut == orig(this.cut.subCut)
+this.isCutValid == orig(this.isCutValid)
+this.isLogScale == orig(this.isLogScale)
+size(this.selections[]) == orig(size(this.selections[]))
+size(this.cut.factor.selections[]) == orig(size(this.cut.factor.selections[]))
+this.dimensionIDs[] sorted by <
+this.selections[] elements == -1
+this.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+this.cut.factor.dimensionIDs[] sorted by <
+this.cut.factor.selections[] elements == -1
+this.cut.factor.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+size(this.dimensions[]) one of { 1, 2, 3 }
+size(this.selections[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensions[]) one of { 1, 2, 3 }
+size(this.cut.factor.selections[]) one of { 1, 2, 3 }
+this.selections[] < orig(this.selections[]) (elementwise)
+this.cut.factor.selections[] < orig(this.cut.factor.selections[]) (elementwise)
+===========================================================================
+org.eclipse.recommenders.jayes.factor.AbstractFactor.setDimensionIDs(int[]):::ENTER
+this.selections[] elements == -1
+this.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+this.cut.factor.selections[] elements == -1
+this.cut.factor.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+arg0[] elements one of { 0, 1, 2 }
+arg0[] sorted by <
+size(this.dimensions[]) one of { 1, 2, 3 }
+size(this.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.selections[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensions[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.cut.factor.selections[]) one of { 1, 2, 3 }
+size(arg0[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.factor.AbstractFactor.setDimensionIDs(int[]):::EXIT
+this.dimensions == orig(this.dimensions)
+this.dimensions[] == orig(this.dimensions[])
+this.values == orig(this.values)
+this.values.getClass().getName() == orig(this.values.getClass().getName())
+this.selections == orig(this.selections)
+this.selections[] == orig(this.selections[])
+this.cut == orig(this.cut)
+this.cut.factor == orig(this.cut.factor)
+this.cut.factor.getClass().getName() == orig(this.cut.factor.getClass().getName())
+this.cut.factor.dimensions == orig(this.cut.factor.dimensions)
+this.cut.factor.dimensions[] == orig(this.cut.factor.dimensions[])
+this.cut.factor.values == orig(this.cut.factor.values)
+this.cut.factor.values.getClass().getName() == orig(this.cut.factor.values.getClass().getName())
+this.cut.factor.selections == orig(this.cut.factor.selections)
+this.cut.factor.selections[] == orig(this.cut.factor.selections[])
+this.cut.factor.cut == orig(this.cut.factor.cut)
+this.cut.factor.isCutValid == orig(this.cut.factor.isCutValid)
+this.cut.factor.isLogScale == orig(this.cut.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.cut.start == orig(this.cut.start)
+this.cut.stepSize == orig(this.cut.stepSize)
+this.cut.length == orig(this.cut.length)
+this.cut.subtreeStepsize == orig(this.cut.subtreeStepsize)
+this.cut.rootDimension == orig(this.cut.rootDimension)
+this.cut.leafDimension == orig(this.cut.leafDimension)
+this.cut.subCut == orig(this.cut.subCut)
+this.isCutValid == orig(this.isCutValid)
+this.isLogScale == orig(this.isLogScale)
+arg0[] == orig(arg0[])
+size(this.dimensionIDs[]) == orig(size(this.dimensionIDs[]))
+size(this.cut.factor.dimensionIDs[]) == orig(size(this.cut.factor.dimensionIDs[]))
+this.dimensionIDs[] sorted by <
+this.selections[] elements == -1
+this.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+this.cut.factor.dimensionIDs[] sorted by <
+this.cut.factor.selections[] elements == -1
+this.cut.factor.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+arg0[] elements one of { 0, 1, 2 }
+arg0[] sorted by <
+size(this.dimensions[]) one of { 1, 2, 3 }
+size(this.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.selections[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensions[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.cut.factor.selections[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.factor.AbstractFactor.setDimensions(int[]):::ENTER
+this.dimensionIDs[] sorted by <
+this.selections[] elements == -1
+this.cut.factor.dimensionIDs[] sorted by <
+this.cut.factor.selections[] elements == -1
+arg0[] elements one of { 2, 3 }
+size(arg0[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.factor.AbstractFactor.setDimensions(int[]):::EXIT
+this.values == orig(this.values)
+this.values.getClass().getName() == orig(this.values.getClass().getName())
+this.cut == orig(this.cut)
+this.cut.factor == orig(this.cut.factor)
+this.cut.factor.getClass().getName() == orig(this.cut.factor.getClass().getName())
+this.cut.factor.values == orig(this.cut.factor.values)
+this.cut.factor.values.getClass().getName() == orig(this.cut.factor.values.getClass().getName())
+this.cut.factor.cut == orig(this.cut.factor.cut)
+this.cut.factor.isCutValid == orig(this.cut.factor.isCutValid)
+this.cut.factor.isLogScale == orig(this.cut.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.cut.start == orig(this.cut.start)
+this.cut.stepSize == orig(this.cut.stepSize)
+this.cut.length == orig(this.cut.length)
+this.cut.subtreeStepsize == orig(this.cut.subtreeStepsize)
+this.cut.rootDimension == orig(this.cut.rootDimension)
+this.cut.leafDimension == orig(this.cut.leafDimension)
+this.cut.subCut == orig(this.cut.subCut)
+this.isCutValid == orig(this.isCutValid)
+this.isLogScale == orig(this.isLogScale)
+arg0[] == orig(arg0[])
+this.selections[] elements == -1
+this.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+this.cut.factor.selections[] elements == -1
+this.cut.factor.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+arg0[] elements one of { 2, 3 }
+size(this.dimensions[]) one of { 1, 2, 3 }
+size(this.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.selections[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensions[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.cut.factor.selections[]) one of { 1, 2, 3 }
+this.dimensionIDs[] >= orig(this.dimensionIDs[]) (lexically)
+this.selections[] >= orig(this.selections[]) (lexically)
+this.cut.factor.dimensionIDs[] >= orig(this.cut.factor.dimensionIDs[]) (lexically)
+this.cut.factor.selections[] >= orig(this.cut.factor.selections[]) (lexically)
+size(this.dimensions[]) >= orig(size(this.dimensions[]))
+size(this.dimensions[])-1 >= orig(size(this.dimensions[]))-1
+size(this.dimensionIDs[]) >= orig(size(this.dimensionIDs[]))
+size(this.dimensionIDs[])-1 >= orig(size(this.dimensionIDs[]))-1
+size(this.selections[]) >= orig(size(this.selections[]))
+size(this.selections[])-1 >= orig(size(this.selections[]))-1
+size(this.cut.factor.dimensions[]) >= orig(size(this.cut.factor.dimensions[]))
+size(this.cut.factor.dimensions[])-1 >= orig(size(this.cut.factor.dimensions[]))-1
+size(this.cut.factor.dimensionIDs[]) >= orig(size(this.cut.factor.dimensionIDs[]))
+size(this.cut.factor.dimensionIDs[])-1 >= orig(size(this.cut.factor.dimensionIDs[]))-1
+size(this.cut.factor.selections[]) >= orig(size(this.cut.factor.selections[]))
+size(this.cut.factor.selections[])-1 >= orig(size(this.cut.factor.selections[]))-1
+===========================================================================
+org.eclipse.recommenders.jayes.factor.AbstractFactor.setValues(org.eclipse.recommenders.jayes.factor.arraywrapper.IArrayWrapper):::ENTER
+this.dimensions[] one of { [2], [2, 3], [2, 3, 2] }
+this.dimensionIDs[] one of { [0], [0, 1], [0, 1, 2] }
+this.selections[] elements == -1
+this.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+this.cut.factor.dimensions[] one of { [2], [2, 3], [2, 3, 2] }
+this.cut.factor.dimensionIDs[] one of { [0], [0, 1], [0, 1, 2] }
+this.cut.factor.selections[] elements == -1
+this.cut.factor.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+arg0.getClass().getName() == org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.class
+size(this.dimensions[]) one of { 1, 2, 3 }
+size(this.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.selections[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensions[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.cut.factor.selections[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.factor.AbstractFactor.setValues(org.eclipse.recommenders.jayes.factor.arraywrapper.IArrayWrapper):::EXIT
+this.dimensions == orig(this.dimensions)
+this.dimensions[] == orig(this.dimensions[])
+this.dimensionIDs == orig(this.dimensionIDs)
+this.dimensionIDs[] == orig(this.dimensionIDs[])
+this.values.getClass().getName() == orig(this.values.getClass().getName())
+this.selections == orig(this.selections)
+this.selections[] == orig(this.selections[])
+this.cut == orig(this.cut)
+this.cut.factor == orig(this.cut.factor)
+this.cut.factor.getClass().getName() == orig(this.cut.factor.getClass().getName())
+this.cut.factor.dimensions == orig(this.cut.factor.dimensions)
+this.cut.factor.dimensions[] == orig(this.cut.factor.dimensions[])
+this.cut.factor.dimensionIDs == orig(this.cut.factor.dimensionIDs)
+this.cut.factor.dimensionIDs[] == orig(this.cut.factor.dimensionIDs[])
+this.cut.factor.values.getClass().getName() == orig(this.cut.factor.values.getClass().getName())
+this.cut.factor.selections == orig(this.cut.factor.selections)
+this.cut.factor.selections[] == orig(this.cut.factor.selections[])
+this.cut.factor.cut == orig(this.cut.factor.cut)
+this.cut.factor.isCutValid == orig(this.cut.factor.isCutValid)
+this.cut.factor.isLogScale == orig(this.cut.factor.isLogScale)
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+this.cut.start == orig(this.cut.start)
+this.cut.stepSize == orig(this.cut.stepSize)
+this.cut.length == orig(this.cut.length)
+this.cut.subtreeStepsize == orig(this.cut.subtreeStepsize)
+this.cut.rootDimension == orig(this.cut.rootDimension)
+this.cut.leafDimension == orig(this.cut.leafDimension)
+this.cut.subCut == orig(this.cut.subCut)
+this.isCutValid == orig(this.isCutValid)
+this.isLogScale == orig(this.isLogScale)
+this.dimensions[] one of { [2], [2, 3], [2, 3, 2] }
+this.dimensionIDs[] one of { [0], [0, 1], [0, 1, 2] }
+this.selections[] elements == -1
+this.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+this.cut.factor.dimensions[] one of { [2], [2, 3], [2, 3, 2] }
+this.cut.factor.dimensionIDs[] one of { [0], [0, 1], [0, 1, 2] }
+this.cut.factor.selections[] elements == -1
+this.cut.factor.selections[] one of { [-1], [-1, -1], [-1, -1, -1] }
+size(this.dimensions[]) one of { 1, 2, 3 }
+size(this.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.selections[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensions[]) one of { 1, 2, 3 }
+size(this.cut.factor.dimensionIDs[]) one of { 1, 2, 3 }
+size(this.cut.factor.selections[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.factor.Cut:::OBJECT
+this.factor.getClass().getName() == org.eclipse.recommenders.jayes.factor.DenseFactor.class
+this.factor.dimensions[] == []
+this.factor.dimensionIDs[] == []
+this.factor.values.getClass().getName() == org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.class
+this.factor.selections[] == []
+this.factor.cut == null
+this.factor.isCutValid == false
+this.factor.isLogScale == false
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == false
+this.start == 0
+this.stepSize == 0
+this.length == 0
+this.subtreeStepsize == 0
+this.rootDimension == 0
+this.leafDimension == 0
+this.subCut == null
+===========================================================================
+org.eclipse.recommenders.jayes.factor.Cut.Cut(org.eclipse.recommenders.jayes.factor.AbstractFactor):::ENTER
+arg0.getClass().getName() == org.eclipse.recommenders.jayes.factor.DenseFactor.class
+arg0.dimensions[] == []
+arg0.dimensionIDs[] == []
+arg0.values.getClass().getName() == org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.class
+arg0.selections[] == []
+arg0.cut == null
+arg0.isCutValid == false
+arg0.isLogScale == false
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == false
+===========================================================================
+org.eclipse.recommenders.jayes.factor.Cut.Cut(org.eclipse.recommenders.jayes.factor.AbstractFactor):::EXIT
+this.factor == orig(arg0)
+this.factor.getClass().getName() == orig(arg0.getClass().getName())
+this.factor.dimensions == arg0.dimensions
+this.factor.dimensionIDs == arg0.dimensionIDs
+this.factor.values == arg0.values
+this.factor.values.getClass().getName() == arg0.values.getClass().getName()
+this.factor.selections == arg0.selections
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == orig(org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled)
+arg0.dimensions == orig(arg0.dimensions)
+arg0.dimensions[] == orig(arg0.dimensions[])
+arg0.dimensionIDs == orig(arg0.dimensionIDs)
+arg0.dimensionIDs[] == orig(arg0.dimensionIDs[])
+arg0.values == orig(arg0.values)
+arg0.values.getClass().getName() == orig(arg0.values.getClass().getName())
+arg0.selections == orig(arg0.selections)
+arg0.selections[] == orig(arg0.selections[])
+arg0.cut == orig(arg0.cut)
+arg0.isCutValid == orig(arg0.isCutValid)
+arg0.isLogScale == orig(arg0.isLogScale)
+arg0.dimensions[] == []
+arg0.dimensionIDs[] == []
+arg0.values.getClass().getName() == org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.class
+arg0.selections[] == []
+arg0.cut == null
+arg0.isCutValid == false
+arg0.isLogScale == false
+===========================================================================
+org.eclipse.recommenders.jayes.factor.DenseFactor:::OBJECT
+this.dimensions == this.cut.factor.dimensions
+this.dimensionIDs == this.cut.factor.dimensionIDs
+this.values == this.cut.factor.values
+this.values.getClass().getName() == this.cut.factor.values.getClass().getName()
+this.selections == this.cut.factor.selections
+this.cut == this.cut.factor.cut
+this.cut.factor.isCutValid == this.isCutValid
+this.cut.factor.isLogScale == this.isLogScale
+this.dimensions[] == []
+this.dimensionIDs[] == []
+this.values.getClass().getName() == org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.class
+this.selections[] == []
+this.cut.factor.getClass().getName() == org.eclipse.recommenders.jayes.factor.DenseFactor.class
+this.cut.factor.dimensions[] == []
+this.cut.factor.dimensionIDs[] == []
+this.cut.factor.selections[] == []
+org.eclipse.recommenders.jayes.factor.AbstractFactor.$assertionsDisabled == false
+this.cut.start == 0
+this.cut.stepSize == 0
+this.cut.length == 0
+this.cut.subtreeStepsize == 0
+this.cut.rootDimension == 0
+this.cut.leafDimension == 0
+this.cut.subCut == null
+this.isCutValid == false
+this.isLogScale == false
+===========================================================================
+org.eclipse.recommenders.jayes.factor.DenseFactor.DenseFactor():::EXIT
+===========================================================================
+org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper:::OBJECT
+this.array != null
+this.array[] elements >= 0.0
+size(this.array[]) >= 1
+===========================================================================
+org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.DoubleArrayWrapper(double[]):::ENTER
+size(arg0[]) >= 1
+===========================================================================
+org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.DoubleArrayWrapper(double[]):::EXIT
+this.array == orig(arg0)
+arg0[] == orig(arg0[])
+===========================================================================
+org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.length():::ENTER
+===========================================================================
+org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.length():::EXIT
+this.array == orig(this.array)
+this.array[] == orig(this.array[])
+return == size(this.array[])
+return == orig(size(this.array[]))
+return >= 1
+===========================================================================
+org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.newArray(int):::ENTER
+this.array[] elements == 0.0
+this.array[] one of { [0.0], [0.0, 0.0], [0.0, 0.0, 0.0] }
+size(this.array[]) one of { 1, 2, 3 }
+arg0 % size(this.array[]) == 0
+===========================================================================
+org.eclipse.recommenders.jayes.factor.arraywrapper.DoubleArrayWrapper.newArray(int):::EXIT
+orig(arg0) == size(this.array[])
+this.array[] elements == 0.0
+===========================================================================
+org.eclipse.recommenders.jayes.util.MathUtils.product(int[]):::ENTER
+arg0 != null
+arg0[] elements one of { 2, 3 }
+size(arg0[]) one of { 1, 2, 3 }
+===========================================================================
+org.eclipse.recommenders.jayes.util.MathUtils.product(int[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] elements one of { 2, 3 }
+arg0[] elements <= return
+===========================================================================
+org.eclipse.recommenders.jayes.util.MathUtils.productOfRange(int[], int, int):::ENTER
+arg2 == size(arg0[])
+arg0 != null
+arg0[] elements one of { 2, 3 }
+arg1 == 0
+arg2 one of { 1, 2, 3 }
+arg0[] elements >= arg0[arg1]
+arg1 <= size(arg0[])-1
+arg0[arg1] <= arg0[arg2-1]
+===========================================================================
+org.eclipse.recommenders.jayes.util.MathUtils.productOfRange(int[], int, int):::EXIT
+arg0[] == orig(arg0[])
+arg0[] elements one of { 2, 3 }
+arg0[] elements <= return
+arg0[] elements >= arg0[orig(arg1)]
+return % arg0[orig(arg1)] == 0
+return >= arg0[orig(arg1)]
+return % arg0[orig(arg2)-1] == 0
+return >= arg0[orig(arg2)-1]
+orig(arg1) <= size(arg0[])-1
+arg0[orig(arg1)] <= arg0[orig(arg2)-1]
+Exiting Daikon.

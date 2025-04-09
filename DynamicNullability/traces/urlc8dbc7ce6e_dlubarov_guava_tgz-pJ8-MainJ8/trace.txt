@@ -1,0 +1,310 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 1 time.  Unmatched entries are ignored!
+Unterminated calls:
+  Main.main(java.lang.String[]) : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+a.Project:::CLASS
+a.Project.singleton has only one value
+a.Project.singleton.sourceFiles has only one value
+a.Project.singleton.sourceFiles.getClass().getName() == a.SourceFile[].class
+a.Project.singleton.sourceFiles[] == []
+a.Project.singleton.sourceFiles[].getClass().getName() == []
+a.Project.singleton.sourceFiles[].module == []
+a.Project.singleton.sourceFiles[].module.toString == []
+a.Project.singleton.sourceFiles[].imports == []
+a.Project.singleton.sourceFiles[].imports.getClass().getName() == []
+a.Project.singleton.sourceFiles[].typeDefs == []
+a.Project.singleton.sourceFiles[].typeDefs.getClass().getName() == []
+a.Project.$assertionsDisabled == false
+===========================================================================
+a.Project:::OBJECT
+a.Project.singleton.sourceFiles.getClass().getName() == this.sourceFiles.getClass().getName()
+this has only one value
+this.sourceFiles has only one value
+this.sourceFiles[] == []
+this.sourceFiles[].getClass().getName() == []
+this.sourceFiles[].module == []
+this.sourceFiles[].module.toString == []
+this.sourceFiles[].imports == []
+this.sourceFiles[].imports.getClass().getName() == []
+this.sourceFiles[].typeDefs == []
+this.sourceFiles[].typeDefs.getClass().getName() == []
+===========================================================================
+a.Project.Project(a.SourceFile[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == a.SourceFile[].class
+arg0[] == []
+arg0[].module == []
+arg0[].module.toString == []
+arg0[].imports == []
+arg0[].imports.getClass().getName() == []
+arg0[].typeDefs == []
+arg0[].typeDefs.getClass().getName() == []
+===========================================================================
+a.Project.Project(a.SourceFile[]):::EXIT
+a.Project.singleton.sourceFiles.getClass().getName() == orig(arg0.getClass().getName())
+this.sourceFiles == orig(arg0)
+arg0[] == orig(arg0[])
+arg0[].module == orig(arg0[].module)
+arg0[].imports == orig(arg0[].imports)
+arg0[].typeDefs == orig(arg0[].typeDefs)
+arg0[] == []
+arg0[].module == []
+arg0[].module.toString == []
+arg0[].imports == []
+arg0[].imports.getClass().getName() == []
+arg0[].typeDefs == []
+arg0[].typeDefs.getClass().getName() == []
+===========================================================================
+a.Project.refine():::ENTER
+this == a.Project.singleton
+===========================================================================
+a.Project.refine():::EXIT
+a.Project.singleton == orig(this)
+a.Project.singleton == orig(a.Project.singleton)
+a.Project.singleton.sourceFiles == orig(a.Project.singleton.sourceFiles)
+a.Project.singleton.sourceFiles.getClass().getName() == orig(a.Project.singleton.sourceFiles.getClass().getName())
+a.Project.singleton.sourceFiles.getClass().getName() == orig(this.sourceFiles.getClass().getName())
+a.Project.singleton.sourceFiles[] == orig(a.Project.singleton.sourceFiles[])
+a.Project.singleton.sourceFiles[].module == orig(a.Project.singleton.sourceFiles[].module)
+a.Project.singleton.sourceFiles[].imports == orig(a.Project.singleton.sourceFiles[].imports)
+a.Project.singleton.sourceFiles[].typeDefs == orig(a.Project.singleton.sourceFiles[].typeDefs)
+a.Project.$assertionsDisabled == orig(a.Project.$assertionsDisabled)
+this.sourceFiles == orig(this.sourceFiles)
+this.sourceFiles[] == orig(this.sourceFiles[])
+this.sourceFiles[].module == orig(this.sourceFiles[].module)
+this.sourceFiles[].imports == orig(this.sourceFiles[].imports)
+this.sourceFiles[].typeDefs == orig(this.sourceFiles[].typeDefs)
+return == b.Project.singleton
+b.Project.singleton.typeDefs.getClass().getName() == return.typeDefs.getClass().getName()
+return has only one value
+b.Project.singleton.typeDefs has only one value
+b.Project.singleton.typeDefs.getClass().getName() == java.util.LinkedHashMap.class
+b.Project.$assertionsDisabled == false
+return.typeDefs has only one value
+===========================================================================
+b.Project:::CLASS
+b.Project.singleton has only one value
+b.Project.singleton.typeDefs has only one value
+b.Project.singleton.typeDefs.getClass().getName() == java.util.LinkedHashMap.class
+b.Project.$assertionsDisabled == false
+===========================================================================
+b.Project:::OBJECT
+this has only one value
+this.typeDefs has only one value
+this.typeDefs.getClass().getName() == java.util.LinkedHashMap.class
+===========================================================================
+b.Project.Project(b.TypeDef[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == b.TypeDef[].class
+arg0[] == []
+arg0[].wildcardImports == []
+arg0[].wildcardImports.getClass().getName() == []
+arg0[].specificImports == []
+arg0[].specificImports.getClass().getName() == []
+arg0[].visibility == []
+arg0[].visibility.s == []
+arg0[].visibility.s.toString == []
+arg0[].isAbstract == []
+arg0[].isSealed == []
+arg0[].desc == []
+arg0[].desc.module == []
+arg0[].desc.module.toString == []
+arg0[].desc.name == []
+arg0[].desc.name.toString == []
+arg0[].genericParams == []
+arg0[].genericParams.getClass().getName() == []
+arg0[].parents == []
+arg0[].parents.getClass().getName() == []
+arg0[].staticFieldDefs == []
+arg0[].staticFieldDefs.getClass().getName() == []
+arg0[].instanceFieldDefs == []
+arg0[].instanceFieldDefs.getClass().getName() == []
+arg0[].staticMethodDefs == []
+arg0[].staticMethodDefs.getClass().getName() == []
+arg0[].instanceMethodDefs == []
+arg0[].instanceMethodDefs.getClass().getName() == []
+===========================================================================
+b.Project.Project(b.TypeDef[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[].wildcardImports == orig(arg0[].wildcardImports)
+arg0[].specificImports == orig(arg0[].specificImports)
+arg0[].visibility == orig(arg0[].visibility)
+arg0[].visibility.s == orig(arg0[].visibility.s)
+arg0[].isAbstract == orig(arg0[].isAbstract)
+arg0[].isSealed == orig(arg0[].isSealed)
+arg0[].desc == orig(arg0[].desc)
+arg0[].desc.module == orig(arg0[].desc.module)
+arg0[].desc.name == orig(arg0[].desc.name)
+arg0[].genericParams == orig(arg0[].genericParams)
+arg0[].parents == orig(arg0[].parents)
+arg0[].staticFieldDefs == orig(arg0[].staticFieldDefs)
+arg0[].instanceFieldDefs == orig(arg0[].instanceFieldDefs)
+arg0[].staticMethodDefs == orig(arg0[].staticMethodDefs)
+arg0[].instanceMethodDefs == orig(arg0[].instanceMethodDefs)
+arg0[] == []
+arg0[].wildcardImports == []
+arg0[].wildcardImports.getClass().getName() == []
+arg0[].specificImports == []
+arg0[].specificImports.getClass().getName() == []
+arg0[].visibility == []
+arg0[].visibility.s == []
+arg0[].visibility.s.toString == []
+arg0[].isAbstract == []
+arg0[].isSealed == []
+arg0[].desc == []
+arg0[].desc.module == []
+arg0[].desc.module.toString == []
+arg0[].desc.name == []
+arg0[].desc.name.toString == []
+arg0[].genericParams == []
+arg0[].genericParams.getClass().getName() == []
+arg0[].parents == []
+arg0[].parents.getClass().getName() == []
+arg0[].staticFieldDefs == []
+arg0[].staticFieldDefs.getClass().getName() == []
+arg0[].instanceFieldDefs == []
+arg0[].instanceFieldDefs.getClass().getName() == []
+arg0[].staticMethodDefs == []
+arg0[].staticMethodDefs.getClass().getName() == []
+arg0[].instanceMethodDefs == []
+arg0[].instanceMethodDefs.getClass().getName() == []
+===========================================================================
+b.Project.refine():::ENTER
+===========================================================================
+b.Project.refine():::EXIT
+b.Project.singleton == orig(b.Project.singleton)
+b.Project.singleton.typeDefs == orig(b.Project.singleton.typeDefs)
+b.Project.singleton.typeDefs.getClass().getName() == orig(b.Project.singleton.typeDefs.getClass().getName())
+b.Project.$assertionsDisabled == orig(b.Project.$assertionsDisabled)
+this.typeDefs == orig(this.typeDefs)
+this.typeDefs.getClass().getName() == orig(this.typeDefs.getClass().getName())
+return has only one value
+c.Project.singleton has only one value
+c.Project.singleton.typeDefs has only one value
+c.Project.$assertionsDisabled == false
+return.typeDefs has only one value
+===========================================================================
+c.Project:::CLASS
+c.Project.singleton has only one value
+c.Project.singleton.typeDefs has only one value
+c.Project.$assertionsDisabled == false
+===========================================================================
+c.Project:::OBJECT
+this has only one value
+this.typeDefs has only one value
+===========================================================================
+c.Project.Project(c.TypeDef[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == c.TypeDef[].class
+arg0[] == []
+arg0[].visibility == []
+arg0[].visibility.s == []
+arg0[].visibility.s.toString == []
+arg0[].isAbstract == []
+arg0[].isSealed == []
+arg0[].desc == []
+arg0[].desc.module == []
+arg0[].desc.module.toString == []
+arg0[].desc.name == []
+arg0[].desc.name.toString == []
+arg0[].genericInfos == []
+arg0[].genericInfos.getClass().getName() == []
+arg0[].parents == []
+arg0[].parents.getClass().getName() == []
+arg0[].staticFieldDefs == []
+arg0[].staticFieldDefs.getClass().getName() == []
+arg0[].instanceFieldDefs == []
+arg0[].instanceFieldDefs.getClass().getName() == []
+arg0[].staticMethodDefs == []
+arg0[].staticMethodDefs.getClass().getName() == []
+arg0[].instanceMethodDefs == []
+arg0[].instanceMethodDefs.getClass().getName() == []
+arg0[].allMethodDefs == []
+arg0[].allMethodDefs.getClass().getName() == []
+===========================================================================
+c.Project.Project(c.TypeDef[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[].visibility == orig(arg0[].visibility)
+arg0[].visibility.s == orig(arg0[].visibility.s)
+arg0[].isAbstract == orig(arg0[].isAbstract)
+arg0[].isSealed == orig(arg0[].isSealed)
+arg0[].desc == orig(arg0[].desc)
+arg0[].desc.module == orig(arg0[].desc.module)
+arg0[].desc.name == orig(arg0[].desc.name)
+arg0[].genericInfos == orig(arg0[].genericInfos)
+arg0[].parents == orig(arg0[].parents)
+arg0[].staticFieldDefs == orig(arg0[].staticFieldDefs)
+arg0[].instanceFieldDefs == orig(arg0[].instanceFieldDefs)
+arg0[].staticMethodDefs == orig(arg0[].staticMethodDefs)
+arg0[].instanceMethodDefs == orig(arg0[].instanceMethodDefs)
+arg0[].allMethodDefs == orig(arg0[].allMethodDefs)
+arg0[] == []
+arg0[].visibility == []
+arg0[].visibility.s == []
+arg0[].visibility.s.toString == []
+arg0[].isAbstract == []
+arg0[].isSealed == []
+arg0[].desc == []
+arg0[].desc.module == []
+arg0[].desc.module.toString == []
+arg0[].desc.name == []
+arg0[].desc.name.toString == []
+arg0[].genericInfos == []
+arg0[].genericInfos.getClass().getName() == []
+arg0[].parents == []
+arg0[].parents.getClass().getName() == []
+arg0[].staticFieldDefs == []
+arg0[].staticFieldDefs.getClass().getName() == []
+arg0[].instanceFieldDefs == []
+arg0[].instanceFieldDefs.getClass().getName() == []
+arg0[].staticMethodDefs == []
+arg0[].staticMethodDefs.getClass().getName() == []
+arg0[].instanceMethodDefs == []
+arg0[].instanceMethodDefs.getClass().getName() == []
+arg0[].allMethodDefs == []
+arg0[].allMethodDefs.getClass().getName() == []
+===========================================================================
+c.Project.compile():::ENTER
+===========================================================================
+c.Project.compile():::EXIT
+c.Project.singleton == orig(c.Project.singleton)
+c.Project.singleton.typeDefs == orig(c.Project.singleton.typeDefs)
+c.Project.$assertionsDisabled == orig(c.Project.$assertionsDisabled)
+this.typeDefs == orig(this.typeDefs)
+return has only one value
+return.getClass().getName() == d.TypeDef[].class
+return[] == []
+return[].desc == []
+return[].desc.module == []
+return[].desc.module.toString == []
+return[].desc.name == []
+return[].desc.name.toString == []
+return[].genericVariances == []
+return[].genericVariances.getClass().getName() == []
+return[].staticFields == []
+return[].staticFields.getClass().getName() == []
+return[].numInstanceFields == []
+return[].staticMethods == []
+return[].staticMethods.getClass().getName() == []
+return[].instanceMethods == []
+return[].instanceMethods.getClass().getName() == []
+return[].virtualFieldTable == []
+return[].virtualMethodDescTable == []
+return[].virtualMethodDescTable.getClass().getName() == []
+return[].virtualMethodTable == []
+return[].virtualMethodTable.getClass().getName() == []
+return[].superGenericDescs == []
+return[].superGenericDescs.getClass().getName() == []
+return[].superGenerics == []
+return[].superGenerics.getClass().getName() == []
+return[].initializationStatus == []
+return[].typeNoGenerics == []
+return[].typeNoGenerics.rawType == []
+return[].typeNoGenerics.genericArgs == []
+return[].typeNoGenerics.genericArgs.getClass().getName() == []
+Exiting Daikon.

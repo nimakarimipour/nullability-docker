@@ -1,0 +1,9 @@
+METHOD	com.moblima.dataaccess.SerializeDB	getMovieGoers()	null	null
+METHOD	com.moblima.dataaccess.SerializeDB	getPublicHolidays()	null	null
+METHOD	com.moblima.dataaccess.SerializeDB	getCinemas()	null	null
+METHOD	com.moblima.dataaccess.SerializeDB	getMovieTickets()	null	null
+METHOD	com.moblima.dataaccess.SerializeDB	getCineplexes()	null	null
+METHOD	com.moblima.dataaccess.SerializeDB	getSeats()	null	null
+METHOD	com.moblima.dataaccess.SerializeDB	getMovies()	null	null
+METHOD	com.moblima.dataaccess.SerializeDB	getShowTimes()	null	null
+METHOD	com.moblima.dataaccess.SerializeDB	getTicketPrices()	null	null

@@ -1,0 +1,9 @@
+FIELD	br.com.innovatium.mumps2java.datastructure.Node	null	value	null	/home/nima/
+FIELD	br.com.innovatium.mumps2java.datastructure.Node	null	next	null	/home/nima/
+METHOD	mLibrary.mContext	dispatch(mLibrary.mClass,java.lang.String,java.lang.Object[])	null	null	/home/nima/
+METHOD	br.com.innovatium.mumps2java.datastructure.Tree	findNode(java.lang.String)	null	null	/home/nima/
+FIELD	br.com.innovatium.mumps2java.datastructure.Node	null	previous	null	/home/nima/
+METHOD	br.com.innovatium.mumps2java.datastructure.Tree	get(java.lang.Object[])	null	null	/home/nima/
+FIELD	br.com.innovatium.mumps2java.datastructure.Node	null	parent	null	/home/nima/
+METHOD	br.com.innovatium.mumps2java.datastructure.Node	isNumber(java.lang.String)	null	null	/home/nima/
+FIELD	br.com.innovatium.mumps2java.datastructure.Node	null	value	null	/home/nima/

@@ -1,0 +1,3 @@
+METHOD	book.ProductBookSide	removeQuote(java.lang.String)	null	null
+METHOD	book.ProductBookSide	topOfBookPrice()	null	null
+METHOD	book.ProductBookSide	getEntriesAtPrice(price.Price)	null	null

@@ -1,0 +1,1994 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 3 times.  Unmatched entries are ignored!
+Unterminated calls:
+  client.Testing.main(java.lang.String[]) : 1 invocation
+  racko.Game.play(int) : 1 invocation
+  client.PlayerConsole.play() : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+missing variables in newEnterExitRel:
+  parent = models.ModelKyle$Range.Range(models.ModelKyle, int, int, int, int):::ENTER
+  child = models.ModelKyle$Range.Range(models.ModelKyle, int, int, int, int):::EXIT
+  parent.var_infos = [Ldaikon.VarInfo;@24cf10f2
+parent varinfos missing from parent_to_child_map:
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.rack_size]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.rack_size-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.card_count]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.card_count-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.cache_pos]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.cache_pos-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.cache_turn]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.cache_turn-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.RI_stop.noimprove_max]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.RI_stop.noimprove_max-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.RI_stop.noimprove]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.RI_stop.noimprove-1]
+   models.ModelKyle.this.anchorPoints[racko.Game.score_win]
+   models.ModelKyle.this.anchorPoints[racko.Game.score_win-1]
+   models.ModelKyle.this.anchorPoints[racko.Game.score_all]
+   models.ModelKyle.this.anchorPoints[racko.Game.score_all-1]
+   models.ModelKyle.this.anchorPoints[racko.Game.score_single]
+   models.ModelKyle.this.anchorPoints[racko.Game.score_single-1]
+   models.ModelKyle.this.anchorPoints[racko.Game.score_bonus]
+   models.ModelKyle.this.anchorPoints[racko.Game.score_bonus-1]
+   models.ModelKyle.this.anchorPoints[racko.Game.score_bonus_fac]
+   models.ModelKyle.this.anchorPoints[racko.Game.score_bonus_fac-1]
+   models.ModelKyle.this.anchorPoints[racko.Game.bonus_min]
+   models.ModelKyle.this.anchorPoints[racko.Game.bonus_min-1]
+   models.ModelKyle.this.anchorPoints[racko.Game.bonus_max]
+   models.ModelKyle.this.anchorPoints[racko.Game.bonus_max-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.game.rack_size]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.game.rack_size-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.game.min_streak]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.game.min_streak-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.game.player_count]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.game.player_count-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.game.card_count]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.game.card_count-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.game.active_player]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.game.active_player-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.game.move_limit]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.game.move_limit-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.rack.exposed_count]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.rack.exposed_count-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.rack.lus_max_length]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.rack.lus_max_length-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.rack.prob_cache_memlimit]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.rack.prob_cache_memlimit-1]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.rack.prob_cache_turn]
+   models.ModelKyle.this.anchorPoints[models.ModelKyle.this.rack.prob_cache_turn-1]
+   models.ModelKyle.this.anchorPoints[arg1]
+   models.ModelKyle.this.anchorPoints[arg1-1]
+   models.ModelKyle.this.anchorPoints[arg2]
+   models.ModelKyle.this.anchorPoints[arg2-1]
+   models.ModelKyle.this.anchorPoints[arg3]
+   models.ModelKyle.this.anchorPoints[arg3-1]
+   models.ModelKyle.this.anchorPoints[arg4]
+   models.ModelKyle.this.anchorPoints[arg4-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.rack_size]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.rack_size-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.card_count]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.card_count-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.cache_pos]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.cache_pos-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.cache_turn]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.cache_turn-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.RI_stop.noimprove_max]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.RI_stop.noimprove_max-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.RI_stop.noimprove]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.RI_stop.noimprove-1]
+   models.ModelKyle.this.myRanges[racko.Game.score_win]
+   models.ModelKyle.this.myRanges[racko.Game.score_win-1]
+   models.ModelKyle.this.myRanges[racko.Game.score_all]
+   models.ModelKyle.this.myRanges[racko.Game.score_all-1]
+   models.ModelKyle.this.myRanges[racko.Game.score_single]
+   models.ModelKyle.this.myRanges[racko.Game.score_single-1]
+   models.ModelKyle.this.myRanges[racko.Game.score_bonus]
+   models.ModelKyle.this.myRanges[racko.Game.score_bonus-1]
+   models.ModelKyle.this.myRanges[racko.Game.score_bonus_fac]
+   models.ModelKyle.this.myRanges[racko.Game.score_bonus_fac-1]
+   models.ModelKyle.this.myRanges[racko.Game.bonus_min]
+   models.ModelKyle.this.myRanges[racko.Game.bonus_min-1]
+   models.ModelKyle.this.myRanges[racko.Game.bonus_max]
+   models.ModelKyle.this.myRanges[racko.Game.bonus_max-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.game.rack_size]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.game.rack_size-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.game.min_streak]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.game.min_streak-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.game.player_count]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.game.player_count-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.game.card_count]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.game.card_count-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.game.active_player]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.game.active_player-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.game.move_limit]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.game.move_limit-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.rack.exposed_count]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.rack.exposed_count-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.rack.lus_max_length]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.rack.lus_max_length-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.rack.prob_cache_memlimit]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.rack.prob_cache_memlimit-1]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.rack.prob_cache_turn]
+   models.ModelKyle.this.myRanges[models.ModelKyle.this.rack.prob_cache_turn-1]
+   models.ModelKyle.this.myRanges[arg1]
+   models.ModelKyle.this.myRanges[arg1-1]
+   models.ModelKyle.this.myRanges[arg2]
+   models.ModelKyle.this.myRanges[arg2-1]
+   models.ModelKyle.this.myRanges[arg3]
+   models.ModelKyle.this.myRanges[arg3-1]
+   models.ModelKyle.this.myRanges[arg4]
+   models.ModelKyle.this.myRanges[arg4-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.rack_size]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.rack_size-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.rack_size]
+   models.ModelKyle.this.weights[models.ModelKyle.this.rack_size-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1].first_epoch
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.rack_size]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.rack_size-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.card_count]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.card_count-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.card_count]
+   models.ModelKyle.this.weights[models.ModelKyle.this.card_count-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1].first_epoch
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.card_count]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.card_count-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.cache_pos]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.cache_pos-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.cache_pos]
+   models.ModelKyle.this.weights[models.ModelKyle.this.cache_pos-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_pos-1].first_epoch
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.cache_pos]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.cache_pos-1]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.cache_pos]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.cache_pos-1]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.cache_pos]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.cache_pos-1]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.cache_pos]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.cache_pos-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.cache_pos]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.cache_pos-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.cache_turn]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.cache_turn-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.cache_turn]
+   models.ModelKyle.this.weights[models.ModelKyle.this.cache_turn-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.cache_turn-1].first_epoch
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.cache_turn]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.cache_turn-1]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.cache_turn]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.cache_turn-1]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.cache_turn]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.cache_turn-1]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.cache_turn]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.cache_turn-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.cache_turn]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.cache_turn-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.RI_stop.noimprove_max]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.RI_stop.noimprove_max-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.RI_stop.noimprove]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.RI_stop.noimprove-1]
+   models.ModelKyle.this.myDecisions[racko.Game.score_win]
+   models.ModelKyle.this.myDecisions[racko.Game.score_win-1]
+   models.ModelKyle.this.myDecisions[racko.Game.score_all]
+   models.ModelKyle.this.myDecisions[racko.Game.score_all-1]
+   models.ModelKyle.this.myDecisions[racko.Game.score_single]
+   models.ModelKyle.this.myDecisions[racko.Game.score_single-1]
+   models.ModelKyle.this.myDecisions[racko.Game.score_bonus]
+   models.ModelKyle.this.myDecisions[racko.Game.score_bonus-1]
+   models.ModelKyle.this.myDecisions[racko.Game.score_bonus_fac]
+   models.ModelKyle.this.myDecisions[racko.Game.score_bonus_fac-1]
+   models.ModelKyle.this.myDecisions[racko.Game.bonus_min]
+   models.ModelKyle.this.myDecisions[racko.Game.bonus_min-1]
+   models.ModelKyle.this.myDecisions[racko.Game.bonus_max]
+   models.ModelKyle.this.myDecisions[racko.Game.bonus_max-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.game.rack_size]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.game.rack_size-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.game.min_streak]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.game.min_streak-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.game.player_count]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.game.player_count-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.game.card_count]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.game.card_count-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.game.active_player]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.game.active_player-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.game.move_limit]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.game.move_limit-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.rack.exposed_count]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.rack.exposed_count-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.rack.lus_max_length]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.rack.lus_max_length-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.rack.prob_cache_memlimit]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.rack.prob_cache_memlimit-1]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.rack.prob_cache_turn]
+   models.ModelKyle.this.myDecisions[models.ModelKyle.this.rack.prob_cache_turn-1]
+   models.ModelKyle.this.myDecisions[arg1]
+   models.ModelKyle.this.myDecisions[arg1-1]
+   models.ModelKyle.this.myDecisions[arg2]
+   models.ModelKyle.this.myDecisions[arg2-1]
+   models.ModelKyle.this.myDecisions[arg3]
+   models.ModelKyle.this.myDecisions[arg3-1]
+   models.ModelKyle.this.myDecisions[arg4]
+   models.ModelKyle.this.myDecisions[arg4-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.RI_stop.noimprove_max]
+   models.ModelKyle.this.weights[models.ModelKyle.this.RI_stop.noimprove_max-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.RI_stop.noimprove]
+   models.ModelKyle.this.weights[models.ModelKyle.this.RI_stop.noimprove-1]
+   models.ModelKyle.this.weights[racko.Game.score_win]
+   models.ModelKyle.this.weights[racko.Game.score_win-1]
+   models.ModelKyle.this.weights[racko.Game.score_all]
+   models.ModelKyle.this.weights[racko.Game.score_all-1]
+   models.ModelKyle.this.weights[racko.Game.score_single]
+   models.ModelKyle.this.weights[racko.Game.score_single-1]
+   models.ModelKyle.this.weights[racko.Game.score_bonus]
+   models.ModelKyle.this.weights[racko.Game.score_bonus-1]
+   models.ModelKyle.this.weights[racko.Game.score_bonus_fac]
+   models.ModelKyle.this.weights[racko.Game.score_bonus_fac-1]
+   models.ModelKyle.this.weights[racko.Game.bonus_min]
+   models.ModelKyle.this.weights[racko.Game.bonus_min-1]
+   models.ModelKyle.this.weights[racko.Game.bonus_max]
+   models.ModelKyle.this.weights[racko.Game.bonus_max-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.game.rack_size]
+   models.ModelKyle.this.weights[models.ModelKyle.this.game.rack_size-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.game.min_streak]
+   models.ModelKyle.this.weights[models.ModelKyle.this.game.min_streak-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.game.player_count]
+   models.ModelKyle.this.weights[models.ModelKyle.this.game.player_count-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.game.card_count]
+   models.ModelKyle.this.weights[models.ModelKyle.this.game.card_count-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.game.active_player]
+   models.ModelKyle.this.weights[models.ModelKyle.this.game.active_player-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.game.move_limit]
+   models.ModelKyle.this.weights[models.ModelKyle.this.game.move_limit-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.rack.exposed_count]
+   models.ModelKyle.this.weights[models.ModelKyle.this.rack.exposed_count-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.rack.lus_max_length]
+   models.ModelKyle.this.weights[models.ModelKyle.this.rack.lus_max_length-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.rack.prob_cache_memlimit]
+   models.ModelKyle.this.weights[models.ModelKyle.this.rack.prob_cache_memlimit-1]
+   models.ModelKyle.this.weights[models.ModelKyle.this.rack.prob_cache_turn]
+   models.ModelKyle.this.weights[models.ModelKyle.this.rack.prob_cache_turn-1]
+   models.ModelKyle.this.weights[arg1]
+   models.ModelKyle.this.weights[arg1-1]
+   models.ModelKyle.this.weights[arg2]
+   models.ModelKyle.this.weights[arg2-1]
+   models.ModelKyle.this.weights[arg3]
+   models.ModelKyle.this.weights[arg3-1]
+   models.ModelKyle.this.weights[arg4]
+   models.ModelKyle.this.weights[arg4-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove_max-1].first_epoch
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.RI_stop.noimprove_max]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.RI_stop.noimprove_max-1]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.RI_stop.noimprove_max]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.RI_stop.noimprove_max-1]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.RI_stop.noimprove_max]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.RI_stop.noimprove_max-1]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.RI_stop.noimprove_max]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.RI_stop.noimprove_max-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.RI_stop.noimprove_max]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.RI_stop.noimprove_max-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.RI_stop.noimprove-1].first_epoch
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.RI_stop.noimprove]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.RI_stop.noimprove-1]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.RI_stop.noimprove]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.RI_stop.noimprove-1]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.RI_stop.noimprove]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.RI_stop.noimprove-1]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.RI_stop.noimprove]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.RI_stop.noimprove-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.RI_stop.noimprove]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.RI_stop.noimprove-1]
+   models.ModelKyle.this.game.players[racko.Game.score_win]
+   models.ModelKyle.this.game.players[racko.Game.score_win-1]
+   models.ModelKyle.this.game.players[racko.Game.score_win].game
+   models.ModelKyle.this.game.players[racko.Game.score_win-1].game
+   models.ModelKyle.this.game.players[racko.Game.score_win].rack
+   models.ModelKyle.this.game.players[racko.Game.score_win-1].rack
+   models.ModelKyle.this.game.players[racko.Game.score_win].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.score_win-1].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.score_win].name
+   models.ModelKyle.this.game.players[racko.Game.score_win-1].name
+   models.ModelKyle.this.game.players[racko.Game.score_win].score
+   models.ModelKyle.this.game.players[racko.Game.score_win-1].score
+   models.ModelKyle.this.game.players[racko.Game.score_win].wins
+   models.ModelKyle.this.game.players[racko.Game.score_win-1].wins
+   models.ModelKyle.this.game.players[racko.Game.score_win].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.score_win-1].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.score_win].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.score_win-1].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.score_win].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.score_win-1].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.score_win].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.score_win-1].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.score_win].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.score_win-1].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.score_win].first_epoch
+   models.ModelKyle.this.game.players[racko.Game.score_win-1].first_epoch
+   models.ModelKyle.this.rack.exposed[racko.Game.score_win]
+   models.ModelKyle.this.rack.exposed[racko.Game.score_win-1]
+   models.ModelKyle.this.rack.cards[racko.Game.score_win]
+   models.ModelKyle.this.rack.cards[racko.Game.score_win-1]
+   models.ModelKyle.this.rack.lus_cache[racko.Game.score_win]
+   models.ModelKyle.this.rack.lus_cache[racko.Game.score_win-1]
+   models.ModelKyle.this.rack.prob_cache[racko.Game.score_win]
+   models.ModelKyle.this.rack.prob_cache[racko.Game.score_win-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_win]
+   models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_win-1]
+   models.ModelKyle.this.game.players[racko.Game.score_all].game
+   models.ModelKyle.this.game.players[racko.Game.score_all-1].game
+   models.ModelKyle.this.game.players[racko.Game.score_all].rack
+   models.ModelKyle.this.game.players[racko.Game.score_all-1].rack
+   models.ModelKyle.this.game.players[racko.Game.score_all].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.score_all-1].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.score_all].name
+   models.ModelKyle.this.game.players[racko.Game.score_all-1].name
+   models.ModelKyle.this.game.players[racko.Game.score_all].score
+   models.ModelKyle.this.game.players[racko.Game.score_all-1].score
+   models.ModelKyle.this.game.players[racko.Game.score_all].wins
+   models.ModelKyle.this.game.players[racko.Game.score_all-1].wins
+   models.ModelKyle.this.game.players[racko.Game.score_all].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.score_all-1].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.score_all].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.score_all-1].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.score_all].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.score_all-1].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.score_all].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.score_all-1].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.score_all].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.score_all-1].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.score_all].first_epoch
+   models.ModelKyle.this.game.players[racko.Game.score_all-1].first_epoch
+   models.ModelKyle.this.rack.lus_cache[racko.Game.score_all]
+   models.ModelKyle.this.rack.lus_cache[racko.Game.score_all-1]
+   models.ModelKyle.this.game.players[racko.Game.score_single].game
+   models.ModelKyle.this.game.players[racko.Game.score_single-1].game
+   models.ModelKyle.this.game.players[racko.Game.score_single].rack
+   models.ModelKyle.this.game.players[racko.Game.score_single-1].rack
+   models.ModelKyle.this.game.players[racko.Game.score_single].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.score_single-1].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.score_single].name
+   models.ModelKyle.this.game.players[racko.Game.score_single-1].name
+   models.ModelKyle.this.game.players[racko.Game.score_single].score
+   models.ModelKyle.this.game.players[racko.Game.score_single-1].score
+   models.ModelKyle.this.game.players[racko.Game.score_single].wins
+   models.ModelKyle.this.game.players[racko.Game.score_single-1].wins
+   models.ModelKyle.this.game.players[racko.Game.score_single].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.score_single-1].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.score_single].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.score_single-1].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.score_single].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.score_single-1].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.score_single].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.score_single-1].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.score_single].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.score_single-1].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.score_single].first_epoch
+   models.ModelKyle.this.game.players[racko.Game.score_single-1].first_epoch
+   models.ModelKyle.this.rack.lus_cache[racko.Game.score_single]
+   models.ModelKyle.this.rack.lus_cache[racko.Game.score_single-1]
+   models.ModelKyle.this.game.players[racko.Game.score_bonus]
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1]
+   models.ModelKyle.this.game.players[racko.Game.score_bonus].game
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1].game
+   models.ModelKyle.this.game.players[racko.Game.score_bonus].rack
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1].rack
+   models.ModelKyle.this.game.players[racko.Game.score_bonus].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.score_bonus].name
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1].name
+   models.ModelKyle.this.game.players[racko.Game.score_bonus].score
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1].score
+   models.ModelKyle.this.game.players[racko.Game.score_bonus].wins
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1].wins
+   models.ModelKyle.this.game.players[racko.Game.score_bonus].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.score_bonus].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.score_bonus].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.score_bonus].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.score_bonus].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.score_bonus].first_epoch
+   models.ModelKyle.this.game.players[racko.Game.score_bonus-1].first_epoch
+   models.ModelKyle.this.rack.exposed[racko.Game.score_bonus]
+   models.ModelKyle.this.rack.exposed[racko.Game.score_bonus-1]
+   models.ModelKyle.this.rack.cards[racko.Game.score_bonus]
+   models.ModelKyle.this.rack.cards[racko.Game.score_bonus-1]
+   models.ModelKyle.this.rack.lus_cache[racko.Game.score_bonus]
+   models.ModelKyle.this.rack.lus_cache[racko.Game.score_bonus-1]
+   models.ModelKyle.this.rack.prob_cache[racko.Game.score_bonus]
+   models.ModelKyle.this.rack.prob_cache[racko.Game.score_bonus-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_bonus]
+   models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_bonus-1]
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac]
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1]
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac].game
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1].game
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac].rack
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1].rack
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac].name
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1].name
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac].score
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1].score
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac].wins
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1].wins
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac].first_epoch
+   models.ModelKyle.this.game.players[racko.Game.score_bonus_fac-1].first_epoch
+   models.ModelKyle.this.rack.exposed[racko.Game.score_bonus_fac]
+   models.ModelKyle.this.rack.exposed[racko.Game.score_bonus_fac-1]
+   models.ModelKyle.this.rack.cards[racko.Game.score_bonus_fac]
+   models.ModelKyle.this.rack.cards[racko.Game.score_bonus_fac-1]
+   models.ModelKyle.this.rack.lus_cache[racko.Game.score_bonus_fac]
+   models.ModelKyle.this.rack.lus_cache[racko.Game.score_bonus_fac-1]
+   models.ModelKyle.this.rack.prob_cache[racko.Game.score_bonus_fac]
+   models.ModelKyle.this.rack.prob_cache[racko.Game.score_bonus_fac-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_bonus_fac]
+   models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_bonus_fac-1]
+   models.ModelKyle.this.game.players[racko.Game.bonus_min]
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1]
+   models.ModelKyle.this.game.players[racko.Game.bonus_min].game
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1].game
+   models.ModelKyle.this.game.players[racko.Game.bonus_min].rack
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1].rack
+   models.ModelKyle.this.game.players[racko.Game.bonus_min].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.bonus_min].name
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1].name
+   models.ModelKyle.this.game.players[racko.Game.bonus_min].score
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1].score
+   models.ModelKyle.this.game.players[racko.Game.bonus_min].wins
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1].wins
+   models.ModelKyle.this.game.players[racko.Game.bonus_min].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.bonus_min].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.bonus_min].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.bonus_min].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.bonus_min].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.bonus_min].first_epoch
+   models.ModelKyle.this.game.players[racko.Game.bonus_min-1].first_epoch
+   models.ModelKyle.this.rack.exposed[racko.Game.bonus_min]
+   models.ModelKyle.this.rack.exposed[racko.Game.bonus_min-1]
+   models.ModelKyle.this.rack.cards[racko.Game.bonus_min]
+   models.ModelKyle.this.rack.cards[racko.Game.bonus_min-1]
+   models.ModelKyle.this.rack.lus_cache[racko.Game.bonus_min]
+   models.ModelKyle.this.rack.lus_cache[racko.Game.bonus_min-1]
+   models.ModelKyle.this.rack.prob_cache[racko.Game.bonus_min]
+   models.ModelKyle.this.rack.prob_cache[racko.Game.bonus_min-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.bonus_min]
+   models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.bonus_min-1]
+   models.ModelKyle.this.game.players[racko.Game.bonus_max]
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1]
+   models.ModelKyle.this.game.players[racko.Game.bonus_max].game
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1].game
+   models.ModelKyle.this.game.players[racko.Game.bonus_max].rack
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1].rack
+   models.ModelKyle.this.game.players[racko.Game.bonus_max].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1].playerNumber
+   models.ModelKyle.this.game.players[racko.Game.bonus_max].name
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1].name
+   models.ModelKyle.this.game.players[racko.Game.bonus_max].score
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1].score
+   models.ModelKyle.this.game.players[racko.Game.bonus_max].wins
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1].wins
+   models.ModelKyle.this.game.players[racko.Game.bonus_max].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1].STAT_badmoves
+   models.ModelKyle.this.game.players[racko.Game.bonus_max].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1].STAT_allmoves
+   models.ModelKyle.this.game.players[racko.Game.bonus_max].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1].STAT_wins
+   models.ModelKyle.this.game.players[racko.Game.bonus_max].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1].STAT_score
+   models.ModelKyle.this.game.players[racko.Game.bonus_max].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1].STAT_rounds
+   models.ModelKyle.this.game.players[racko.Game.bonus_max].first_epoch
+   models.ModelKyle.this.game.players[racko.Game.bonus_max-1].first_epoch
+   models.ModelKyle.this.rack.exposed[racko.Game.bonus_max]
+   models.ModelKyle.this.rack.exposed[racko.Game.bonus_max-1]
+   models.ModelKyle.this.rack.cards[racko.Game.bonus_max]
+   models.ModelKyle.this.rack.cards[racko.Game.bonus_max-1]
+   models.ModelKyle.this.rack.lus_cache[racko.Game.bonus_max]
+   models.ModelKyle.this.rack.lus_cache[racko.Game.bonus_max-1]
+   models.ModelKyle.this.rack.prob_cache[racko.Game.bonus_max]
+   models.ModelKyle.this.rack.prob_cache[racko.Game.bonus_max-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.bonus_max]
+   models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.bonus_max-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1].first_epoch
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.game.rack_size]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.game.rack_size-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.min_streak-1].first_epoch
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.min_streak]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.min_streak-1]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.min_streak]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.min_streak-1]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.game.min_streak]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.game.min_streak-1]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.min_streak]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.min_streak-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.min_streak]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.min_streak-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1].first_epoch
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.game.player_count]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.game.player_count-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1].first_epoch
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.game.card_count]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.game.card_count-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1]
+   models.ModelKyle.this.game.players[arg1]
+   models.ModelKyle.this.game.players[arg1-1]
+   models.ModelKyle.this.game.players[arg3]
+   models.ModelKyle.this.game.players[arg3-1]
+   models.ModelKyle.this.game.players[arg4]
+   models.ModelKyle.this.game.players[arg4-1]
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1].game
+   models.ModelKyle.this.game.players[arg1].game
+   models.ModelKyle.this.game.players[arg1-1].game
+   models.ModelKyle.this.game.players[arg2].game
+   models.ModelKyle.this.game.players[arg2-1].game
+   models.ModelKyle.this.game.players[arg3].game
+   models.ModelKyle.this.game.players[arg3-1].game
+   models.ModelKyle.this.game.players[arg4].game
+   models.ModelKyle.this.game.players[arg4-1].game
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1].rack
+   models.ModelKyle.this.game.players[arg1].rack
+   models.ModelKyle.this.game.players[arg1-1].rack
+   models.ModelKyle.this.game.players[arg2].rack
+   models.ModelKyle.this.game.players[arg2-1].rack
+   models.ModelKyle.this.game.players[arg3].rack
+   models.ModelKyle.this.game.players[arg3-1].rack
+   models.ModelKyle.this.game.players[arg4].rack
+   models.ModelKyle.this.game.players[arg4-1].rack
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1].playerNumber
+   models.ModelKyle.this.game.players[arg1].playerNumber
+   models.ModelKyle.this.game.players[arg1-1].playerNumber
+   models.ModelKyle.this.game.players[arg2].playerNumber
+   models.ModelKyle.this.game.players[arg2-1].playerNumber
+   models.ModelKyle.this.game.players[arg3].playerNumber
+   models.ModelKyle.this.game.players[arg3-1].playerNumber
+   models.ModelKyle.this.game.players[arg4].playerNumber
+   models.ModelKyle.this.game.players[arg4-1].playerNumber
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1].name
+   models.ModelKyle.this.game.players[arg1].name
+   models.ModelKyle.this.game.players[arg1-1].name
+   models.ModelKyle.this.game.players[arg2].name
+   models.ModelKyle.this.game.players[arg2-1].name
+   models.ModelKyle.this.game.players[arg3].name
+   models.ModelKyle.this.game.players[arg3-1].name
+   models.ModelKyle.this.game.players[arg4].name
+   models.ModelKyle.this.game.players[arg4-1].name
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1].score
+   models.ModelKyle.this.game.players[arg1].score
+   models.ModelKyle.this.game.players[arg1-1].score
+   models.ModelKyle.this.game.players[arg2].score
+   models.ModelKyle.this.game.players[arg2-1].score
+   models.ModelKyle.this.game.players[arg3].score
+   models.ModelKyle.this.game.players[arg3-1].score
+   models.ModelKyle.this.game.players[arg4].score
+   models.ModelKyle.this.game.players[arg4-1].score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1].wins
+   models.ModelKyle.this.game.players[arg1].wins
+   models.ModelKyle.this.game.players[arg1-1].wins
+   models.ModelKyle.this.game.players[arg2].wins
+   models.ModelKyle.this.game.players[arg2-1].wins
+   models.ModelKyle.this.game.players[arg3].wins
+   models.ModelKyle.this.game.players[arg3-1].wins
+   models.ModelKyle.this.game.players[arg4].wins
+   models.ModelKyle.this.game.players[arg4-1].wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1].STAT_badmoves
+   models.ModelKyle.this.game.players[arg1].STAT_badmoves
+   models.ModelKyle.this.game.players[arg1-1].STAT_badmoves
+   models.ModelKyle.this.game.players[arg2].STAT_badmoves
+   models.ModelKyle.this.game.players[arg2-1].STAT_badmoves
+   models.ModelKyle.this.game.players[arg3].STAT_badmoves
+   models.ModelKyle.this.game.players[arg3-1].STAT_badmoves
+   models.ModelKyle.this.game.players[arg4].STAT_badmoves
+   models.ModelKyle.this.game.players[arg4-1].STAT_badmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1].STAT_allmoves
+   models.ModelKyle.this.game.players[arg1].STAT_allmoves
+   models.ModelKyle.this.game.players[arg1-1].STAT_allmoves
+   models.ModelKyle.this.game.players[arg2].STAT_allmoves
+   models.ModelKyle.this.game.players[arg2-1].STAT_allmoves
+   models.ModelKyle.this.game.players[arg3].STAT_allmoves
+   models.ModelKyle.this.game.players[arg3-1].STAT_allmoves
+   models.ModelKyle.this.game.players[arg4].STAT_allmoves
+   models.ModelKyle.this.game.players[arg4-1].STAT_allmoves
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1].STAT_wins
+   models.ModelKyle.this.game.players[arg1].STAT_wins
+   models.ModelKyle.this.game.players[arg1-1].STAT_wins
+   models.ModelKyle.this.game.players[arg2].STAT_wins
+   models.ModelKyle.this.game.players[arg2-1].STAT_wins
+   models.ModelKyle.this.game.players[arg3].STAT_wins
+   models.ModelKyle.this.game.players[arg3-1].STAT_wins
+   models.ModelKyle.this.game.players[arg4].STAT_wins
+   models.ModelKyle.this.game.players[arg4-1].STAT_wins
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1].STAT_score
+   models.ModelKyle.this.game.players[arg1].STAT_score
+   models.ModelKyle.this.game.players[arg1-1].STAT_score
+   models.ModelKyle.this.game.players[arg2].STAT_score
+   models.ModelKyle.this.game.players[arg2-1].STAT_score
+   models.ModelKyle.this.game.players[arg3].STAT_score
+   models.ModelKyle.this.game.players[arg3-1].STAT_score
+   models.ModelKyle.this.game.players[arg4].STAT_score
+   models.ModelKyle.this.game.players[arg4-1].STAT_score
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1].STAT_rounds
+   models.ModelKyle.this.game.players[arg1].STAT_rounds
+   models.ModelKyle.this.game.players[arg1-1].STAT_rounds
+   models.ModelKyle.this.game.players[arg2].STAT_rounds
+   models.ModelKyle.this.game.players[arg2-1].STAT_rounds
+   models.ModelKyle.this.game.players[arg3].STAT_rounds
+   models.ModelKyle.this.game.players[arg3-1].STAT_rounds
+   models.ModelKyle.this.game.players[arg4].STAT_rounds
+   models.ModelKyle.this.game.players[arg4-1].STAT_rounds
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.game.move_limit-1].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.exposed_count-1].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_memlimit-1].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn].first_epoch
+   models.ModelKyle.this.game.players[models.ModelKyle.this.rack.prob_cache_turn-1].first_epoch
+   models.ModelKyle.this.game.players[arg1].first_epoch
+   models.ModelKyle.this.game.players[arg1-1].first_epoch
+   models.ModelKyle.this.game.players[arg2].first_epoch
+   models.ModelKyle.this.game.players[arg2-1].first_epoch
+   models.ModelKyle.this.game.players[arg3].first_epoch
+   models.ModelKyle.this.game.players[arg3-1].first_epoch
+   models.ModelKyle.this.game.players[arg4].first_epoch
+   models.ModelKyle.this.game.players[arg4-1].first_epoch
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.game.active_player]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.game.active_player-1]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.move_limit]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.move_limit-1]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.move_limit]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.move_limit-1]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.game.move_limit]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.game.move_limit-1]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.move_limit]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.move_limit-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.move_limit]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.move_limit-1]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.exposed_count]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.exposed_count-1]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.exposed_count]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.exposed_count-1]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.rack.exposed_count]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.rack.exposed_count-1]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.exposed_count]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.exposed_count-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.exposed_count]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.exposed_count-1]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.prob_cache_memlimit]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.prob_cache_memlimit-1]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.prob_cache_turn]
+   models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.prob_cache_turn-1]
+   models.ModelKyle.this.rack.exposed[arg1]
+   models.ModelKyle.this.rack.exposed[arg1-1]
+   models.ModelKyle.this.rack.exposed[arg3]
+   models.ModelKyle.this.rack.exposed[arg3-1]
+   models.ModelKyle.this.rack.exposed[arg4]
+   models.ModelKyle.this.rack.exposed[arg4-1]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.prob_cache_memlimit]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.prob_cache_memlimit-1]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.prob_cache_turn]
+   models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.prob_cache_turn-1]
+   models.ModelKyle.this.rack.cards[arg1]
+   models.ModelKyle.this.rack.cards[arg1-1]
+   models.ModelKyle.this.rack.cards[arg3]
+   models.ModelKyle.this.rack.cards[arg3-1]
+   models.ModelKyle.this.rack.cards[arg4]
+   models.ModelKyle.this.rack.cards[arg4-1]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.rack.lus_max_length]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.rack.lus_max_length-1]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.rack.prob_cache_memlimit]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.rack.prob_cache_memlimit-1]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.rack.prob_cache_turn]
+   models.ModelKyle.this.rack.lus_cache[models.ModelKyle.this.rack.prob_cache_turn-1]
+   models.ModelKyle.this.rack.lus_cache[arg1]
+   models.ModelKyle.this.rack.lus_cache[arg1-1]
+   models.ModelKyle.this.rack.lus_cache[arg2]
+   models.ModelKyle.this.rack.lus_cache[arg2-1]
+   models.ModelKyle.this.rack.lus_cache[arg3]
+   models.ModelKyle.this.rack.lus_cache[arg3-1]
+   models.ModelKyle.this.rack.lus_cache[arg4]
+   models.ModelKyle.this.rack.lus_cache[arg4-1]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.prob_cache_memlimit]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.prob_cache_memlimit-1]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.prob_cache_turn]
+   models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.prob_cache_turn-1]
+   models.ModelKyle.this.rack.prob_cache[arg1]
+   models.ModelKyle.this.rack.prob_cache[arg1-1]
+   models.ModelKyle.this.rack.prob_cache[arg3]
+   models.ModelKyle.this.rack.prob_cache[arg3-1]
+   models.ModelKyle.this.rack.prob_cache[arg4]
+   models.ModelKyle.this.rack.prob_cache[arg4-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.prob_cache_memlimit]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.prob_cache_memlimit-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.prob_cache_turn]
+   models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.prob_cache_turn-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[arg1]
+   models.ModelKyle.this.rack.prob_cache_dirty[arg1-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[arg3]
+   models.ModelKyle.this.rack.prob_cache_dirty[arg3-1]
+   models.ModelKyle.this.rack.prob_cache_dirty[arg4]
+   models.ModelKyle.this.rack.prob_cache_dirty[arg4-1]
+rel.parent_to_child_map:
+    models.ModelKyle.this => orig(models.ModelKyle.this)
+    models.ModelKyle.this.anchorPoints => orig(models.ModelKyle.this.anchorPoints)
+    models.ModelKyle.this.anchorPoints[..] => orig(models.ModelKyle.this.anchorPoints[..])
+    models.ModelKyle.this.anchorPoints[..].getClass().getName() => orig(models.ModelKyle.this.anchorPoints[..].getClass().getName())
+    models.ModelKyle.this.myRanges => orig(models.ModelKyle.this.myRanges)
+    models.ModelKyle.this.myRanges[..] => orig(models.ModelKyle.this.myRanges[..])
+    models.ModelKyle.this.myRanges[..].getClass().getName() => orig(models.ModelKyle.this.myRanges[..].getClass().getName())
+    models.ModelKyle.this.rack_size => orig(models.ModelKyle.this.rack_size)
+    models.ModelKyle.this.card_count => orig(models.ModelKyle.this.card_count)
+    models.ModelKyle.this.cache_pos => orig(models.ModelKyle.this.cache_pos)
+    models.ModelKyle.this.cache_turn => orig(models.ModelKyle.this.cache_turn)
+    models.ModelKyle.this.myDecisions => orig(models.ModelKyle.this.myDecisions)
+    models.ModelKyle.this.myDecisions[..] => orig(models.ModelKyle.this.myDecisions[..])
+    models.ModelKyle.this.myDecisions[..].getClass().getName() => orig(models.ModelKyle.this.myDecisions[..].getClass().getName())
+    models.ModelKyle.this.weights => orig(models.ModelKyle.this.weights)
+    models.ModelKyle.this.weights.getClass().getName() => orig(models.ModelKyle.this.weights.getClass().getName())
+    models.ModelKyle.this.weights[..] => orig(models.ModelKyle.this.weights[..])
+    models.ModelKyle.this.use_reinforcement => orig(models.ModelKyle.this.use_reinforcement)
+    models.ModelKyle.this.RI_stop => orig(models.ModelKyle.this.RI_stop)
+    models.StoppingCriteria.EPSILON => orig(models.StoppingCriteria.EPSILON)
+    models.ModelKyle.this.RI_stop.creep => orig(models.ModelKyle.this.RI_stop.creep)
+    models.ModelKyle.this.RI_stop.new_model => orig(models.ModelKyle.this.RI_stop.new_model)
+    models.ModelKyle.this.RI_stop.noimprove_max => orig(models.ModelKyle.this.RI_stop.noimprove_max)
+    models.ModelKyle.this.RI_stop.noimprove => orig(models.ModelKyle.this.RI_stop.noimprove)
+    models.ModelKyle.this.RI_stop.max_wins => orig(models.ModelKyle.this.RI_stop.max_wins)
+    models.ModelKyle.this.RI_stop.min_badmoves => orig(models.ModelKyle.this.RI_stop.min_badmoves)
+    models.ModelKyle.this.RI_stop.min_allmoves => orig(models.ModelKyle.this.RI_stop.min_allmoves)
+    models.ModelKyle.this.done_learning => orig(models.ModelKyle.this.done_learning)
+    models.ModelKyle.this.game => orig(models.ModelKyle.this.game)
+    racko.Game.verbose => orig(racko.Game.verbose)
+    racko.Game.spymode => orig(racko.Game.spymode)
+    racko.Game.score_win => orig(racko.Game.score_win)
+    racko.Game.score_all => orig(racko.Game.score_all)
+    racko.Game.score_single => orig(racko.Game.score_single)
+    racko.Game.score_bonus => orig(racko.Game.score_bonus)
+    racko.Game.score_bonus_fac => orig(racko.Game.score_bonus_fac)
+    racko.Game.bonus_min => orig(racko.Game.bonus_min)
+    racko.Game.bonus_max => orig(racko.Game.bonus_max)
+    models.ModelKyle.this.game.dist_skew => orig(models.ModelKyle.this.game.dist_skew)
+    models.ModelKyle.this.game.dist_flat => orig(models.ModelKyle.this.game.dist_flat)
+    models.ModelKyle.this.game.gui => orig(models.ModelKyle.this.game.gui)
+    models.ModelKyle.this.game.gui.getClass().getName() => orig(models.ModelKyle.this.game.gui.getClass().getName())
+    models.ModelKyle.this.game.rack_size => orig(models.ModelKyle.this.game.rack_size)
+    models.ModelKyle.this.game.min_streak => orig(models.ModelKyle.this.game.min_streak)
+    models.ModelKyle.this.game.player_count => orig(models.ModelKyle.this.game.player_count)
+    models.ModelKyle.this.game.card_count => orig(models.ModelKyle.this.game.card_count)
+    models.ModelKyle.this.game.bonus_mode => orig(models.ModelKyle.this.game.bonus_mode)
+    models.ModelKyle.this.game.deck => orig(models.ModelKyle.this.game.deck)
+    models.ModelKyle.this.game.players => orig(models.ModelKyle.this.game.players)
+    models.ModelKyle.this.game.players.getClass().getName() => orig(models.ModelKyle.this.game.players.getClass().getName())
+    models.ModelKyle.this.game.players[..] => orig(models.ModelKyle.this.game.players[..])
+    models.ModelKyle.this.game.players[..].getClass().getName() => orig(models.ModelKyle.this.game.players[..].getClass().getName())
+    models.ModelKyle.this.game.players[..].game => orig(models.ModelKyle.this.game.players[..].game)
+    models.ModelKyle.this.game.players[..].rack => orig(models.ModelKyle.this.game.players[..].rack)
+    models.ModelKyle.this.game.players[..].playerNumber => orig(models.ModelKyle.this.game.players[..].playerNumber)
+    models.ModelKyle.this.game.players[..].name => orig(models.ModelKyle.this.game.players[..].name)
+    models.ModelKyle.this.game.players[..].name.toString => orig(models.ModelKyle.this.game.players[..].name.toString)
+    models.ModelKyle.this.game.players[..].score => orig(models.ModelKyle.this.game.players[..].score)
+    models.ModelKyle.this.game.players[..].wins => orig(models.ModelKyle.this.game.players[..].wins)
+    models.ModelKyle.this.game.players[..].STAT_badmoves => orig(models.ModelKyle.this.game.players[..].STAT_badmoves)
+    models.ModelKyle.this.game.players[..].STAT_allmoves => orig(models.ModelKyle.this.game.players[..].STAT_allmoves)
+    models.ModelKyle.this.game.players[..].STAT_wins => orig(models.ModelKyle.this.game.players[..].STAT_wins)
+    models.ModelKyle.this.game.players[..].STAT_score => orig(models.ModelKyle.this.game.players[..].STAT_score)
+    models.ModelKyle.this.game.players[..].STAT_rounds => orig(models.ModelKyle.this.game.players[..].STAT_rounds)
+    models.ModelKyle.this.game.players[..].EPOCH_badmoves => orig(models.ModelKyle.this.game.players[..].EPOCH_badmoves)
+    models.ModelKyle.this.game.players[..].EPOCH_allmoves => orig(models.ModelKyle.this.game.players[..].EPOCH_allmoves)
+    models.ModelKyle.this.game.players[..].EPOCH_wins => orig(models.ModelKyle.this.game.players[..].EPOCH_wins)
+    models.ModelKyle.this.game.players[..].first_epoch => orig(models.ModelKyle.this.game.players[..].first_epoch)
+    models.ModelKyle.this.game.players[..].MODEL_badmoves => orig(models.ModelKyle.this.game.players[..].MODEL_badmoves)
+    models.ModelKyle.this.game.players[..].MODEL_allmoves => orig(models.ModelKyle.this.game.players[..].MODEL_allmoves)
+    models.ModelKyle.this.game.players[..].MODEL_wins => orig(models.ModelKyle.this.game.players[..].MODEL_wins)
+    models.ModelKyle.this.game.active_player => orig(models.ModelKyle.this.game.active_player)
+    models.ModelKyle.this.game.move_limit => orig(models.ModelKyle.this.game.move_limit)
+    models.ModelKyle.this.rack => orig(models.ModelKyle.this.rack)
+    models.ModelKyle.this.rack.game => orig(models.ModelKyle.this.rack.game)
+    models.ModelKyle.this.rack.exposed_count => orig(models.ModelKyle.this.rack.exposed_count)
+    models.ModelKyle.this.rack.exposed => orig(models.ModelKyle.this.rack.exposed)
+    models.ModelKyle.this.rack.exposed[..] => orig(models.ModelKyle.this.rack.exposed[..])
+    models.ModelKyle.this.rack.cards => orig(models.ModelKyle.this.rack.cards)
+    models.ModelKyle.this.rack.cards[..] => orig(models.ModelKyle.this.rack.cards[..])
+    models.ModelKyle.this.rack.lus_metric => orig(models.ModelKyle.this.rack.lus_metric)
+    models.ModelKyle.this.rack.lus_metric.getClass().getName() => orig(models.ModelKyle.this.rack.lus_metric.getClass().getName())
+    models.ModelKyle.this.rack.lus_cache_tree => orig(models.ModelKyle.this.rack.lus_cache_tree)
+    models.ModelKyle.this.rack.lus_cache => orig(models.ModelKyle.this.rack.lus_cache)
+    models.ModelKyle.this.rack.lus_cache[..] => orig(models.ModelKyle.this.rack.lus_cache[..])
+    models.ModelKyle.this.rack.lus_cache[..].getClass().getName() => orig(models.ModelKyle.this.rack.lus_cache[..].getClass().getName())
+    models.ModelKyle.this.rack.lus_cache_combos => orig(models.ModelKyle.this.rack.lus_cache_combos)
+    models.ModelKyle.this.rack.lus_max_length => orig(models.ModelKyle.this.rack.lus_max_length)
+    models.ModelKyle.this.rack.prob_cache => orig(models.ModelKyle.this.rack.prob_cache)
+    models.ModelKyle.this.rack.prob_cache.getClass().getName() => orig(models.ModelKyle.this.rack.prob_cache.getClass().getName())
+    models.ModelKyle.this.rack.prob_cache[..] => orig(models.ModelKyle.this.rack.prob_cache[..])
+    models.ModelKyle.this.rack.prob_cache_dirty => orig(models.ModelKyle.this.rack.prob_cache_dirty)
+    models.ModelKyle.this.rack.prob_cache_dirty[..] => orig(models.ModelKyle.this.rack.prob_cache_dirty[..])
+    models.ModelKyle.this.rack.prob_cache_actual => orig(models.ModelKyle.this.rack.prob_cache_actual)
+    models.ModelKyle.this.rack.prob_cache_memlimit => orig(models.ModelKyle.this.rack.prob_cache_memlimit)
+    models.ModelKyle.this.rack.prob_cache_turn => orig(models.ModelKyle.this.rack.prob_cache_turn)
+    racko.Rack.$assertionsDisabled => orig(racko.Rack.$assertionsDisabled)
+    arg1 => orig(arg1)
+    arg2 => orig(arg2)
+    arg3 => orig(arg3)
+    arg4 => orig(arg4)
+    size(models.ModelKyle.this.anchorPoints[..]) => orig(size(models.ModelKyle.this.anchorPoints[..]))
+    size(models.ModelKyle.this.anchorPoints[..])-1 => orig(size(models.ModelKyle.this.anchorPoints[..]))-1
+    size(models.ModelKyle.this.myRanges[..]) => orig(size(models.ModelKyle.this.myRanges[..]))
+    size(models.ModelKyle.this.myRanges[..])-1 => orig(size(models.ModelKyle.this.myRanges[..]))-1
+    size(models.ModelKyle.this.myDecisions[..]) => orig(size(models.ModelKyle.this.myDecisions[..]))
+    size(models.ModelKyle.this.myDecisions[..])-1 => orig(size(models.ModelKyle.this.myDecisions[..]))-1
+    size(models.ModelKyle.this.weights[..]) => orig(size(models.ModelKyle.this.weights[..]))
+    size(models.ModelKyle.this.weights[..])-1 => orig(size(models.ModelKyle.this.weights[..]))-1
+    size(models.ModelKyle.this.game.players[..]) => orig(size(models.ModelKyle.this.game.players[..]))
+    size(models.ModelKyle.this.game.players[..])-1 => orig(size(models.ModelKyle.this.game.players[..]))-1
+    size(models.ModelKyle.this.rack.exposed[..]) => orig(size(models.ModelKyle.this.rack.exposed[..]))
+    size(models.ModelKyle.this.rack.exposed[..])-1 => orig(size(models.ModelKyle.this.rack.exposed[..]))-1
+    size(models.ModelKyle.this.rack.cards[..]) => orig(size(models.ModelKyle.this.rack.cards[..]))
+    size(models.ModelKyle.this.rack.cards[..])-1 => orig(size(models.ModelKyle.this.rack.cards[..]))-1
+    size(models.ModelKyle.this.rack.lus_cache[..]) => orig(size(models.ModelKyle.this.rack.lus_cache[..]))
+    size(models.ModelKyle.this.rack.lus_cache[..])-1 => orig(size(models.ModelKyle.this.rack.lus_cache[..]))-1
+    size(models.ModelKyle.this.rack.prob_cache[..]) => orig(size(models.ModelKyle.this.rack.prob_cache[..]))
+    size(models.ModelKyle.this.rack.prob_cache[..])-1 => orig(size(models.ModelKyle.this.rack.prob_cache[..]))-1
+    size(models.ModelKyle.this.rack.prob_cache_dirty[..]) => orig(size(models.ModelKyle.this.rack.prob_cache_dirty[..]))
+    size(models.ModelKyle.this.rack.prob_cache_dirty[..])-1 => orig(size(models.ModelKyle.this.rack.prob_cache_dirty[..]))-1
+    models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack_size] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack_size])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack_size-1] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack_size-1])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack_size] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack_size])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack_size-1] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack_size-1])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack_size] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack_size])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack_size-1] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack_size-1])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack_size] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack_size])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack_size-1] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack_size-1])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.card_count] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.card_count])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.card_count] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.card_count])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.card_count-1] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.card_count-1])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.card_count] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.card_count])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.card_count-1] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.card_count-1])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.card_count] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.card_count])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.card_count-1] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.card_count-1])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.card_count] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.card_count])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.card_count-1] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.card_count-1])
+    models.ModelKyle.this.game.players[racko.Game.score_all] => orig(models.ModelKyle.this.game.players[racko.Game.score_all])
+    models.ModelKyle.this.game.players[racko.Game.score_all-1] => orig(models.ModelKyle.this.game.players[racko.Game.score_all-1])
+    models.ModelKyle.this.rack.exposed[racko.Game.score_all] => orig(models.ModelKyle.this.rack.exposed[racko.Game.score_all])
+    models.ModelKyle.this.rack.exposed[racko.Game.score_all-1] => orig(models.ModelKyle.this.rack.exposed[racko.Game.score_all-1])
+    models.ModelKyle.this.rack.cards[racko.Game.score_all] => orig(models.ModelKyle.this.rack.cards[racko.Game.score_all])
+    models.ModelKyle.this.rack.cards[racko.Game.score_all-1] => orig(models.ModelKyle.this.rack.cards[racko.Game.score_all-1])
+    models.ModelKyle.this.rack.prob_cache[racko.Game.score_all] => orig(models.ModelKyle.this.rack.prob_cache[racko.Game.score_all])
+    models.ModelKyle.this.rack.prob_cache[racko.Game.score_all-1] => orig(models.ModelKyle.this.rack.prob_cache[racko.Game.score_all-1])
+    models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_all] => orig(models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_all])
+    models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_all-1] => orig(models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_all-1])
+    models.ModelKyle.this.game.players[racko.Game.score_single] => orig(models.ModelKyle.this.game.players[racko.Game.score_single])
+    models.ModelKyle.this.game.players[racko.Game.score_single-1] => orig(models.ModelKyle.this.game.players[racko.Game.score_single-1])
+    models.ModelKyle.this.rack.exposed[racko.Game.score_single] => orig(models.ModelKyle.this.rack.exposed[racko.Game.score_single])
+    models.ModelKyle.this.rack.exposed[racko.Game.score_single-1] => orig(models.ModelKyle.this.rack.exposed[racko.Game.score_single-1])
+    models.ModelKyle.this.rack.cards[racko.Game.score_single] => orig(models.ModelKyle.this.rack.cards[racko.Game.score_single])
+    models.ModelKyle.this.rack.cards[racko.Game.score_single-1] => orig(models.ModelKyle.this.rack.cards[racko.Game.score_single-1])
+    models.ModelKyle.this.rack.prob_cache[racko.Game.score_single] => orig(models.ModelKyle.this.rack.prob_cache[racko.Game.score_single])
+    models.ModelKyle.this.rack.prob_cache[racko.Game.score_single-1] => orig(models.ModelKyle.this.rack.prob_cache[racko.Game.score_single-1])
+    models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_single] => orig(models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_single])
+    models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_single-1] => orig(models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_single-1])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.rack_size] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.rack_size])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.rack_size-1] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.rack_size-1])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.rack_size] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.rack_size])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.rack_size-1] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.rack_size-1])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.rack_size] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.rack_size])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.rack_size-1] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.rack_size-1])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.rack_size] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.rack_size])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.rack_size-1] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.rack_size-1])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.player_count] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.player_count])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.player_count-1] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.player_count-1])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.player_count] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.player_count])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.player_count-1] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.player_count-1])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.player_count] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.player_count])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.player_count-1] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.player_count-1])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.player_count] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.player_count])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.player_count-1] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.player_count-1])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.card_count] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.card_count])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.card_count-1] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.card_count-1])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.card_count] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.card_count])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.card_count-1] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.card_count-1])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.card_count] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.card_count])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.card_count-1] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.card_count-1])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.card_count] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.card_count])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.card_count-1] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.card_count-1])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1] => orig(models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1])
+    models.ModelKyle.this.game.players[arg2] => orig(models.ModelKyle.this.game.players[arg2])
+    models.ModelKyle.this.game.players[arg2-1] => orig(models.ModelKyle.this.game.players[arg2-1])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.active_player] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.active_player])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.active_player-1] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.active_player-1])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.active_player] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.active_player])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.active_player-1] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.active_player-1])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.active_player] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.active_player])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.active_player-1] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.active_player-1])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.active_player] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.active_player])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.active_player-1] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.active_player-1])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.lus_max_length] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.lus_max_length])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.lus_max_length-1] => orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.lus_max_length-1])
+    models.ModelKyle.this.rack.exposed[arg2] => orig(models.ModelKyle.this.rack.exposed[arg2])
+    models.ModelKyle.this.rack.exposed[arg2-1] => orig(models.ModelKyle.this.rack.exposed[arg2-1])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.lus_max_length] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.lus_max_length])
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.lus_max_length-1] => orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.lus_max_length-1])
+    models.ModelKyle.this.rack.cards[arg2] => orig(models.ModelKyle.this.rack.cards[arg2])
+    models.ModelKyle.this.rack.cards[arg2-1] => orig(models.ModelKyle.this.rack.cards[arg2-1])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.lus_max_length] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.lus_max_length])
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.lus_max_length-1] => orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.lus_max_length-1])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.lus_max_length] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.lus_max_length])
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.lus_max_length-1] => orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.lus_max_length-1])
+    models.ModelKyle.this.rack.prob_cache[arg2] => orig(models.ModelKyle.this.rack.prob_cache[arg2])
+    models.ModelKyle.this.rack.prob_cache[arg2-1] => orig(models.ModelKyle.this.rack.prob_cache[arg2-1])
+    models.ModelKyle.this.rack.prob_cache_dirty[arg2] => orig(models.ModelKyle.this.rack.prob_cache_dirty[arg2])
+    models.ModelKyle.this.rack.prob_cache_dirty[arg2-1] => orig(models.ModelKyle.this.rack.prob_cache_dirty[arg2-1])
+child.var_infos:
+    this
+    this.lowEnd
+    this.highEnd
+    this.startSlot
+    this.numSlots
+    models.ModelKyle.this
+    models.ModelKyle.this.anchorPoints
+    models.ModelKyle.this.anchorPoints[..]
+    models.ModelKyle.this.anchorPoints[..].getClass().getName()
+    models.ModelKyle.this.myRanges
+    models.ModelKyle.this.myRanges[..]
+    models.ModelKyle.this.myRanges[..].getClass().getName()
+    models.ModelKyle.this.rack_size
+    models.ModelKyle.this.card_count
+    models.ModelKyle.this.cache_pos
+    models.ModelKyle.this.cache_turn
+    models.ModelKyle.this.myDecisions
+    models.ModelKyle.this.myDecisions[..]
+    models.ModelKyle.this.myDecisions[..].getClass().getName()
+    models.ModelKyle.this.weights
+    models.ModelKyle.this.weights.getClass().getName()
+    models.ModelKyle.this.weights[..]
+    models.ModelKyle.this.use_reinforcement
+    models.ModelKyle.this.RI_stop
+    models.StoppingCriteria.EPSILON
+    models.ModelKyle.this.RI_stop.creep
+    models.ModelKyle.this.RI_stop.new_model
+    models.ModelKyle.this.RI_stop.noimprove_max
+    models.ModelKyle.this.RI_stop.noimprove
+    models.ModelKyle.this.RI_stop.max_wins
+    models.ModelKyle.this.RI_stop.min_badmoves
+    models.ModelKyle.this.RI_stop.min_allmoves
+    models.ModelKyle.this.done_learning
+    models.ModelKyle.this.game
+    racko.Game.verbose
+    racko.Game.spymode
+    racko.Game.score_win
+    racko.Game.score_all
+    racko.Game.score_single
+    racko.Game.score_bonus
+    racko.Game.score_bonus_fac
+    racko.Game.bonus_min
+    racko.Game.bonus_max
+    models.ModelKyle.this.game.dist_skew
+    models.ModelKyle.this.game.dist_flat
+    models.ModelKyle.this.game.gui
+    models.ModelKyle.this.game.gui.getClass().getName()
+    models.ModelKyle.this.game.rack_size
+    models.ModelKyle.this.game.min_streak
+    models.ModelKyle.this.game.player_count
+    models.ModelKyle.this.game.card_count
+    models.ModelKyle.this.game.bonus_mode
+    models.ModelKyle.this.game.deck
+    models.ModelKyle.this.game.players
+    models.ModelKyle.this.game.players.getClass().getName()
+    models.ModelKyle.this.game.players[..]
+    models.ModelKyle.this.game.players[..].getClass().getName()
+    models.ModelKyle.this.game.players[..].game
+    models.ModelKyle.this.game.players[..].rack
+    models.ModelKyle.this.game.players[..].playerNumber
+    models.ModelKyle.this.game.players[..].name
+    models.ModelKyle.this.game.players[..].name.toString
+    models.ModelKyle.this.game.players[..].score
+    models.ModelKyle.this.game.players[..].wins
+    models.ModelKyle.this.game.players[..].STAT_badmoves
+    models.ModelKyle.this.game.players[..].STAT_allmoves
+    models.ModelKyle.this.game.players[..].STAT_wins
+    models.ModelKyle.this.game.players[..].STAT_score
+    models.ModelKyle.this.game.players[..].STAT_rounds
+    models.ModelKyle.this.game.players[..].EPOCH_badmoves
+    models.ModelKyle.this.game.players[..].EPOCH_allmoves
+    models.ModelKyle.this.game.players[..].EPOCH_wins
+    models.ModelKyle.this.game.players[..].first_epoch
+    models.ModelKyle.this.game.players[..].MODEL_badmoves
+    models.ModelKyle.this.game.players[..].MODEL_allmoves
+    models.ModelKyle.this.game.players[..].MODEL_wins
+    models.ModelKyle.this.game.active_player
+    models.ModelKyle.this.game.move_limit
+    models.ModelKyle.this.rack
+    models.ModelKyle.this.rack.game
+    models.ModelKyle.this.rack.exposed_count
+    models.ModelKyle.this.rack.exposed
+    models.ModelKyle.this.rack.exposed[..]
+    models.ModelKyle.this.rack.cards
+    models.ModelKyle.this.rack.cards[..]
+    models.ModelKyle.this.rack.lus_metric
+    models.ModelKyle.this.rack.lus_metric.getClass().getName()
+    models.ModelKyle.this.rack.lus_cache_tree
+    models.ModelKyle.this.rack.lus_cache
+    models.ModelKyle.this.rack.lus_cache[..]
+    models.ModelKyle.this.rack.lus_cache[..].getClass().getName()
+    models.ModelKyle.this.rack.lus_cache_combos
+    models.ModelKyle.this.rack.lus_max_length
+    models.ModelKyle.this.rack.prob_cache
+    models.ModelKyle.this.rack.prob_cache.getClass().getName()
+    models.ModelKyle.this.rack.prob_cache[..]
+    models.ModelKyle.this.rack.prob_cache_dirty
+    models.ModelKyle.this.rack.prob_cache_dirty[..]
+    models.ModelKyle.this.rack.prob_cache_actual
+    models.ModelKyle.this.rack.prob_cache_memlimit
+    models.ModelKyle.this.rack.prob_cache_turn
+    racko.Rack.$assertionsDisabled
+    arg1
+    arg2
+    arg3
+    arg4
+    orig(models.ModelKyle.this)
+    orig(models.ModelKyle.this.anchorPoints)
+    orig(models.ModelKyle.this.anchorPoints[..])
+    orig(models.ModelKyle.this.anchorPoints[..].getClass().getName())
+    orig(models.ModelKyle.this.myRanges)
+    orig(models.ModelKyle.this.myRanges[..])
+    orig(models.ModelKyle.this.myRanges[..].getClass().getName())
+    orig(models.ModelKyle.this.rack_size)
+    orig(models.ModelKyle.this.card_count)
+    orig(models.ModelKyle.this.cache_pos)
+    orig(models.ModelKyle.this.cache_turn)
+    orig(models.ModelKyle.this.myDecisions)
+    orig(models.ModelKyle.this.myDecisions[..])
+    orig(models.ModelKyle.this.myDecisions[..].getClass().getName())
+    orig(models.ModelKyle.this.weights)
+    orig(models.ModelKyle.this.weights.getClass().getName())
+    orig(models.ModelKyle.this.weights[..])
+    orig(models.ModelKyle.this.use_reinforcement)
+    orig(models.ModelKyle.this.RI_stop)
+    orig(models.StoppingCriteria.EPSILON)
+    orig(models.ModelKyle.this.RI_stop.creep)
+    orig(models.ModelKyle.this.RI_stop.new_model)
+    orig(models.ModelKyle.this.RI_stop.noimprove_max)
+    orig(models.ModelKyle.this.RI_stop.noimprove)
+    orig(models.ModelKyle.this.RI_stop.max_wins)
+    orig(models.ModelKyle.this.RI_stop.min_badmoves)
+    orig(models.ModelKyle.this.RI_stop.min_allmoves)
+    orig(models.ModelKyle.this.done_learning)
+    orig(models.ModelKyle.this.game)
+    orig(racko.Game.verbose)
+    orig(racko.Game.spymode)
+    orig(racko.Game.score_win)
+    orig(racko.Game.score_all)
+    orig(racko.Game.score_single)
+    orig(racko.Game.score_bonus)
+    orig(racko.Game.score_bonus_fac)
+    orig(racko.Game.bonus_min)
+    orig(racko.Game.bonus_max)
+    orig(models.ModelKyle.this.game.dist_skew)
+    orig(models.ModelKyle.this.game.dist_flat)
+    orig(models.ModelKyle.this.game.gui)
+    orig(models.ModelKyle.this.game.gui.getClass().getName())
+    orig(models.ModelKyle.this.game.rack_size)
+    orig(models.ModelKyle.this.game.min_streak)
+    orig(models.ModelKyle.this.game.player_count)
+    orig(models.ModelKyle.this.game.card_count)
+    orig(models.ModelKyle.this.game.bonus_mode)
+    orig(models.ModelKyle.this.game.deck)
+    orig(models.ModelKyle.this.game.players)
+    orig(models.ModelKyle.this.game.players.getClass().getName())
+    orig(models.ModelKyle.this.game.players[..])
+    orig(models.ModelKyle.this.game.players[..].getClass().getName())
+    orig(models.ModelKyle.this.game.players[..].game)
+    orig(models.ModelKyle.this.game.players[..].rack)
+    orig(models.ModelKyle.this.game.players[..].playerNumber)
+    orig(models.ModelKyle.this.game.players[..].name)
+    orig(models.ModelKyle.this.game.players[..].name.toString)
+    orig(models.ModelKyle.this.game.players[..].score)
+    orig(models.ModelKyle.this.game.players[..].wins)
+    orig(models.ModelKyle.this.game.players[..].STAT_badmoves)
+    orig(models.ModelKyle.this.game.players[..].STAT_allmoves)
+    orig(models.ModelKyle.this.game.players[..].STAT_wins)
+    orig(models.ModelKyle.this.game.players[..].STAT_score)
+    orig(models.ModelKyle.this.game.players[..].STAT_rounds)
+    orig(models.ModelKyle.this.game.players[..].EPOCH_badmoves)
+    orig(models.ModelKyle.this.game.players[..].EPOCH_allmoves)
+    orig(models.ModelKyle.this.game.players[..].EPOCH_wins)
+    orig(models.ModelKyle.this.game.players[..].first_epoch)
+    orig(models.ModelKyle.this.game.players[..].MODEL_badmoves)
+    orig(models.ModelKyle.this.game.players[..].MODEL_allmoves)
+    orig(models.ModelKyle.this.game.players[..].MODEL_wins)
+    orig(models.ModelKyle.this.game.active_player)
+    orig(models.ModelKyle.this.game.move_limit)
+    orig(models.ModelKyle.this.rack)
+    orig(models.ModelKyle.this.rack.game)
+    orig(models.ModelKyle.this.rack.exposed_count)
+    orig(models.ModelKyle.this.rack.exposed)
+    orig(models.ModelKyle.this.rack.exposed[..])
+    orig(models.ModelKyle.this.rack.cards)
+    orig(models.ModelKyle.this.rack.cards[..])
+    orig(models.ModelKyle.this.rack.lus_metric)
+    orig(models.ModelKyle.this.rack.lus_metric.getClass().getName())
+    orig(models.ModelKyle.this.rack.lus_cache_tree)
+    orig(models.ModelKyle.this.rack.lus_cache)
+    orig(models.ModelKyle.this.rack.lus_cache[..])
+    orig(models.ModelKyle.this.rack.lus_cache[..].getClass().getName())
+    orig(models.ModelKyle.this.rack.lus_cache_combos)
+    orig(models.ModelKyle.this.rack.lus_max_length)
+    orig(models.ModelKyle.this.rack.prob_cache)
+    orig(models.ModelKyle.this.rack.prob_cache.getClass().getName())
+    orig(models.ModelKyle.this.rack.prob_cache[..])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty)
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[..])
+    orig(models.ModelKyle.this.rack.prob_cache_actual)
+    orig(models.ModelKyle.this.rack.prob_cache_memlimit)
+    orig(models.ModelKyle.this.rack.prob_cache_turn)
+    orig(racko.Rack.$assertionsDisabled)
+    orig(arg1)
+    orig(arg2)
+    orig(arg3)
+    orig(arg4)
+    size(models.ModelKyle.this.anchorPoints[..])
+    size(models.ModelKyle.this.anchorPoints[..])-1
+    size(models.ModelKyle.this.myRanges[..])
+    size(models.ModelKyle.this.myRanges[..])-1
+    size(models.ModelKyle.this.myDecisions[..])
+    size(models.ModelKyle.this.myDecisions[..])-1
+    size(models.ModelKyle.this.weights[..])
+    size(models.ModelKyle.this.weights[..])-1
+    size(models.ModelKyle.this.game.players[..])
+    size(models.ModelKyle.this.game.players[..])-1
+    size(models.ModelKyle.this.rack.exposed[..])
+    size(models.ModelKyle.this.rack.exposed[..])-1
+    size(models.ModelKyle.this.rack.cards[..])
+    size(models.ModelKyle.this.rack.cards[..])-1
+    size(models.ModelKyle.this.rack.lus_cache[..])
+    size(models.ModelKyle.this.rack.lus_cache[..])-1
+    size(models.ModelKyle.this.rack.prob_cache[..])
+    size(models.ModelKyle.this.rack.prob_cache[..])-1
+    size(models.ModelKyle.this.rack.prob_cache_dirty[..])
+    size(models.ModelKyle.this.rack.prob_cache_dirty[..])-1
+    orig(size(models.ModelKyle.this.anchorPoints[..]))
+    orig(size(models.ModelKyle.this.anchorPoints[..]))-1
+    orig(size(models.ModelKyle.this.myRanges[..]))
+    orig(size(models.ModelKyle.this.myRanges[..]))-1
+    orig(size(models.ModelKyle.this.myDecisions[..]))
+    orig(size(models.ModelKyle.this.myDecisions[..]))-1
+    orig(size(models.ModelKyle.this.weights[..]))
+    orig(size(models.ModelKyle.this.weights[..]))-1
+    orig(size(models.ModelKyle.this.game.players[..]))
+    orig(size(models.ModelKyle.this.game.players[..]))-1
+    orig(size(models.ModelKyle.this.rack.exposed[..]))
+    orig(size(models.ModelKyle.this.rack.exposed[..]))-1
+    orig(size(models.ModelKyle.this.rack.cards[..]))
+    orig(size(models.ModelKyle.this.rack.cards[..]))-1
+    orig(size(models.ModelKyle.this.rack.lus_cache[..]))
+    orig(size(models.ModelKyle.this.rack.lus_cache[..]))-1
+    orig(size(models.ModelKyle.this.rack.prob_cache[..]))
+    orig(size(models.ModelKyle.this.rack.prob_cache[..]))-1
+    orig(size(models.ModelKyle.this.rack.prob_cache_dirty[..]))
+    orig(size(models.ModelKyle.this.rack.prob_cache_dirty[..]))-1
+    models.ModelKyle.this.game.players[this.highEnd]
+    models.ModelKyle.this.game.players[this.highEnd-1]
+    models.ModelKyle.this.rack.exposed[this.highEnd]
+    models.ModelKyle.this.rack.exposed[this.highEnd-1]
+    models.ModelKyle.this.rack.cards[this.highEnd]
+    models.ModelKyle.this.rack.cards[this.highEnd-1]
+    models.ModelKyle.this.rack.prob_cache[this.highEnd]
+    models.ModelKyle.this.rack.prob_cache[this.highEnd-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[this.highEnd]
+    models.ModelKyle.this.rack.prob_cache_dirty[this.highEnd-1]
+    orig(models.ModelKyle.this.game.players[post(this.highEnd)])
+    orig(models.ModelKyle.this.game.players[post(this.highEnd)-1])
+    orig(models.ModelKyle.this.rack.exposed[post(this.highEnd)])
+    orig(models.ModelKyle.this.rack.exposed[post(this.highEnd)-1])
+    orig(models.ModelKyle.this.rack.cards[post(this.highEnd)])
+    orig(models.ModelKyle.this.rack.cards[post(this.highEnd)-1])
+    orig(models.ModelKyle.this.rack.prob_cache[post(this.highEnd)])
+    orig(models.ModelKyle.this.rack.prob_cache[post(this.highEnd)-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(this.highEnd)])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(this.highEnd)-1])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size]
+    models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack_size]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack_size-1]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack_size]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack_size-1]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack_size]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack_size-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack_size]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack_size-1]
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.rack_size)])
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.rack_size)-1])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.rack_size)])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.rack_size)-1])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.rack_size)])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.rack_size)-1])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.rack_size)])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.rack_size)-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.rack_size)])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.rack_size)-1])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.card_count]
+    models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.card_count]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.card_count-1]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.card_count]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.card_count-1]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.card_count]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.card_count-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.card_count]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.card_count-1]
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.card_count)])
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.card_count)-1])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.card_count)])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.card_count)-1])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.card_count)])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.card_count)-1])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.card_count)])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.card_count)-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.card_count)])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.card_count)-1])
+    models.ModelKyle.this.game.players[racko.Game.score_all]
+    models.ModelKyle.this.game.players[racko.Game.score_all-1]
+    models.ModelKyle.this.rack.exposed[racko.Game.score_all]
+    models.ModelKyle.this.rack.exposed[racko.Game.score_all-1]
+    models.ModelKyle.this.rack.cards[racko.Game.score_all]
+    models.ModelKyle.this.rack.cards[racko.Game.score_all-1]
+    models.ModelKyle.this.rack.prob_cache[racko.Game.score_all]
+    models.ModelKyle.this.rack.prob_cache[racko.Game.score_all-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_all]
+    models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_all-1]
+    orig(models.ModelKyle.this.game.players[post(racko.Game.score_all)])
+    orig(models.ModelKyle.this.game.players[post(racko.Game.score_all)-1])
+    orig(models.ModelKyle.this.rack.exposed[post(racko.Game.score_all)])
+    orig(models.ModelKyle.this.rack.exposed[post(racko.Game.score_all)-1])
+    orig(models.ModelKyle.this.rack.cards[post(racko.Game.score_all)])
+    orig(models.ModelKyle.this.rack.cards[post(racko.Game.score_all)-1])
+    orig(models.ModelKyle.this.rack.prob_cache[post(racko.Game.score_all)])
+    orig(models.ModelKyle.this.rack.prob_cache[post(racko.Game.score_all)-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(racko.Game.score_all)])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(racko.Game.score_all)-1])
+    models.ModelKyle.this.game.players[racko.Game.score_single]
+    models.ModelKyle.this.game.players[racko.Game.score_single-1]
+    models.ModelKyle.this.rack.exposed[racko.Game.score_single]
+    models.ModelKyle.this.rack.exposed[racko.Game.score_single-1]
+    models.ModelKyle.this.rack.cards[racko.Game.score_single]
+    models.ModelKyle.this.rack.cards[racko.Game.score_single-1]
+    models.ModelKyle.this.rack.prob_cache[racko.Game.score_single]
+    models.ModelKyle.this.rack.prob_cache[racko.Game.score_single-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_single]
+    models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_single-1]
+    orig(models.ModelKyle.this.game.players[post(racko.Game.score_single)])
+    orig(models.ModelKyle.this.game.players[post(racko.Game.score_single)-1])
+    orig(models.ModelKyle.this.rack.exposed[post(racko.Game.score_single)])
+    orig(models.ModelKyle.this.rack.exposed[post(racko.Game.score_single)-1])
+    orig(models.ModelKyle.this.rack.cards[post(racko.Game.score_single)])
+    orig(models.ModelKyle.this.rack.cards[post(racko.Game.score_single)-1])
+    orig(models.ModelKyle.this.rack.prob_cache[post(racko.Game.score_single)])
+    orig(models.ModelKyle.this.rack.prob_cache[post(racko.Game.score_single)-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(racko.Game.score_single)])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(racko.Game.score_single)-1])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size]
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.rack_size]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.rack_size-1]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.rack_size]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.rack_size-1]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.rack_size]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.rack_size-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.rack_size]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.rack_size-1]
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.game.rack_size)])
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.game.rack_size)-1])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.game.rack_size)])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.game.rack_size)-1])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.game.rack_size)])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.game.rack_size)-1])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.game.rack_size)])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.game.rack_size)-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.game.rack_size)])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.game.rack_size)-1])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count]
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.player_count]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.player_count-1]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.player_count]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.player_count-1]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.player_count]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.player_count-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.player_count]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.player_count-1]
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.game.player_count)])
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.game.player_count)-1])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.game.player_count)])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.game.player_count)-1])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.game.player_count)])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.game.player_count)-1])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.game.player_count)])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.game.player_count)-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.game.player_count)])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.game.player_count)-1])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count]
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.card_count]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.card_count-1]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.card_count]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.card_count-1]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.card_count]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.card_count-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.card_count]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.card_count-1]
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.game.card_count)])
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.game.card_count)-1])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.game.card_count)])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.game.card_count)-1])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.game.card_count)])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.game.card_count)-1])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.game.card_count)])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.game.card_count)-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.game.card_count)])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.game.card_count)-1])
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player]
+    models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1]
+    models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length]
+    models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1]
+    models.ModelKyle.this.game.players[arg2]
+    models.ModelKyle.this.game.players[arg2-1]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.rack_size)]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.rack_size)-1]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.card_count)]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.card_count)-1]
+    models.ModelKyle.this.game.players[orig(racko.Game.score_all)]
+    models.ModelKyle.this.game.players[orig(racko.Game.score_all)-1]
+    models.ModelKyle.this.game.players[orig(racko.Game.score_single)]
+    models.ModelKyle.this.game.players[orig(racko.Game.score_single)-1]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.game.rack_size)]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.game.rack_size)-1]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.game.player_count)]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.game.player_count)-1]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.game.card_count)]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.game.card_count)-1]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.game.active_player)]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.game.active_player)-1]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.rack.lus_max_length)]
+    models.ModelKyle.this.game.players[orig(models.ModelKyle.this.rack.lus_max_length)-1]
+    models.ModelKyle.this.game.players[orig(arg2)]
+    models.ModelKyle.this.game.players[orig(arg2)-1]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.active_player]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.active_player-1]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.active_player]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.active_player-1]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.active_player]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.active_player-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.active_player]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.active_player-1]
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.game.active_player)])
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.game.active_player)-1])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.game.active_player)])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.game.active_player)-1])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.game.active_player)])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.game.active_player)-1])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.game.active_player)])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.game.active_player)-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.game.active_player)])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.game.active_player)-1])
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.lus_max_length]
+    models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.lus_max_length-1]
+    models.ModelKyle.this.rack.exposed[arg2]
+    models.ModelKyle.this.rack.exposed[arg2-1]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.rack_size)]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.rack_size)-1]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.card_count)]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.card_count)-1]
+    models.ModelKyle.this.rack.exposed[orig(racko.Game.score_all)]
+    models.ModelKyle.this.rack.exposed[orig(racko.Game.score_all)-1]
+    models.ModelKyle.this.rack.exposed[orig(racko.Game.score_single)]
+    models.ModelKyle.this.rack.exposed[orig(racko.Game.score_single)-1]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.game.rack_size)]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.game.rack_size)-1]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.game.player_count)]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.game.player_count)-1]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.game.card_count)]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.game.card_count)-1]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.game.active_player)]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.game.active_player)-1]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.rack.lus_max_length)]
+    models.ModelKyle.this.rack.exposed[orig(models.ModelKyle.this.rack.lus_max_length)-1]
+    models.ModelKyle.this.rack.exposed[orig(arg2)]
+    models.ModelKyle.this.rack.exposed[orig(arg2)-1]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.lus_max_length]
+    models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.lus_max_length-1]
+    models.ModelKyle.this.rack.cards[arg2]
+    models.ModelKyle.this.rack.cards[arg2-1]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.rack_size)]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.rack_size)-1]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.card_count)]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.card_count)-1]
+    models.ModelKyle.this.rack.cards[orig(racko.Game.score_all)]
+    models.ModelKyle.this.rack.cards[orig(racko.Game.score_all)-1]
+    models.ModelKyle.this.rack.cards[orig(racko.Game.score_single)]
+    models.ModelKyle.this.rack.cards[orig(racko.Game.score_single)-1]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.game.rack_size)]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.game.rack_size)-1]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.game.player_count)]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.game.player_count)-1]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.game.card_count)]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.game.card_count)-1]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.game.active_player)]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.game.active_player)-1]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.rack.lus_max_length)]
+    models.ModelKyle.this.rack.cards[orig(models.ModelKyle.this.rack.lus_max_length)-1]
+    models.ModelKyle.this.rack.cards[orig(arg2)]
+    models.ModelKyle.this.rack.cards[orig(arg2)-1]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.lus_max_length]
+    models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.lus_max_length-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.lus_max_length]
+    models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.lus_max_length-1]
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.rack.lus_max_length)])
+    orig(models.ModelKyle.this.game.players[post(models.ModelKyle.this.rack.lus_max_length)-1])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.rack.lus_max_length)])
+    orig(models.ModelKyle.this.rack.exposed[post(models.ModelKyle.this.rack.lus_max_length)-1])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.rack.lus_max_length)])
+    orig(models.ModelKyle.this.rack.cards[post(models.ModelKyle.this.rack.lus_max_length)-1])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.rack.lus_max_length)])
+    orig(models.ModelKyle.this.rack.prob_cache[post(models.ModelKyle.this.rack.lus_max_length)-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.rack.lus_max_length)])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(models.ModelKyle.this.rack.lus_max_length)-1])
+    models.ModelKyle.this.rack.prob_cache[arg2]
+    models.ModelKyle.this.rack.prob_cache[arg2-1]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.rack_size)]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.rack_size)-1]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.card_count)]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.card_count)-1]
+    models.ModelKyle.this.rack.prob_cache[orig(racko.Game.score_all)]
+    models.ModelKyle.this.rack.prob_cache[orig(racko.Game.score_all)-1]
+    models.ModelKyle.this.rack.prob_cache[orig(racko.Game.score_single)]
+    models.ModelKyle.this.rack.prob_cache[orig(racko.Game.score_single)-1]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.game.rack_size)]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.game.rack_size)-1]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.game.player_count)]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.game.player_count)-1]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.game.card_count)]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.game.card_count)-1]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.game.active_player)]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.game.active_player)-1]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.rack.lus_max_length)]
+    models.ModelKyle.this.rack.prob_cache[orig(models.ModelKyle.this.rack.lus_max_length)-1]
+    models.ModelKyle.this.rack.prob_cache[orig(arg2)]
+    models.ModelKyle.this.rack.prob_cache[orig(arg2)-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[arg2]
+    models.ModelKyle.this.rack.prob_cache_dirty[arg2-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.rack_size)]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.rack_size)-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.card_count)]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.card_count)-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(racko.Game.score_all)]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(racko.Game.score_all)-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(racko.Game.score_single)]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(racko.Game.score_single)-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.game.rack_size)]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.game.rack_size)-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.game.player_count)]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.game.player_count)-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.game.card_count)]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.game.card_count)-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.game.active_player)]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.game.active_player)-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.rack.lus_max_length)]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(models.ModelKyle.this.rack.lus_max_length)-1]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(arg2)]
+    models.ModelKyle.this.rack.prob_cache_dirty[orig(arg2)-1]
+    orig(models.ModelKyle.this.game.players[post(arg2)])
+    orig(models.ModelKyle.this.game.players[post(arg2)-1])
+    orig(models.ModelKyle.this.rack.exposed[post(arg2)])
+    orig(models.ModelKyle.this.rack.exposed[post(arg2)-1])
+    orig(models.ModelKyle.this.rack.cards[post(arg2)])
+    orig(models.ModelKyle.this.rack.cards[post(arg2)-1])
+    orig(models.ModelKyle.this.rack.prob_cache[post(arg2)])
+    orig(models.ModelKyle.this.rack.prob_cache[post(arg2)-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(arg2)])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[post(arg2)-1])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.rack_size-1])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack_size])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack_size-1])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack_size])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack_size-1])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack_size])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack_size-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack_size])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack_size-1])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.card_count])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.card_count-1])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.card_count])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.card_count-1])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.card_count])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.card_count-1])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.card_count])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.card_count-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.card_count])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.card_count-1])
+    orig(models.ModelKyle.this.game.players[racko.Game.score_all])
+    orig(models.ModelKyle.this.game.players[racko.Game.score_all-1])
+    orig(models.ModelKyle.this.rack.exposed[racko.Game.score_all])
+    orig(models.ModelKyle.this.rack.exposed[racko.Game.score_all-1])
+    orig(models.ModelKyle.this.rack.cards[racko.Game.score_all])
+    orig(models.ModelKyle.this.rack.cards[racko.Game.score_all-1])
+    orig(models.ModelKyle.this.rack.prob_cache[racko.Game.score_all])
+    orig(models.ModelKyle.this.rack.prob_cache[racko.Game.score_all-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_all])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_all-1])
+    orig(models.ModelKyle.this.game.players[racko.Game.score_single])
+    orig(models.ModelKyle.this.game.players[racko.Game.score_single-1])
+    orig(models.ModelKyle.this.rack.exposed[racko.Game.score_single])
+    orig(models.ModelKyle.this.rack.exposed[racko.Game.score_single-1])
+    orig(models.ModelKyle.this.rack.cards[racko.Game.score_single])
+    orig(models.ModelKyle.this.rack.cards[racko.Game.score_single-1])
+    orig(models.ModelKyle.this.rack.prob_cache[racko.Game.score_single])
+    orig(models.ModelKyle.this.rack.prob_cache[racko.Game.score_single-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_single])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[racko.Game.score_single-1])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.rack_size-1])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.rack_size])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.rack_size-1])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.rack_size])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.rack_size-1])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.rack_size])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.rack_size-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.rack_size])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.rack_size-1])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.player_count-1])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.player_count])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.player_count-1])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.player_count])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.player_count-1])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.player_count])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.player_count-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.player_count])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.player_count-1])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.card_count-1])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.card_count])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.card_count-1])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.card_count])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.card_count-1])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.card_count])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.card_count-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.card_count])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.card_count-1])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.game.active_player-1])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length])
+    orig(models.ModelKyle.this.game.players[models.ModelKyle.this.rack.lus_max_length-1])
+    orig(models.ModelKyle.this.game.players[arg2])
+    orig(models.ModelKyle.this.game.players[arg2-1])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.active_player])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.game.active_player-1])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.active_player])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.game.active_player-1])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.active_player])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.game.active_player-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.active_player])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.game.active_player-1])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.lus_max_length])
+    orig(models.ModelKyle.this.rack.exposed[models.ModelKyle.this.rack.lus_max_length-1])
+    orig(models.ModelKyle.this.rack.exposed[arg2])
+    orig(models.ModelKyle.this.rack.exposed[arg2-1])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.lus_max_length])
+    orig(models.ModelKyle.this.rack.cards[models.ModelKyle.this.rack.lus_max_length-1])
+    orig(models.ModelKyle.this.rack.cards[arg2])
+    orig(models.ModelKyle.this.rack.cards[arg2-1])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.lus_max_length])
+    orig(models.ModelKyle.this.rack.prob_cache[models.ModelKyle.this.rack.lus_max_length-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.lus_max_length])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[models.ModelKyle.this.rack.lus_max_length-1])
+    orig(models.ModelKyle.this.rack.prob_cache[arg2])
+    orig(models.ModelKyle.this.rack.prob_cache[arg2-1])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[arg2])
+    orig(models.ModelKyle.this.rack.prob_cache_dirty[arg2-1])
+End of diagnostics for newEnterExitRel(models.ModelKyle$Range.Range(models.ModelKyle, int, int, int, int):::ENTER, models.ModelKyle$Range.Range(models.ModelKyle, int, int, int, int):::EXIT)

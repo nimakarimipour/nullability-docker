@@ -1,0 +1,5 @@
+FIELD	org.ands.rifcs.base.CitationInfo	null	cm	null
+FIELD	org.ands.rifcs.base.CitationMetadata	null	identifier	null
+FIELD	org.ands.rifcs.base.Rights	null	licence	null
+FIELD	org.ands.rifcs.base.RelatedInfo	null	format	null
+FIELD	org.ands.rifcs.base.Rights	null	rightsStatement	null

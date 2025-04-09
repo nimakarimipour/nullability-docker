@@ -1,0 +1,2689 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 6 times.  Unmatched entries are ignored!
+Unterminated calls:
+  v.V.main(java.lang.String[]) : 1 invocation
+  v.Prologue.init(v.VFrame) : 1 invocation
+  v.CmdQuote.eval(v.VFrame) : 1 invocation
+  v.CmdQuote.dofunction(v.VFrame) : 1 invocation
+  v.Prologue$66.eval(v.VFrame) : 1 invocation
+  v.FileCharStream.FileCharStream(java.lang.String) : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+v.BuffCharStream:::OBJECT
+this._reader != null
+this._lexer._word has only one value
+this._lexer._word != null
+this._lexer._cstack has only one value
+this._lexer._cstack != null
+this._lexer._queue has only one value
+this._lexer._queue != null
+this._lexer._queue[] == []
+this._lexer._queue[].getClass().getName() == []
+this._lexer._stream has only one value
+this._lexer._stream != null
+this._lexer._stream.getClass().getName() == v.BuffCharStream.class
+v.Lexer.P_INT has only one value
+v.Lexer.P_INT != null
+v.Lexer.P_FLOAT has only one value
+v.Lexer.P_FLOAT != null
+this._lexer._has == true
+this._current >= 0
+this._next >= 0
+===========================================================================
+v.BuffCharStream.BuffCharStream(java.lang.String):::ENTER
+arg0.toString one of { "", "'std' use" }
+===========================================================================
+v.BuffCharStream.BuffCharStream(java.lang.String):::EXIT
+this._current == this._next
+arg0.toString == orig(arg0.toString)
+this._lexer == null
+this._current == 0
+arg0.toString one of { "", "'std' use" }
+===========================================================================
+v.BuffCharStream.current():::ENTER
+this has only one value
+this._reader has only one value
+this._lexer has only one value
+this._current one of { 39, 117 }
+this._next == 0
+===========================================================================
+v.BuffCharStream.current():::EXIT
+this._reader == orig(this._reader)
+this._lexer == orig(this._lexer)
+this._lexer._word == orig(this._lexer._word)
+this._lexer._cstack == orig(this._lexer._cstack)
+this._lexer._queue == orig(this._lexer._queue)
+this._lexer._queue[] == orig(this._lexer._queue[])
+this._lexer._stream == orig(this._lexer._stream)
+this._lexer._stream.getClass().getName() == orig(this._lexer._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._lexer._has == orig(this._lexer._has)
+this._current == return
+this._next == orig(this._next)
+return == orig(this._current)
+this._reader has only one value
+this._lexer has only one value
+this._next == 0
+return one of { 39, 117 }
+===========================================================================
+v.BuffCharStream.lexer(v.Lexer):::ENTER
+this._current == this._next
+this has only one value
+this._reader has only one value
+this._lexer == null
+this._current == 0
+arg0 has only one value
+arg0._word has only one value
+arg0._cstack has only one value
+arg0._queue has only one value
+arg0._queue[] == []
+arg0._queue[].getClass().getName() == []
+arg0._stream has only one value
+arg0._stream.getClass().getName() == v.BuffCharStream.class
+arg0._has == true
+===========================================================================
+v.BuffCharStream.lexer(v.Lexer):::EXIT
+this._reader == orig(this._reader)
+this._lexer == orig(arg0)
+this._lexer._word == arg0._word
+this._lexer._cstack == arg0._cstack
+this._lexer._queue == arg0._queue
+this._lexer._stream == arg0._stream
+this._lexer._stream.getClass().getName() == arg0._stream.getClass().getName()
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._lexer._has == arg0._has
+this._current == this._next
+this._current == orig(this._current)
+this._current == orig(this._next)
+arg0._word == orig(arg0._word)
+arg0._cstack == orig(arg0._cstack)
+arg0._queue == orig(arg0._queue)
+arg0._queue[] == orig(arg0._queue[])
+arg0._stream == orig(arg0._stream)
+arg0._stream.getClass().getName() == orig(arg0._stream.getClass().getName())
+arg0._has == orig(arg0._has)
+this._reader has only one value
+this._lexer has only one value
+this._current == 0
+arg0._word has only one value
+arg0._cstack has only one value
+arg0._queue has only one value
+arg0._queue[] == []
+arg0._queue[].getClass().getName() == []
+arg0._stream has only one value
+arg0._stream.getClass().getName() == v.BuffCharStream.class
+arg0._has == true
+===========================================================================
+v.BuffCharStream.next():::ENTER
+this has only one value
+this._reader has only one value
+this._lexer has only one value
+this._next == 0
+this._current >= this._next
+===========================================================================
+v.BuffCharStream.next():::EXIT44
+this._current == 101
+return == 0
+===========================================================================
+v.BuffCharStream.next():::EXIT49
+===========================================================================
+v.BuffCharStream.next():::EXIT
+this._reader == orig(this._reader)
+this._lexer == orig(this._lexer)
+this._lexer._word == orig(this._lexer._word)
+this._lexer._cstack == orig(this._lexer._cstack)
+this._lexer._queue == orig(this._lexer._queue)
+this._lexer._queue[] == orig(this._lexer._queue[])
+this._lexer._stream == orig(this._lexer._stream)
+this._lexer._stream.getClass().getName() == orig(this._lexer._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._lexer._has == orig(this._lexer._has)
+this._current == orig(this._current)
+this._next == orig(this._next)
+this._reader has only one value
+this._lexer has only one value
+this._next == 0
+this._current >= this._next
+===========================================================================
+v.BuffCharStream.peek():::ENTER
+this has only one value
+this._reader has only one value
+this._lexer has only one value
+this._next == 0
+===========================================================================
+v.BuffCharStream.peek():::EXIT
+this._reader == orig(this._reader)
+this._lexer == orig(this._lexer)
+this._lexer._word == orig(this._lexer._word)
+this._lexer._cstack == orig(this._lexer._cstack)
+this._lexer._queue == orig(this._lexer._queue)
+this._lexer._queue[] == orig(this._lexer._queue[])
+this._lexer._stream == orig(this._lexer._stream)
+this._lexer._stream.getClass().getName() == orig(this._lexer._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._lexer._has == orig(this._lexer._has)
+this._current == orig(this._current)
+this._next == return
+this._reader has only one value
+this._lexer has only one value
+===========================================================================
+v.BuffCharStream.read():::ENTER
+this has only one value
+this._reader has only one value
+this._lexer has only one value
+===========================================================================
+v.BuffCharStream.read():::EXIT25
+return == orig(this._next)
+return one of { 101, 115, 117 }
+orig(this._current) one of { 32, 115, 117 }
+===========================================================================
+v.BuffCharStream.read():::EXIT28
+this._next == orig(this._next)
+===========================================================================
+v.BuffCharStream.read():::EXIT
+this._reader == orig(this._reader)
+this._lexer == orig(this._lexer)
+this._lexer._word == orig(this._lexer._word)
+this._lexer._cstack == orig(this._lexer._cstack)
+this._lexer._queue == orig(this._lexer._queue)
+this._lexer._queue[] == orig(this._lexer._queue[])
+this._lexer._stream == orig(this._lexer._stream)
+this._lexer._stream.getClass().getName() == orig(this._lexer._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._lexer._has == orig(this._lexer._has)
+this._current == return
+(orig(this._next) == 0)  <==>  (this._next == orig(this._next))
+(orig(this._next) == 0)  ==>  (orig(this._current) >= orig(this._next))
+(orig(this._next) one of { 101, 115, 117 })  ==>  (orig(this._current) one of { 32, 115, 117 })
+(orig(this._next) one of { 101, 115, 117 })  ==>  (return == orig(this._next))
+(orig(this._next) one of { 101, 115, 117 })  ==>  (return one of { 101, 115, 117 })
+this._reader has only one value
+this._lexer has only one value
+this._next == 0
+this._next <= return
+this._next <= orig(this._current)
+this._next <= orig(this._next)
+return != orig(this._current)
+return >= orig(this._next)
+===========================================================================
+v.BuffCharStream.reader():::ENTER
+this has only one value
+this._reader has only one value
+this._lexer has only one value
+this._next == 0
+this._current >= this._next
+===========================================================================
+v.BuffCharStream.reader():::EXIT
+this._reader == return
+this._lexer == orig(this._lexer)
+this._lexer._word == orig(this._lexer._word)
+this._lexer._cstack == orig(this._lexer._cstack)
+this._lexer._queue == orig(this._lexer._queue)
+this._lexer._queue[] == orig(this._lexer._queue[])
+this._lexer._stream == orig(this._lexer._stream)
+this._lexer._stream.getClass().getName() == orig(this._lexer._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._lexer._has == orig(this._lexer._has)
+this._current == orig(this._current)
+this._next == orig(this._next)
+return == orig(this._reader)
+this._lexer has only one value
+this._next == 0
+return has only one value
+this._current >= this._next
+===========================================================================
+v.Cmd:::OBJECT
+this._store != null
+===========================================================================
+v.Cmd.Cmd():::EXIT
+===========================================================================
+v.CmdQuote:::OBJECT
+this._c == 91
+===========================================================================
+v.CmdQuote.CmdQuote(v.TokenStream):::ENTER
+===========================================================================
+v.CmdQuote.CmdQuote(v.TokenStream):::EXIT
+this._tokens == orig(arg0)
+this._tokens.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+v.CmdQuote.cando(v.VStack):::ENTER
+this has only one value
+this._tokens has only one value
+this._tokens.getClass().getName() == v.QuoteStream.class
+this._store has only one value
+arg0 has only one value
+arg0.now.data.getClass().getName() == v.Term.class
+arg0.first has only one value
+arg0.first.data == null
+arg0.first.link == null
+===========================================================================
+v.CmdQuote.cando(v.VStack):::EXIT28
+arg0.now has only one value
+arg0.now.data has only one value
+arg0.now.link has only one value
+return == true
+===========================================================================
+v.CmdQuote.cando(v.VStack):::EXIT28;condition="return == true"
+===========================================================================
+v.CmdQuote.cando(v.VStack):::EXIT29
+arg0.now.link == arg0.first
+arg0.first == orig(arg0.now.link)
+arg0.now has only one value
+arg0.now.data has only one value
+return == false
+===========================================================================
+v.CmdQuote.cando(v.VStack):::EXIT29;condition="not(return == true)"
+===========================================================================
+v.CmdQuote.cando(v.VStack):::EXIT
+this._tokens == orig(this._tokens)
+this._tokens.getClass().getName() == orig(this._tokens.getClass().getName())
+this._c == orig(this._c)
+this._store == orig(this._store)
+arg0.now == orig(arg0.now)
+arg0.now.data == orig(arg0.now.data)
+arg0.now.data.getClass().getName() == orig(arg0.now.data.getClass().getName())
+arg0.now.link == orig(arg0.now.link)
+arg0.first == orig(arg0.first)
+arg0.first.data == orig(arg0.first.data)
+arg0.first.link == orig(arg0.first.link)
+(return == false)  ==>  (arg0.now.link == arg0.first)
+this._tokens has only one value
+this._tokens.getClass().getName() == v.QuoteStream.class
+this._store has only one value
+arg0.now.data.getClass().getName() == v.Term.class
+arg0.first has only one value
+arg0.first.data == null
+arg0.first.link == null
+===========================================================================
+v.CmdQuote.cando(v.VStack):::EXIT;condition="return == true"
+arg0.now has only one value
+arg0.now.data has only one value
+arg0.now.link has only one value
+return == true
+===========================================================================
+v.CmdQuote.cando(v.VStack):::EXIT;condition="not(return == true)"
+arg0.now.link == arg0.first
+arg0.first == orig(arg0.now.link)
+arg0.now has only one value
+arg0.now.data has only one value
+return == false
+===========================================================================
+v.CmdQuote.tokens():::ENTER
+this has only one value
+this._tokens has only one value
+this._tokens.getClass().getName() == v.LexStream.class
+this._store has only one value
+===========================================================================
+v.CmdQuote.tokens():::EXIT
+this._tokens == return
+this._tokens.getClass().getName() == return.getClass().getName()
+this._c == orig(this._c)
+this._store == orig(this._store)
+return == orig(this._tokens)
+return.getClass().getName() == orig(this._tokens.getClass().getName())
+this._store has only one value
+return has only one value
+return.getClass().getName() == v.LexStream.class
+===========================================================================
+v.LexIterator:::OBJECT
+this has only one value
+this._lex has only one value
+this._lex != null
+this._lex._word has only one value
+this._lex._word != null
+this._lex._cstack has only one value
+this._lex._cstack != null
+this._lex._queue has only one value
+this._lex._queue != null
+this._lex._queue[] == []
+this._lex._queue[].getClass().getName() == []
+this._lex._stream has only one value
+this._lex._stream != null
+this._lex._stream.getClass().getName() == v.BuffCharStream.class
+v.Lexer.P_INT has only one value
+v.Lexer.P_INT != null
+v.Lexer.P_FLOAT has only one value
+v.Lexer.P_FLOAT != null
+v.Type.TSymbol has only one value
+v.Type.TSymbol != null
+v.Type.TQuote has only one value
+v.Type.TQuote != null
+v.Type.TFrame has only one value
+v.Type.TFrame != null
+v.Type.TString has only one value
+v.Type.TString != null
+v.Type.TInt has only one value
+v.Type.TInt != null
+v.Type.TDouble has only one value
+v.Type.TDouble != null
+v.Type.TChar has only one value
+v.Type.TChar != null
+v.Type.TBool has only one value
+v.Type.TBool != null
+v.Type.TObject has only one value
+v.Type.TObject != null
+v.Type.TOpen has only one value
+v.Type.TOpen != null
+v.Type.TClose has only one value
+v.Type.TClose != null
+v.Type.$VALUES has only one value
+v.Type.$VALUES != null
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[] elements != null
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+this._current.val.getClass().getName() == java.lang.String.class
+this._qs has only one value
+this._qs != null
+this._qs._terms has only one value
+this._qs._terms != null
+this._qs._terms[] == []
+this._qs._terms[].getClass().getName() == []
+this._qs._terms.getClass().getName() == java.util.ArrayList.class
+this._index == 0
+size(v.Type.$VALUES[]) == 11
+this._lex._stream.getClass().getName() != v.Type.$VALUES.getClass().getName()
+this._lex._stream.getClass().getName() != this._qs._terms.getClass().getName()
+v.Type.$VALUES.getClass().getName() != this._qs._terms.getClass().getName()
+===========================================================================
+v.LexIterator.LexIterator(v.QuoteStream, v.CharStream):::ENTER
+arg0 has only one value
+arg0._terms has only one value
+arg0._terms[] == []
+arg0._terms[].getClass().getName() == []
+arg0._terms.getClass().getName() == java.util.ArrayList.class
+arg1 has only one value
+arg1.getClass().getName() == v.BuffCharStream.class
+===========================================================================
+v.LexIterator.LexIterator(v.QuoteStream, v.CharStream):::EXIT
+this._lex._stream == orig(arg1)
+this._lex._stream.getClass().getName() == orig(arg1.getClass().getName())
+this._qs == orig(arg0)
+this._qs._terms == arg0._terms
+this._qs._terms.getClass().getName() == arg0._terms.getClass().getName()
+arg0._terms == orig(arg0._terms)
+arg0._terms[] == orig(arg0._terms[])
+arg0._terms.getClass().getName() == orig(arg0._terms.getClass().getName())
+this._lex._has == true
+this._current == null
+arg0._terms has only one value
+arg0._terms[] == []
+arg0._terms[].getClass().getName() == []
+arg0._terms.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+v.LexIterator.hasNext():::ENTER
+this._lex._has == true
+this._current == null
+===========================================================================
+v.LexIterator.hasNext():::EXIT16
+this._current == orig(this._current)
+v.Type.$VALUES[] == orig(v.Type.$VALUES[])
+this._lex._has == false
+this._current == null
+return == false
+===========================================================================
+v.LexIterator.hasNext():::EXIT16;condition="not(return == true)"
+===========================================================================
+v.LexIterator.hasNext():::EXIT17
+this._lex._has == orig(this._lex._has)
+this._lex._has == true
+return == true
+===========================================================================
+v.LexIterator.hasNext():::EXIT17;condition="return == true"
+===========================================================================
+v.LexIterator.hasNext():::EXIT
+this._lex == orig(this._lex)
+this._lex._word == orig(this._lex._word)
+this._lex._cstack == orig(this._lex._cstack)
+this._lex._queue == orig(this._lex._queue)
+this._lex._queue[] == orig(this._lex._queue[])
+this._lex._stream == orig(this._lex._stream)
+this._lex._stream.getClass().getName() == orig(this._lex._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._current.type == orig(v.Type.TSymbol)
+v.Type.TSymbol == orig(v.Type.TSymbol)
+v.Type.TQuote == orig(v.Type.TQuote)
+v.Type.TFrame == orig(v.Type.TFrame)
+v.Type.TString == orig(v.Type.TString)
+v.Type.TInt == orig(v.Type.TInt)
+v.Type.TDouble == orig(v.Type.TDouble)
+v.Type.TChar == orig(v.Type.TChar)
+v.Type.TBool == orig(v.Type.TBool)
+v.Type.TObject == orig(v.Type.TObject)
+v.Type.TOpen == orig(v.Type.TOpen)
+v.Type.TClose == orig(v.Type.TClose)
+v.Type.$VALUES == orig(v.Type.$VALUES)
+v.Type.$VALUES.getClass().getName() == orig(v.Type.$VALUES.getClass().getName())
+v.Type.$VALUES[].getClass().getName() == orig(v.Type.$VALUES[].getClass().getName())
+this._qs == orig(this._qs)
+this._qs._terms == orig(this._qs._terms)
+this._qs._terms[] == orig(this._qs._terms[])
+this._qs._terms.getClass().getName() == orig(this._qs._terms.getClass().getName())
+this._index == orig(this._index)
+(this._lex._has == false)  <==>  (return == false)
+(this._lex._has == false)  <==>  (this._current == null)
+(this._lex._has == false)  ==>  (this._current == orig(this._current))
+(this._lex._has == true)  <==>  (return == true)
+(this._lex._has == true)  ==>  (this._current.type == orig(v.Type.TSymbol))
+(this._lex._has == true)  ==>  (this._current.val.getClass().getName() == java.lang.String.class)
+(this._lex._has == true)  ==>  (this._lex._has == orig(this._lex._has))
+v.Type.$VALUES[] == orig(v.Type.$VALUES[]) (elementwise)
+v.Type.$VALUES[].getClass().getName() == orig(v.Type.$VALUES[].getClass().getName()) (elementwise)
+===========================================================================
+v.LexIterator.hasNext():::EXIT;condition="return == true"
+this._lex._has == orig(this._lex._has)
+this._lex._has == true
+return == true
+===========================================================================
+v.LexIterator.hasNext():::EXIT;condition="not(return == true)"
+this._current == orig(this._current)
+v.Type.$VALUES[] == orig(v.Type.$VALUES[])
+this._lex._has == false
+this._current == null
+return == false
+===========================================================================
+v.LexIterator.lex_next():::ENTER
+this._lex._has == true
+===========================================================================
+v.LexIterator.lex_next():::EXIT24
+===========================================================================
+v.LexIterator.lex_next():::EXIT
+this._lex == orig(this._lex)
+this._lex._word == orig(this._lex._word)
+this._lex._cstack == orig(this._lex._cstack)
+this._lex._queue == orig(this._lex._queue)
+this._lex._queue[] == orig(this._lex._queue[])
+this._lex._stream == orig(this._lex._stream)
+this._lex._stream.getClass().getName() == orig(this._lex._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._lex._has == orig(this._lex._has)
+v.Type.TSymbol == orig(v.Type.TSymbol)
+v.Type.TQuote == orig(v.Type.TQuote)
+v.Type.TFrame == orig(v.Type.TFrame)
+v.Type.TString == orig(v.Type.TString)
+v.Type.TInt == orig(v.Type.TInt)
+v.Type.TDouble == orig(v.Type.TDouble)
+v.Type.TChar == orig(v.Type.TChar)
+v.Type.TBool == orig(v.Type.TBool)
+v.Type.TObject == orig(v.Type.TObject)
+v.Type.TOpen == orig(v.Type.TOpen)
+v.Type.TClose == orig(v.Type.TClose)
+v.Type.$VALUES == orig(v.Type.$VALUES)
+v.Type.$VALUES.getClass().getName() == orig(v.Type.$VALUES.getClass().getName())
+v.Type.$VALUES[] == orig(v.Type.$VALUES[])
+this._qs == orig(this._qs)
+this._qs._terms == orig(this._qs._terms)
+this._qs._terms[] == orig(this._qs._terms[])
+this._qs._terms.getClass().getName() == orig(this._qs._terms.getClass().getName())
+this._index == orig(this._index)
+return.val.getClass().getName() == orig(this._current.val.getClass().getName())
+this._lex._has == true
+this._current == null
+return.val.getClass().getName() == java.lang.String.class
+===========================================================================
+v.LexIterator.next():::ENTER
+this._lex._has == true
+===========================================================================
+v.LexIterator.next():::EXIT34
+===========================================================================
+v.LexIterator.next():::EXIT
+this._lex == orig(this._lex)
+this._lex._word == orig(this._lex._word)
+this._lex._cstack == orig(this._lex._cstack)
+this._lex._queue == orig(this._lex._queue)
+this._lex._queue[] == orig(this._lex._queue[])
+this._lex._stream == orig(this._lex._stream)
+this._lex._stream.getClass().getName() == orig(this._lex._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._lex._has == orig(this._lex._has)
+v.Type.TSymbol == orig(v.Type.TSymbol)
+v.Type.TQuote == orig(v.Type.TQuote)
+v.Type.TFrame == orig(v.Type.TFrame)
+v.Type.TString == orig(v.Type.TString)
+v.Type.TInt == orig(v.Type.TInt)
+v.Type.TDouble == orig(v.Type.TDouble)
+v.Type.TChar == orig(v.Type.TChar)
+v.Type.TBool == orig(v.Type.TBool)
+v.Type.TObject == orig(v.Type.TObject)
+v.Type.TOpen == orig(v.Type.TOpen)
+v.Type.TClose == orig(v.Type.TClose)
+v.Type.$VALUES == orig(v.Type.$VALUES)
+v.Type.$VALUES.getClass().getName() == orig(v.Type.$VALUES.getClass().getName())
+v.Type.$VALUES[] == orig(v.Type.$VALUES[])
+this._qs == orig(this._qs)
+this._qs._terms == orig(this._qs._terms)
+this._qs._terms[] == orig(this._qs._terms[])
+this._qs._terms.getClass().getName() == orig(this._qs._terms.getClass().getName())
+this._index == orig(this._index)
+return.val.getClass().getName() == orig(this._current.val.getClass().getName())
+this._lex._has == true
+this._current == null
+return.val.getClass().getName() == java.lang.String.class
+===========================================================================
+v.LexStream:::OBJECT
+this has only one value
+this._stream has only one value
+this._stream.getClass().getName() == v.BuffCharStream.class
+this._terms has only one value
+this._terms[] == []
+this._terms[].getClass().getName() == []
+this._terms.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+v.LexStream.LexStream(v.CharStream):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == v.BuffCharStream.class
+===========================================================================
+v.LexStream.LexStream(v.CharStream):::EXIT
+this._stream == orig(arg0)
+this._stream.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+v.LexStream.iterator():::ENTER
+===========================================================================
+v.LexStream.iterator():::EXIT
+this._stream == orig(this._stream)
+this._stream.getClass().getName() == orig(this._stream.getClass().getName())
+this._terms == orig(this._terms)
+this._terms[] == orig(this._terms[])
+this._terms.getClass().getName() == orig(this._terms.getClass().getName())
+return has only one value
+return.getClass().getName() == v.LexIterator.class
+===========================================================================
+v.Lexer:::CLASS
+v.Lexer.P_INT has only one value
+v.Lexer.P_INT != null
+v.Lexer.P_FLOAT has only one value
+v.Lexer.P_FLOAT != null
+===========================================================================
+v.Lexer:::OBJECT
+this has only one value
+this._word has only one value
+this._word != null
+this._cstack has only one value
+this._cstack != null
+this._queue has only one value
+this._queue != null
+this._queue[] elements != null
+this._queue[].getClass().getName() elements == v.Term.class
+this._queue[].getClass().getName() one of { [], [v.Term] }
+this._stream has only one value
+this._stream != null
+this._stream.getClass().getName() == v.BuffCharStream.class
+size(this._queue[]) one of { 0, 1 }
+===========================================================================
+v.Lexer.Lexer(v.CharStream):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == v.BuffCharStream.class
+===========================================================================
+v.Lexer.Lexer(v.CharStream):::EXIT
+this._stream == orig(arg0)
+this._stream.getClass().getName() == orig(arg0.getClass().getName())
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+===========================================================================
+v.Lexer.add(v.Term):::ENTER
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+arg0.val.getClass().getName() == java.lang.String.class
+size(v.Type.$VALUES[]) == 11
+===========================================================================
+v.Lexer.add(v.Term):::EXIT
+this._word == orig(this._word)
+this._cstack == orig(this._cstack)
+this._queue == orig(this._queue)
+this._stream == orig(this._stream)
+this._stream.getClass().getName() == orig(this._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._has == orig(this._has)
+arg0.type == orig(arg0.type)
+v.Type.TSymbol == orig(v.Type.TSymbol)
+v.Type.TQuote == orig(v.Type.TQuote)
+v.Type.TFrame == orig(v.Type.TFrame)
+v.Type.TString == orig(v.Type.TString)
+v.Type.TInt == orig(v.Type.TInt)
+v.Type.TDouble == orig(v.Type.TDouble)
+v.Type.TChar == orig(v.Type.TChar)
+v.Type.TBool == orig(v.Type.TBool)
+v.Type.TObject == orig(v.Type.TObject)
+v.Type.TOpen == orig(v.Type.TOpen)
+v.Type.TClose == orig(v.Type.TClose)
+v.Type.$VALUES == orig(v.Type.$VALUES)
+v.Type.$VALUES.getClass().getName() == orig(v.Type.$VALUES.getClass().getName())
+v.Type.$VALUES[] == orig(v.Type.$VALUES[])
+arg0.val == orig(arg0.val)
+arg0.val.getClass().getName() == orig(arg0.val.getClass().getName())
+size(this._queue[])-1 == orig(size(this._queue[]))
+this._queue[].getClass().getName() == [v.Term]
+this._has == true
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+arg0.val.getClass().getName() == java.lang.String.class
+size(this._queue[]) == 1
+size(v.Type.$VALUES[]) == 11
+===========================================================================
+v.Lexer.hasNext():::ENTER
+===========================================================================
+v.Lexer.hasNext():::EXIT
+this._word == orig(this._word)
+this._cstack == orig(this._cstack)
+this._queue == orig(this._queue)
+this._queue[] == orig(this._queue[])
+this._stream == orig(this._stream)
+this._stream.getClass().getName() == orig(this._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._has == return
+return == orig(this._has)
+(return == false)  ==>  (this._queue[] == [])
+(return == false)  ==>  (this._queue[].getClass().getName() == [])
+(return == true)  ==>  (size(this._queue[]) one of { 0, 1 })
+(return == true)  ==>  (this._queue[].getClass().getName() elements == v.Term.class)
+(return == true)  ==>  (this._queue[].getClass().getName() one of { [], [v.Term] })
+===========================================================================
+v.Lexer.hasNext():::EXIT;condition="return == true"
+return == true
+===========================================================================
+v.Lexer.hasNext():::EXIT;condition="not(return == true)"
+this._queue[] == []
+this._queue[].getClass().getName() == []
+return == false
+===========================================================================
+v.Lexer.isBoundary(char):::ENTER
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+arg0 one of { 0, 101, 115 }
+===========================================================================
+v.Lexer.isBoundary(char):::EXIT38
+return == true
+orig(arg0) == 0
+===========================================================================
+v.Lexer.isBoundary(char):::EXIT38;condition="return == true"
+===========================================================================
+v.Lexer.isBoundary(char):::EXIT47
+return == false
+orig(arg0) one of { 101, 115 }
+===========================================================================
+v.Lexer.isBoundary(char):::EXIT47;condition="not(return == true)"
+===========================================================================
+v.Lexer.isBoundary(char):::EXIT
+this._word == orig(this._word)
+this._cstack == orig(this._cstack)
+this._queue == orig(this._queue)
+this._queue[] == orig(this._queue[])
+this._stream == orig(this._stream)
+this._stream.getClass().getName() == orig(this._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._has == orig(this._has)
+(return == false)  <==>  (orig(arg0) one of { 101, 115 })
+(return == true)  <==>  (orig(arg0) == 0)
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+===========================================================================
+v.Lexer.isBoundary(char):::EXIT;condition="return == true"
+return == true
+orig(arg0) == 0
+===========================================================================
+v.Lexer.isBoundary(char):::EXIT;condition="not(return == true)"
+return == false
+orig(arg0) one of { 101, 115 }
+===========================================================================
+v.Lexer.isCompoundBoundary(char):::ENTER
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+arg0 one of { 101, 115 }
+===========================================================================
+v.Lexer.isCompoundBoundary(char):::EXIT28
+===========================================================================
+v.Lexer.isCompoundBoundary(char):::EXIT28;condition="not(return == true)"
+===========================================================================
+v.Lexer.isCompoundBoundary(char):::EXIT
+this._word == orig(this._word)
+this._cstack == orig(this._cstack)
+this._queue == orig(this._queue)
+this._queue[] == orig(this._queue[])
+this._stream == orig(this._stream)
+this._stream.getClass().getName() == orig(this._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._has == orig(this._has)
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+return == false
+===========================================================================
+v.Lexer.isCompoundBoundary(char):::EXIT;condition="not(return == true)"
+===========================================================================
+v.Lexer.isPunctuation(char):::ENTER
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+arg0 one of { 101, 115 }
+===========================================================================
+v.Lexer.isPunctuation(char):::EXIT
+this._word == orig(this._word)
+this._cstack == orig(this._cstack)
+this._queue == orig(this._queue)
+this._queue[] == orig(this._queue[])
+this._stream == orig(this._stream)
+this._stream.getClass().getName() == orig(this._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._has == orig(this._has)
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+return == false
+===========================================================================
+v.Lexer.isPunctuation(char):::EXIT;condition="not(return == true)"
+===========================================================================
+v.Lexer.isStringBoundary(char):::ENTER
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+arg0 one of { 101, 115 }
+===========================================================================
+v.Lexer.isStringBoundary(char):::EXIT22
+===========================================================================
+v.Lexer.isStringBoundary(char):::EXIT22;condition="not(return == true)"
+===========================================================================
+v.Lexer.isStringBoundary(char):::EXIT
+this._word == orig(this._word)
+this._cstack == orig(this._cstack)
+this._queue == orig(this._queue)
+this._queue[] == orig(this._queue[])
+this._stream == orig(this._stream)
+this._stream.getClass().getName() == orig(this._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._has == orig(this._has)
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+return == false
+===========================================================================
+v.Lexer.isStringBoundary(char):::EXIT;condition="not(return == true)"
+===========================================================================
+v.Lexer.lex():::ENTER
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+===========================================================================
+v.Lexer.lex():::EXIT
+this._word == orig(this._word)
+this._cstack == orig(this._cstack)
+this._queue == orig(this._queue)
+this._stream == orig(this._stream)
+this._stream.getClass().getName() == orig(this._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+===========================================================================
+v.Lexer.next():::ENTER
+===========================================================================
+v.Lexer.next():::EXIT234
+this._queue[] == orig(this._queue[])
+this._has == orig(this._has)
+this._has == false
+return == null
+===========================================================================
+v.Lexer.next():::EXIT239
+this._has == orig(this._has)
+size(this._queue[]) == orig(size(this._queue[]))-1
+this._has == true
+orig(this._queue[].getClass().getName()) == [v.Term]
+orig(size(this._queue[])) == 1
+===========================================================================
+v.Lexer.next():::EXIT242
+this._queue[] == orig(this._queue[])
+orig(this._has) == true
+===========================================================================
+v.Lexer.next():::EXIT
+this._word == orig(this._word)
+this._cstack == orig(this._cstack)
+this._queue == orig(this._queue)
+this._stream == orig(this._stream)
+this._stream.getClass().getName() == orig(this._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._queue[] == []
+this._queue[].getClass().getName() == []
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+return.val.getClass().getName() == java.lang.String.class
+size(v.Type.$VALUES[]) == 11
+this._stream.getClass().getName() != v.Type.$VALUES.getClass().getName()
+size(this._queue[]) <= orig(size(this._queue[]))
+size(this._queue[]) >= orig(size(this._queue[]))-1
+size(this._queue[])-1 <= orig(size(this._queue[]))-1
+===========================================================================
+v.Lexer.space():::ENTER
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+===========================================================================
+v.Lexer.space():::EXIT
+this._word == orig(this._word)
+this._cstack == orig(this._cstack)
+this._queue == orig(this._queue)
+this._queue[] == orig(this._queue[])
+this._stream == orig(this._stream)
+this._stream.getClass().getName() == orig(this._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._has == orig(this._has)
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+===========================================================================
+v.Lexer.string():::ENTER
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+===========================================================================
+v.Lexer.string():::EXIT
+this._word == orig(this._word)
+this._cstack == orig(this._cstack)
+this._queue == orig(this._queue)
+this._stream == orig(this._stream)
+this._stream.getClass().getName() == orig(this._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._has == orig(this._has)
+size(this._queue[])-1 == orig(size(this._queue[]))
+this._queue[] contains no nulls and has only one value, of length 1
+this._queue[] elements has only one value
+this._queue[].getClass().getName() == [v.Term]
+this._has == true
+size(this._queue[]) == 1
+===========================================================================
+v.Lexer.word():::ENTER
+this._queue[] == []
+this._queue[].getClass().getName() == []
+this._has == true
+===========================================================================
+v.Lexer.word():::EXIT
+this._word == orig(this._word)
+this._cstack == orig(this._cstack)
+this._queue == orig(this._queue)
+this._stream == orig(this._stream)
+this._stream.getClass().getName() == orig(this._stream.getClass().getName())
+v.Lexer.P_INT == orig(v.Lexer.P_INT)
+v.Lexer.P_FLOAT == orig(v.Lexer.P_FLOAT)
+this._has == orig(this._has)
+size(this._queue[])-1 == orig(size(this._queue[]))
+this._queue[] contains no nulls and has only one value, of length 1
+this._queue[] elements has only one value
+this._queue[].getClass().getName() == [v.Term]
+this._has == true
+size(this._queue[]) == 1
+===========================================================================
+v.Node:::OBJECT
+this.data.getClass().getName() == v.Term.class
+this.link == null
+===========================================================================
+v.Node.Node(java.lang.Object):::ENTER
+arg0.getClass().getName() == v.Term.class
+===========================================================================
+v.Node.Node(java.lang.Object):::EXIT
+this.data == orig(arg0)
+this.data.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+v.Prologue$1:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$10:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$10.():::EXIT
+===========================================================================
+v.Prologue$11:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$11.():::EXIT
+===========================================================================
+v.Prologue$12:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$12.():::EXIT
+===========================================================================
+v.Prologue$13:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$13.():::EXIT
+===========================================================================
+v.Prologue$14:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$14.():::EXIT
+===========================================================================
+v.Prologue$15:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$15.():::EXIT
+===========================================================================
+v.Prologue$16:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$16.():::EXIT
+===========================================================================
+v.Prologue$17:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$17.():::EXIT
+===========================================================================
+v.Prologue$18:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$18.():::EXIT
+===========================================================================
+v.Prologue$19:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$19.():::EXIT
+===========================================================================
+v.Prologue$1.():::EXIT
+===========================================================================
+v.Prologue$2:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$20:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$20.():::EXIT
+===========================================================================
+v.Prologue$21:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$21.():::EXIT
+===========================================================================
+v.Prologue$22:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$22.():::EXIT
+===========================================================================
+v.Prologue$23:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$23.():::EXIT
+===========================================================================
+v.Prologue$24:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$24.():::EXIT
+===========================================================================
+v.Prologue$25:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$25.():::EXIT
+===========================================================================
+v.Prologue$26:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$26.():::EXIT
+===========================================================================
+v.Prologue$27:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$27.():::EXIT
+===========================================================================
+v.Prologue$28:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$28.():::EXIT
+===========================================================================
+v.Prologue$29:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$29.():::EXIT
+===========================================================================
+v.Prologue$2.():::EXIT
+===========================================================================
+v.Prologue$3:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$30:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$30.():::EXIT
+===========================================================================
+v.Prologue$31:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$31.():::EXIT
+===========================================================================
+v.Prologue$32:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$32.():::EXIT
+===========================================================================
+v.Prologue$33:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$33.():::EXIT
+===========================================================================
+v.Prologue$34:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$34.():::EXIT
+===========================================================================
+v.Prologue$35:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$35.():::EXIT
+===========================================================================
+v.Prologue$36:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$36.():::EXIT
+===========================================================================
+v.Prologue$37:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$37.():::EXIT
+===========================================================================
+v.Prologue$38:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$38.():::EXIT
+===========================================================================
+v.Prologue$39:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$39.():::EXIT
+===========================================================================
+v.Prologue$3.():::EXIT
+===========================================================================
+v.Prologue$4:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$40:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$40.():::EXIT
+===========================================================================
+v.Prologue$41:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$41.():::EXIT
+===========================================================================
+v.Prologue$42:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$42.():::EXIT
+===========================================================================
+v.Prologue$43:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$43.():::EXIT
+===========================================================================
+v.Prologue$44:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$44.():::EXIT
+===========================================================================
+v.Prologue$45:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$45.():::EXIT
+===========================================================================
+v.Prologue$46:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$46.():::EXIT
+===========================================================================
+v.Prologue$47:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$47.():::EXIT
+===========================================================================
+v.Prologue$48:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$48.():::EXIT
+===========================================================================
+v.Prologue$49:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$49.():::EXIT
+===========================================================================
+v.Prologue$4.():::EXIT
+===========================================================================
+v.Prologue$5:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$50:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$50.():::EXIT
+===========================================================================
+v.Prologue$51:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$51.():::EXIT
+===========================================================================
+v.Prologue$52:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$52.():::EXIT
+===========================================================================
+v.Prologue$53:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$53.():::EXIT
+===========================================================================
+v.Prologue$54:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$54.():::EXIT
+===========================================================================
+v.Prologue$55:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$55.():::EXIT
+===========================================================================
+v.Prologue$56:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$56.():::EXIT
+===========================================================================
+v.Prologue$57:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$57.():::EXIT
+===========================================================================
+v.Prologue$58:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$58.():::EXIT
+===========================================================================
+v.Prologue$59:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$59.():::EXIT
+===========================================================================
+v.Prologue$5.():::EXIT
+===========================================================================
+v.Prologue$6:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$60:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$60.():::EXIT
+===========================================================================
+v.Prologue$61:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$61.():::EXIT
+===========================================================================
+v.Prologue$62:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$62.():::EXIT
+===========================================================================
+v.Prologue$63:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$63.():::EXIT
+===========================================================================
+v.Prologue$64:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$64.():::EXIT
+===========================================================================
+v.Prologue$65:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$65.():::EXIT
+===========================================================================
+v.Prologue$66:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$66.():::EXIT
+===========================================================================
+v.Prologue$67:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$67.():::EXIT
+===========================================================================
+v.Prologue$68:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$68.():::EXIT
+===========================================================================
+v.Prologue$69:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$69.():::EXIT
+===========================================================================
+v.Prologue$6.():::EXIT
+===========================================================================
+v.Prologue$7:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$70:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$70.():::EXIT
+===========================================================================
+v.Prologue$71:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$71.():::EXIT
+===========================================================================
+v.Prologue$72:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$72.():::EXIT
+===========================================================================
+v.Prologue$7.():::EXIT
+===========================================================================
+v.Prologue$8:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$8.():::EXIT
+===========================================================================
+v.Prologue$9:::OBJECT
+this has only one value
+this._store has only one value
+===========================================================================
+v.Prologue$9.():::EXIT
+===========================================================================
+v.Prologue:::CLASS
+v.Prologue._def has only one value
+v.Prologue._def.getClass().getName() == v.Prologue$1.class
+v.Prologue._def._store has only one value
+v.Prologue._set has only one value
+v.Prologue._set.getClass().getName() == v.Prologue$2.class
+v.Prologue._set._store has only one value
+v.Prologue._me has only one value
+v.Prologue._me.getClass().getName() == v.Prologue$3.class
+v.Prologue._me._store has only one value
+v.Prologue._parent has only one value
+v.Prologue._parent.getClass().getName() == v.Prologue$4.class
+v.Prologue._parent._store has only one value
+v.Prologue._defenv has only one value
+v.Prologue._defenv.getClass().getName() == v.Prologue$5.class
+v.Prologue._defenv._store has only one value
+v.Prologue._defmodule has only one value
+v.Prologue._defmodule.getClass().getName() == v.Prologue$6.class
+v.Prologue._defmodule._store has only one value
+v.Prologue._java has only one value
+v.Prologue._java.getClass().getName() == v.Prologue$7.class
+v.Prologue._java._store has only one value
+v.Prologue._view has only one value
+v.Prologue._view.getClass().getName() == v.Prologue$8.class
+v.Prologue._view._store has only one value
+v.Prologue._trans has only one value
+v.Prologue._trans.getClass().getName() == v.Prologue$9.class
+v.Prologue._trans._store has only one value
+v.Prologue._words has only one value
+v.Prologue._words.getClass().getName() == v.Prologue$10.class
+v.Prologue._words._store has only one value
+v.Prologue._catch has only one value
+v.Prologue._catch.getClass().getName() == v.Prologue$11.class
+v.Prologue._catch._store has only one value
+v.Prologue._throw has only one value
+v.Prologue._throw.getClass().getName() == v.Prologue$12.class
+v.Prologue._throw._store has only one value
+v.Prologue._stack has only one value
+v.Prologue._stack.getClass().getName() == v.Prologue$13.class
+v.Prologue._stack._store has only one value
+v.Prologue._unstack has only one value
+v.Prologue._unstack.getClass().getName() == v.Prologue$14.class
+v.Prologue._unstack._store has only one value
+v.Prologue._abort has only one value
+v.Prologue._abort.getClass().getName() == v.Prologue$15.class
+v.Prologue._abort._store has only one value
+v.Prologue._true has only one value
+v.Prologue._true.getClass().getName() == v.Prologue$16.class
+v.Prologue._true._store has only one value
+v.Prologue._false has only one value
+v.Prologue._false.getClass().getName() == v.Prologue$17.class
+v.Prologue._false._store has only one value
+v.Prologue._if has only one value
+v.Prologue._if.getClass().getName() == v.Prologue$18.class
+v.Prologue._if._store has only one value
+v.Prologue._when has only one value
+v.Prologue._when.getClass().getName() == v.Prologue$19.class
+v.Prologue._when._store has only one value
+v.Prologue._choice has only one value
+v.Prologue._choice.getClass().getName() == v.Prologue$20.class
+v.Prologue._choice._store has only one value
+v.Prologue._ifte has only one value
+v.Prologue._ifte.getClass().getName() == v.Prologue$21.class
+v.Prologue._ifte._store has only one value
+v.Prologue._while has only one value
+v.Prologue._while.getClass().getName() == v.Prologue$22.class
+v.Prologue._while._store has only one value
+v.Prologue._print has only one value
+v.Prologue._print.getClass().getName() == v.Prologue$23.class
+v.Prologue._print._store has only one value
+v.Prologue._println has only one value
+v.Prologue._println.getClass().getName() == v.Prologue$24.class
+v.Prologue._println._store has only one value
+v.Prologue._gets has only one value
+v.Prologue._gets.getClass().getName() == v.Prologue$25.class
+v.Prologue._gets._store has only one value
+v.Prologue._peek has only one value
+v.Prologue._peek.getClass().getName() == v.Prologue$26.class
+v.Prologue._peek._store has only one value
+v.Prologue._show has only one value
+v.Prologue._show.getClass().getName() == v.Prologue$27.class
+v.Prologue._show._store has only one value
+v.Prologue._vdebug has only one value
+v.Prologue._vdebug.getClass().getName() == v.Prologue$28.class
+v.Prologue._vdebug._store has only one value
+v.Prologue._dframe has only one value
+v.Prologue._dframe.getClass().getName() == v.Prologue$29.class
+v.Prologue._dframe._store has only one value
+v.Prologue._debug has only one value
+v.Prologue._debug.getClass().getName() == v.Prologue$30.class
+v.Prologue._debug._store has only one value
+v.Prologue._map has only one value
+v.Prologue._map.getClass().getName() == v.Prologue$31.class
+v.Prologue._map._store has only one value
+v.Prologue._map_i has only one value
+v.Prologue._map_i.getClass().getName() == v.Prologue$32.class
+v.Prologue._map_i._store has only one value
+v.Prologue._split has only one value
+v.Prologue._split.getClass().getName() == v.Prologue$33.class
+v.Prologue._split._store has only one value
+v.Prologue._split_i has only one value
+v.Prologue._split_i.getClass().getName() == v.Prologue$34.class
+v.Prologue._split_i._store has only one value
+v.Prologue._fold has only one value
+v.Prologue._fold.getClass().getName() == v.Prologue$35.class
+v.Prologue._fold._store has only one value
+v.Prologue._fold_i has only one value
+v.Prologue._fold_i.getClass().getName() == v.Prologue$36.class
+v.Prologue._fold_i._store has only one value
+v.Prologue._drop has only one value
+v.Prologue._drop.getClass().getName() == v.Prologue$37.class
+v.Prologue._drop._store has only one value
+v.Prologue._take has only one value
+v.Prologue._take.getClass().getName() == v.Prologue$38.class
+v.Prologue._take._store has only one value
+v.Prologue._dequote has only one value
+v.Prologue._dequote.getClass().getName() == v.Prologue$39.class
+v.Prologue._dequote._store has only one value
+v.Prologue._dequoteenv has only one value
+v.Prologue._dequoteenv.getClass().getName() == v.Prologue$40.class
+v.Prologue._dequoteenv._store has only one value
+v.Prologue._add has only one value
+v.Prologue._add.getClass().getName() == v.Prologue$41.class
+v.Prologue._add._store has only one value
+v.Prologue._sub has only one value
+v.Prologue._sub.getClass().getName() == v.Prologue$42.class
+v.Prologue._sub._store has only one value
+v.Prologue._mul has only one value
+v.Prologue._mul.getClass().getName() == v.Prologue$43.class
+v.Prologue._mul._store has only one value
+v.Prologue._div has only one value
+v.Prologue._div.getClass().getName() == v.Prologue$44.class
+v.Prologue._div._store has only one value
+v.Prologue._mod has only one value
+v.Prologue._mod.getClass().getName() == v.Prologue$45.class
+v.Prologue._mod._store has only one value
+v.Prologue._gt has only one value
+v.Prologue._gt.getClass().getName() == v.Prologue$46.class
+v.Prologue._gt._store has only one value
+v.Prologue._lt has only one value
+v.Prologue._lt.getClass().getName() == v.Prologue$47.class
+v.Prologue._lt._store has only one value
+v.Prologue._lteq has only one value
+v.Prologue._lteq.getClass().getName() == v.Prologue$48.class
+v.Prologue._lteq._store has only one value
+v.Prologue._gteq has only one value
+v.Prologue._gteq.getClass().getName() == v.Prologue$49.class
+v.Prologue._gteq._store has only one value
+v.Prologue._eq has only one value
+v.Prologue._eq.getClass().getName() == v.Prologue$50.class
+v.Prologue._eq._store has only one value
+v.Prologue._neq has only one value
+v.Prologue._neq.getClass().getName() == v.Prologue$51.class
+v.Prologue._neq._store has only one value
+v.Prologue._and has only one value
+v.Prologue._and.getClass().getName() == v.Prologue$52.class
+v.Prologue._and._store has only one value
+v.Prologue._or has only one value
+v.Prologue._or.getClass().getName() == v.Prologue$53.class
+v.Prologue._or._store has only one value
+v.Prologue._not has only one value
+v.Prologue._not.getClass().getName() == v.Prologue$54.class
+v.Prologue._not._store has only one value
+v.Prologue._isbool has only one value
+v.Prologue._isbool.getClass().getName() == v.Prologue$55.class
+v.Prologue._isbool._store has only one value
+v.Prologue._isinteger has only one value
+v.Prologue._isinteger.getClass().getName() == v.Prologue$56.class
+v.Prologue._isinteger._store has only one value
+v.Prologue._isdouble has only one value
+v.Prologue._isdouble.getClass().getName() == v.Prologue$57.class
+v.Prologue._isdouble._store has only one value
+v.Prologue._issym has only one value
+v.Prologue._issym.getClass().getName() == v.Prologue$58.class
+v.Prologue._issym._store has only one value
+v.Prologue._islist has only one value
+v.Prologue._islist.getClass().getName() == v.Prologue$59.class
+v.Prologue._islist._store has only one value
+v.Prologue._isstr has only one value
+v.Prologue._isstr.getClass().getName() == v.Prologue$60.class
+v.Prologue._isstr._store has only one value
+v.Prologue._isnum has only one value
+v.Prologue._isnum.getClass().getName() == v.Prologue$61.class
+v.Prologue._isnum._store has only one value
+v.Prologue._ischar has only one value
+v.Prologue._ischar.getClass().getName() == v.Prologue$62.class
+v.Prologue._ischar._store has only one value
+v.Prologue._tostring has only one value
+v.Prologue._tostring.getClass().getName() == v.Prologue$63.class
+v.Prologue._tostring._store has only one value
+v.Prologue._toint has only one value
+v.Prologue._toint.getClass().getName() == v.Prologue$64.class
+v.Prologue._toint._store has only one value
+v.Prologue._todecimal has only one value
+v.Prologue._todecimal.getClass().getName() == v.Prologue$65.class
+v.Prologue._todecimal._store has only one value
+v.Prologue._use has only one value
+v.Prologue._use.getClass().getName() == v.Prologue$66.class
+v.Prologue._use._store has only one value
+v.Prologue._useenv has only one value
+v.Prologue._useenv.getClass().getName() == v.Prologue$67.class
+v.Prologue._useenv._store has only one value
+v.Prologue._eval has only one value
+v.Prologue._eval.getClass().getName() == v.Prologue$68.class
+v.Prologue._eval._store has only one value
+v.Prologue._evalenv has only one value
+v.Prologue._evalenv.getClass().getName() == v.Prologue$69.class
+v.Prologue._evalenv._store has only one value
+v.Prologue._help has only one value
+v.Prologue._help.getClass().getName() == v.Prologue$70.class
+v.Prologue._help._store has only one value
+v.Prologue._env has only one value
+v.Prologue._env.getClass().getName() == v.Prologue$71.class
+v.Prologue._env._store has only one value
+v.Prologue._time has only one value
+v.Prologue._time.getClass().getName() == v.Prologue$72.class
+v.Prologue._time._store has only one value
+===========================================================================
+v.Prologue.getFileName(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "std"
+===========================================================================
+v.Prologue.getFileName(java.lang.String):::EXIT1179
+===========================================================================
+v.Prologue.getFileName(java.lang.String):::EXIT
+v.Prologue._def == orig(v.Prologue._def)
+v.Prologue._def.getClass().getName() == orig(v.Prologue._def.getClass().getName())
+v.Prologue._def._store == orig(v.Prologue._def._store)
+v.Prologue._set == orig(v.Prologue._set)
+v.Prologue._set.getClass().getName() == orig(v.Prologue._set.getClass().getName())
+v.Prologue._set._store == orig(v.Prologue._set._store)
+v.Prologue._me == orig(v.Prologue._me)
+v.Prologue._me.getClass().getName() == orig(v.Prologue._me.getClass().getName())
+v.Prologue._me._store == orig(v.Prologue._me._store)
+v.Prologue._parent == orig(v.Prologue._parent)
+v.Prologue._parent.getClass().getName() == orig(v.Prologue._parent.getClass().getName())
+v.Prologue._parent._store == orig(v.Prologue._parent._store)
+v.Prologue._defenv == orig(v.Prologue._defenv)
+v.Prologue._defenv.getClass().getName() == orig(v.Prologue._defenv.getClass().getName())
+v.Prologue._defenv._store == orig(v.Prologue._defenv._store)
+v.Prologue._defmodule == orig(v.Prologue._defmodule)
+v.Prologue._defmodule.getClass().getName() == orig(v.Prologue._defmodule.getClass().getName())
+v.Prologue._defmodule._store == orig(v.Prologue._defmodule._store)
+v.Prologue._java == orig(v.Prologue._java)
+v.Prologue._java.getClass().getName() == orig(v.Prologue._java.getClass().getName())
+v.Prologue._java._store == orig(v.Prologue._java._store)
+v.Prologue._view == orig(v.Prologue._view)
+v.Prologue._view.getClass().getName() == orig(v.Prologue._view.getClass().getName())
+v.Prologue._view._store == orig(v.Prologue._view._store)
+v.Prologue._trans == orig(v.Prologue._trans)
+v.Prologue._trans.getClass().getName() == orig(v.Prologue._trans.getClass().getName())
+v.Prologue._trans._store == orig(v.Prologue._trans._store)
+v.Prologue._words == orig(v.Prologue._words)
+v.Prologue._words.getClass().getName() == orig(v.Prologue._words.getClass().getName())
+v.Prologue._words._store == orig(v.Prologue._words._store)
+v.Prologue._catch == orig(v.Prologue._catch)
+v.Prologue._catch.getClass().getName() == orig(v.Prologue._catch.getClass().getName())
+v.Prologue._catch._store == orig(v.Prologue._catch._store)
+v.Prologue._throw == orig(v.Prologue._throw)
+v.Prologue._throw.getClass().getName() == orig(v.Prologue._throw.getClass().getName())
+v.Prologue._throw._store == orig(v.Prologue._throw._store)
+v.Prologue._stack == orig(v.Prologue._stack)
+v.Prologue._stack.getClass().getName() == orig(v.Prologue._stack.getClass().getName())
+v.Prologue._stack._store == orig(v.Prologue._stack._store)
+v.Prologue._unstack == orig(v.Prologue._unstack)
+v.Prologue._unstack.getClass().getName() == orig(v.Prologue._unstack.getClass().getName())
+v.Prologue._unstack._store == orig(v.Prologue._unstack._store)
+v.Prologue._abort == orig(v.Prologue._abort)
+v.Prologue._abort.getClass().getName() == orig(v.Prologue._abort.getClass().getName())
+v.Prologue._abort._store == orig(v.Prologue._abort._store)
+v.Prologue._true == orig(v.Prologue._true)
+v.Prologue._true.getClass().getName() == orig(v.Prologue._true.getClass().getName())
+v.Prologue._true._store == orig(v.Prologue._true._store)
+v.Prologue._false == orig(v.Prologue._false)
+v.Prologue._false.getClass().getName() == orig(v.Prologue._false.getClass().getName())
+v.Prologue._false._store == orig(v.Prologue._false._store)
+v.Prologue._if == orig(v.Prologue._if)
+v.Prologue._if.getClass().getName() == orig(v.Prologue._if.getClass().getName())
+v.Prologue._if._store == orig(v.Prologue._if._store)
+v.Prologue._when == orig(v.Prologue._when)
+v.Prologue._when.getClass().getName() == orig(v.Prologue._when.getClass().getName())
+v.Prologue._when._store == orig(v.Prologue._when._store)
+v.Prologue._choice == orig(v.Prologue._choice)
+v.Prologue._choice.getClass().getName() == orig(v.Prologue._choice.getClass().getName())
+v.Prologue._choice._store == orig(v.Prologue._choice._store)
+v.Prologue._ifte == orig(v.Prologue._ifte)
+v.Prologue._ifte.getClass().getName() == orig(v.Prologue._ifte.getClass().getName())
+v.Prologue._ifte._store == orig(v.Prologue._ifte._store)
+v.Prologue._while == orig(v.Prologue._while)
+v.Prologue._while.getClass().getName() == orig(v.Prologue._while.getClass().getName())
+v.Prologue._while._store == orig(v.Prologue._while._store)
+v.Prologue._print == orig(v.Prologue._print)
+v.Prologue._print.getClass().getName() == orig(v.Prologue._print.getClass().getName())
+v.Prologue._print._store == orig(v.Prologue._print._store)
+v.Prologue._println == orig(v.Prologue._println)
+v.Prologue._println.getClass().getName() == orig(v.Prologue._println.getClass().getName())
+v.Prologue._println._store == orig(v.Prologue._println._store)
+v.Prologue._gets == orig(v.Prologue._gets)
+v.Prologue._gets.getClass().getName() == orig(v.Prologue._gets.getClass().getName())
+v.Prologue._gets._store == orig(v.Prologue._gets._store)
+v.Prologue._peek == orig(v.Prologue._peek)
+v.Prologue._peek.getClass().getName() == orig(v.Prologue._peek.getClass().getName())
+v.Prologue._peek._store == orig(v.Prologue._peek._store)
+v.Prologue._show == orig(v.Prologue._show)
+v.Prologue._show.getClass().getName() == orig(v.Prologue._show.getClass().getName())
+v.Prologue._show._store == orig(v.Prologue._show._store)
+v.Prologue._vdebug == orig(v.Prologue._vdebug)
+v.Prologue._vdebug.getClass().getName() == orig(v.Prologue._vdebug.getClass().getName())
+v.Prologue._vdebug._store == orig(v.Prologue._vdebug._store)
+v.Prologue._dframe == orig(v.Prologue._dframe)
+v.Prologue._dframe.getClass().getName() == orig(v.Prologue._dframe.getClass().getName())
+v.Prologue._dframe._store == orig(v.Prologue._dframe._store)
+v.Prologue._debug == orig(v.Prologue._debug)
+v.Prologue._debug.getClass().getName() == orig(v.Prologue._debug.getClass().getName())
+v.Prologue._debug._store == orig(v.Prologue._debug._store)
+v.Prologue._map == orig(v.Prologue._map)
+v.Prologue._map.getClass().getName() == orig(v.Prologue._map.getClass().getName())
+v.Prologue._map._store == orig(v.Prologue._map._store)
+v.Prologue._map_i == orig(v.Prologue._map_i)
+v.Prologue._map_i.getClass().getName() == orig(v.Prologue._map_i.getClass().getName())
+v.Prologue._map_i._store == orig(v.Prologue._map_i._store)
+v.Prologue._split == orig(v.Prologue._split)
+v.Prologue._split.getClass().getName() == orig(v.Prologue._split.getClass().getName())
+v.Prologue._split._store == orig(v.Prologue._split._store)
+v.Prologue._split_i == orig(v.Prologue._split_i)
+v.Prologue._split_i.getClass().getName() == orig(v.Prologue._split_i.getClass().getName())
+v.Prologue._split_i._store == orig(v.Prologue._split_i._store)
+v.Prologue._fold == orig(v.Prologue._fold)
+v.Prologue._fold.getClass().getName() == orig(v.Prologue._fold.getClass().getName())
+v.Prologue._fold._store == orig(v.Prologue._fold._store)
+v.Prologue._fold_i == orig(v.Prologue._fold_i)
+v.Prologue._fold_i.getClass().getName() == orig(v.Prologue._fold_i.getClass().getName())
+v.Prologue._fold_i._store == orig(v.Prologue._fold_i._store)
+v.Prologue._drop == orig(v.Prologue._drop)
+v.Prologue._drop.getClass().getName() == orig(v.Prologue._drop.getClass().getName())
+v.Prologue._drop._store == orig(v.Prologue._drop._store)
+v.Prologue._take == orig(v.Prologue._take)
+v.Prologue._take.getClass().getName() == orig(v.Prologue._take.getClass().getName())
+v.Prologue._take._store == orig(v.Prologue._take._store)
+v.Prologue._dequote == orig(v.Prologue._dequote)
+v.Prologue._dequote.getClass().getName() == orig(v.Prologue._dequote.getClass().getName())
+v.Prologue._dequote._store == orig(v.Prologue._dequote._store)
+v.Prologue._dequoteenv == orig(v.Prologue._dequoteenv)
+v.Prologue._dequoteenv.getClass().getName() == orig(v.Prologue._dequoteenv.getClass().getName())
+v.Prologue._dequoteenv._store == orig(v.Prologue._dequoteenv._store)
+v.Prologue._add == orig(v.Prologue._add)
+v.Prologue._add.getClass().getName() == orig(v.Prologue._add.getClass().getName())
+v.Prologue._add._store == orig(v.Prologue._add._store)
+v.Prologue._sub == orig(v.Prologue._sub)
+v.Prologue._sub.getClass().getName() == orig(v.Prologue._sub.getClass().getName())
+v.Prologue._sub._store == orig(v.Prologue._sub._store)
+v.Prologue._mul == orig(v.Prologue._mul)
+v.Prologue._mul.getClass().getName() == orig(v.Prologue._mul.getClass().getName())
+v.Prologue._mul._store == orig(v.Prologue._mul._store)
+v.Prologue._div == orig(v.Prologue._div)
+v.Prologue._div.getClass().getName() == orig(v.Prologue._div.getClass().getName())
+v.Prologue._div._store == orig(v.Prologue._div._store)
+v.Prologue._mod == orig(v.Prologue._mod)
+v.Prologue._mod.getClass().getName() == orig(v.Prologue._mod.getClass().getName())
+v.Prologue._mod._store == orig(v.Prologue._mod._store)
+v.Prologue._gt == orig(v.Prologue._gt)
+v.Prologue._gt.getClass().getName() == orig(v.Prologue._gt.getClass().getName())
+v.Prologue._gt._store == orig(v.Prologue._gt._store)
+v.Prologue._lt == orig(v.Prologue._lt)
+v.Prologue._lt.getClass().getName() == orig(v.Prologue._lt.getClass().getName())
+v.Prologue._lt._store == orig(v.Prologue._lt._store)
+v.Prologue._lteq == orig(v.Prologue._lteq)
+v.Prologue._lteq.getClass().getName() == orig(v.Prologue._lteq.getClass().getName())
+v.Prologue._lteq._store == orig(v.Prologue._lteq._store)
+v.Prologue._gteq == orig(v.Prologue._gteq)
+v.Prologue._gteq.getClass().getName() == orig(v.Prologue._gteq.getClass().getName())
+v.Prologue._gteq._store == orig(v.Prologue._gteq._store)
+v.Prologue._eq == orig(v.Prologue._eq)
+v.Prologue._eq.getClass().getName() == orig(v.Prologue._eq.getClass().getName())
+v.Prologue._eq._store == orig(v.Prologue._eq._store)
+v.Prologue._neq == orig(v.Prologue._neq)
+v.Prologue._neq.getClass().getName() == orig(v.Prologue._neq.getClass().getName())
+v.Prologue._neq._store == orig(v.Prologue._neq._store)
+v.Prologue._and == orig(v.Prologue._and)
+v.Prologue._and.getClass().getName() == orig(v.Prologue._and.getClass().getName())
+v.Prologue._and._store == orig(v.Prologue._and._store)
+v.Prologue._or == orig(v.Prologue._or)
+v.Prologue._or.getClass().getName() == orig(v.Prologue._or.getClass().getName())
+v.Prologue._or._store == orig(v.Prologue._or._store)
+v.Prologue._not == orig(v.Prologue._not)
+v.Prologue._not.getClass().getName() == orig(v.Prologue._not.getClass().getName())
+v.Prologue._not._store == orig(v.Prologue._not._store)
+v.Prologue._isbool == orig(v.Prologue._isbool)
+v.Prologue._isbool.getClass().getName() == orig(v.Prologue._isbool.getClass().getName())
+v.Prologue._isbool._store == orig(v.Prologue._isbool._store)
+v.Prologue._isinteger == orig(v.Prologue._isinteger)
+v.Prologue._isinteger.getClass().getName() == orig(v.Prologue._isinteger.getClass().getName())
+v.Prologue._isinteger._store == orig(v.Prologue._isinteger._store)
+v.Prologue._isdouble == orig(v.Prologue._isdouble)
+v.Prologue._isdouble.getClass().getName() == orig(v.Prologue._isdouble.getClass().getName())
+v.Prologue._isdouble._store == orig(v.Prologue._isdouble._store)
+v.Prologue._issym == orig(v.Prologue._issym)
+v.Prologue._issym.getClass().getName() == orig(v.Prologue._issym.getClass().getName())
+v.Prologue._issym._store == orig(v.Prologue._issym._store)
+v.Prologue._islist == orig(v.Prologue._islist)
+v.Prologue._islist.getClass().getName() == orig(v.Prologue._islist.getClass().getName())
+v.Prologue._islist._store == orig(v.Prologue._islist._store)
+v.Prologue._isstr == orig(v.Prologue._isstr)
+v.Prologue._isstr.getClass().getName() == orig(v.Prologue._isstr.getClass().getName())
+v.Prologue._isstr._store == orig(v.Prologue._isstr._store)
+v.Prologue._isnum == orig(v.Prologue._isnum)
+v.Prologue._isnum.getClass().getName() == orig(v.Prologue._isnum.getClass().getName())
+v.Prologue._isnum._store == orig(v.Prologue._isnum._store)
+v.Prologue._ischar == orig(v.Prologue._ischar)
+v.Prologue._ischar.getClass().getName() == orig(v.Prologue._ischar.getClass().getName())
+v.Prologue._ischar._store == orig(v.Prologue._ischar._store)
+v.Prologue._tostring == orig(v.Prologue._tostring)
+v.Prologue._tostring.getClass().getName() == orig(v.Prologue._tostring.getClass().getName())
+v.Prologue._tostring._store == orig(v.Prologue._tostring._store)
+v.Prologue._toint == orig(v.Prologue._toint)
+v.Prologue._toint.getClass().getName() == orig(v.Prologue._toint.getClass().getName())
+v.Prologue._toint._store == orig(v.Prologue._toint._store)
+v.Prologue._todecimal == orig(v.Prologue._todecimal)
+v.Prologue._todecimal.getClass().getName() == orig(v.Prologue._todecimal.getClass().getName())
+v.Prologue._todecimal._store == orig(v.Prologue._todecimal._store)
+v.Prologue._use == orig(v.Prologue._use)
+v.Prologue._use.getClass().getName() == orig(v.Prologue._use.getClass().getName())
+v.Prologue._use._store == orig(v.Prologue._use._store)
+v.Prologue._useenv == orig(v.Prologue._useenv)
+v.Prologue._useenv.getClass().getName() == orig(v.Prologue._useenv.getClass().getName())
+v.Prologue._useenv._store == orig(v.Prologue._useenv._store)
+v.Prologue._eval == orig(v.Prologue._eval)
+v.Prologue._eval.getClass().getName() == orig(v.Prologue._eval.getClass().getName())
+v.Prologue._eval._store == orig(v.Prologue._eval._store)
+v.Prologue._evalenv == orig(v.Prologue._evalenv)
+v.Prologue._evalenv.getClass().getName() == orig(v.Prologue._evalenv.getClass().getName())
+v.Prologue._evalenv._store == orig(v.Prologue._evalenv._store)
+v.Prologue._help == orig(v.Prologue._help)
+v.Prologue._help.getClass().getName() == orig(v.Prologue._help.getClass().getName())
+v.Prologue._help._store == orig(v.Prologue._help._store)
+v.Prologue._env == orig(v.Prologue._env)
+v.Prologue._env.getClass().getName() == orig(v.Prologue._env.getClass().getName())
+v.Prologue._env._store == orig(v.Prologue._env._store)
+v.Prologue._time == orig(v.Prologue._time)
+v.Prologue._time.getClass().getName() == orig(v.Prologue._time.getClass().getName())
+v.Prologue._time._store == orig(v.Prologue._time._store)
+arg0.toString == orig(arg0.toString)
+arg0.toString == "std"
+return has only one value
+return.toString == "std.v"
+===========================================================================
+v.QuoteIterator:::OBJECT
+this._qs._terms[].getClass().getName() elements == v.Term.class
+this._qs._terms[].getClass().getName() one of { [], [v.Term, v.Term] }
+this._qs._terms.getClass().getName() == java.util.ArrayList.class
+this._index one of { 0, 1, 2 }
+size(this._qs._terms[]) one of { 0, 2 }
+===========================================================================
+v.QuoteIterator.QuoteIterator(v.QuoteStream):::ENTER
+arg0._terms[].getClass().getName() elements == v.Term.class
+arg0._terms[].getClass().getName() one of { [], [v.Term, v.Term] }
+arg0._terms.getClass().getName() == java.util.ArrayList.class
+size(arg0._terms[]) one of { 0, 2 }
+===========================================================================
+v.QuoteIterator.QuoteIterator(v.QuoteStream):::EXIT
+this._qs == orig(arg0)
+this._qs._terms == arg0._terms
+this._qs._terms.getClass().getName() == arg0._terms.getClass().getName()
+arg0._terms == orig(arg0._terms)
+arg0._terms[] == orig(arg0._terms[])
+arg0._terms.getClass().getName() == orig(arg0._terms.getClass().getName())
+this._index == 0
+arg0._terms[].getClass().getName() elements == v.Term.class
+arg0._terms[].getClass().getName() one of { [], [v.Term, v.Term] }
+arg0._terms.getClass().getName() == java.util.ArrayList.class
+size(arg0._terms[]) one of { 0, 2 }
+===========================================================================
+v.QuoteIterator.hasNext():::ENTER
+this has only one value
+this._qs has only one value
+this._qs._terms has only one value
+this._qs._terms[] contains no nulls and has only one value, of length 2
+this._qs._terms[].getClass().getName() == [v.Term, v.Term]
+this._index one of { 0, 1 }
+size(this._qs._terms[]) == 2
+===========================================================================
+v.QuoteIterator.hasNext():::EXIT14
+===========================================================================
+v.QuoteIterator.hasNext():::EXIT14;condition="return == true"
+===========================================================================
+v.QuoteIterator.hasNext():::EXIT
+this._qs == orig(this._qs)
+this._qs._terms == orig(this._qs._terms)
+this._qs._terms[] == orig(this._qs._terms[])
+this._qs._terms.getClass().getName() == orig(this._qs._terms.getClass().getName())
+this._index == orig(this._index)
+this._qs has only one value
+this._qs._terms has only one value
+this._qs._terms[] contains no nulls and has only one value, of length 2
+this._qs._terms[].getClass().getName() == [v.Term, v.Term]
+this._index one of { 0, 1 }
+return == true
+size(this._qs._terms[]) == 2
+===========================================================================
+v.QuoteIterator.hasNext():::EXIT;condition="return == true"
+===========================================================================
+v.QuoteIterator.next():::ENTER
+this has only one value
+this._qs has only one value
+this._qs._terms has only one value
+this._qs._terms[] contains no nulls and has only one value, of length 2
+this._qs._terms[].getClass().getName() == [v.Term, v.Term]
+this._index one of { 0, 1 }
+size(this._qs._terms[]) == 2
+===========================================================================
+v.QuoteIterator.next():::EXIT
+this._qs == orig(this._qs)
+this._qs._terms == orig(this._qs._terms)
+this._qs._terms[] == orig(this._qs._terms[])
+this._qs._terms.getClass().getName() == orig(this._qs._terms.getClass().getName())
+this._qs has only one value
+this._qs._terms has only one value
+this._qs._terms[] contains no nulls and has only one value, of length 2
+this._qs._terms[].getClass().getName() == [v.Term, v.Term]
+this._index one of { 1, 2 }
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+return.val.getClass().getName() == java.lang.String.class
+size(this._qs._terms[]) == 2
+size(v.Type.$VALUES[]) == 11
+===========================================================================
+v.QuoteStream:::OBJECT
+this._terms != null
+this._terms[] elements != null
+this._terms[].getClass().getName() elements == v.Term.class
+this._terms.getClass().getName() == java.util.ArrayList.class
+size(this._terms[]) one of { 0, 1, 2 }
+===========================================================================
+v.QuoteStream.QuoteStream():::EXIT
+this._terms[] == []
+this._terms[].getClass().getName() == []
+===========================================================================
+v.QuoteStream.add(v.Term):::ENTER
+this has only one value
+this._terms has only one value
+this._terms[] elements has only one value
+this._terms[].getClass().getName() one of { [], [v.Term] }
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+arg0.val.getClass().getName() == java.lang.String.class
+size(this._terms[]) one of { 0, 1 }
+size(v.Type.$VALUES[]) == 11
+===========================================================================
+v.QuoteStream.add(v.Term):::EXIT
+this._terms == orig(this._terms)
+this._terms.getClass().getName() == orig(this._terms.getClass().getName())
+arg0.type == orig(arg0.type)
+v.Type.TSymbol == orig(v.Type.TSymbol)
+v.Type.TQuote == orig(v.Type.TQuote)
+v.Type.TFrame == orig(v.Type.TFrame)
+v.Type.TString == orig(v.Type.TString)
+v.Type.TInt == orig(v.Type.TInt)
+v.Type.TDouble == orig(v.Type.TDouble)
+v.Type.TChar == orig(v.Type.TChar)
+v.Type.TBool == orig(v.Type.TBool)
+v.Type.TObject == orig(v.Type.TObject)
+v.Type.TOpen == orig(v.Type.TOpen)
+v.Type.TClose == orig(v.Type.TClose)
+v.Type.$VALUES == orig(v.Type.$VALUES)
+v.Type.$VALUES.getClass().getName() == orig(v.Type.$VALUES.getClass().getName())
+v.Type.$VALUES[] == orig(v.Type.$VALUES[])
+arg0.val == orig(arg0.val)
+arg0.val.getClass().getName() == orig(arg0.val.getClass().getName())
+size(this._terms[])-1 == orig(size(this._terms[]))
+this._terms has only one value
+this._terms[].getClass().getName() one of { [v.Term], [v.Term, v.Term] }
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+arg0.val.getClass().getName() == java.lang.String.class
+size(this._terms[]) one of { 1, 2 }
+size(v.Type.$VALUES[]) == 11
+===========================================================================
+v.QuoteStream.get(int):::ENTER
+this has only one value
+this._terms has only one value
+this._terms[] contains no nulls and has only one value, of length 2
+this._terms[].getClass().getName() == [v.Term, v.Term]
+arg0 one of { 0, 1 }
+size(this._terms[]) == 2
+===========================================================================
+v.QuoteStream.get(int):::EXIT
+this._terms == orig(this._terms)
+this._terms[] == orig(this._terms[])
+this._terms.getClass().getName() == orig(this._terms.getClass().getName())
+this._terms has only one value
+this._terms[] contains no nulls and has only one value, of length 2
+this._terms[].getClass().getName() == [v.Term, v.Term]
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+return.val.getClass().getName() == java.lang.String.class
+size(this._terms[]) == 2
+size(v.Type.$VALUES[]) == 11
+===========================================================================
+v.QuoteStream.iterator():::ENTER
+this has only one value
+this._terms has only one value
+this._terms[] contains no nulls and has only one value, of length 2
+this._terms[].getClass().getName() == [v.Term, v.Term]
+size(this._terms[]) == 2
+===========================================================================
+v.QuoteStream.iterator():::EXIT
+this._terms == orig(this._terms)
+this._terms[] == orig(this._terms[])
+this._terms.getClass().getName() == orig(this._terms.getClass().getName())
+this._terms has only one value
+this._terms[] contains no nulls and has only one value, of length 2
+this._terms[].getClass().getName() == [v.Term, v.Term]
+return has only one value
+return.getClass().getName() == v.QuoteIterator.class
+size(this._terms[]) == 2
+===========================================================================
+v.QuoteStream.size():::ENTER
+this has only one value
+this._terms has only one value
+this._terms[] contains no nulls and has only one value, of length 2
+this._terms[].getClass().getName() == [v.Term, v.Term]
+size(this._terms[]) == 2
+===========================================================================
+v.QuoteStream.size():::EXIT
+this._terms == orig(this._terms)
+this._terms[] == orig(this._terms[])
+this._terms.getClass().getName() == orig(this._terms.getClass().getName())
+this._terms has only one value
+this._terms[] contains no nulls and has only one value, of length 2
+this._terms[].getClass().getName() == [v.Term, v.Term]
+return == 2
+size(this._terms[]) == 2
+===========================================================================
+v.Sym:::CLASS
+v.Sym.__symbols has only one value
+v.Sym.__symbols != null
+===========================================================================
+v.Sym.lookup(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+v.Sym.lookup(java.lang.String):::EXIT
+v.Sym.__symbols == orig(v.Sym.__symbols)
+arg0.toString == orig(arg0.toString)
+return != null
+===========================================================================
+v.Term:::OBJECT
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+this.val.getClass().getName() == java.lang.String.class
+size(v.Type.$VALUES[]) == 11
+v.Type.$VALUES.getClass().getName() != this.val.getClass().getName()
+===========================================================================
+v.Term.Term(v.Type, java.lang.Object):::ENTER
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+arg1.getClass().getName() == java.lang.String.class
+size(v.Type.$VALUES[]) == 11
+===========================================================================
+v.Term.Term(v.Type, java.lang.Object):::EXIT
+this.type == orig(arg0)
+v.Type.TSymbol == orig(v.Type.TSymbol)
+v.Type.TQuote == orig(v.Type.TQuote)
+v.Type.TFrame == orig(v.Type.TFrame)
+v.Type.TString == orig(v.Type.TString)
+v.Type.TInt == orig(v.Type.TInt)
+v.Type.TDouble == orig(v.Type.TDouble)
+v.Type.TChar == orig(v.Type.TChar)
+v.Type.TBool == orig(v.Type.TBool)
+v.Type.TObject == orig(v.Type.TObject)
+v.Type.TOpen == orig(v.Type.TOpen)
+v.Type.TClose == orig(v.Type.TClose)
+v.Type.$VALUES == orig(v.Type.$VALUES)
+v.Type.$VALUES.getClass().getName() == orig(v.Type.$VALUES.getClass().getName())
+v.Type.$VALUES[] == orig(v.Type.$VALUES[])
+this.val == orig(arg1)
+this.val.getClass().getName() == orig(arg1.getClass().getName())
+===========================================================================
+v.Term.value():::ENTER
+===========================================================================
+v.Term.value():::EXIT17
+===========================================================================
+v.Term.value():::EXIT
+this.type == orig(this.type)
+v.Type.TSymbol == orig(v.Type.TSymbol)
+v.Type.TQuote == orig(v.Type.TQuote)
+v.Type.TFrame == orig(v.Type.TFrame)
+v.Type.TString == orig(v.Type.TString)
+v.Type.TInt == orig(v.Type.TInt)
+v.Type.TDouble == orig(v.Type.TDouble)
+v.Type.TChar == orig(v.Type.TChar)
+v.Type.TBool == orig(v.Type.TBool)
+v.Type.TObject == orig(v.Type.TObject)
+v.Type.TOpen == orig(v.Type.TOpen)
+v.Type.TClose == orig(v.Type.TClose)
+v.Type.$VALUES == orig(v.Type.$VALUES)
+v.Type.$VALUES.getClass().getName() == orig(v.Type.$VALUES.getClass().getName())
+v.Type.$VALUES[] == orig(v.Type.$VALUES[])
+this.val == return
+this.val == orig(this.val)
+this.val.getClass().getName() == orig(this.val.getClass().getName())
+return.toString one of { "std", "use" }
+===========================================================================
+v.Token:::OBJECT
+this.getClass().getName() == v.Term.class
+===========================================================================
+v.Token.Token():::EXIT
+===========================================================================
+v.Token.svalue():::ENTER
+this has only one value
+===========================================================================
+v.Token.svalue():::EXIT
+return has only one value
+return.toString == "std"
+===========================================================================
+v.Type:::OBJECT
+===========================================================================
+v.Type.Type(java.lang.String, int):::ENTER
+===========================================================================
+v.Type.Type(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+===========================================================================
+v.Util.compile(v.Quote):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == v.CmdQuote.class
+===========================================================================
+v.Util.compile(v.Quote):::EXIT
+return.getClass().getName() == orig(arg0.getClass().getName())
+return has only one value
+return.getClass().getName() == v.CmdQuote.class
+===========================================================================
+v.Util.getdef(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "'std' use"
+===========================================================================
+v.Util.getdef(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "'std' use"
+return has only one value
+return.getClass().getName() == v.CmdQuote.class
+===========================================================================
+v.Util.getresource(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "std.v"
+===========================================================================
+v.Util.getresource(java.lang.String):::EXIT38
+===========================================================================
+v.Util.getresource(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "std.v"
+return == null
+===========================================================================
+v.VException:::OBJECT
+this has only one value
+this._token has only one value
+this._token.getClass().getName() == v.Term.class
+this._quote == null
+this._err has only one value
+this._err.toString == "err:use std"
+this._info has only one value
+===========================================================================
+v.VException.VException(java.lang.String, v.Token, java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "err:use"
+arg1 has only one value
+arg1.getClass().getName() == v.Term.class
+arg2 has only one value
+arg2.toString == "std"
+===========================================================================
+v.VException.VException(java.lang.String, v.Token, java.lang.String):::EXIT
+this._token == orig(arg1)
+this._token.getClass().getName() == orig(arg1.getClass().getName())
+arg0.toString == orig(arg0.toString)
+arg2.toString == orig(arg2.toString)
+arg0.toString == "err:use"
+arg2.toString == "std"
+===========================================================================
+v.VException.addLine(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "use"
+===========================================================================
+v.VException.addLine(java.lang.String):::EXIT
+this._token == orig(this._token)
+this._token.getClass().getName() == orig(this._token.getClass().getName())
+this._quote == orig(this._quote)
+this._err == orig(this._err)
+this._err.toString == orig(this._err.toString)
+this._info == orig(this._info)
+arg0.toString == orig(arg0.toString)
+arg0.toString == "use"
+===========================================================================
+v.VFrame:::OBJECT
+this._stack == this._parent._stack
+this._stack.now == this._parent._stack.now
+this._stack.now.link == this._parent._stack.first
+this._stack.first == this._parent._stack.first
+this._stack has only one value
+this._stack != null
+this._stack.now != null
+this._stack.now.data.getClass().getName() == v.Term.class
+this._stack.first has only one value
+this._stack.first != null
+this._stack.first.data == null
+this._stack.first.link == null
+this._dict != null
+this._parent._stack has only one value
+this._parent._stack.now has only one value
+this._parent._stack.first has only one value
+this._parent._dict has only one value
+this._parent._parent == null
+v.VFrame._idcount one of { 1, 2 }
+this._parent._id == 1
+this._id one of { 1, 2 }
+===========================================================================
+v.VFrame.VFrame():::EXIT
+this._stack.now == this._stack.first
+this._stack.now has only one value
+this._stack.now.data == null
+this._stack.now.link == null
+this._dict has only one value
+this._parent == null
+v.VFrame._idcount == 1
+this._id == 1
+===========================================================================
+v.VFrame.VFrame(v.VFrame):::ENTER
+arg0 has only one value
+arg0._stack has only one value
+arg0._stack.now has only one value
+arg0._stack.first has only one value
+arg0._dict has only one value
+arg0._parent == null
+v.VFrame._idcount == 1
+arg0._id == 1
+===========================================================================
+v.VFrame.VFrame(v.VFrame):::EXIT
+this._stack == arg0._stack
+this._stack == orig(arg0._stack)
+this._stack.now == arg0._stack.now
+this._stack.now == orig(arg0._stack.now)
+this._stack.now.link == this._stack.first
+this._stack.first == arg0._stack.first
+this._stack.first == orig(arg0._stack.first)
+this._parent == orig(arg0)
+this._parent._dict == arg0._dict
+this._parent._id == arg0._id
+arg0._dict == orig(arg0._dict)
+arg0._parent == orig(arg0._parent)
+arg0._id == orig(arg0._id)
+this._stack.now has only one value
+this._stack.now.data has only one value
+this._dict has only one value
+this._parent has only one value
+v.VFrame._idcount == 2
+this._id == 2
+arg0._dict has only one value
+arg0._parent == null
+arg0._id == 1
+===========================================================================
+v.VFrame.child():::ENTER
+this._stack.now.link == this._stack.first
+this has only one value
+this._stack.now has only one value
+this._stack.now.data has only one value
+this._dict has only one value
+this._parent == null
+v.VFrame._idcount == 1
+this._id == 1
+===========================================================================
+v.VFrame.child():::EXIT
+this._stack == return._stack
+this._stack == return._parent._stack
+this._stack == orig(this._stack)
+this._stack.now == return._stack.now
+this._stack.now == orig(this._stack.now)
+this._stack.now.data == orig(this._stack.now.data)
+this._stack.now.data.getClass().getName() == orig(this._stack.now.data.getClass().getName())
+this._stack.now.link == this._stack.first
+this._stack.first == return._stack.first
+this._stack.first == orig(this._stack.now.link)
+this._stack.first == orig(this._stack.first)
+this._stack.first.data == orig(this._stack.first.data)
+this._stack.first.link == orig(this._stack.first.link)
+this._dict == return._parent._dict
+this._dict == orig(this._dict)
+this._parent == orig(this._parent)
+return._parent == orig(this)
+this._stack.now has only one value
+this._stack.now.data has only one value
+this._dict has only one value
+this._parent == null
+v.VFrame._idcount == 2
+this._id == 1
+return has only one value
+return._dict has only one value
+return._parent has only one value
+return._parent._parent == null
+return._id == 2
+===========================================================================
+v.VFrame.def(java.lang.String, v.Quote):::ENTER
+this._stack.now == this._stack.first
+this has only one value
+this._stack.now has only one value
+this._stack.now.data == null
+this._stack.now.link == null
+this._dict has only one value
+this._parent == null
+v.VFrame._idcount == 1
+this._id == 1
+arg0 != null
+arg1 != null
+===========================================================================
+v.VFrame.def(java.lang.String, v.Quote):::EXIT
+this._stack == orig(this._stack)
+this._stack.now == this._stack.first
+this._stack.now == orig(this._stack.now)
+this._stack.now == orig(this._stack.first)
+this._stack.now.data == orig(this._stack.now.data)
+this._stack.now.link == orig(this._stack.now.link)
+this._stack.first.data == orig(this._stack.first.data)
+this._stack.first.link == orig(this._stack.first.link)
+this._dict == orig(this._dict)
+this._parent == orig(this._parent)
+v.VFrame._idcount == orig(v.VFrame._idcount)
+this._id == orig(this._id)
+arg0.toString == orig(arg0.toString)
+this._stack.now has only one value
+this._stack.now.data == null
+this._stack.now.link == null
+this._dict has only one value
+this._parent == null
+v.VFrame._idcount == 1
+this._id == 1
+===========================================================================
+v.VFrame.lookup(java.lang.String):::ENTER
+this._stack.now.link == this._stack.first
+this has only one value
+this._stack.now has only one value
+this._stack.now.data has only one value
+this._dict has only one value
+this._parent == null
+v.VFrame._idcount == 1
+this._id == 1
+arg0 has only one value
+arg0.toString == "use"
+===========================================================================
+v.VFrame.lookup(java.lang.String):::EXIT35
+===========================================================================
+v.VFrame.lookup(java.lang.String):::EXIT
+this._stack == orig(this._stack)
+this._stack.now == orig(this._stack.now)
+this._stack.now.data == orig(this._stack.now.data)
+this._stack.now.data.getClass().getName() == orig(this._stack.now.data.getClass().getName())
+this._stack.now.link == this._stack.first
+this._stack.first == orig(this._stack.now.link)
+this._stack.first == orig(this._stack.first)
+this._stack.first.data == orig(this._stack.first.data)
+this._stack.first.link == orig(this._stack.first.link)
+this._dict == orig(this._dict)
+this._parent == orig(this._parent)
+v.VFrame._idcount == orig(v.VFrame._idcount)
+arg0.toString == orig(arg0.toString)
+this._stack.now has only one value
+this._stack.now.data has only one value
+this._dict has only one value
+this._parent == null
+v.VFrame._idcount == 1
+this._id == 1
+arg0.toString == "use"
+return has only one value
+return.getClass().getName() == v.Prologue$66.class
+===========================================================================
+v.VFrame.stack():::ENTER
+===========================================================================
+v.VFrame.stack():::EXIT
+this._stack == return
+this._stack.now == return.now
+this._stack.now.data == return.now.data
+this._stack.now.data.getClass().getName() == return.now.data.getClass().getName()
+this._stack.now.link == return.now.link
+this._stack.first == return.first
+this._stack.first.data == orig(this._stack.first.data)
+this._stack.first.link == orig(this._stack.first.link)
+this._dict == orig(this._dict)
+this._parent == orig(this._parent)
+this._parent._stack == return
+this._parent._stack == orig(this._parent._stack)
+this._parent._stack.now == return.now
+this._parent._stack.now == orig(this._parent._stack.now)
+this._parent._stack.first == return.now.link
+this._parent._stack.first == return.first
+this._parent._stack.first == orig(this._parent._stack.first)
+this._parent._dict == orig(this._parent._dict)
+this._parent._parent == orig(this._parent._parent)
+v.VFrame._idcount == orig(v.VFrame._idcount)
+this._parent._id == orig(this._parent._id)
+this._id == orig(this._id)
+return == orig(this._stack)
+return.now == orig(this._stack.now)
+return.now.data == orig(this._stack.now.data)
+return.now.data.getClass().getName() == orig(this._stack.now.data.getClass().getName())
+return.now.link == orig(this._stack.now.link)
+return.first == orig(this._stack.first)
+return has only one value
+return.now.data.getClass().getName() == v.Term.class
+return.first has only one value
+return.first.data == null
+return.first.link == null
+===========================================================================
+v.VStack:::OBJECT
+this.now.data.getClass().getName() == this.now.link.data.getClass().getName()
+this has only one value
+this.now != null
+this.now.data.getClass().getName() == v.Term.class
+this.now.link.data.getClass().getName() == v.Term.class
+this.first has only one value
+this.first != null
+this.first.data == null
+this.first.link == null
+===========================================================================
+v.VStack.VStack():::EXIT
+this.now == this.first
+this.now has only one value
+this.now.data == null
+this.now.link == null
+===========================================================================
+v.VStack.empty():::ENTER
+===========================================================================
+v.VStack.empty():::EXIT
+this.now == orig(this.now)
+this.now.data == orig(this.now.data)
+this.now.data.getClass().getName() == orig(this.now.data.getClass().getName())
+this.now.link == orig(this.now.link)
+this.now.link.data == orig(this.now.link.data)
+this.now.link.data.getClass().getName() == orig(this.now.link.data.getClass().getName())
+this.now.link.link == orig(this.now.link.link)
+this.first == orig(this.first)
+this.first.data == orig(this.first.data)
+this.first.link == orig(this.first.link)
+return == false
+===========================================================================
+v.VStack.empty():::EXIT;condition="not(return == true)"
+===========================================================================
+v.VStack.peek():::ENTER
+===========================================================================
+v.VStack.peek():::EXIT
+this.now == orig(this.now)
+this.now.data == return
+this.now.data == orig(this.now.data)
+this.now.data.getClass().getName() == orig(this.now.data.getClass().getName())
+this.now.link == orig(this.now.link)
+this.now.link.data == orig(this.now.link.data)
+this.now.link.data.getClass().getName() == orig(this.now.link.data.getClass().getName())
+this.now.link.link == orig(this.now.link.link)
+this.first == orig(this.first)
+this.first.data == orig(this.first.data)
+this.first.link == orig(this.first.link)
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+return.val.getClass().getName() == java.lang.String.class
+size(v.Type.$VALUES[]) == 11
+===========================================================================
+v.VStack.pop():::ENTER
+===========================================================================
+v.VStack.pop():::EXIT
+this.now == orig(this.now.link)
+this.now.data.getClass().getName() == orig(this.now.data.getClass().getName())
+this.now.data.getClass().getName() == orig(this.now.link.data.getClass().getName())
+this.now.link == orig(this.now.link.link)
+this.first == orig(this.first)
+this.first.data == orig(this.first.data)
+this.first.link == orig(this.first.link)
+this.now.link.data == null
+this.now.link.link == null
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+return.val.getClass().getName() == java.lang.String.class
+size(v.Type.$VALUES[]) == 11
+===========================================================================
+v.VStack.push(v.Term):::ENTER
+this.now.link.data == null
+this.now.link.link == null
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+arg0.val.getClass().getName() == java.lang.String.class
+size(v.Type.$VALUES[]) == 11
+===========================================================================
+v.VStack.push(v.Term):::EXIT
+this.now.data == return
+this.now.link == orig(this.now)
+this.now.link.data.getClass().getName() == orig(this.now.data.getClass().getName())
+this.now.link.link == orig(this.now.link)
+this.first == orig(this.first)
+this.first.data == orig(this.first.data)
+this.first.link == orig(this.first.link)
+arg0.type == return.type
+arg0.type == orig(arg0.type)
+v.Type.TSymbol == orig(v.Type.TSymbol)
+v.Type.TQuote == orig(v.Type.TQuote)
+v.Type.TFrame == orig(v.Type.TFrame)
+v.Type.TString == orig(v.Type.TString)
+v.Type.TInt == orig(v.Type.TInt)
+v.Type.TDouble == orig(v.Type.TDouble)
+v.Type.TChar == orig(v.Type.TChar)
+v.Type.TBool == orig(v.Type.TBool)
+v.Type.TObject == orig(v.Type.TObject)
+v.Type.TOpen == orig(v.Type.TOpen)
+v.Type.TClose == orig(v.Type.TClose)
+v.Type.$VALUES == orig(v.Type.$VALUES)
+v.Type.$VALUES.getClass().getName() == orig(v.Type.$VALUES.getClass().getName())
+v.Type.$VALUES[] == orig(v.Type.$VALUES[])
+arg0.val == return.val
+arg0.val == orig(arg0.val)
+arg0.val.getClass().getName() == return.val.getClass().getName()
+arg0.val.getClass().getName() == orig(arg0.val.getClass().getName())
+return == orig(arg0)
+v.Type.TSymbol has only one value
+v.Type.TQuote has only one value
+v.Type.TFrame has only one value
+v.Type.TString has only one value
+v.Type.TInt has only one value
+v.Type.TDouble has only one value
+v.Type.TChar has only one value
+v.Type.TBool has only one value
+v.Type.TObject has only one value
+v.Type.TOpen has only one value
+v.Type.TClose has only one value
+v.Type.$VALUES has only one value
+v.Type.$VALUES.getClass().getName() == v.Type[].class
+v.Type.$VALUES[] contains no nulls and has only one value, of length 11
+v.Type.$VALUES[].getClass().getName() == [v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type, v.Type]
+v.Type.$VALUES[].getClass().getName() elements == v.Type.class
+arg0.val.getClass().getName() == java.lang.String.class
+size(v.Type.$VALUES[]) == 11
+===========================================================================
+v.Vx:::OBJECT
+this has only one value
+this.getClass().getName() == v.VException.class
+===========================================================================
+v.Vx.Vx():::EXIT
+Exiting Daikon.

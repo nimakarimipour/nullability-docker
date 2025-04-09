@@ -1,0 +1,9 @@
+METHOD	org.knowm.xchart.internal.Utils	getNumberListFromDoubleArray(double[])	null	null
+METHOD	org.knowm.xchart.style.AxesChartStyler	getYAxisDecimalPattern()	null	null
+METHOD	org.knowm.xchart.style.AxesChartStyler	getDecimalPattern()	null	null
+METHOD	org.knowm.xchart.style.AxesChartStyler	getYAxisMax()	null	null
+METHOD	org.knowm.xchart.style.AxesChartStyler	getXAxisMin()	null	null
+METHOD	org.knowm.xchart.internal.Series_AxesChart	getExtraValues()	null	null
+METHOD	org.knowm.xchart.style.AxesChartStyler	getXAxisMax()	null	null
+METHOD	org.knowm.xchart.style.AxesChartStyler	getYAxisMin()	null	null
+METHOD	org.knowm.xchart.style.AxesChartStyler	getXAxisDecimalPattern()	null	null

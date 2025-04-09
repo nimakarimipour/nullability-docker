@@ -1,0 +1,1425 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+org.patterneria.Main.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+org.patterneria.Main.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+org.patterneria.bridge.BWFilm:::OBJECT
+===========================================================================
+org.patterneria.bridge.BWFilm.BWFilm():::EXIT
+===========================================================================
+org.patterneria.bridge.BWFilm.recordLight():::ENTER
+===========================================================================
+org.patterneria.bridge.BWFilm.recordLight():::EXIT
+===========================================================================
+org.patterneria.bridge.BridgeSample:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.bridge.BridgeSample.BridgeSample():::EXIT
+===========================================================================
+org.patterneria.bridge.BridgeSample.run():::ENTER
+===========================================================================
+org.patterneria.bridge.BridgeSample.run():::EXIT
+===========================================================================
+org.patterneria.bridge.Camera:::OBJECT
+this.getClass().getName() != this.lightRecorder.getClass().getName()
+===========================================================================
+org.patterneria.bridge.Camera.Camera():::EXIT
+this.lightRecorder == null
+===========================================================================
+org.patterneria.bridge.Camera.captureImage():::ENTER
+===========================================================================
+org.patterneria.bridge.Camera.captureImage():::EXIT
+this.lightRecorder == orig(this.lightRecorder)
+this.lightRecorder.getClass().getName() == orig(this.lightRecorder.getClass().getName())
+===========================================================================
+org.patterneria.bridge.Camera.recordLight():::ENTER
+===========================================================================
+org.patterneria.bridge.Camera.recordLight():::EXIT
+this.lightRecorder == orig(this.lightRecorder)
+this.lightRecorder.getClass().getName() == orig(this.lightRecorder.getClass().getName())
+===========================================================================
+org.patterneria.bridge.Camera.setLightRecorder(org.patterneria.bridge.LightSensitiveMedium):::ENTER
+this.lightRecorder.getClass().getName() == org.patterneria.bridge.BWFilm.class
+===========================================================================
+org.patterneria.bridge.Camera.setLightRecorder(org.patterneria.bridge.LightSensitiveMedium):::EXIT
+this.lightRecorder == orig(arg0)
+this.lightRecorder.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+org.patterneria.bridge.ColorFilm:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.bridge.ColorFilm.ColorFilm():::EXIT
+===========================================================================
+org.patterneria.bridge.ColorFilm.recordLight():::ENTER
+===========================================================================
+org.patterneria.bridge.ColorFilm.recordLight():::EXIT
+===========================================================================
+org.patterneria.bridge.DigitalImageSensor:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.bridge.DigitalImageSensor.DigitalImageSensor():::EXIT
+===========================================================================
+org.patterneria.bridge.DigitalImageSensor.recordLight():::ENTER
+===========================================================================
+org.patterneria.bridge.DigitalImageSensor.recordLight():::EXIT
+===========================================================================
+org.patterneria.bridge.LargeFormatCamera:::OBJECT
+this has only one value
+this.lightRecorder == null
+===========================================================================
+org.patterneria.bridge.LargeFormatCamera.LargeFormatCamera():::EXIT
+===========================================================================
+org.patterneria.bridge.MediumFormatCamera:::OBJECT
+this has only one value
+this.lightRecorder == null
+===========================================================================
+org.patterneria.bridge.MediumFormatCamera.MediumFormatCamera():::EXIT
+===========================================================================
+org.patterneria.bridge.The35mmCamera:::OBJECT
+this has only one value
+this.lightRecorder == null
+===========================================================================
+org.patterneria.bridge.The35mmCamera.The35mmCamera():::EXIT
+===========================================================================
+org.patterneria.iterator.IteratorSample:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.iterator.IteratorSample.IteratorSample():::EXIT
+===========================================================================
+org.patterneria.iterator.IteratorSample.run():::ENTER
+===========================================================================
+org.patterneria.iterator.IteratorSample.run():::EXIT
+===========================================================================
+org.patterneria.iterator.MetroLine$BackwardIterator:::OBJECT
+this.current == this.current.previousStop.nextStop
+this.current == this.current.nextStop.previousStop
+this.current.previousStop.nextStop == this.current.nextStop.previousStop
+this has only one value
+this.current.station != null
+this.current.station.name != null
+this.current.station.notification.toString == "Mind the gap"
+this.current.previousStop.station != null
+this.current.previousStop.nextStop != null
+this.current.nextStop.station != null
+this.current.nextStop.previousStop != null
+org.patterneria.iterator.MetroLine.this has only one value
+org.patterneria.iterator.MetroLine.this.name has only one value
+org.patterneria.iterator.MetroLine.this.name != null
+org.patterneria.iterator.MetroLine.this.name.toString == "Piccadilly"
+org.patterneria.iterator.MetroLine.this.firstStop has only one value
+org.patterneria.iterator.MetroLine.this.firstStop != null
+org.patterneria.iterator.MetroLine.this.firstStop.station has only one value
+org.patterneria.iterator.MetroLine.this.firstStop.station != null
+org.patterneria.iterator.MetroLine.this.firstStop.previousStop == null
+org.patterneria.iterator.MetroLine.this.firstStop.nextStop has only one value
+org.patterneria.iterator.MetroLine.this.firstStop.nextStop != null
+org.patterneria.iterator.MetroLine.this.lastStop has only one value
+org.patterneria.iterator.MetroLine.this.lastStop != null
+org.patterneria.iterator.MetroLine.this.lastStop.station has only one value
+org.patterneria.iterator.MetroLine.this.lastStop.station != null
+org.patterneria.iterator.MetroLine.this.lastStop.previousStop has only one value
+org.patterneria.iterator.MetroLine.this.lastStop.previousStop != null
+org.patterneria.iterator.MetroLine.this.lastStop.nextStop == null
+===========================================================================
+org.patterneria.iterator.MetroLine$BackwardIterator.BackwardIterator(org.patterneria.iterator.MetroLine):::ENTER
+org.patterneria.iterator.MetroLine.this has only one value
+org.patterneria.iterator.MetroLine.this.name has only one value
+org.patterneria.iterator.MetroLine.this.name.toString == "Piccadilly"
+org.patterneria.iterator.MetroLine.this.firstStop has only one value
+org.patterneria.iterator.MetroLine.this.firstStop.station has only one value
+org.patterneria.iterator.MetroLine.this.firstStop.previousStop == null
+org.patterneria.iterator.MetroLine.this.firstStop.nextStop has only one value
+org.patterneria.iterator.MetroLine.this.lastStop has only one value
+org.patterneria.iterator.MetroLine.this.lastStop.station has only one value
+org.patterneria.iterator.MetroLine.this.lastStop.previousStop has only one value
+org.patterneria.iterator.MetroLine.this.lastStop.nextStop == null
+===========================================================================
+org.patterneria.iterator.MetroLine$BackwardIterator.BackwardIterator(org.patterneria.iterator.MetroLine):::EXIT
+this.current == org.patterneria.iterator.MetroLine.this.lastStop
+this.current == orig(org.patterneria.iterator.MetroLine.this.lastStop)
+this.current.station == org.patterneria.iterator.MetroLine.this.lastStop.station
+this.current.station == orig(org.patterneria.iterator.MetroLine.this.lastStop.station)
+this.current.previousStop == org.patterneria.iterator.MetroLine.this.lastStop.previousStop
+this.current.previousStop == orig(org.patterneria.iterator.MetroLine.this.lastStop.previousStop)
+org.patterneria.iterator.MetroLine.this == orig(org.patterneria.iterator.MetroLine.this)
+org.patterneria.iterator.MetroLine.this.name == orig(org.patterneria.iterator.MetroLine.this.name)
+org.patterneria.iterator.MetroLine.this.name.toString == orig(org.patterneria.iterator.MetroLine.this.name.toString)
+org.patterneria.iterator.MetroLine.this.firstStop == orig(org.patterneria.iterator.MetroLine.this.firstStop)
+org.patterneria.iterator.MetroLine.this.firstStop.station == orig(org.patterneria.iterator.MetroLine.this.firstStop.station)
+org.patterneria.iterator.MetroLine.this.firstStop.previousStop == orig(org.patterneria.iterator.MetroLine.this.firstStop.previousStop)
+org.patterneria.iterator.MetroLine.this.firstStop.nextStop == orig(org.patterneria.iterator.MetroLine.this.firstStop.nextStop)
+org.patterneria.iterator.MetroLine.this.lastStop.nextStop == orig(org.patterneria.iterator.MetroLine.this.lastStop.nextStop)
+this.current has only one value
+this.current.station has only one value
+this.current.station.name has only one value
+this.current.station.name.toString == "Earl's Court"
+this.current.station.notification == null
+this.current.previousStop has only one value
+this.current.previousStop.station has only one value
+this.current.previousStop.previousStop has only one value
+this.current.nextStop == null
+===========================================================================
+org.patterneria.iterator.MetroLine$BackwardIterator.hasNext():::ENTER
+===========================================================================
+org.patterneria.iterator.MetroLine$BackwardIterator.hasNext():::EXIT
+this.current == orig(this.current)
+this.current.station == orig(this.current.station)
+this.current.station.name == orig(this.current.station.name)
+this.current.station.name.toString == orig(this.current.station.name.toString)
+this.current.station.notification == orig(this.current.station.notification)
+this.current.station.notification.toString == orig(this.current.station.notification.toString)
+this.current.previousStop == orig(this.current.previousStop)
+this.current.previousStop.station == orig(this.current.previousStop.station)
+this.current.previousStop.previousStop == orig(this.current.previousStop.previousStop)
+this.current.previousStop.nextStop == orig(this.current.previousStop.nextStop)
+this.current.nextStop == orig(this.current.nextStop)
+this.current.nextStop.station == orig(this.current.nextStop.station)
+this.current.nextStop.previousStop == orig(this.current.nextStop.previousStop)
+this.current.nextStop.nextStop == orig(this.current.nextStop.nextStop)
+org.patterneria.iterator.MetroLine.this == orig(org.patterneria.iterator.MetroLine.this)
+org.patterneria.iterator.MetroLine.this.name == orig(org.patterneria.iterator.MetroLine.this.name)
+org.patterneria.iterator.MetroLine.this.name.toString == orig(org.patterneria.iterator.MetroLine.this.name.toString)
+org.patterneria.iterator.MetroLine.this.firstStop == orig(org.patterneria.iterator.MetroLine.this.firstStop)
+org.patterneria.iterator.MetroLine.this.firstStop.station == orig(org.patterneria.iterator.MetroLine.this.firstStop.station)
+org.patterneria.iterator.MetroLine.this.firstStop.previousStop == orig(org.patterneria.iterator.MetroLine.this.firstStop.previousStop)
+org.patterneria.iterator.MetroLine.this.firstStop.nextStop == orig(org.patterneria.iterator.MetroLine.this.firstStop.nextStop)
+org.patterneria.iterator.MetroLine.this.lastStop == orig(org.patterneria.iterator.MetroLine.this.lastStop)
+org.patterneria.iterator.MetroLine.this.lastStop.station == orig(org.patterneria.iterator.MetroLine.this.lastStop.station)
+org.patterneria.iterator.MetroLine.this.lastStop.previousStop == orig(org.patterneria.iterator.MetroLine.this.lastStop.previousStop)
+org.patterneria.iterator.MetroLine.this.lastStop.nextStop == orig(org.patterneria.iterator.MetroLine.this.lastStop.nextStop)
+(this.current != null)  <==>  (return == true)
+(this.current != null)  ==>  (this.current == this.current.nextStop.previousStop)
+(this.current != null)  ==>  (this.current == this.current.previousStop.nextStop)
+(this.current != null)  ==>  (this.current.nextStop.previousStop != null)
+(this.current != null)  ==>  (this.current.nextStop.station != null)
+(this.current != null)  ==>  (this.current.previousStop.nextStop != null)
+(this.current != null)  ==>  (this.current.previousStop.nextStop == this.current.nextStop.previousStop)
+(this.current != null)  ==>  (this.current.previousStop.station != null)
+(this.current != null)  ==>  (this.current.station != null)
+(this.current != null)  ==>  (this.current.station.name != null)
+(this.current != null)  ==>  (this.current.station.notification.toString == "Mind the gap")
+(this.current == null)  <==>  (return == false)
+===========================================================================
+org.patterneria.iterator.MetroLine$BackwardIterator.hasNext():::EXIT;condition="return == true"
+this.current != null
+return == true
+===========================================================================
+org.patterneria.iterator.MetroLine$BackwardIterator.hasNext():::EXIT;condition="not(return == true)"
+this.current == null
+return == false
+===========================================================================
+org.patterneria.iterator.MetroLine$BackwardIterator.next():::ENTER
+this.current != null
+===========================================================================
+org.patterneria.iterator.MetroLine$BackwardIterator.next():::EXIT
+this.current == orig(this.current.previousStop)
+this.current.station == orig(this.current.previousStop.station)
+this.current.previousStop == orig(this.current.previousStop.previousStop)
+this.current.nextStop == orig(this.current)
+this.current.nextStop == orig(this.current.previousStop.nextStop)
+this.current.nextStop == orig(this.current.nextStop.previousStop)
+this.current.nextStop.station == return
+this.current.nextStop.nextStop == orig(this.current.nextStop)
+org.patterneria.iterator.MetroLine.this == orig(org.patterneria.iterator.MetroLine.this)
+org.patterneria.iterator.MetroLine.this.name == orig(org.patterneria.iterator.MetroLine.this.name)
+org.patterneria.iterator.MetroLine.this.name.toString == orig(org.patterneria.iterator.MetroLine.this.name.toString)
+org.patterneria.iterator.MetroLine.this.firstStop == orig(org.patterneria.iterator.MetroLine.this.firstStop)
+org.patterneria.iterator.MetroLine.this.firstStop.station == orig(org.patterneria.iterator.MetroLine.this.firstStop.station)
+org.patterneria.iterator.MetroLine.this.firstStop.previousStop == orig(org.patterneria.iterator.MetroLine.this.firstStop.previousStop)
+org.patterneria.iterator.MetroLine.this.firstStop.nextStop == orig(org.patterneria.iterator.MetroLine.this.firstStop.nextStop)
+org.patterneria.iterator.MetroLine.this.lastStop == orig(org.patterneria.iterator.MetroLine.this.lastStop)
+org.patterneria.iterator.MetroLine.this.lastStop.station == orig(org.patterneria.iterator.MetroLine.this.lastStop.station)
+org.patterneria.iterator.MetroLine.this.lastStop.previousStop == orig(org.patterneria.iterator.MetroLine.this.lastStop.previousStop)
+org.patterneria.iterator.MetroLine.this.lastStop.nextStop == orig(org.patterneria.iterator.MetroLine.this.lastStop.nextStop)
+return == orig(this.current.station)
+this.current.nextStop != null
+return != null
+return.name != null
+return.notification.toString == "Mind the gap"
+this.current.station.name.toString != orig(this.current.station.name.toString)
+===========================================================================
+org.patterneria.iterator.MetroLine$ForwardIterator:::OBJECT
+this.current == this.current.previousStop.nextStop
+this.current == this.current.nextStop.previousStop
+this.current.previousStop.nextStop == this.current.nextStop.previousStop
+this has only one value
+this.current.station != null
+this.current.station.name != null
+this.current.station.notification.toString == "Mind the gap"
+this.current.previousStop.station != null
+this.current.previousStop.nextStop != null
+this.current.nextStop.station != null
+this.current.nextStop.previousStop != null
+org.patterneria.iterator.MetroLine.this has only one value
+org.patterneria.iterator.MetroLine.this.name has only one value
+org.patterneria.iterator.MetroLine.this.name != null
+org.patterneria.iterator.MetroLine.this.name.toString == "Piccadilly"
+org.patterneria.iterator.MetroLine.this.firstStop has only one value
+org.patterneria.iterator.MetroLine.this.firstStop != null
+org.patterneria.iterator.MetroLine.this.firstStop.station has only one value
+org.patterneria.iterator.MetroLine.this.firstStop.station != null
+org.patterneria.iterator.MetroLine.this.firstStop.previousStop == null
+org.patterneria.iterator.MetroLine.this.firstStop.nextStop has only one value
+org.patterneria.iterator.MetroLine.this.firstStop.nextStop != null
+org.patterneria.iterator.MetroLine.this.lastStop has only one value
+org.patterneria.iterator.MetroLine.this.lastStop != null
+org.patterneria.iterator.MetroLine.this.lastStop.station has only one value
+org.patterneria.iterator.MetroLine.this.lastStop.station != null
+org.patterneria.iterator.MetroLine.this.lastStop.previousStop has only one value
+org.patterneria.iterator.MetroLine.this.lastStop.previousStop != null
+org.patterneria.iterator.MetroLine.this.lastStop.nextStop == null
+===========================================================================
+org.patterneria.iterator.MetroLine$ForwardIterator.ForwardIterator(org.patterneria.iterator.MetroLine):::ENTER
+org.patterneria.iterator.MetroLine.this has only one value
+org.patterneria.iterator.MetroLine.this.name has only one value
+org.patterneria.iterator.MetroLine.this.name.toString == "Piccadilly"
+org.patterneria.iterator.MetroLine.this.firstStop has only one value
+org.patterneria.iterator.MetroLine.this.firstStop.station has only one value
+org.patterneria.iterator.MetroLine.this.firstStop.previousStop == null
+org.patterneria.iterator.MetroLine.this.firstStop.nextStop has only one value
+org.patterneria.iterator.MetroLine.this.lastStop has only one value
+org.patterneria.iterator.MetroLine.this.lastStop.station has only one value
+org.patterneria.iterator.MetroLine.this.lastStop.previousStop has only one value
+org.patterneria.iterator.MetroLine.this.lastStop.nextStop == null
+===========================================================================
+org.patterneria.iterator.MetroLine$ForwardIterator.ForwardIterator(org.patterneria.iterator.MetroLine):::EXIT
+this.current == org.patterneria.iterator.MetroLine.this.firstStop
+this.current == orig(org.patterneria.iterator.MetroLine.this.firstStop)
+this.current.station == org.patterneria.iterator.MetroLine.this.firstStop.station
+this.current.station == orig(org.patterneria.iterator.MetroLine.this.firstStop.station)
+this.current.nextStop == org.patterneria.iterator.MetroLine.this.firstStop.nextStop
+this.current.nextStop == orig(org.patterneria.iterator.MetroLine.this.firstStop.nextStop)
+org.patterneria.iterator.MetroLine.this == orig(org.patterneria.iterator.MetroLine.this)
+org.patterneria.iterator.MetroLine.this.name == orig(org.patterneria.iterator.MetroLine.this.name)
+org.patterneria.iterator.MetroLine.this.name.toString == orig(org.patterneria.iterator.MetroLine.this.name.toString)
+org.patterneria.iterator.MetroLine.this.firstStop.previousStop == orig(org.patterneria.iterator.MetroLine.this.firstStop.previousStop)
+org.patterneria.iterator.MetroLine.this.lastStop == orig(org.patterneria.iterator.MetroLine.this.lastStop)
+org.patterneria.iterator.MetroLine.this.lastStop.station == orig(org.patterneria.iterator.MetroLine.this.lastStop.station)
+org.patterneria.iterator.MetroLine.this.lastStop.previousStop == orig(org.patterneria.iterator.MetroLine.this.lastStop.previousStop)
+org.patterneria.iterator.MetroLine.this.lastStop.nextStop == orig(org.patterneria.iterator.MetroLine.this.lastStop.nextStop)
+this.current has only one value
+this.current.station has only one value
+this.current.station.name has only one value
+this.current.station.name.toString == "Cockfosters"
+this.current.station.notification == null
+this.current.previousStop == null
+this.current.nextStop has only one value
+this.current.nextStop.station has only one value
+this.current.nextStop.nextStop has only one value
+===========================================================================
+org.patterneria.iterator.MetroLine$ForwardIterator.hasNext():::ENTER
+===========================================================================
+org.patterneria.iterator.MetroLine$ForwardIterator.hasNext():::EXIT
+this.current == orig(this.current)
+this.current.station == orig(this.current.station)
+this.current.station.name == orig(this.current.station.name)
+this.current.station.name.toString == orig(this.current.station.name.toString)
+this.current.station.notification == orig(this.current.station.notification)
+this.current.station.notification.toString == orig(this.current.station.notification.toString)
+this.current.previousStop == orig(this.current.previousStop)
+this.current.previousStop.station == orig(this.current.previousStop.station)
+this.current.previousStop.previousStop == orig(this.current.previousStop.previousStop)
+this.current.previousStop.nextStop == orig(this.current.previousStop.nextStop)
+this.current.nextStop == orig(this.current.nextStop)
+this.current.nextStop.station == orig(this.current.nextStop.station)
+this.current.nextStop.previousStop == orig(this.current.nextStop.previousStop)
+this.current.nextStop.nextStop == orig(this.current.nextStop.nextStop)
+org.patterneria.iterator.MetroLine.this == orig(org.patterneria.iterator.MetroLine.this)
+org.patterneria.iterator.MetroLine.this.name == orig(org.patterneria.iterator.MetroLine.this.name)
+org.patterneria.iterator.MetroLine.this.name.toString == orig(org.patterneria.iterator.MetroLine.this.name.toString)
+org.patterneria.iterator.MetroLine.this.firstStop == orig(org.patterneria.iterator.MetroLine.this.firstStop)
+org.patterneria.iterator.MetroLine.this.firstStop.station == orig(org.patterneria.iterator.MetroLine.this.firstStop.station)
+org.patterneria.iterator.MetroLine.this.firstStop.previousStop == orig(org.patterneria.iterator.MetroLine.this.firstStop.previousStop)
+org.patterneria.iterator.MetroLine.this.firstStop.nextStop == orig(org.patterneria.iterator.MetroLine.this.firstStop.nextStop)
+org.patterneria.iterator.MetroLine.this.lastStop == orig(org.patterneria.iterator.MetroLine.this.lastStop)
+org.patterneria.iterator.MetroLine.this.lastStop.station == orig(org.patterneria.iterator.MetroLine.this.lastStop.station)
+org.patterneria.iterator.MetroLine.this.lastStop.previousStop == orig(org.patterneria.iterator.MetroLine.this.lastStop.previousStop)
+org.patterneria.iterator.MetroLine.this.lastStop.nextStop == orig(org.patterneria.iterator.MetroLine.this.lastStop.nextStop)
+(this.current != null)  <==>  (return == true)
+(this.current != null)  ==>  (this.current == this.current.nextStop.previousStop)
+(this.current != null)  ==>  (this.current == this.current.previousStop.nextStop)
+(this.current != null)  ==>  (this.current.nextStop.previousStop != null)
+(this.current != null)  ==>  (this.current.nextStop.station != null)
+(this.current != null)  ==>  (this.current.previousStop.nextStop != null)
+(this.current != null)  ==>  (this.current.previousStop.nextStop == this.current.nextStop.previousStop)
+(this.current != null)  ==>  (this.current.previousStop.station != null)
+(this.current != null)  ==>  (this.current.station != null)
+(this.current != null)  ==>  (this.current.station.name != null)
+(this.current != null)  ==>  (this.current.station.notification.toString == "Mind the gap")
+(this.current == null)  <==>  (return == false)
+===========================================================================
+org.patterneria.iterator.MetroLine$ForwardIterator.hasNext():::EXIT;condition="return == true"
+this.current != null
+return == true
+===========================================================================
+org.patterneria.iterator.MetroLine$ForwardIterator.hasNext():::EXIT;condition="not(return == true)"
+this.current == null
+return == false
+===========================================================================
+org.patterneria.iterator.MetroLine$ForwardIterator.next():::ENTER
+this.current != null
+===========================================================================
+org.patterneria.iterator.MetroLine$ForwardIterator.next():::EXIT
+this.current == orig(this.current.nextStop)
+this.current.station == orig(this.current.nextStop.station)
+this.current.previousStop == orig(this.current)
+this.current.previousStop == orig(this.current.previousStop.nextStop)
+this.current.previousStop == orig(this.current.nextStop.previousStop)
+this.current.previousStop.station == return
+this.current.previousStop.previousStop == orig(this.current.previousStop)
+this.current.nextStop == orig(this.current.nextStop.nextStop)
+org.patterneria.iterator.MetroLine.this == orig(org.patterneria.iterator.MetroLine.this)
+org.patterneria.iterator.MetroLine.this.name == orig(org.patterneria.iterator.MetroLine.this.name)
+org.patterneria.iterator.MetroLine.this.name.toString == orig(org.patterneria.iterator.MetroLine.this.name.toString)
+org.patterneria.iterator.MetroLine.this.firstStop == orig(org.patterneria.iterator.MetroLine.this.firstStop)
+org.patterneria.iterator.MetroLine.this.firstStop.station == orig(org.patterneria.iterator.MetroLine.this.firstStop.station)
+org.patterneria.iterator.MetroLine.this.firstStop.previousStop == orig(org.patterneria.iterator.MetroLine.this.firstStop.previousStop)
+org.patterneria.iterator.MetroLine.this.firstStop.nextStop == orig(org.patterneria.iterator.MetroLine.this.firstStop.nextStop)
+org.patterneria.iterator.MetroLine.this.lastStop == orig(org.patterneria.iterator.MetroLine.this.lastStop)
+org.patterneria.iterator.MetroLine.this.lastStop.station == orig(org.patterneria.iterator.MetroLine.this.lastStop.station)
+org.patterneria.iterator.MetroLine.this.lastStop.previousStop == orig(org.patterneria.iterator.MetroLine.this.lastStop.previousStop)
+org.patterneria.iterator.MetroLine.this.lastStop.nextStop == orig(org.patterneria.iterator.MetroLine.this.lastStop.nextStop)
+return == orig(this.current.station)
+this.current.previousStop != null
+return != null
+return.name != null
+return.notification.toString == "Mind the gap"
+this.current.station.name.toString != orig(this.current.station.name.toString)
+===========================================================================
+org.patterneria.iterator.MetroLine$Stop:::OBJECT
+this == this.previousStop.nextStop
+this == this.nextStop.previousStop
+this.station == this.previousStop.nextStop.station
+this.station == this.nextStop.previousStop.station
+this.previousStop == this.previousStop.previousStop.nextStop
+this.previousStop == this.previousStop.nextStop.previousStop
+this.previousStop == this.nextStop.previousStop.previousStop
+this.previousStop.previousStop.nextStop == this.previousStop.nextStop.previousStop
+this.previousStop.previousStop.nextStop == this.nextStop.previousStop.previousStop
+this.previousStop.nextStop == this.nextStop.previousStop
+this.previousStop.nextStop.station == this.nextStop.previousStop.station
+this.previousStop.nextStop.previousStop == this.nextStop.previousStop.previousStop
+this.previousStop.nextStop.nextStop == this.nextStop
+this.previousStop.nextStop.nextStop == this.nextStop.previousStop.nextStop
+this.previousStop.nextStop.nextStop == this.nextStop.nextStop.previousStop
+this.nextStop == this.nextStop.previousStop.nextStop
+this.nextStop == this.nextStop.nextStop.previousStop
+this.nextStop.previousStop.nextStop == this.nextStop.nextStop.previousStop
+this.station != null
+this.station.name != null
+this.station.notification.toString == "Mind the gap"
+this.previousStop.station != null
+this.previousStop.station.name != null
+this.previousStop.station.notification.toString == "Mind the gap"
+this.previousStop.previousStop.station != null
+this.previousStop.previousStop.nextStop != null
+this.previousStop.nextStop != null
+this.previousStop.nextStop.station != null
+this.previousStop.nextStop.previousStop != null
+this.nextStop.station != null
+this.nextStop.station.name != null
+this.nextStop.station.notification.toString == "Mind the gap"
+this.nextStop.previousStop != null
+this.nextStop.previousStop.station != null
+this.nextStop.previousStop.nextStop != null
+this.nextStop.nextStop.station != null
+this.nextStop.nextStop.previousStop != null
+===========================================================================
+org.patterneria.iterator.MetroLine$Stop.Stop(org.patterneria.iterator.Station):::ENTER
+arg0 != null
+arg0.name != null
+arg0.notification.toString == "Mind the gap"
+===========================================================================
+org.patterneria.iterator.MetroLine$Stop.Stop(org.patterneria.iterator.Station):::EXIT
+this.station == orig(arg0)
+this.station.name == arg0.name
+this.station.notification == arg0.notification
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+arg0.notification == orig(arg0.notification)
+arg0.notification.toString == orig(arg0.notification.toString)
+this.previousStop == null
+this.nextStop == null
+arg0.name != null
+arg0.notification.toString == "Mind the gap"
+===========================================================================
+org.patterneria.iterator.MetroLine$Stop.getNextStop():::ENTER
+===========================================================================
+org.patterneria.iterator.MetroLine$Stop.getNextStop():::EXIT
+this.station == return.previousStop.station
+this.station == orig(this.station)
+this.station.name == orig(this.station.name)
+this.station.name.toString == orig(this.station.name.toString)
+this.station.notification == orig(this.station.notification)
+this.station.notification.toString == orig(this.station.notification.toString)
+this.previousStop == return.previousStop.previousStop
+this.previousStop == orig(this.previousStop)
+this.previousStop.station == orig(this.previousStop.station)
+this.previousStop.station.name == orig(this.previousStop.station.name)
+this.previousStop.station.name.toString == orig(this.previousStop.station.name.toString)
+this.previousStop.station.notification == orig(this.previousStop.station.notification)
+this.previousStop.station.notification.toString == orig(this.previousStop.station.notification.toString)
+this.previousStop.previousStop == orig(this.previousStop.previousStop)
+this.previousStop.previousStop.station == orig(this.previousStop.previousStop.station)
+this.previousStop.previousStop.previousStop == orig(this.previousStop.previousStop.previousStop)
+this.previousStop.previousStop.nextStop == return.previousStop.previousStop
+this.previousStop.previousStop.nextStop == orig(this.previousStop.previousStop.nextStop)
+this.previousStop.nextStop == return.previousStop
+this.previousStop.nextStop == orig(this)
+this.previousStop.nextStop == orig(this.previousStop.nextStop)
+this.previousStop.nextStop.station == return.previousStop.station
+this.previousStop.nextStop.station == orig(this.previousStop.nextStop.station)
+this.previousStop.nextStop.previousStop == return.previousStop.previousStop
+this.previousStop.nextStop.previousStop == orig(this.previousStop.nextStop.previousStop)
+this.previousStop.nextStop.nextStop == return
+this.previousStop.nextStop.nextStop == return.previousStop.nextStop
+this.previousStop.nextStop.nextStop == return.nextStop.previousStop
+this.previousStop.nextStop.nextStop == orig(this.previousStop.nextStop.nextStop)
+this.nextStop == return
+this.nextStop.station == return.station
+this.nextStop.station.name == return.station.name
+this.nextStop.station.name.toString == orig(this.nextStop.station.name.toString)
+this.nextStop.station.notification == return.station.notification
+this.nextStop.station.notification.toString == orig(this.nextStop.station.notification.toString)
+this.nextStop.previousStop == return.previousStop
+this.nextStop.previousStop.station == return.previousStop.station
+this.nextStop.previousStop.previousStop == return.previousStop.previousStop
+this.nextStop.previousStop.nextStop == return.previousStop.nextStop
+this.nextStop.nextStop == return.nextStop
+this.nextStop.nextStop.station == return.nextStop.station
+this.nextStop.nextStop.previousStop == return.nextStop.previousStop
+this.nextStop.nextStop.nextStop == return.nextStop.nextStop
+return == return.previousStop.nextStop
+return == return.nextStop.previousStop
+return == orig(this.nextStop)
+return.station == orig(this.nextStop.station)
+return.station.name == orig(this.nextStop.station.name)
+return.station.notification == orig(this.nextStop.station.notification)
+return.previousStop == orig(this)
+return.previousStop == orig(this.nextStop.previousStop)
+return.previousStop.station == orig(this.nextStop.previousStop.station)
+return.previousStop.previousStop == orig(this.nextStop.previousStop.previousStop)
+return.previousStop.nextStop == return.nextStop.previousStop
+return.previousStop.nextStop == orig(this.nextStop.previousStop.nextStop)
+return.nextStop == orig(this.nextStop.nextStop)
+return.nextStop.station == orig(this.nextStop.nextStop.station)
+return.nextStop.previousStop == orig(this.nextStop.nextStop.previousStop)
+return.nextStop.nextStop == orig(this.nextStop.nextStop.nextStop)
+return.station != null
+return.station.name != null
+return.station.notification.toString == "Mind the gap"
+return.previousStop != null
+return.previousStop.station != null
+return.previousStop.nextStop != null
+return.nextStop.station != null
+return.nextStop.previousStop != null
+===========================================================================
+org.patterneria.iterator.MetroLine$Stop.getPreviousStop():::ENTER
+===========================================================================
+org.patterneria.iterator.MetroLine$Stop.getPreviousStop():::EXIT
+this.station == return.nextStop.station
+this.station == orig(this.station)
+this.station.name == orig(this.station.name)
+this.station.name.toString == orig(this.station.name.toString)
+this.station.notification == orig(this.station.notification)
+this.station.notification.toString == orig(this.station.notification.toString)
+this.previousStop == return
+this.previousStop.station == return.station
+this.previousStop.station.name == return.station.name
+this.previousStop.station.name.toString == orig(this.previousStop.station.name.toString)
+this.previousStop.station.notification == return.station.notification
+this.previousStop.station.notification.toString == orig(this.previousStop.station.notification.toString)
+this.previousStop.previousStop == return.previousStop
+this.previousStop.previousStop.station == return.previousStop.station
+this.previousStop.previousStop.previousStop == return.previousStop.previousStop
+this.previousStop.previousStop.nextStop == return.previousStop.nextStop
+this.previousStop.nextStop == return.nextStop
+this.previousStop.nextStop.station == return.nextStop.station
+this.previousStop.nextStop.previousStop == return.nextStop.previousStop
+this.previousStop.nextStop.nextStop == return.nextStop.nextStop
+this.nextStop == return.nextStop.nextStop
+this.nextStop == orig(this.nextStop)
+this.nextStop.station == orig(this.nextStop.station)
+this.nextStop.station.name == orig(this.nextStop.station.name)
+this.nextStop.station.name.toString == orig(this.nextStop.station.name.toString)
+this.nextStop.station.notification == orig(this.nextStop.station.notification)
+this.nextStop.station.notification.toString == orig(this.nextStop.station.notification.toString)
+this.nextStop.previousStop == return.nextStop
+this.nextStop.previousStop == orig(this)
+this.nextStop.previousStop == orig(this.nextStop.previousStop)
+this.nextStop.previousStop.station == return.nextStop.station
+this.nextStop.previousStop.station == orig(this.nextStop.previousStop.station)
+this.nextStop.previousStop.previousStop == return
+this.nextStop.previousStop.previousStop == return.previousStop.nextStop
+this.nextStop.previousStop.previousStop == return.nextStop.previousStop
+this.nextStop.previousStop.previousStop == orig(this.nextStop.previousStop.previousStop)
+this.nextStop.previousStop.nextStop == return.nextStop.nextStop
+this.nextStop.previousStop.nextStop == orig(this.nextStop.previousStop.nextStop)
+this.nextStop.nextStop == orig(this.nextStop.nextStop)
+this.nextStop.nextStop.station == orig(this.nextStop.nextStop.station)
+this.nextStop.nextStop.previousStop == return.nextStop.nextStop
+this.nextStop.nextStop.previousStop == orig(this.nextStop.nextStop.previousStop)
+this.nextStop.nextStop.nextStop == orig(this.nextStop.nextStop.nextStop)
+return == return.previousStop.nextStop
+return == return.nextStop.previousStop
+return == orig(this.previousStop)
+return.station == orig(this.previousStop.station)
+return.station.name == orig(this.previousStop.station.name)
+return.station.notification == orig(this.previousStop.station.notification)
+return.previousStop == orig(this.previousStop.previousStop)
+return.previousStop.station == orig(this.previousStop.previousStop.station)
+return.previousStop.previousStop == orig(this.previousStop.previousStop.previousStop)
+return.previousStop.nextStop == return.nextStop.previousStop
+return.previousStop.nextStop == orig(this.previousStop.previousStop.nextStop)
+return.nextStop == orig(this)
+return.nextStop == orig(this.previousStop.nextStop)
+return.nextStop.station == orig(this.previousStop.nextStop.station)
+return.nextStop.previousStop == orig(this.previousStop.nextStop.previousStop)
+return.nextStop.nextStop == orig(this.previousStop.nextStop.nextStop)
+return.station != null
+return.station.name != null
+return.station.notification.toString == "Mind the gap"
+return.previousStop.station != null
+return.previousStop.nextStop != null
+return.nextStop != null
+return.nextStop.station != null
+return.nextStop.previousStop != null
+===========================================================================
+org.patterneria.iterator.MetroLine$Stop.getStation():::ENTER
+===========================================================================
+org.patterneria.iterator.MetroLine$Stop.getStation():::EXIT
+this.station == return
+this.station.name == return.name
+this.station.name.toString == orig(this.station.name.toString)
+this.station.notification == return.notification
+this.station.notification.toString == orig(this.station.notification.toString)
+this.previousStop == orig(this.previousStop)
+this.previousStop.station == orig(this.previousStop.station)
+this.previousStop.station.name == orig(this.previousStop.station.name)
+this.previousStop.station.name.toString == orig(this.previousStop.station.name.toString)
+this.previousStop.station.notification == orig(this.previousStop.station.notification)
+this.previousStop.station.notification.toString == orig(this.previousStop.station.notification.toString)
+this.previousStop.previousStop == orig(this.previousStop.previousStop)
+this.previousStop.previousStop.station == orig(this.previousStop.previousStop.station)
+this.previousStop.previousStop.previousStop == orig(this.previousStop.previousStop.previousStop)
+this.previousStop.previousStop.nextStop == orig(this.previousStop.previousStop.nextStop)
+this.previousStop.nextStop == orig(this)
+this.previousStop.nextStop == orig(this.previousStop.nextStop)
+this.previousStop.nextStop.station == return
+this.previousStop.nextStop.station == orig(this.previousStop.nextStop.station)
+this.previousStop.nextStop.previousStop == orig(this.previousStop.nextStop.previousStop)
+this.previousStop.nextStop.nextStop == orig(this.previousStop.nextStop.nextStop)
+this.nextStop == orig(this.nextStop)
+this.nextStop.station == orig(this.nextStop.station)
+this.nextStop.station.name == orig(this.nextStop.station.name)
+this.nextStop.station.name.toString == orig(this.nextStop.station.name.toString)
+this.nextStop.station.notification == orig(this.nextStop.station.notification)
+this.nextStop.station.notification.toString == orig(this.nextStop.station.notification.toString)
+this.nextStop.previousStop == orig(this)
+this.nextStop.previousStop == orig(this.nextStop.previousStop)
+this.nextStop.previousStop.station == return
+this.nextStop.previousStop.station == orig(this.nextStop.previousStop.station)
+this.nextStop.previousStop.previousStop == orig(this.nextStop.previousStop.previousStop)
+this.nextStop.previousStop.nextStop == orig(this.nextStop.previousStop.nextStop)
+this.nextStop.nextStop == orig(this.nextStop.nextStop)
+this.nextStop.nextStop.station == orig(this.nextStop.nextStop.station)
+this.nextStop.nextStop.previousStop == orig(this.nextStop.nextStop.previousStop)
+this.nextStop.nextStop.nextStop == orig(this.nextStop.nextStop.nextStop)
+return == orig(this.station)
+return.name == orig(this.station.name)
+return.notification == orig(this.station.notification)
+return != null
+return.name != null
+return.notification.toString == "Mind the gap"
+===========================================================================
+org.patterneria.iterator.MetroLine$Stop.setNextStop(org.patterneria.iterator.MetroLine$Stop):::ENTER
+this.previousStop.nextStop.nextStop == null
+this.nextStop == null
+arg0 != null
+arg0.station != null
+arg0.station.name != null
+arg0.station.notification.toString == "Mind the gap"
+arg0.previousStop == null
+arg0.nextStop == null
+===========================================================================
+org.patterneria.iterator.MetroLine$Stop.setNextStop(org.patterneria.iterator.MetroLine$Stop):::EXIT
+this.station == arg0.previousStop.station
+this.station == orig(this.station)
+this.station.name == orig(this.station.name)
+this.station.name.toString == orig(this.station.name.toString)
+this.station.notification == orig(this.station.notification)
+this.station.notification.toString == orig(this.station.notification.toString)
+this.previousStop == arg0.previousStop.previousStop
+this.previousStop == orig(this.previousStop)
+this.previousStop.station == orig(this.previousStop.station)
+this.previousStop.station.name == orig(this.previousStop.station.name)
+this.previousStop.station.name.toString == orig(this.previousStop.station.name.toString)
+this.previousStop.station.notification == orig(this.previousStop.station.notification)
+this.previousStop.station.notification.toString == orig(this.previousStop.station.notification.toString)
+this.previousStop.previousStop == orig(this.previousStop.previousStop)
+this.previousStop.previousStop.station == orig(this.previousStop.previousStop.station)
+this.previousStop.previousStop.previousStop == orig(this.previousStop.previousStop.previousStop)
+this.previousStop.previousStop.nextStop == orig(this.previousStop.previousStop.nextStop)
+this.previousStop.nextStop == arg0.previousStop
+this.previousStop.nextStop == orig(this)
+this.previousStop.nextStop == orig(this.previousStop.nextStop)
+this.previousStop.nextStop.station == orig(this.previousStop.nextStop.station)
+this.previousStop.nextStop.previousStop == orig(this.previousStop.nextStop.previousStop)
+this.nextStop == arg0.previousStop.nextStop
+this.nextStop == orig(arg0)
+this.nextStop.station == arg0.station
+this.nextStop.station.name == arg0.station.name
+this.nextStop.station.notification == arg0.station.notification
+this.nextStop.previousStop == arg0.previousStop
+arg0.station == orig(arg0.station)
+arg0.station.name == orig(arg0.station.name)
+arg0.station.name.toString == orig(arg0.station.name.toString)
+arg0.station.notification == orig(arg0.station.notification)
+arg0.station.notification.toString == orig(arg0.station.notification.toString)
+arg0.previousStop == orig(this)
+arg0.nextStop == orig(arg0.nextStop)
+this.previousStop.nextStop.nextStop != null
+this.nextStop != null
+this.nextStop.nextStop == null
+arg0.station != null
+arg0.station.name != null
+arg0.station.notification.toString == "Mind the gap"
+arg0.previousStop != null
+arg0.nextStop == null
+===========================================================================
+org.patterneria.iterator.MetroLine:::OBJECT
+this.firstStop == this.firstStop.nextStop.previousStop
+this.lastStop == this.lastStop.previousStop.nextStop
+this has only one value
+this.name has only one value
+this.name != null
+this.name.toString == "Piccadilly"
+this.firstStop has only one value
+this.firstStop != null
+this.firstStop.station has only one value
+this.firstStop.station != null
+this.firstStop.station.name has only one value
+this.firstStop.station.name != null
+this.firstStop.station.name.toString == "Cockfosters"
+this.firstStop.station.notification == null
+this.firstStop.previousStop == null
+this.firstStop.nextStop.station has only one value
+this.firstStop.nextStop.station != null
+this.firstStop.nextStop.previousStop has only one value
+this.firstStop.nextStop.previousStop != null
+this.lastStop != null
+this.lastStop.station != null
+this.lastStop.station.name != null
+this.lastStop.station.notification.toString == "Mind the gap"
+this.lastStop.previousStop.station != null
+this.lastStop.previousStop.nextStop != null
+this.lastStop.nextStop == null
+===========================================================================
+org.patterneria.iterator.MetroLine.MetroLine(java.lang.String, org.patterneria.iterator.Station):::ENTER
+arg0 has only one value
+arg0.toString == "Piccadilly"
+arg1 has only one value
+arg1.name has only one value
+arg1.name.toString == "Cockfosters"
+arg1.notification == null
+===========================================================================
+org.patterneria.iterator.MetroLine.MetroLine(java.lang.String, org.patterneria.iterator.Station):::EXIT
+this.name == orig(arg0)
+this.firstStop == this.lastStop
+this.firstStop.station == orig(arg1)
+this.firstStop.station.name == arg1.name
+this.firstStop.nextStop == this.lastStop.previousStop
+this.lastStop.station == orig(arg1)
+this.lastStop.station.name == arg1.name
+arg0.toString == orig(arg0.toString)
+arg1.name == orig(arg1.name)
+arg1.name.toString == orig(arg1.name.toString)
+arg1.notification == orig(arg1.notification)
+this.firstStop.nextStop == null
+this.lastStop.station.name.toString == "Cockfosters"
+this.lastStop.station.notification == null
+arg0.toString == "Piccadilly"
+arg1.name has only one value
+arg1.name.toString == "Cockfosters"
+arg1.notification == null
+===========================================================================
+org.patterneria.iterator.MetroLine.backwardIterator():::ENTER
+this.firstStop.nextStop has only one value
+this.firstStop.nextStop.nextStop has only one value
+this.lastStop has only one value
+this.lastStop.station has only one value
+this.lastStop.station.name has only one value
+this.lastStop.station.name.toString == "Earl's Court"
+this.lastStop.station.notification == null
+this.lastStop.previousStop has only one value
+this.lastStop.previousStop.station has only one value
+this.lastStop.previousStop.previousStop has only one value
+===========================================================================
+org.patterneria.iterator.MetroLine.backwardIterator():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.firstStop == orig(this.firstStop)
+this.firstStop == orig(this.firstStop.nextStop.previousStop)
+this.firstStop.station == orig(this.firstStop.station)
+this.firstStop.station.name == orig(this.firstStop.station.name)
+this.firstStop.station.name.toString == orig(this.firstStop.station.name.toString)
+this.firstStop.station.notification == orig(this.firstStop.station.notification)
+this.firstStop.previousStop == orig(this.firstStop.previousStop)
+this.firstStop.nextStop == orig(this.firstStop.nextStop)
+this.firstStop.nextStop.station == orig(this.firstStop.nextStop.station)
+this.firstStop.nextStop.nextStop == orig(this.firstStop.nextStop.nextStop)
+this.lastStop == orig(this.lastStop)
+this.lastStop == orig(this.lastStop.previousStop.nextStop)
+this.lastStop.station == orig(this.lastStop.station)
+this.lastStop.station.name == orig(this.lastStop.station.name)
+this.lastStop.station.name.toString == orig(this.lastStop.station.name.toString)
+this.lastStop.station.notification == orig(this.lastStop.station.notification)
+this.lastStop.previousStop == orig(this.lastStop.previousStop)
+this.lastStop.previousStop.station == orig(this.lastStop.previousStop.station)
+this.lastStop.previousStop.previousStop == orig(this.lastStop.previousStop.previousStop)
+this.lastStop.nextStop == orig(this.lastStop.nextStop)
+this.firstStop.nextStop has only one value
+this.firstStop.nextStop.nextStop has only one value
+this.lastStop has only one value
+this.lastStop.station has only one value
+this.lastStop.station.name has only one value
+this.lastStop.station.name.toString == "Earl's Court"
+this.lastStop.station.notification == null
+this.lastStop.previousStop has only one value
+this.lastStop.previousStop.station has only one value
+this.lastStop.previousStop.previousStop has only one value
+return has only one value
+return.getClass().getName() == org.patterneria.iterator.MetroLine$BackwardIterator.class
+===========================================================================
+org.patterneria.iterator.MetroLine.iterator():::ENTER
+this.firstStop.nextStop has only one value
+this.firstStop.nextStop.nextStop has only one value
+this.lastStop has only one value
+this.lastStop.station has only one value
+this.lastStop.station.name has only one value
+this.lastStop.station.name.toString == "Earl's Court"
+this.lastStop.station.notification == null
+this.lastStop.previousStop has only one value
+this.lastStop.previousStop.station has only one value
+this.lastStop.previousStop.previousStop has only one value
+===========================================================================
+org.patterneria.iterator.MetroLine.iterator():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.firstStop == orig(this.firstStop)
+this.firstStop == orig(this.firstStop.nextStop.previousStop)
+this.firstStop.station == orig(this.firstStop.station)
+this.firstStop.station.name == orig(this.firstStop.station.name)
+this.firstStop.station.name.toString == orig(this.firstStop.station.name.toString)
+this.firstStop.station.notification == orig(this.firstStop.station.notification)
+this.firstStop.previousStop == orig(this.firstStop.previousStop)
+this.firstStop.nextStop == orig(this.firstStop.nextStop)
+this.firstStop.nextStop.station == orig(this.firstStop.nextStop.station)
+this.firstStop.nextStop.nextStop == orig(this.firstStop.nextStop.nextStop)
+this.lastStop == orig(this.lastStop)
+this.lastStop == orig(this.lastStop.previousStop.nextStop)
+this.lastStop.station == orig(this.lastStop.station)
+this.lastStop.station.name == orig(this.lastStop.station.name)
+this.lastStop.station.name.toString == orig(this.lastStop.station.name.toString)
+this.lastStop.station.notification == orig(this.lastStop.station.notification)
+this.lastStop.previousStop == orig(this.lastStop.previousStop)
+this.lastStop.previousStop.station == orig(this.lastStop.previousStop.station)
+this.lastStop.previousStop.previousStop == orig(this.lastStop.previousStop.previousStop)
+this.lastStop.nextStop == orig(this.lastStop.nextStop)
+this.firstStop.nextStop has only one value
+this.firstStop.nextStop.nextStop has only one value
+this.lastStop has only one value
+this.lastStop.station has only one value
+this.lastStop.station.name has only one value
+this.lastStop.station.name.toString == "Earl's Court"
+this.lastStop.station.notification == null
+this.lastStop.previousStop has only one value
+this.lastStop.previousStop.station has only one value
+this.lastStop.previousStop.previousStop has only one value
+return has only one value
+return.getClass().getName() == org.patterneria.iterator.MetroLine$ForwardIterator.class
+===========================================================================
+org.patterneria.iterator.MetroLine.withNextStation(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+org.patterneria.iterator.MetroLine.withNextStation(java.lang.String):::EXIT
+this.name == return.name
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.firstStop == return.firstStop
+this.firstStop == orig(this.firstStop)
+this.firstStop == orig(this.firstStop.nextStop.previousStop)
+this.firstStop.station == return.firstStop.station
+this.firstStop.station == orig(this.firstStop.station)
+this.firstStop.station.name == orig(this.firstStop.station.name)
+this.firstStop.station.name.toString == orig(this.firstStop.station.name.toString)
+this.firstStop.station.notification == orig(this.firstStop.station.notification)
+this.firstStop.previousStop == orig(this.firstStop.previousStop)
+this.firstStop.nextStop == return.firstStop.nextStop
+this.firstStop.nextStop.station == orig(this.firstStop.nextStop.station)
+this.lastStop == return.lastStop
+this.lastStop.station == return.lastStop.station
+this.lastStop.station.name == orig(arg0)
+this.lastStop.previousStop == return.lastStop.previousStop
+this.lastStop.previousStop == orig(this.lastStop)
+this.lastStop.previousStop == orig(this.lastStop.previousStop.nextStop)
+this.lastStop.previousStop.station == orig(this.lastStop.station)
+this.lastStop.previousStop.previousStop == orig(this.lastStop.previousStop)
+this.lastStop.nextStop == orig(this.lastStop.nextStop)
+arg0.toString == orig(arg0.toString)
+return == orig(this)
+this.firstStop.nextStop has only one value
+this.firstStop.nextStop != null
+this.lastStop.station.notification == null
+this.lastStop.previousStop != null
+return has only one value
+return != null
+return.name.toString == "Piccadilly"
+return.firstStop.previousStop == null
+return.lastStop.nextStop == null
+this.lastStop.station.name.toString != orig(this.lastStop.station.name.toString)
+===========================================================================
+org.patterneria.iterator.MetroLine.withNextStation(org.patterneria.iterator.Station):::ENTER
+arg0 != null
+arg0.name != null
+arg0.notification.toString == "Mind the gap"
+===========================================================================
+org.patterneria.iterator.MetroLine.withNextStation(org.patterneria.iterator.Station):::EXIT
+this.name == return.name
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.firstStop == return.firstStop
+this.firstStop == orig(this.firstStop)
+this.firstStop == orig(this.firstStop.nextStop.previousStop)
+this.firstStop.station == return.firstStop.station
+this.firstStop.station == orig(this.firstStop.station)
+this.firstStop.station.name == orig(this.firstStop.station.name)
+this.firstStop.station.name.toString == orig(this.firstStop.station.name.toString)
+this.firstStop.station.notification == orig(this.firstStop.station.notification)
+this.firstStop.previousStop == orig(this.firstStop.previousStop)
+this.firstStop.nextStop == return.firstStop.nextStop
+this.firstStop.nextStop.station == orig(this.firstStop.nextStop.station)
+this.lastStop == return.lastStop
+this.lastStop.station == orig(arg0)
+this.lastStop.station.name == arg0.name
+this.lastStop.station.notification == arg0.notification
+this.lastStop.previousStop == return.lastStop.previousStop
+this.lastStop.previousStop == orig(this.lastStop)
+this.lastStop.previousStop == orig(this.lastStop.previousStop.nextStop)
+this.lastStop.previousStop.station == orig(this.lastStop.station)
+this.lastStop.previousStop.previousStop == orig(this.lastStop.previousStop)
+this.lastStop.nextStop == orig(this.lastStop.nextStop)
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+arg0.notification == orig(arg0.notification)
+arg0.notification.toString == orig(arg0.notification.toString)
+return == orig(this)
+return.lastStop.station == orig(arg0)
+this.firstStop.nextStop has only one value
+this.firstStop.nextStop != null
+this.lastStop.previousStop != null
+arg0.name != null
+arg0.notification.toString == "Mind the gap"
+return has only one value
+return != null
+return.name.toString == "Piccadilly"
+return.firstStop.previousStop == null
+return.lastStop.nextStop == null
+this.lastStop.station.name.toString != orig(this.lastStop.station.name.toString)
+===========================================================================
+org.patterneria.iterator.Station:::OBJECT
+this.name != null
+this.notification.toString == "Mind the gap"
+===========================================================================
+org.patterneria.iterator.Station.Station(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+org.patterneria.iterator.Station.Station(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.notification == null
+===========================================================================
+org.patterneria.iterator.Station.Station(java.lang.String, java.lang.String):::ENTER
+arg0 != null
+arg1.toString == "Mind the gap"
+===========================================================================
+org.patterneria.iterator.Station.Station(java.lang.String, java.lang.String):::EXIT
+this.name == orig(arg0)
+this.notification == orig(arg1)
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg1.toString == "Mind the gap"
+===========================================================================
+org.patterneria.iterator.Station.getName():::ENTER
+===========================================================================
+org.patterneria.iterator.Station.getName():::EXIT
+this.name == return
+this.name.toString == orig(this.name.toString)
+this.notification == orig(this.notification)
+this.notification.toString == orig(this.notification.toString)
+return == orig(this.name)
+return != null
+===========================================================================
+org.patterneria.iterator.Station.getNotification():::ENTER
+===========================================================================
+org.patterneria.iterator.Station.getNotification():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.notification == return
+this.notification.toString == orig(this.notification.toString)
+return == orig(this.notification)
+return.toString == "Mind the gap"
+===========================================================================
+org.patterneria.iterator.Train:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.iterator.Train.Train():::EXIT
+===========================================================================
+org.patterneria.iterator.Train.go(java.util.Iterator):::ENTER
+===========================================================================
+org.patterneria.iterator.Train.go(java.util.Iterator):::EXIT
+===========================================================================
+org.patterneria.iterator.Train.stop(org.patterneria.iterator.Station):::ENTER
+arg0 != null
+arg0.name != null
+arg0.notification.toString == "Mind the gap"
+===========================================================================
+org.patterneria.iterator.Train.stop(org.patterneria.iterator.Station):::EXIT
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+arg0.notification == orig(arg0.notification)
+arg0.notification.toString == orig(arg0.notification.toString)
+arg0.name != null
+arg0.notification.toString == "Mind the gap"
+===========================================================================
+org.patterneria.state.Dialing:::OBJECT
+===========================================================================
+org.patterneria.state.Dialing.Dialing():::EXIT
+===========================================================================
+org.patterneria.state.Dialing.answer(org.patterneria.state.Phone):::ENTER
+this has only one value
+arg0 has only one value
+arg0.state has only one value
+arg0.state.getClass().getName() == org.patterneria.state.Dialing.class
+===========================================================================
+org.patterneria.state.Dialing.answer(org.patterneria.state.Phone):::EXIT
+arg0.state == orig(arg0.state)
+arg0.state.getClass().getName() == orig(arg0.state.getClass().getName())
+arg0.state has only one value
+arg0.state.getClass().getName() == org.patterneria.state.Dialing.class
+===========================================================================
+org.patterneria.state.Dialing.endCall(org.patterneria.state.Phone):::ENTER
+arg0 has only one value
+arg0.state.getClass().getName() == org.patterneria.state.Dialing.class
+===========================================================================
+org.patterneria.state.Dialing.endCall(org.patterneria.state.Phone):::EXIT
+arg0.state.getClass().getName() == org.patterneria.state.Idle.class
+===========================================================================
+org.patterneria.state.Idle:::OBJECT
+===========================================================================
+org.patterneria.state.Idle.Idle():::EXIT
+===========================================================================
+org.patterneria.state.Idle.dial(org.patterneria.state.Phone):::ENTER
+arg0 has only one value
+arg0.state.getClass().getName() == org.patterneria.state.Idle.class
+===========================================================================
+org.patterneria.state.Idle.dial(org.patterneria.state.Phone):::EXIT
+arg0.state.getClass().getName() == org.patterneria.state.Dialing.class
+===========================================================================
+org.patterneria.state.IncomingCall:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.state.IncomingCall.IncomingCall():::EXIT
+===========================================================================
+org.patterneria.state.IncomingCall.ignore(org.patterneria.state.Phone):::ENTER
+arg0 has only one value
+arg0.state has only one value
+arg0.state.getClass().getName() == org.patterneria.state.IncomingCall.class
+===========================================================================
+org.patterneria.state.IncomingCall.ignore(org.patterneria.state.Phone):::EXIT
+arg0.state has only one value
+arg0.state.getClass().getName() == org.patterneria.state.Idle.class
+===========================================================================
+org.patterneria.state.Phone:::OBJECT
+this has only one value
+this.state != null
+===========================================================================
+org.patterneria.state.Phone.Phone():::EXIT
+this.state has only one value
+this.state.getClass().getName() == org.patterneria.state.Idle.class
+===========================================================================
+org.patterneria.state.Phone.answer():::ENTER
+this.state has only one value
+this.state.getClass().getName() == org.patterneria.state.Dialing.class
+===========================================================================
+org.patterneria.state.Phone.answer():::EXIT
+this.state == orig(this.state)
+this.state.getClass().getName() == orig(this.state.getClass().getName())
+this.state has only one value
+this.state.getClass().getName() == org.patterneria.state.Dialing.class
+===========================================================================
+org.patterneria.state.Phone.dial():::ENTER
+this.state.getClass().getName() == org.patterneria.state.Idle.class
+===========================================================================
+org.patterneria.state.Phone.dial():::EXIT
+this.state.getClass().getName() == org.patterneria.state.Dialing.class
+===========================================================================
+org.patterneria.state.Phone.endCall():::ENTER
+this.state.getClass().getName() == org.patterneria.state.Dialing.class
+===========================================================================
+org.patterneria.state.Phone.endCall():::EXIT
+this.state.getClass().getName() == org.patterneria.state.Idle.class
+===========================================================================
+org.patterneria.state.Phone.ignore():::ENTER
+this.state has only one value
+this.state.getClass().getName() == org.patterneria.state.IncomingCall.class
+===========================================================================
+org.patterneria.state.Phone.ignore():::EXIT
+this.state has only one value
+this.state.getClass().getName() == org.patterneria.state.Idle.class
+===========================================================================
+org.patterneria.state.Phone.setState(org.patterneria.state.PhoneState):::ENTER
+===========================================================================
+org.patterneria.state.Phone.setState(org.patterneria.state.PhoneState):::EXIT
+this.state == orig(arg0)
+this.state.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+org.patterneria.state.StateSample:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.state.StateSample.StateSample():::EXIT
+===========================================================================
+org.patterneria.state.StateSample.run():::ENTER
+===========================================================================
+org.patterneria.state.StateSample.run():::EXIT
+===========================================================================
+org.patterneria.strategy.StrategyByHeadFirst:::OBJECT
+===========================================================================
+org.patterneria.strategy.StrategyByHeadFirst.StrategyByHeadFirst():::EXIT
+===========================================================================
+org.patterneria.strategy.StrategyByHeadFirst.learn():::ENTER
+===========================================================================
+org.patterneria.strategy.StrategyByHeadFirst.learn():::EXIT
+===========================================================================
+org.patterneria.strategy.StrategyByPatterneria:::OBJECT
+===========================================================================
+org.patterneria.strategy.StrategyByPatterneria.StrategyByPatterneria():::EXIT
+===========================================================================
+org.patterneria.strategy.StrategyByPatterneria.learn():::ENTER
+===========================================================================
+org.patterneria.strategy.StrategyByPatterneria.learn():::EXIT
+===========================================================================
+org.patterneria.strategy.StrategyMix:::OBJECT
+this has only one value
+this.strategies has only one value
+this.strategies[] contains no nulls and has only one value, of length 3
+this.strategies[].getClass().getName() == [org.patterneria.strategy.StrategyPatternByGOF, org.patterneria.strategy.StrategyByHeadFirst, org.patterneria.strategy.StrategyByPatterneria]
+this.strategies.getClass().getName() == java.util.Arrays$ArrayList.class
+size(this.strategies[]) == 3
+===========================================================================
+org.patterneria.strategy.StrategyMix.StrategyMix(org.patterneria.strategy.StrategyPatternLearningStrategy[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.patterneria.strategy.StrategyPatternLearningStrategy[].class
+arg0[] contains no nulls and has only one value, of length 3
+size(arg0[]) == 3
+===========================================================================
+org.patterneria.strategy.StrategyMix.StrategyMix(org.patterneria.strategy.StrategyPatternLearningStrategy[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 3
+===========================================================================
+org.patterneria.strategy.StrategyMix.learn():::ENTER
+===========================================================================
+org.patterneria.strategy.StrategyMix.learn():::EXIT
+this.strategies == orig(this.strategies)
+this.strategies[] == orig(this.strategies[])
+this.strategies.getClass().getName() == orig(this.strategies.getClass().getName())
+===========================================================================
+org.patterneria.strategy.StrategyPatternByExamples:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.strategy.StrategyPatternByExamples.StrategyPatternByExamples():::EXIT
+===========================================================================
+org.patterneria.strategy.StrategyPatternByExamples.learn():::ENTER
+===========================================================================
+org.patterneria.strategy.StrategyPatternByExamples.learn():::EXIT
+===========================================================================
+org.patterneria.strategy.StrategyPatternByGOF:::OBJECT
+===========================================================================
+org.patterneria.strategy.StrategyPatternByGOF.StrategyPatternByGOF():::EXIT
+===========================================================================
+org.patterneria.strategy.StrategyPatternByGOF.learn():::ENTER
+===========================================================================
+org.patterneria.strategy.StrategyPatternByGOF.learn():::EXIT
+===========================================================================
+org.patterneria.strategy.StrategyPatternTutorial:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.strategy.StrategyPatternTutorial.StrategyPatternTutorial():::EXIT
+this.learningStrategy == null
+===========================================================================
+org.patterneria.strategy.StrategyPatternTutorial.apply():::ENTER
+===========================================================================
+org.patterneria.strategy.StrategyPatternTutorial.apply():::EXIT
+this.learningStrategy == orig(this.learningStrategy)
+this.learningStrategy.getClass().getName() == orig(this.learningStrategy.getClass().getName())
+===========================================================================
+org.patterneria.strategy.StrategyPatternTutorial.setLearningStrategy(org.patterneria.strategy.StrategyPatternLearningStrategy):::ENTER
+===========================================================================
+org.patterneria.strategy.StrategyPatternTutorial.setLearningStrategy(org.patterneria.strategy.StrategyPatternLearningStrategy):::EXIT
+this.learningStrategy == orig(arg0)
+this.learningStrategy.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+org.patterneria.strategy.StrategySample:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.strategy.StrategySample.StrategySample():::EXIT
+===========================================================================
+org.patterneria.strategy.StrategySample.run():::ENTER
+===========================================================================
+org.patterneria.strategy.StrategySample.run():::EXIT
+===========================================================================
+org.patterneria.strategy.StrategyWithPPTSlidesDecorator:::OBJECT
+this has only one value
+this.innerStrategy has only one value
+this.innerStrategy.getClass().getName() == org.patterneria.strategy.StrategyPatternByGOF.class
+===========================================================================
+org.patterneria.strategy.StrategyWithPPTSlidesDecorator.StrategyWithPPTSlidesDecorator(org.patterneria.strategy.StrategyPatternLearningStrategy):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.patterneria.strategy.StrategyPatternByGOF.class
+===========================================================================
+org.patterneria.strategy.StrategyWithPPTSlidesDecorator.StrategyWithPPTSlidesDecorator(org.patterneria.strategy.StrategyPatternLearningStrategy):::EXIT
+this.innerStrategy == orig(arg0)
+this.innerStrategy.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+org.patterneria.strategy.StrategyWithPPTSlidesDecorator.learn():::ENTER
+===========================================================================
+org.patterneria.strategy.StrategyWithPPTSlidesDecorator.learn():::EXIT
+this.innerStrategy == orig(this.innerStrategy)
+this.innerStrategy.getClass().getName() == orig(this.innerStrategy.getClass().getName())
+===========================================================================
+org.patterneria.visitor.ArithmeticExpression:::OBJECT
+===========================================================================
+org.patterneria.visitor.ArithmeticExpression.ArithmeticExpression():::EXIT
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionEvaluator:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionEvaluator.ArithmeticExpressionEvaluator():::EXIT
+this.result == 0.0
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionEvaluator.getResult():::ENTER
+this.result one of { -17.0, 17.0 }
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionEvaluator.getResult():::EXIT
+this.result == return
+return == orig(this.result)
+return one of { -17.0, 17.0 }
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionEvaluator.visit(org.patterneria.visitor.BinaryArithmeticExpression):::ENTER
+this.result one of { 0.0, 17.0 }
+arg0.right.getClass().getName() == org.patterneria.visitor.ConstantExpression.class
+arg0.operation one of { 43, 45 }
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionEvaluator.visit(org.patterneria.visitor.BinaryArithmeticExpression):::EXIT
+arg0.left == orig(arg0.left)
+arg0.left.getClass().getName() == orig(arg0.left.getClass().getName())
+arg0.right == orig(arg0.right)
+arg0.right.getClass().getName() == orig(arg0.right.getClass().getName())
+arg0.operation == orig(arg0.operation)
+this.result one of { 17.0, 22.0 }
+arg0.right.getClass().getName() == org.patterneria.visitor.ConstantExpression.class
+arg0.operation one of { 43, 45 }
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionEvaluator.visit(org.patterneria.visitor.ConstantExpression):::ENTER
+arg0.value one of { 2.0, 5.0, 20.0 }
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionEvaluator.visit(org.patterneria.visitor.ConstantExpression):::EXIT
+this.result == arg0.value
+this.result == orig(arg0.value)
+this.result one of { 2.0, 5.0, 20.0 }
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionEvaluator.visit(org.patterneria.visitor.NegateExpression):::ENTER
+this.result == 17.0
+arg0 has only one value
+arg0.expressionToNegate has only one value
+arg0.expressionToNegate.getClass().getName() == org.patterneria.visitor.BinaryArithmeticExpression.class
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionEvaluator.visit(org.patterneria.visitor.NegateExpression):::EXIT
+arg0.expressionToNegate == orig(arg0.expressionToNegate)
+arg0.expressionToNegate.getClass().getName() == orig(arg0.expressionToNegate.getClass().getName())
+this.result == -17.0
+arg0.expressionToNegate has only one value
+arg0.expressionToNegate.getClass().getName() == org.patterneria.visitor.BinaryArithmeticExpression.class
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionPrettyPrinter:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionPrettyPrinter.ArithmeticExpressionPrettyPrinter():::EXIT
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionPrettyPrinter.visit(org.patterneria.visitor.BinaryArithmeticExpression):::ENTER
+arg0.right.getClass().getName() == org.patterneria.visitor.ConstantExpression.class
+arg0.operation one of { 43, 45 }
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionPrettyPrinter.visit(org.patterneria.visitor.BinaryArithmeticExpression):::EXIT
+arg0.left == orig(arg0.left)
+arg0.left.getClass().getName() == orig(arg0.left.getClass().getName())
+arg0.right == orig(arg0.right)
+arg0.right.getClass().getName() == orig(arg0.right.getClass().getName())
+arg0.operation == orig(arg0.operation)
+arg0.right.getClass().getName() == org.patterneria.visitor.ConstantExpression.class
+arg0.operation one of { 43, 45 }
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionPrettyPrinter.visit(org.patterneria.visitor.ConstantExpression):::ENTER
+arg0.value one of { 2.0, 5.0, 20.0 }
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionPrettyPrinter.visit(org.patterneria.visitor.ConstantExpression):::EXIT
+arg0.value == orig(arg0.value)
+arg0.value one of { 2.0, 5.0, 20.0 }
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionPrettyPrinter.visit(org.patterneria.visitor.NegateExpression):::ENTER
+arg0 has only one value
+arg0.expressionToNegate has only one value
+arg0.expressionToNegate.getClass().getName() == org.patterneria.visitor.BinaryArithmeticExpression.class
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionPrettyPrinter.visit(org.patterneria.visitor.NegateExpression):::EXIT54
+===========================================================================
+org.patterneria.visitor.ArithmeticExpressionPrettyPrinter.visit(org.patterneria.visitor.NegateExpression):::EXIT
+arg0.expressionToNegate == orig(arg0.expressionToNegate)
+arg0.expressionToNegate.getClass().getName() == orig(arg0.expressionToNegate.getClass().getName())
+arg0.expressionToNegate has only one value
+arg0.expressionToNegate.getClass().getName() == org.patterneria.visitor.BinaryArithmeticExpression.class
+===========================================================================
+org.patterneria.visitor.BinaryArithmeticExpression:::OBJECT
+this.left != null
+this.right != null
+this.right.getClass().getName() == org.patterneria.visitor.ConstantExpression.class
+this.operation one of { 43, 45 }
+===========================================================================
+org.patterneria.visitor.BinaryArithmeticExpression.BinaryArithmeticExpression(org.patterneria.visitor.ArithmeticExpression, org.patterneria.visitor.ArithmeticExpression, char):::ENTER
+arg1.getClass().getName() == org.patterneria.visitor.ConstantExpression.class
+arg2 one of { 43, 45 }
+===========================================================================
+org.patterneria.visitor.BinaryArithmeticExpression.BinaryArithmeticExpression(org.patterneria.visitor.ArithmeticExpression, org.patterneria.visitor.ArithmeticExpression, char):::EXIT
+this.left == orig(arg0)
+this.left.getClass().getName() == orig(arg0.getClass().getName())
+this.right == orig(arg1)
+this.right.getClass().getName() == orig(arg1.getClass().getName())
+this.operation == orig(arg2)
+===========================================================================
+org.patterneria.visitor.BinaryArithmeticExpression.accept(org.patterneria.visitor.ArithmeticExpressionVisitor):::ENTER
+this.left.getClass().getName() != arg0.getClass().getName()
+this.right.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+org.patterneria.visitor.BinaryArithmeticExpression.accept(org.patterneria.visitor.ArithmeticExpressionVisitor):::EXIT
+this.left == orig(this.left)
+this.left.getClass().getName() == orig(this.left.getClass().getName())
+this.right == orig(this.right)
+this.right.getClass().getName() == orig(this.right.getClass().getName())
+this.operation == orig(this.operation)
+this.left.getClass().getName() != orig(arg0.getClass().getName())
+this.right.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+org.patterneria.visitor.BinaryArithmeticExpression.getLeft():::ENTER
+===========================================================================
+org.patterneria.visitor.BinaryArithmeticExpression.getLeft():::EXIT
+this.left == return
+this.left.getClass().getName() == return.getClass().getName()
+this.right == orig(this.right)
+this.right.getClass().getName() == orig(this.right.getClass().getName())
+this.operation == orig(this.operation)
+return == orig(this.left)
+return.getClass().getName() == orig(this.left.getClass().getName())
+===========================================================================
+org.patterneria.visitor.BinaryArithmeticExpression.getOperation():::ENTER
+===========================================================================
+org.patterneria.visitor.BinaryArithmeticExpression.getOperation():::EXIT
+this.left == orig(this.left)
+this.left.getClass().getName() == orig(this.left.getClass().getName())
+this.right == orig(this.right)
+this.right.getClass().getName() == orig(this.right.getClass().getName())
+this.operation == return
+return == orig(this.operation)
+return one of { 43, 45 }
+===========================================================================
+org.patterneria.visitor.BinaryArithmeticExpression.getRight():::ENTER
+===========================================================================
+org.patterneria.visitor.BinaryArithmeticExpression.getRight():::EXIT
+this.left == orig(this.left)
+this.left.getClass().getName() == orig(this.left.getClass().getName())
+this.right == return
+this.right.getClass().getName() == return.getClass().getName()
+this.operation == orig(this.operation)
+return == orig(this.right)
+return.getClass().getName() == orig(this.right.getClass().getName())
+return.getClass().getName() == org.patterneria.visitor.ConstantExpression.class
+===========================================================================
+org.patterneria.visitor.ConstantExpression:::OBJECT
+this.value one of { 2.0, 5.0, 20.0 }
+===========================================================================
+org.patterneria.visitor.ConstantExpression.ConstantExpression(double):::ENTER
+arg0 one of { 2.0, 5.0, 20.0 }
+===========================================================================
+org.patterneria.visitor.ConstantExpression.ConstantExpression(double):::EXIT
+this.value == orig(arg0)
+===========================================================================
+org.patterneria.visitor.ConstantExpression.accept(org.patterneria.visitor.ArithmeticExpressionVisitor):::ENTER
+arg0 != null
+===========================================================================
+org.patterneria.visitor.ConstantExpression.accept(org.patterneria.visitor.ArithmeticExpressionVisitor):::EXIT
+this.value == orig(this.value)
+===========================================================================
+org.patterneria.visitor.ConstantExpression.getValue():::ENTER
+===========================================================================
+org.patterneria.visitor.ConstantExpression.getValue():::EXIT
+this.value == return
+return == orig(this.value)
+return one of { 2.0, 5.0, 20.0 }
+===========================================================================
+org.patterneria.visitor.NegateExpression:::OBJECT
+this has only one value
+this.expressionToNegate has only one value
+this.expressionToNegate.getClass().getName() == org.patterneria.visitor.BinaryArithmeticExpression.class
+===========================================================================
+org.patterneria.visitor.NegateExpression.NegateExpression(org.patterneria.visitor.ArithmeticExpression):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.patterneria.visitor.BinaryArithmeticExpression.class
+===========================================================================
+org.patterneria.visitor.NegateExpression.NegateExpression(org.patterneria.visitor.ArithmeticExpression):::EXIT
+this.expressionToNegate == orig(arg0)
+this.expressionToNegate.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+org.patterneria.visitor.NegateExpression.accept(org.patterneria.visitor.ArithmeticExpressionVisitor):::ENTER
+===========================================================================
+org.patterneria.visitor.NegateExpression.accept(org.patterneria.visitor.ArithmeticExpressionVisitor):::EXIT
+this.expressionToNegate == orig(this.expressionToNegate)
+this.expressionToNegate.getClass().getName() == orig(this.expressionToNegate.getClass().getName())
+===========================================================================
+org.patterneria.visitor.NegateExpression.getExpressionToNegate():::ENTER
+===========================================================================
+org.patterneria.visitor.NegateExpression.getExpressionToNegate():::EXIT
+this.expressionToNegate == return
+this.expressionToNegate.getClass().getName() == return.getClass().getName()
+return == orig(this.expressionToNegate)
+return.getClass().getName() == orig(this.expressionToNegate.getClass().getName())
+return has only one value
+return.getClass().getName() == org.patterneria.visitor.BinaryArithmeticExpression.class
+===========================================================================
+org.patterneria.visitor.VisitorSample:::OBJECT
+this has only one value
+===========================================================================
+org.patterneria.visitor.VisitorSample.VisitorSample():::EXIT
+===========================================================================
+org.patterneria.visitor.VisitorSample.run():::ENTER
+===========================================================================
+org.patterneria.visitor.VisitorSample.run():::EXIT
+Exiting Daikon.

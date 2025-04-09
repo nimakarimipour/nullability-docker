@@ -1,0 +1,2056 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 8 times.  Unmatched entries are ignored!
+Unterminated calls:
+  stv6.SeriesTracker.main(java.lang.String[]) : 1 invocation
+  stv6.Profile.initialize(java.lang.String[]) : 1 invocation
+  stv6.Profile.loadFromOptions(joptsimple.OptionSet) : 1 invocation
+  stv6.STServer.getInstance(int) : 1 invocation
+  stv6.STServer.STServer(int) : 1 invocation
+  stv6.http.HttpServer.HttpServer(int) : 1 invocation
+  stv6.http.HttpServer.setPort(int) : 1 invocation
+  stv6.http.HttpServer.stop() : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+joptsimple.AbstractOptionSpec:::OBJECT
+this.options != null
+this.options[] elements != null
+this.options[].getClass().getName() elements == java.lang.String.class
+this.options.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+joptsimple.AbstractOptionSpec.AbstractOptionSpec(java.util.Collection, java.lang.String):::ENTER
+options != null
+description != null
+===========================================================================
+joptsimple.AbstractOptionSpec.AbstractOptionSpec(java.util.Collection, java.lang.String):::EXIT
+description.toString == orig(description.toString)
+this.description != null
+size(this.options[]) one of { 1, 2, 3 }
+===========================================================================
+joptsimple.AbstractOptionSpec.arrangeOptions(java.util.Collection):::ENTER
+this.options[] == []
+this.options[].getClass().getName() == []
+this.description == null
+unarranged != null
+===========================================================================
+joptsimple.AbstractOptionSpec.arrangeOptions(java.util.Collection):::EXIT104
+this.options[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] }
+size(this.options[]) one of { 2, 3 }
+size(this.options[])-1 > orig(size(this.options[]))
+===========================================================================
+joptsimple.AbstractOptionSpec.arrangeOptions(java.util.Collection):::EXIT86
+size(this.options[])-1 == orig(size(this.options[]))
+this.options[].getClass().getName() == [java.lang.String]
+size(this.options[]) == 1
+===========================================================================
+joptsimple.AbstractOptionSpec.arrangeOptions(java.util.Collection):::EXIT
+this.options == orig(this.options)
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+(this.options[].getClass().getName() == [java.lang.String])  <==>  (size(this.options[]) == 1)
+(this.options[].getClass().getName() == [java.lang.String])  <==>  (size(this.options[])-1 == orig(size(this.options[])))
+(this.options[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] })  <==>  (size(this.options[]) one of { 2, 3 })
+(this.options[].getClass().getName() one of { [java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String] })  <==>  (size(this.options[])-1 > orig(size(this.options[])))
+this.description == null
+size(this.options[]) one of { 1, 2, 3 }
+size(this.options[])-1 >= orig(size(this.options[]))
+===========================================================================
+joptsimple.AbstractOptionSpec.description():::ENTER
+this.getClass().getName() == joptsimple.OptionSpecBuilder.class
+this.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+this.description != null
+size(this.options[]) one of { 1, 2 }
+===========================================================================
+joptsimple.AbstractOptionSpec.description():::EXIT
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+this.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+this.description != null
+return != null
+size(this.options[]) one of { 1, 2 }
+===========================================================================
+joptsimple.AbstractOptionSpec.options():::ENTER
+this.description != null
+size(this.options[]) one of { 1, 2, 3 }
+===========================================================================
+joptsimple.AbstractOptionSpec.options():::EXIT
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+this.description != null
+return != null
+return.getClass().getName() == java.util.Collections$UnmodifiableCollection.class
+size(this.options[]) one of { 1, 2, 3 }
+===========================================================================
+joptsimple.AbstractOptionSpec.value(joptsimple.OptionSet):::ENTER
+this.getClass().getName() == joptsimple.RequiredArgumentOptionSpec.class
+this.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+detectedOptions has only one value
+detectedOptions.detectedOptions has only one value
+detectedOptions.detectedOptions.getClass().getName() == java.util.HashMap.class
+detectedOptions.optionsToArguments has only one value
+detectedOptions.optionsToArguments.getClass().getName() == java.util.IdentityHashMap.class
+detectedOptions.nonOptionArguments has only one value
+detectedOptions.nonOptionArguments[] == []
+detectedOptions.nonOptionArguments[].getClass().getName() == []
+detectedOptions.nonOptionArguments.getClass().getName() == java.util.ArrayList.class
+detectedOptions.defaultValues has only one value
+detectedOptions.defaultValues.getClass().getName() == java.util.HashMap.class
+size(this.options[]) one of { 1, 2 }
+===========================================================================
+joptsimple.AbstractOptionSpec.value(joptsimple.OptionSet):::EXIT
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+detectedOptions.detectedOptions == orig(detectedOptions.detectedOptions)
+detectedOptions.detectedOptions.getClass().getName() == orig(detectedOptions.detectedOptions.getClass().getName())
+detectedOptions.optionsToArguments == orig(detectedOptions.optionsToArguments)
+detectedOptions.optionsToArguments.getClass().getName() == orig(detectedOptions.optionsToArguments.getClass().getName())
+detectedOptions.nonOptionArguments == orig(detectedOptions.nonOptionArguments)
+detectedOptions.nonOptionArguments[] == orig(detectedOptions.nonOptionArguments[])
+detectedOptions.nonOptionArguments.getClass().getName() == orig(detectedOptions.nonOptionArguments.getClass().getName())
+detectedOptions.defaultValues == orig(detectedOptions.defaultValues)
+detectedOptions.defaultValues.getClass().getName() == orig(detectedOptions.defaultValues.getClass().getName())
+this.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+detectedOptions.detectedOptions has only one value
+detectedOptions.detectedOptions.getClass().getName() == java.util.HashMap.class
+detectedOptions.optionsToArguments has only one value
+detectedOptions.optionsToArguments.getClass().getName() == java.util.IdentityHashMap.class
+detectedOptions.nonOptionArguments has only one value
+detectedOptions.nonOptionArguments[] == []
+detectedOptions.nonOptionArguments[].getClass().getName() == []
+detectedOptions.nonOptionArguments.getClass().getName() == java.util.ArrayList.class
+detectedOptions.defaultValues has only one value
+detectedOptions.defaultValues.getClass().getName() == java.util.HashMap.class
+size(this.options[]) one of { 1, 2 }
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec:::CLASS
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec:::OBJECT
+this.argumentDescription != null
+this.valueSeparator != null
+this.valueSeparator.toString one of { "\000", "," }
+this.defaultValues != null
+this.defaultValues[] elements != null
+this.defaultValues.getClass().getName() == java.util.ArrayList.class
+this.options != null
+this.options[] elements != null
+this.options[].getClass().getName() elements == java.lang.String.class
+this.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+this.options.getClass().getName() == java.util.ArrayList.class
+this.description != null
+size(this.defaultValues[]) one of { 0, 1 }
+size(this.options[]) one of { 1, 2 }
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.ArgumentAcceptingOptionSpec(java.util.Collection, boolean, java.lang.String):::ENTER
+options != null
+options.getClass().getName() == java.util.Collections$UnmodifiableCollection.class
+description != null
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.ArgumentAcceptingOptionSpec(java.util.Collection, boolean, java.lang.String):::EXIT
+description.toString == orig(description.toString)
+this.converter == null
+this.argumentDescription has only one value
+this.argumentDescription.toString == ""
+this.valueSeparator.toString == "\000"
+this.defaultValues[] == []
+this.defaultValues[].getClass().getName() == []
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.addDefaultValue(java.lang.Object):::ENTER
+this.converter != null
+this.valueSeparator.toString == "\000"
+this.defaultValues[] == []
+this.defaultValues[].getClass().getName() == []
+value != null
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.addDefaultValue(java.lang.Object):::EXIT
+this.argumentRequired == orig(this.argumentRequired)
+this.converter == orig(this.converter)
+this.converter.getClass().getName() == orig(this.converter.getClass().getName())
+this.argumentDescription == orig(this.argumentDescription)
+this.argumentDescription.toString == orig(this.argumentDescription.toString)
+this.valueSeparator == orig(this.valueSeparator)
+this.valueSeparator.toString == orig(this.valueSeparator.toString)
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+size(this.defaultValues[])-1 == orig(size(this.defaultValues[]))
+this.converter != null
+this.valueSeparator.toString == "\000"
+size(this.defaultValues[]) == 1
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.defaultValues():::ENTER
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.defaultValues():::EXIT
+this.argumentRequired == orig(this.argumentRequired)
+this.converter == orig(this.converter)
+this.converter.getClass().getName() == orig(this.converter.getClass().getName())
+this.argumentDescription == orig(this.argumentDescription)
+this.argumentDescription.toString == orig(this.argumentDescription.toString)
+this.valueSeparator == orig(this.valueSeparator)
+this.valueSeparator.toString == orig(this.valueSeparator.toString)
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues[] == orig(this.defaultValues[])
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+return != null
+return[] elements != null
+return.getClass().getName() == java.util.Collections$UnmodifiableRandomAccessList.class
+size(return[]) one of { 0, 1 }
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.defaultsTo(java.lang.Object, java.lang.Object[]):::ENTER
+this.converter != null
+this.valueSeparator.toString == "\000"
+this.defaultValues[] == []
+this.defaultValues[].getClass().getName() == []
+value != null
+values != null
+values[] == []
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.defaultsTo(java.lang.Object, java.lang.Object[]):::EXIT
+this.argumentRequired == orig(this.argumentRequired)
+this.converter == orig(this.converter)
+this.converter.getClass().getName() == orig(this.converter.getClass().getName())
+this.argumentDescription == orig(this.argumentDescription)
+this.argumentDescription.toString == orig(this.argumentDescription.toString)
+this.valueSeparator == orig(this.valueSeparator)
+this.valueSeparator.toString == orig(this.valueSeparator.toString)
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+values[] == orig(values[])
+size(this.defaultValues[])-1 == orig(size(this.defaultValues[]))
+this.converter != null
+this.valueSeparator.toString == "\000"
+values[] == []
+return != null
+return.converter != null
+return.argumentDescription != null
+return.valueSeparator != null
+return.valueSeparator.toString == "\000"
+return.defaultValues != null
+return.defaultValues[] elements != null
+return.defaultValues.getClass().getName() == java.util.ArrayList.class
+return.options != null
+return.options[] elements != null
+return.options[].getClass().getName() elements == java.lang.String.class
+return.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+return.options.getClass().getName() == java.util.ArrayList.class
+return.description != null
+size(this.defaultValues[]) == 1
+size(return.defaultValues[]) == 1
+size(return.options[]) one of { 1, 2 }
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.describedAs(java.lang.String):::ENTER
+this.argumentDescription has only one value
+this.argumentDescription.toString == ""
+this.valueSeparator.toString == "\000"
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.describedAs(java.lang.String):::EXIT
+this.argumentRequired == orig(this.argumentRequired)
+this.converter == orig(this.converter)
+this.converter.getClass().getName() == orig(this.converter.getClass().getName())
+this.valueSeparator == orig(this.valueSeparator)
+this.valueSeparator.toString == orig(this.valueSeparator.toString)
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues[] == orig(this.defaultValues[])
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+description.toString == orig(description.toString)
+this.valueSeparator.toString == "\000"
+return.valueSeparator.toString == "\000"
+return.defaultValues.getClass().getName() == java.util.ArrayList.class
+return.options[].getClass().getName() elements == java.lang.String.class
+return.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+return.options.getClass().getName() == java.util.ArrayList.class
+size(return.defaultValues[]) one of { 0, 1 }
+size(return.options[]) one of { 1, 2 }
+this.argumentDescription.toString > orig(this.argumentDescription.toString)
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.ofType(java.lang.Class):::ENTER
+this.converter == null
+this.argumentDescription has only one value
+this.argumentDescription.toString == ""
+this.valueSeparator.toString == "\000"
+this.defaultValues[] == []
+this.defaultValues[].getClass().getName() == []
+argumentType != null
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.ofType(java.lang.Class):::EXIT
+this.argumentRequired == orig(this.argumentRequired)
+this.argumentDescription == orig(this.argumentDescription)
+this.argumentDescription.toString == orig(this.argumentDescription.toString)
+this.valueSeparator == orig(this.valueSeparator)
+this.valueSeparator.toString == orig(this.valueSeparator.toString)
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues[] == orig(this.defaultValues[])
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+this.converter != null
+this.argumentDescription has only one value
+this.argumentDescription.toString == ""
+this.valueSeparator.toString == "\000"
+this.defaultValues[] == []
+this.defaultValues[].getClass().getName() == []
+return != null
+return.converter != null
+return.argumentDescription has only one value
+return.argumentDescription != null
+return.argumentDescription.toString == ""
+return.valueSeparator != null
+return.valueSeparator.toString == "\000"
+return.defaultValues != null
+return.defaultValues[] == []
+return.defaultValues[].getClass().getName() == []
+return.defaultValues.getClass().getName() == java.util.ArrayList.class
+return.options != null
+return.options[] elements != null
+return.options[].getClass().getName() elements == java.lang.String.class
+return.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+return.options.getClass().getName() == java.util.ArrayList.class
+return.description != null
+size(return.options[]) one of { 1, 2 }
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.withValuesConvertedBy(joptsimple.ValueConverter):::ENTER
+this.converter == null
+this.argumentDescription has only one value
+this.argumentDescription.toString == ""
+this.valueSeparator.toString == "\000"
+this.defaultValues[] == []
+this.defaultValues[].getClass().getName() == []
+aConverter != null
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.withValuesConvertedBy(joptsimple.ValueConverter):::EXIT
+this.argumentRequired == orig(this.argumentRequired)
+this.argumentDescription == orig(this.argumentDescription)
+this.argumentDescription.toString == orig(this.argumentDescription.toString)
+this.valueSeparator == orig(this.valueSeparator)
+this.valueSeparator.toString == orig(this.valueSeparator.toString)
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues[] == orig(this.defaultValues[])
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+this.converter != null
+this.argumentDescription has only one value
+this.argumentDescription.toString == ""
+this.valueSeparator.toString == "\000"
+this.defaultValues[] == []
+this.defaultValues[].getClass().getName() == []
+return != null
+return.converter != null
+return.argumentDescription has only one value
+return.argumentDescription != null
+return.argumentDescription.toString == ""
+return.valueSeparator != null
+return.valueSeparator.toString == "\000"
+return.defaultValues != null
+return.defaultValues[] == []
+return.defaultValues[].getClass().getName() == []
+return.defaultValues.getClass().getName() == java.util.ArrayList.class
+return.options != null
+return.options[] elements != null
+return.options[].getClass().getName() elements == java.lang.String.class
+return.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+return.options.getClass().getName() == java.util.ArrayList.class
+return.description != null
+size(return.options[]) one of { 1, 2 }
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.withValuesSeparatedBy(char):::ENTER
+this has only one value
+this.getClass().getName() == joptsimple.OptionalArgumentOptionSpec.class
+this.argumentRequired == false
+this.converter == null
+this.argumentDescription has only one value
+this.argumentDescription.toString == "ext1,ext2,..."
+this.valueSeparator has only one value
+this.valueSeparator.toString == "\000"
+this.defaultValues has only one value
+this.defaultValues[] == []
+this.defaultValues[].getClass().getName() == []
+this.options has only one value
+this.options[] contains no nulls and has only one value, of length 1
+this.options[] elements has only one value
+this.options[].getClass().getName() == [java.lang.String]
+this.description has only one value
+this.description.toString == "If set, mediatomb will only transcode if a subtitle file is found, or is of one of the supplied file extensions"
+separator == 44
+size(this.options[]) == 1
+===========================================================================
+joptsimple.ArgumentAcceptingOptionSpec.withValuesSeparatedBy(char):::EXIT
+this.argumentRequired == orig(this.argumentRequired)
+this.converter == orig(this.converter)
+this.argumentDescription == orig(this.argumentDescription)
+this.argumentDescription.toString == orig(this.argumentDescription.toString)
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues[] == orig(this.defaultValues[])
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+this.argumentRequired == false
+this.converter == null
+this.argumentDescription has only one value
+this.argumentDescription.toString == "ext1,ext2,..."
+this.valueSeparator has only one value
+this.valueSeparator.toString == ","
+this.defaultValues has only one value
+this.defaultValues[] == []
+this.defaultValues[].getClass().getName() == []
+this.options has only one value
+this.options[] contains no nulls and has only one value, of length 1
+this.options[] elements has only one value
+this.options[].getClass().getName() == [java.lang.String]
+this.description has only one value
+this.description.toString == "If set, mediatomb will only transcode if a subtitle file is found, or is of one of the supplied file extensions"
+return has only one value
+return.getClass().getName() == joptsimple.OptionalArgumentOptionSpec.class
+return.argumentRequired == false
+return.converter == null
+return.argumentDescription has only one value
+return.argumentDescription.toString == "ext1,ext2,..."
+return.valueSeparator has only one value
+return.valueSeparator.toString == ","
+return.defaultValues has only one value
+return.defaultValues[] == []
+return.defaultValues[].getClass().getName() == []
+return.defaultValues.getClass().getName() == java.util.ArrayList.class
+return.options has only one value
+return.options[] contains no nulls and has only one value, of length 1
+return.options[] elements has only one value
+return.options[].getClass().getName() == [java.lang.String]
+return.options[].getClass().getName() elements == java.lang.String.class
+return.options.getClass().getName() == java.util.ArrayList.class
+return.description has only one value
+return.description.toString == "If set, mediatomb will only transcode if a subtitle file is found, or is of one of the supplied file extensions"
+size(this.options[]) == 1
+size(return.options[]) == 1
+===========================================================================
+joptsimple.ArgumentList:::OBJECT
+this has only one value
+this.arguments has only one value
+this.arguments.getClass().getName() == java.lang.String[].class
+this.arguments[] == []
+this.arguments[].getClass().getName() == []
+this.arguments[].toString == []
+this.currentIndex == 0
+===========================================================================
+joptsimple.ArgumentList.ArgumentList(java.lang.String[]):::ENTER
+arguments has only one value
+arguments.getClass().getName() == java.lang.String[].class
+arguments[] == []
+arguments[].toString == []
+===========================================================================
+joptsimple.ArgumentList.ArgumentList(java.lang.String[]):::EXIT
+arguments[] == orig(arguments[])
+arguments[] == []
+arguments[].toString == []
+===========================================================================
+joptsimple.ArgumentList.hasMore():::ENTER
+===========================================================================
+joptsimple.ArgumentList.hasMore():::EXIT
+this.arguments == orig(this.arguments)
+this.arguments.getClass().getName() == orig(this.arguments.getClass().getName())
+this.arguments[] == orig(this.arguments[])
+this.currentIndex == orig(this.currentIndex)
+return == false
+===========================================================================
+joptsimple.ArgumentList.hasMore():::EXIT;condition="not(return == true)"
+===========================================================================
+joptsimple.NoArgumentOptionSpec:::OBJECT
+this.options != null
+this.options[] elements != null
+this.options[].getClass().getName() elements == java.lang.String.class
+this.options.getClass().getName() == java.util.ArrayList.class
+this.description != null
+size(this.options[]) one of { 1, 2, 3 }
+===========================================================================
+joptsimple.NoArgumentOptionSpec.NoArgumentOptionSpec(java.util.Collection, java.lang.String):::ENTER
+options != null
+description != null
+===========================================================================
+joptsimple.NoArgumentOptionSpec.NoArgumentOptionSpec(java.util.Collection, java.lang.String):::EXIT
+description.toString == orig(description.toString)
+===========================================================================
+joptsimple.NoArgumentOptionSpec.defaultValues():::ENTER
+this has only one value
+this.options has only one value
+this.options[] contains no nulls and has only one value, of length 3
+this.options[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+this.description has only one value
+this.description.toString == "show help"
+size(this.options[]) == 3
+===========================================================================
+joptsimple.NoArgumentOptionSpec.defaultValues():::EXIT
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+this.options has only one value
+this.options[] contains no nulls and has only one value, of length 3
+this.options[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+this.description has only one value
+this.description.toString == "show help"
+return has only one value
+return[] == []
+return[].getClass().getName() == []
+return.getClass().getName() == java.util.Collections$EmptyList.class
+size(this.options[]) == 3
+===========================================================================
+joptsimple.OptionParser:::OBJECT
+this has only one value
+this.recognizedOptions has only one value
+this.recognizedOptions != null
+this.recognizedOptions.key == null
+this.recognizedOptions.value == null
+this.recognizedOptions.children has only one value
+this.recognizedOptions.children != null
+this.recognizedOptions.children.getClass().getName() == java.util.TreeMap.class
+this.state != null
+this.state.getClass().getName() == joptsimple.OptionParserState$2.class
+this.posixlyCorrect == false
+this.recognizedOptions.children.getClass().getName() != this.state.getClass().getName()
+===========================================================================
+joptsimple.OptionParser.OptionParser():::EXIT
+this.recognizedOptions.keysBeyond == 0
+this.state has only one value
+===========================================================================
+joptsimple.OptionParser.accepts(java.lang.String, java.lang.String):::ENTER
+this.state has only one value
+option != null
+description != null
+===========================================================================
+joptsimple.OptionParser.accepts(java.lang.String, java.lang.String):::EXIT
+this.recognizedOptions == return.parser.recognizedOptions
+this.recognizedOptions == orig(this.recognizedOptions)
+this.recognizedOptions.key == orig(this.recognizedOptions.key)
+this.recognizedOptions.value == orig(this.recognizedOptions.value)
+this.recognizedOptions.children == orig(this.recognizedOptions.children)
+this.recognizedOptions.children.getClass().getName() == orig(this.recognizedOptions.children.getClass().getName())
+this.state == return.parser.state
+this.state == orig(this.state)
+this.state.getClass().getName() == return.parser.state.getClass().getName()
+this.state.getClass().getName() == orig(this.state.getClass().getName())
+this.posixlyCorrect == orig(this.posixlyCorrect)
+option.toString == orig(option.toString)
+description.toString == orig(description.toString)
+return.parser == orig(this)
+return.description == orig(description)
+this.state has only one value
+return != null
+return.parser has only one value
+return.parser != null
+return.parser.posixlyCorrect == false
+return.options != null
+return.options[] elements != null
+return.options[].getClass().getName() == [java.lang.String]
+return.options[].getClass().getName() elements == java.lang.String.class
+return.options.getClass().getName() == java.util.ArrayList.class
+return.description != null
+size(return.options[]) == 1
+this.recognizedOptions.children.getClass().getName() != return.options.getClass().getName()
+this.recognizedOptions.keysBeyond - orig(this.recognizedOptions.keysBeyond) - 1 == 0
+this.state.getClass().getName() != return.options.getClass().getName()
+===========================================================================
+joptsimple.OptionParser.acceptsAll(java.util.Collection):::ENTER
+this.recognizedOptions.keysBeyond == 12
+this.state has only one value
+options has only one value
+options.getClass().getName() == java.util.LinkedList.class
+===========================================================================
+joptsimple.OptionParser.acceptsAll(java.util.Collection):::EXIT
+this.recognizedOptions == return.parser.recognizedOptions
+this.recognizedOptions == orig(this.recognizedOptions)
+this.recognizedOptions.key == orig(this.recognizedOptions.key)
+this.recognizedOptions.value == orig(this.recognizedOptions.value)
+this.recognizedOptions.children == orig(this.recognizedOptions.children)
+this.state == return.parser.state
+this.state == orig(this.state)
+this.posixlyCorrect == orig(this.posixlyCorrect)
+return.parser == orig(this)
+this.recognizedOptions.keysBeyond == 14
+this.state has only one value
+return has only one value
+return.parser has only one value
+return.parser.posixlyCorrect == false
+return.options has only one value
+return.options[] contains no nulls and has only one value, of length 2
+return.options[].getClass().getName() == [java.lang.String, java.lang.String]
+return.options[].getClass().getName() elements == java.lang.String.class
+return.options.getClass().getName() == java.util.ArrayList.class
+return.description has only one value
+return.description.toString == ""
+size(return.options[]) == 2
+===========================================================================
+joptsimple.OptionParser.acceptsAll(java.util.Collection, java.lang.String):::ENTER
+this.state has only one value
+options != null
+description != null
+this.recognizedOptions.children.getClass().getName() != options.getClass().getName()
+this.state.getClass().getName() != options.getClass().getName()
+===========================================================================
+joptsimple.OptionParser.acceptsAll(java.util.Collection, java.lang.String):::EXIT
+this.recognizedOptions == return.parser.recognizedOptions
+this.recognizedOptions == orig(this.recognizedOptions)
+this.recognizedOptions.key == orig(this.recognizedOptions.key)
+this.recognizedOptions.value == orig(this.recognizedOptions.value)
+this.recognizedOptions.children == orig(this.recognizedOptions.children)
+this.recognizedOptions.children.getClass().getName() == orig(this.recognizedOptions.children.getClass().getName())
+this.state == return.parser.state
+this.state == orig(this.state)
+this.state.getClass().getName() == return.parser.state.getClass().getName()
+this.state.getClass().getName() == orig(this.state.getClass().getName())
+this.posixlyCorrect == orig(this.posixlyCorrect)
+description.toString == orig(description.toString)
+return.parser == orig(this)
+return.description == orig(description)
+this.state has only one value
+return != null
+return.parser has only one value
+return.parser != null
+return.parser.posixlyCorrect == false
+return.options != null
+return.options[] elements != null
+return.options[].getClass().getName() elements == java.lang.String.class
+return.options.getClass().getName() == java.util.ArrayList.class
+return.description != null
+size(return.options[]) one of { 1, 2, 3 }
+this.recognizedOptions.children.getClass().getName() != return.options.getClass().getName()
+this.recognizedOptions.children.getClass().getName() != orig(options.getClass().getName())
+this.recognizedOptions.keysBeyond > orig(this.recognizedOptions.keysBeyond)
+this.state.getClass().getName() != return.options.getClass().getName()
+this.state.getClass().getName() != orig(options.getClass().getName())
+return.options.getClass().getName() != orig(options.getClass().getName())
+===========================================================================
+joptsimple.OptionParser.defaultValues():::ENTER
+this.recognizedOptions.keysBeyond == 32
+this.state has only one value
+===========================================================================
+joptsimple.OptionParser.defaultValues():::EXIT
+this.recognizedOptions == orig(this.recognizedOptions)
+this.recognizedOptions.key == orig(this.recognizedOptions.key)
+this.recognizedOptions.value == orig(this.recognizedOptions.value)
+this.recognizedOptions.children == orig(this.recognizedOptions.children)
+this.recognizedOptions.keysBeyond == orig(this.recognizedOptions.keysBeyond)
+this.state == orig(this.state)
+this.posixlyCorrect == orig(this.posixlyCorrect)
+this.recognizedOptions.keysBeyond == 32
+this.state has only one value
+return has only one value
+return.getClass().getName() == java.util.HashMap.class
+===========================================================================
+joptsimple.OptionParser.parse(java.lang.String[]):::ENTER
+this.recognizedOptions.keysBeyond == 32
+this.state has only one value
+arguments has only one value
+arguments.getClass().getName() == java.lang.String[].class
+arguments[] == []
+arguments[].toString == []
+===========================================================================
+joptsimple.OptionParser.parse(java.lang.String[]):::EXIT
+this.recognizedOptions == orig(this.recognizedOptions)
+this.recognizedOptions.key == orig(this.recognizedOptions.key)
+this.recognizedOptions.value == orig(this.recognizedOptions.value)
+this.recognizedOptions.children == orig(this.recognizedOptions.children)
+this.recognizedOptions.keysBeyond == orig(this.recognizedOptions.keysBeyond)
+this.posixlyCorrect == orig(this.posixlyCorrect)
+arguments[] == orig(arguments[])
+this.recognizedOptions.keysBeyond == 32
+this.state has only one value
+arguments[] == []
+arguments[].toString == []
+return has only one value
+return.detectedOptions has only one value
+return.detectedOptions.getClass().getName() == java.util.HashMap.class
+return.optionsToArguments has only one value
+return.optionsToArguments.getClass().getName() == java.util.IdentityHashMap.class
+return.nonOptionArguments has only one value
+return.nonOptionArguments[] == []
+return.nonOptionArguments[].getClass().getName() == []
+return.nonOptionArguments.getClass().getName() == java.util.ArrayList.class
+return.defaultValues has only one value
+===========================================================================
+joptsimple.OptionParser.recognize(joptsimple.AbstractOptionSpec):::ENTER
+this.state has only one value
+spec != null
+spec.options != null
+spec.options[] elements != null
+spec.options[].getClass().getName() elements == java.lang.String.class
+spec.options.getClass().getName() == java.util.ArrayList.class
+spec.description != null
+size(spec.options[]) one of { 1, 2, 3 }
+this.recognizedOptions.children.getClass().getName() != spec.getClass().getName()
+this.recognizedOptions.children.getClass().getName() != spec.options.getClass().getName()
+this.state.getClass().getName() != spec.getClass().getName()
+this.state.getClass().getName() != spec.options.getClass().getName()
+spec.getClass().getName() != spec.options.getClass().getName()
+===========================================================================
+joptsimple.OptionParser.recognize(joptsimple.AbstractOptionSpec):::EXIT
+this.recognizedOptions == orig(this.recognizedOptions)
+this.recognizedOptions.key == orig(this.recognizedOptions.key)
+this.recognizedOptions.value == orig(this.recognizedOptions.value)
+this.recognizedOptions.children == orig(this.recognizedOptions.children)
+this.recognizedOptions.children.getClass().getName() == orig(this.recognizedOptions.children.getClass().getName())
+this.state == orig(this.state)
+this.state.getClass().getName() == orig(this.state.getClass().getName())
+this.posixlyCorrect == orig(this.posixlyCorrect)
+spec.options == orig(spec.options)
+spec.options[] == orig(spec.options[])
+spec.options.getClass().getName() == orig(spec.options.getClass().getName())
+spec.description == orig(spec.description)
+spec.description.toString == orig(spec.description.toString)
+this.state has only one value
+spec.options != null
+spec.options[] elements != null
+spec.options[].getClass().getName() elements == java.lang.String.class
+spec.options.getClass().getName() == java.util.ArrayList.class
+spec.description != null
+size(spec.options[]) one of { 1, 2, 3 }
+this.recognizedOptions.children.getClass().getName() != spec.options.getClass().getName()
+this.recognizedOptions.children.getClass().getName() != orig(spec.getClass().getName())
+this.recognizedOptions.keysBeyond >= orig(this.recognizedOptions.keysBeyond)
+this.state.getClass().getName() != spec.options.getClass().getName()
+this.state.getClass().getName() != orig(spec.getClass().getName())
+spec.options.getClass().getName() != orig(spec.getClass().getName())
+===========================================================================
+joptsimple.OptionParser.reset():::ENTER
+this.recognizedOptions.keysBeyond == 32
+this.state has only one value
+===========================================================================
+joptsimple.OptionParser.reset():::EXIT
+this.recognizedOptions == orig(this.recognizedOptions)
+this.recognizedOptions.key == orig(this.recognizedOptions.key)
+this.recognizedOptions.value == orig(this.recognizedOptions.value)
+this.recognizedOptions.children == orig(this.recognizedOptions.children)
+this.recognizedOptions.keysBeyond == orig(this.recognizedOptions.keysBeyond)
+this.posixlyCorrect == orig(this.posixlyCorrect)
+this.recognizedOptions.keysBeyond == 32
+this.state has only one value
+===========================================================================
+joptsimple.OptionParserState$2:::OBJECT
+this.val$posixlyCorrect == false
+===========================================================================
+joptsimple.OptionParserState$2.(boolean):::ENTER
+$hidden$1 == false
+===========================================================================
+joptsimple.OptionParserState$2.(boolean):::EXIT
+===========================================================================
+joptsimple.OptionParserState:::OBJECT
+this.getClass().getName() == joptsimple.OptionParserState$2.class
+===========================================================================
+joptsimple.OptionParserState.OptionParserState():::EXIT
+===========================================================================
+joptsimple.OptionParserState.moreOptions(boolean):::ENTER
+posixlyCorrect == false
+===========================================================================
+joptsimple.OptionParserState.moreOptions(boolean):::EXIT
+return.getClass().getName() == joptsimple.OptionParserState$2.class
+===========================================================================
+joptsimple.OptionSet:::OBJECT
+this has only one value
+this.detectedOptions has only one value
+this.detectedOptions != null
+this.detectedOptions.getClass().getName() == java.util.HashMap.class
+this.optionsToArguments has only one value
+this.optionsToArguments != null
+this.optionsToArguments.getClass().getName() == java.util.IdentityHashMap.class
+this.nonOptionArguments has only one value
+this.nonOptionArguments != null
+this.nonOptionArguments[] == []
+this.nonOptionArguments[].getClass().getName() == []
+this.nonOptionArguments.getClass().getName() == java.util.ArrayList.class
+this.defaultValues has only one value
+this.defaultValues != null
+this.defaultValues.getClass().getName() == java.util.HashMap.class
+===========================================================================
+joptsimple.OptionSet.OptionSet(java.util.Map):::ENTER
+defaults has only one value
+defaults.getClass().getName() == java.util.HashMap.class
+===========================================================================
+joptsimple.OptionSet.OptionSet(java.util.Map):::EXIT
+===========================================================================
+joptsimple.OptionSet.defaultValueFor(joptsimple.OptionSpec):::ENTER
+option.getClass().getName() == joptsimple.RequiredArgumentOptionSpec.class
+===========================================================================
+joptsimple.OptionSet.defaultValueFor(joptsimple.OptionSpec):::EXIT
+this.detectedOptions == orig(this.detectedOptions)
+this.detectedOptions.getClass().getName() == orig(this.detectedOptions.getClass().getName())
+this.optionsToArguments == orig(this.optionsToArguments)
+this.optionsToArguments.getClass().getName() == orig(this.optionsToArguments.getClass().getName())
+this.nonOptionArguments == orig(this.nonOptionArguments)
+this.nonOptionArguments[] == orig(this.nonOptionArguments[])
+this.nonOptionArguments.getClass().getName() == orig(this.nonOptionArguments.getClass().getName())
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+return[].getClass().getName() one of { [java.io.File], [java.lang.Integer] }
+return.getClass().getName() == java.util.Collections$UnmodifiableRandomAccessList.class
+size(return[]) == 1
+===========================================================================
+joptsimple.OptionSet.defaultValuesFor(java.lang.String):::ENTER
+===========================================================================
+joptsimple.OptionSet.defaultValuesFor(java.lang.String):::EXIT292
+===========================================================================
+joptsimple.OptionSet.defaultValuesFor(java.lang.String):::EXIT
+this.detectedOptions == orig(this.detectedOptions)
+this.detectedOptions.getClass().getName() == orig(this.detectedOptions.getClass().getName())
+this.optionsToArguments == orig(this.optionsToArguments)
+this.optionsToArguments.getClass().getName() == orig(this.optionsToArguments.getClass().getName())
+this.nonOptionArguments == orig(this.nonOptionArguments)
+this.nonOptionArguments[] == orig(this.nonOptionArguments[])
+this.nonOptionArguments.getClass().getName() == orig(this.nonOptionArguments.getClass().getName())
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+option.toString == orig(option.toString)
+return[].getClass().getName() one of { [java.io.File], [java.lang.Integer] }
+return.getClass().getName() == java.util.Collections$UnmodifiableRandomAccessList.class
+size(return[]) == 1
+===========================================================================
+joptsimple.OptionSet.has(java.lang.String):::ENTER
+option has only one value
+option.toString == "?"
+===========================================================================
+joptsimple.OptionSet.has(java.lang.String):::EXIT
+this.detectedOptions == orig(this.detectedOptions)
+this.detectedOptions.getClass().getName() == orig(this.detectedOptions.getClass().getName())
+this.optionsToArguments == orig(this.optionsToArguments)
+this.optionsToArguments.getClass().getName() == orig(this.optionsToArguments.getClass().getName())
+this.nonOptionArguments == orig(this.nonOptionArguments)
+this.nonOptionArguments[] == orig(this.nonOptionArguments[])
+this.nonOptionArguments.getClass().getName() == orig(this.nonOptionArguments.getClass().getName())
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+option.toString == orig(option.toString)
+option.toString == "?"
+return == false
+===========================================================================
+joptsimple.OptionSet.has(java.lang.String):::EXIT;condition="not(return == true)"
+===========================================================================
+joptsimple.OptionSet.has(joptsimple.OptionSpec):::ENTER
+option.getClass().getName() == joptsimple.RequiredArgumentOptionSpec.class
+===========================================================================
+joptsimple.OptionSet.has(joptsimple.OptionSpec):::EXIT
+this.detectedOptions == orig(this.detectedOptions)
+this.detectedOptions.getClass().getName() == orig(this.detectedOptions.getClass().getName())
+this.optionsToArguments == orig(this.optionsToArguments)
+this.optionsToArguments.getClass().getName() == orig(this.optionsToArguments.getClass().getName())
+this.nonOptionArguments == orig(this.nonOptionArguments)
+this.nonOptionArguments[] == orig(this.nonOptionArguments[])
+this.nonOptionArguments.getClass().getName() == orig(this.nonOptionArguments.getClass().getName())
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+return == false
+===========================================================================
+joptsimple.OptionSet.has(joptsimple.OptionSpec):::EXIT;condition="not(return == true)"
+===========================================================================
+joptsimple.OptionSet.valueOf(joptsimple.OptionSpec):::ENTER
+option.getClass().getName() == joptsimple.RequiredArgumentOptionSpec.class
+===========================================================================
+joptsimple.OptionSet.valueOf(joptsimple.OptionSpec):::EXIT175
+===========================================================================
+joptsimple.OptionSet.valueOf(joptsimple.OptionSpec):::EXIT
+this.detectedOptions == orig(this.detectedOptions)
+this.detectedOptions.getClass().getName() == orig(this.detectedOptions.getClass().getName())
+this.optionsToArguments == orig(this.optionsToArguments)
+this.optionsToArguments.getClass().getName() == orig(this.optionsToArguments.getClass().getName())
+this.nonOptionArguments == orig(this.nonOptionArguments)
+this.nonOptionArguments[] == orig(this.nonOptionArguments[])
+this.nonOptionArguments.getClass().getName() == orig(this.nonOptionArguments.getClass().getName())
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+===========================================================================
+joptsimple.OptionSet.valuesOf(joptsimple.OptionSpec):::ENTER
+option.getClass().getName() == joptsimple.RequiredArgumentOptionSpec.class
+===========================================================================
+joptsimple.OptionSet.valuesOf(joptsimple.OptionSpec):::EXIT221
+===========================================================================
+joptsimple.OptionSet.valuesOf(joptsimple.OptionSpec):::EXIT
+this.detectedOptions == orig(this.detectedOptions)
+this.detectedOptions.getClass().getName() == orig(this.detectedOptions.getClass().getName())
+this.optionsToArguments == orig(this.optionsToArguments)
+this.optionsToArguments.getClass().getName() == orig(this.optionsToArguments.getClass().getName())
+this.nonOptionArguments == orig(this.nonOptionArguments)
+this.nonOptionArguments[] == orig(this.nonOptionArguments[])
+this.nonOptionArguments.getClass().getName() == orig(this.nonOptionArguments.getClass().getName())
+this.defaultValues == orig(this.defaultValues)
+this.defaultValues.getClass().getName() == orig(this.defaultValues.getClass().getName())
+return[].getClass().getName() one of { [java.io.File], [java.lang.Integer] }
+return.getClass().getName() == java.util.Collections$UnmodifiableRandomAccessList.class
+size(return[]) == 1
+===========================================================================
+joptsimple.OptionSpecBuilder:::OBJECT
+this.parser has only one value
+this.parser != null
+this.parser.recognizedOptions has only one value
+this.parser.recognizedOptions != null
+this.parser.recognizedOptions.key == null
+this.parser.recognizedOptions.value == null
+this.parser.recognizedOptions.children has only one value
+this.parser.recognizedOptions.children != null
+this.parser.recognizedOptions.children.getClass().getName() == java.util.TreeMap.class
+this.parser.state has only one value
+this.parser.state != null
+this.parser.state.getClass().getName() == joptsimple.OptionParserState$2.class
+this.parser.posixlyCorrect == false
+this.options != null
+this.options[] elements != null
+this.options[].getClass().getName() elements == java.lang.String.class
+this.options.getClass().getName() == java.util.ArrayList.class
+this.description != null
+size(this.options[]) one of { 1, 2, 3 }
+===========================================================================
+joptsimple.OptionSpecBuilder.OptionSpecBuilder(joptsimple.OptionParser, java.util.Collection, java.lang.String):::ENTER
+parser has only one value
+parser != null
+parser.recognizedOptions has only one value
+parser.recognizedOptions != null
+parser.recognizedOptions.key == null
+parser.recognizedOptions.value == null
+parser.recognizedOptions.children has only one value
+parser.recognizedOptions.children != null
+parser.recognizedOptions.children.getClass().getName() == java.util.TreeMap.class
+parser.state has only one value
+parser.state != null
+parser.state.getClass().getName() == joptsimple.OptionParserState$2.class
+parser.posixlyCorrect == false
+options != null
+description != null
+===========================================================================
+joptsimple.OptionSpecBuilder.OptionSpecBuilder(joptsimple.OptionParser, java.util.Collection, java.lang.String):::EXIT
+parser.recognizedOptions == orig(parser.recognizedOptions)
+parser.recognizedOptions.key == orig(parser.recognizedOptions.key)
+parser.recognizedOptions.value == orig(parser.recognizedOptions.value)
+parser.recognizedOptions.children == orig(parser.recognizedOptions.children)
+parser.recognizedOptions.children.getClass().getName() == orig(parser.recognizedOptions.children.getClass().getName())
+parser.state == orig(parser.state)
+parser.state.getClass().getName() == orig(parser.state.getClass().getName())
+parser.posixlyCorrect == orig(parser.posixlyCorrect)
+description.toString == orig(description.toString)
+parser.recognizedOptions has only one value
+parser.recognizedOptions != null
+parser.recognizedOptions.key == null
+parser.recognizedOptions.value == null
+parser.recognizedOptions.children has only one value
+parser.recognizedOptions.children != null
+parser.recognizedOptions.children.getClass().getName() == java.util.TreeMap.class
+parser.state has only one value
+parser.state != null
+parser.state.getClass().getName() == joptsimple.OptionParserState$2.class
+parser.posixlyCorrect == false
+parser.recognizedOptions.keysBeyond > orig(parser.recognizedOptions.keysBeyond)
+===========================================================================
+joptsimple.OptionSpecBuilder.attachToParser():::ENTER
+===========================================================================
+joptsimple.OptionSpecBuilder.attachToParser():::EXIT
+this.parser == orig(this.parser)
+this.parser.recognizedOptions == orig(this.parser.recognizedOptions)
+this.parser.recognizedOptions.key == orig(this.parser.recognizedOptions.key)
+this.parser.recognizedOptions.value == orig(this.parser.recognizedOptions.value)
+this.parser.recognizedOptions.children == orig(this.parser.recognizedOptions.children)
+this.parser.recognizedOptions.children.getClass().getName() == orig(this.parser.recognizedOptions.children.getClass().getName())
+this.parser.state == orig(this.parser.state)
+this.parser.state.getClass().getName() == orig(this.parser.state.getClass().getName())
+this.parser.posixlyCorrect == orig(this.parser.posixlyCorrect)
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+this.parser.recognizedOptions.keysBeyond > orig(this.parser.recognizedOptions.keysBeyond)
+===========================================================================
+joptsimple.OptionSpecBuilder.withOptionalArg():::ENTER
+this.parser.recognizedOptions.keysBeyond one of { 26, 27, 29 }
+this.options[].getClass().getName() == [java.lang.String]
+this.description.toString one of { "If set, mediatomb will only transcode if a subtitle file is found, or is of one of the supplied file extensions", "UPNP server's port", "mediatomb's operating port" }
+size(this.options[]) == 1
+===========================================================================
+joptsimple.OptionSpecBuilder.withOptionalArg():::EXIT
+this.parser == orig(this.parser)
+this.parser.recognizedOptions == orig(this.parser.recognizedOptions)
+this.parser.recognizedOptions.key == orig(this.parser.recognizedOptions.key)
+this.parser.recognizedOptions.value == orig(this.parser.recognizedOptions.value)
+this.parser.recognizedOptions.children == orig(this.parser.recognizedOptions.children)
+this.parser.recognizedOptions.children.getClass().getName() == orig(this.parser.recognizedOptions.children.getClass().getName())
+this.parser.recognizedOptions.keysBeyond == orig(this.parser.recognizedOptions.keysBeyond)
+this.parser.state == orig(this.parser.state)
+this.parser.state.getClass().getName() == orig(this.parser.state.getClass().getName())
+this.parser.posixlyCorrect == orig(this.parser.posixlyCorrect)
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+this.parser.recognizedOptions.keysBeyond one of { 26, 27, 29 }
+this.options[].getClass().getName() == [java.lang.String]
+this.description.toString one of { "If set, mediatomb will only transcode if a subtitle file is found, or is of one of the supplied file extensions", "UPNP server's port", "mediatomb's operating port" }
+return.getClass().getName() == joptsimple.OptionalArgumentOptionSpec.class
+return.argumentRequired == false
+return.converter == null
+return.argumentDescription has only one value
+return.argumentDescription.toString == ""
+return.valueSeparator.toString == "\000"
+return.defaultValues[] == []
+return.defaultValues[].getClass().getName() == []
+return.defaultValues.getClass().getName() == java.util.ArrayList.class
+return.options[].getClass().getName() == [java.lang.String]
+return.options[].getClass().getName() elements == java.lang.String.class
+return.options.getClass().getName() == java.util.ArrayList.class
+return.description.toString one of { "If set, mediatomb will only transcode if a subtitle file is found, or is of one of the supplied file extensions", "UPNP server's port", "mediatomb's operating port" }
+size(this.options[]) == 1
+size(return.options[]) == 1
+===========================================================================
+joptsimple.OptionSpecBuilder.withRequiredArg():::ENTER
+this.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+size(this.options[]) one of { 1, 2 }
+===========================================================================
+joptsimple.OptionSpecBuilder.withRequiredArg():::EXIT
+this.parser == orig(this.parser)
+this.parser.recognizedOptions == orig(this.parser.recognizedOptions)
+this.parser.recognizedOptions.key == orig(this.parser.recognizedOptions.key)
+this.parser.recognizedOptions.value == orig(this.parser.recognizedOptions.value)
+this.parser.recognizedOptions.children == orig(this.parser.recognizedOptions.children)
+this.parser.recognizedOptions.children.getClass().getName() == orig(this.parser.recognizedOptions.children.getClass().getName())
+this.parser.recognizedOptions.keysBeyond == orig(this.parser.recognizedOptions.keysBeyond)
+this.parser.state == orig(this.parser.state)
+this.parser.state.getClass().getName() == orig(this.parser.state.getClass().getName())
+this.parser.posixlyCorrect == orig(this.parser.posixlyCorrect)
+this.options == orig(this.options)
+this.options[] == orig(this.options[])
+this.options.getClass().getName() == orig(this.options.getClass().getName())
+this.description == orig(this.description)
+this.description.toString == orig(this.description.toString)
+this.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+return != null
+return.getClass().getName() == joptsimple.RequiredArgumentOptionSpec.class
+return.argumentRequired == true
+return.converter == null
+return.argumentDescription has only one value
+return.argumentDescription != null
+return.argumentDescription.toString == ""
+return.valueSeparator != null
+return.valueSeparator.toString == "\000"
+return.defaultValues != null
+return.defaultValues[] == []
+return.defaultValues[].getClass().getName() == []
+return.defaultValues.getClass().getName() == java.util.ArrayList.class
+return.options != null
+return.options[] elements != null
+return.options[].getClass().getName() elements == java.lang.String.class
+return.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+return.options.getClass().getName() == java.util.ArrayList.class
+return.description != null
+size(this.options[]) one of { 1, 2 }
+size(return.options[]) one of { 1, 2 }
+===========================================================================
+joptsimple.OptionalArgumentOptionSpec:::CLASS
+===========================================================================
+joptsimple.OptionalArgumentOptionSpec:::OBJECT
+this.argumentRequired == false
+this.converter == null
+this.argumentDescription has only one value
+this.argumentDescription.toString == ""
+this.valueSeparator.toString == "\000"
+this.defaultValues[] == []
+this.defaultValues[].getClass().getName() == []
+this.defaultValues.getClass().getName() == java.util.ArrayList.class
+this.options[].getClass().getName() == [java.lang.String]
+this.options[].getClass().getName() elements == java.lang.String.class
+this.options.getClass().getName() == java.util.ArrayList.class
+this.description.toString one of { "If set, mediatomb will only transcode if a subtitle file is found, or is of one of the supplied file extensions", "UPNP server's port", "mediatomb's operating port" }
+size(this.options[]) == 1
+===========================================================================
+joptsimple.OptionalArgumentOptionSpec.OptionalArgumentOptionSpec(java.util.Collection, java.lang.String):::ENTER
+options.getClass().getName() == java.util.Collections$UnmodifiableCollection.class
+description.toString one of { "If set, mediatomb will only transcode if a subtitle file is found, or is of one of the supplied file extensions", "UPNP server's port", "mediatomb's operating port" }
+===========================================================================
+joptsimple.OptionalArgumentOptionSpec.OptionalArgumentOptionSpec(java.util.Collection, java.lang.String):::EXIT
+description.toString == orig(description.toString)
+description.toString one of { "If set, mediatomb will only transcode if a subtitle file is found, or is of one of the supplied file extensions", "UPNP server's port", "mediatomb's operating port" }
+===========================================================================
+joptsimple.ParserRules:::CLASS
+joptsimple.ParserRules.DOUBLE_HYPHEN == joptsimple.ParserRules.OPTION_TERMINATOR
+joptsimple.ParserRules.HYPHEN has only one value
+joptsimple.ParserRules.HYPHEN != null
+joptsimple.ParserRules.HYPHEN.toString == "-"
+joptsimple.ParserRules.DOUBLE_HYPHEN has only one value
+joptsimple.ParserRules.DOUBLE_HYPHEN != null
+joptsimple.ParserRules.DOUBLE_HYPHEN.toString == "--"
+joptsimple.ParserRules.OPTION_TERMINATOR.toString == "--"
+joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS has only one value
+joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS != null
+joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS.toString == "W"
+===========================================================================
+joptsimple.ParserRules:::OBJECT
+this has only one value
+===========================================================================
+joptsimple.ParserRules.ParserRules():::EXIT
+===========================================================================
+joptsimple.ParserRules.ensureLegalOption(java.lang.String):::ENTER
+option != null
+===========================================================================
+joptsimple.ParserRules.ensureLegalOption(java.lang.String):::EXIT
+joptsimple.ParserRules.HYPHEN == orig(joptsimple.ParserRules.HYPHEN)
+joptsimple.ParserRules.HYPHEN.toString == orig(joptsimple.ParserRules.HYPHEN.toString)
+joptsimple.ParserRules.DOUBLE_HYPHEN == orig(joptsimple.ParserRules.DOUBLE_HYPHEN)
+joptsimple.ParserRules.DOUBLE_HYPHEN == orig(joptsimple.ParserRules.OPTION_TERMINATOR)
+joptsimple.ParserRules.DOUBLE_HYPHEN.toString == orig(joptsimple.ParserRules.DOUBLE_HYPHEN.toString)
+joptsimple.ParserRules.OPTION_TERMINATOR.toString == orig(joptsimple.ParserRules.OPTION_TERMINATOR.toString)
+joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS == orig(joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS)
+joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS.toString == orig(joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS.toString)
+option.toString == orig(option.toString)
+===========================================================================
+joptsimple.ParserRules.ensureLegalOptionCharacter(char):::ENTER
+===========================================================================
+joptsimple.ParserRules.ensureLegalOptionCharacter(char):::EXIT
+joptsimple.ParserRules.HYPHEN == orig(joptsimple.ParserRules.HYPHEN)
+joptsimple.ParserRules.HYPHEN.toString == orig(joptsimple.ParserRules.HYPHEN.toString)
+joptsimple.ParserRules.DOUBLE_HYPHEN == orig(joptsimple.ParserRules.DOUBLE_HYPHEN)
+joptsimple.ParserRules.DOUBLE_HYPHEN == orig(joptsimple.ParserRules.OPTION_TERMINATOR)
+joptsimple.ParserRules.DOUBLE_HYPHEN.toString == orig(joptsimple.ParserRules.DOUBLE_HYPHEN.toString)
+joptsimple.ParserRules.OPTION_TERMINATOR.toString == orig(joptsimple.ParserRules.OPTION_TERMINATOR.toString)
+joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS == orig(joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS)
+joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS.toString == orig(joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS.toString)
+===========================================================================
+joptsimple.ParserRules.ensureLegalOptions(java.util.Collection):::ENTER
+options != null
+===========================================================================
+joptsimple.ParserRules.ensureLegalOptions(java.util.Collection):::EXIT
+joptsimple.ParserRules.HYPHEN == orig(joptsimple.ParserRules.HYPHEN)
+joptsimple.ParserRules.HYPHEN.toString == orig(joptsimple.ParserRules.HYPHEN.toString)
+joptsimple.ParserRules.DOUBLE_HYPHEN == orig(joptsimple.ParserRules.DOUBLE_HYPHEN)
+joptsimple.ParserRules.DOUBLE_HYPHEN == orig(joptsimple.ParserRules.OPTION_TERMINATOR)
+joptsimple.ParserRules.DOUBLE_HYPHEN.toString == orig(joptsimple.ParserRules.DOUBLE_HYPHEN.toString)
+joptsimple.ParserRules.OPTION_TERMINATOR.toString == orig(joptsimple.ParserRules.OPTION_TERMINATOR.toString)
+joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS == orig(joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS)
+joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS.toString == orig(joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS.toString)
+===========================================================================
+joptsimple.ParserRules.isAllowedPunctuation(char):::ENTER
+option one of { 45, 63 }
+===========================================================================
+joptsimple.ParserRules.isAllowedPunctuation(char):::EXIT
+joptsimple.ParserRules.HYPHEN == orig(joptsimple.ParserRules.HYPHEN)
+joptsimple.ParserRules.HYPHEN.toString == orig(joptsimple.ParserRules.HYPHEN.toString)
+joptsimple.ParserRules.DOUBLE_HYPHEN == orig(joptsimple.ParserRules.DOUBLE_HYPHEN)
+joptsimple.ParserRules.DOUBLE_HYPHEN == orig(joptsimple.ParserRules.OPTION_TERMINATOR)
+joptsimple.ParserRules.DOUBLE_HYPHEN.toString == orig(joptsimple.ParserRules.DOUBLE_HYPHEN.toString)
+joptsimple.ParserRules.OPTION_TERMINATOR.toString == orig(joptsimple.ParserRules.OPTION_TERMINATOR.toString)
+joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS == orig(joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS)
+joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS.toString == orig(joptsimple.ParserRules.RESERVED_FOR_EXTENSIONS.toString)
+return == true
+===========================================================================
+joptsimple.ParserRules.isAllowedPunctuation(char):::EXIT;condition="return == true"
+===========================================================================
+joptsimple.RequiredArgumentOptionSpec:::CLASS
+===========================================================================
+joptsimple.RequiredArgumentOptionSpec:::OBJECT
+this.argumentRequired == true
+this.converter == null
+this.argumentDescription has only one value
+this.argumentDescription != null
+this.argumentDescription.toString == ""
+this.valueSeparator != null
+this.valueSeparator.toString == "\000"
+this.defaultValues != null
+this.defaultValues[] == []
+this.defaultValues[].getClass().getName() == []
+this.defaultValues.getClass().getName() == java.util.ArrayList.class
+this.options != null
+this.options[] elements != null
+this.options[].getClass().getName() elements == java.lang.String.class
+this.options[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+this.options.getClass().getName() == java.util.ArrayList.class
+this.description != null
+size(this.options[]) one of { 1, 2 }
+===========================================================================
+joptsimple.RequiredArgumentOptionSpec.RequiredArgumentOptionSpec(java.util.Collection, java.lang.String):::ENTER
+options != null
+options.getClass().getName() == java.util.Collections$UnmodifiableCollection.class
+description != null
+===========================================================================
+joptsimple.RequiredArgumentOptionSpec.RequiredArgumentOptionSpec(java.util.Collection, java.lang.String):::EXIT
+description.toString == orig(description.toString)
+===========================================================================
+joptsimple.internal.AbbreviationMap:::OBJECT
+this.children != null
+this.children.getClass().getName() == java.util.TreeMap.class
+this.keysBeyond >= 0
+this.value.getClass().getName() != this.children.getClass().getName()
+===========================================================================
+joptsimple.internal.AbbreviationMap.AbbreviationMap():::EXIT
+this.key == null
+this.value == null
+this.keysBeyond == 0
+===========================================================================
+joptsimple.internal.AbbreviationMap.add(char[], java.lang.Object, int, int):::ENTER
+length == size(chars[])
+chars != null
+newValue != null
+offset >= 0
+this.children.getClass().getName() != newValue.getClass().getName()
+offset <= length
+===========================================================================
+joptsimple.internal.AbbreviationMap.add(char[], java.lang.Object, int, int):::EXIT142
+this.value == orig(newValue)
+this.value.getClass().getName() == orig(newValue.getClass().getName())
+this.keysBeyond == orig(this.keysBeyond)
+orig(offset) == orig(length)
+orig(offset) == orig(size(chars[]))
+(return == false)  <==>  (orig(this.key) != null)
+(return == false)  <==>  (orig(this.value) != null)
+(return == false)  ==>  (orig(this.value.getClass().getName()) == joptsimple.OptionSpecBuilder.class)
+(return == false)  ==>  (this.children.getClass().getName() != orig(this.value.getClass().getName()))
+(return == false)  ==>  (this.key.toString == orig(this.key.toString))
+(return == false)  ==>  (this.keysBeyond one of { 0, 1, 5 })
+(return == false)  ==>  (this.value.getClass().getName() != orig(this.value.getClass().getName()))
+(return == true)  <==>  (orig(this.key) == null)
+(return == true)  <==>  (orig(this.value) == null)
+(return == true)  ==>  (this.keysBeyond one of { 0, 4 })
+(return == true)  ==>  (this.value.getClass().getName() == joptsimple.OptionSpecBuilder.class)
+this.key != null
+this.value != null
+orig(this.value.getClass().getName()) == joptsimple.OptionSpecBuilder.class
+this.value.getClass().getName() != orig(this.value.getClass().getName())
+===========================================================================
+joptsimple.internal.AbbreviationMap.add(char[], java.lang.Object, int, int):::EXIT142;condition="return == true"
+this.value.getClass().getName() == joptsimple.OptionSpecBuilder.class
+this.keysBeyond one of { 0, 4 }
+orig(this.key) == null
+orig(this.value) == null
+===========================================================================
+joptsimple.internal.AbbreviationMap.add(char[], java.lang.Object, int, int):::EXIT142;condition="not(return == true)"
+this.keysBeyond one of { 0, 1, 5 }
+orig(this.key) != null
+orig(this.value) != null
+===========================================================================
+joptsimple.internal.AbbreviationMap.add(char[], java.lang.Object, int, int):::EXIT160
+this.key == orig(this.key)
+(return == false)  <==>  (this.keysBeyond == orig(this.keysBeyond))
+(return == false)  ==>  (orig(this.keysBeyond) >= 1)
+(return == true)  <==>  (this.keysBeyond - orig(this.keysBeyond) - 1 == 0)
+(return == true)  ==>  (orig(newValue.getClass().getName()) == joptsimple.OptionSpecBuilder.class)
+(return == true)  ==>  (this.value.getClass().getName() == orig(this.value.getClass().getName()))
+this.keysBeyond >= 1
+orig(offset) <= size(chars[])-1
+===========================================================================
+joptsimple.internal.AbbreviationMap.add(char[], java.lang.Object, int, int):::EXIT160;condition="return == true"
+this.keysBeyond - orig(this.keysBeyond) - 1 == 0
+===========================================================================
+joptsimple.internal.AbbreviationMap.add(char[], java.lang.Object, int, int):::EXIT160;condition="not(return == true)"
+===========================================================================
+joptsimple.internal.AbbreviationMap.add(char[], java.lang.Object, int, int):::EXIT
+this.key.toString == orig(this.key.toString)
+this.children == orig(this.children)
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+chars[] == orig(chars[])
+(orig(offset) <= size(chars[])-1)  ==>  (this.key == orig(this.key))
+(orig(offset) <= size(chars[])-1)  ==>  (this.keysBeyond >= 1)
+(orig(offset) == orig(length))  ==>  (orig(this.value.getClass().getName()) != orig(newValue.getClass().getName()))
+(orig(offset) == orig(length))  ==>  (orig(this.value.getClass().getName()) == joptsimple.OptionSpecBuilder.class)
+(orig(offset) == orig(length))  ==>  (this.key != null)
+(orig(offset) == orig(length))  ==>  (this.keysBeyond == orig(this.keysBeyond))
+(orig(offset) == orig(length))  ==>  (this.value != null)
+(orig(offset) == orig(length))  ==>  (this.value == orig(newValue))
+(orig(offset) == orig(length))  ==>  (this.value.getClass().getName() != orig(this.value.getClass().getName()))
+(orig(offset) == orig(length))  ==>  (this.value.getClass().getName() == orig(newValue.getClass().getName()))
+(return == false)  ==>  (this.keysBeyond == orig(this.keysBeyond))
+(return == true)  ==>  (orig(newValue.getClass().getName()) == joptsimple.OptionSpecBuilder.class)
+(return == true)  ==>  (this.value.getClass().getName() == orig(this.value.getClass().getName()))
+this.children.getClass().getName() != orig(this.value.getClass().getName())
+this.children.getClass().getName() != orig(newValue.getClass().getName())
+this.keysBeyond >= orig(this.keysBeyond)
+===========================================================================
+joptsimple.internal.AbbreviationMap.add(char[], java.lang.Object, int, int):::EXIT;condition="return == true"
+this.value.getClass().getName() == orig(this.value.getClass().getName())
+return == true
+orig(newValue.getClass().getName()) == joptsimple.OptionSpecBuilder.class
+===========================================================================
+joptsimple.internal.AbbreviationMap.add(char[], java.lang.Object, int, int):::EXIT;condition="not(return == true)"
+this.keysBeyond == orig(this.keysBeyond)
+return == false
+===========================================================================
+joptsimple.internal.AbbreviationMap.addToMappings(java.util.Map):::ENTER
+this.children.getClass().getName() == mappings.getClass().getName()
+mappings has only one value
+mappings != null
+===========================================================================
+joptsimple.internal.AbbreviationMap.addToMappings(java.util.Map):::EXIT
+this.key == orig(this.key)
+this.key.toString == orig(this.key.toString)
+this.value == orig(this.value)
+this.value.getClass().getName() == orig(this.value.getClass().getName())
+this.children == orig(this.children)
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+this.children.getClass().getName() == orig(mappings.getClass().getName())
+this.keysBeyond == orig(this.keysBeyond)
+===========================================================================
+joptsimple.internal.AbbreviationMap.charsOf(java.lang.String):::ENTER
+aKey != null
+===========================================================================
+joptsimple.internal.AbbreviationMap.charsOf(java.lang.String):::EXIT
+aKey.toString == orig(aKey.toString)
+return != null
+===========================================================================
+joptsimple.internal.AbbreviationMap.put(java.lang.String, java.lang.Object):::ENTER
+this.value.getClass().getName() == newValue.getClass().getName()
+this has only one value
+this.key == null
+this.value.getClass().getName() == joptsimple.OptionSpecBuilder.class
+this.children has only one value
+aKey != null
+newValue != null
+this.children.getClass().getName() != newValue.getClass().getName()
+===========================================================================
+joptsimple.internal.AbbreviationMap.put(java.lang.String, java.lang.Object):::EXIT
+this.key == orig(this.key)
+this.value.getClass().getName() == orig(newValue.getClass().getName())
+this.children == orig(this.children)
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+aKey.toString == orig(aKey.toString)
+this.key == null
+this.value.getClass().getName() == joptsimple.OptionSpecBuilder.class
+this.children has only one value
+this.children.getClass().getName() != orig(newValue.getClass().getName())
+this.keysBeyond >= orig(this.keysBeyond)
+===========================================================================
+joptsimple.internal.AbbreviationMap.putAll(java.lang.Iterable, java.lang.Object):::ENTER
+this has only one value
+this.key == null
+this.value == null
+this.children has only one value
+keys != null
+keys.getClass().getName() == java.util.Collections$UnmodifiableCollection.class
+newValue != null
+this.children.getClass().getName() != keys.getClass().getName()
+this.children.getClass().getName() != newValue.getClass().getName()
+keys.getClass().getName() != newValue.getClass().getName()
+===========================================================================
+joptsimple.internal.AbbreviationMap.putAll(java.lang.Iterable, java.lang.Object):::EXIT
+this.key == orig(this.key)
+this.value == orig(this.value)
+this.children == orig(this.children)
+this.children.getClass().getName() == orig(this.children.getClass().getName())
+this.key == null
+this.value == null
+this.children has only one value
+this.children.getClass().getName() != orig(keys.getClass().getName())
+this.children.getClass().getName() != orig(newValue.getClass().getName())
+this.keysBeyond >= orig(this.keysBeyond)
+===========================================================================
+joptsimple.internal.AbbreviationMap.toJavaUtilMap():::ENTER
+this has only one value
+this.key == null
+this.value == null
+this.children has only one value
+this.keysBeyond == 32
+===========================================================================
+joptsimple.internal.AbbreviationMap.toJavaUtilMap():::EXIT
+this.key == orig(this.key)
+this.value == orig(this.value)
+this.children == orig(this.children)
+this.keysBeyond == orig(this.keysBeyond)
+this.key == null
+this.value == null
+this.children has only one value
+this.keysBeyond == 32
+return has only one value
+return.getClass().getName() == java.util.TreeMap.class
+===========================================================================
+joptsimple.internal.ConstructorInvokingValueConverter:::OBJECT
+this.ctor != null
+===========================================================================
+joptsimple.internal.ConstructorInvokingValueConverter.ConstructorInvokingValueConverter(java.lang.reflect.Constructor):::ENTER
+ctor != null
+===========================================================================
+joptsimple.internal.ConstructorInvokingValueConverter.ConstructorInvokingValueConverter(java.lang.reflect.Constructor):::EXIT
+this.ctor == orig(ctor)
+===========================================================================
+joptsimple.internal.MethodInvokingValueConverter:::OBJECT
+this.clazz has only one value
+===========================================================================
+joptsimple.internal.MethodInvokingValueConverter.MethodInvokingValueConverter(java.lang.reflect.Method, java.lang.Class):::ENTER
+clazz has only one value
+===========================================================================
+joptsimple.internal.MethodInvokingValueConverter.MethodInvokingValueConverter(java.lang.reflect.Method, java.lang.Class):::EXIT
+this.method == orig(method)
+this.clazz == orig(clazz)
+===========================================================================
+joptsimple.internal.Objects:::OBJECT
+this has only one value
+===========================================================================
+joptsimple.internal.Objects.Objects():::EXIT
+===========================================================================
+joptsimple.internal.Objects.ensureNotNull(java.lang.Object):::ENTER
+target != null
+===========================================================================
+joptsimple.internal.Objects.ensureNotNull(java.lang.Object):::EXIT
+===========================================================================
+joptsimple.internal.Reflection:::OBJECT
+this has only one value
+===========================================================================
+joptsimple.internal.Reflection.Reflection():::EXIT
+===========================================================================
+joptsimple.internal.Reflection.constructorConverter(java.lang.Class):::ENTER
+clazz != null
+===========================================================================
+joptsimple.internal.Reflection.constructorConverter(java.lang.Class):::EXIT84
+===========================================================================
+joptsimple.internal.Reflection.constructorConverter(java.lang.Class):::EXIT
+return != null
+return.getClass().getName() == joptsimple.internal.ConstructorInvokingValueConverter.class
+===========================================================================
+joptsimple.internal.Reflection.findConverter(java.lang.Class):::ENTER
+clazz != null
+===========================================================================
+joptsimple.internal.Reflection.findConverter(java.lang.Class):::EXIT60
+return.getClass().getName() == joptsimple.internal.MethodInvokingValueConverter.class
+orig(clazz) has only one value
+===========================================================================
+joptsimple.internal.Reflection.findConverter(java.lang.Class):::EXIT64
+return.getClass().getName() == joptsimple.internal.ConstructorInvokingValueConverter.class
+===========================================================================
+joptsimple.internal.Reflection.findConverter(java.lang.Class):::EXIT
+(return.getClass().getName() == joptsimple.internal.MethodInvokingValueConverter.class)  ==>  (orig(clazz) has only one value)
+return != null
+===========================================================================
+joptsimple.internal.Reflection.meetsConverterRequirements(java.lang.reflect.Method, java.lang.Class):::ENTER
+expectedReturnType has only one value
+===========================================================================
+joptsimple.internal.Reflection.meetsConverterRequirements(java.lang.reflect.Method, java.lang.Class):::EXIT
+return == true
+===========================================================================
+joptsimple.internal.Reflection.meetsConverterRequirements(java.lang.reflect.Method, java.lang.Class):::EXIT;condition="return == true"
+===========================================================================
+joptsimple.internal.Reflection.valueOfConverter(java.lang.Class):::ENTER
+clazz != null
+===========================================================================
+joptsimple.internal.Reflection.valueOfConverter(java.lang.Class):::EXIT75
+orig(clazz) has only one value
+===========================================================================
+joptsimple.internal.Reflection.valueOfConverter(java.lang.Class):::EXIT78
+return == null
+===========================================================================
+joptsimple.internal.Reflection.valueOfConverter(java.lang.Class):::EXIT
+return.getClass().getName() == joptsimple.internal.MethodInvokingValueConverter.class
+===========================================================================
+stv6.Profile$ArgumentParser:::CLASS
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.tvportArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.agedTime.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.template.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.playerPath.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.userName.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.profileName.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.dbtype.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.emtype.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.mysqldb.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.mysqlserver.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.mysqluser.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.mysqlpass.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.dbFileArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.mtTrProfile.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.localArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.syncUrl.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.syncPass.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.profile.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.profileDir.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.pluginExe.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.upnpPortArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == stv6.Profile$ArgumentParser.instance_.mtTrForce.getClass().getName()
+stv6.Profile$ArgumentParser.instance_ has only one value
+stv6.Profile$ArgumentParser.instance_.parser has only one value
+stv6.Profile$ArgumentParser.instance_.portArg has only one value
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == joptsimple.RequiredArgumentOptionSpec.class
+stv6.Profile$ArgumentParser.instance_.tvportArg has only one value
+stv6.Profile$ArgumentParser.instance_.mtportArg has only one value
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == joptsimple.OptionalArgumentOptionSpec.class
+stv6.Profile$ArgumentParser.instance_.upnpPortArg has only one value
+stv6.Profile$ArgumentParser.instance_.agedTime has only one value
+stv6.Profile$ArgumentParser.instance_.template has only one value
+stv6.Profile$ArgumentParser.instance_.playerPath has only one value
+stv6.Profile$ArgumentParser.instance_.userName has only one value
+stv6.Profile$ArgumentParser.instance_.profileName has only one value
+stv6.Profile$ArgumentParser.instance_.dbtype has only one value
+stv6.Profile$ArgumentParser.instance_.emtype has only one value
+stv6.Profile$ArgumentParser.instance_.mysqldb has only one value
+stv6.Profile$ArgumentParser.instance_.mysqlserver has only one value
+stv6.Profile$ArgumentParser.instance_.mysqluser has only one value
+stv6.Profile$ArgumentParser.instance_.mysqlpass has only one value
+stv6.Profile$ArgumentParser.instance_.dbFileArg has only one value
+stv6.Profile$ArgumentParser.instance_.mtTrForce has only one value
+stv6.Profile$ArgumentParser.instance_.mtTrProfile has only one value
+stv6.Profile$ArgumentParser.instance_.localArg has only one value
+stv6.Profile$ArgumentParser.instance_.syncUrl has only one value
+stv6.Profile$ArgumentParser.instance_.syncPass has only one value
+stv6.Profile$ArgumentParser.instance_.profile has only one value
+stv6.Profile$ArgumentParser.instance_.profileDir has only one value
+stv6.Profile$ArgumentParser.instance_.pluginExe has only one value
+stv6.Profile$ArgumentParser.instance_.parser.recognizedOptions has only one value
+stv6.Profile$ArgumentParser.instance_.parser.state.getClass().getName() == joptsimple.OptionParserState$2.class
+stv6.Profile$ArgumentParser.instance_.parser.posixlyCorrect == false
+===========================================================================
+stv6.Profile$ArgumentParser:::OBJECT
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.portArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == this.mtportArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.parser.state.getClass().getName() == this.parser.state.getClass().getName()
+this.portArg.getClass().getName() == this.tvportArg.getClass().getName()
+this.portArg.getClass().getName() == this.agedTime.getClass().getName()
+this.portArg.getClass().getName() == this.template.getClass().getName()
+this.portArg.getClass().getName() == this.playerPath.getClass().getName()
+this.portArg.getClass().getName() == this.userName.getClass().getName()
+this.portArg.getClass().getName() == this.profileName.getClass().getName()
+this.portArg.getClass().getName() == this.dbtype.getClass().getName()
+this.portArg.getClass().getName() == this.emtype.getClass().getName()
+this.portArg.getClass().getName() == this.mysqldb.getClass().getName()
+this.portArg.getClass().getName() == this.mysqlserver.getClass().getName()
+this.portArg.getClass().getName() == this.mysqluser.getClass().getName()
+this.portArg.getClass().getName() == this.mysqlpass.getClass().getName()
+this.portArg.getClass().getName() == this.dbFileArg.getClass().getName()
+this.portArg.getClass().getName() == this.mtTrProfile.getClass().getName()
+this.portArg.getClass().getName() == this.localArg.getClass().getName()
+this.portArg.getClass().getName() == this.syncUrl.getClass().getName()
+this.portArg.getClass().getName() == this.syncPass.getClass().getName()
+this.portArg.getClass().getName() == this.profile.getClass().getName()
+this.portArg.getClass().getName() == this.profileDir.getClass().getName()
+this.portArg.getClass().getName() == this.pluginExe.getClass().getName()
+this.mtportArg.getClass().getName() == this.upnpPortArg.getClass().getName()
+this.mtportArg.getClass().getName() == this.mtTrForce.getClass().getName()
+this has only one value
+this.parser has only one value
+this.parser.recognizedOptions has only one value
+this.parser.recognizedOptions.key == null
+this.parser.recognizedOptions.value == null
+this.parser.recognizedOptions.children has only one value
+this.parser.recognizedOptions.children.getClass().getName() == java.util.TreeMap.class
+this.parser.recognizedOptions.keysBeyond == 32
+this.parser.state.getClass().getName() == joptsimple.OptionParserState$2.class
+this.parser.posixlyCorrect == false
+this.portArg has only one value
+this.portArg.getClass().getName() == joptsimple.RequiredArgumentOptionSpec.class
+this.tvportArg has only one value
+this.mtportArg has only one value
+this.mtportArg.getClass().getName() == joptsimple.OptionalArgumentOptionSpec.class
+this.upnpPortArg has only one value
+this.agedTime has only one value
+this.template has only one value
+this.playerPath has only one value
+this.userName has only one value
+this.profileName has only one value
+this.dbtype has only one value
+this.emtype has only one value
+this.mysqldb has only one value
+this.mysqlserver has only one value
+this.mysqluser has only one value
+this.mysqlpass has only one value
+this.dbFileArg has only one value
+this.mtTrForce has only one value
+this.mtTrProfile has only one value
+this.localArg has only one value
+this.syncUrl has only one value
+this.syncPass has only one value
+this.profile has only one value
+this.profileDir has only one value
+this.pluginExe has only one value
+===========================================================================
+stv6.Profile$ArgumentParser.ArgumentParser():::EXIT
+this.parser.state has only one value
+===========================================================================
+stv6.Profile$ArgumentParser.getInstance():::ENTER
+===========================================================================
+stv6.Profile$ArgumentParser.getInstance():::EXIT
+stv6.Profile$ArgumentParser.instance_ == return
+stv6.Profile$ArgumentParser.instance_ == orig(stv6.Profile$ArgumentParser.instance_)
+stv6.Profile$ArgumentParser.instance_.parser == orig(stv6.Profile$ArgumentParser.instance_.parser)
+stv6.Profile$ArgumentParser.instance_.portArg == orig(stv6.Profile$ArgumentParser.instance_.portArg)
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.portArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.tvportArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.agedTime.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.template.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.playerPath.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.userName.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.profileName.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.dbtype.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.emtype.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.mysqldb.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.mysqlserver.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.mysqluser.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.mysqlpass.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.dbFileArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.mtTrProfile.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.localArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.syncUrl.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.syncPass.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.profile.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.profileDir.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == return.pluginExe.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.tvportArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.agedTime.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.template.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.playerPath.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.userName.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.profileName.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.dbtype.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.emtype.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mysqldb.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mysqlserver.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mysqluser.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mysqlpass.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.dbFileArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mtTrProfile.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.localArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.syncUrl.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.syncPass.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.profile.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.profileDir.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.pluginExe.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.tvportArg == orig(stv6.Profile$ArgumentParser.instance_.tvportArg)
+stv6.Profile$ArgumentParser.instance_.mtportArg == orig(stv6.Profile$ArgumentParser.instance_.mtportArg)
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == return.mtportArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == return.upnpPortArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == return.mtTrForce.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.upnpPortArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mtTrForce.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.upnpPortArg == orig(stv6.Profile$ArgumentParser.instance_.upnpPortArg)
+stv6.Profile$ArgumentParser.instance_.agedTime == orig(stv6.Profile$ArgumentParser.instance_.agedTime)
+stv6.Profile$ArgumentParser.instance_.template == orig(stv6.Profile$ArgumentParser.instance_.template)
+stv6.Profile$ArgumentParser.instance_.playerPath == orig(stv6.Profile$ArgumentParser.instance_.playerPath)
+stv6.Profile$ArgumentParser.instance_.userName == orig(stv6.Profile$ArgumentParser.instance_.userName)
+stv6.Profile$ArgumentParser.instance_.profileName == orig(stv6.Profile$ArgumentParser.instance_.profileName)
+stv6.Profile$ArgumentParser.instance_.dbtype == orig(stv6.Profile$ArgumentParser.instance_.dbtype)
+stv6.Profile$ArgumentParser.instance_.emtype == orig(stv6.Profile$ArgumentParser.instance_.emtype)
+stv6.Profile$ArgumentParser.instance_.mysqldb == orig(stv6.Profile$ArgumentParser.instance_.mysqldb)
+stv6.Profile$ArgumentParser.instance_.mysqlserver == orig(stv6.Profile$ArgumentParser.instance_.mysqlserver)
+stv6.Profile$ArgumentParser.instance_.mysqluser == orig(stv6.Profile$ArgumentParser.instance_.mysqluser)
+stv6.Profile$ArgumentParser.instance_.mysqlpass == orig(stv6.Profile$ArgumentParser.instance_.mysqlpass)
+stv6.Profile$ArgumentParser.instance_.dbFileArg == orig(stv6.Profile$ArgumentParser.instance_.dbFileArg)
+stv6.Profile$ArgumentParser.instance_.mtTrForce == orig(stv6.Profile$ArgumentParser.instance_.mtTrForce)
+stv6.Profile$ArgumentParser.instance_.mtTrProfile == orig(stv6.Profile$ArgumentParser.instance_.mtTrProfile)
+stv6.Profile$ArgumentParser.instance_.localArg == orig(stv6.Profile$ArgumentParser.instance_.localArg)
+stv6.Profile$ArgumentParser.instance_.syncUrl == orig(stv6.Profile$ArgumentParser.instance_.syncUrl)
+stv6.Profile$ArgumentParser.instance_.syncPass == orig(stv6.Profile$ArgumentParser.instance_.syncPass)
+stv6.Profile$ArgumentParser.instance_.profile == orig(stv6.Profile$ArgumentParser.instance_.profile)
+stv6.Profile$ArgumentParser.instance_.profileDir == orig(stv6.Profile$ArgumentParser.instance_.profileDir)
+stv6.Profile$ArgumentParser.instance_.pluginExe == orig(stv6.Profile$ArgumentParser.instance_.pluginExe)
+stv6.Profile$ArgumentParser.instance_.parser.recognizedOptions == orig(stv6.Profile$ArgumentParser.instance_.parser.recognizedOptions)
+stv6.Profile$ArgumentParser.instance_.parser.state == orig(stv6.Profile$ArgumentParser.instance_.parser.state)
+stv6.Profile$ArgumentParser.instance_.parser.state.getClass().getName() == return.parser.state.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.parser.state.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.parser.state.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.parser.posixlyCorrect == orig(stv6.Profile$ArgumentParser.instance_.parser.posixlyCorrect)
+return.parser has only one value
+return.parser.recognizedOptions has only one value
+return.parser.posixlyCorrect == false
+return.portArg has only one value
+return.tvportArg has only one value
+return.mtportArg has only one value
+return.upnpPortArg has only one value
+return.agedTime has only one value
+return.template has only one value
+return.playerPath has only one value
+return.userName has only one value
+return.profileName has only one value
+return.dbtype has only one value
+return.emtype has only one value
+return.mysqldb has only one value
+return.mysqlserver has only one value
+return.mysqluser has only one value
+return.mysqlpass has only one value
+return.dbFileArg has only one value
+return.mtTrForce has only one value
+return.mtTrProfile has only one value
+return.localArg has only one value
+return.syncUrl has only one value
+return.syncPass has only one value
+return.profile has only one value
+return.profileDir has only one value
+return.pluginExe has only one value
+===========================================================================
+stv6.Profile$ArgumentParser.parse(java.lang.String[]):::ENTER
+this == stv6.Profile$ArgumentParser.instance_
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.tvportArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.agedTime.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.template.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.playerPath.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.userName.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.profileName.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.dbtype.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.emtype.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.mysqldb.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.mysqlserver.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.mysqluser.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.mysqlpass.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.dbFileArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.mtTrProfile.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.localArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.syncUrl.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.syncPass.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.profile.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.profileDir.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.pluginExe.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == this.upnpPortArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == this.mtTrForce.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.parser.state has only one value
+this.parser.state has only one value
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+stv6.Profile$ArgumentParser.parse(java.lang.String[]):::EXIT
+stv6.Profile$ArgumentParser.instance_ == orig(this)
+stv6.Profile$ArgumentParser.instance_ == orig(stv6.Profile$ArgumentParser.instance_)
+stv6.Profile$ArgumentParser.instance_.parser == orig(stv6.Profile$ArgumentParser.instance_.parser)
+stv6.Profile$ArgumentParser.instance_.portArg == orig(stv6.Profile$ArgumentParser.instance_.portArg)
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.tvportArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.agedTime.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.template.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.playerPath.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.userName.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.profileName.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.dbtype.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.emtype.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.mysqldb.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.mysqlserver.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.mysqluser.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.mysqlpass.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.dbFileArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.mtTrProfile.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.localArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.syncUrl.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.syncPass.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.profile.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.profileDir.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == this.pluginExe.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.tvportArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.agedTime.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.template.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.playerPath.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.userName.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.profileName.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.dbtype.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.emtype.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mysqldb.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mysqlserver.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mysqluser.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mysqlpass.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.dbFileArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mtTrProfile.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.localArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.syncUrl.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.syncPass.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.profile.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.profileDir.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.pluginExe.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.portArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.tvportArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.agedTime.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.template.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.playerPath.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.userName.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.profileName.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.dbtype.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.emtype.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.mysqldb.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.mysqlserver.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.mysqluser.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.mysqlpass.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.dbFileArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.mtTrProfile.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.localArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.syncUrl.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.syncPass.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.profile.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.profileDir.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.portArg.getClass().getName() == orig(this.pluginExe.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.tvportArg == orig(stv6.Profile$ArgumentParser.instance_.tvportArg)
+stv6.Profile$ArgumentParser.instance_.mtportArg == orig(stv6.Profile$ArgumentParser.instance_.mtportArg)
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == this.upnpPortArg.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == this.mtTrForce.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.upnpPortArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.mtTrForce.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == orig(this.mtportArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == orig(this.upnpPortArg.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.mtportArg.getClass().getName() == orig(this.mtTrForce.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.upnpPortArg == orig(stv6.Profile$ArgumentParser.instance_.upnpPortArg)
+stv6.Profile$ArgumentParser.instance_.agedTime == orig(stv6.Profile$ArgumentParser.instance_.agedTime)
+stv6.Profile$ArgumentParser.instance_.template == orig(stv6.Profile$ArgumentParser.instance_.template)
+stv6.Profile$ArgumentParser.instance_.playerPath == orig(stv6.Profile$ArgumentParser.instance_.playerPath)
+stv6.Profile$ArgumentParser.instance_.userName == orig(stv6.Profile$ArgumentParser.instance_.userName)
+stv6.Profile$ArgumentParser.instance_.profileName == orig(stv6.Profile$ArgumentParser.instance_.profileName)
+stv6.Profile$ArgumentParser.instance_.dbtype == orig(stv6.Profile$ArgumentParser.instance_.dbtype)
+stv6.Profile$ArgumentParser.instance_.emtype == orig(stv6.Profile$ArgumentParser.instance_.emtype)
+stv6.Profile$ArgumentParser.instance_.mysqldb == orig(stv6.Profile$ArgumentParser.instance_.mysqldb)
+stv6.Profile$ArgumentParser.instance_.mysqlserver == orig(stv6.Profile$ArgumentParser.instance_.mysqlserver)
+stv6.Profile$ArgumentParser.instance_.mysqluser == orig(stv6.Profile$ArgumentParser.instance_.mysqluser)
+stv6.Profile$ArgumentParser.instance_.mysqlpass == orig(stv6.Profile$ArgumentParser.instance_.mysqlpass)
+stv6.Profile$ArgumentParser.instance_.dbFileArg == orig(stv6.Profile$ArgumentParser.instance_.dbFileArg)
+stv6.Profile$ArgumentParser.instance_.mtTrForce == orig(stv6.Profile$ArgumentParser.instance_.mtTrForce)
+stv6.Profile$ArgumentParser.instance_.mtTrProfile == orig(stv6.Profile$ArgumentParser.instance_.mtTrProfile)
+stv6.Profile$ArgumentParser.instance_.localArg == orig(stv6.Profile$ArgumentParser.instance_.localArg)
+stv6.Profile$ArgumentParser.instance_.syncUrl == orig(stv6.Profile$ArgumentParser.instance_.syncUrl)
+stv6.Profile$ArgumentParser.instance_.syncPass == orig(stv6.Profile$ArgumentParser.instance_.syncPass)
+stv6.Profile$ArgumentParser.instance_.profile == orig(stv6.Profile$ArgumentParser.instance_.profile)
+stv6.Profile$ArgumentParser.instance_.profileDir == orig(stv6.Profile$ArgumentParser.instance_.profileDir)
+stv6.Profile$ArgumentParser.instance_.pluginExe == orig(stv6.Profile$ArgumentParser.instance_.pluginExe)
+stv6.Profile$ArgumentParser.instance_.parser.recognizedOptions == orig(stv6.Profile$ArgumentParser.instance_.parser.recognizedOptions)
+stv6.Profile$ArgumentParser.instance_.parser.state.getClass().getName() == orig(stv6.Profile$ArgumentParser.instance_.parser.state.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.parser.state.getClass().getName() == orig(this.parser.state.getClass().getName())
+stv6.Profile$ArgumentParser.instance_.parser.posixlyCorrect == orig(stv6.Profile$ArgumentParser.instance_.parser.posixlyCorrect)
+this.parser == orig(this.parser)
+this.parser.recognizedOptions == orig(this.parser.recognizedOptions)
+this.parser.recognizedOptions.key == orig(this.parser.recognizedOptions.key)
+this.parser.recognizedOptions.value == orig(this.parser.recognizedOptions.value)
+this.parser.recognizedOptions.children == orig(this.parser.recognizedOptions.children)
+this.parser.recognizedOptions.children.getClass().getName() == orig(this.parser.recognizedOptions.children.getClass().getName())
+this.parser.recognizedOptions.keysBeyond == orig(this.parser.recognizedOptions.keysBeyond)
+this.parser.posixlyCorrect == orig(this.parser.posixlyCorrect)
+this.portArg == orig(this.portArg)
+this.tvportArg == orig(this.tvportArg)
+this.mtportArg == orig(this.mtportArg)
+this.upnpPortArg == orig(this.upnpPortArg)
+this.agedTime == orig(this.agedTime)
+this.template == orig(this.template)
+this.playerPath == orig(this.playerPath)
+this.userName == orig(this.userName)
+this.profileName == orig(this.profileName)
+this.dbtype == orig(this.dbtype)
+this.emtype == orig(this.emtype)
+this.mysqldb == orig(this.mysqldb)
+this.mysqlserver == orig(this.mysqlserver)
+this.mysqluser == orig(this.mysqluser)
+this.mysqlpass == orig(this.mysqlpass)
+this.dbFileArg == orig(this.dbFileArg)
+this.mtTrForce == orig(this.mtTrForce)
+this.mtTrProfile == orig(this.mtTrProfile)
+this.localArg == orig(this.localArg)
+this.syncUrl == orig(this.syncUrl)
+this.syncPass == orig(this.syncPass)
+this.profile == orig(this.profile)
+this.profileDir == orig(this.profileDir)
+this.pluginExe == orig(this.pluginExe)
+arg0[] == orig(arg0[])
+return.detectedOptions.getClass().getName() == return.defaultValues.getClass().getName()
+stv6.Profile$ArgumentParser.instance_.parser.state has only one value
+this.parser.state has only one value
+arg0[] == []
+arg0[].toString == []
+return has only one value
+return.detectedOptions has only one value
+return.detectedOptions.getClass().getName() == java.util.HashMap.class
+return.optionsToArguments has only one value
+return.optionsToArguments.getClass().getName() == java.util.IdentityHashMap.class
+return.nonOptionArguments has only one value
+return.nonOptionArguments[] == []
+return.nonOptionArguments[].getClass().getName() == []
+return.nonOptionArguments.getClass().getName() == java.util.ArrayList.class
+return.defaultValues has only one value
+===========================================================================
+stv6.Profile:::CLASS
+stv6.Profile.TEMPLATE_PATH has only one value
+stv6.Profile.TEMPLATE_PATH != null
+stv6.Profile.TEMPLATE_PATH.toString == "template"
+stv6.Profile.instance_ has only one value
+stv6.Profile.instance_ != null
+stv6.Profile.instance_.id == -1
+stv6.Profile.instance_.globalUser == null
+stv6.Profile.instance_.series has only one value
+stv6.Profile.instance_.series != null
+stv6.Profile.instance_.db == null
+stv6.Profile.instance_.epmgr == null
+stv6.Profile.instance_.localPlayer == null
+stv6.Profile.instance_.userName == null
+stv6.Profile.instance_.port == 80
+stv6.Profile.instance_.agedTime == 1814400
+stv6.Profile.instance_.syncSettings == null
+stv6.Profile.instance_.templateName == null
+stv6.Profile.instance_.possibleProfiles == null
+stv6.Profile.instance_.profileFile == null
+stv6.Profile.instance_.profileName == null
+stv6.Profile.instance_.profileFromCommandLine == false
+stv6.Profile.instance_.pluginExe == null
+stv6.Profile.instance_.possibleUsers has only one value
+stv6.Profile.instance_.possibleUsers != null
+stv6.Profile.instance_.possibleUsers[] == []
+stv6.Profile.instance_.possibleUsers[].getClass().getName() == []
+stv6.Profile.instance_.possibleUsers.getClass().getName() == java.util.LinkedList.class
+stv6.Profile.instance_.reloading has only one value
+stv6.Profile.instance_.reloading != null
+stv6.Profile.instance_.series.seriesByName has only one value
+stv6.Profile.instance_.series.seriesByName != null
+stv6.Profile.instance_.series.seriesById has only one value
+stv6.Profile.instance_.series.seriesById != null
+===========================================================================
+stv6.Profile:::OBJECT
+this has only one value
+this.id == -1
+this.globalUser == null
+this.series has only one value
+this.series.seriesByName has only one value
+this.series.seriesById has only one value
+this.db == null
+this.epmgr == null
+this.localPlayer == null
+this.userName == null
+this.port == 80
+this.agedTime == 1814400
+this.syncSettings == null
+this.templateName == null
+this.possibleProfiles == null
+this.profileFile == null
+this.profileName == null
+this.profileFromCommandLine == false
+this.pluginExe == null
+this.possibleUsers has only one value
+this.possibleUsers[] == []
+this.possibleUsers[].getClass().getName() == []
+this.possibleUsers.getClass().getName() == java.util.LinkedList.class
+this.reloading has only one value
+===========================================================================
+stv6.Profile.Profile():::EXIT
+===========================================================================
+stv6.Profile.asList(java.lang.String[]):::ENTER
+stv6.Profile.instance_.localPlayer == stv6.Profile.instance_.userName
+stv6.Profile.instance_.localPlayer == stv6.Profile.instance_.templateName
+stv6.Profile.instance_.localPlayer == stv6.Profile.instance_.profileName
+stv6.Profile.instance_.profileFile == stv6.Profile.instance_.pluginExe
+arg0.getClass().getName() == java.lang.String[].class
+size(arg0[]) one of { 2, 3 }
+===========================================================================
+stv6.Profile.asList(java.lang.String[]):::EXIT
+stv6.Profile.TEMPLATE_PATH == orig(stv6.Profile.TEMPLATE_PATH)
+stv6.Profile.TEMPLATE_PATH.toString == orig(stv6.Profile.TEMPLATE_PATH.toString)
+stv6.Profile.instance_ == orig(stv6.Profile.instance_)
+stv6.Profile.instance_.id == orig(stv6.Profile.instance_.id)
+stv6.Profile.instance_.globalUser == orig(stv6.Profile.instance_.globalUser)
+stv6.Profile.instance_.series == orig(stv6.Profile.instance_.series)
+stv6.Profile.instance_.db == orig(stv6.Profile.instance_.db)
+stv6.Profile.instance_.epmgr == orig(stv6.Profile.instance_.epmgr)
+stv6.Profile.instance_.localPlayer == stv6.Profile.instance_.userName
+stv6.Profile.instance_.localPlayer == stv6.Profile.instance_.templateName
+stv6.Profile.instance_.localPlayer == stv6.Profile.instance_.profileName
+stv6.Profile.instance_.localPlayer == orig(stv6.Profile.instance_.localPlayer)
+stv6.Profile.instance_.localPlayer == orig(stv6.Profile.instance_.userName)
+stv6.Profile.instance_.localPlayer == orig(stv6.Profile.instance_.templateName)
+stv6.Profile.instance_.localPlayer == orig(stv6.Profile.instance_.profileName)
+stv6.Profile.instance_.port == orig(stv6.Profile.instance_.port)
+stv6.Profile.instance_.agedTime == orig(stv6.Profile.instance_.agedTime)
+stv6.Profile.instance_.syncSettings == orig(stv6.Profile.instance_.syncSettings)
+stv6.Profile.instance_.possibleProfiles == orig(stv6.Profile.instance_.possibleProfiles)
+stv6.Profile.instance_.profileFile == stv6.Profile.instance_.pluginExe
+stv6.Profile.instance_.profileFile == orig(stv6.Profile.instance_.profileFile)
+stv6.Profile.instance_.profileFile == orig(stv6.Profile.instance_.pluginExe)
+stv6.Profile.instance_.profileFromCommandLine == orig(stv6.Profile.instance_.profileFromCommandLine)
+stv6.Profile.instance_.possibleUsers == orig(stv6.Profile.instance_.possibleUsers)
+stv6.Profile.instance_.possibleUsers[] == orig(stv6.Profile.instance_.possibleUsers[])
+stv6.Profile.instance_.possibleUsers.getClass().getName() == return.getClass().getName()
+stv6.Profile.instance_.reloading == orig(stv6.Profile.instance_.reloading)
+stv6.Profile.instance_.series.seriesByName == orig(stv6.Profile.instance_.series.seriesByName)
+stv6.Profile.instance_.series.seriesById == orig(stv6.Profile.instance_.series.seriesById)
+arg0[] == orig(arg0[])
+return.getClass().getName() == orig(stv6.Profile.instance_.possibleUsers.getClass().getName())
+return.getClass().getName() == java.util.LinkedList.class
+===========================================================================
+stv6.Profile.getInstance():::ENTER
+stv6.Profile.instance_.localPlayer == stv6.Profile.instance_.userName
+stv6.Profile.instance_.localPlayer == stv6.Profile.instance_.templateName
+stv6.Profile.instance_.localPlayer == stv6.Profile.instance_.profileName
+stv6.Profile.instance_.profileFile == stv6.Profile.instance_.pluginExe
+===========================================================================
+stv6.Profile.getInstance():::EXIT
+stv6.Profile.TEMPLATE_PATH == orig(stv6.Profile.TEMPLATE_PATH)
+stv6.Profile.TEMPLATE_PATH.toString == orig(stv6.Profile.TEMPLATE_PATH.toString)
+stv6.Profile.instance_ == return
+stv6.Profile.instance_ == orig(stv6.Profile.instance_)
+stv6.Profile.instance_.id == orig(stv6.Profile.instance_.id)
+stv6.Profile.instance_.globalUser == orig(stv6.Profile.instance_.globalUser)
+stv6.Profile.instance_.series == orig(stv6.Profile.instance_.series)
+stv6.Profile.instance_.db == orig(stv6.Profile.instance_.db)
+stv6.Profile.instance_.epmgr == orig(stv6.Profile.instance_.epmgr)
+stv6.Profile.instance_.localPlayer == stv6.Profile.instance_.userName
+stv6.Profile.instance_.localPlayer == stv6.Profile.instance_.templateName
+stv6.Profile.instance_.localPlayer == stv6.Profile.instance_.profileName
+stv6.Profile.instance_.localPlayer == orig(stv6.Profile.instance_.localPlayer)
+stv6.Profile.instance_.localPlayer == orig(stv6.Profile.instance_.userName)
+stv6.Profile.instance_.localPlayer == orig(stv6.Profile.instance_.templateName)
+stv6.Profile.instance_.localPlayer == orig(stv6.Profile.instance_.profileName)
+stv6.Profile.instance_.port == orig(stv6.Profile.instance_.port)
+stv6.Profile.instance_.agedTime == orig(stv6.Profile.instance_.agedTime)
+stv6.Profile.instance_.syncSettings == orig(stv6.Profile.instance_.syncSettings)
+stv6.Profile.instance_.possibleProfiles == orig(stv6.Profile.instance_.possibleProfiles)
+stv6.Profile.instance_.profileFile == stv6.Profile.instance_.pluginExe
+stv6.Profile.instance_.profileFile == orig(stv6.Profile.instance_.profileFile)
+stv6.Profile.instance_.profileFile == orig(stv6.Profile.instance_.pluginExe)
+stv6.Profile.instance_.profileFromCommandLine == orig(stv6.Profile.instance_.profileFromCommandLine)
+stv6.Profile.instance_.possibleUsers == orig(stv6.Profile.instance_.possibleUsers)
+stv6.Profile.instance_.possibleUsers[] == orig(stv6.Profile.instance_.possibleUsers[])
+stv6.Profile.instance_.reloading == orig(stv6.Profile.instance_.reloading)
+stv6.Profile.instance_.series.seriesByName == orig(stv6.Profile.instance_.series.seriesByName)
+stv6.Profile.instance_.series.seriesById == orig(stv6.Profile.instance_.series.seriesById)
+return.id == -1
+return.globalUser == null
+return.series has only one value
+return.series.seriesByName has only one value
+return.series.seriesById has only one value
+return.db == null
+return.epmgr == null
+return.localPlayer == null
+return.userName == null
+return.port == 80
+return.agedTime == 1814400
+return.syncSettings == null
+return.templateName == null
+return.possibleProfiles == null
+return.profileFile == null
+return.profileName == null
+return.profileFromCommandLine == false
+return.pluginExe == null
+return.possibleUsers has only one value
+return.possibleUsers[] == []
+return.possibleUsers[].getClass().getName() == []
+return.reloading has only one value
+===========================================================================
+stv6.http.HttpServer.getDateFormatter():::EXIT
+return has only one value
+===========================================================================
+stv6.series.SeriesList:::OBJECT
+this has only one value
+this.seriesByName has only one value
+this.seriesById has only one value
+===========================================================================
+stv6.series.SeriesList.SeriesList():::EXIT
+Exiting Daikon.

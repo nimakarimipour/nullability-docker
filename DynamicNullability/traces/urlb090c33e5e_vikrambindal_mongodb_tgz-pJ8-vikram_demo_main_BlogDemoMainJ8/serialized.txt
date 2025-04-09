@@ -1,0 +1,4 @@
+METHOD	com.mongodb.util.SimplePool	_get(long)	null	null
+METHOD	org.bson.BasicBSONObject	put(java.lang.String,java.lang.Object)	null	null
+METHOD	com.mongodb.DBCollection	getDBEncoder()	null	null
+METHOD	com.mongodb.DBCollection	getDBEncoderFactory()	null	null

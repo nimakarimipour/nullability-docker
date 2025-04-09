@@ -1,0 +1,7 @@
+FIELD	es.uc3m.eda.list.singlelink.SListIterator	null	currentNode	null
+METHOD	es.uc3m.recordplayer.test.Test	findRecord(es.uc3m.recordplayer.logic.Record)	null	null
+FIELD	es.uc3m.eda.tree.BSTNode	null	leftChild	null
+METHOD	es.uc3m.recordplayer.logic.RecordShelf	getRecordFromSlot(int)	null	null
+FIELD	es.uc3m.eda.tree.BSTNode	null	rightChild	null
+FIELD	es.uc3m.eda.tree.BSTree	null	root	null
+FIELD	es.uc3m.eda.list.singlelink.SStack	null	topNode	null

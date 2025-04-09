@@ -1,0 +1,2880 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 1 time.  Unmatched entries are ignored!
+Unterminated calls:
+  patterns.gof.structural.proxy.Matematika.razdelit(int, int) : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+patterns.Main.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+patterns.Main.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+patterns.gof.GOFMain:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.GOFMain.GOFMain():::EXIT
+===========================================================================
+patterns.gof.GOFMain.fillBehavioral(java.util.List):::ENTER
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 2
+arg0[].getClass().getName() == [patterns.gof.helpers.PatternList, patterns.gof.helpers.PatternList]
+arg0[].getClass().getName() elements == patterns.gof.helpers.PatternList.class
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 2
+===========================================================================
+patterns.gof.GOFMain.fillBehavioral(java.util.List):::EXIT
+size(arg0[])-1 == orig(size(arg0[]))
+arg0[] contains no nulls and has only one value, of length 3
+arg0[].getClass().getName() == [patterns.gof.helpers.PatternList, patterns.gof.helpers.PatternList, patterns.gof.helpers.PatternList]
+arg0[].getClass().getName() elements == patterns.gof.helpers.PatternList.class
+===========================================================================
+patterns.gof.GOFMain.fillCreational(java.util.List):::ENTER
+arg0 has only one value
+arg0[] == []
+arg0[].getClass().getName() == []
+arg0.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+patterns.gof.GOFMain.fillCreational(java.util.List):::EXIT
+size(arg0[])-1 == orig(size(arg0[]))
+arg0[] contains no nulls and has only one value, of length 1
+arg0[] elements has only one value
+arg0[].getClass().getName() == [patterns.gof.helpers.PatternList]
+arg0[].getClass().getName() elements == patterns.gof.helpers.PatternList.class
+===========================================================================
+patterns.gof.GOFMain.fillPatterns(java.util.List):::ENTER
+arg0 has only one value
+arg0[] == []
+arg0[].getClass().getName() == []
+arg0.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+patterns.gof.GOFMain.fillPatterns(java.util.List):::EXIT
+arg0[] contains no nulls and has only one value, of length 3
+arg0[].getClass().getName() == [patterns.gof.helpers.PatternList, patterns.gof.helpers.PatternList, patterns.gof.helpers.PatternList]
+arg0[].getClass().getName() elements == patterns.gof.helpers.PatternList.class
+===========================================================================
+patterns.gof.GOFMain.fillStructural(java.util.List):::ENTER
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 1
+arg0[] elements has only one value
+arg0[].getClass().getName() == [patterns.gof.helpers.PatternList]
+arg0[].getClass().getName() elements == patterns.gof.helpers.PatternList.class
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 1
+===========================================================================
+patterns.gof.GOFMain.fillStructural(java.util.List):::EXIT
+size(arg0[])-1 == orig(size(arg0[]))
+arg0[] contains no nulls and has only one value, of length 2
+arg0[].getClass().getName() == [patterns.gof.helpers.PatternList, patterns.gof.helpers.PatternList]
+arg0[].getClass().getName() elements == patterns.gof.helpers.PatternList.class
+===========================================================================
+patterns.gof.GOFMain.main():::ENTER
+===========================================================================
+patterns.gof.GOFMain.main():::EXIT
+===========================================================================
+patterns.gof.GOFMain.printPatterns(java.util.List):::ENTER
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 3
+arg0[].getClass().getName() == [patterns.gof.helpers.PatternList, patterns.gof.helpers.PatternList, patterns.gof.helpers.PatternList]
+arg0[].getClass().getName() elements == patterns.gof.helpers.PatternList.class
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 3
+===========================================================================
+patterns.gof.GOFMain.printPatterns(java.util.List):::EXIT
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 3
+arg0[].getClass().getName() == [patterns.gof.helpers.PatternList, patterns.gof.helpers.PatternList, patterns.gof.helpers.PatternList]
+arg0[].getClass().getName() elements == patterns.gof.helpers.PatternList.class
+===========================================================================
+patterns.gof.GOFMain.testingOutput(java.lang.String):::ENTER
+arg0.toString one of { "BEHAVIORAL", "CREATIONAL", "STRUCTURAL" }
+===========================================================================
+patterns.gof.GOFMain.testingOutput(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "BEHAVIORAL", "CREATIONAL", "STRUCTURAL" }
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.ChainOfResponsibilityClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: 3 + 1 = 4\nData: 14 - 21 = -7\nData: 4 * 7 = 28\nData: dividing by zero:\nData: 6 / 0 = 0.0\nData: 10 / 3 = 3.0", "\nData: console log: entering function ProcessOrder()\nData: console log: order record retrieved\nData: console log: customer address details missing in Branch DataBase.\nData: file log: customer address details missing in Branch DataBase.\nData: console log: customer address details missing in Organization DataBase.\nData: file log: customer address details missing in Organization DataBase.\nData: console log: unable to process order ORD1 dated D1 for customer C1.\nData: e-mail log: unable to process order ORD1 dated D1 for customer C1.\nData: console log: order dispatched.\nData: e-mail log: order dispatched." }
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.ChainOfResponsibilityClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.ChainOfResponsibilityClient.ChainOfResponsibilityClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.ChainOfResponsibilityClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 3 + 1 = 4\nData: 14 - 21 = -7\nData: 4 * 7 = 28\nData: dividing by zero:\nData: 6 / 0 = 0.0\nData: 10 / 3 = 3.0"
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.ChainOfResponsibilityClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: console log: entering function ProcessOrder()\nData: console log: order record retrieved\nData: console log: customer address details missing in Branch DataBase.\nData: file log: customer address details missing in Branch DataBase.\nData: console log: customer address details missing in Organization DataBase.\nData: file log: customer address details missing in Organization DataBase.\nData: console log: unable to process order ORD1 dated D1 for customer C1.\nData: e-mail log: unable to process order ORD1 dated D1 for customer C1.\nData: console log: order dispatched.\nData: e-mail log: order dispatched."
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.ConsoleLogger:::OBJECT
+this has only one value
+this.logMask == 63
+this.next.getClass().getName() == patterns.gof.behavioral.chainOfResponsibility.EmailLogger.class
+this.next.logMask == 48
+this.next.next has only one value
+this.next.next != null
+this.next.next.getClass().getName() == patterns.gof.behavioral.chainOfResponsibility.FileLogger.class
+this.next.next.logMask == 12
+this.next.next.next == null
+this.next.getClass().getName() != this.next.next.getClass().getName()
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.ConsoleLogger.ConsoleLogger(int):::ENTER
+arg0 == 63
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.ConsoleLogger.ConsoleLogger(int):::EXIT
+this.logMask == orig(arg0)
+this.next == null
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.ConsoleLogger.writeMessage(java.lang.String):::ENTER
+this.next has only one value
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.ConsoleLogger.writeMessage(java.lang.String):::EXIT
+this.logMask == orig(this.logMask)
+this.next == orig(this.next)
+this.next.getClass().getName() == orig(this.next.getClass().getName())
+this.next.logMask == orig(this.next.logMask)
+this.next.next == orig(this.next.next)
+this.next.next.getClass().getName() == orig(this.next.next.getClass().getName())
+this.next.next.logMask == orig(this.next.next.logMask)
+this.next.next.next == orig(this.next.next.next)
+arg0.toString == orig(arg0.toString)
+this.next has only one value
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.EmailLogger:::OBJECT
+this has only one value
+this.logMask == 48
+this.next.getClass().getName() == patterns.gof.behavioral.chainOfResponsibility.FileLogger.class
+this.next.logMask == 12
+this.next.next == null
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.EmailLogger.EmailLogger(int):::ENTER
+arg0 == 48
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.EmailLogger.EmailLogger(int):::EXIT
+this.logMask == orig(arg0)
+this.next == null
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.EmailLogger.writeMessage(java.lang.String):::ENTER
+this.next has only one value
+arg0.toString one of { "order dispatched.", "unable to process order ORD1 dated D1 for customer C1." }
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.EmailLogger.writeMessage(java.lang.String):::EXIT
+this.logMask == orig(this.logMask)
+this.next == orig(this.next)
+this.next.getClass().getName() == orig(this.next.getClass().getName())
+this.next.logMask == orig(this.next.logMask)
+this.next.next == orig(this.next.next)
+arg0.toString == orig(arg0.toString)
+this.next has only one value
+arg0.toString one of { "order dispatched.", "unable to process order ORD1 dated D1 for customer C1." }
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.FileLogger:::OBJECT
+this has only one value
+this.logMask == 12
+this.next == null
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.FileLogger.FileLogger(int):::ENTER
+arg0 == 12
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.FileLogger.FileLogger(int):::EXIT
+this.logMask == orig(arg0)
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.FileLogger.writeMessage(java.lang.String):::ENTER
+arg0.toString one of { "customer address details missing in Branch DataBase.", "customer address details missing in Organization DataBase." }
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.FileLogger.writeMessage(java.lang.String):::EXIT
+this.logMask == orig(this.logMask)
+this.next == orig(this.next)
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "customer address details missing in Branch DataBase.", "customer address details missing in Organization DataBase." }
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.Logger:::OBJECT
+this.logMask one of { 12, 48, 63 }
+this.next.logMask one of { 12, 48 }
+this.next.next.getClass().getName() == patterns.gof.behavioral.chainOfResponsibility.FileLogger.class
+this.next.next.logMask == 12
+this.next.next.next == null
+this.getClass().getName() != this.next.getClass().getName()
+this.getClass().getName() != this.next.next.getClass().getName()
+this.logMask > this.next.logMask
+this.logMask > this.next.next.logMask
+this.next.getClass().getName() != this.next.next.getClass().getName()
+this.next.logMask > this.next.next.logMask
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.Logger.Logger(int):::ENTER
+arg0 one of { 12, 48, 63 }
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.Logger.Logger(int):::EXIT
+this.logMask == orig(arg0)
+this.next == null
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.Logger.message(java.lang.String, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel):::ENTER
+arg0 != null
+arg1 != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None.code == 0
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES.getClass().getName() == patterns.gof.behavioral.chainOfResponsibility.LoggingLevel[].class
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[] contains no nulls and has only one value, of length 8
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[] elements != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].getClass().getName() == [patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel]
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].getClass().getName() elements == patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.class
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code == [0, 1, 2, 4, 8, 16, 32, 63]
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code elements >= 0
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code sorted by <
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info.code == 1
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug.code == 2
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning.code == 4
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error.code == 8
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage.code == 16
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError.code == 32
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All.code == 63
+arg1.code >= 1
+arg1.code is a power of 2
+size(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[]) == 8
+this.getClass().getName() != patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES.getClass().getName()
+this.logMask != arg1.code
+this.next.getClass().getName() != patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES.getClass().getName()
+this.next.logMask != arg1.code
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.Logger.message(java.lang.String, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel):::EXIT
+this.logMask == orig(this.logMask)
+this.next == orig(this.next)
+this.next.getClass().getName() == orig(this.next.getClass().getName())
+this.next.logMask == orig(this.next.logMask)
+this.next.next == orig(this.next.next)
+this.next.next.getClass().getName() == orig(this.next.next.getClass().getName())
+this.next.next.logMask == orig(this.next.next.logMask)
+this.next.next.next == orig(this.next.next.next)
+arg0.toString == orig(arg0.toString)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES.getClass().getName() == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES.getClass().getName())
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[] == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[])
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All.code)
+arg1.code == orig(arg1.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None.code == 0
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES.getClass().getName() == patterns.gof.behavioral.chainOfResponsibility.LoggingLevel[].class
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[] contains no nulls and has only one value, of length 8
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[] elements != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].getClass().getName() == [patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel]
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].getClass().getName() elements == patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.class
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code == [0, 1, 2, 4, 8, 16, 32, 63]
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code elements >= 0
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code sorted by <
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info.code == 1
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug.code == 2
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning.code == 4
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error.code == 8
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage.code == 16
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError.code == 32
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All.code == 63
+arg1.code >= 1
+arg1.code is a power of 2
+size(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[]) == 8
+this.logMask != arg1.code
+this.next.getClass().getName() != patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES.getClass().getName()
+this.next.getClass().getName() != orig(this.getClass().getName())
+this.next.logMask != arg1.code
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.Logger.setNext(patterns.gof.behavioral.chainOfResponsibility.Logger):::ENTER
+this.logMask one of { 48, 63 }
+this.next == null
+arg0.logMask one of { 12, 48 }
+arg0.next == null
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.Logger.setNext(patterns.gof.behavioral.chainOfResponsibility.Logger):::EXIT
+this.logMask == orig(this.logMask)
+this.next == orig(arg0)
+this.next.getClass().getName() == orig(arg0.getClass().getName())
+this.next.logMask == arg0.logMask
+arg0.logMask == orig(arg0.logMask)
+arg0.next == orig(arg0.next)
+this.logMask one of { 48, 63 }
+this.next.next == null
+arg0.logMask one of { 12, 48 }
+arg0.next == null
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel:::CLASS
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None.code == 0
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES has only one value
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES.getClass().getName() == patterns.gof.behavioral.chainOfResponsibility.LoggingLevel[].class
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[] contains no nulls and has only one value, of length 8
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[] elements != null
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].getClass().getName() == [patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel, patterns.gof.behavioral.chainOfResponsibility.LoggingLevel]
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].getClass().getName() elements == patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.class
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code == [0, 1, 2, 4, 8, 16, 32, 63]
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code elements >= 0
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code sorted by <
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info.code == 1
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug.code == 2
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning.code == 4
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error.code == 8
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage.code == 16
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError.code == 32
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All.code == 63
+size(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[]) == 8
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel:::OBJECT
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.LoggingLevel(java.lang.String, int, int):::ENTER
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.LoggingLevel(java.lang.String, int, int):::EXIT
+this.code == orig(arg2)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.getCode():::ENTER
+this.code >= 1
+===========================================================================
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.getCode():::EXIT
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.None.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES.getClass().getName() == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES.getClass().getName())
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[] == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[])
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.$VALUES[].code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Info.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Debug.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Warning.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.Error.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalMessage.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.FunctionalError.code)
+patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All.code == orig(patterns.gof.behavioral.chainOfResponsibility.LoggingLevel.All.code)
+this.code == return
+return == orig(this.code)
+return >= 1
+===========================================================================
+patterns.gof.behavioral.command.Command:::OBJECT
+this.turtle has only one value
+this.turtle != null
+this.turtle.position has only one value
+this.turtle.position != null
+===========================================================================
+patterns.gof.behavioral.command.Command.Command(patterns.gof.behavioral.command.Turtle):::ENTER
+arg0 has only one value
+arg0.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.Command.Command(patterns.gof.behavioral.command.Turtle):::EXIT
+this.turtle == orig(arg0)
+this.turtle.position == arg0.position
+arg0.position == orig(arg0.position)
+arg0.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.Command.getTurtle():::ENTER
+===========================================================================
+patterns.gof.behavioral.command.Command.getTurtle():::EXIT
+this.turtle == return
+this.turtle.position == return.position
+return == orig(this.turtle)
+return.position == orig(this.turtle.position)
+return has only one value
+return.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.CommandCenter:::OBJECT
+this has only one value
+this.history has only one value
+this.history != null
+this.history[] elements != null
+this.history.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+patterns.gof.behavioral.command.CommandCenter.CommandCenter():::EXIT
+this.history[] == []
+this.history[].getClass().getName() == []
+===========================================================================
+patterns.gof.behavioral.command.CommandCenter.executeAndSave(patterns.gof.behavioral.command.Command):::ENTER
+arg0.turtle has only one value
+arg0.turtle.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.CommandCenter.executeAndSave(patterns.gof.behavioral.command.Command):::EXIT
+this.history == orig(this.history)
+this.history.getClass().getName() == orig(this.history.getClass().getName())
+arg0.turtle == orig(arg0.turtle)
+arg0.turtle.position == orig(arg0.turtle.position)
+size(this.history[])-1 == orig(size(this.history[]))
+arg0.turtle has only one value
+arg0.turtle.position has only one value
+orig(arg0.getClass().getName()) in this.history[].getClass().getName()
+===========================================================================
+patterns.gof.behavioral.command.CommandCenter.getMin(int, int):::ENTER
+this.history[] contains no nulls and has only one value, of length 6
+this.history[].getClass().getName() == [patterns.gof.behavioral.command.TurtleForwardCommand, patterns.gof.behavioral.command.TurtleRightCommand, patterns.gof.behavioral.command.TurtleForwardCommand, patterns.gof.behavioral.command.TurtleLeftCommand, patterns.gof.behavioral.command.TurtleLeftCommand, patterns.gof.behavioral.command.TurtleBackwardCommand]
+arg0 == 6
+arg1 == 3
+size(this.history[]) == 6
+===========================================================================
+patterns.gof.behavioral.command.CommandCenter.getMin(int, int):::EXIT
+this.history == orig(this.history)
+this.history[] == orig(this.history[])
+this.history.getClass().getName() == orig(this.history.getClass().getName())
+return == orig(arg1)
+this.history[] contains no nulls and has only one value, of length 6
+this.history[].getClass().getName() == [patterns.gof.behavioral.command.TurtleForwardCommand, patterns.gof.behavioral.command.TurtleRightCommand, patterns.gof.behavioral.command.TurtleForwardCommand, patterns.gof.behavioral.command.TurtleLeftCommand, patterns.gof.behavioral.command.TurtleLeftCommand, patterns.gof.behavioral.command.TurtleBackwardCommand]
+return == 3
+size(this.history[]) == 6
+===========================================================================
+patterns.gof.behavioral.command.CommandCenter.resetLastExecutes(int):::ENTER
+this.history[] contains no nulls and has only one value, of length 6
+this.history[].getClass().getName() == [patterns.gof.behavioral.command.TurtleForwardCommand, patterns.gof.behavioral.command.TurtleRightCommand, patterns.gof.behavioral.command.TurtleForwardCommand, patterns.gof.behavioral.command.TurtleLeftCommand, patterns.gof.behavioral.command.TurtleLeftCommand, patterns.gof.behavioral.command.TurtleBackwardCommand]
+arg0 == 3
+size(this.history[]) == 6
+===========================================================================
+patterns.gof.behavioral.command.CommandCenter.resetLastExecutes(int):::EXIT
+this.history == orig(this.history)
+this.history.getClass().getName() == orig(this.history.getClass().getName())
+this.history[] contains no nulls and has only one value, of length 3
+this.history[].getClass().getName() == [patterns.gof.behavioral.command.TurtleForwardCommand, patterns.gof.behavioral.command.TurtleRightCommand, patterns.gof.behavioral.command.TurtleForwardCommand]
+size(this.history[]) == 3
+===========================================================================
+patterns.gof.behavioral.command.CommandClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: console log: entering function ProcessOrder()\nData: console log: order record retrieved\nData: console log: customer address details missing in Branch DataBase.\nData: file log: customer address details missing in Branch DataBase.\nData: console log: customer address details missing in Organization DataBase.\nData: file log: customer address details missing in Organization DataBase.\nData: console log: unable to process order ORD1 dated D1 for customer C1.\nData: e-mail log: unable to process order ORD1 dated D1 for customer C1.\nData: console log: order dispatched.\nData: e-mail log: order dispatched.", "\nData: turtle is moving forward\nData: turtle is moving right\nData: turtle is moving forward\nData: turtle is moving left\nData: turtle is moving left\nData: turtle is moving backward\nData: coordinates: [-1, 1]\nData: turtle is moving forward\nData: turtle is moving right\nData: turtle is moving right\nData: coordinates: [1, 2]" }
+===========================================================================
+patterns.gof.behavioral.command.CommandClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.command.CommandClient.CommandClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.behavioral.command.CommandClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: console log: entering function ProcessOrder()\nData: console log: order record retrieved\nData: console log: customer address details missing in Branch DataBase.\nData: file log: customer address details missing in Branch DataBase.\nData: console log: customer address details missing in Organization DataBase.\nData: file log: customer address details missing in Organization DataBase.\nData: console log: unable to process order ORD1 dated D1 for customer C1.\nData: e-mail log: unable to process order ORD1 dated D1 for customer C1.\nData: console log: order dispatched.\nData: e-mail log: order dispatched."
+===========================================================================
+patterns.gof.behavioral.command.CommandClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: turtle is moving forward\nData: turtle is moving right\nData: turtle is moving forward\nData: turtle is moving left\nData: turtle is moving left\nData: turtle is moving backward\nData: coordinates: [-1, 1]\nData: turtle is moving forward\nData: turtle is moving right\nData: turtle is moving right\nData: coordinates: [1, 2]"
+===========================================================================
+patterns.gof.behavioral.command.Turtle:::OBJECT
+this has only one value
+this.position has only one value
+this.position != null
+===========================================================================
+patterns.gof.behavioral.command.Turtle.Turtle():::EXIT
+===========================================================================
+patterns.gof.behavioral.command.Turtle.getPosition():::ENTER
+===========================================================================
+patterns.gof.behavioral.command.Turtle.getPosition():::EXIT
+this.position == return
+return == orig(this.position)
+return has only one value
+===========================================================================
+patterns.gof.behavioral.command.Turtle.moveBackward():::ENTER
+===========================================================================
+patterns.gof.behavioral.command.Turtle.moveBackward():::EXIT
+this.position == orig(this.position)
+===========================================================================
+patterns.gof.behavioral.command.Turtle.moveForward():::ENTER
+===========================================================================
+patterns.gof.behavioral.command.Turtle.moveForward():::EXIT
+this.position == orig(this.position)
+===========================================================================
+patterns.gof.behavioral.command.Turtle.moveLeft():::ENTER
+===========================================================================
+patterns.gof.behavioral.command.Turtle.moveLeft():::EXIT
+this.position == orig(this.position)
+===========================================================================
+patterns.gof.behavioral.command.Turtle.moveRight():::ENTER
+===========================================================================
+patterns.gof.behavioral.command.Turtle.moveRight():::EXIT
+this.position == orig(this.position)
+===========================================================================
+patterns.gof.behavioral.command.TurtleBackwardCommand:::OBJECT
+this has only one value
+this.turtle has only one value
+this.turtle.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.TurtleBackwardCommand.TurtleBackwardCommand(patterns.gof.behavioral.command.Turtle):::ENTER
+arg0 has only one value
+arg0.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.TurtleBackwardCommand.TurtleBackwardCommand(patterns.gof.behavioral.command.Turtle):::EXIT
+this.turtle == orig(arg0)
+this.turtle.position == arg0.position
+arg0.position == orig(arg0.position)
+arg0.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.TurtleBackwardCommand.execute():::ENTER
+===========================================================================
+patterns.gof.behavioral.command.TurtleBackwardCommand.execute():::EXIT
+this.turtle == orig(this.turtle)
+this.turtle.position == orig(this.turtle.position)
+===========================================================================
+patterns.gof.behavioral.command.TurtleBackwardCommand.undo():::ENTER
+===========================================================================
+patterns.gof.behavioral.command.TurtleBackwardCommand.undo():::EXIT
+this.turtle == orig(this.turtle)
+this.turtle.position == orig(this.turtle.position)
+===========================================================================
+patterns.gof.behavioral.command.TurtleForwardCommand:::OBJECT
+this has only one value
+this.turtle has only one value
+this.turtle.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.TurtleForwardCommand.TurtleForwardCommand(patterns.gof.behavioral.command.Turtle):::ENTER
+arg0 has only one value
+arg0.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.TurtleForwardCommand.TurtleForwardCommand(patterns.gof.behavioral.command.Turtle):::EXIT
+this.turtle == orig(arg0)
+this.turtle.position == arg0.position
+arg0.position == orig(arg0.position)
+arg0.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.TurtleForwardCommand.execute():::ENTER
+===========================================================================
+patterns.gof.behavioral.command.TurtleForwardCommand.execute():::EXIT
+this.turtle == orig(this.turtle)
+this.turtle.position == orig(this.turtle.position)
+===========================================================================
+patterns.gof.behavioral.command.TurtleLeftCommand:::OBJECT
+this has only one value
+this.turtle has only one value
+this.turtle.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.TurtleLeftCommand.TurtleLeftCommand(patterns.gof.behavioral.command.Turtle):::ENTER
+arg0 has only one value
+arg0.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.TurtleLeftCommand.TurtleLeftCommand(patterns.gof.behavioral.command.Turtle):::EXIT
+this.turtle == orig(arg0)
+this.turtle.position == arg0.position
+arg0.position == orig(arg0.position)
+arg0.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.TurtleLeftCommand.execute():::ENTER
+===========================================================================
+patterns.gof.behavioral.command.TurtleLeftCommand.execute():::EXIT
+this.turtle == orig(this.turtle)
+this.turtle.position == orig(this.turtle.position)
+===========================================================================
+patterns.gof.behavioral.command.TurtleLeftCommand.undo():::ENTER
+===========================================================================
+patterns.gof.behavioral.command.TurtleLeftCommand.undo():::EXIT
+this.turtle == orig(this.turtle)
+this.turtle.position == orig(this.turtle.position)
+===========================================================================
+patterns.gof.behavioral.command.TurtleRightCommand:::OBJECT
+this has only one value
+this.turtle has only one value
+this.turtle.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.TurtleRightCommand.TurtleRightCommand(patterns.gof.behavioral.command.Turtle):::ENTER
+arg0 has only one value
+arg0.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.TurtleRightCommand.TurtleRightCommand(patterns.gof.behavioral.command.Turtle):::EXIT
+this.turtle == orig(arg0)
+this.turtle.position == arg0.position
+arg0.position == orig(arg0.position)
+arg0.position has only one value
+===========================================================================
+patterns.gof.behavioral.command.TurtleRightCommand.execute():::ENTER
+===========================================================================
+patterns.gof.behavioral.command.TurtleRightCommand.execute():::EXIT
+this.turtle == orig(this.turtle)
+this.turtle.position == orig(this.turtle.position)
+===========================================================================
+patterns.gof.behavioral.interpreter.IntToBinaryExpression:::OBJECT
+this.decimal one of { 11, 57 }
+===========================================================================
+patterns.gof.behavioral.interpreter.IntToBinaryExpression.IntToBinaryExpression(int):::ENTER
+arg0 one of { 11, 57 }
+===========================================================================
+patterns.gof.behavioral.interpreter.IntToBinaryExpression.IntToBinaryExpression(int):::EXIT
+this.decimal == orig(arg0)
+===========================================================================
+patterns.gof.behavioral.interpreter.IntToBinaryExpression.interpret(patterns.gof.behavioral.interpreter.InterpreterContext):::ENTER
+arg0 has only one value
+===========================================================================
+patterns.gof.behavioral.interpreter.IntToBinaryExpression.interpret(patterns.gof.behavioral.interpreter.InterpreterContext):::EXIT
+this.decimal == orig(this.decimal)
+return.toString one of { "1011", "111001" }
+===========================================================================
+patterns.gof.behavioral.interpreter.IntToHexExpression:::OBJECT
+this.decimal one of { 47, 183 }
+===========================================================================
+patterns.gof.behavioral.interpreter.IntToHexExpression.IntToHexExpression(int):::ENTER
+arg0 one of { 47, 183 }
+===========================================================================
+patterns.gof.behavioral.interpreter.IntToHexExpression.IntToHexExpression(int):::EXIT
+this.decimal == orig(arg0)
+===========================================================================
+patterns.gof.behavioral.interpreter.IntToHexExpression.interpret(patterns.gof.behavioral.interpreter.InterpreterContext):::ENTER
+arg0 has only one value
+===========================================================================
+patterns.gof.behavioral.interpreter.IntToHexExpression.interpret(patterns.gof.behavioral.interpreter.InterpreterContext):::EXIT
+this.decimal == orig(this.decimal)
+return.toString one of { "2f", "b7" }
+===========================================================================
+patterns.gof.behavioral.interpreter.Interpreter:::OBJECT
+this has only one value
+this.context has only one value
+===========================================================================
+patterns.gof.behavioral.interpreter.Interpreter.Interpreter(patterns.gof.behavioral.interpreter.InterpreterContext):::ENTER
+arg0 has only one value
+===========================================================================
+patterns.gof.behavioral.interpreter.Interpreter.Interpreter(patterns.gof.behavioral.interpreter.InterpreterContext):::EXIT
+this.context == orig(arg0)
+===========================================================================
+patterns.gof.behavioral.interpreter.Interpreter.interpret(java.lang.String):::ENTER
+===========================================================================
+patterns.gof.behavioral.interpreter.Interpreter.interpret(java.lang.String):::EXIT22
+===========================================================================
+patterns.gof.behavioral.interpreter.Interpreter.interpret(java.lang.String):::EXIT
+this.context == orig(this.context)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+patterns.gof.behavioral.interpreter.InterpreterClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: 57 in binary: 111001\nData: 11 in binary: 1011\nData: 47 in hexadecimal: 2f\nData: 183 in hexadecimal: b7", "\nData: turtle is moving forward\nData: turtle is moving right\nData: turtle is moving forward\nData: turtle is moving left\nData: turtle is moving left\nData: turtle is moving backward\nData: coordinates: [-1, 1]\nData: turtle is moving forward\nData: turtle is moving right\nData: turtle is moving right\nData: coordinates: [1, 2]" }
+===========================================================================
+patterns.gof.behavioral.interpreter.InterpreterClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.interpreter.InterpreterClient.InterpreterClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.behavioral.interpreter.InterpreterClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: turtle is moving forward\nData: turtle is moving right\nData: turtle is moving forward\nData: turtle is moving left\nData: turtle is moving left\nData: turtle is moving backward\nData: coordinates: [-1, 1]\nData: turtle is moving forward\nData: turtle is moving right\nData: turtle is moving right\nData: coordinates: [1, 2]"
+===========================================================================
+patterns.gof.behavioral.interpreter.InterpreterClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 57 in binary: 111001\nData: 11 in binary: 1011\nData: 47 in hexadecimal: 2f\nData: 183 in hexadecimal: b7"
+===========================================================================
+patterns.gof.behavioral.interpreter.InterpreterContext:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.interpreter.InterpreterContext.InterpreterContext():::EXIT
+===========================================================================
+patterns.gof.behavioral.interpreter.InterpreterContext.getBinary(int):::ENTER
+arg0 one of { 11, 57 }
+===========================================================================
+patterns.gof.behavioral.interpreter.InterpreterContext.getBinary(int):::EXIT
+return.toString one of { "1011", "111001" }
+===========================================================================
+patterns.gof.behavioral.interpreter.InterpreterContext.getHexadecimal(int):::ENTER
+arg0 one of { 47, 183 }
+===========================================================================
+patterns.gof.behavioral.interpreter.InterpreterContext.getHexadecimal(int):::EXIT
+return.toString one of { "2f", "b7" }
+===========================================================================
+patterns.gof.behavioral.iterator.IteratorClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: 57 in binary: 111001\nData: 11 in binary: 1011\nData: 47 in hexadecimal: 2f\nData: 183 in hexadecimal: b7", "\nData: item: 1\nData: item: 2\nData: item: 3\nData: item: 5" }
+===========================================================================
+patterns.gof.behavioral.iterator.IteratorClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.iterator.IteratorClient.IteratorClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.behavioral.iterator.IteratorClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 57 in binary: 111001\nData: 11 in binary: 1011\nData: 47 in hexadecimal: 2f\nData: 183 in hexadecimal: b7"
+===========================================================================
+patterns.gof.behavioral.iterator.IteratorClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: item: 1\nData: item: 2\nData: item: 3\nData: item: 5"
+===========================================================================
+patterns.gof.behavioral.mediator.Mediator:::OBJECT
+this has only one value
+this.getClass().getName() == patterns.gof.behavioral.mediator.PilotContactCenter.class
+===========================================================================
+patterns.gof.behavioral.mediator.Mediator.Mediator():::EXIT
+===========================================================================
+patterns.gof.behavioral.mediator.MediatorClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: item: 1\nData: item: 2\nData: item: 3\nData: item: 5", "\nData: pilot Smith gets message > Anderson here. do you read me? over!\nData: pilot Anderson gets message > Smith here. read you well Anderson. over and out!" }
+===========================================================================
+patterns.gof.behavioral.mediator.MediatorClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.mediator.MediatorClient.MediatorClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.behavioral.mediator.MediatorClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: item: 1\nData: item: 2\nData: item: 3\nData: item: 5"
+===========================================================================
+patterns.gof.behavioral.mediator.MediatorClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: pilot Smith gets message > Anderson here. do you read me? over!\nData: pilot Anderson gets message > Smith here. read you well Anderson. over and out!"
+===========================================================================
+patterns.gof.behavioral.mediator.Pilot:::OBJECT
+this.mediator has only one value
+this.mediator.getClass().getName() == patterns.gof.behavioral.mediator.PilotContactCenter.class
+===========================================================================
+patterns.gof.behavioral.mediator.Pilot.Pilot(patterns.gof.behavioral.mediator.Mediator):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == patterns.gof.behavioral.mediator.PilotContactCenter.class
+===========================================================================
+patterns.gof.behavioral.mediator.Pilot.Pilot(patterns.gof.behavioral.mediator.Mediator):::EXIT
+this.mediator == orig(arg0)
+this.mediator.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.behavioral.mediator.Pilot.send(java.lang.String):::ENTER
+arg0.toString one of { "Anderson here. do you read me? over!", "Smith here. read you well Anderson. over and out!" }
+===========================================================================
+patterns.gof.behavioral.mediator.Pilot.send(java.lang.String):::EXIT
+this.mediator == orig(this.mediator)
+this.mediator.getClass().getName() == orig(this.mediator.getClass().getName())
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "Anderson here. do you read me? over!", "Smith here. read you well Anderson. over and out!" }
+===========================================================================
+patterns.gof.behavioral.mediator.PilotAnderson:::OBJECT
+this has only one value
+this.mediator has only one value
+this.mediator.getClass().getName() == patterns.gof.behavioral.mediator.PilotContactCenter.class
+===========================================================================
+patterns.gof.behavioral.mediator.PilotAnderson.PilotAnderson(patterns.gof.behavioral.mediator.Mediator):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == patterns.gof.behavioral.mediator.PilotContactCenter.class
+===========================================================================
+patterns.gof.behavioral.mediator.PilotAnderson.PilotAnderson(patterns.gof.behavioral.mediator.Mediator):::EXIT
+this.mediator == orig(arg0)
+this.mediator.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.behavioral.mediator.PilotAnderson.notify(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Smith here. read you well Anderson. over and out!"
+===========================================================================
+patterns.gof.behavioral.mediator.PilotAnderson.notify(java.lang.String):::EXIT
+this.mediator == orig(this.mediator)
+this.mediator.getClass().getName() == orig(this.mediator.getClass().getName())
+arg0.toString == orig(arg0.toString)
+arg0.toString == "Smith here. read you well Anderson. over and out!"
+===========================================================================
+patterns.gof.behavioral.mediator.PilotContactCenter:::OBJECT
+this has only one value
+this.pilots has only one value
+this.pilots.getClass().getName() == java.util.ArrayList.class
+size(this.pilots[]) one of { 0, 1, 2 }
+===========================================================================
+patterns.gof.behavioral.mediator.PilotContactCenter.PilotContactCenter():::EXIT
+this.pilots[] == []
+this.pilots[].getClass().getName() == []
+===========================================================================
+patterns.gof.behavioral.mediator.PilotContactCenter.addPilot(patterns.gof.behavioral.mediator.Pilot):::ENTER
+this.pilots[] elements has only one value
+this.pilots[].getClass().getName() elements == patterns.gof.behavioral.mediator.PilotAnderson.class
+this.pilots[].getClass().getName() one of { [], [patterns.gof.behavioral.mediator.PilotAnderson] }
+arg0.mediator has only one value
+arg0.mediator.getClass().getName() == patterns.gof.behavioral.mediator.PilotContactCenter.class
+size(this.pilots[]) one of { 0, 1 }
+===========================================================================
+patterns.gof.behavioral.mediator.PilotContactCenter.addPilot(patterns.gof.behavioral.mediator.Pilot):::EXIT
+this.pilots == orig(this.pilots)
+this.pilots.getClass().getName() == orig(this.pilots.getClass().getName())
+arg0.mediator == orig(arg0.mediator)
+arg0.mediator.getClass().getName() == orig(arg0.mediator.getClass().getName())
+size(this.pilots[])-1 == orig(size(this.pilots[]))
+this.pilots[].getClass().getName() one of { [patterns.gof.behavioral.mediator.PilotAnderson], [patterns.gof.behavioral.mediator.PilotAnderson, patterns.gof.behavioral.mediator.PilotSmith] }
+arg0.mediator has only one value
+arg0.mediator.getClass().getName() == patterns.gof.behavioral.mediator.PilotContactCenter.class
+size(this.pilots[]) one of { 1, 2 }
+orig(arg0.getClass().getName()) in this.pilots[].getClass().getName()
+===========================================================================
+patterns.gof.behavioral.mediator.PilotContactCenter.send(java.lang.String, patterns.gof.behavioral.mediator.Pilot):::ENTER
+this.pilots[] contains no nulls and has only one value, of length 2
+this.pilots[].getClass().getName() == [patterns.gof.behavioral.mediator.PilotAnderson, patterns.gof.behavioral.mediator.PilotSmith]
+arg0.toString one of { "Anderson here. do you read me? over!", "Smith here. read you well Anderson. over and out!" }
+arg1.mediator has only one value
+arg1.mediator.getClass().getName() == patterns.gof.behavioral.mediator.PilotContactCenter.class
+size(this.pilots[]) == 2
+arg1.getClass().getName() in this.pilots[].getClass().getName()
+===========================================================================
+patterns.gof.behavioral.mediator.PilotContactCenter.send(java.lang.String, patterns.gof.behavioral.mediator.Pilot):::EXIT
+this.pilots == orig(this.pilots)
+this.pilots[] == orig(this.pilots[])
+this.pilots.getClass().getName() == orig(this.pilots.getClass().getName())
+arg0.toString == orig(arg0.toString)
+arg1.mediator == orig(arg1.mediator)
+arg1.mediator.getClass().getName() == orig(arg1.mediator.getClass().getName())
+this.pilots[] contains no nulls and has only one value, of length 2
+this.pilots[].getClass().getName() == [patterns.gof.behavioral.mediator.PilotAnderson, patterns.gof.behavioral.mediator.PilotSmith]
+arg0.toString one of { "Anderson here. do you read me? over!", "Smith here. read you well Anderson. over and out!" }
+arg1.mediator has only one value
+arg1.mediator.getClass().getName() == patterns.gof.behavioral.mediator.PilotContactCenter.class
+size(this.pilots[]) == 2
+orig(arg1.getClass().getName()) in this.pilots[].getClass().getName()
+===========================================================================
+patterns.gof.behavioral.mediator.PilotSmith:::OBJECT
+this has only one value
+this.mediator has only one value
+this.mediator.getClass().getName() == patterns.gof.behavioral.mediator.PilotContactCenter.class
+===========================================================================
+patterns.gof.behavioral.mediator.PilotSmith.PilotSmith(patterns.gof.behavioral.mediator.Mediator):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == patterns.gof.behavioral.mediator.PilotContactCenter.class
+===========================================================================
+patterns.gof.behavioral.mediator.PilotSmith.PilotSmith(patterns.gof.behavioral.mediator.Mediator):::EXIT
+this.mediator == orig(arg0)
+this.mediator.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.behavioral.mediator.PilotSmith.notify(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Anderson here. do you read me? over!"
+===========================================================================
+patterns.gof.behavioral.mediator.PilotSmith.notify(java.lang.String):::EXIT
+this.mediator == orig(this.mediator)
+this.mediator.getClass().getName() == orig(this.mediator.getClass().getName())
+arg0.toString == orig(arg0.toString)
+arg0.toString == "Anderson here. do you read me? over!"
+===========================================================================
+patterns.gof.behavioral.memento.Caretaker:::OBJECT
+this has only one value
+this.memento.state has only one value
+this.memento.state.toString == "on"
+===========================================================================
+patterns.gof.behavioral.memento.Caretaker.Caretaker():::EXIT
+this.memento == null
+===========================================================================
+patterns.gof.behavioral.memento.Caretaker.getMemento():::ENTER
+this.memento has only one value
+===========================================================================
+patterns.gof.behavioral.memento.Caretaker.getMemento():::EXIT
+this.memento == return
+this.memento.state == return.state
+this.memento.state.toString == orig(this.memento.state.toString)
+return == orig(this.memento)
+return.state == orig(this.memento.state)
+return has only one value
+return.state has only one value
+return.state.toString == "on"
+===========================================================================
+patterns.gof.behavioral.memento.Caretaker.setMemento(patterns.gof.behavioral.memento.Memento):::ENTER
+this.memento == null
+arg0 has only one value
+arg0.state has only one value
+arg0.state.toString == "on"
+===========================================================================
+patterns.gof.behavioral.memento.Caretaker.setMemento(patterns.gof.behavioral.memento.Memento):::EXIT
+this.memento == orig(arg0)
+this.memento.state == arg0.state
+arg0.state == orig(arg0.state)
+arg0.state.toString == orig(arg0.state.toString)
+this.memento has only one value
+arg0.state has only one value
+arg0.state.toString == "on"
+===========================================================================
+patterns.gof.behavioral.memento.Memento:::OBJECT
+this has only one value
+this.state has only one value
+this.state.toString == "on"
+===========================================================================
+patterns.gof.behavioral.memento.Memento.Memento(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "on"
+===========================================================================
+patterns.gof.behavioral.memento.Memento.Memento(java.lang.String):::EXIT
+this.state == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg0.toString == "on"
+===========================================================================
+patterns.gof.behavioral.memento.Memento.getState():::ENTER
+===========================================================================
+patterns.gof.behavioral.memento.Memento.getState():::EXIT
+this.state == return
+this.state.toString == orig(this.state.toString)
+return == orig(this.state)
+return has only one value
+return.toString == "on"
+===========================================================================
+patterns.gof.behavioral.memento.MementoClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: pilot Smith gets message > Anderson here. do you read me? over!\nData: pilot Anderson gets message > Smith here. read you well Anderson. over and out!", "\nData: state is on\nData: state is off\nData: state is on" }
+===========================================================================
+patterns.gof.behavioral.memento.MementoClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.memento.MementoClient.MementoClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.behavioral.memento.MementoClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: pilot Smith gets message > Anderson here. do you read me? over!\nData: pilot Anderson gets message > Smith here. read you well Anderson. over and out!"
+===========================================================================
+patterns.gof.behavioral.memento.MementoClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: state is on\nData: state is off\nData: state is on"
+===========================================================================
+patterns.gof.behavioral.memento.Originator:::OBJECT
+this has only one value
+this.state.toString one of { "off", "on" }
+===========================================================================
+patterns.gof.behavioral.memento.Originator.Originator():::EXIT
+this.state == null
+===========================================================================
+patterns.gof.behavioral.memento.Originator.getState():::ENTER
+===========================================================================
+patterns.gof.behavioral.memento.Originator.getState():::EXIT
+this.state == return
+this.state.toString == orig(this.state.toString)
+return == orig(this.state)
+return.toString one of { "off", "on" }
+===========================================================================
+patterns.gof.behavioral.memento.Originator.restoreState(patterns.gof.behavioral.memento.Memento):::ENTER
+this.state has only one value
+this.state.toString == "off"
+arg0 has only one value
+arg0.state has only one value
+arg0.state.toString == "on"
+===========================================================================
+patterns.gof.behavioral.memento.Originator.restoreState(patterns.gof.behavioral.memento.Memento):::EXIT
+this.state == arg0.state
+this.state == orig(arg0.state)
+arg0.state.toString == orig(arg0.state.toString)
+this.state has only one value
+this.state.toString == "on"
+arg0.state.toString == "on"
+===========================================================================
+patterns.gof.behavioral.memento.Originator.saveState():::ENTER
+this.state has only one value
+this.state.toString == "on"
+===========================================================================
+patterns.gof.behavioral.memento.Originator.saveState():::EXIT
+this.state == return.state
+this.state == orig(this.state)
+this.state.toString == orig(this.state.toString)
+this.state has only one value
+this.state.toString == "on"
+return has only one value
+return.state.toString == "on"
+===========================================================================
+patterns.gof.behavioral.memento.Originator.setState(java.lang.String):::ENTER
+this.state.toString == "on"
+arg0.toString one of { "off", "on" }
+===========================================================================
+patterns.gof.behavioral.memento.Originator.setState(java.lang.String):::EXIT
+this.state == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "off", "on" }
+===========================================================================
+patterns.gof.behavioral.observer.CurrentConditionsDisplay:::OBJECT
+this has only one value
+this.weatherData has only one value
+this.weatherData != null
+this.weatherData.observers has only one value
+this.weatherData.observers != null
+this.weatherData.observers[] contains no nulls and has only one value, of length 1
+this.weatherData.observers[] elements has only one value
+this.weatherData.observers[] elements != null
+this.weatherData.observers[].getClass().getName() == [patterns.gof.behavioral.observer.CurrentConditionsDisplay]
+this.weatherData.observers[].getClass().getName() elements == patterns.gof.behavioral.observer.CurrentConditionsDisplay.class
+this.weatherData.observers.getClass().getName() == java.util.ArrayList.class
+size(this.weatherData.observers[]) == 1
+this.temperature <= this.weatherData.temperature
+this.humidity <= this.weatherData.humidity
+===========================================================================
+patterns.gof.behavioral.observer.CurrentConditionsDisplay.CurrentConditionsDisplay(patterns.gof.behavioral.observer.WeatherData):::ENTER
+arg0 has only one value
+arg0.observers has only one value
+arg0.observers[] == []
+arg0.observers[].getClass().getName() == []
+arg0.observers.getClass().getName() == java.util.ArrayList.class
+arg0.temperature == 0.0
+arg0.humidity == 0.0
+arg0.pressure == 0.0
+===========================================================================
+patterns.gof.behavioral.observer.CurrentConditionsDisplay.CurrentConditionsDisplay(patterns.gof.behavioral.observer.WeatherData):::EXIT
+this.temperature == this.weatherData.temperature
+this.humidity == this.weatherData.humidity
+this.weatherData == orig(arg0)
+this.weatherData.observers == arg0.observers
+this.weatherData.observers.getClass().getName() == arg0.observers.getClass().getName()
+arg0.observers == orig(arg0.observers)
+arg0.observers.getClass().getName() == orig(arg0.observers.getClass().getName())
+arg0.temperature == orig(arg0.temperature)
+arg0.humidity == orig(arg0.humidity)
+arg0.pressure == orig(arg0.pressure)
+size(arg0.observers[])-1 == orig(size(arg0.observers[]))
+this.temperature == 0.0
+this.humidity == 0.0
+this.weatherData.pressure == 0.0
+arg0.observers has only one value
+arg0.observers[] contains no nulls and has only one value, of length 1
+arg0.observers[] elements has only one value
+arg0.observers[].getClass().getName() == [patterns.gof.behavioral.observer.CurrentConditionsDisplay]
+arg0.observers[].getClass().getName() elements == patterns.gof.behavioral.observer.CurrentConditionsDisplay.class
+arg0.observers.getClass().getName() == java.util.ArrayList.class
+arg0.temperature == 0.0
+arg0.humidity == 0.0
+arg0.pressure == 0.0
+size(arg0.observers[]) == 1
+===========================================================================
+patterns.gof.behavioral.observer.CurrentConditionsDisplay.display():::ENTER
+this.temperature == this.weatherData.temperature
+this.humidity == this.weatherData.humidity
+this.temperature one of { 29.0, 39.0, 42.0 }
+this.humidity one of { 65.0, 70.0, 72.0 }
+this.weatherData.pressure one of { 29.4, 30.4, 31.4 }
+===========================================================================
+patterns.gof.behavioral.observer.CurrentConditionsDisplay.display():::EXIT
+this.temperature == this.weatherData.temperature
+this.temperature == orig(this.temperature)
+this.temperature == orig(this.weatherData.temperature)
+this.humidity == this.weatherData.humidity
+this.humidity == orig(this.humidity)
+this.humidity == orig(this.weatherData.humidity)
+this.weatherData == orig(this.weatherData)
+this.weatherData.observers == orig(this.weatherData.observers)
+this.weatherData.observers[] == orig(this.weatherData.observers[])
+this.weatherData.observers.getClass().getName() == orig(this.weatherData.observers.getClass().getName())
+this.weatherData.pressure == orig(this.weatherData.pressure)
+this.temperature one of { 29.0, 39.0, 42.0 }
+this.humidity one of { 65.0, 70.0, 72.0 }
+this.weatherData.pressure one of { 29.4, 30.4, 31.4 }
+===========================================================================
+patterns.gof.behavioral.observer.CurrentConditionsDisplay.update(float, float, float):::ENTER
+this.weatherData.temperature == arg0
+this.weatherData.humidity == arg1
+this.weatherData.pressure == arg2
+this.temperature one of { 0.0, 29.0, 39.0 }
+this.humidity one of { 0.0, 65.0, 70.0 }
+this.weatherData.temperature one of { 29.0, 39.0, 42.0 }
+this.weatherData.humidity one of { 65.0, 70.0, 72.0 }
+this.weatherData.pressure one of { 29.4, 30.4, 31.4 }
+===========================================================================
+patterns.gof.behavioral.observer.CurrentConditionsDisplay.update(float, float, float):::EXIT
+this.temperature == this.weatherData.temperature
+this.temperature == orig(this.weatherData.temperature)
+this.temperature == orig(arg0)
+this.humidity == this.weatherData.humidity
+this.humidity == orig(this.weatherData.humidity)
+this.humidity == orig(arg1)
+this.weatherData == orig(this.weatherData)
+this.weatherData.observers == orig(this.weatherData.observers)
+this.weatherData.observers[] == orig(this.weatherData.observers[])
+this.weatherData.observers.getClass().getName() == orig(this.weatherData.observers.getClass().getName())
+this.weatherData.pressure == orig(arg2)
+this.temperature one of { 29.0, 39.0, 42.0 }
+this.humidity one of { 65.0, 70.0, 72.0 }
+orig(arg2) one of { 29.4, 30.4, 31.4 }
+===========================================================================
+patterns.gof.behavioral.observer.ObserverClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: data changed: 29.0 degrees Celsius and 65.0 humidity\nData: data changed: 39.0 degrees Celsius and 70.0 humidity\nData: data changed: 42.0 degrees Celsius and 72.0 humidity\nData: data changed: 42.0 degrees Celsius and 72.0 humidity", "\nData: state is on\nData: state is off\nData: state is on" }
+===========================================================================
+patterns.gof.behavioral.observer.ObserverClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.observer.ObserverClient.ObserverClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.behavioral.observer.ObserverClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: state is on\nData: state is off\nData: state is on"
+===========================================================================
+patterns.gof.behavioral.observer.ObserverClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: data changed: 29.0 degrees Celsius and 65.0 humidity\nData: data changed: 39.0 degrees Celsius and 70.0 humidity\nData: data changed: 42.0 degrees Celsius and 72.0 humidity\nData: data changed: 42.0 degrees Celsius and 72.0 humidity"
+===========================================================================
+patterns.gof.behavioral.observer.WeatherData:::OBJECT
+this has only one value
+this.observers has only one value
+this.observers != null
+this.observers[] elements has only one value
+this.observers[] elements != null
+this.observers[].getClass().getName() elements == patterns.gof.behavioral.observer.CurrentConditionsDisplay.class
+this.observers[].getClass().getName() one of { [], [patterns.gof.behavioral.observer.CurrentConditionsDisplay] }
+this.observers.getClass().getName() == java.util.ArrayList.class
+this.temperature >= 0.0
+this.humidity >= 0.0
+this.pressure >= 0.0
+size(this.observers[]) one of { 0, 1 }
+===========================================================================
+patterns.gof.behavioral.observer.WeatherData.WeatherData():::EXIT
+this.observers[] == []
+this.observers[].getClass().getName() == []
+this.temperature == 0.0
+this.humidity == 0.0
+this.pressure == 0.0
+===========================================================================
+patterns.gof.behavioral.observer.WeatherData.notifyObservers():::ENTER
+this.observers[] contains no nulls and has only one value, of length 1
+this.observers[].getClass().getName() == [patterns.gof.behavioral.observer.CurrentConditionsDisplay]
+this.temperature one of { 29.0, 39.0, 42.0 }
+this.humidity one of { 65.0, 70.0, 72.0 }
+this.pressure one of { 29.4, 30.4, 31.4 }
+size(this.observers[]) == 1
+===========================================================================
+patterns.gof.behavioral.observer.WeatherData.notifyObservers():::EXIT
+this.observers == orig(this.observers)
+this.observers[] == orig(this.observers[])
+this.observers.getClass().getName() == orig(this.observers.getClass().getName())
+this.temperature == orig(this.temperature)
+this.humidity == orig(this.humidity)
+this.pressure == orig(this.pressure)
+this.observers[] contains no nulls and has only one value, of length 1
+this.observers[].getClass().getName() == [patterns.gof.behavioral.observer.CurrentConditionsDisplay]
+this.temperature one of { 29.0, 39.0, 42.0 }
+this.humidity one of { 65.0, 70.0, 72.0 }
+this.pressure one of { 29.4, 30.4, 31.4 }
+size(this.observers[]) == 1
+===========================================================================
+patterns.gof.behavioral.observer.WeatherData.registerObserver(patterns.gof.behavioral.observer.Observer):::ENTER
+this.observers[] == []
+this.observers[].getClass().getName() == []
+this.temperature == 0.0
+this.humidity == 0.0
+this.pressure == 0.0
+arg0 has only one value
+arg0.getClass().getName() == patterns.gof.behavioral.observer.CurrentConditionsDisplay.class
+===========================================================================
+patterns.gof.behavioral.observer.WeatherData.registerObserver(patterns.gof.behavioral.observer.Observer):::EXIT
+this.observers == orig(this.observers)
+this.observers.getClass().getName() == orig(this.observers.getClass().getName())
+this.temperature == orig(this.temperature)
+this.humidity == orig(this.humidity)
+this.pressure == orig(this.pressure)
+size(this.observers[])-1 == orig(size(this.observers[]))
+this.observers[] contains no nulls and has only one value, of length 1
+this.observers[].getClass().getName() == [patterns.gof.behavioral.observer.CurrentConditionsDisplay]
+this.temperature == 0.0
+this.humidity == 0.0
+this.pressure == 0.0
+size(this.observers[]) == 1
+orig(arg0.getClass().getName()) in this.observers[].getClass().getName()
+===========================================================================
+patterns.gof.behavioral.observer.WeatherData.setMeasurements(float, float, float):::ENTER
+this.observers[] contains no nulls and has only one value, of length 1
+this.observers[].getClass().getName() == [patterns.gof.behavioral.observer.CurrentConditionsDisplay]
+this.temperature one of { 0.0, 29.0, 39.0 }
+this.humidity one of { 0.0, 65.0, 70.0 }
+this.pressure one of { 0.0, 29.4, 30.4 }
+arg0 one of { 29.0, 39.0, 42.0 }
+arg1 one of { 65.0, 70.0, 72.0 }
+arg2 one of { 29.4, 30.4, 31.4 }
+size(this.observers[]) == 1
+===========================================================================
+patterns.gof.behavioral.observer.WeatherData.setMeasurements(float, float, float):::EXIT
+this.observers == orig(this.observers)
+this.observers[] == orig(this.observers[])
+this.observers.getClass().getName() == orig(this.observers.getClass().getName())
+this.temperature == orig(arg0)
+this.humidity == orig(arg1)
+this.pressure == orig(arg2)
+this.observers[] contains no nulls and has only one value, of length 1
+this.observers[].getClass().getName() == [patterns.gof.behavioral.observer.CurrentConditionsDisplay]
+this.temperature one of { 29.0, 39.0, 42.0 }
+this.humidity one of { 65.0, 70.0, 72.0 }
+this.pressure one of { 29.4, 30.4, 31.4 }
+size(this.observers[]) == 1
+===========================================================================
+patterns.gof.behavioral.state.StateClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: NAME0\nData: name1\nData: NAME2\nData: NAME3\nData: name4\nData: NAME5\nData: NAME6\nData: NAME7\nData: name8\nData: NAME9", "\nData: data changed: 29.0 degrees Celsius and 65.0 humidity\nData: data changed: 39.0 degrees Celsius and 70.0 humidity\nData: data changed: 42.0 degrees Celsius and 72.0 humidity\nData: data changed: 42.0 degrees Celsius and 72.0 humidity" }
+===========================================================================
+patterns.gof.behavioral.state.StateClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.state.StateClient.StateClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.behavioral.state.StateClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: data changed: 29.0 degrees Celsius and 65.0 humidity\nData: data changed: 39.0 degrees Celsius and 70.0 humidity\nData: data changed: 42.0 degrees Celsius and 72.0 humidity\nData: data changed: 42.0 degrees Celsius and 72.0 humidity"
+===========================================================================
+patterns.gof.behavioral.state.StateClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: NAME0\nData: name1\nData: NAME2\nData: NAME3\nData: name4\nData: NAME5\nData: NAME6\nData: NAME7\nData: name8\nData: NAME9"
+===========================================================================
+patterns.gof.behavioral.state.StateContext:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.state.StateContext.StateContext():::EXIT
+this.myState has only one value
+this.myState.getClass().getName() == patterns.gof.behavioral.state.StateOne.class
+===========================================================================
+patterns.gof.behavioral.state.StateContext.setState(patterns.gof.behavioral.state.Statelike):::ENTER
+===========================================================================
+patterns.gof.behavioral.state.StateContext.setState(patterns.gof.behavioral.state.Statelike):::EXIT
+this.myState == orig(arg0)
+this.myState.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.behavioral.state.StateContext.writeName(java.lang.String):::ENTER
+===========================================================================
+patterns.gof.behavioral.state.StateContext.writeName(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+===========================================================================
+patterns.gof.behavioral.state.StateOne:::CLASS
+===========================================================================
+patterns.gof.behavioral.state.StateOne:::OBJECT
+this.count >= 0
+patterns.gof.behavioral.state.StateOne.globalCount >= this.count
+===========================================================================
+patterns.gof.behavioral.state.StateOne.StateOne():::EXIT
+this.count == 0
+===========================================================================
+patterns.gof.behavioral.state.StateOne.writeName(patterns.gof.behavioral.state.StateContext, java.lang.String):::ENTER
+this.count one of { 0, 1, 2 }
+arg0 has only one value
+arg0.myState.getClass().getName() == patterns.gof.behavioral.state.StateOne.class
+===========================================================================
+patterns.gof.behavioral.state.StateOne.writeName(patterns.gof.behavioral.state.StateContext, java.lang.String):::EXIT
+arg1.toString == orig(arg1.toString)
+patterns.gof.behavioral.state.StateOne.globalCount one of { 1, 2, 3 }
+this.count one of { 1, 2, 3 }
+patterns.gof.behavioral.state.StateOne.globalCount % this.count == 0
+patterns.gof.behavioral.state.StateOne.globalCount >= orig(patterns.gof.behavioral.state.StateOne.globalCount)
+patterns.gof.behavioral.state.StateOne.globalCount > orig(this.count)
+this.count > orig(this.count)
+===========================================================================
+patterns.gof.behavioral.state.StateTwo:::OBJECT
+===========================================================================
+patterns.gof.behavioral.state.StateTwo.StateTwo():::EXIT
+===========================================================================
+patterns.gof.behavioral.state.StateTwo.writeName(patterns.gof.behavioral.state.StateContext, java.lang.String):::ENTER
+arg0 has only one value
+arg0.myState.getClass().getName() == patterns.gof.behavioral.state.StateTwo.class
+arg1.toString one of { "Name1", "Name4", "Name8" }
+===========================================================================
+patterns.gof.behavioral.state.StateTwo.writeName(patterns.gof.behavioral.state.StateContext, java.lang.String):::EXIT
+arg1.toString == orig(arg1.toString)
+arg0.myState.getClass().getName() == patterns.gof.behavioral.state.StateOne.class
+arg1.toString one of { "Name1", "Name4", "Name8" }
+===========================================================================
+patterns.gof.behavioral.strategy.AddStrategy:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.strategy.AddStrategy.AddStrategy():::EXIT
+===========================================================================
+patterns.gof.behavioral.strategy.AddStrategy.execute(int, int):::ENTER
+arg0 == 3
+arg1 == 4
+===========================================================================
+patterns.gof.behavioral.strategy.AddStrategy.execute(int, int):::EXIT
+return == 7
+===========================================================================
+patterns.gof.behavioral.strategy.Context:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.strategy.Context.Context(patterns.gof.behavioral.strategy.Strategy):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == patterns.gof.behavioral.strategy.AddStrategy.class
+===========================================================================
+patterns.gof.behavioral.strategy.Context.Context(patterns.gof.behavioral.strategy.Strategy):::EXIT
+this.strategy == orig(arg0)
+this.strategy.getClass().getName() == orig(arg0.getClass().getName())
+this.strategy has only one value
+this.strategy.getClass().getName() == patterns.gof.behavioral.strategy.AddStrategy.class
+===========================================================================
+patterns.gof.behavioral.strategy.Context.setStrategy(patterns.gof.behavioral.strategy.Strategy):::ENTER
+this.strategy has only one value
+this.strategy.getClass().getName() == patterns.gof.behavioral.strategy.AddStrategy.class
+arg0 has only one value
+arg0.getClass().getName() == patterns.gof.behavioral.strategy.SubtractStrategy.class
+===========================================================================
+patterns.gof.behavioral.strategy.Context.setStrategy(patterns.gof.behavioral.strategy.Strategy):::EXIT
+this.strategy == orig(arg0)
+this.strategy.getClass().getName() == orig(arg0.getClass().getName())
+this.strategy has only one value
+this.strategy.getClass().getName() == patterns.gof.behavioral.strategy.SubtractStrategy.class
+===========================================================================
+patterns.gof.behavioral.strategy.Context.useStrategy(int, int):::ENTER
+arg0 == 3
+arg1 == 4
+===========================================================================
+patterns.gof.behavioral.strategy.Context.useStrategy(int, int):::EXIT
+this.strategy == orig(this.strategy)
+this.strategy.getClass().getName() == orig(this.strategy.getClass().getName())
+return one of { -1, 7 }
+===========================================================================
+patterns.gof.behavioral.strategy.StrategyClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: 7\nData: -1", "\nData: NAME0\nData: name1\nData: NAME2\nData: NAME3\nData: name4\nData: NAME5\nData: NAME6\nData: NAME7\nData: name8\nData: NAME9" }
+===========================================================================
+patterns.gof.behavioral.strategy.StrategyClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.strategy.StrategyClient.StrategyClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.behavioral.strategy.StrategyClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: NAME0\nData: name1\nData: NAME2\nData: NAME3\nData: name4\nData: NAME5\nData: NAME6\nData: NAME7\nData: name8\nData: NAME9"
+===========================================================================
+patterns.gof.behavioral.strategy.StrategyClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 7\nData: -1"
+===========================================================================
+patterns.gof.behavioral.strategy.SubtractStrategy:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.strategy.SubtractStrategy.SubtractStrategy():::EXIT
+===========================================================================
+patterns.gof.behavioral.strategy.SubtractStrategy.execute(int, int):::ENTER
+arg0 == 3
+arg1 == 4
+===========================================================================
+patterns.gof.behavioral.strategy.SubtractStrategy.execute(int, int):::EXIT
+return == -1
+===========================================================================
+patterns.gof.behavioral.templateMethod.Problem:::OBJECT
+this has only one value
+this.getClass().getName() == patterns.gof.behavioral.templateMethod.ProblemTwo.class
+this.initialData has only one value
+this.initialData.getClass().getName() == patterns.gof.behavioral.templateMethod.TemplateMethodClient$1.class
+===========================================================================
+patterns.gof.behavioral.templateMethod.Problem.Problem(patterns.gof.behavioral.templateMethod.InitialData):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == patterns.gof.behavioral.templateMethod.TemplateMethodClient$1.class
+===========================================================================
+patterns.gof.behavioral.templateMethod.Problem.Problem(patterns.gof.behavioral.templateMethod.InitialData):::EXIT
+this.initialData == orig(arg0)
+this.initialData.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.behavioral.templateMethod.Problem.solveProblem():::ENTER
+===========================================================================
+patterns.gof.behavioral.templateMethod.Problem.solveProblem():::EXIT
+this.initialData == orig(this.initialData)
+this.initialData.getClass().getName() == orig(this.initialData.getClass().getName())
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo$1:::OBJECT
+this has only one value
+patterns.gof.behavioral.templateMethod.ProblemTwo.this has only one value
+patterns.gof.behavioral.templateMethod.ProblemTwo.this.initialData has only one value
+patterns.gof.behavioral.templateMethod.ProblemTwo.this.initialData.getClass().getName() == patterns.gof.behavioral.templateMethod.TemplateMethodClient$1.class
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo$1.(patterns.gof.behavioral.templateMethod.ProblemTwo):::ENTER
+patterns.gof.behavioral.templateMethod.ProblemTwo.this has only one value
+patterns.gof.behavioral.templateMethod.ProblemTwo.this.initialData has only one value
+patterns.gof.behavioral.templateMethod.ProblemTwo.this.initialData.getClass().getName() == patterns.gof.behavioral.templateMethod.TemplateMethodClient$1.class
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo$1.(patterns.gof.behavioral.templateMethod.ProblemTwo):::EXIT
+patterns.gof.behavioral.templateMethod.ProblemTwo.this == orig(patterns.gof.behavioral.templateMethod.ProblemTwo.this)
+patterns.gof.behavioral.templateMethod.ProblemTwo.this.initialData == orig(patterns.gof.behavioral.templateMethod.ProblemTwo.this.initialData)
+patterns.gof.behavioral.templateMethod.ProblemTwo.this.initialData.getClass().getName() == orig(patterns.gof.behavioral.templateMethod.ProblemTwo.this.initialData.getClass().getName())
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo:::OBJECT
+this has only one value
+this.initialData has only one value
+this.initialData.getClass().getName() == patterns.gof.behavioral.templateMethod.TemplateMethodClient$1.class
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo.ProblemTwo(patterns.gof.behavioral.templateMethod.InitialData):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == patterns.gof.behavioral.templateMethod.TemplateMethodClient$1.class
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo.ProblemTwo(patterns.gof.behavioral.templateMethod.InitialData):::EXIT
+this.initialData == orig(arg0)
+this.initialData.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo.checkSolvability():::ENTER
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo.checkSolvability():::EXIT
+this.initialData == orig(this.initialData)
+this.initialData.getClass().getName() == orig(this.initialData.getClass().getName())
+return == true
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo.checkSolvability():::EXIT;condition="return == true"
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo.getAnswer():::ENTER
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo.getAnswer():::EXIT
+this.initialData == orig(this.initialData)
+this.initialData.getClass().getName() == orig(this.initialData.getClass().getName())
+return has only one value
+return.getClass().getName() == patterns.gof.behavioral.templateMethod.ProblemTwo$1.class
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo.solve():::ENTER
+===========================================================================
+patterns.gof.behavioral.templateMethod.ProblemTwo.solve():::EXIT
+this.initialData == orig(this.initialData)
+this.initialData.getClass().getName() == orig(this.initialData.getClass().getName())
+===========================================================================
+patterns.gof.behavioral.templateMethod.TemplateMethodClient$1:::OBJECT
+this has only one value
+patterns.gof.behavioral.templateMethod.TemplateMethodClient.this has only one value
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == ""
+===========================================================================
+patterns.gof.behavioral.templateMethod.TemplateMethodClient$1.(patterns.gof.behavioral.templateMethod.TemplateMethodClient):::ENTER
+patterns.gof.behavioral.templateMethod.TemplateMethodClient.this has only one value
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == ""
+===========================================================================
+patterns.gof.behavioral.templateMethod.TemplateMethodClient$1.(patterns.gof.behavioral.templateMethod.TemplateMethodClient):::EXIT
+patterns.gof.behavioral.templateMethod.TemplateMethodClient.this == orig(patterns.gof.behavioral.templateMethod.TemplateMethodClient.this)
+patterns.gof.helpers.Client.output == orig(patterns.gof.helpers.Client.output)
+patterns.gof.helpers.Client.output.toString == orig(patterns.gof.helpers.Client.output.toString)
+===========================================================================
+patterns.gof.behavioral.templateMethod.TemplateMethodClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: 7\nData: -1", "\nData: Problem is solvable!(Two)\nData: Problem solved!(Two)\nData: answer [patterns.gof.behavioral.templateMethod.ProblemTwo$1]" }
+===========================================================================
+patterns.gof.behavioral.templateMethod.TemplateMethodClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.templateMethod.TemplateMethodClient.TemplateMethodClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.behavioral.templateMethod.TemplateMethodClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 7\nData: -1"
+===========================================================================
+patterns.gof.behavioral.templateMethod.TemplateMethodClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: Problem is solvable!(Two)\nData: Problem solved!(Two)\nData: answer [patterns.gof.behavioral.templateMethod.ProblemTwo$1]"
+===========================================================================
+patterns.gof.behavioral.visitor.ElementOne:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.visitor.ElementOne.ElementOne():::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.ElementOne.accept(patterns.gof.behavioral.visitor.Visitor):::ENTER
+===========================================================================
+patterns.gof.behavioral.visitor.ElementOne.accept(patterns.gof.behavioral.visitor.Visitor):::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.ElementOne.one():::ENTER
+===========================================================================
+patterns.gof.behavioral.visitor.ElementOne.one():::EXIT
+return has only one value
+return.toString == "element one"
+===========================================================================
+patterns.gof.behavioral.visitor.ElementThree:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.visitor.ElementThree.ElementThree():::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.ElementThree.accept(patterns.gof.behavioral.visitor.Visitor):::ENTER
+===========================================================================
+patterns.gof.behavioral.visitor.ElementThree.accept(patterns.gof.behavioral.visitor.Visitor):::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.ElementThree.three():::ENTER
+===========================================================================
+patterns.gof.behavioral.visitor.ElementThree.three():::EXIT
+return has only one value
+return.toString == "element three"
+===========================================================================
+patterns.gof.behavioral.visitor.ElementTwo:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.visitor.ElementTwo.ElementTwo():::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.ElementTwo.accept(patterns.gof.behavioral.visitor.Visitor):::ENTER
+===========================================================================
+patterns.gof.behavioral.visitor.ElementTwo.accept(patterns.gof.behavioral.visitor.Visitor):::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.ElementTwo.two():::ENTER
+===========================================================================
+patterns.gof.behavioral.visitor.ElementTwo.two():::EXIT
+return has only one value
+return.toString == "element two"
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: Problem is solvable!(Two)\nData: Problem solved!(Two)\nData: answer [patterns.gof.behavioral.templateMethod.ProblemTwo$1]", "\nData: visitor one - element one\nData: visitor one - element two\nData: visitor one - element three\nData: visitor two - element one\nData: visitor two - element two\nData: visitor two - element three" }
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorClient.VisitorClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: Problem is solvable!(Two)\nData: Problem solved!(Two)\nData: answer [patterns.gof.behavioral.templateMethod.ProblemTwo$1]"
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: visitor one - element one\nData: visitor one - element two\nData: visitor one - element three\nData: visitor two - element one\nData: visitor two - element two\nData: visitor two - element three"
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorOne:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorOne.VisitorOne():::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorOne.visit(patterns.gof.behavioral.visitor.ElementOne):::ENTER
+arg0 has only one value
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorOne.visit(patterns.gof.behavioral.visitor.ElementOne):::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorOne.visit(patterns.gof.behavioral.visitor.ElementThree):::ENTER
+arg0 has only one value
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorOne.visit(patterns.gof.behavioral.visitor.ElementThree):::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorOne.visit(patterns.gof.behavioral.visitor.ElementTwo):::ENTER
+arg0 has only one value
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorOne.visit(patterns.gof.behavioral.visitor.ElementTwo):::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorTwo:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorTwo.VisitorTwo():::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorTwo.visit(patterns.gof.behavioral.visitor.ElementOne):::ENTER
+arg0 has only one value
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorTwo.visit(patterns.gof.behavioral.visitor.ElementOne):::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorTwo.visit(patterns.gof.behavioral.visitor.ElementThree):::ENTER
+arg0 has only one value
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorTwo.visit(patterns.gof.behavioral.visitor.ElementThree):::EXIT
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorTwo.visit(patterns.gof.behavioral.visitor.ElementTwo):::ENTER
+arg0 has only one value
+===========================================================================
+patterns.gof.behavioral.visitor.VisitorTwo.visit(patterns.gof.behavioral.visitor.ElementTwo):::EXIT
+===========================================================================
+patterns.gof.creational.abstractFactory.AbstractFactory:::OBJECT
+this has only one value
+this.getClass().getName() == patterns.gof.creational.abstractFactory.ConcreteFactory1.class
+===========================================================================
+patterns.gof.creational.abstractFactory.AbstractFactory.AbstractFactory():::EXIT
+===========================================================================
+patterns.gof.creational.abstractFactory.AbstractFactoryClient:::CLASS
+patterns.gof.helpers.Client.output.toString == "\nData: initialized ProductA1 with arg:ArgForProductA1\nData: called operationA2 from ProductA1"
+===========================================================================
+patterns.gof.creational.abstractFactory.AbstractFactoryClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.creational.abstractFactory.AbstractFactoryClient.AbstractFactoryClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.creational.abstractFactory.AbstractFactoryClient.main():::ENTER
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.creational.abstractFactory.AbstractFactoryClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+===========================================================================
+patterns.gof.creational.abstractFactory.AbstractProductA:::OBJECT
+this has only one value
+this.getClass().getName() == patterns.gof.creational.abstractFactory.ProductA1.class
+===========================================================================
+patterns.gof.creational.abstractFactory.AbstractProductA.AbstractProductA():::EXIT
+===========================================================================
+patterns.gof.creational.abstractFactory.ConcreteFactory1:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.creational.abstractFactory.ConcreteFactory1.ConcreteFactory1():::EXIT
+===========================================================================
+patterns.gof.creational.abstractFactory.ConcreteFactory1.createProductA():::ENTER
+===========================================================================
+patterns.gof.creational.abstractFactory.ConcreteFactory1.createProductA():::EXIT
+return has only one value
+return.getClass().getName() == patterns.gof.creational.abstractFactory.ProductA1.class
+===========================================================================
+patterns.gof.creational.abstractFactory.FactoryMaker.getFactory(int):::ENTER
+arg0 == 1
+===========================================================================
+patterns.gof.creational.abstractFactory.FactoryMaker.getFactory(int):::EXIT6
+===========================================================================
+patterns.gof.creational.abstractFactory.FactoryMaker.getFactory(int):::EXIT
+return has only one value
+return.getClass().getName() == patterns.gof.creational.abstractFactory.ConcreteFactory1.class
+===========================================================================
+patterns.gof.creational.abstractFactory.ProductA1:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.creational.abstractFactory.ProductA1.ProductA1(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "ArgForProductA1"
+===========================================================================
+patterns.gof.creational.abstractFactory.ProductA1.ProductA1(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "ArgForProductA1"
+===========================================================================
+patterns.gof.creational.abstractFactory.ProductA1.operationA2():::ENTER
+===========================================================================
+patterns.gof.creational.abstractFactory.ProductA1.operationA2():::EXIT
+===========================================================================
+patterns.gof.creational.builder.ApplePieBuilder:::OBJECT
+this has only one value
+this.pie.dough.toString == "150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour"
+this.pie.filling.toString == "apple slices"
+this.baked == false
+===========================================================================
+patterns.gof.creational.builder.ApplePieBuilder.ApplePieBuilder():::EXIT
+this.pie == null
+===========================================================================
+patterns.gof.creational.builder.ApplePieBuilder.buildDough():::ENTER
+this.pie has only one value
+this.pie.dough == null
+this.pie.filling == null
+===========================================================================
+patterns.gof.creational.builder.ApplePieBuilder.buildDough():::EXIT
+this.pie == orig(this.pie)
+this.pie.filling == orig(this.pie.filling)
+this.baked == orig(this.baked)
+this.pie has only one value
+this.pie.dough has only one value
+this.pie.filling == null
+===========================================================================
+patterns.gof.creational.builder.ApplePieBuilder.buildFilling():::ENTER
+this.pie has only one value
+this.pie.dough has only one value
+this.pie.filling == null
+===========================================================================
+patterns.gof.creational.builder.ApplePieBuilder.buildFilling():::EXIT
+this.pie == orig(this.pie)
+this.pie.dough == orig(this.pie.dough)
+this.pie.dough.toString == orig(this.pie.dough.toString)
+this.baked == orig(this.baked)
+this.pie has only one value
+this.pie.dough has only one value
+this.pie.filling has only one value
+===========================================================================
+patterns.gof.creational.builder.BuilderClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: cook John is going to prepare some pies for you today!\nData: *oven sound*\nData: cook John has finished baking your pie\nData: pie dough: 4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder\nData: pie filling: chocolate chips + cocoa powder\nData: *oven sound*\nData: cook John has finished baking your pie\nData: pie dough: 150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour\nData: pie filling: apple slices\nData: cook John is tired. Cook John is going home", "\nData: initialized ProductA1 with arg:ArgForProductA1\nData: called operationA2 from ProductA1" }
+===========================================================================
+patterns.gof.creational.builder.BuilderClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.creational.builder.BuilderClient.BuilderClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.creational.builder.BuilderClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: initialized ProductA1 with arg:ArgForProductA1\nData: called operationA2 from ProductA1"
+===========================================================================
+patterns.gof.creational.builder.BuilderClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: cook John is going to prepare some pies for you today!\nData: *oven sound*\nData: cook John has finished baking your pie\nData: pie dough: 4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder\nData: pie filling: chocolate chips + cocoa powder\nData: *oven sound*\nData: cook John has finished baking your pie\nData: pie dough: 150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour\nData: pie filling: apple slices\nData: cook John is tired. Cook John is going home"
+===========================================================================
+patterns.gof.creational.builder.ChocolatePieBuilder:::OBJECT
+this has only one value
+this.pie.dough.toString == "4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder"
+this.pie.filling.toString == "chocolate chips + cocoa powder"
+this.baked == false
+===========================================================================
+patterns.gof.creational.builder.ChocolatePieBuilder.ChocolatePieBuilder():::EXIT
+this.pie == null
+===========================================================================
+patterns.gof.creational.builder.ChocolatePieBuilder.buildDough():::ENTER
+this.pie has only one value
+this.pie.dough == null
+this.pie.filling == null
+===========================================================================
+patterns.gof.creational.builder.ChocolatePieBuilder.buildDough():::EXIT
+this.pie == orig(this.pie)
+this.pie.filling == orig(this.pie.filling)
+this.baked == orig(this.baked)
+this.pie has only one value
+this.pie.dough has only one value
+this.pie.filling == null
+===========================================================================
+patterns.gof.creational.builder.ChocolatePieBuilder.buildFilling():::ENTER
+this.pie has only one value
+this.pie.dough has only one value
+this.pie.filling == null
+===========================================================================
+patterns.gof.creational.builder.ChocolatePieBuilder.buildFilling():::EXIT
+this.pie == orig(this.pie)
+this.pie.dough == orig(this.pie.dough)
+this.pie.dough.toString == orig(this.pie.dough.toString)
+this.baked == orig(this.baked)
+this.pie has only one value
+this.pie.dough has only one value
+this.pie.filling has only one value
+===========================================================================
+patterns.gof.creational.builder.Cook:::OBJECT
+this has only one value
+this.pb.pie.dough.toString one of { "150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour", "4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder" }
+this.pb.pie.filling.toString one of { "apple slices", "chocolate chips + cocoa powder" }
+===========================================================================
+patterns.gof.creational.builder.Cook.Cook():::EXIT
+this.pb == null
+this.constructed == false
+===========================================================================
+patterns.gof.creational.builder.Cook.bakePie():::ENTER
+this.pb.baked == false
+this.constructed == true
+===========================================================================
+patterns.gof.creational.builder.Cook.bakePie():::EXIT
+this.pb == orig(this.pb)
+this.pb.getClass().getName() == orig(this.pb.getClass().getName())
+this.pb.pie == orig(this.pb.pie)
+this.pb.pie.dough == orig(this.pb.pie.dough)
+this.pb.pie.dough.toString == orig(this.pb.pie.dough.toString)
+this.pb.pie.filling == orig(this.pb.pie.filling)
+this.pb.pie.filling.toString == orig(this.pb.pie.filling.toString)
+this.constructed == orig(this.constructed)
+this.pb.baked == true
+this.constructed == true
+===========================================================================
+patterns.gof.creational.builder.Cook.constructPieWithPieBuilder(patterns.gof.creational.builder.PieBuilder):::ENTER
+this.pb.getClass().getName() == patterns.gof.creational.builder.ChocolatePieBuilder.class
+this.pb.pie has only one value
+this.pb.pie.dough has only one value
+this.pb.pie.dough.toString == "4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder"
+this.pb.pie.filling has only one value
+this.pb.pie.filling.toString == "chocolate chips + cocoa powder"
+this.pb.baked == true
+arg0.pie == null
+arg0.baked == false
+===========================================================================
+patterns.gof.creational.builder.Cook.constructPieWithPieBuilder(patterns.gof.creational.builder.PieBuilder):::EXIT
+this.pb == orig(arg0)
+this.pb.getClass().getName() == orig(arg0.getClass().getName())
+this.pb.pie == arg0.pie
+this.pb.pie.dough == arg0.pie.dough
+this.pb.pie.filling == arg0.pie.filling
+this.pb.baked == arg0.baked
+arg0.baked == orig(arg0.baked)
+this.constructed == true
+arg0.pie.dough.toString one of { "150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour", "4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder" }
+arg0.pie.filling.toString one of { "apple slices", "chocolate chips + cocoa powder" }
+arg0.baked == false
+===========================================================================
+patterns.gof.creational.builder.Cook.getPie():::ENTER
+this.pb.baked == true
+this.constructed == true
+===========================================================================
+patterns.gof.creational.builder.Cook.getPie():::EXIT31
+===========================================================================
+patterns.gof.creational.builder.Cook.getPie():::EXIT
+this.pb == orig(this.pb)
+this.pb.getClass().getName() == orig(this.pb.getClass().getName())
+this.pb.pie == return
+this.pb.pie.dough == return.dough
+this.pb.pie.dough.toString == orig(this.pb.pie.dough.toString)
+this.pb.pie.filling == return.filling
+this.pb.pie.filling.toString == orig(this.pb.pie.filling.toString)
+this.pb.baked == orig(this.pb.baked)
+this.constructed == orig(this.constructed)
+return == orig(this.pb.pie)
+return.dough == orig(this.pb.pie.dough)
+return.filling == orig(this.pb.pie.filling)
+this.pb.baked == true
+this.constructed == true
+return.dough.toString one of { "150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour", "4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder" }
+return.filling.toString one of { "apple slices", "chocolate chips + cocoa powder" }
+===========================================================================
+patterns.gof.creational.builder.Pie:::OBJECT
+this.dough.toString one of { "150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour", "4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder" }
+this.filling.toString one of { "apple slices", "chocolate chips + cocoa powder" }
+===========================================================================
+patterns.gof.creational.builder.Pie.Pie():::EXIT
+this.dough == null
+this.filling == null
+===========================================================================
+patterns.gof.creational.builder.Pie.getDough():::ENTER
+===========================================================================
+patterns.gof.creational.builder.Pie.getDough():::EXIT
+this.dough == return
+this.dough.toString == orig(this.dough.toString)
+this.filling == orig(this.filling)
+this.filling.toString == orig(this.filling.toString)
+return == orig(this.dough)
+return.toString one of { "150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour", "4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder" }
+===========================================================================
+patterns.gof.creational.builder.Pie.getFilling():::ENTER
+===========================================================================
+patterns.gof.creational.builder.Pie.getFilling():::EXIT
+this.dough == orig(this.dough)
+this.dough.toString == orig(this.dough.toString)
+this.filling == return
+this.filling.toString == orig(this.filling.toString)
+return == orig(this.filling)
+return.toString one of { "apple slices", "chocolate chips + cocoa powder" }
+===========================================================================
+patterns.gof.creational.builder.Pie.setDough(java.lang.String):::ENTER
+this.dough == null
+this.filling == null
+arg0.toString one of { "150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour", "4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder" }
+===========================================================================
+patterns.gof.creational.builder.Pie.setDough(java.lang.String):::EXIT
+this.dough == orig(arg0)
+this.filling == orig(this.filling)
+arg0.toString == orig(arg0.toString)
+this.filling == null
+arg0.toString one of { "150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour", "4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder" }
+===========================================================================
+patterns.gof.creational.builder.Pie.setFilling(java.lang.String):::ENTER
+this.filling == null
+arg0.toString one of { "apple slices", "chocolate chips + cocoa powder" }
+===========================================================================
+patterns.gof.creational.builder.Pie.setFilling(java.lang.String):::EXIT
+this.dough == orig(this.dough)
+this.dough.toString == orig(this.dough.toString)
+this.filling == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "apple slices", "chocolate chips + cocoa powder" }
+===========================================================================
+patterns.gof.creational.builder.PieBuilder:::OBJECT
+this.pie.dough.toString one of { "150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour", "4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder" }
+this.pie.filling.toString one of { "apple slices", "chocolate chips + cocoa powder" }
+===========================================================================
+patterns.gof.creational.builder.PieBuilder.PieBuilder():::EXIT
+this.pie == null
+this.baked == false
+===========================================================================
+patterns.gof.creational.builder.PieBuilder.bake():::ENTER
+this.baked == false
+===========================================================================
+patterns.gof.creational.builder.PieBuilder.bake():::EXIT28
+===========================================================================
+patterns.gof.creational.builder.PieBuilder.bake():::EXIT
+this.pie == orig(this.pie)
+this.pie.dough == orig(this.pie.dough)
+this.pie.dough.toString == orig(this.pie.dough.toString)
+this.pie.filling == orig(this.pie.filling)
+this.pie.filling.toString == orig(this.pie.filling.toString)
+this.baked == true
+===========================================================================
+patterns.gof.creational.builder.PieBuilder.createNewPie():::ENTER
+this.pie == null
+this.baked == false
+===========================================================================
+patterns.gof.creational.builder.PieBuilder.createNewPie():::EXIT
+this.baked == orig(this.baked)
+this.pie.dough == null
+this.pie.filling == null
+this.baked == false
+===========================================================================
+patterns.gof.creational.builder.PieBuilder.getPie():::ENTER
+===========================================================================
+patterns.gof.creational.builder.PieBuilder.getPie():::EXIT
+this.pie == return
+this.pie.dough == return.dough
+this.pie.dough.toString == orig(this.pie.dough.toString)
+this.pie.filling == return.filling
+this.pie.filling.toString == orig(this.pie.filling.toString)
+this.baked == orig(this.baked)
+return == orig(this.pie)
+return.dough == orig(this.pie.dough)
+return.filling == orig(this.pie.filling)
+return.dough.toString one of { "150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour", "4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder" }
+return.filling.toString one of { "apple slices", "chocolate chips + cocoa powder" }
+===========================================================================
+patterns.gof.creational.builder.PieBuilder.isBaked():::ENTER
+this.baked == true
+===========================================================================
+patterns.gof.creational.builder.PieBuilder.isBaked():::EXIT
+this.pie == orig(this.pie)
+this.pie.dough == orig(this.pie.dough)
+this.pie.dough.toString == orig(this.pie.dough.toString)
+this.pie.filling == orig(this.pie.filling)
+this.pie.filling.toString == orig(this.pie.filling.toString)
+this.baked == return
+return == orig(this.baked)
+return == true
+===========================================================================
+patterns.gof.creational.builder.PieBuilder.isBaked():::EXIT;condition="return == true"
+===========================================================================
+patterns.gof.creational.factoryMethod.ConcreteCreatorA:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.creational.factoryMethod.ConcreteCreatorA.ConcreteCreatorA():::EXIT
+===========================================================================
+patterns.gof.creational.factoryMethod.ConcreteCreatorA.factoryMethod():::ENTER
+===========================================================================
+patterns.gof.creational.factoryMethod.ConcreteCreatorA.factoryMethod():::EXIT
+return has only one value
+return.getClass().getName() == patterns.gof.creational.factoryMethod.ConcreteProductA.class
+===========================================================================
+patterns.gof.creational.factoryMethod.ConcreteCreatorB:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.creational.factoryMethod.ConcreteCreatorB.ConcreteCreatorB():::EXIT
+===========================================================================
+patterns.gof.creational.factoryMethod.ConcreteCreatorB.factoryMethod():::ENTER
+===========================================================================
+patterns.gof.creational.factoryMethod.ConcreteCreatorB.factoryMethod():::EXIT
+return has only one value
+return.getClass().getName() == patterns.gof.creational.factoryMethod.ConcreteProductB.class
+===========================================================================
+patterns.gof.creational.factoryMethod.ConcreteProductA:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.creational.factoryMethod.ConcreteProductA.ConcreteProductA():::EXIT
+===========================================================================
+patterns.gof.creational.factoryMethod.ConcreteProductB:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.creational.factoryMethod.ConcreteProductB.ConcreteProductB():::EXIT
+===========================================================================
+patterns.gof.creational.factoryMethod.Creator:::OBJECT
+===========================================================================
+patterns.gof.creational.factoryMethod.Creator.Creator():::EXIT
+===========================================================================
+patterns.gof.creational.factoryMethod.FactoryMethodClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: ConcreteProductA\nData: ConcreteProductB", "\nData: cook John is going to prepare some pies for you today!\nData: *oven sound*\nData: cook John has finished baking your pie\nData: pie dough: 4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder\nData: pie filling: chocolate chips + cocoa powder\nData: *oven sound*\nData: cook John has finished baking your pie\nData: pie dough: 150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour\nData: pie filling: apple slices\nData: cook John is tired. Cook John is going home" }
+===========================================================================
+patterns.gof.creational.factoryMethod.FactoryMethodClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.creational.factoryMethod.FactoryMethodClient.FactoryMethodClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.creational.factoryMethod.FactoryMethodClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: cook John is going to prepare some pies for you today!\nData: *oven sound*\nData: cook John has finished baking your pie\nData: pie dough: 4 eggs + 70g of sugar + 2 spoons of flour + 2 spoons of starch + pinch of salt + 2 bags of vanilla + 2g of baking powder\nData: pie filling: chocolate chips + cocoa powder\nData: *oven sound*\nData: cook John has finished baking your pie\nData: pie dough: 150g of sugar + 200g of butter + 5 eggs + 8g of baking powder + 650g of flour\nData: pie filling: apple slices\nData: cook John is tired. Cook John is going home"
+===========================================================================
+patterns.gof.creational.factoryMethod.FactoryMethodClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: ConcreteProductA\nData: ConcreteProductB"
+===========================================================================
+patterns.gof.creational.factoryMethod.Product:::OBJECT
+===========================================================================
+patterns.gof.creational.factoryMethod.Product.Product():::EXIT
+===========================================================================
+patterns.gof.creational.prototype.ConcretePrototype:::OBJECT
+this.a one of { 0, 5, 84 }
+this.b one of { -1, 0, 91 }
+===========================================================================
+patterns.gof.creational.prototype.ConcretePrototype.ConcretePrototype():::EXIT
+this.a == 0
+this.b == 0
+===========================================================================
+patterns.gof.creational.prototype.ConcretePrototype.clone():::ENTER
+this.a one of { 5, 84 }
+this.b one of { -1, 91 }
+===========================================================================
+patterns.gof.creational.prototype.ConcretePrototype.clone():::EXIT
+this.a == orig(this.a)
+this.b == orig(this.b)
+this.a one of { 5, 84 }
+this.b one of { -1, 91 }
+return.getClass().getName() == patterns.gof.creational.prototype.ConcretePrototype.class
+===========================================================================
+patterns.gof.creational.prototype.ConcretePrototype.getA():::ENTER
+this.a one of { 5, 84 }
+this.b one of { -1, 91 }
+===========================================================================
+patterns.gof.creational.prototype.ConcretePrototype.getA():::EXIT
+this.a == return
+this.b == orig(this.b)
+return == orig(this.a)
+this.b one of { -1, 91 }
+return one of { 5, 84 }
+===========================================================================
+patterns.gof.creational.prototype.ConcretePrototype.getB():::ENTER
+this.a one of { 5, 84 }
+this.b one of { -1, 91 }
+===========================================================================
+patterns.gof.creational.prototype.ConcretePrototype.getB():::EXIT
+this.a == orig(this.a)
+this.b == return
+return == orig(this.b)
+this.a one of { 5, 84 }
+return one of { -1, 91 }
+===========================================================================
+patterns.gof.creational.prototype.ConcretePrototype.setA(int):::ENTER
+this.a one of { 0, 5 }
+this.b one of { -1, 0 }
+arg0 one of { 5, 84 }
+===========================================================================
+patterns.gof.creational.prototype.ConcretePrototype.setA(int):::EXIT
+this.a == orig(arg0)
+this.b == orig(this.b)
+this.a one of { 5, 84 }
+this.b one of { -1, 0 }
+===========================================================================
+patterns.gof.creational.prototype.ConcretePrototype.setB(int):::ENTER
+this.a one of { 5, 84 }
+this.b one of { -1, 0 }
+arg0 one of { -1, 91 }
+===========================================================================
+patterns.gof.creational.prototype.ConcretePrototype.setB(int):::EXIT
+this.a == orig(this.a)
+this.b == orig(arg0)
+this.a one of { 5, 84 }
+this.b one of { -1, 91 }
+===========================================================================
+patterns.gof.creational.prototype.Prototype:::OBJECT
+this.getClass().getName() == patterns.gof.creational.prototype.ConcretePrototype.class
+===========================================================================
+patterns.gof.creational.prototype.Prototype.Prototype():::EXIT
+===========================================================================
+patterns.gof.creational.prototype.PrototypeClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: 5, -1\nData: 84, 91", "\nData: ConcreteProductA\nData: ConcreteProductB" }
+===========================================================================
+patterns.gof.creational.prototype.PrototypeClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.creational.prototype.PrototypeClient.PrototypeClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.creational.prototype.PrototypeClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: ConcreteProductA\nData: ConcreteProductB"
+===========================================================================
+patterns.gof.creational.prototype.PrototypeClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 5, -1\nData: 84, 91"
+===========================================================================
+patterns.gof.creational.singleton.Singleton:::CLASS
+patterns.gof.creational.singleton.Singleton.instance.data.toString one of { "1", "12", "123" }
+===========================================================================
+patterns.gof.creational.singleton.Singleton:::OBJECT
+this has only one value
+this.data.toString one of { "1", "12", "123" }
+===========================================================================
+patterns.gof.creational.singleton.Singleton.Singleton():::EXIT
+patterns.gof.creational.singleton.Singleton.instance == null
+this.data == null
+===========================================================================
+patterns.gof.creational.singleton.Singleton.getData():::ENTER
+this == patterns.gof.creational.singleton.Singleton.instance
+patterns.gof.creational.singleton.Singleton.instance has only one value
+===========================================================================
+patterns.gof.creational.singleton.Singleton.getData():::EXIT
+patterns.gof.creational.singleton.Singleton.instance == orig(this)
+patterns.gof.creational.singleton.Singleton.instance == orig(patterns.gof.creational.singleton.Singleton.instance)
+patterns.gof.creational.singleton.Singleton.instance.data == orig(patterns.gof.creational.singleton.Singleton.instance.data)
+patterns.gof.creational.singleton.Singleton.instance.data.toString == orig(patterns.gof.creational.singleton.Singleton.instance.data.toString)
+this.data == return
+this.data.toString == orig(this.data.toString)
+return == orig(this.data)
+patterns.gof.creational.singleton.Singleton.instance has only one value
+return.toString one of { "1", "12", "123" }
+===========================================================================
+patterns.gof.creational.singleton.Singleton.getInstance():::ENTER
+patterns.gof.creational.singleton.Singleton.instance.data.toString one of { "1", "12" }
+===========================================================================
+patterns.gof.creational.singleton.Singleton.getInstance():::EXIT
+patterns.gof.creational.singleton.Singleton.instance == return
+patterns.gof.creational.singleton.Singleton.instance.data == orig(patterns.gof.creational.singleton.Singleton.instance.data)
+patterns.gof.creational.singleton.Singleton.instance.data.toString == orig(patterns.gof.creational.singleton.Singleton.instance.data.toString)
+patterns.gof.creational.singleton.Singleton.instance has only one value
+patterns.gof.creational.singleton.Singleton.instance.data.toString one of { "1", "12" }
+return.data.toString one of { "1", "12" }
+===========================================================================
+patterns.gof.creational.singleton.Singleton.setData(java.lang.String):::ENTER
+this == patterns.gof.creational.singleton.Singleton.instance
+patterns.gof.creational.singleton.Singleton.instance has only one value
+patterns.gof.creational.singleton.Singleton.instance.data.toString one of { "1", "12" }
+this.data.toString one of { "1", "12" }
+arg0.toString one of { "1", "12", "123" }
+===========================================================================
+patterns.gof.creational.singleton.Singleton.setData(java.lang.String):::EXIT
+patterns.gof.creational.singleton.Singleton.instance == orig(this)
+patterns.gof.creational.singleton.Singleton.instance == orig(patterns.gof.creational.singleton.Singleton.instance)
+this.data == orig(arg0)
+arg0.toString == orig(arg0.toString)
+patterns.gof.creational.singleton.Singleton.instance has only one value
+arg0.toString one of { "1", "12", "123" }
+===========================================================================
+patterns.gof.creational.singleton.SingletonClient:::CLASS
+===========================================================================
+patterns.gof.creational.singleton.SingletonClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.creational.singleton.SingletonClient.SingletonClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.creational.singleton.SingletonClient.dataChanger1():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 1"
+===========================================================================
+patterns.gof.creational.singleton.SingletonClient.dataChanger1():::EXIT
+patterns.gof.helpers.Client.output == orig(patterns.gof.helpers.Client.output)
+patterns.gof.helpers.Client.output.toString == orig(patterns.gof.helpers.Client.output.toString)
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 1"
+===========================================================================
+patterns.gof.creational.singleton.SingletonClient.dataChanger2():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 1\nData: 12"
+===========================================================================
+patterns.gof.creational.singleton.SingletonClient.dataChanger2():::EXIT
+patterns.gof.helpers.Client.output == orig(patterns.gof.helpers.Client.output)
+patterns.gof.helpers.Client.output.toString == orig(patterns.gof.helpers.Client.output.toString)
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 1\nData: 12"
+===========================================================================
+patterns.gof.creational.singleton.SingletonClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 5, -1\nData: 84, 91"
+===========================================================================
+patterns.gof.creational.singleton.SingletonClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 1\nData: 12\nData: 123"
+===========================================================================
+patterns.gof.helpers.Client:::CLASS
+===========================================================================
+patterns.gof.helpers.Client:::OBJECT
+===========================================================================
+patterns.gof.helpers.Client.Client():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.helpers.Client.addOutput(java.lang.String):::ENTER
+patterns.gof.helpers.Client.output != null
+arg0 != null
+===========================================================================
+patterns.gof.helpers.Client.addOutput(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+patterns.gof.helpers.Client.output != null
+patterns.gof.helpers.Client.output.toString > orig(patterns.gof.helpers.Client.output.toString)
+===========================================================================
+patterns.gof.helpers.Client.cleanOutput():::ENTER
+===========================================================================
+patterns.gof.helpers.Client.cleanOutput():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output != null
+patterns.gof.helpers.Client.output.toString == ""
+patterns.gof.helpers.Client.output.toString < orig(patterns.gof.helpers.Client.output.toString)
+===========================================================================
+patterns.gof.helpers.Client.main(java.lang.String):::ENTER
+patterns.gof.helpers.Client.output != null
+arg0 != null
+===========================================================================
+patterns.gof.helpers.Client.main(java.lang.String):::EXIT
+patterns.gof.helpers.Client.output == orig(patterns.gof.helpers.Client.output)
+patterns.gof.helpers.Client.output.toString == orig(patterns.gof.helpers.Client.output.toString)
+arg0.toString == orig(arg0.toString)
+patterns.gof.helpers.Client.output != null
+===========================================================================
+patterns.gof.helpers.Client.printAll(java.lang.String):::ENTER
+patterns.gof.helpers.Client.output != null
+arg0 != null
+===========================================================================
+patterns.gof.helpers.Client.printAll(java.lang.String):::EXIT
+patterns.gof.helpers.Client.output == orig(patterns.gof.helpers.Client.output)
+patterns.gof.helpers.Client.output.toString == orig(patterns.gof.helpers.Client.output.toString)
+arg0.toString == orig(arg0.toString)
+patterns.gof.helpers.Client.output != null
+===========================================================================
+patterns.gof.helpers.Client.printSplitter():::ENTER
+patterns.gof.helpers.Client.output != null
+===========================================================================
+patterns.gof.helpers.Client.printSplitter():::EXIT
+patterns.gof.helpers.Client.output == orig(patterns.gof.helpers.Client.output)
+patterns.gof.helpers.Client.output.toString == orig(patterns.gof.helpers.Client.output.toString)
+patterns.gof.helpers.Client.output != null
+===========================================================================
+patterns.gof.helpers.PatternList:::OBJECT
+this.listName != null
+this.listName.toString one of { "BEHAVIORAL", "CREATIONAL", "STRUCTURAL" }
+this.patterns != null
+this.patterns[] elements != null
+this.patterns.getClass().getName() == java.util.Arrays$ArrayList.class
+size(this.patterns[]) one of { 5, 7, 11 }
+===========================================================================
+patterns.gof.helpers.PatternList.PatternList(java.lang.String, patterns.gof.helpers.Client[]):::ENTER
+arg0.toString one of { "BEHAVIORAL", "CREATIONAL", "STRUCTURAL" }
+arg1.getClass().getName() == patterns.gof.helpers.Client[].class
+size(arg1[]) one of { 5, 7, 11 }
+===========================================================================
+patterns.gof.helpers.PatternList.PatternList(java.lang.String, patterns.gof.helpers.Client[]):::EXIT
+this.listName == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg1[] == orig(arg1[])
+arg0.toString one of { "BEHAVIORAL", "CREATIONAL", "STRUCTURAL" }
+===========================================================================
+patterns.gof.helpers.PatternList.getListName():::ENTER
+===========================================================================
+patterns.gof.helpers.PatternList.getListName():::EXIT
+this.listName == return
+this.listName.toString == orig(this.listName.toString)
+this.patterns == orig(this.patterns)
+this.patterns[] == orig(this.patterns[])
+this.patterns.getClass().getName() == orig(this.patterns.getClass().getName())
+return == orig(this.listName)
+return.toString one of { "BEHAVIORAL", "CREATIONAL", "STRUCTURAL" }
+===========================================================================
+patterns.gof.helpers.PatternList.getPatterns():::ENTER
+===========================================================================
+patterns.gof.helpers.PatternList.getPatterns():::EXIT
+this.listName == orig(this.listName)
+this.listName.toString == orig(this.listName.toString)
+this.patterns == return
+this.patterns[] == orig(this.patterns[])
+this.patterns.getClass().getName() == return.getClass().getName()
+return == orig(this.patterns)
+return.getClass().getName() == orig(this.patterns.getClass().getName())
+return.getClass().getName() == java.util.Arrays$ArrayList.class
+size(return[]) one of { 5, 7, 11 }
+===========================================================================
+patterns.gof.structural.adapter.Adapter:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.adapter.Adapter.Adapter():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.Adapter.launch():::ENTER
+===========================================================================
+patterns.gof.structural.adapter.Adapter.launch():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.Adapter.stop():::ENTER
+===========================================================================
+patterns.gof.structural.adapter.Adapter.stop():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.AdapterClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: 1\nData: 12\nData: 123", "\nData: coffee machine has been launched\nData: microwave has been launched\nData: new microwave is warming\nData: new microwave is chilling\nData: all machines are working\nData: coffee machine has been stopped\nData: microwave has been stopped\nData: new microwave is not warming anymore\nData: new microwave is not chilling anymore\nData: all machines were stopped" }
+===========================================================================
+patterns.gof.structural.adapter.AdapterClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.adapter.AdapterClient.AdapterClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.structural.adapter.AdapterClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 1\nData: 12\nData: 123"
+===========================================================================
+patterns.gof.structural.adapter.AdapterClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: coffee machine has been launched\nData: microwave has been launched\nData: new microwave is warming\nData: new microwave is chilling\nData: all machines are working\nData: coffee machine has been stopped\nData: microwave has been stopped\nData: new microwave is not warming anymore\nData: new microwave is not chilling anymore\nData: all machines were stopped"
+===========================================================================
+patterns.gof.structural.adapter.CoffeeMachine:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.adapter.CoffeeMachine.CoffeeMachine():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.CoffeeMachine.launch():::ENTER
+===========================================================================
+patterns.gof.structural.adapter.CoffeeMachine.launch():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.CoffeeMachine.stop():::ENTER
+===========================================================================
+patterns.gof.structural.adapter.CoffeeMachine.stop():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.FridgeMicrowave:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.adapter.FridgeMicrowave.FridgeMicrowave():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.FridgeMicrowave.startChillingCell2():::ENTER
+===========================================================================
+patterns.gof.structural.adapter.FridgeMicrowave.startChillingCell2():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.FridgeMicrowave.startWarmingCell1():::ENTER
+===========================================================================
+patterns.gof.structural.adapter.FridgeMicrowave.startWarmingCell1():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.FridgeMicrowave.stopChillingCell2():::ENTER
+===========================================================================
+patterns.gof.structural.adapter.FridgeMicrowave.stopChillingCell2():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.FridgeMicrowave.stopWarmingCell1():::ENTER
+===========================================================================
+patterns.gof.structural.adapter.FridgeMicrowave.stopWarmingCell1():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.Microwave:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.adapter.Microwave.Microwave():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.Microwave.launch():::ENTER
+===========================================================================
+patterns.gof.structural.adapter.Microwave.launch():::EXIT
+===========================================================================
+patterns.gof.structural.adapter.Microwave.stop():::ENTER
+===========================================================================
+patterns.gof.structural.adapter.Microwave.stop():::EXIT
+===========================================================================
+patterns.gof.structural.bridge.BlueColor:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.bridge.BlueColor.BlueColor():::EXIT
+===========================================================================
+patterns.gof.structural.bridge.BlueColor.fillColor():::ENTER
+===========================================================================
+patterns.gof.structural.bridge.BlueColor.fillColor():::EXIT
+return has only one value
+return.toString == "blue"
+===========================================================================
+patterns.gof.structural.bridge.BridgeClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: coffee machine has been launched\nData: microwave has been launched\nData: new microwave is warming\nData: new microwave is chilling\nData: all machines are working\nData: coffee machine has been stopped\nData: microwave has been stopped\nData: new microwave is not warming anymore\nData: new microwave is not chilling anymore\nData: all machines were stopped", "\nData: rectangle filled with red color\nData: circle filled with blue color" }
+===========================================================================
+patterns.gof.structural.bridge.BridgeClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.bridge.BridgeClient.BridgeClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.structural.bridge.BridgeClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: coffee machine has been launched\nData: microwave has been launched\nData: new microwave is warming\nData: new microwave is chilling\nData: all machines are working\nData: coffee machine has been stopped\nData: microwave has been stopped\nData: new microwave is not warming anymore\nData: new microwave is not chilling anymore\nData: all machines were stopped"
+===========================================================================
+patterns.gof.structural.bridge.BridgeClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: rectangle filled with red color\nData: circle filled with blue color"
+===========================================================================
+patterns.gof.structural.bridge.Circle:::OBJECT
+this has only one value
+this.color has only one value
+this.color.getClass().getName() == patterns.gof.structural.bridge.BlueColor.class
+===========================================================================
+patterns.gof.structural.bridge.Circle.Circle(patterns.gof.structural.bridge.Color):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == patterns.gof.structural.bridge.BlueColor.class
+===========================================================================
+patterns.gof.structural.bridge.Circle.Circle(patterns.gof.structural.bridge.Color):::EXIT
+this.color == orig(arg0)
+this.color.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.structural.bridge.Circle.colorIt():::ENTER
+===========================================================================
+patterns.gof.structural.bridge.Circle.colorIt():::EXIT
+this.color == orig(this.color)
+this.color.getClass().getName() == orig(this.color.getClass().getName())
+===========================================================================
+patterns.gof.structural.bridge.Rectangle:::OBJECT
+this has only one value
+this.color has only one value
+this.color.getClass().getName() == patterns.gof.structural.bridge.RedColor.class
+===========================================================================
+patterns.gof.structural.bridge.Rectangle.Rectangle(patterns.gof.structural.bridge.Color):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == patterns.gof.structural.bridge.RedColor.class
+===========================================================================
+patterns.gof.structural.bridge.Rectangle.Rectangle(patterns.gof.structural.bridge.Color):::EXIT
+this.color == orig(arg0)
+this.color.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.structural.bridge.Rectangle.colorIt():::ENTER
+===========================================================================
+patterns.gof.structural.bridge.Rectangle.colorIt():::EXIT
+this.color == orig(this.color)
+this.color.getClass().getName() == orig(this.color.getClass().getName())
+===========================================================================
+patterns.gof.structural.bridge.RedColor:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.bridge.RedColor.RedColor():::EXIT
+===========================================================================
+patterns.gof.structural.bridge.RedColor.fillColor():::ENTER
+===========================================================================
+patterns.gof.structural.bridge.RedColor.fillColor():::EXIT
+return has only one value
+return.toString == "red"
+===========================================================================
+patterns.gof.structural.bridge.Shape:::OBJECT
+===========================================================================
+patterns.gof.structural.bridge.Shape.Shape(patterns.gof.structural.bridge.Color):::ENTER
+===========================================================================
+patterns.gof.structural.bridge.Shape.Shape(patterns.gof.structural.bridge.Color):::EXIT
+this.color == orig(arg0)
+this.color.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.structural.bridge.Shape.getColor():::ENTER
+===========================================================================
+patterns.gof.structural.bridge.Shape.getColor():::EXIT
+this.color == return
+this.color.getClass().getName() == return.getClass().getName()
+return == orig(this.color)
+return.getClass().getName() == orig(this.color.getClass().getName())
+===========================================================================
+patterns.gof.structural.composite.Circle:::OBJECT
+===========================================================================
+patterns.gof.structural.composite.Circle.Circle():::EXIT
+===========================================================================
+patterns.gof.structural.composite.Circle.draw():::ENTER
+===========================================================================
+patterns.gof.structural.composite.Circle.draw():::EXIT
+===========================================================================
+patterns.gof.structural.composite.Composite:::OBJECT
+this.childPolygons != null
+this.childPolygons[] elements != null
+this.childPolygons.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+patterns.gof.structural.composite.Composite.Composite():::EXIT
+this.childPolygons[] == []
+this.childPolygons[].getClass().getName() == []
+===========================================================================
+patterns.gof.structural.composite.Composite.add(patterns.gof.structural.composite.GraphicalElement):::ENTER
+size(this.childPolygons[]) one of { 0, 1, 2 }
+this.childPolygons.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+patterns.gof.structural.composite.Composite.add(patterns.gof.structural.composite.GraphicalElement):::EXIT
+this.childPolygons == orig(this.childPolygons)
+this.childPolygons.getClass().getName() == orig(this.childPolygons.getClass().getName())
+size(this.childPolygons[])-1 == orig(size(this.childPolygons[]))
+size(this.childPolygons[]) one of { 1, 2, 3 }
+orig(arg0.getClass().getName()) in this.childPolygons[].getClass().getName()
+this.childPolygons.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.structural.composite.Composite.draw():::ENTER
+size(this.childPolygons[]) == 3
+===========================================================================
+patterns.gof.structural.composite.Composite.draw():::EXIT
+this.childPolygons == orig(this.childPolygons)
+this.childPolygons[] == orig(this.childPolygons[])
+this.childPolygons.getClass().getName() == orig(this.childPolygons.getClass().getName())
+size(this.childPolygons[]) == 3
+===========================================================================
+patterns.gof.structural.composite.CompositeClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: line drawn\nData: line drawn\nData: line drawn\nData: element finished\nData: circle drawn\nData: circle drawn\nData: line drawn\nData: element finished\nData: circle drawn\nData: element finished", "\nData: rectangle filled with red color\nData: circle filled with blue color" }
+===========================================================================
+patterns.gof.structural.composite.CompositeClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.composite.CompositeClient.CompositeClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.structural.composite.CompositeClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: rectangle filled with red color\nData: circle filled with blue color"
+===========================================================================
+patterns.gof.structural.composite.CompositeClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: line drawn\nData: line drawn\nData: line drawn\nData: element finished\nData: circle drawn\nData: circle drawn\nData: line drawn\nData: element finished\nData: circle drawn\nData: element finished"
+===========================================================================
+patterns.gof.structural.composite.Line:::OBJECT
+===========================================================================
+patterns.gof.structural.composite.Line.Line():::EXIT
+===========================================================================
+patterns.gof.structural.composite.Line.draw():::ENTER
+===========================================================================
+patterns.gof.structural.composite.Line.draw():::EXIT
+===========================================================================
+patterns.gof.structural.decorator.Decorator:::OBJECT
+this.getClass().getName() != this.component.getClass().getName()
+===========================================================================
+patterns.gof.structural.decorator.Decorator.Decorator(patterns.gof.structural.decorator.Component):::ENTER
+===========================================================================
+patterns.gof.structural.decorator.Decorator.Decorator(patterns.gof.structural.decorator.Component):::EXIT
+this.component == orig(arg0)
+this.component.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.structural.decorator.Decorator.newFunction():::ENTER
+this has only one value
+this.getClass().getName() == patterns.gof.structural.decorator.DecoratorLine.class
+this.component has only one value
+this.component.getClass().getName() == patterns.gof.structural.decorator.DecoratorStar.class
+===========================================================================
+patterns.gof.structural.decorator.Decorator.newFunction():::EXIT
+this.component == orig(this.component)
+this.component.getClass().getName() == orig(this.component.getClass().getName())
+this.component has only one value
+this.component.getClass().getName() == patterns.gof.structural.decorator.DecoratorStar.class
+===========================================================================
+patterns.gof.structural.decorator.Decorator.print():::ENTER
+===========================================================================
+patterns.gof.structural.decorator.Decorator.print():::EXIT
+this.component == orig(this.component)
+this.component.getClass().getName() == orig(this.component.getClass().getName())
+===========================================================================
+patterns.gof.structural.decorator.DecoratorClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: __________\nData: **********\nData: message from initial class\nData: ..........\nData: ==========", "\nData: line drawn\nData: line drawn\nData: line drawn\nData: element finished\nData: circle drawn\nData: circle drawn\nData: line drawn\nData: element finished\nData: circle drawn\nData: element finished" }
+===========================================================================
+patterns.gof.structural.decorator.DecoratorClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.decorator.DecoratorClient.DecoratorClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.structural.decorator.DecoratorClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: line drawn\nData: line drawn\nData: line drawn\nData: element finished\nData: circle drawn\nData: circle drawn\nData: line drawn\nData: element finished\nData: circle drawn\nData: element finished"
+===========================================================================
+patterns.gof.structural.decorator.DecoratorClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: __________\nData: **********\nData: message from initial class\nData: ..........\nData: =========="
+===========================================================================
+patterns.gof.structural.decorator.DecoratorLine:::OBJECT
+this has only one value
+this.component has only one value
+this.component.getClass().getName() == patterns.gof.structural.decorator.DecoratorStar.class
+===========================================================================
+patterns.gof.structural.decorator.DecoratorLine.DecoratorLine(patterns.gof.structural.decorator.Component):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == patterns.gof.structural.decorator.DecoratorStar.class
+===========================================================================
+patterns.gof.structural.decorator.DecoratorLine.DecoratorLine(patterns.gof.structural.decorator.Component):::EXIT
+this.component == orig(arg0)
+this.component.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.structural.decorator.DecoratorLine.newFunction():::ENTER
+===========================================================================
+patterns.gof.structural.decorator.DecoratorLine.newFunction():::EXIT
+this.component == orig(this.component)
+this.component.getClass().getName() == orig(this.component.getClass().getName())
+===========================================================================
+patterns.gof.structural.decorator.DecoratorLine.print():::ENTER
+===========================================================================
+patterns.gof.structural.decorator.DecoratorLine.print():::EXIT
+this.component == orig(this.component)
+this.component.getClass().getName() == orig(this.component.getClass().getName())
+===========================================================================
+patterns.gof.structural.decorator.DecoratorStar:::OBJECT
+this has only one value
+this.component has only one value
+this.component.getClass().getName() == patterns.gof.structural.decorator.InitialClass.class
+===========================================================================
+patterns.gof.structural.decorator.DecoratorStar.DecoratorStar(patterns.gof.structural.decorator.Component):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == patterns.gof.structural.decorator.InitialClass.class
+===========================================================================
+patterns.gof.structural.decorator.DecoratorStar.DecoratorStar(patterns.gof.structural.decorator.Component):::EXIT
+this.component == orig(arg0)
+this.component.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+patterns.gof.structural.decorator.DecoratorStar.print():::ENTER
+===========================================================================
+patterns.gof.structural.decorator.DecoratorStar.print():::EXIT
+this.component == orig(this.component)
+this.component.getClass().getName() == orig(this.component.getClass().getName())
+===========================================================================
+patterns.gof.structural.decorator.InitialClass:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.decorator.InitialClass.InitialClass():::EXIT
+===========================================================================
+patterns.gof.structural.decorator.InitialClass.print():::ENTER
+===========================================================================
+patterns.gof.structural.decorator.InitialClass.print():::EXIT
+===========================================================================
+patterns.gof.structural.facade.CPU:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.facade.CPU.CPU():::EXIT
+===========================================================================
+patterns.gof.structural.facade.CPU.execute():::ENTER
+===========================================================================
+patterns.gof.structural.facade.CPU.execute():::EXIT
+===========================================================================
+patterns.gof.structural.facade.CPU.freeze():::ENTER
+===========================================================================
+patterns.gof.structural.facade.CPU.freeze():::EXIT
+===========================================================================
+patterns.gof.structural.facade.CPU.jump(long):::ENTER
+arg0 == 278401907226893466L
+===========================================================================
+patterns.gof.structural.facade.CPU.jump(long):::EXIT
+===========================================================================
+patterns.gof.structural.facade.Facade:::OBJECT
+this has only one value
+this.cpu has only one value
+this.memory has only one value
+this.hardDrive has only one value
+===========================================================================
+patterns.gof.structural.facade.Facade.Facade():::EXIT
+===========================================================================
+patterns.gof.structural.facade.Facade.startComputer():::ENTER
+===========================================================================
+patterns.gof.structural.facade.Facade.startComputer():::EXIT
+this.cpu == orig(this.cpu)
+this.memory == orig(this.memory)
+this.hardDrive == orig(this.hardDrive)
+===========================================================================
+patterns.gof.structural.facade.FacadeClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: __________\nData: **********\nData: message from initial class\nData: ..........\nData: ==========", "\nData: freezing CPU\nData: recieved array of bytes at lba 693723662417311006\nData: loading memory at position 7871083346223959394 with data: [-98]\nData: jumping on 278401907226893466 position in CPU\nData: executing CPU" }
+===========================================================================
+patterns.gof.structural.facade.FacadeClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.facade.FacadeClient.FacadeClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.structural.facade.FacadeClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: __________\nData: **********\nData: message from initial class\nData: ..........\nData: =========="
+===========================================================================
+patterns.gof.structural.facade.FacadeClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: freezing CPU\nData: recieved array of bytes at lba 693723662417311006\nData: loading memory at position 7871083346223959394 with data: [-98]\nData: jumping on 278401907226893466 position in CPU\nData: executing CPU"
+===========================================================================
+patterns.gof.structural.facade.HardDrive:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.facade.HardDrive.HardDrive():::EXIT
+===========================================================================
+patterns.gof.structural.facade.HardDrive.read(long, int):::ENTER
+arg0 == 693723662417311006L
+arg1 == 1
+===========================================================================
+patterns.gof.structural.facade.HardDrive.read(long, int):::EXIT
+orig(arg1) == size(return[])
+return has only one value
+return[] == [-98]
+return[] elements == -98
+return[] elements == return[orig(arg1)-1]
+===========================================================================
+patterns.gof.structural.facade.Memory:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.facade.Memory.Memory():::EXIT
+===========================================================================
+patterns.gof.structural.facade.Memory.load(long, byte[]):::ENTER
+arg0 == 7871083346223959394L
+arg1 has only one value
+arg1[] == [-98]
+arg1[] elements == -98
+size(arg1[]) == 1
+===========================================================================
+patterns.gof.structural.facade.Memory.load(long, byte[]):::EXIT
+arg1[] == orig(arg1[])
+arg1[] == [-98]
+arg1[] elements == -98
+===========================================================================
+patterns.gof.structural.flyweight.CharacterA:::OBJECT
+this has only one value
+this.symbol == 65
+this.width == 10
+this.height == 20
+===========================================================================
+patterns.gof.structural.flyweight.CharacterA.CharacterA():::EXIT
+===========================================================================
+patterns.gof.structural.flyweight.CharacterB:::OBJECT
+this has only one value
+this.symbol == 66
+this.width == 20
+this.height == 30
+===========================================================================
+patterns.gof.structural.flyweight.CharacterB.CharacterB():::EXIT
+===========================================================================
+patterns.gof.structural.flyweight.CharacterC:::OBJECT
+this has only one value
+this.symbol == 67
+this.width == 40
+this.height == 50
+===========================================================================
+patterns.gof.structural.flyweight.CharacterC.CharacterC():::EXIT
+===========================================================================
+patterns.gof.structural.flyweight.EnglishCharacter:::OBJECT
+this.symbol >= 0
+this.width >= 0
+this.height >= 0
+===========================================================================
+patterns.gof.structural.flyweight.EnglishCharacter.EnglishCharacter():::EXIT
+this.symbol == 0
+this.width == 0
+this.height == 0
+===========================================================================
+patterns.gof.structural.flyweight.EnglishCharacter.printCharacter():::ENTER
+this.symbol one of { 65, 66, 67 }
+this.width one of { 10, 20, 40 }
+this.height one of { 20, 30, 50 }
+===========================================================================
+patterns.gof.structural.flyweight.EnglishCharacter.printCharacter():::EXIT
+this.symbol == orig(this.symbol)
+this.width == orig(this.width)
+this.height == orig(this.height)
+this.symbol one of { 65, 66, 67 }
+this.width one of { 10, 20, 40 }
+this.height one of { 20, 30, 50 }
+===========================================================================
+patterns.gof.structural.flyweight.EnglishCharacter.setHeight(int):::ENTER
+this.symbol one of { 65, 66, 67 }
+this.width one of { 10, 20, 40 }
+this.height == 0
+arg0 one of { 20, 30, 50 }
+===========================================================================
+patterns.gof.structural.flyweight.EnglishCharacter.setHeight(int):::EXIT
+this.symbol == orig(this.symbol)
+this.width == orig(this.width)
+this.height == orig(arg0)
+this.symbol one of { 65, 66, 67 }
+this.width one of { 10, 20, 40 }
+this.height one of { 20, 30, 50 }
+===========================================================================
+patterns.gof.structural.flyweight.EnglishCharacter.setSymbol(char):::ENTER
+this.symbol == 0
+this.width == 0
+this.height == 0
+arg0 one of { 65, 66, 67 }
+===========================================================================
+patterns.gof.structural.flyweight.EnglishCharacter.setSymbol(char):::EXIT
+this.symbol == orig(arg0)
+this.width == orig(this.width)
+this.height == orig(this.height)
+this.symbol one of { 65, 66, 67 }
+this.width == 0
+this.height == 0
+===========================================================================
+patterns.gof.structural.flyweight.EnglishCharacter.setWidth(int):::ENTER
+this.symbol one of { 65, 66, 67 }
+this.width == 0
+this.height == 0
+arg0 one of { 10, 20, 40 }
+===========================================================================
+patterns.gof.structural.flyweight.EnglishCharacter.setWidth(int):::EXIT
+this.symbol == orig(this.symbol)
+this.width == orig(arg0)
+this.height == orig(this.height)
+this.symbol one of { 65, 66, 67 }
+this.width one of { 10, 20, 40 }
+this.height == 0
+===========================================================================
+patterns.gof.structural.flyweight.FlyweightClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: A 10 20\nData: B 20 30\nData: C 40 50", "\nData: freezing CPU\nData: recieved array of bytes at lba 693723662417311006\nData: loading memory at position 7871083346223959394 with data: [-98]\nData: jumping on 278401907226893466 position in CPU\nData: executing CPU" }
+===========================================================================
+patterns.gof.structural.flyweight.FlyweightClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.flyweight.FlyweightClient.FlyweightClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.structural.flyweight.FlyweightClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: freezing CPU\nData: recieved array of bytes at lba 693723662417311006\nData: loading memory at position 7871083346223959394 with data: [-98]\nData: jumping on 278401907226893466 position in CPU\nData: executing CPU"
+===========================================================================
+patterns.gof.structural.flyweight.FlyweightClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: A 10 20\nData: B 20 30\nData: C 40 50"
+===========================================================================
+patterns.gof.structural.flyweight.FlyweightFactory:::OBJECT
+this has only one value
+this.characters has only one value
+===========================================================================
+patterns.gof.structural.flyweight.FlyweightFactory.FlyweightFactory():::EXIT
+===========================================================================
+patterns.gof.structural.flyweight.FlyweightFactory.getCharacter(int):::ENTER
+arg0 one of { 1, 2, 3 }
+===========================================================================
+patterns.gof.structural.flyweight.FlyweightFactory.getCharacter(int):::EXIT
+this.characters == orig(this.characters)
+return.symbol one of { 65, 66, 67 }
+return.width one of { 10, 20, 40 }
+return.height one of { 20, 30, 50 }
+===========================================================================
+patterns.gof.structural.proxy.Matematika:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.proxy.Matematika.Matematika():::EXIT
+===========================================================================
+patterns.gof.structural.proxy.Matematika.peremnozhit(int, int):::ENTER
+arg0 == 4
+arg1 == 7
+===========================================================================
+patterns.gof.structural.proxy.Matematika.peremnozhit(int, int):::EXIT
+return == 28
+===========================================================================
+patterns.gof.structural.proxy.Matematika.razdelit(int, int):::ENTER
+arg0 == 10
+arg1 == 3
+===========================================================================
+patterns.gof.structural.proxy.Matematika.razdelit(int, int):::EXIT
+return == 3.0
+===========================================================================
+patterns.gof.structural.proxy.Matematika.slozhit(int, int):::ENTER
+arg0 == 3
+arg1 == 1
+===========================================================================
+patterns.gof.structural.proxy.Matematika.slozhit(int, int):::EXIT
+return == 4
+===========================================================================
+patterns.gof.structural.proxy.Matematika.vychest(int, int):::ENTER
+arg0 == 14
+arg1 == 21
+===========================================================================
+patterns.gof.structural.proxy.Matematika.vychest(int, int):::EXIT
+return == -7
+===========================================================================
+patterns.gof.structural.proxy.MathProxy:::OBJECT
+this has only one value
+this.math has only one value
+===========================================================================
+patterns.gof.structural.proxy.MathProxy.MathProxy():::EXIT
+===========================================================================
+patterns.gof.structural.proxy.MathProxy.add(int, int):::ENTER
+arg0 == 3
+arg1 == 1
+===========================================================================
+patterns.gof.structural.proxy.MathProxy.add(int, int):::EXIT
+this.math == orig(this.math)
+return == 4
+===========================================================================
+patterns.gof.structural.proxy.MathProxy.div(int, int):::ENTER
+arg0 one of { 6, 10 }
+arg1 one of { 0, 3 }
+===========================================================================
+patterns.gof.structural.proxy.MathProxy.div(int, int):::EXIT
+this.math == orig(this.math)
+return one of { 0.0, 3.0 }
+===========================================================================
+patterns.gof.structural.proxy.MathProxy.mul(int, int):::ENTER
+arg0 == 4
+arg1 == 7
+===========================================================================
+patterns.gof.structural.proxy.MathProxy.mul(int, int):::EXIT
+this.math == orig(this.math)
+return == 28
+===========================================================================
+patterns.gof.structural.proxy.MathProxy.sub(int, int):::ENTER
+arg0 == 14
+arg1 == 21
+===========================================================================
+patterns.gof.structural.proxy.MathProxy.sub(int, int):::EXIT
+this.math == orig(this.math)
+return == -7
+===========================================================================
+patterns.gof.structural.proxy.ProxyClient:::CLASS
+patterns.gof.helpers.Client.output.toString one of { "\nData: 3 + 1 = 4\nData: 14 - 21 = -7\nData: 4 * 7 = 28\nData: dividing by zero:\nData: 6 / 0 = 0.0\nData: 10 / 3 = 3.0", "\nData: A 10 20\nData: B 20 30\nData: C 40 50" }
+===========================================================================
+patterns.gof.structural.proxy.ProxyClient:::OBJECT
+this has only one value
+===========================================================================
+patterns.gof.structural.proxy.ProxyClient.ProxyClient():::EXIT
+patterns.gof.helpers.Client.output == null
+===========================================================================
+patterns.gof.structural.proxy.ProxyClient.main():::ENTER
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: A 10 20\nData: B 20 30\nData: C 40 50"
+===========================================================================
+patterns.gof.structural.proxy.ProxyClient.main():::EXIT
+patterns.gof.helpers.Client.output has only one value
+patterns.gof.helpers.Client.output.toString == "\nData: 3 + 1 = 4\nData: 14 - 21 = -7\nData: 4 * 7 = 28\nData: dividing by zero:\nData: 6 / 0 = 0.0\nData: 10 / 3 = 3.0"
+Exiting Daikon.

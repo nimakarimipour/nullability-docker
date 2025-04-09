@@ -1,0 +1,3 @@
+FIELD	rpg.creature.Anchor	null	item	null
+METHOD	rpg.item.ItemImplementation	getHolder()	null	null
+METHOD	rpg.item.ItemImplementation	getParent()	null	null

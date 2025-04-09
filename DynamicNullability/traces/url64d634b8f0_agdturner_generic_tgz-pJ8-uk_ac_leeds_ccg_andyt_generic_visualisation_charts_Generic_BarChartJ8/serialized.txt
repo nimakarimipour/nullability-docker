@@ -1,0 +1,1 @@
+METHOD	uk.ac.leeds.ccg.andyt.generic.visualisation.charts.Abstract_Generic_BarChart	getyMax()	null	null

@@ -1,0 +1,1887 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 1 time.  Unmatched entries are ignored!
+Unterminated calls:
+  ikrs.json.rpc.JSONRPCHandler.execute(ikrs.json.rpc.JSONRPCRequest) : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+ikrs.json.AbstractJSONValue:::OBJECT
+this.type >= 0
+===========================================================================
+ikrs.json.AbstractJSONValue.AbstractJSONValue(int):::ENTER
+arg0 >= 0
+===========================================================================
+ikrs.json.AbstractJSONValue.AbstractJSONValue(int):::EXIT
+this.type == orig(arg0)
+===========================================================================
+ikrs.json.AbstractJSONValue.isArray():::ENTER
+this.type one of { 4, 5 }
+===========================================================================
+ikrs.json.AbstractJSONValue.isArray():::EXIT
+this.type == orig(this.type)
+(this.type == 4)  <==>  (orig(this.getClass().getName()) == ikrs.json.JSONArray.class)
+(this.type == 4)  <==>  (return == true)
+(this.type == 5)  <==>  (orig(this.getClass().getName()) == ikrs.json.JSONObject.class)
+(this.type == 5)  <==>  (return == false)
+(this.type == 5)  ==>  (orig(this) has only one value)
+this.type one of { 4, 5 }
+===========================================================================
+ikrs.json.AbstractJSONValue.isArray():::EXIT;condition="return == true"
+this.type == 4
+return == true
+orig(this.getClass().getName()) == ikrs.json.JSONArray.class
+===========================================================================
+ikrs.json.AbstractJSONValue.isArray():::EXIT;condition="not(return == true)"
+this.type == 5
+return == false
+orig(this) has only one value
+orig(this.getClass().getName()) == ikrs.json.JSONObject.class
+===========================================================================
+ikrs.json.AbstractJSONValue.isBoolean():::ENTER
+this.type >= 1
+===========================================================================
+ikrs.json.AbstractJSONValue.isBoolean():::EXIT
+this.type == orig(this.type)
+(return == true)  ==>  (orig(this.getClass().getName()) == ikrs.json.JSONBoolean.class)
+(return == true)  ==>  (this.type == 2)
+this.type >= 1
+===========================================================================
+ikrs.json.AbstractJSONValue.isBoolean():::EXIT;condition="return == true"
+this.type == 2
+return == true
+orig(this.getClass().getName()) == ikrs.json.JSONBoolean.class
+===========================================================================
+ikrs.json.AbstractJSONValue.isBoolean():::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+ikrs.json.AbstractJSONValue.isNull():::ENTER
+this.type >= 1
+===========================================================================
+ikrs.json.AbstractJSONValue.isNull():::EXIT
+this.type == orig(this.type)
+this.type >= 1
+return == false
+===========================================================================
+ikrs.json.AbstractJSONValue.isNull():::EXIT;condition="not(return == true)"
+===========================================================================
+ikrs.json.AbstractJSONValue.isNumber():::ENTER
+===========================================================================
+ikrs.json.AbstractJSONValue.isNumber():::EXIT
+this.type == orig(this.type)
+(this.type == 1)  <==>  (return == true)
+(this.type == 1)  ==>  (orig(this.getClass().getName()) == ikrs.json.JSONNumber.class)
+(this.type one of { 3, 4, 5 })  <==>  (return == false)
+===========================================================================
+ikrs.json.AbstractJSONValue.isNumber():::EXIT;condition="return == true"
+this.type == 1
+return == true
+orig(this.getClass().getName()) == ikrs.json.JSONNumber.class
+===========================================================================
+ikrs.json.AbstractJSONValue.isNumber():::EXIT;condition="not(return == true)"
+this.type one of { 3, 4, 5 }
+return == false
+===========================================================================
+ikrs.json.AbstractJSONValue.isObject():::ENTER
+this has only one value
+this.getClass().getName() == ikrs.json.JSONObject.class
+this.type == 5
+===========================================================================
+ikrs.json.AbstractJSONValue.isObject():::EXIT
+this.type == orig(this.type)
+this.type == 5
+return == true
+===========================================================================
+ikrs.json.AbstractJSONValue.isObject():::EXIT;condition="return == true"
+===========================================================================
+ikrs.json.AbstractJSONValue.isString():::ENTER
+this.type one of { 3, 4, 5 }
+===========================================================================
+ikrs.json.AbstractJSONValue.isString():::EXIT
+this.type == orig(this.type)
+(this.type == 3)  <==>  (return == true)
+(this.type == 3)  ==>  (orig(this.getClass().getName()) == ikrs.json.JSONString.class)
+(this.type one of { 4, 5 })  <==>  (return == false)
+this.type one of { 3, 4, 5 }
+===========================================================================
+ikrs.json.AbstractJSONValue.isString():::EXIT;condition="return == true"
+this.type == 3
+return == true
+orig(this.getClass().getName()) == ikrs.json.JSONString.class
+===========================================================================
+ikrs.json.AbstractJSONValue.isString():::EXIT;condition="not(return == true)"
+this.type one of { 4, 5 }
+return == false
+===========================================================================
+ikrs.json.AbstractJSONValue.isValidTypeID(int):::ENTER
+this.type == 0
+arg0 >= 0
+===========================================================================
+ikrs.json.AbstractJSONValue.isValidTypeID(int):::EXIT
+this.type == orig(this.type)
+this.type == 0
+return == true
+===========================================================================
+ikrs.json.AbstractJSONValue.isValidTypeID(int):::EXIT;condition="return == true"
+===========================================================================
+ikrs.json.AbstractJSONValue.toJSONString():::ENTER
+this.type one of { 4, 5 }
+===========================================================================
+ikrs.json.AbstractJSONValue.toJSONString():::EXIT
+this.type == orig(this.type)
+this.type one of { 4, 5 }
+===========================================================================
+ikrs.json.JSONArray:::OBJECT
+this.list != null
+this.list[] elements != null
+this.list.getClass().getName() == java.util.ArrayList.class
+this.type == 4
+===========================================================================
+ikrs.json.JSONArray.JSONArray():::EXIT
+this.list[] == []
+this.list[].getClass().getName() == []
+===========================================================================
+ikrs.json.JSONArray.asJSONArray():::ENTER
+size(this.list[]) one of { 1, 3, 5 }
+===========================================================================
+ikrs.json.JSONArray.asJSONArray():::EXIT
+this.list == return.list
+this.list == orig(this.list)
+this.list[] == orig(this.list[])
+this.list.getClass().getName() == return.list.getClass().getName()
+this.list.getClass().getName() == orig(this.list.getClass().getName())
+this.type == return.type
+this.type == orig(this.type)
+return == orig(this)
+size(this.list[]) one of { 1, 3, 5 }
+size(return.list[]) one of { 1, 3, 5 }
+===========================================================================
+ikrs.json.JSONArray.getArray():::ENTER
+===========================================================================
+ikrs.json.JSONArray.getArray():::EXIT
+this.list == return
+this.list[] == orig(this.list[])
+this.list.getClass().getName() == return.getClass().getName()
+this.type == orig(this.type)
+return == orig(this.list)
+return.getClass().getName() == orig(this.list.getClass().getName())
+return != null
+return[] elements != null
+return.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+ikrs.json.JSONArray.write(java.io.Writer):::ENTER
+this.list[].getClass().getName() one of { [ikrs.json.JSONNumber, ikrs.json.JSONNumber, ikrs.json.JSONNumber, ikrs.json.JSONNumber, ikrs.json.JSONNumber], [ikrs.json.JSONNumber, ikrs.json.JSONString, ikrs.json.JSONBoolean] }
+arg0.getClass().getName() == java.io.CharArrayWriter.class
+size(this.list[]) one of { 3, 5 }
+===========================================================================
+ikrs.json.JSONArray.write(java.io.Writer):::EXIT
+this.list == orig(this.list)
+this.list[] == orig(this.list[])
+this.list.getClass().getName() == orig(this.list.getClass().getName())
+this.type == orig(this.type)
+this.list[].getClass().getName() one of { [ikrs.json.JSONNumber, ikrs.json.JSONNumber, ikrs.json.JSONNumber, ikrs.json.JSONNumber, ikrs.json.JSONNumber], [ikrs.json.JSONNumber, ikrs.json.JSONString, ikrs.json.JSONBoolean] }
+size(this.list[]) one of { 3, 5 }
+===========================================================================
+ikrs.json.JSONBoolean:::OBJECT
+this.bool != null
+this.type == 2
+===========================================================================
+ikrs.json.JSONBoolean.JSONBoolean(java.lang.Boolean):::ENTER
+===========================================================================
+ikrs.json.JSONBoolean.JSONBoolean(java.lang.Boolean):::EXIT
+this.bool == orig(arg0)
+===========================================================================
+ikrs.json.JSONBoolean.getBoolean():::ENTER
+===========================================================================
+ikrs.json.JSONBoolean.getBoolean():::EXIT
+this.bool == return
+this.type == orig(this.type)
+return == orig(this.bool)
+===========================================================================
+ikrs.json.JSONBoolean.write(java.io.Writer):::ENTER
+this has only one value
+this.bool has only one value
+arg0 has only one value
+arg0.getClass().getName() == java.io.CharArrayWriter.class
+===========================================================================
+ikrs.json.JSONBoolean.write(java.io.Writer):::EXIT
+this.bool == orig(this.bool)
+this.type == orig(this.type)
+this.bool has only one value
+===========================================================================
+ikrs.json.JSONNull:::OBJECT
+this.type == 0
+===========================================================================
+ikrs.json.JSONNull.JSONNull():::EXIT
+===========================================================================
+ikrs.json.JSONNull.write(java.io.Writer):::ENTER
+this has only one value
+arg0 != null
+arg0.getClass().getName() == java.io.CharArrayWriter.class
+===========================================================================
+ikrs.json.JSONNull.write(java.io.Writer):::EXIT
+this.type == orig(this.type)
+===========================================================================
+ikrs.json.JSONNumber:::OBJECT
+this.number != null
+this.number.getClass().getName() == java.lang.Integer.class
+this.type == 1
+===========================================================================
+ikrs.json.JSONNumber.JSONNumber(java.lang.Number):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.lang.Integer.class
+===========================================================================
+ikrs.json.JSONNumber.JSONNumber(java.lang.Number):::EXIT
+this.number == orig(arg0)
+this.number.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+ikrs.json.JSONNumber.getNumber():::ENTER
+===========================================================================
+ikrs.json.JSONNumber.getNumber():::EXIT
+this.number == return
+this.number.getClass().getName() == return.getClass().getName()
+this.type == orig(this.type)
+return == orig(this.number)
+return.getClass().getName() == orig(this.number.getClass().getName())
+return.getClass().getName() == java.lang.Integer.class
+===========================================================================
+ikrs.json.JSONNumber.parseNumber(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+ikrs.json.JSONNumber.parseNumber(java.lang.String):::EXIT159
+===========================================================================
+ikrs.json.JSONNumber.parseNumber(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+return != null
+return.getClass().getName() == java.lang.Integer.class
+===========================================================================
+ikrs.json.JSONNumber.write(java.io.Writer):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.io.CharArrayWriter.class
+this.number.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+ikrs.json.JSONNumber.write(java.io.Writer):::EXIT
+this.number == orig(this.number)
+this.number.getClass().getName() == orig(this.number.getClass().getName())
+this.type == orig(this.type)
+this.number.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+ikrs.json.JSONObject:::OBJECT
+this.map != null
+this.map.getClass().getName() == java.util.TreeMap.class
+this.type == 5
+===========================================================================
+ikrs.json.JSONObject.JSONObject():::EXIT
+===========================================================================
+ikrs.json.JSONObject.asJSONObject():::ENTER
+===========================================================================
+ikrs.json.JSONObject.asJSONObject():::EXIT
+this.map == return.map
+this.map == orig(this.map)
+this.map.getClass().getName() == return.map.getClass().getName()
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+this.type == return.type
+this.type == orig(this.type)
+return == orig(this)
+===========================================================================
+ikrs.json.JSONObject.getMap():::ENTER
+===========================================================================
+ikrs.json.JSONObject.getMap():::EXIT
+this.map == return
+this.map.getClass().getName() == return.getClass().getName()
+this.type == orig(this.type)
+return == orig(this.map)
+return.getClass().getName() == orig(this.map.getClass().getName())
+return != null
+return.getClass().getName() == java.util.TreeMap.class
+===========================================================================
+ikrs.json.JSONObject.getObject():::ENTER
+===========================================================================
+ikrs.json.JSONObject.getObject():::EXIT
+this.map == return
+this.map.getClass().getName() == return.getClass().getName()
+this.type == orig(this.type)
+return == orig(this.map)
+return.getClass().getName() == orig(this.map.getClass().getName())
+return != null
+return.getClass().getName() == java.util.TreeMap.class
+===========================================================================
+ikrs.json.JSONObject.write(java.io.Writer):::ENTER
+arg0.getClass().getName() == java.io.CharArrayWriter.class
+this.map.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+ikrs.json.JSONObject.write(java.io.Writer):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+this.type == orig(this.type)
+this.map.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+ikrs.json.JSONString:::OBJECT
+this.string != null
+this.type == 3
+===========================================================================
+ikrs.json.JSONString.JSONString(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+ikrs.json.JSONString.JSONString(java.lang.String):::EXIT
+this.string == orig(arg0)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+ikrs.json.JSONString.asJSONString():::ENTER
+this.string.toString == "2.0"
+===========================================================================
+ikrs.json.JSONString.asJSONString():::EXIT
+this.string == return.string
+this.string == orig(this.string)
+this.string.toString == orig(this.string.toString)
+this.type == return.type
+this.type == orig(this.type)
+return == orig(this)
+this.string.toString == "2.0"
+return.string.toString == "2.0"
+===========================================================================
+ikrs.json.JSONString.getString():::ENTER
+===========================================================================
+ikrs.json.JSONString.getString():::EXIT
+this.string == return
+this.string.toString == orig(this.string.toString)
+this.type == orig(this.type)
+return == orig(this.string)
+return != null
+===========================================================================
+ikrs.json.JSONString.write(java.io.Writer):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.io.CharArrayWriter.class
+===========================================================================
+ikrs.json.JSONString.write(java.io.Writer):::EXIT
+this.string == orig(this.string)
+this.string.toString == orig(this.string.toString)
+this.type == orig(this.type)
+===========================================================================
+ikrs.json.JSONString.writeJSON(java.io.Writer, java.lang.String):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.io.CharArrayWriter.class
+arg1 != null
+===========================================================================
+ikrs.json.JSONString.writeJSON(java.io.Writer, java.lang.String):::EXIT
+arg1.toString == orig(arg1.toString)
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder:::OBJECT
+this.valueStack != null
+this.memberNameStack != null
+this.arrayIndexStack != null
+this.factory != null
+this.factory.getClass().getName() == ikrs.json.rpc.JSONRPCValueFactory.class
+this.reader != null
+this.reader.getClass().getName() == java.io.StringReader.class
+this.currentChar >= 0
+this.currentValue >= -1
+this.readPosition >= 0
+this.lineNumber == 0
+this.columnNumber >= 0
+this.caseSensitive == false
+this.lastPoppedValue.getClass().getName() != this.factory.getClass().getName()
+this.lastPoppedValue.getClass().getName() != this.reader.getClass().getName()
+this.currentMemberValue.getClass().getName() != this.factory.getClass().getName()
+this.currentMemberValue.getClass().getName() != this.reader.getClass().getName()
+this.factory.getClass().getName() != this.reader.getClass().getName()
+this.currentChar >= this.currentValue
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.ConfigurableJSONBuilder(java.io.Reader, boolean, ikrs.json.parser.JSONValueFactory):::ENTER
+arg0.getClass().getName() == java.io.StringReader.class
+arg1 == false
+arg2.getClass().getName() == ikrs.json.rpc.JSONRPCValueFactory.class
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.ConfigurableJSONBuilder(java.io.Reader, boolean, ikrs.json.parser.JSONValueFactory):::EXIT
+this.lastPoppedValue == this.currentMemberValue
+this.factory == orig(arg2)
+this.factory.getClass().getName() == orig(arg2.getClass().getName())
+this.reader == orig(arg0)
+this.reader.getClass().getName() == orig(arg0.getClass().getName())
+this.currentChar == this.currentValue
+this.caseSensitive == orig(arg1)
+this.lastPoppedValue == null
+this.currentMemberName == null
+this.currentArrayIndex == null
+this.currentChar == 0
+this.readPosition == 0
+this.columnNumber == 0
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireArrayBegin():::ENTER
+this.currentChar == this.currentValue
+this.lastPoppedValue.getClass().getName() == ikrs.json.JSONObject.class
+this.currentMemberName.toString == "params"
+this.currentMemberValue.getClass().getName() == ikrs.json.JSONString.class
+this.currentChar == 91
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireArrayBegin():::EXIT
+this.lastPoppedValue == orig(this.lastPoppedValue)
+this.lastPoppedValue.getClass().getName() == orig(this.lastPoppedValue.getClass().getName())
+this.currentMemberName == orig(this.currentMemberName)
+this.currentMemberName.toString == orig(this.currentMemberName.toString)
+this.currentMemberValue == orig(this.currentMemberValue)
+this.currentMemberValue.getClass().getName() == orig(this.currentMemberValue.getClass().getName())
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.lastPoppedValue.getClass().getName() == ikrs.json.JSONObject.class
+this.currentMemberName.toString == "params"
+this.currentMemberValue.getClass().getName() == ikrs.json.JSONString.class
+this.currentChar == 91
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireArrayElementEnd():::ENTER
+this.currentChar == this.currentValue
+this.currentMemberName != null
+this.currentMemberName.toString == "params"
+this.currentMemberValue != null
+this.currentArrayIndex != null
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireArrayElementEnd():::EXIT
+this.lastPoppedValue == orig(this.lastPoppedValue)
+this.lastPoppedValue.getClass().getName() == orig(this.lastPoppedValue.getClass().getName())
+this.currentMemberName == orig(this.currentMemberName)
+this.currentMemberName.toString == orig(this.currentMemberName.toString)
+this.currentMemberValue == orig(this.currentMemberValue)
+this.currentMemberValue.getClass().getName() == orig(this.currentMemberValue.getClass().getName())
+this.currentArrayIndex == orig(this.currentArrayIndex)
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.currentMemberName != null
+this.currentMemberName.toString == "params"
+this.currentMemberValue != null
+this.currentArrayIndex != null
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireArrayEnd():::ENTER
+this.currentChar == this.currentValue
+this.currentMemberName.toString == "params"
+this.currentChar == 93
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireArrayEnd():::EXIT
+this.lastPoppedValue == this.currentMemberValue
+this.lastPoppedValue.getClass().getName() == this.currentMemberValue.getClass().getName()
+this.currentMemberName == orig(this.currentMemberName)
+this.currentMemberName.toString == orig(this.currentMemberName.toString)
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.lastPoppedValue.getClass().getName() == ikrs.json.JSONArray.class
+this.currentMemberName.toString == "params"
+this.currentChar == 93
+this.factory.getClass().getName() != orig(this.currentMemberValue.getClass().getName())
+this.reader.getClass().getName() != orig(this.currentMemberValue.getClass().getName())
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireFalseRead(java.lang.String):::ENTER
+this.currentChar == this.currentValue
+this.lastPoppedValue.getClass().getName() == ikrs.json.JSONObject.class
+this.currentMemberName.toString == "params"
+this.currentMemberValue.getClass().getName() == ikrs.json.JSONString.class
+this.currentChar == 101
+this.readPosition one of { 75, 77, 96 }
+this.columnNumber one of { 75, 77, 96 }
+arg0.toString == "false"
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireFalseRead(java.lang.String):::EXIT
+this.lastPoppedValue == orig(this.lastPoppedValue)
+this.lastPoppedValue.getClass().getName() == orig(this.lastPoppedValue.getClass().getName())
+this.currentMemberName == orig(this.currentMemberName)
+this.currentMemberName.toString == orig(this.currentMemberName.toString)
+this.currentArrayIndex == orig(this.currentArrayIndex)
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+arg0.toString == orig(arg0.toString)
+this.lastPoppedValue.getClass().getName() == ikrs.json.JSONObject.class
+this.currentMemberName.toString == "params"
+this.currentMemberValue.getClass().getName() == ikrs.json.JSONBoolean.class
+this.currentChar == 101
+this.readPosition one of { 75, 77, 96 }
+this.columnNumber one of { 75, 77, 96 }
+arg0.toString == "false"
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireJSONBegin():::ENTER
+this.lastPoppedValue == this.currentMemberValue
+this.currentChar == this.currentValue
+this.lastPoppedValue == null
+this.currentMemberName == null
+this.currentArrayIndex == null
+this.currentChar == 0
+this.readPosition == 0
+this.columnNumber == 0
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireJSONBegin():::EXIT
+this.lastPoppedValue == this.currentMemberValue
+this.lastPoppedValue == orig(this.lastPoppedValue)
+this.lastPoppedValue == orig(this.currentMemberValue)
+this.currentMemberName == orig(this.currentMemberName)
+this.currentArrayIndex == orig(this.currentArrayIndex)
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.lastPoppedValue == null
+this.currentMemberName == null
+this.currentArrayIndex == null
+this.currentChar == 0
+this.readPosition == 0
+this.columnNumber == 0
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireJSONEnd():::ENTER
+this.lastPoppedValue == this.currentMemberValue
+this.lastPoppedValue.getClass().getName() == this.currentMemberValue.getClass().getName()
+this.lastPoppedValue.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCRequest.class
+this.currentMemberName == null
+this.currentArrayIndex == null
+this.currentChar one of { 32, 65535 }
+this.currentValue one of { -1, 32 }
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireJSONEnd():::EXIT
+this.lastPoppedValue == this.currentMemberValue
+this.lastPoppedValue == orig(this.lastPoppedValue)
+this.lastPoppedValue == orig(this.currentMemberValue)
+this.lastPoppedValue.getClass().getName() == this.currentMemberValue.getClass().getName()
+this.lastPoppedValue.getClass().getName() == orig(this.lastPoppedValue.getClass().getName())
+this.lastPoppedValue.getClass().getName() == orig(this.currentMemberValue.getClass().getName())
+this.currentMemberName == orig(this.currentMemberName)
+this.currentArrayIndex == orig(this.currentArrayIndex)
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == orig(this.currentChar)
+this.currentValue == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.lastPoppedValue.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCRequest.class
+this.currentMemberName == null
+this.currentArrayIndex == null
+this.currentChar one of { 32, 65535 }
+this.currentValue one of { -1, 32 }
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireMemberBegin():::ENTER
+this.currentChar == this.currentValue
+this.currentChar == 39
+this.readPosition >= 2
+this.columnNumber >= 2
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireMemberBegin():::EXIT
+this.lastPoppedValue == orig(this.lastPoppedValue)
+this.lastPoppedValue.getClass().getName() == orig(this.lastPoppedValue.getClass().getName())
+this.currentMemberName == orig(this.currentMemberName)
+this.currentMemberName.toString == orig(this.currentMemberName.toString)
+this.currentMemberValue == orig(this.currentMemberValue)
+this.currentMemberValue.getClass().getName() == orig(this.currentMemberValue.getClass().getName())
+this.currentArrayIndex == orig(this.currentArrayIndex)
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.currentChar == 39
+this.readPosition >= 2
+this.columnNumber >= 2
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireMemberEnd():::ENTER
+this.currentChar == this.currentValue
+this.currentMemberName != null
+this.currentMemberValue != null
+this.currentChar one of { 32, 39, 44 }
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireMemberEnd():::EXIT
+this.lastPoppedValue == orig(this.lastPoppedValue)
+this.lastPoppedValue.getClass().getName() == orig(this.lastPoppedValue.getClass().getName())
+this.currentMemberName == orig(this.currentMemberName)
+this.currentMemberName.toString == orig(this.currentMemberName.toString)
+this.currentMemberValue == orig(this.currentMemberValue)
+this.currentMemberValue.getClass().getName() == orig(this.currentMemberValue.getClass().getName())
+this.currentArrayIndex == orig(this.currentArrayIndex)
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.currentMemberName != null
+this.currentMemberValue != null
+this.currentChar one of { 32, 39, 44 }
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireMemberNameRead(java.lang.String):::ENTER
+this.currentChar == this.currentValue
+this.currentChar == 39
+arg0 != null
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireMemberNameRead(java.lang.String):::EXIT
+this.lastPoppedValue == orig(this.lastPoppedValue)
+this.lastPoppedValue.getClass().getName() == orig(this.lastPoppedValue.getClass().getName())
+this.currentMemberName == orig(arg0)
+this.currentMemberValue == orig(this.currentMemberValue)
+this.currentMemberValue.getClass().getName() == orig(this.currentMemberValue.getClass().getName())
+this.currentArrayIndex == orig(this.currentArrayIndex)
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+arg0.toString == orig(arg0.toString)
+this.currentMemberName != null
+this.currentChar == 39
+this.currentMemberName.toString != orig(this.currentMemberName.toString)
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireNumberRead(java.lang.String):::ENTER
+this.currentChar == this.currentValue
+this.currentMemberName != null
+this.currentMemberValue != null
+this.currentArrayIndex != null
+this.currentChar one of { 32, 44 }
+arg0 != null
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireNumberRead(java.lang.String):::EXIT
+this.lastPoppedValue == orig(this.lastPoppedValue)
+this.lastPoppedValue.getClass().getName() == orig(this.lastPoppedValue.getClass().getName())
+this.currentMemberName == orig(this.currentMemberName)
+this.currentMemberName.toString == orig(this.currentMemberName.toString)
+this.currentArrayIndex == orig(this.currentArrayIndex)
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+arg0.toString == orig(arg0.toString)
+this.currentMemberName != null
+this.currentMemberValue != null
+this.currentMemberValue.getClass().getName() == ikrs.json.JSONNumber.class
+this.currentArrayIndex != null
+this.currentChar one of { 32, 44 }
+this.lastPoppedValue.getClass().getName() != this.currentMemberValue.getClass().getName()
+this.factory.getClass().getName() != orig(this.currentMemberValue.getClass().getName())
+this.reader.getClass().getName() != orig(this.currentMemberValue.getClass().getName())
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireObjectBegin():::ENTER
+this.currentChar == this.currentValue
+this.lastPoppedValue == null
+this.currentMemberName.toString one of { "__jsonclass__", "params" }
+this.currentMemberValue.getClass().getName() == ikrs.json.JSONString.class
+this.currentChar == 123
+this.readPosition one of { 1, 38, 63 }
+this.columnNumber one of { 1, 38, 63 }
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireObjectBegin():::EXIT
+this.lastPoppedValue == orig(this.lastPoppedValue)
+this.currentMemberName == orig(this.currentMemberName)
+this.currentMemberName.toString == orig(this.currentMemberName.toString)
+this.currentMemberValue == orig(this.currentMemberValue)
+this.currentMemberValue.getClass().getName() == orig(this.currentMemberValue.getClass().getName())
+this.currentArrayIndex == orig(this.currentArrayIndex)
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.lastPoppedValue == null
+this.currentMemberName.toString one of { "__jsonclass__", "params" }
+this.currentMemberValue.getClass().getName() == ikrs.json.JSONString.class
+this.currentChar == 123
+this.readPosition one of { 1, 38, 63 }
+this.columnNumber one of { 1, 38, 63 }
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireObjectEnd():::ENTER
+this.lastPoppedValue.getClass().getName() == ikrs.json.JSONArray.class
+this.currentMemberName.toString one of { "D", "__jsonclass__", "id" }
+this.currentChar one of { 32, 44, 65535 }
+this.currentValue one of { -1, 32, 44 }
+this.currentChar % this.currentValue == 0
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireObjectEnd():::EXIT
+this.lastPoppedValue == this.currentMemberValue
+this.lastPoppedValue.getClass().getName() == this.currentMemberValue.getClass().getName()
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == orig(this.currentChar)
+this.currentValue == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.currentMemberName.toString one of { "__jsonclass__", "params" }
+this.currentChar one of { 32, 44, 65535 }
+this.currentValue one of { -1, 32, 44 }
+this.lastPoppedValue.getClass().getName() != orig(this.currentMemberValue.getClass().getName())
+this.factory.getClass().getName() != orig(this.currentMemberValue.getClass().getName())
+this.reader.getClass().getName() != orig(this.currentMemberValue.getClass().getName())
+this.currentChar % this.currentValue == 0
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireStringRead(java.lang.String):::ENTER
+this.currentChar == this.currentValue
+this.lastPoppedValue.getClass().getName() == ikrs.json.JSONObject.class
+this.currentMemberName != null
+this.currentMemberName.toString one of { "jsonrpc", "method", "params" }
+this.currentChar == 39
+arg0 != null
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.fireStringRead(java.lang.String):::EXIT
+this.lastPoppedValue == orig(this.lastPoppedValue)
+this.lastPoppedValue.getClass().getName() == orig(this.lastPoppedValue.getClass().getName())
+this.currentMemberName == orig(this.currentMemberName)
+this.currentMemberName.toString == orig(this.currentMemberName.toString)
+this.currentArrayIndex == orig(this.currentArrayIndex)
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+arg0.toString == orig(arg0.toString)
+this.lastPoppedValue.getClass().getName() == ikrs.json.JSONObject.class
+this.currentMemberName != null
+this.currentMemberName.toString one of { "jsonrpc", "method", "params" }
+this.currentMemberValue != null
+this.currentMemberValue.getClass().getName() == ikrs.json.JSONString.class
+this.currentChar == 39
+this.factory.getClass().getName() != orig(this.currentMemberValue.getClass().getName())
+this.reader.getClass().getName() != orig(this.currentMemberValue.getClass().getName())
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.getResult():::ENTER
+this.lastPoppedValue == this.currentMemberValue
+this.lastPoppedValue.getClass().getName() == this.currentMemberValue.getClass().getName()
+this.lastPoppedValue.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCRequest.class
+this.currentMemberName == null
+this.currentArrayIndex == null
+this.currentChar one of { 32, 65535 }
+this.currentValue one of { -1, 32 }
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.getResult():::EXIT
+this.lastPoppedValue == return
+this.lastPoppedValue.getClass().getName() == return.getClass().getName()
+this.currentMemberName == orig(this.currentMemberName)
+this.currentMemberValue == return
+this.currentMemberValue.getClass().getName() == return.getClass().getName()
+this.currentArrayIndex == orig(this.currentArrayIndex)
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == orig(this.currentChar)
+this.currentValue == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+return == orig(this.lastPoppedValue)
+return == orig(this.currentMemberValue)
+return.getClass().getName() == orig(this.lastPoppedValue.getClass().getName())
+return.getClass().getName() == orig(this.currentMemberValue.getClass().getName())
+this.currentMemberName == null
+this.currentArrayIndex == null
+this.currentChar one of { 32, 65535 }
+this.currentValue one of { -1, 32 }
+return.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCRequest.class
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.popFromStack():::ENTER
+this.currentMemberName != null
+this.currentMemberValue != null
+this.currentChar % this.currentValue == 0
+===========================================================================
+ikrs.json.parser.ConfigurableJSONBuilder.popFromStack():::EXIT
+this.lastPoppedValue == return
+this.lastPoppedValue.getClass().getName() == return.getClass().getName()
+this.currentMemberValue == return
+this.currentMemberValue.getClass().getName() == return.getClass().getName()
+this.valueStack == orig(this.valueStack)
+this.memberNameStack == orig(this.memberNameStack)
+this.arrayIndexStack == orig(this.arrayIndexStack)
+this.factory == orig(this.factory)
+this.factory.getClass().getName() == orig(this.factory.getClass().getName())
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == orig(this.currentChar)
+this.currentValue == orig(this.currentValue)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.currentMemberName.toString one of { "__jsonclass__", "params" }
+return != null
+this.currentMemberName.toString >= orig(this.currentMemberName.toString)
+this.factory.getClass().getName() != return.getClass().getName()
+this.factory.getClass().getName() != orig(this.lastPoppedValue.getClass().getName())
+this.factory.getClass().getName() != orig(this.currentMemberValue.getClass().getName())
+this.reader.getClass().getName() != return.getClass().getName()
+this.reader.getClass().getName() != orig(this.lastPoppedValue.getClass().getName())
+this.reader.getClass().getName() != orig(this.currentMemberValue.getClass().getName())
+this.currentChar % this.currentValue == 0
+===========================================================================
+ikrs.json.parser.DefaultJSONValueFactory:::OBJECT
+===========================================================================
+ikrs.json.parser.DefaultJSONValueFactory.DefaultJSONValueFactory():::EXIT
+===========================================================================
+ikrs.json.parser.DefaultJSONValueFactory.createArray(java.lang.String):::ENTER
+arg0.toString == "params"
+===========================================================================
+ikrs.json.parser.DefaultJSONValueFactory.createArray(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "params"
+return.list[] == []
+return.list[].getClass().getName() == []
+return.list.getClass().getName() == java.util.ArrayList.class
+return.type == 4
+===========================================================================
+ikrs.json.parser.DefaultJSONValueFactory.createBoolean(java.lang.Boolean, java.lang.String):::ENTER
+arg1.toString == "params"
+===========================================================================
+ikrs.json.parser.DefaultJSONValueFactory.createBoolean(java.lang.Boolean, java.lang.String):::EXIT
+arg1.toString == orig(arg1.toString)
+return.bool == orig(arg0)
+arg1.toString == "params"
+return.type == 2
+===========================================================================
+ikrs.json.parser.DefaultJSONValueFactory.createNumber(java.lang.Number, java.lang.String):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.lang.Integer.class
+arg1 != null
+===========================================================================
+ikrs.json.parser.DefaultJSONValueFactory.createNumber(java.lang.Number, java.lang.String):::EXIT
+arg1.toString == orig(arg1.toString)
+return.number == orig(arg0)
+return.number.getClass().getName() == orig(arg0.getClass().getName())
+return != null
+return.number != null
+return.number.getClass().getName() == java.lang.Integer.class
+return.type == 1
+===========================================================================
+ikrs.json.parser.DefaultJSONValueFactory.createObject(java.lang.String):::ENTER
+arg0.toString one of { "__jsonclass__", "params" }
+===========================================================================
+ikrs.json.parser.DefaultJSONValueFactory.createObject(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "__jsonclass__", "params" }
+return.map.getClass().getName() == java.util.TreeMap.class
+return.type == 5
+===========================================================================
+ikrs.json.parser.DefaultJSONValueFactory.createString(java.lang.String, java.lang.String):::ENTER
+arg0 != null
+arg1 != null
+arg1.toString one of { "jsonrpc", "method", "params" }
+===========================================================================
+ikrs.json.parser.DefaultJSONValueFactory.createString(java.lang.String, java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+return.string == orig(arg0)
+arg1.toString one of { "jsonrpc", "method", "params" }
+return != null
+return.string != null
+return.type == 3
+===========================================================================
+ikrs.json.parser.JSONParser:::OBJECT
+this.reader != null
+this.reader.getClass().getName() == java.io.StringReader.class
+this.currentChar >= 0
+this.readPosition >= 0
+this.lineNumber == 0
+this.columnNumber >= 0
+this.caseSensitive == false
+this.currentChar >= this.currentValue
+===========================================================================
+ikrs.json.parser.JSONParser.JSONParser(java.io.Reader, boolean):::ENTER
+arg0.getClass().getName() == java.io.StringReader.class
+arg1 == false
+===========================================================================
+ikrs.json.parser.JSONParser.JSONParser(java.io.Reader, boolean):::EXIT
+this.reader == orig(arg0)
+this.reader.getClass().getName() == orig(arg0.getClass().getName())
+this.currentChar == this.currentValue
+this.caseSensitive == orig(arg1)
+this.currentChar == 0
+this.readPosition == 0
+this.columnNumber == 0
+===========================================================================
+ikrs.json.parser.JSONParser.isDigit(char):::ENTER
+this.currentChar == this.currentValue
+this.currentChar == arg0
+this.readPosition >= 1
+this.columnNumber >= 1
+===========================================================================
+ikrs.json.parser.JSONParser.isDigit(char):::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.currentChar == orig(arg0)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+(return == false)  ==>  (this.columnNumber >= 1)
+(return == false)  ==>  (this.readPosition >= 1)
+this.readPosition >= 1
+this.columnNumber >= 1
+===========================================================================
+ikrs.json.parser.JSONParser.isDigit(char):::EXIT;condition="return == true"
+return == true
+===========================================================================
+ikrs.json.parser.JSONParser.isDigit(char):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+ikrs.json.parser.JSONParser.isWhitespace(int):::ENTER
+this.currentChar == this.currentValue
+this.currentChar == arg0
+===========================================================================
+ikrs.json.parser.JSONParser.isWhitespace(int):::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.currentChar == orig(arg0)
+this.readPosition == orig(this.readPosition)
+this.lineNumber == orig(this.lineNumber)
+this.columnNumber == orig(this.columnNumber)
+this.caseSensitive == orig(this.caseSensitive)
+(this.currentChar == 32)  <==>  (return == true)
+===========================================================================
+ikrs.json.parser.JSONParser.isWhitespace(int):::EXIT;condition="return == true"
+this.currentChar == 32
+return == true
+===========================================================================
+ikrs.json.parser.JSONParser.isWhitespace(int):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+ikrs.json.parser.JSONParser.parse():::ENTER
+this.currentChar == this.currentValue
+this.currentChar == 0
+this.readPosition == 0
+this.columnNumber == 0
+===========================================================================
+ikrs.json.parser.JSONParser.parse():::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.lineNumber == orig(this.lineNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.currentChar one of { 32, 65535 }
+this.currentValue one of { -1, 32 }
+return == true
+===========================================================================
+ikrs.json.parser.JSONParser.parse():::EXIT;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readArray():::ENTER
+this.currentChar == this.currentValue
+this.currentChar == 91
+===========================================================================
+ikrs.json.parser.JSONParser.readArray():::EXIT438
+===========================================================================
+ikrs.json.parser.JSONParser.readArray():::EXIT438;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readArray():::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.lineNumber == orig(this.lineNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.currentChar one of { 32, 44 }
+return == true
+this.currentChar < orig(this.currentChar)
+this.readPosition > orig(this.readPosition)
+this.columnNumber > orig(this.columnNumber)
+===========================================================================
+ikrs.json.parser.JSONParser.readArray():::EXIT;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readChar():::ENTER
+this.currentChar == this.currentValue
+===========================================================================
+ikrs.json.parser.JSONParser.readChar():::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.lineNumber == orig(this.lineNumber)
+this.caseSensitive == orig(this.caseSensitive)
+(return == true)  <==>  (this.currentChar == this.currentValue)
+(return == true)  ==>  (this.columnNumber - orig(this.columnNumber) - 1 == 0)
+(return == true)  ==>  (this.columnNumber >= 1)
+(return == true)  ==>  (this.readPosition - orig(this.readPosition) - 1 == 0)
+(return == true)  ==>  (this.readPosition >= 1)
+(this.currentChar == 65535)  <==>  (return == false)
+(this.currentChar == 65535)  <==>  (this.currentValue == -1)
+(this.currentChar == 65535)  ==>  (orig(this.columnNumber) one of { 92, 94, 113 })
+(this.currentChar == 65535)  ==>  (orig(this.currentChar) == 125)
+(this.currentChar == 65535)  ==>  (orig(this.readPosition) one of { 92, 94, 113 })
+(this.currentChar == 65535)  ==>  (this.columnNumber one of { 93, 95, 114 })
+(this.currentChar == 65535)  ==>  (this.readPosition one of { 93, 95, 114 })
+this.currentValue != 0
+this.readPosition >= 1
+this.columnNumber >= 1
+this.currentChar % this.currentValue == 0
+this.readPosition - orig(this.readPosition) - 1 == 0
+this.columnNumber - orig(this.columnNumber) - 1 == 0
+===========================================================================
+ikrs.json.parser.JSONParser.readChar():::EXIT;condition="return == true"
+this.currentChar == this.currentValue
+return == true
+===========================================================================
+ikrs.json.parser.JSONParser.readChar():::EXIT;condition="not(return == true)"
+this.currentChar == 65535
+this.currentValue == -1
+this.readPosition one of { 93, 95, 114 }
+this.columnNumber one of { 93, 95, 114 }
+return == false
+orig(this.currentChar) == 125
+orig(this.readPosition) one of { 92, 94, 113 }
+orig(this.columnNumber) one of { 92, 94, 113 }
+===========================================================================
+ikrs.json.parser.JSONParser.readExpected(char, java.lang.StringBuffer):::ENTER
+this.currentChar == this.currentValue
+this.readPosition >= 2
+this.columnNumber >= 2
+===========================================================================
+ikrs.json.parser.JSONParser.readExpected(char, java.lang.StringBuffer):::EXIT806
+(return == false)  <==>  (this.currentChar > orig(arg0))
+(return == false)  ==>  (orig(arg0) == 39)
+(return == false)  ==>  (orig(arg1) == null)
+(return == false)  ==>  (orig(this.columnNumber) >= 2)
+(return == false)  ==>  (orig(this.currentChar) >= orig(arg0))
+(return == false)  ==>  (orig(this.readPosition) >= 2)
+(return == true)  <==>  (this.currentChar == orig(arg0))
+(return == true)  ==>  (orig(this.currentChar) != orig(arg0))
+(return == true)  ==>  (this.currentChar != orig(this.currentChar))
+===========================================================================
+ikrs.json.parser.JSONParser.readExpected(char, java.lang.StringBuffer):::EXIT806;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readExpected(char, java.lang.StringBuffer):::EXIT806;condition="not(return == true)"
+===========================================================================
+ikrs.json.parser.JSONParser.readExpected(char, java.lang.StringBuffer):::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.lineNumber == orig(this.lineNumber)
+this.caseSensitive == orig(this.caseSensitive)
+(return == false)  <==>  (this.currentChar > orig(arg0))
+(return == false)  ==>  (orig(arg0) == 39)
+(return == false)  ==>  (orig(arg1) == null)
+(return == false)  ==>  (orig(this.columnNumber) >= 2)
+(return == false)  ==>  (orig(this.currentChar) >= orig(arg0))
+(return == false)  ==>  (orig(this.readPosition) >= 2)
+(return == true)  <==>  (this.currentChar == orig(arg0))
+(return == true)  ==>  (orig(this.currentChar) != orig(arg0))
+(return == true)  ==>  (this.currentChar != orig(this.currentChar))
+this.currentChar >= orig(arg0)
+this.readPosition - orig(this.readPosition) - 1 == 0
+this.columnNumber - orig(this.columnNumber) - 1 == 0
+===========================================================================
+ikrs.json.parser.JSONParser.readExpected(char, java.lang.StringBuffer):::EXIT;condition="return == true"
+this.currentChar == orig(arg0)
+return == true
+this.currentChar != orig(this.currentChar)
+===========================================================================
+ikrs.json.parser.JSONParser.readExpected(char, java.lang.StringBuffer):::EXIT;condition="not(return == true)"
+return == false
+orig(arg0) == 39
+orig(arg1) == null
+this.currentChar > orig(arg0)
+orig(this.currentChar) >= orig(arg0)
+===========================================================================
+ikrs.json.parser.JSONParser.readFalse(java.lang.StringBuffer):::ENTER
+this.currentChar == this.currentValue
+this.currentChar == 102
+this.readPosition one of { 71, 73, 92 }
+this.columnNumber one of { 71, 73, 92 }
+===========================================================================
+ikrs.json.parser.JSONParser.readFalse(java.lang.StringBuffer):::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.lineNumber == orig(this.lineNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.currentChar == 101
+this.readPosition one of { 75, 77, 96 }
+this.columnNumber one of { 75, 77, 96 }
+return == true
+===========================================================================
+ikrs.json.parser.JSONParser.readFalse(java.lang.StringBuffer):::EXIT;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::ENTER
+this.currentChar == this.currentValue
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::EXIT244
+this.currentChar == this.currentValue
+this.currentChar one of { 32, 44 }
+orig(this.currentChar) one of { 44, 58, 91 }
+this.currentChar <= orig(this.currentChar)
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::EXIT244;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::EXIT249
+this.currentChar == this.currentValue
+this.currentChar one of { 32, 44 }
+orig(this.currentChar) one of { 58, 91 }
+this.currentChar < orig(this.currentChar)
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::EXIT249;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::EXIT252
+this.currentChar one of { 32, 44, 65535 }
+this.currentValue one of { -1, 32, 44 }
+orig(this.currentChar) one of { 0, 58, 91 }
+orig(this.readPosition) one of { 0, 36, 61 }
+orig(this.columnNumber) one of { 0, 36, 61 }
+this.currentChar != orig(this.currentChar)
+this.currentValue != orig(this.currentChar)
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::EXIT252;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::EXIT256
+this.currentChar == this.currentValue
+this.currentChar == 101
+this.readPosition one of { 75, 77, 96 }
+this.columnNumber one of { 75, 77, 96 }
+orig(this.currentChar) == 44
+orig(this.readPosition) one of { 69, 71, 90 }
+orig(this.columnNumber) one of { 69, 71, 90 }
+orig(arg0) == false
+orig(arg1) == true
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::EXIT256;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::EXIT276
+this.currentChar == this.currentValue
+this.currentChar == 39
+orig(this.currentChar) one of { 44, 58 }
+this.currentChar < orig(this.currentChar)
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::EXIT276;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.lineNumber == orig(this.lineNumber)
+this.caseSensitive == orig(this.caseSensitive)
+return == true
+this.currentChar % this.currentValue == 0
+this.readPosition > orig(this.readPosition)
+this.columnNumber > orig(this.columnNumber)
+===========================================================================
+ikrs.json.parser.JSONParser.readJSON(boolean, boolean):::EXIT;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readNumber(boolean, java.lang.StringBuffer):::ENTER
+this.currentChar == this.currentValue
+arg0 == true
+arg1 != null
+===========================================================================
+ikrs.json.parser.JSONParser.readNumber(boolean, java.lang.StringBuffer):::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.lineNumber == orig(this.lineNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.currentChar one of { 32, 44 }
+return == true
+this.currentChar < orig(this.currentChar)
+this.readPosition > orig(this.readPosition)
+this.columnNumber > orig(this.columnNumber)
+===========================================================================
+ikrs.json.parser.JSONParser.readNumber(boolean, java.lang.StringBuffer):::EXIT;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readObject():::ENTER
+this.currentChar == this.currentValue
+this.currentChar == 123
+this.readPosition one of { 1, 38, 63 }
+this.columnNumber one of { 1, 38, 63 }
+===========================================================================
+ikrs.json.parser.JSONParser.readObject():::EXIT482
+this.currentChar one of { 32, 65535 }
+this.currentValue one of { -1, 32 }
+orig(this.readPosition) one of { 1, 63 }
+orig(this.columnNumber) one of { 1, 63 }
+===========================================================================
+ikrs.json.parser.JSONParser.readObject():::EXIT482;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readObject():::EXIT495
+this.currentChar == this.currentValue
+this.reader has only one value
+this.currentChar == 44
+this.readPosition == 40
+this.columnNumber == 40
+orig(this) has only one value
+orig(this.readPosition) == 38
+orig(this.columnNumber) == 38
+===========================================================================
+ikrs.json.parser.JSONParser.readObject():::EXIT495;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readObject():::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.lineNumber == orig(this.lineNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.currentChar one of { 32, 44, 65535 }
+this.currentValue one of { -1, 32, 44 }
+return == true
+this.currentChar % this.currentValue == 0
+this.currentChar != orig(this.currentChar)
+this.currentValue < orig(this.currentChar)
+this.readPosition > orig(this.readPosition)
+this.columnNumber > orig(this.columnNumber)
+===========================================================================
+ikrs.json.parser.JSONParser.readObject():::EXIT;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readObjectMember():::ENTER
+this.currentChar == this.currentValue
+this.currentChar one of { 44, 123 }
+this.readPosition >= 1
+this.columnNumber >= 1
+===========================================================================
+ikrs.json.parser.JSONParser.readObjectMember():::EXIT514
+this.reader has only one value
+this.currentChar == 125
+this.readPosition == 39
+this.columnNumber == 39
+return == false
+orig(this) has only one value
+orig(this.currentChar) == 123
+orig(this.readPosition) == 38
+orig(this.columnNumber) == 38
+===========================================================================
+ikrs.json.parser.JSONParser.readObjectMember():::EXIT514;condition="not(return == true)"
+===========================================================================
+ikrs.json.parser.JSONParser.readObjectMember():::EXIT542
+this.currentChar one of { 32, 39, 44 }
+return == true
+this.currentChar <= orig(this.currentChar)
+===========================================================================
+ikrs.json.parser.JSONParser.readObjectMember():::EXIT542;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.readObjectMember():::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.lineNumber == orig(this.lineNumber)
+this.caseSensitive == orig(this.caseSensitive)
+(this.currentChar == 125)  <==>  (return == false)
+(this.currentChar == 125)  ==>  (orig(this) has only one value)
+(this.currentChar == 125)  ==>  (orig(this.columnNumber) == 38)
+(this.currentChar == 125)  ==>  (orig(this.currentChar) == 123)
+(this.currentChar == 125)  ==>  (orig(this.readPosition) == 38)
+(this.currentChar == 125)  ==>  (this.columnNumber == 39)
+(this.currentChar == 125)  ==>  (this.readPosition == 39)
+(this.currentChar == 125)  ==>  (this.reader has only one value)
+(this.currentChar one of { 32, 39, 44 })  <==>  (return == true)
+(this.currentChar one of { 32, 39, 44 })  <==>  (this.currentChar <= orig(this.currentChar))
+(this.currentChar one of { 32, 39, 44 })  ==>  (orig(this.columnNumber) >= 1)
+(this.currentChar one of { 32, 39, 44 })  ==>  (orig(this.currentChar) one of { 44, 123 })
+(this.currentChar one of { 32, 39, 44 })  ==>  (orig(this.readPosition) >= 1)
+this.readPosition > orig(this.readPosition)
+this.columnNumber > orig(this.columnNumber)
+===========================================================================
+ikrs.json.parser.JSONParser.readObjectMember():::EXIT;condition="return == true"
+this.currentChar one of { 32, 39, 44 }
+return == true
+this.currentChar <= orig(this.currentChar)
+===========================================================================
+ikrs.json.parser.JSONParser.readObjectMember():::EXIT;condition="not(return == true)"
+this.reader has only one value
+this.currentChar == 125
+this.readPosition == 39
+this.columnNumber == 39
+return == false
+orig(this) has only one value
+orig(this.currentChar) == 123
+orig(this.readPosition) == 38
+orig(this.columnNumber) == 38
+===========================================================================
+ikrs.json.parser.JSONParser.readString(boolean, java.lang.StringBuffer):::ENTER
+this.currentChar == this.currentValue
+this.currentChar == 39
+this.readPosition >= 2
+this.columnNumber >= 2
+arg1 != null
+===========================================================================
+ikrs.json.parser.JSONParser.readString(boolean, java.lang.StringBuffer):::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.currentChar == orig(this.currentChar)
+this.currentChar == orig(this.currentValue)
+this.lineNumber == orig(this.lineNumber)
+this.caseSensitive == orig(this.caseSensitive)
+this.currentChar == 39
+return == true
+this.readPosition > orig(this.readPosition)
+this.columnNumber > orig(this.columnNumber)
+===========================================================================
+ikrs.json.parser.JSONParser.readString(boolean, java.lang.StringBuffer):::EXIT;condition="return == true"
+===========================================================================
+ikrs.json.parser.JSONParser.skipWhitespace():::ENTER
+this.currentChar == this.currentValue
+===========================================================================
+ikrs.json.parser.JSONParser.skipWhitespace():::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.currentChar == this.currentValue
+this.lineNumber == orig(this.lineNumber)
+this.caseSensitive == orig(this.caseSensitive)
+return == true
+this.readPosition > orig(this.readPosition)
+this.columnNumber > orig(this.columnNumber)
+===========================================================================
+ikrs.json.parser.JSONParser.skipWhitespace():::EXIT;condition="return == true"
+===========================================================================
+ikrs.json.rpc.AbstractInvocationTarget:::OBJECT
+this has only one value
+this.getClass().getName() == ikrs.json.rpc.TestInvocationTarget.class
+===========================================================================
+ikrs.json.rpc.AbstractInvocationTarget.AbstractInvocationTarget():::EXIT
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCError:::CLASS
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCError:::OBJECT
+this.map.getClass().getName() == java.util.TreeMap.class
+this.type == 5
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCError.DefaultJSONRPCError(ikrs.json.JSONValue, ikrs.json.JSONValue, ikrs.json.JSONValue):::ENTER
+arg1.getClass().getName() == arg2.getClass().getName()
+arg0.getClass().getName() == ikrs.json.JSONNumber.class
+arg1.getClass().getName() == ikrs.json.JSONString.class
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCError.DefaultJSONRPCError(ikrs.json.JSONValue, ikrs.json.JSONValue, ikrs.json.JSONValue):::EXIT
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCRequest:::OBJECT
+this.map != null
+this.map.getClass().getName() == java.util.TreeMap.class
+this.type == 5
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCRequest.DefaultJSONRPCRequest():::EXIT
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCRequest.DefaultJSONRPCRequest(java.lang.String, ikrs.json.JSONArray, java.lang.Number):::ENTER
+arg0 has only one value
+arg0.toString == "doAnything"
+arg1 has only one value
+arg1.list has only one value
+arg1.list[] contains no nulls and has only one value, of length 3
+arg1.list[].getClass().getName() == [ikrs.json.JSONNumber, ikrs.json.JSONString, ikrs.json.JSONBoolean]
+arg1.list.getClass().getName() == java.util.ArrayList.class
+arg1.type == 4
+arg2 has only one value
+arg2.getClass().getName() == java.lang.Integer.class
+size(arg1.list[]) == 3
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCRequest.DefaultJSONRPCRequest(java.lang.String, ikrs.json.JSONArray, java.lang.Number):::EXIT
+arg0.toString == orig(arg0.toString)
+arg1.list == orig(arg1.list)
+arg1.list[] == orig(arg1.list[])
+arg1.list.getClass().getName() == orig(arg1.list.getClass().getName())
+arg1.type == orig(arg1.type)
+this.map has only one value
+arg0.toString == "doAnything"
+arg1.list has only one value
+arg1.list[] contains no nulls and has only one value, of length 3
+arg1.list[].getClass().getName() == [ikrs.json.JSONNumber, ikrs.json.JSONString, ikrs.json.JSONBoolean]
+arg1.list.getClass().getName() == java.util.ArrayList.class
+arg1.type == 4
+size(arg1.list[]) == 3
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCRequest.getID():::ENTER
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCRequest.getID():::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+this.type == orig(this.type)
+return.getClass().getName() == ikrs.json.JSONNumber.class
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCRequest.getMethod():::ENTER
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCRequest.getMethod():::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+this.type == orig(this.type)
+return != null
+return.getClass().getName() == ikrs.json.JSONString.class
+this.map.getClass().getName() != return.getClass().getName()
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCRequest.getParams():::ENTER
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCRequest.getParams():::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+this.type == orig(this.type)
+return != null
+return.getClass().getName() == ikrs.json.JSONArray.class
+this.map.getClass().getName() != return.getClass().getName()
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCRequest.getVersion():::ENTER
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCRequest.getVersion():::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+this.type == orig(this.type)
+return != null
+return.getClass().getName() == ikrs.json.JSONString.class
+this.map.getClass().getName() != return.getClass().getName()
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCResponse:::OBJECT
+this.map.getClass().getName() == java.util.TreeMap.class
+this.type == 5
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCResponse.DefaultJSONRPCResponse(ikrs.json.JSONValue, ikrs.json.JSONValue, ikrs.json.JSONValue):::ENTER
+arg0.getClass().getName() == ikrs.json.JSONNull.class
+arg1.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCError.class
+===========================================================================
+ikrs.json.rpc.DefaultJSONRPCResponse.DefaultJSONRPCResponse(ikrs.json.JSONValue, ikrs.json.JSONValue, ikrs.json.JSONValue):::EXIT
+this.map.getClass().getName() != orig(arg2.getClass().getName())
+===========================================================================
+ikrs.json.rpc.JSONRPCException:::OBJECT
+===========================================================================
+ikrs.json.rpc.JSONRPCException.JSONRPCException(java.lang.String):::ENTER
+arg0.toString one of { "Object 'y' not found.", "The __jsonclass__ param is not supported." }
+===========================================================================
+ikrs.json.rpc.JSONRPCException.JSONRPCException(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "Object 'y' not found.", "The __jsonclass__ param is not supported." }
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler:::OBJECT
+this has only one value
+this.defaultInvocationTargetName.toString == "x"
+this.targetMap has only one value
+this.targetMap != null
+this.targetMap.getClass().getName() == java.util.TreeMap.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.JSONRPCHandler():::EXIT
+this.defaultInvocationTargetName == null
+this.unwrapJSONValues == true
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.addInvocationTarget(java.lang.String, ikrs.json.rpc.RPCInvocationTarget, boolean):::ENTER
+this.defaultInvocationTargetName == null
+this.unwrapJSONValues == true
+arg0 has only one value
+arg0.toString == "x"
+arg1 has only one value
+arg1.getClass().getName() == ikrs.json.rpc.TestInvocationTarget.class
+arg2 == true
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.addInvocationTarget(java.lang.String, ikrs.json.rpc.RPCInvocationTarget, boolean):::EXIT
+this.defaultInvocationTargetName == orig(arg0)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == orig(this.unwrapJSONValues)
+arg0.toString == orig(arg0.toString)
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+arg0.toString == "x"
+return == false
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.addInvocationTarget(java.lang.String, ikrs.json.rpc.RPCInvocationTarget, boolean):::EXIT;condition="not(return == true)"
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.buildRPCRequest(java.io.Reader):::ENTER
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+arg0.getClass().getName() == java.io.StringReader.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.buildRPCRequest(java.io.Reader):::EXIT
+this.defaultInvocationTargetName == orig(this.defaultInvocationTargetName)
+this.defaultInvocationTargetName.toString == orig(this.defaultInvocationTargetName.toString)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == orig(this.unwrapJSONValues)
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+return.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCRequest.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.call(ikrs.json.rpc.JSONRPCRequest):::ENTER
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+arg0 has only one value
+arg0.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCRequest.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.call(ikrs.json.rpc.JSONRPCRequest):::EXIT274
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.call(ikrs.json.rpc.JSONRPCRequest):::EXIT
+this.defaultInvocationTargetName == orig(this.defaultInvocationTargetName)
+this.defaultInvocationTargetName.toString == orig(this.defaultInvocationTargetName.toString)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == orig(this.unwrapJSONValues)
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+return has only one value
+return.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCResponse.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.call(java.io.Reader):::ENTER
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+arg0.getClass().getName() == java.io.StringReader.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.call(java.io.Reader):::EXIT225
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.call(java.io.Reader):::EXIT247
+return has only one value
+orig(arg0) has only one value
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.call(java.io.Reader):::EXIT
+this.defaultInvocationTargetName == orig(this.defaultInvocationTargetName)
+this.defaultInvocationTargetName.toString == orig(this.defaultInvocationTargetName.toString)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == orig(this.unwrapJSONValues)
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+return.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCResponse.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.call(java.lang.String):::ENTER
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.call(java.lang.String):::EXIT
+this.defaultInvocationTargetName == orig(this.defaultInvocationTargetName)
+this.defaultInvocationTargetName.toString == orig(this.defaultInvocationTargetName.toString)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == orig(this.unwrapJSONValues)
+arg0.toString == orig(arg0.toString)
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+return.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCResponse.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.checkVersion(ikrs.json.rpc.JSONRPCRequest):::ENTER
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+arg0.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCRequest.class
+this.targetMap.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.checkVersion(ikrs.json.rpc.JSONRPCRequest):::EXIT
+this.defaultInvocationTargetName == orig(this.defaultInvocationTargetName)
+this.defaultInvocationTargetName.toString == orig(this.defaultInvocationTargetName.toString)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == orig(this.unwrapJSONValues)
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+this.targetMap.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.createErrorResponse(java.lang.Exception, java.lang.String, int, ikrs.json.JSONValue):::ENTER
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+arg1.toString one of { "JSON-RPC error: The __jsonclass__ param is not supported.", "Object 'y' not found." }
+arg2 one of { -32601, -32000 }
+arg3.getClass().getName() == ikrs.json.JSONNumber.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.createErrorResponse(java.lang.Exception, java.lang.String, int, ikrs.json.JSONValue):::EXIT
+this.defaultInvocationTargetName == orig(this.defaultInvocationTargetName)
+this.defaultInvocationTargetName.toString == orig(this.defaultInvocationTargetName.toString)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == orig(this.unwrapJSONValues)
+arg1.toString == orig(arg1.toString)
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+arg1.toString one of { "JSON-RPC error: The __jsonclass__ param is not supported.", "Object 'y' not found." }
+return.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCResponse.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.createParamClassArray(ikrs.json.rpc.JSONRPCRequest):::ENTER
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+arg0.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCRequest.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.createParamClassArray(ikrs.json.rpc.JSONRPCRequest):::EXIT527
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.createParamClassArray(ikrs.json.rpc.JSONRPCRequest):::EXIT
+this.defaultInvocationTargetName == orig(this.defaultInvocationTargetName)
+this.defaultInvocationTargetName.toString == orig(this.defaultInvocationTargetName.toString)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == orig(this.unwrapJSONValues)
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+return.getClass().getName() == java.lang.Class[].class
+size(return[]) one of { 1, 3 }
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.createParamClassArrayFromJSONArray(ikrs.json.JSONArray):::ENTER
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+arg0.list.getClass().getName() == java.util.ArrayList.class
+arg0.type == 4
+size(arg0.list[]) one of { 1, 3 }
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.createParamClassArrayFromJSONArray(ikrs.json.JSONArray):::EXIT
+this.defaultInvocationTargetName == orig(this.defaultInvocationTargetName)
+this.defaultInvocationTargetName.toString == orig(this.defaultInvocationTargetName.toString)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == orig(this.unwrapJSONValues)
+arg0.list == orig(arg0.list)
+arg0.list[] == orig(arg0.list[])
+arg0.list.getClass().getName() == orig(arg0.list.getClass().getName())
+arg0.type == orig(arg0.type)
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+arg0.list.getClass().getName() == java.util.ArrayList.class
+arg0.type == 4
+return.getClass().getName() == java.lang.Class[].class
+size(arg0.list[]) one of { 1, 3 }
+size(return[]) one of { 1, 3 }
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.createParamObjectArray(ikrs.json.rpc.JSONRPCRequest):::ENTER
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+arg0.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCRequest.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.createParamObjectArray(ikrs.json.rpc.JSONRPCRequest):::EXIT668
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.createParamObjectArray(ikrs.json.rpc.JSONRPCRequest):::EXIT
+this.defaultInvocationTargetName == orig(this.defaultInvocationTargetName)
+this.defaultInvocationTargetName.toString == orig(this.defaultInvocationTargetName.toString)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == orig(this.unwrapJSONValues)
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+return.getClass().getName() == java.lang.Object[].class
+size(return[]) one of { 1, 3 }
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.execute(ikrs.json.rpc.JSONRPCRequest):::ENTER
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+arg0.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCRequest.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.execute(ikrs.json.rpc.JSONRPCRequest):::EXIT391
+return has only one value
+orig(arg0) has only one value
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.execute(ikrs.json.rpc.JSONRPCRequest):::EXIT440
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.execute(ikrs.json.rpc.JSONRPCRequest):::EXIT
+this.defaultInvocationTargetName == orig(this.defaultInvocationTargetName)
+this.defaultInvocationTargetName.toString == orig(this.defaultInvocationTargetName.toString)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == orig(this.unwrapJSONValues)
+this.defaultInvocationTargetName has only one value
+this.unwrapJSONValues == true
+return.getClass().getName() == ikrs.json.rpc.DefaultJSONRPCResponse.class
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.unwrapJSONValues():::ENTER
+this.defaultInvocationTargetName has only one value
+this.defaultInvocationTargetName != null
+this.unwrapJSONValues == true
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.unwrapJSONValues():::EXIT
+this.defaultInvocationTargetName == orig(this.defaultInvocationTargetName)
+this.defaultInvocationTargetName.toString == orig(this.defaultInvocationTargetName.toString)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == return
+return == orig(this.unwrapJSONValues)
+this.defaultInvocationTargetName has only one value
+this.defaultInvocationTargetName != null
+return == true
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.unwrapJSONValues():::EXIT;condition="return == true"
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.unwrapJSONValues(boolean):::ENTER
+this.defaultInvocationTargetName == null
+this.unwrapJSONValues == false
+arg0 == true
+===========================================================================
+ikrs.json.rpc.JSONRPCHandler.unwrapJSONValues(boolean):::EXIT
+this.defaultInvocationTargetName == orig(this.defaultInvocationTargetName)
+this.targetMap == orig(this.targetMap)
+this.targetMap.getClass().getName() == orig(this.targetMap.getClass().getName())
+this.unwrapJSONValues == orig(arg0)
+this.defaultInvocationTargetName == null
+this.unwrapJSONValues == true
+===========================================================================
+ikrs.json.rpc.JSONRPCValueFactory:::OBJECT
+===========================================================================
+ikrs.json.rpc.JSONRPCValueFactory.JSONRPCValueFactory():::EXIT
+===========================================================================
+ikrs.json.rpc.JSONRPCValueFactory.createObject():::ENTER
+===========================================================================
+ikrs.json.rpc.JSONRPCValueFactory.createObject():::EXIT
+return.map.getClass().getName() == java.util.TreeMap.class
+return.type == 5
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget:::OBJECT
+this has only one value
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget.TestInvocationTarget():::EXIT
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget.checkMethodInvocation(java.lang.reflect.Method):::ENTER
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget.checkMethodInvocation(java.lang.reflect.Method):::EXIT39
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget.checkMethodInvocation(java.lang.reflect.Method):::EXIT39;condition="return == true"
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget.checkMethodInvocation(java.lang.reflect.Method):::EXIT
+return == true
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget.checkMethodInvocation(java.lang.reflect.Method):::EXIT;condition="return == true"
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget.doAnything(java.lang.Integer, java.lang.String, java.lang.Boolean):::ENTER
+arg1.toString one of { "test_A", "test_B" }
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget.doAnything(java.lang.Integer, java.lang.String, java.lang.Boolean):::EXIT
+arg1.toString == orig(arg1.toString)
+arg1.toString one of { "test_A", "test_B" }
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget.printJSONArray(ikrs.json.JSONArray):::ENTER
+arg0 has only one value
+arg0.list has only one value
+arg0.list[] contains no nulls and has only one value, of length 5
+arg0.list[].getClass().getName() == [ikrs.json.JSONNumber, ikrs.json.JSONNumber, ikrs.json.JSONNumber, ikrs.json.JSONNumber, ikrs.json.JSONNumber]
+arg0.list[].getClass().getName() elements == ikrs.json.JSONNumber.class
+arg0.list.getClass().getName() == java.util.ArrayList.class
+arg0.type == 4
+size(arg0.list[]) == 5
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget.printJSONArray(ikrs.json.JSONArray):::EXIT
+arg0.list == orig(arg0.list)
+arg0.list[] == orig(arg0.list[])
+arg0.list.getClass().getName() == orig(arg0.list.getClass().getName())
+arg0.type == orig(arg0.type)
+arg0.list has only one value
+arg0.list[] contains no nulls and has only one value, of length 5
+arg0.list[].getClass().getName() == [ikrs.json.JSONNumber, ikrs.json.JSONNumber, ikrs.json.JSONNumber, ikrs.json.JSONNumber, ikrs.json.JSONNumber]
+arg0.list[].getClass().getName() elements == ikrs.json.JSONNumber.class
+arg0.list.getClass().getName() == java.util.ArrayList.class
+arg0.type == 4
+size(arg0.list[]) == 5
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget.printJSONObject(ikrs.json.JSONObject):::ENTER
+arg0 has only one value
+arg0.map has only one value
+arg0.map.getClass().getName() == java.util.TreeMap.class
+arg0.type == 5
+===========================================================================
+ikrs.json.rpc.TestInvocationTarget.printJSONObject(ikrs.json.JSONObject):::EXIT
+arg0.map == orig(arg0.map)
+arg0.map.getClass().getName() == orig(arg0.map.getClass().getName())
+arg0.type == orig(arg0.type)
+arg0.map has only one value
+arg0.map.getClass().getName() == java.util.TreeMap.class
+arg0.type == 5
+Exiting Daikon.

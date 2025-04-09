@@ -1,0 +1,2120 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+logfilegen.Analytic:::OBJECT
+this has only one value
+===========================================================================
+logfilegen.Analytic.Analytic():::EXIT
+===========================================================================
+logfilegen.Analytic.txtAnalizator(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "LogFile.log"
+===========================================================================
+logfilegen.Analytic.txtAnalizator(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "LogFile.log"
+return has only one value
+return.toString == "Status frequency:\n400 - 3\n504 - 3\n201 - 2\n456 - 2\n434 - 2\n423 - 2\n302 - 2\n204 - 2\n503 - 2\n307 - 2\n200 - 1\n202 - 1\n501 - 1\n402 - 1\n303 - 1\n304 - 1\n404 - 1\n505 - 1\n\nStatus percent:\n400 - 10.0\n504 - 10.0\n201 - 6.666666666666667\n456 - 6.666666666666667\n434 - 6.666666666666667\n423 - 6.666666666666667\n302 - 6.666666666666667\n204 - 6.666666666666667\n503 - 6.666666666666667\n307 - 6.666666666666667\n200 - 3.3333333333333335\n202 - 3.3333333333333335\n501 - 3.3333333333333335\n402 - 3.3333333333333335\n303 - 3.3333333333333335\n304 - 3.3333333333333335\n404 - 3.3333333333333335\n505 - 3.3333333333333335\n\nStatus frequency over hours:\n0 - 30\n\nStatus frequency over part of day:\nevening - 30\n\nExtension frequency:\nhtml - 7\njpg - 6\npdf - 6\nbmp - 3\ngif - 3\ndoc - 3\nmp3 - 2\n\n"
+===========================================================================
+logfilegen.LogFileGen:::OBJECT
+this has only one value
+===========================================================================
+logfilegen.LogFileGen.LogFileGen():::EXIT
+===========================================================================
+logfilegen.LogFileGen.gen(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "LogFile.log"
+arg1 == 30
+===========================================================================
+logfilegen.LogFileGen.gen(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "LogFile.log"
+===========================================================================
+logfilegen.Parser:::OBJECT
+===========================================================================
+logfilegen.Parser.Parser():::EXIT
+===========================================================================
+logfilegen.Parser.parser(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "LogFile.log"
+===========================================================================
+logfilegen.Parser.parser(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "LogFile.log"
+return.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+return.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+return.records.getClass().getName() == java.util.ArrayList.class
+return.NewL has only one value
+return.NewL.toString == "\n"
+size(return.records[]) == 30
+===========================================================================
+logfilegen.StartMePlease.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+logfilegen.StartMePlease.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+logfilegen.allanalytics.Analyti:::OBJECT
+this has only one value
+this.log has only one value
+this.log != null
+this.log.records has only one value
+this.log.records != null
+this.log.records[] contains no nulls and has only one value, of length 30
+this.log.records[] elements != null
+this.log.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+this.log.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+this.log.records.getClass().getName() == java.util.ArrayList.class
+this.log.NewL has only one value
+this.log.NewL != null
+this.log.NewL.toString == "\n"
+size(this.log.records[]) == 30
+===========================================================================
+logfilegen.allanalytics.Analyti.Analyti(logfilegen.allmodels.Log):::ENTER
+arg0 has only one value
+arg0.records has only one value
+arg0.records[] contains no nulls and has only one value, of length 30
+arg0.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+arg0.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+arg0.records.getClass().getName() == java.util.ArrayList.class
+arg0.NewL has only one value
+arg0.NewL.toString == "\n"
+size(arg0.records[]) == 30
+===========================================================================
+logfilegen.allanalytics.Analyti.Analyti(logfilegen.allmodels.Log):::EXIT
+this.log == orig(arg0)
+this.log.records == arg0.records
+this.log.records.getClass().getName() == arg0.records.getClass().getName()
+this.log.NewL == arg0.NewL
+arg0.records == orig(arg0.records)
+arg0.records[] == orig(arg0.records[])
+arg0.records.getClass().getName() == orig(arg0.records.getClass().getName())
+arg0.NewL == orig(arg0.NewL)
+arg0.NewL.toString == orig(arg0.NewL.toString)
+arg0.records has only one value
+arg0.records[] contains no nulls and has only one value, of length 30
+arg0.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+arg0.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+arg0.records.getClass().getName() == java.util.ArrayList.class
+arg0.NewL has only one value
+arg0.NewL.toString == "\n"
+size(arg0.records[]) == 30
+===========================================================================
+logfilegen.allanalytics.Analyti.getExtensionFrequency():::ENTER
+===========================================================================
+logfilegen.allanalytics.Analyti.getExtensionFrequency():::EXIT
+this.log == orig(this.log)
+this.log.records == orig(this.log.records)
+this.log.records[] == orig(this.log.records[])
+this.log.records.getClass().getName() == orig(this.log.records.getClass().getName())
+this.log.NewL == orig(this.log.NewL)
+this.log.NewL.toString == orig(this.log.NewL.toString)
+return has only one value
+return.getClass().getName() == java.util.HashMap.class
+===========================================================================
+logfilegen.allanalytics.Analyti.getPartOfDate(java.lang.Integer):::ENTER
+arg0 has only one value
+arg0 != null
+===========================================================================
+logfilegen.allanalytics.Analyti.getPartOfDate(java.lang.Integer):::EXIT105
+===========================================================================
+logfilegen.allanalytics.Analyti.getPartOfDate(java.lang.Integer):::EXIT
+this.log == orig(this.log)
+this.log.records == orig(this.log.records)
+this.log.records[] == orig(this.log.records[])
+this.log.records.getClass().getName() == orig(this.log.records.getClass().getName())
+this.log.NewL == orig(this.log.NewL)
+this.log.NewL.toString == orig(this.log.NewL.toString)
+return has only one value
+return != null
+return.toString == "evening"
+===========================================================================
+logfilegen.allanalytics.Analyti.getStatusFrequency():::ENTER
+===========================================================================
+logfilegen.allanalytics.Analyti.getStatusFrequency():::EXIT
+this.log == orig(this.log)
+this.log.records == orig(this.log.records)
+this.log.records[] == orig(this.log.records[])
+this.log.records.getClass().getName() == orig(this.log.records.getClass().getName())
+this.log.NewL == orig(this.log.NewL)
+this.log.NewL.toString == orig(this.log.NewL.toString)
+return.getClass().getName() == java.util.HashMap.class
+===========================================================================
+logfilegen.allanalytics.Analyti.getStatusFrequencyOverHours():::ENTER
+===========================================================================
+logfilegen.allanalytics.Analyti.getStatusFrequencyOverHours():::EXIT
+this.log == orig(this.log)
+this.log.records == orig(this.log.records)
+this.log.records[] == orig(this.log.records[])
+this.log.records.getClass().getName() == orig(this.log.records.getClass().getName())
+this.log.NewL == orig(this.log.NewL)
+this.log.NewL.toString == orig(this.log.NewL.toString)
+return has only one value
+return.getClass().getName() == java.util.HashMap.class
+===========================================================================
+logfilegen.allanalytics.Analyti.getStatusFrequencyOverPartOfDay():::ENTER
+===========================================================================
+logfilegen.allanalytics.Analyti.getStatusFrequencyOverPartOfDay():::EXIT
+this.log == orig(this.log)
+this.log.records == orig(this.log.records)
+this.log.records[] == orig(this.log.records[])
+this.log.records.getClass().getName() == orig(this.log.records.getClass().getName())
+this.log.NewL == orig(this.log.NewL)
+this.log.NewL.toString == orig(this.log.NewL.toString)
+return has only one value
+return.getClass().getName() == java.util.HashMap.class
+===========================================================================
+logfilegen.allanalytics.Analyti.getStatusPercent():::ENTER
+===========================================================================
+logfilegen.allanalytics.Analyti.getStatusPercent():::EXIT
+this.log == orig(this.log)
+this.log.records == orig(this.log.records)
+this.log.records[] == orig(this.log.records[])
+this.log.records.getClass().getName() == orig(this.log.records.getClass().getName())
+this.log.NewL == orig(this.log.NewL)
+this.log.NewL.toString == orig(this.log.NewL.toString)
+return has only one value
+return.getClass().getName() == java.util.HashMap.class
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$1:::OBJECT
+this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic != null
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log != null
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE != null
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == "\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$1.(logfilegen.allanalytics.AnalyticTxtView):::ENTER
+logfilegen.allanalytics.AnalyticTxtView.this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == "\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$1.(logfilegen.allanalytics.AnalyticTxtView):::EXIT
+logfilegen.allanalytics.AnalyticTxtView.this == orig(logfilegen.allanalytics.AnalyticTxtView.this)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic.log)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString)
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$1.compare(java.util.Map$Entry, java.util.Map$Entry):::ENTER
+arg0.getClass().getName() == arg1.getClass().getName()
+arg0 != null
+arg0.getClass().getName() == java.util.HashMap$Node.class
+arg1 != null
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$1.compare(java.util.Map$Entry, java.util.Map$Entry):::EXIT
+logfilegen.allanalytics.AnalyticTxtView.this == orig(logfilegen.allanalytics.AnalyticTxtView.this)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic.log)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString)
+return >= -1
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$2:::OBJECT
+this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic != null
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log != null
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE != null
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == "\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$2.(logfilegen.allanalytics.AnalyticTxtView):::ENTER
+logfilegen.allanalytics.AnalyticTxtView.this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == "\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$2.(logfilegen.allanalytics.AnalyticTxtView):::EXIT
+logfilegen.allanalytics.AnalyticTxtView.this == orig(logfilegen.allanalytics.AnalyticTxtView.this)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic.log)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString)
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$2.compare(java.util.Map$Entry, java.util.Map$Entry):::ENTER
+arg0.getClass().getName() == arg1.getClass().getName()
+arg0 != null
+arg0.getClass().getName() == java.util.HashMap$Node.class
+arg1 != null
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$2.compare(java.util.Map$Entry, java.util.Map$Entry):::EXIT
+logfilegen.allanalytics.AnalyticTxtView.this == orig(logfilegen.allanalytics.AnalyticTxtView.this)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic.log)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString)
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$3:::OBJECT
+this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == "\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$3.(logfilegen.allanalytics.AnalyticTxtView):::ENTER
+logfilegen.allanalytics.AnalyticTxtView.this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == "\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$3.(logfilegen.allanalytics.AnalyticTxtView):::EXIT
+logfilegen.allanalytics.AnalyticTxtView.this == orig(logfilegen.allanalytics.AnalyticTxtView.this)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic.log)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString)
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$4:::OBJECT
+this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == "\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$4.(logfilegen.allanalytics.AnalyticTxtView):::ENTER
+logfilegen.allanalytics.AnalyticTxtView.this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == "\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$4.(logfilegen.allanalytics.AnalyticTxtView):::EXIT
+logfilegen.allanalytics.AnalyticTxtView.this == orig(logfilegen.allanalytics.AnalyticTxtView.this)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic.log)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString)
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$5:::OBJECT
+this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic != null
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log != null
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE != null
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == "\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$5.(logfilegen.allanalytics.AnalyticTxtView):::ENTER
+logfilegen.allanalytics.AnalyticTxtView.this has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE has only one value
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == "\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$5.(logfilegen.allanalytics.AnalyticTxtView):::EXIT
+logfilegen.allanalytics.AnalyticTxtView.this == orig(logfilegen.allanalytics.AnalyticTxtView.this)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic.log)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString)
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$5.compare(java.util.Map$Entry, java.util.Map$Entry):::ENTER
+arg0.getClass().getName() == arg1.getClass().getName()
+arg0 != null
+arg0.getClass().getName() == java.util.HashMap$Node.class
+arg1 != null
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView$5.compare(java.util.Map$Entry, java.util.Map$Entry):::EXIT
+logfilegen.allanalytics.AnalyticTxtView.this == orig(logfilegen.allanalytics.AnalyticTxtView.this)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic)
+logfilegen.allanalytics.AnalyticTxtView.this.analytic.log == orig(logfilegen.allanalytics.AnalyticTxtView.this.analytic.log)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE)
+logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString == orig(logfilegen.allanalytics.AnalyticTxtView.this.NEWLINE.toString)
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView:::OBJECT
+this.analytic.log.NewL == this.NEWLINE
+this has only one value
+this.analytic has only one value
+this.analytic.log has only one value
+this.analytic.log.records has only one value
+this.analytic.log.records[] contains no nulls and has only one value, of length 30
+this.analytic.log.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+this.analytic.log.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+this.analytic.log.records.getClass().getName() == java.util.ArrayList.class
+this.analytic.log.NewL.toString == "\n"
+this.NEWLINE has only one value
+this.NEWLINE.toString == "\n"
+size(this.analytic.log.records[]) == 30
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView.AnalyticTxtView(logfilegen.allmodels.Log):::ENTER
+arg0 has only one value
+arg0.records has only one value
+arg0.records[] contains no nulls and has only one value, of length 30
+arg0.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+arg0.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+arg0.records.getClass().getName() == java.util.ArrayList.class
+arg0.NewL has only one value
+arg0.NewL.toString == "\n"
+size(arg0.records[]) == 30
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView.AnalyticTxtView(logfilegen.allmodels.Log):::EXIT
+this.analytic.log == orig(arg0)
+this.analytic.log.records == arg0.records
+this.analytic.log.records.getClass().getName() == arg0.records.getClass().getName()
+this.NEWLINE == arg0.NewL
+this.NEWLINE == orig(arg0.NewL)
+arg0.records == orig(arg0.records)
+arg0.records[] == orig(arg0.records[])
+arg0.records.getClass().getName() == orig(arg0.records.getClass().getName())
+arg0.NewL.toString == orig(arg0.NewL.toString)
+arg0.records has only one value
+arg0.records[] contains no nulls and has only one value, of length 30
+arg0.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+arg0.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+arg0.records.getClass().getName() == java.util.ArrayList.class
+arg0.NewL.toString == "\n"
+size(arg0.records[]) == 30
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView.getExtensionFrequency():::ENTER
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView.getExtensionFrequency():::EXIT
+this.analytic == orig(this.analytic)
+this.analytic.log == orig(this.analytic.log)
+this.analytic.log.records == orig(this.analytic.log.records)
+this.analytic.log.records[] == orig(this.analytic.log.records[])
+this.analytic.log.records.getClass().getName() == orig(this.analytic.log.records.getClass().getName())
+this.analytic.log.NewL.toString == orig(this.analytic.log.NewL.toString)
+this.NEWLINE == orig(this.analytic.log.NewL)
+this.NEWLINE == orig(this.NEWLINE)
+this.NEWLINE.toString == orig(this.NEWLINE.toString)
+return has only one value
+return.toString == "html - 7\njpg - 6\npdf - 6\nbmp - 3\ngif - 3\ndoc - 3\nmp3 - 2\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView.getStatusFrequency():::ENTER
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView.getStatusFrequency():::EXIT
+this.analytic == orig(this.analytic)
+this.analytic.log == orig(this.analytic.log)
+this.analytic.log.records == orig(this.analytic.log.records)
+this.analytic.log.records[] == orig(this.analytic.log.records[])
+this.analytic.log.records.getClass().getName() == orig(this.analytic.log.records.getClass().getName())
+this.analytic.log.NewL.toString == orig(this.analytic.log.NewL.toString)
+this.NEWLINE == orig(this.analytic.log.NewL)
+this.NEWLINE == orig(this.NEWLINE)
+this.NEWLINE.toString == orig(this.NEWLINE.toString)
+return has only one value
+return.toString == "400 - 3\n504 - 3\n201 - 2\n456 - 2\n434 - 2\n423 - 2\n302 - 2\n204 - 2\n503 - 2\n307 - 2\n200 - 1\n202 - 1\n501 - 1\n402 - 1\n303 - 1\n304 - 1\n404 - 1\n505 - 1\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView.getStatusFrequencyOverHours():::ENTER
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView.getStatusFrequencyOverHours():::EXIT
+this.analytic == orig(this.analytic)
+this.analytic.log == orig(this.analytic.log)
+this.analytic.log.records == orig(this.analytic.log.records)
+this.analytic.log.records[] == orig(this.analytic.log.records[])
+this.analytic.log.records.getClass().getName() == orig(this.analytic.log.records.getClass().getName())
+this.analytic.log.NewL.toString == orig(this.analytic.log.NewL.toString)
+this.NEWLINE == orig(this.analytic.log.NewL)
+this.NEWLINE == orig(this.NEWLINE)
+this.NEWLINE.toString == orig(this.NEWLINE.toString)
+return has only one value
+return.toString == "0 - 30\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView.getStatusFrequencyOverPartOfDay():::ENTER
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView.getStatusFrequencyOverPartOfDay():::EXIT
+this.analytic == orig(this.analytic)
+this.analytic.log == orig(this.analytic.log)
+this.analytic.log.records == orig(this.analytic.log.records)
+this.analytic.log.records[] == orig(this.analytic.log.records[])
+this.analytic.log.records.getClass().getName() == orig(this.analytic.log.records.getClass().getName())
+this.analytic.log.NewL.toString == orig(this.analytic.log.NewL.toString)
+this.NEWLINE == orig(this.analytic.log.NewL)
+this.NEWLINE == orig(this.NEWLINE)
+this.NEWLINE.toString == orig(this.NEWLINE.toString)
+return has only one value
+return.toString == "evening - 30\n"
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView.getStatusPercent():::ENTER
+===========================================================================
+logfilegen.allanalytics.AnalyticTxtView.getStatusPercent():::EXIT
+this.analytic == orig(this.analytic)
+this.analytic.log == orig(this.analytic.log)
+this.analytic.log.records == orig(this.analytic.log.records)
+this.analytic.log.records[] == orig(this.analytic.log.records[])
+this.analytic.log.records.getClass().getName() == orig(this.analytic.log.records.getClass().getName())
+this.analytic.log.NewL.toString == orig(this.analytic.log.NewL.toString)
+this.NEWLINE == orig(this.analytic.log.NewL)
+this.NEWLINE == orig(this.NEWLINE)
+this.NEWLINE.toString == orig(this.NEWLINE.toString)
+return has only one value
+return.toString == "400 - 10.0\n504 - 10.0\n201 - 6.666666666666667\n456 - 6.666666666666667\n434 - 6.666666666666667\n423 - 6.666666666666667\n302 - 6.666666666666667\n204 - 6.666666666666667\n503 - 6.666666666666667\n307 - 6.666666666666667\n200 - 3.3333333333333335\n202 - 3.3333333333333335\n501 - 3.3333333333333335\n402 - 3.3333333333333335\n303 - 3.3333333333333335\n304 - 3.3333333333333335\n404 - 3.3333333333333335\n505 - 3.3333333333333335\n"
+===========================================================================
+logfilegen.allconverters.LogConverter:::OBJECT
+this.log.NewL == this.NewL
+this has only one value
+this.log has only one value
+this.log.records has only one value
+this.log.records[] contains no nulls and has only one value, of length 30
+this.log.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+this.log.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+this.log.records.getClass().getName() == java.util.ArrayList.class
+this.log.NewL.toString == "\n"
+this.NewL has only one value
+this.NewL.toString == "\n"
+size(this.log.records[]) == 30
+===========================================================================
+logfilegen.allconverters.LogConverter.LogConverter(logfilegen.allmodels.Log):::ENTER
+arg0 has only one value
+arg0.records has only one value
+arg0.records[] contains no nulls and has only one value, of length 30
+arg0.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+arg0.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+arg0.records.getClass().getName() == java.util.ArrayList.class
+arg0.NewL has only one value
+arg0.NewL.toString == "\n"
+size(arg0.records[]) == 30
+===========================================================================
+logfilegen.allconverters.LogConverter.LogConverter(logfilegen.allmodels.Log):::EXIT
+this.log == orig(arg0)
+this.log.records == arg0.records
+this.log.records.getClass().getName() == arg0.records.getClass().getName()
+this.NewL == arg0.NewL
+this.NewL == orig(arg0.NewL)
+arg0.records == orig(arg0.records)
+arg0.records[] == orig(arg0.records[])
+arg0.records.getClass().getName() == orig(arg0.records.getClass().getName())
+arg0.NewL.toString == orig(arg0.NewL.toString)
+arg0.records has only one value
+arg0.records[] contains no nulls and has only one value, of length 30
+arg0.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+arg0.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+arg0.records.getClass().getName() == java.util.ArrayList.class
+arg0.NewL.toString == "\n"
+size(arg0.records[]) == 30
+===========================================================================
+logfilegen.allconverters.LogConverter.convertToString():::ENTER
+===========================================================================
+logfilegen.allconverters.LogConverter.convertToString():::EXIT
+this.log == orig(this.log)
+this.log.records == orig(this.log.records)
+this.log.records[] == orig(this.log.records[])
+this.log.records.getClass().getName() == orig(this.log.records.getClass().getName())
+this.log.NewL.toString == orig(this.log.NewL.toString)
+this.NewL == orig(this.log.NewL)
+this.NewL == orig(this.NewL)
+this.NewL.toString == orig(this.NewL.toString)
+return has only one value
+return.toString == "177.28.149.124 - [06.04.2025 01:21:37 PDT] \"UNLINK /u/ggt/pxorp/ozt/rupvq.mp3 HTTP/1.2\" 201 23541\n160.87.156.10 - [06.04.2025 01:21:37 PDT] \"GET /a/t.html HTTPS/1.0\" 504 47461\n21.207.44.168 - [06.04.2025 01:21:37 PDT] \"GET /gh.jpg HTTP/1.0\" 501 46122\n109.116.113.237 - [06.04.2025 01:21:37 PDT] \"CONNECT /p.gif HTTP/1.2\" 204 65543\n181.34.28.218 - [06.04.2025 01:21:37 PDT] \"CONNECT /i/q.html FTP/1.2\" 504 74729\n112.237.88.213 - [06.04.2025 01:21:37 PDT] \"OPTIONS /mtx/w/h/sj.bmp HTTPS/1.1\" 456 38558\n157.154.87.77 - [06.04.2025 01:21:37 PDT] \"TRACE /x/gxs.pdf HTTP/1.0\" 307 99468\n46.138.22.203 - [06.04.2025 01:21:37 PDT] \"TRACE /ff.doc HTTPS/2.0\" 504 35441\n155.107.65.12 - [06.04.2025 01:21:37 PDT] \"POST /kylzr/k/f/n.gif HTTP/0.9\" 456 63815\n234.172.13.65 - [06.04.2025 01:21:37 PDT] \"DELETE /itjnk.pdf FTP/1.0\" 402 72237\n104.81.15.205 - [06.04.2025 01:21:37 PDT] \"POST /ukiny/elfif/i.jpg HTTP/2.0\" 304 72282\n220.170.171.177 - [06.04.2025 01:21:37 PDT] \"LINK /ugwqc/zz.html HTTP/1.2\" 503 83184\n103.208.200.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /nzu/prwvj.pdf FTP/2.0\" 503 94356\n70.47.157.235 - [06.04.2025 01:21:37 PDT] \"PUT /mu/jzfh/uxfla/zeygp/tkpot.html FTP/1.2\" 434 22908\n95.195.142.4 - [06.04.2025 01:21:37 PDT] \"OPTIONS /hnc/an/jszm/sfr/jsmue.bmp HTTP/2.0\" 200 65179\n193.67.90.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /wrc/ofi/i.pdf HTTPS/1.2\" 434 26921\n232.36.66.158 - [06.04.2025 01:21:37 PDT] \"OPTIONS /qfr/ez/ahvgv.jpg FTP/0.9\" 400 34350\n227.5.0.175 - [06.04.2025 01:21:37 PDT] \"HEAD /rptu.jpg FTP/0.9\" 204 37901\n67.1.93.71 - [06.04.2025 01:21:37 PDT] \"PUT /yzfhc/ps/u.jpg FTP/0.9\" 404 87568\n159.160.232.249 - [06.04.2025 01:21:37 PDT] \"TRACE /gmyi/h/lr/jwwhl/xitgj.gif FTP/1.2\" 423 93997\n69.183.116.68 - [06.04.2025 01:21:37 PDT] \"PUT /tyk.bmp HTTPS/2.0\" 303 62788\n28.177.36.84 - [06.04.2025 01:21:37 PDT] \"UNLINK /uvy/q.pdf HTTP/3.0\" 307 43317\n193.100.152.3 - [06.04.2025 01:21:37 PDT] \"CONNECT /nm/liie/xehu/ya.html HTTP/3.0\" 400 39993\n59.118.39.86 - [06.04.2025 01:21:37 PDT] \"POST /wgte/szfs.jpg HTTPS/3.0\" 201 51059\n202.168.49.215 - [06.04.2025 01:21:37 PDT] \"TRACE /y/im/ghe/tecl.pdf FTP/2.0\" 423 8440\n239.130.149.53 - [06.04.2025 01:21:37 PDT] \"POST /a/atj/nzac/uoa.doc HTTPS/1.0\" 302 1312\n101.163.154.140 - [06.04.2025 01:21:37 PDT] \"DELETE /nau.doc FTP/1.2\" 302 17661\n139.124.250.81 - [06.04.2025 01:21:37 PDT] \"POST /y.mp3 FTP/1.0\" 400 3120\n95.129.73.143 - [06.04.2025 01:21:37 PDT] \"CONNECT /gaj/wm/rsg.html HTTP/0.9\" 202 85016\n97.190.85.169 - [06.04.2025 01:21:37 PDT] \"CONNECT /pw/lgwa/hwj.html FTP/2.0\" 505 59894\n"
+===========================================================================
+logfilegen.allgenerators.LogGen:::OBJECT
+this has only one value
+===========================================================================
+logfilegen.allgenerators.LogGen.LogGen():::EXIT
+===========================================================================
+logfilegen.allgenerators.LogGen.generate(int):::ENTER
+arg0 == 30
+===========================================================================
+logfilegen.allgenerators.LogGen.generate(int):::EXIT
+return has only one value
+return.records has only one value
+return.records[] contains no nulls and has only one value, of length 30
+return.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+return.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+return.records.getClass().getName() == java.util.ArrayList.class
+return.NewL has only one value
+return.NewL.toString == "\n"
+size(return.records[]) == 30
+===========================================================================
+logfilegen.allgenerators.RecordGen:::OBJECT
+this has only one value
+===========================================================================
+logfilegen.allgenerators.RecordGen.RecordGen():::EXIT
+===========================================================================
+logfilegen.allgenerators.RecordGen.generate():::ENTER
+===========================================================================
+logfilegen.allgenerators.RecordGen.generate():::EXIT
+return != null
+return.userIp != null
+return.userIp.ip != null
+return.userTime != null
+return.userTime.date != null
+return.userTime.format != null
+return.request != null
+return.request.method != null
+return.request.url != null
+return.request.protocol != null
+return.userStatus != null
+return.userStatus.status != null
+return.size != null
+size(return.userIp.ip[]) == 4
+===========================================================================
+logfilegen.allgenerators.record.DateGen:::OBJECT
+===========================================================================
+logfilegen.allgenerators.record.DateGen.DateGen():::EXIT
+===========================================================================
+logfilegen.allgenerators.record.DateGen.generate():::ENTER
+===========================================================================
+logfilegen.allgenerators.record.DateGen.generate():::EXIT
+return != null
+return.date != null
+return.format != null
+===========================================================================
+logfilegen.allgenerators.record.IpGen:::OBJECT
+this.random != null
+===========================================================================
+logfilegen.allgenerators.record.IpGen.IpGen():::EXIT
+===========================================================================
+logfilegen.allgenerators.record.IpGen.generate():::ENTER
+===========================================================================
+logfilegen.allgenerators.record.IpGen.generate():::EXIT
+this.random == orig(this.random)
+return != null
+return.ip != null
+size(return.ip[]) == 4
+===========================================================================
+logfilegen.allgenerators.record.RequestGen:::OBJECT
+===========================================================================
+logfilegen.allgenerators.record.RequestGen.RequestGen():::EXIT
+===========================================================================
+logfilegen.allgenerators.record.RequestGen.generate():::ENTER
+===========================================================================
+logfilegen.allgenerators.record.RequestGen.generate():::EXIT
+return != null
+return.method != null
+return.method.method != null
+return.url != null
+return.url.path != null
+return.url.extension != null
+return.protocol != null
+return.protocol.protocol != null
+return.protocol.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+return.protocol.version != null
+===========================================================================
+logfilegen.allgenerators.record.SizeGen:::OBJECT
+this.random != null
+===========================================================================
+logfilegen.allgenerators.record.SizeGen.SizeGen():::EXIT
+===========================================================================
+logfilegen.allgenerators.record.SizeGen.generate():::ENTER
+===========================================================================
+logfilegen.allgenerators.record.SizeGen.generate():::EXIT
+this.random == orig(this.random)
+return != null
+===========================================================================
+logfilegen.allgenerators.record.StatusGen:::OBJECT
+this.random != null
+this.state != null
+this.state[] contains no nulls and has only one value, of length 25
+this.state[] elements != null
+this.state[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+this.state[].getClass().getName() elements == java.lang.String.class
+this.state.getClass().getName() == java.util.ArrayList.class
+size(this.state[]) == 25
+===========================================================================
+logfilegen.allgenerators.record.StatusGen.StatusGen():::EXIT
+===========================================================================
+logfilegen.allgenerators.record.StatusGen.generate():::ENTER
+===========================================================================
+logfilegen.allgenerators.record.StatusGen.generate():::EXIT
+this.random == orig(this.random)
+this.state == orig(this.state)
+this.state[] == orig(this.state[])
+this.state.getClass().getName() == orig(this.state.getClass().getName())
+return != null
+return.status != null
+===========================================================================
+logfilegen.allgenerators.record.request.ExtensionGen:::OBJECT
+this.random != null
+this.extensions != null
+this.extensions[] contains no nulls and has only one value, of length 9
+this.extensions[] elements != null
+this.extensions[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+this.extensions[].getClass().getName() elements == java.lang.String.class
+this.extensions.getClass().getName() == java.util.ArrayList.class
+size(this.extensions[]) == 9
+===========================================================================
+logfilegen.allgenerators.record.request.ExtensionGen.ExtensionGen():::EXIT
+===========================================================================
+logfilegen.allgenerators.record.request.ExtensionGen.generate():::ENTER
+===========================================================================
+logfilegen.allgenerators.record.request.ExtensionGen.generate():::EXIT
+this.random == orig(this.random)
+this.extensions == orig(this.extensions)
+this.extensions[] == orig(this.extensions[])
+this.extensions.getClass().getName() == orig(this.extensions.getClass().getName())
+return != null
+return.extension != null
+===========================================================================
+logfilegen.allgenerators.record.request.MethodGen:::OBJECT
+this.random != null
+this.methods != null
+this.methods[] contains no nulls and has only one value, of length 10
+this.methods[] elements != null
+this.methods[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+this.methods[].getClass().getName() elements == java.lang.String.class
+this.methods.getClass().getName() == java.util.ArrayList.class
+size(this.methods[]) == 10
+===========================================================================
+logfilegen.allgenerators.record.request.MethodGen.MethodGen():::EXIT
+===========================================================================
+logfilegen.allgenerators.record.request.MethodGen.generate():::ENTER
+===========================================================================
+logfilegen.allgenerators.record.request.MethodGen.generate():::EXIT
+this.random == orig(this.random)
+this.methods == orig(this.methods)
+this.methods[] == orig(this.methods[])
+this.methods.getClass().getName() == orig(this.methods.getClass().getName())
+return != null
+return.method != null
+===========================================================================
+logfilegen.allgenerators.record.request.PathGen:::OBJECT
+this.letters has only one value
+this.letters != null
+this.letters.toString == "qwertyuiopasfghjklzxcvnm"
+this.random != null
+===========================================================================
+logfilegen.allgenerators.record.request.PathGen.PathGen():::EXIT
+===========================================================================
+logfilegen.allgenerators.record.request.PathGen.generate():::ENTER
+===========================================================================
+logfilegen.allgenerators.record.request.PathGen.generate():::EXIT
+this.letters == orig(this.letters)
+this.letters.toString == orig(this.letters.toString)
+this.random == orig(this.random)
+return != null
+return.path != null
+===========================================================================
+logfilegen.allgenerators.record.request.PathGen.generateString(java.lang.String, int):::ENTER
+this.letters == arg0
+arg0.toString == "qwertyuiopasfghjklzxcvnm"
+arg1 >= 1
+===========================================================================
+logfilegen.allgenerators.record.request.PathGen.generateString(java.lang.String, int):::EXIT
+this.letters == orig(this.letters)
+this.letters == orig(arg0)
+this.letters.toString == orig(this.letters.toString)
+this.random == orig(this.random)
+arg0.toString == orig(arg0.toString)
+arg0.toString == "qwertyuiopasfghjklzxcvnm"
+return != null
+===========================================================================
+logfilegen.allgenerators.record.request.ProtocolGen:::OBJECT
+this.protocols.getClass().getName() == this.versions.getClass().getName()
+this.random != null
+this.protocols != null
+this.protocols[] contains no nulls and has only one value, of length 3
+this.protocols[] elements != null
+this.protocols[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+this.protocols[].getClass().getName() elements == java.lang.String.class
+this.protocols.getClass().getName() == java.util.ArrayList.class
+this.versions != null
+this.versions[] contains no nulls and has only one value, of length 6
+this.versions[] elements != null
+this.versions[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+this.versions[].getClass().getName() elements == java.lang.String.class
+size(this.protocols[]) == 3
+size(this.versions[]) == 6
+===========================================================================
+logfilegen.allgenerators.record.request.ProtocolGen.ProtocolGen():::EXIT
+===========================================================================
+logfilegen.allgenerators.record.request.ProtocolGen.generate():::ENTER
+===========================================================================
+logfilegen.allgenerators.record.request.ProtocolGen.generate():::EXIT
+this.random == orig(this.random)
+this.protocols == orig(this.protocols)
+this.protocols[] == orig(this.protocols[])
+this.protocols.getClass().getName() == orig(this.protocols.getClass().getName())
+this.protocols.getClass().getName() == orig(this.versions.getClass().getName())
+this.versions == orig(this.versions)
+this.versions[] == orig(this.versions[])
+return != null
+return.protocol != null
+return.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+return.version != null
+===========================================================================
+logfilegen.allgenerators.record.request.UrlGen:::OBJECT
+===========================================================================
+logfilegen.allgenerators.record.request.UrlGen.UrlGen():::EXIT
+===========================================================================
+logfilegen.allgenerators.record.request.UrlGen.generate():::ENTER
+===========================================================================
+logfilegen.allgenerators.record.request.UrlGen.generate():::EXIT
+return != null
+return.path != null
+return.path.path != null
+return.extension != null
+return.extension.extension != null
+===========================================================================
+logfilegen.allmodels.Log:::OBJECT
+this.records != null
+this.records[] elements != null
+this.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+this.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+this.records.getClass().getName() == java.util.ArrayList.class
+this.NewL has only one value
+this.NewL != null
+this.NewL.toString == "\n"
+size(this.records[]) == 30
+===========================================================================
+logfilegen.allmodels.Log.Log(java.util.List):::ENTER
+arg0[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+arg0[].getClass().getName() elements == logfilegen.allmodels.Record.class
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 30
+===========================================================================
+logfilegen.allmodels.Log.Log(java.util.List):::EXIT
+this.records == orig(arg0)
+this.records.getClass().getName() == orig(arg0.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+arg0[].getClass().getName() elements == logfilegen.allmodels.Record.class
+===========================================================================
+logfilegen.allmodels.Log.getRecords():::ENTER
+===========================================================================
+logfilegen.allmodels.Log.getRecords():::EXIT
+this.records == return
+this.records[] == orig(this.records[])
+this.records.getClass().getName() == return.getClass().getName()
+this.NewL == orig(this.NewL)
+this.NewL.toString == orig(this.NewL.toString)
+return == orig(this.records)
+return.getClass().getName() == orig(this.records.getClass().getName())
+return[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+return[].getClass().getName() elements == logfilegen.allmodels.Record.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 30
+===========================================================================
+logfilegen.allmodels.Record:::OBJECT
+this.userIp.ip != null
+this.userIp.ip[] elements >= 0
+this.userTime.date != null
+this.userTime.format != null
+this.request.method != null
+this.request.method.method != null
+this.request.url != null
+this.request.url.path != null
+this.request.url.extension != null
+this.request.protocol != null
+this.request.protocol.protocol != null
+this.request.protocol.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+this.request.protocol.version != null
+this.userStatus.status != null
+size(this.userIp.ip[]) == 4
+===========================================================================
+logfilegen.allmodels.Record.Record():::EXIT
+this.userIp == null
+this.userTime == null
+this.request == null
+this.userStatus == null
+this.size == null
+===========================================================================
+logfilegen.allmodels.Record.Record(logfilegen.allmodels.record.Ip, logfilegen.allmodels.record.Date, logfilegen.allmodels.record.Request, logfilegen.allmodels.record.Status, logfilegen.allmodels.record.Size):::ENTER
+arg0 != null
+arg0.ip != null
+arg1 != null
+arg1.date != null
+arg1.format != null
+arg2 != null
+arg2.method != null
+arg2.method.method != null
+arg2.url != null
+arg2.url.path != null
+arg2.url.extension != null
+arg2.protocol != null
+arg2.protocol.protocol != null
+arg2.protocol.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+arg2.protocol.version != null
+arg3 != null
+arg3.status != null
+arg4 != null
+size(arg0.ip[]) == 4
+arg0.ip[] elements < arg4.size
+===========================================================================
+logfilegen.allmodels.Record.Record(logfilegen.allmodels.record.Ip, logfilegen.allmodels.record.Date, logfilegen.allmodels.record.Request, logfilegen.allmodels.record.Status, logfilegen.allmodels.record.Size):::EXIT
+this.userIp == orig(arg0)
+this.userIp.ip == arg0.ip
+this.userTime == orig(arg1)
+this.userTime.date == arg1.date
+this.userTime.format == arg1.format
+this.request == orig(arg2)
+this.request.method == arg2.method
+this.request.method.method == arg2.method.method
+this.request.url == arg2.url
+this.request.url.path == arg2.url.path
+this.request.url.extension == arg2.url.extension
+this.request.protocol == arg2.protocol
+this.request.protocol.protocol == arg2.protocol.protocol
+this.request.protocol.version == arg2.protocol.version
+this.userStatus == orig(arg3)
+this.userStatus.status == arg3.status
+this.size == orig(arg4)
+this.size.size == arg4.size
+arg0.ip == orig(arg0.ip)
+arg0.ip[] == orig(arg0.ip[])
+arg1.date == orig(arg1.date)
+arg1.format == orig(arg1.format)
+arg2.method == orig(arg2.method)
+arg2.method.method == orig(arg2.method.method)
+arg2.method.method.toString == orig(arg2.method.method.toString)
+arg2.url == orig(arg2.url)
+arg2.url.path == orig(arg2.url.path)
+arg2.url.extension == orig(arg2.url.extension)
+arg2.protocol == orig(arg2.protocol)
+arg2.protocol.protocol == orig(arg2.protocol.protocol)
+arg2.protocol.protocol.toString == orig(arg2.protocol.protocol.toString)
+arg2.protocol.version == orig(arg2.protocol.version)
+arg2.protocol.version.toString == orig(arg2.protocol.version.toString)
+arg3.status == orig(arg3.status)
+arg3.status.toString == orig(arg3.status.toString)
+arg4.size == orig(arg4.size)
+this.userIp != null
+this.userTime != null
+this.request != null
+this.userStatus != null
+this.size != null
+arg0.ip != null
+arg1.date != null
+arg1.format != null
+arg2.method != null
+arg2.method.method != null
+arg2.url != null
+arg2.url.path != null
+arg2.url.extension != null
+arg2.protocol != null
+arg2.protocol.protocol != null
+arg2.protocol.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+arg2.protocol.version != null
+arg3.status != null
+size(arg0.ip[]) == 4
+this.userIp.ip[] elements < arg4.size
+arg0.ip[] elements < arg4.size
+===========================================================================
+logfilegen.allmodels.Record.getRequest():::ENTER
+this.userIp != null
+this.userTime != null
+this.request != null
+this.userStatus != null
+this.size != null
+this.userIp.ip[] elements < this.size.size
+===========================================================================
+logfilegen.allmodels.Record.getRequest():::EXIT
+this.userIp == orig(this.userIp)
+this.userIp.ip == orig(this.userIp.ip)
+this.userIp.ip[] == orig(this.userIp.ip[])
+this.userTime == orig(this.userTime)
+this.userTime.date == orig(this.userTime.date)
+this.userTime.format == orig(this.userTime.format)
+this.request == return
+this.request.method == return.method
+this.request.method.method == return.method.method
+this.request.method.method.toString == orig(this.request.method.method.toString)
+this.request.url == return.url
+this.request.url.path == return.url.path
+this.request.url.extension == return.url.extension
+this.request.protocol == return.protocol
+this.request.protocol.protocol == return.protocol.protocol
+this.request.protocol.protocol.toString == orig(this.request.protocol.protocol.toString)
+this.request.protocol.version == return.protocol.version
+this.request.protocol.version.toString == orig(this.request.protocol.version.toString)
+this.userStatus == orig(this.userStatus)
+this.userStatus.status == orig(this.userStatus.status)
+this.userStatus.status.toString == orig(this.userStatus.status.toString)
+this.size == orig(this.size)
+this.size.size == orig(this.size.size)
+return == orig(this.request)
+return.method == orig(this.request.method)
+return.method.method == orig(this.request.method.method)
+return.url == orig(this.request.url)
+return.url.path == orig(this.request.url.path)
+return.url.extension == orig(this.request.url.extension)
+return.protocol == orig(this.request.protocol)
+return.protocol.protocol == orig(this.request.protocol.protocol)
+return.protocol.version == orig(this.request.protocol.version)
+this.userIp != null
+this.userTime != null
+this.userStatus != null
+this.size != null
+return != null
+return.method != null
+return.method.method != null
+return.url != null
+return.url.path != null
+return.url.extension != null
+return.protocol != null
+return.protocol.protocol != null
+return.protocol.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+return.protocol.version != null
+this.userIp.ip[] elements < this.size.size
+===========================================================================
+logfilegen.allmodels.Record.getStatus():::ENTER
+this.userIp != null
+this.userTime != null
+this.request != null
+this.userStatus != null
+this.size != null
+this.userIp.ip[] elements < this.size.size
+===========================================================================
+logfilegen.allmodels.Record.getStatus():::EXIT
+this.userIp == orig(this.userIp)
+this.userIp.ip == orig(this.userIp.ip)
+this.userIp.ip[] == orig(this.userIp.ip[])
+this.userTime == orig(this.userTime)
+this.userTime.date == orig(this.userTime.date)
+this.userTime.format == orig(this.userTime.format)
+this.request == orig(this.request)
+this.request.method == orig(this.request.method)
+this.request.method.method == orig(this.request.method.method)
+this.request.method.method.toString == orig(this.request.method.method.toString)
+this.request.url == orig(this.request.url)
+this.request.url.path == orig(this.request.url.path)
+this.request.url.extension == orig(this.request.url.extension)
+this.request.protocol == orig(this.request.protocol)
+this.request.protocol.protocol == orig(this.request.protocol.protocol)
+this.request.protocol.protocol.toString == orig(this.request.protocol.protocol.toString)
+this.request.protocol.version == orig(this.request.protocol.version)
+this.request.protocol.version.toString == orig(this.request.protocol.version.toString)
+this.userStatus == return
+this.userStatus.status == return.status
+this.userStatus.status.toString == orig(this.userStatus.status.toString)
+this.size == orig(this.size)
+this.size.size == orig(this.size.size)
+return == orig(this.userStatus)
+return.status == orig(this.userStatus.status)
+this.userIp != null
+this.userTime != null
+this.request != null
+this.size != null
+return != null
+return.status != null
+this.userIp.ip[] elements < this.size.size
+===========================================================================
+logfilegen.allmodels.Record.getTime():::ENTER
+this.userIp != null
+this.userTime != null
+this.request != null
+this.userStatus != null
+this.size != null
+this.userIp.ip[] elements < this.size.size
+===========================================================================
+logfilegen.allmodels.Record.getTime():::EXIT
+this.userIp == orig(this.userIp)
+this.userIp.ip == orig(this.userIp.ip)
+this.userIp.ip[] == orig(this.userIp.ip[])
+this.userTime == return
+this.userTime.date == return.date
+this.userTime.format == return.format
+this.request == orig(this.request)
+this.request.method == orig(this.request.method)
+this.request.method.method == orig(this.request.method.method)
+this.request.method.method.toString == orig(this.request.method.method.toString)
+this.request.url == orig(this.request.url)
+this.request.url.path == orig(this.request.url.path)
+this.request.url.extension == orig(this.request.url.extension)
+this.request.protocol == orig(this.request.protocol)
+this.request.protocol.protocol == orig(this.request.protocol.protocol)
+this.request.protocol.protocol.toString == orig(this.request.protocol.protocol.toString)
+this.request.protocol.version == orig(this.request.protocol.version)
+this.request.protocol.version.toString == orig(this.request.protocol.version.toString)
+this.userStatus == orig(this.userStatus)
+this.userStatus.status == orig(this.userStatus.status)
+this.userStatus.status.toString == orig(this.userStatus.status.toString)
+this.size == orig(this.size)
+this.size.size == orig(this.size.size)
+return == orig(this.userTime)
+return.date == orig(this.userTime.date)
+return.format == orig(this.userTime.format)
+this.userIp != null
+this.request != null
+this.userStatus != null
+this.size != null
+return != null
+return.date != null
+return.format != null
+this.userIp.ip[] elements < this.size.size
+===========================================================================
+logfilegen.allmodels.Record.setIp(logfilegen.allmodels.record.Ip):::ENTER
+this.userIp == null
+this.userTime == null
+this.request == null
+this.userStatus == null
+this.size == null
+arg0 != null
+arg0.ip != null
+size(arg0.ip[]) == 4
+===========================================================================
+logfilegen.allmodels.Record.setIp(logfilegen.allmodels.record.Ip):::EXIT
+this.userIp == orig(arg0)
+this.userIp.ip == arg0.ip
+this.userTime == orig(this.userTime)
+this.request == orig(this.request)
+this.userStatus == orig(this.userStatus)
+this.size == orig(this.size)
+arg0.ip == orig(arg0.ip)
+arg0.ip[] == orig(arg0.ip[])
+this.userIp != null
+this.userTime == null
+this.request == null
+this.userStatus == null
+this.size == null
+arg0.ip != null
+size(arg0.ip[]) == 4
+===========================================================================
+logfilegen.allmodels.Record.setRequest(logfilegen.allmodels.record.Request):::ENTER
+this.userIp != null
+this.userTime != null
+this.request == null
+this.userStatus == null
+this.size == null
+arg0 != null
+arg0.method != null
+arg0.method.method != null
+arg0.url != null
+arg0.url.path != null
+arg0.url.extension != null
+arg0.protocol != null
+arg0.protocol.protocol != null
+arg0.protocol.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+arg0.protocol.version != null
+===========================================================================
+logfilegen.allmodels.Record.setRequest(logfilegen.allmodels.record.Request):::EXIT
+this.userIp == orig(this.userIp)
+this.userIp.ip == orig(this.userIp.ip)
+this.userIp.ip[] == orig(this.userIp.ip[])
+this.userTime == orig(this.userTime)
+this.userTime.date == orig(this.userTime.date)
+this.userTime.format == orig(this.userTime.format)
+this.request == orig(arg0)
+this.request.method == arg0.method
+this.request.method.method == arg0.method.method
+this.request.url == arg0.url
+this.request.url.path == arg0.url.path
+this.request.url.extension == arg0.url.extension
+this.request.protocol == arg0.protocol
+this.request.protocol.protocol == arg0.protocol.protocol
+this.request.protocol.version == arg0.protocol.version
+this.userStatus == orig(this.userStatus)
+this.size == orig(this.size)
+arg0.method == orig(arg0.method)
+arg0.method.method == orig(arg0.method.method)
+arg0.method.method.toString == orig(arg0.method.method.toString)
+arg0.url == orig(arg0.url)
+arg0.url.path == orig(arg0.url.path)
+arg0.url.extension == orig(arg0.url.extension)
+arg0.protocol == orig(arg0.protocol)
+arg0.protocol.protocol == orig(arg0.protocol.protocol)
+arg0.protocol.protocol.toString == orig(arg0.protocol.protocol.toString)
+arg0.protocol.version == orig(arg0.protocol.version)
+arg0.protocol.version.toString == orig(arg0.protocol.version.toString)
+this.userIp != null
+this.userTime != null
+this.request != null
+this.userStatus == null
+this.size == null
+arg0.method != null
+arg0.method.method != null
+arg0.url != null
+arg0.url.path != null
+arg0.url.extension != null
+arg0.protocol != null
+arg0.protocol.protocol != null
+arg0.protocol.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+arg0.protocol.version != null
+===========================================================================
+logfilegen.allmodels.Record.setSize(logfilegen.allmodels.record.Size):::ENTER
+this.userIp != null
+this.userTime != null
+this.request != null
+this.userStatus != null
+this.size == null
+arg0 != null
+this.userIp.ip[] elements < arg0.size
+===========================================================================
+logfilegen.allmodels.Record.setSize(logfilegen.allmodels.record.Size):::EXIT
+this.userIp == orig(this.userIp)
+this.userIp.ip == orig(this.userIp.ip)
+this.userIp.ip[] == orig(this.userIp.ip[])
+this.userTime == orig(this.userTime)
+this.userTime.date == orig(this.userTime.date)
+this.userTime.format == orig(this.userTime.format)
+this.request == orig(this.request)
+this.request.method == orig(this.request.method)
+this.request.method.method == orig(this.request.method.method)
+this.request.method.method.toString == orig(this.request.method.method.toString)
+this.request.url == orig(this.request.url)
+this.request.url.path == orig(this.request.url.path)
+this.request.url.extension == orig(this.request.url.extension)
+this.request.protocol == orig(this.request.protocol)
+this.request.protocol.protocol == orig(this.request.protocol.protocol)
+this.request.protocol.protocol.toString == orig(this.request.protocol.protocol.toString)
+this.request.protocol.version == orig(this.request.protocol.version)
+this.request.protocol.version.toString == orig(this.request.protocol.version.toString)
+this.userStatus == orig(this.userStatus)
+this.userStatus.status == orig(this.userStatus.status)
+this.userStatus.status.toString == orig(this.userStatus.status.toString)
+this.size == orig(arg0)
+this.size.size == arg0.size
+arg0.size == orig(arg0.size)
+this.userIp != null
+this.userTime != null
+this.request != null
+this.userStatus != null
+this.size != null
+this.userIp.ip[] elements < arg0.size
+===========================================================================
+logfilegen.allmodels.Record.setStatus(logfilegen.allmodels.record.Status):::ENTER
+this.userIp != null
+this.userTime != null
+this.request != null
+this.userStatus == null
+this.size == null
+arg0 != null
+arg0.status != null
+===========================================================================
+logfilegen.allmodels.Record.setStatus(logfilegen.allmodels.record.Status):::EXIT
+this.userIp == orig(this.userIp)
+this.userIp.ip == orig(this.userIp.ip)
+this.userIp.ip[] == orig(this.userIp.ip[])
+this.userTime == orig(this.userTime)
+this.userTime.date == orig(this.userTime.date)
+this.userTime.format == orig(this.userTime.format)
+this.request == orig(this.request)
+this.request.method == orig(this.request.method)
+this.request.method.method == orig(this.request.method.method)
+this.request.method.method.toString == orig(this.request.method.method.toString)
+this.request.url == orig(this.request.url)
+this.request.url.path == orig(this.request.url.path)
+this.request.url.extension == orig(this.request.url.extension)
+this.request.protocol == orig(this.request.protocol)
+this.request.protocol.protocol == orig(this.request.protocol.protocol)
+this.request.protocol.protocol.toString == orig(this.request.protocol.protocol.toString)
+this.request.protocol.version == orig(this.request.protocol.version)
+this.request.protocol.version.toString == orig(this.request.protocol.version.toString)
+this.userStatus == orig(arg0)
+this.userStatus.status == arg0.status
+this.size == orig(this.size)
+arg0.status == orig(arg0.status)
+arg0.status.toString == orig(arg0.status.toString)
+this.userIp != null
+this.userTime != null
+this.request != null
+this.userStatus != null
+this.size == null
+arg0.status != null
+===========================================================================
+logfilegen.allmodels.Record.setTime(logfilegen.allmodels.record.Date):::ENTER
+this.userIp != null
+this.userTime == null
+this.request == null
+this.userStatus == null
+this.size == null
+arg0 != null
+arg0.date != null
+arg0.format != null
+===========================================================================
+logfilegen.allmodels.Record.setTime(logfilegen.allmodels.record.Date):::EXIT
+this.userIp == orig(this.userIp)
+this.userIp.ip == orig(this.userIp.ip)
+this.userIp.ip[] == orig(this.userIp.ip[])
+this.userTime == orig(arg0)
+this.userTime.date == arg0.date
+this.userTime.format == arg0.format
+this.request == orig(this.request)
+this.userStatus == orig(this.userStatus)
+this.size == orig(this.size)
+arg0.date == orig(arg0.date)
+arg0.format == orig(arg0.format)
+this.userIp != null
+this.userTime != null
+this.request == null
+this.userStatus == null
+this.size == null
+arg0.date != null
+arg0.format != null
+===========================================================================
+logfilegen.allmodels.Record.toString():::ENTER
+this.userIp != null
+this.userTime != null
+this.request != null
+this.userStatus != null
+this.size != null
+===========================================================================
+logfilegen.allmodels.Record.toString():::EXIT
+this.userIp == orig(this.userIp)
+this.userIp.ip == orig(this.userIp.ip)
+this.userIp.ip[] == orig(this.userIp.ip[])
+this.userTime == orig(this.userTime)
+this.userTime.date == orig(this.userTime.date)
+this.userTime.format == orig(this.userTime.format)
+this.request == orig(this.request)
+this.request.method == orig(this.request.method)
+this.request.method.method == orig(this.request.method.method)
+this.request.method.method.toString == orig(this.request.method.method.toString)
+this.request.url == orig(this.request.url)
+this.request.url.path == orig(this.request.url.path)
+this.request.url.extension == orig(this.request.url.extension)
+this.request.protocol == orig(this.request.protocol)
+this.request.protocol.protocol == orig(this.request.protocol.protocol)
+this.request.protocol.protocol.toString == orig(this.request.protocol.protocol.toString)
+this.request.protocol.version == orig(this.request.protocol.version)
+this.request.protocol.version.toString == orig(this.request.protocol.version.toString)
+this.userStatus == orig(this.userStatus)
+this.userStatus.status == orig(this.userStatus.status)
+this.userStatus.status.toString == orig(this.userStatus.status.toString)
+this.size == orig(this.size)
+this.size.size == orig(this.size.size)
+this.userIp != null
+this.userTime != null
+this.request != null
+this.userStatus != null
+this.size != null
+return != null
+===========================================================================
+logfilegen.allmodels.record.Date:::OBJECT
+this.format != null
+===========================================================================
+logfilegen.allmodels.record.Date.Date():::EXIT
+this.date == null
+===========================================================================
+logfilegen.allmodels.record.Date.Date(java.util.GregorianCalendar):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allmodels.record.Date.Date(java.util.GregorianCalendar):::EXIT
+this.date == orig(arg0)
+this.date != null
+===========================================================================
+logfilegen.allmodels.record.Date.getDate():::ENTER
+this.date != null
+===========================================================================
+logfilegen.allmodels.record.Date.getDate():::EXIT
+this.date == return
+this.format == orig(this.format)
+return == orig(this.date)
+return != null
+===========================================================================
+logfilegen.allmodels.record.Date.setDate(java.util.GregorianCalendar):::ENTER
+this.date == null
+arg0 != null
+===========================================================================
+logfilegen.allmodels.record.Date.setDate(java.util.GregorianCalendar):::EXIT
+this.date == orig(arg0)
+this.format == orig(this.format)
+this.date != null
+===========================================================================
+logfilegen.allmodels.record.Date.toString():::ENTER
+this.date != null
+===========================================================================
+logfilegen.allmodels.record.Date.toString():::EXIT
+this.date == orig(this.date)
+this.format == orig(this.format)
+this.date != null
+return != null
+return.toString == "[06.04.2025 01:21:37 PDT]"
+===========================================================================
+logfilegen.allmodels.record.Ip:::OBJECT
+this.ip != null
+this.ip[] elements >= 0
+size(this.ip[]) == 4
+===========================================================================
+logfilegen.allmodels.record.Ip.Ip(short, short, short, short):::ENTER
+arg0 != arg1
+arg0 != arg2
+arg0 != arg3
+arg1 != arg2
+arg1 != arg3
+arg2 != arg3
+===========================================================================
+logfilegen.allmodels.record.Ip.Ip(short, short, short, short):::EXIT
+orig(arg0) in this.ip[]
+orig(arg1) in this.ip[]
+orig(arg2) in this.ip[]
+orig(arg3) in this.ip[]
+===========================================================================
+logfilegen.allmodels.record.Ip.Ip(short[]):::ENTER
+arg0 != null
+size(arg0[]) == 4
+===========================================================================
+logfilegen.allmodels.record.Ip.Ip(short[]):::EXIT
+arg0[] == orig(arg0[])
+===========================================================================
+logfilegen.allmodels.record.Ip.toString():::ENTER
+===========================================================================
+logfilegen.allmodels.record.Ip.toString():::EXIT
+this.ip == orig(this.ip)
+this.ip[] == orig(this.ip[])
+return != null
+===========================================================================
+logfilegen.allmodels.record.Request:::OBJECT
+this.method.method != null
+this.url.path != null
+this.url.path.path != null
+this.url.extension != null
+this.url.extension.extension != null
+this.protocol.protocol != null
+this.protocol.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+this.protocol.version != null
+===========================================================================
+logfilegen.allmodels.record.Request.Request():::EXIT
+this.method == null
+this.url == null
+this.protocol == null
+===========================================================================
+logfilegen.allmodels.record.Request.Request(logfilegen.allmodels.record.request.Method, logfilegen.allmodels.record.request.Url, logfilegen.allmodels.record.request.Protocol):::ENTER
+arg0 != null
+arg0.method != null
+arg1 != null
+arg1.path != null
+arg1.path.path != null
+arg1.extension != null
+arg1.extension.extension != null
+arg2 != null
+arg2.protocol != null
+arg2.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+arg2.version != null
+===========================================================================
+logfilegen.allmodels.record.Request.Request(logfilegen.allmodels.record.request.Method, logfilegen.allmodels.record.request.Url, logfilegen.allmodels.record.request.Protocol):::EXIT
+this.method == orig(arg0)
+this.method.method == arg0.method
+this.url == orig(arg1)
+this.url.path == arg1.path
+this.url.path.path == arg1.path.path
+this.url.extension == arg1.extension
+this.url.extension.extension == arg1.extension.extension
+this.protocol == orig(arg2)
+this.protocol.protocol == arg2.protocol
+this.protocol.version == arg2.version
+arg0.method == orig(arg0.method)
+arg0.method.toString == orig(arg0.method.toString)
+arg1.path == orig(arg1.path)
+arg1.path.path == orig(arg1.path.path)
+arg1.path.path.toString == orig(arg1.path.path.toString)
+arg1.extension == orig(arg1.extension)
+arg1.extension.extension == orig(arg1.extension.extension)
+arg1.extension.extension.toString == orig(arg1.extension.extension.toString)
+arg2.protocol == orig(arg2.protocol)
+arg2.protocol.toString == orig(arg2.protocol.toString)
+arg2.version == orig(arg2.version)
+arg2.version.toString == orig(arg2.version.toString)
+this.method != null
+this.url != null
+this.protocol != null
+arg0.method != null
+arg1.path != null
+arg1.path.path != null
+arg1.extension != null
+arg1.extension.extension != null
+arg2.protocol != null
+arg2.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+arg2.version != null
+===========================================================================
+logfilegen.allmodels.record.Request.getUrl():::ENTER
+this.method != null
+this.url != null
+this.protocol != null
+===========================================================================
+logfilegen.allmodels.record.Request.getUrl():::EXIT
+this.method == orig(this.method)
+this.method.method == orig(this.method.method)
+this.method.method.toString == orig(this.method.method.toString)
+this.url == return
+this.url.path == return.path
+this.url.path.path == return.path.path
+this.url.path.path.toString == orig(this.url.path.path.toString)
+this.url.extension == return.extension
+this.url.extension.extension == return.extension.extension
+this.url.extension.extension.toString == orig(this.url.extension.extension.toString)
+this.protocol == orig(this.protocol)
+this.protocol.protocol == orig(this.protocol.protocol)
+this.protocol.protocol.toString == orig(this.protocol.protocol.toString)
+this.protocol.version == orig(this.protocol.version)
+this.protocol.version.toString == orig(this.protocol.version.toString)
+return == orig(this.url)
+return.path == orig(this.url.path)
+return.path.path == orig(this.url.path.path)
+return.extension == orig(this.url.extension)
+return.extension.extension == orig(this.url.extension.extension)
+this.method != null
+this.protocol != null
+return != null
+return.path != null
+return.path.path != null
+return.extension != null
+return.extension.extension != null
+===========================================================================
+logfilegen.allmodels.record.Request.setProtocol(logfilegen.allmodels.record.request.Protocol):::ENTER
+this.method != null
+this.url != null
+this.protocol == null
+arg0 != null
+arg0.protocol != null
+arg0.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+arg0.version != null
+===========================================================================
+logfilegen.allmodels.record.Request.setProtocol(logfilegen.allmodels.record.request.Protocol):::EXIT
+this.method == orig(this.method)
+this.method.method == orig(this.method.method)
+this.method.method.toString == orig(this.method.method.toString)
+this.url == orig(this.url)
+this.url.path == orig(this.url.path)
+this.url.path.path == orig(this.url.path.path)
+this.url.path.path.toString == orig(this.url.path.path.toString)
+this.url.extension == orig(this.url.extension)
+this.url.extension.extension == orig(this.url.extension.extension)
+this.url.extension.extension.toString == orig(this.url.extension.extension.toString)
+this.protocol == orig(arg0)
+this.protocol.protocol == arg0.protocol
+this.protocol.version == arg0.version
+arg0.protocol == orig(arg0.protocol)
+arg0.protocol.toString == orig(arg0.protocol.toString)
+arg0.version == orig(arg0.version)
+arg0.version.toString == orig(arg0.version.toString)
+this.method != null
+this.url != null
+this.protocol != null
+arg0.protocol != null
+arg0.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+arg0.version != null
+===========================================================================
+logfilegen.allmodels.record.Request.setProtocolMeth(logfilegen.allmodels.record.request.Method):::ENTER
+this.method == null
+this.url == null
+this.protocol == null
+arg0 != null
+arg0.method != null
+===========================================================================
+logfilegen.allmodels.record.Request.setProtocolMeth(logfilegen.allmodels.record.request.Method):::EXIT
+this.method == orig(arg0)
+this.method.method == arg0.method
+this.url == orig(this.url)
+this.protocol == orig(this.protocol)
+arg0.method == orig(arg0.method)
+arg0.method.toString == orig(arg0.method.toString)
+this.method != null
+this.url == null
+this.protocol == null
+arg0.method != null
+===========================================================================
+logfilegen.allmodels.record.Request.setUrl(logfilegen.allmodels.record.request.Url):::ENTER
+this.method != null
+this.url == null
+this.protocol == null
+arg0 != null
+arg0.path != null
+arg0.path.path != null
+arg0.extension != null
+arg0.extension.extension != null
+===========================================================================
+logfilegen.allmodels.record.Request.setUrl(logfilegen.allmodels.record.request.Url):::EXIT
+this.method == orig(this.method)
+this.method.method == orig(this.method.method)
+this.method.method.toString == orig(this.method.method.toString)
+this.url == orig(arg0)
+this.url.path == arg0.path
+this.url.path.path == arg0.path.path
+this.url.extension == arg0.extension
+this.url.extension.extension == arg0.extension.extension
+this.protocol == orig(this.protocol)
+arg0.path == orig(arg0.path)
+arg0.path.path == orig(arg0.path.path)
+arg0.path.path.toString == orig(arg0.path.path.toString)
+arg0.extension == orig(arg0.extension)
+arg0.extension.extension == orig(arg0.extension.extension)
+arg0.extension.extension.toString == orig(arg0.extension.extension.toString)
+this.method != null
+this.url != null
+this.protocol == null
+arg0.path != null
+arg0.path.path != null
+arg0.extension != null
+arg0.extension.extension != null
+===========================================================================
+logfilegen.allmodels.record.Request.toString():::ENTER
+this.method != null
+this.url != null
+this.protocol != null
+===========================================================================
+logfilegen.allmodels.record.Request.toString():::EXIT
+this.method == orig(this.method)
+this.method.method == orig(this.method.method)
+this.method.method.toString == orig(this.method.method.toString)
+this.url == orig(this.url)
+this.url.path == orig(this.url.path)
+this.url.path.path == orig(this.url.path.path)
+this.url.path.path.toString == orig(this.url.path.path.toString)
+this.url.extension == orig(this.url.extension)
+this.url.extension.extension == orig(this.url.extension.extension)
+this.url.extension.extension.toString == orig(this.url.extension.extension.toString)
+this.protocol == orig(this.protocol)
+this.protocol.protocol == orig(this.protocol.protocol)
+this.protocol.protocol.toString == orig(this.protocol.protocol.toString)
+this.protocol.version == orig(this.protocol.version)
+this.protocol.version.toString == orig(this.protocol.version.toString)
+this.method != null
+this.url != null
+this.protocol != null
+return != null
+===========================================================================
+logfilegen.allmodels.record.Size:::OBJECT
+===========================================================================
+logfilegen.allmodels.record.Size.Size(long):::ENTER
+===========================================================================
+logfilegen.allmodels.record.Size.Size(long):::EXIT
+this.size == orig(arg0)
+===========================================================================
+logfilegen.allmodels.record.Size.toString():::ENTER
+===========================================================================
+logfilegen.allmodels.record.Size.toString():::EXIT
+this.size == orig(this.size)
+return != null
+===========================================================================
+logfilegen.allmodels.record.Status:::OBJECT
+this.status != null
+===========================================================================
+logfilegen.allmodels.record.Status.Status(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allmodels.record.Status.Status(java.lang.String):::EXIT
+this.status == orig(arg0)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+logfilegen.allmodels.record.Status.getStatus():::ENTER
+===========================================================================
+logfilegen.allmodels.record.Status.getStatus():::EXIT
+this.status == return
+this.status.toString == orig(this.status.toString)
+return == orig(this.status)
+return != null
+===========================================================================
+logfilegen.allmodels.record.Status.toString():::ENTER
+===========================================================================
+logfilegen.allmodels.record.Status.toString():::EXIT
+this.status == orig(this.status)
+this.status.toString == orig(this.status.toString)
+return != null
+===========================================================================
+logfilegen.allmodels.record.request.Extension:::OBJECT
+this.extension != null
+===========================================================================
+logfilegen.allmodels.record.request.Extension.Extension(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allmodels.record.request.Extension.Extension(java.lang.String):::EXIT
+this.extension == orig(arg0)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+logfilegen.allmodels.record.request.Extension.getExtension():::ENTER
+===========================================================================
+logfilegen.allmodels.record.request.Extension.getExtension():::EXIT
+this.extension == return
+this.extension.toString == orig(this.extension.toString)
+return == orig(this.extension)
+return != null
+===========================================================================
+logfilegen.allmodels.record.request.Extension.toString():::ENTER
+===========================================================================
+logfilegen.allmodels.record.request.Extension.toString():::EXIT
+this.extension == orig(this.extension)
+this.extension.toString == orig(this.extension.toString)
+return != null
+===========================================================================
+logfilegen.allmodels.record.request.Method:::OBJECT
+this.method != null
+===========================================================================
+logfilegen.allmodels.record.request.Method.Method(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allmodels.record.request.Method.Method(java.lang.String):::EXIT
+this.method == orig(arg0)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+logfilegen.allmodels.record.request.Method.toString():::ENTER
+===========================================================================
+logfilegen.allmodels.record.request.Method.toString():::EXIT
+this.method == orig(this.method)
+this.method.toString == orig(this.method.toString)
+return != null
+===========================================================================
+logfilegen.allmodels.record.request.Path:::OBJECT
+this.path != null
+===========================================================================
+logfilegen.allmodels.record.request.Path.Path(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allmodels.record.request.Path.Path(java.lang.String):::EXIT
+this.path == orig(arg0)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+logfilegen.allmodels.record.request.Path.toString():::ENTER
+===========================================================================
+logfilegen.allmodels.record.request.Path.toString():::EXIT
+this.path == orig(this.path)
+this.path.toString == orig(this.path.toString)
+return != null
+===========================================================================
+logfilegen.allmodels.record.request.Protocol:::OBJECT
+this.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+===========================================================================
+logfilegen.allmodels.record.request.Protocol.Protocol():::EXIT
+this.protocol == null
+this.version == null
+===========================================================================
+logfilegen.allmodels.record.request.Protocol.Protocol(java.lang.String, java.lang.String):::ENTER
+arg0 != null
+arg0.toString one of { "FTP", "HTTP", "HTTPS" }
+arg1 != null
+===========================================================================
+logfilegen.allmodels.record.request.Protocol.Protocol(java.lang.String, java.lang.String):::EXIT
+this.protocol == orig(arg0)
+this.version == orig(arg1)
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+this.protocol != null
+this.version != null
+arg0.toString one of { "FTP", "HTTP", "HTTPS" }
+===========================================================================
+logfilegen.allmodels.record.request.Protocol.setProtocol(java.lang.String):::ENTER
+this.protocol == null
+this.version == null
+arg0 != null
+arg0.toString one of { "FTP", "HTTP", "HTTPS" }
+===========================================================================
+logfilegen.allmodels.record.request.Protocol.setProtocol(java.lang.String):::EXIT
+this.protocol == orig(arg0)
+this.version == orig(this.version)
+arg0.toString == orig(arg0.toString)
+this.protocol != null
+this.version == null
+arg0.toString one of { "FTP", "HTTP", "HTTPS" }
+===========================================================================
+logfilegen.allmodels.record.request.Protocol.setVersion(java.lang.String):::ENTER
+this.protocol != null
+this.version == null
+arg0 != null
+===========================================================================
+logfilegen.allmodels.record.request.Protocol.setVersion(java.lang.String):::EXIT
+this.protocol == orig(this.protocol)
+this.protocol.toString == orig(this.protocol.toString)
+this.version == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.protocol != null
+this.version != null
+===========================================================================
+logfilegen.allmodels.record.request.Protocol.toString():::ENTER
+this.protocol != null
+this.version != null
+===========================================================================
+logfilegen.allmodels.record.request.Protocol.toString():::EXIT
+this.protocol == orig(this.protocol)
+this.protocol.toString == orig(this.protocol.toString)
+this.version == orig(this.version)
+this.version.toString == orig(this.version.toString)
+this.protocol != null
+this.version != null
+return != null
+===========================================================================
+logfilegen.allmodels.record.request.Url:::OBJECT
+this.path.path != null
+this.extension.extension != null
+===========================================================================
+logfilegen.allmodels.record.request.Url.Url():::EXIT
+this.path == null
+this.extension == null
+===========================================================================
+logfilegen.allmodels.record.request.Url.Url(logfilegen.allmodels.record.request.Path, logfilegen.allmodels.record.request.Extension):::ENTER
+arg0 != null
+arg0.path != null
+arg1 != null
+arg1.extension != null
+===========================================================================
+logfilegen.allmodels.record.request.Url.Url(logfilegen.allmodels.record.request.Path, logfilegen.allmodels.record.request.Extension):::EXIT
+this.path == orig(arg0)
+this.path.path == arg0.path
+this.extension == orig(arg1)
+this.extension.extension == arg1.extension
+arg0.path == orig(arg0.path)
+arg0.path.toString == orig(arg0.path.toString)
+arg1.extension == orig(arg1.extension)
+arg1.extension.toString == orig(arg1.extension.toString)
+this.path != null
+this.extension != null
+arg0.path != null
+arg1.extension != null
+===========================================================================
+logfilegen.allmodels.record.request.Url.getExtension():::ENTER
+this.path != null
+this.extension != null
+===========================================================================
+logfilegen.allmodels.record.request.Url.getExtension():::EXIT
+this.path == orig(this.path)
+this.path.path == orig(this.path.path)
+this.path.path.toString == orig(this.path.path.toString)
+this.extension == return
+this.extension.extension == return.extension
+this.extension.extension.toString == orig(this.extension.extension.toString)
+return == orig(this.extension)
+return.extension == orig(this.extension.extension)
+this.path != null
+return != null
+return.extension != null
+===========================================================================
+logfilegen.allmodels.record.request.Url.setExtension(logfilegen.allmodels.record.request.Extension):::ENTER
+this.path != null
+this.extension == null
+arg0 != null
+arg0.extension != null
+===========================================================================
+logfilegen.allmodels.record.request.Url.setExtension(logfilegen.allmodels.record.request.Extension):::EXIT
+this.path == orig(this.path)
+this.path.path == orig(this.path.path)
+this.path.path.toString == orig(this.path.path.toString)
+this.extension == orig(arg0)
+this.extension.extension == arg0.extension
+arg0.extension == orig(arg0.extension)
+arg0.extension.toString == orig(arg0.extension.toString)
+this.path != null
+this.extension != null
+arg0.extension != null
+===========================================================================
+logfilegen.allmodels.record.request.Url.setPath(logfilegen.allmodels.record.request.Path):::ENTER
+this.path == null
+this.extension == null
+arg0 != null
+arg0.path != null
+===========================================================================
+logfilegen.allmodels.record.request.Url.setPath(logfilegen.allmodels.record.request.Path):::EXIT
+this.path == orig(arg0)
+this.path.path == arg0.path
+this.extension == orig(this.extension)
+arg0.path == orig(arg0.path)
+arg0.path.toString == orig(arg0.path.toString)
+this.path != null
+this.extension == null
+arg0.path != null
+===========================================================================
+logfilegen.allmodels.record.request.Url.toString():::ENTER
+this.path != null
+this.extension != null
+===========================================================================
+logfilegen.allmodels.record.request.Url.toString():::EXIT
+this.path == orig(this.path)
+this.path.path == orig(this.path.path)
+this.path.path.toString == orig(this.path.path.toString)
+this.extension == orig(this.extension)
+this.extension.extension == orig(this.extension.extension)
+this.extension.extension.toString == orig(this.extension.extension.toString)
+this.path != null
+this.extension != null
+return != null
+===========================================================================
+logfilegen.allparsers.LogPars:::OBJECT
+===========================================================================
+logfilegen.allparsers.LogPars.LogPars():::EXIT
+===========================================================================
+logfilegen.allparsers.LogPars.parser(java.lang.String):::ENTER
+arg0.toString == "177.28.149.124 - [06.04.2025 01:21:37 PDT] \"UNLINK /u/ggt/pxorp/ozt/rupvq.mp3 HTTP/1.2\" 201 23541\n160.87.156.10 - [06.04.2025 01:21:37 PDT] \"GET /a/t.html HTTPS/1.0\" 504 47461\n21.207.44.168 - [06.04.2025 01:21:37 PDT] \"GET /gh.jpg HTTP/1.0\" 501 46122\n109.116.113.237 - [06.04.2025 01:21:37 PDT] \"CONNECT /p.gif HTTP/1.2\" 204 65543\n181.34.28.218 - [06.04.2025 01:21:37 PDT] \"CONNECT /i/q.html FTP/1.2\" 504 74729\n112.237.88.213 - [06.04.2025 01:21:37 PDT] \"OPTIONS /mtx/w/h/sj.bmp HTTPS/1.1\" 456 38558\n157.154.87.77 - [06.04.2025 01:21:37 PDT] \"TRACE /x/gxs.pdf HTTP/1.0\" 307 99468\n46.138.22.203 - [06.04.2025 01:21:37 PDT] \"TRACE /ff.doc HTTPS/2.0\" 504 35441\n155.107.65.12 - [06.04.2025 01:21:37 PDT] \"POST /kylzr/k/f/n.gif HTTP/0.9\" 456 63815\n234.172.13.65 - [06.04.2025 01:21:37 PDT] \"DELETE /itjnk.pdf FTP/1.0\" 402 72237\n104.81.15.205 - [06.04.2025 01:21:37 PDT] \"POST /ukiny/elfif/i.jpg HTTP/2.0\" 304 72282\n220.170.171.177 - [06.04.2025 01:21:37 PDT] \"LINK /ugwqc/zz.html HTTP/1.2\" 503 83184\n103.208.200.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /nzu/prwvj.pdf FTP/2.0\" 503 94356\n70.47.157.235 - [06.04.2025 01:21:37 PDT] \"PUT /mu/jzfh/uxfla/zeygp/tkpot.html FTP/1.2\" 434 22908\n95.195.142.4 - [06.04.2025 01:21:37 PDT] \"OPTIONS /hnc/an/jszm/sfr/jsmue.bmp HTTP/2.0\" 200 65179\n193.67.90.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /wrc/ofi/i.pdf HTTPS/1.2\" 434 26921\n232.36.66.158 - [06.04.2025 01:21:37 PDT] \"OPTIONS /qfr/ez/ahvgv.jpg FTP/0.9\" 400 34350\n227.5.0.175 - [06.04.2025 01:21:37 PDT] \"HEAD /rptu.jpg FTP/0.9\" 204 37901\n67.1.93.71 - [06.04.2025 01:21:37 PDT] \"PUT /yzfhc/ps/u.jpg FTP/0.9\" 404 87568\n159.160.232.249 - [06.04.2025 01:21:37 PDT] \"TRACE /gmyi/h/lr/jwwhl/xitgj.gif FTP/1.2\" 423 93997\n69.183.116.68 - [06.04.2025 01:21:37 PDT] \"PUT /tyk.bmp HTTPS/2.0\" 303 62788\n28.177.36.84 - [06.04.2025 01:21:37 PDT] \"UNLINK /uvy/q.pdf HTTP/3.0\" 307 43317\n193.100.152.3 - [06.04.2025 01:21:37 PDT] \"CONNECT /nm/liie/xehu/ya.html HTTP/3.0\" 400 39993\n59.118.39.86 - [06.04.2025 01:21:37 PDT] \"POST /wgte/szfs.jpg HTTPS/3.0\" 201 51059\n202.168.49.215 - [06.04.2025 01:21:37 PDT] \"TRACE /y/im/ghe/tecl.pdf FTP/2.0\" 423 8440\n239.130.149.53 - [06.04.2025 01:21:37 PDT] \"POST /a/atj/nzac/uoa.doc HTTPS/1.0\" 302 1312\n101.163.154.140 - [06.04.2025 01:21:37 PDT] \"DELETE /nau.doc FTP/1.2\" 302 17661\n139.124.250.81 - [06.04.2025 01:21:37 PDT] \"POST /y.mp3 FTP/1.0\" 400 3120\n95.129.73.143 - [06.04.2025 01:21:37 PDT] \"CONNECT /gaj/wm/rsg.html HTTP/0.9\" 202 85016\n97.190.85.169 - [06.04.2025 01:21:37 PDT] \"CONNECT /pw/lgwa/hwj.html FTP/2.0\" 505 59894\n"
+===========================================================================
+logfilegen.allparsers.LogPars.parser(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "177.28.149.124 - [06.04.2025 01:21:37 PDT] \"UNLINK /u/ggt/pxorp/ozt/rupvq.mp3 HTTP/1.2\" 201 23541\n160.87.156.10 - [06.04.2025 01:21:37 PDT] \"GET /a/t.html HTTPS/1.0\" 504 47461\n21.207.44.168 - [06.04.2025 01:21:37 PDT] \"GET /gh.jpg HTTP/1.0\" 501 46122\n109.116.113.237 - [06.04.2025 01:21:37 PDT] \"CONNECT /p.gif HTTP/1.2\" 204 65543\n181.34.28.218 - [06.04.2025 01:21:37 PDT] \"CONNECT /i/q.html FTP/1.2\" 504 74729\n112.237.88.213 - [06.04.2025 01:21:37 PDT] \"OPTIONS /mtx/w/h/sj.bmp HTTPS/1.1\" 456 38558\n157.154.87.77 - [06.04.2025 01:21:37 PDT] \"TRACE /x/gxs.pdf HTTP/1.0\" 307 99468\n46.138.22.203 - [06.04.2025 01:21:37 PDT] \"TRACE /ff.doc HTTPS/2.0\" 504 35441\n155.107.65.12 - [06.04.2025 01:21:37 PDT] \"POST /kylzr/k/f/n.gif HTTP/0.9\" 456 63815\n234.172.13.65 - [06.04.2025 01:21:37 PDT] \"DELETE /itjnk.pdf FTP/1.0\" 402 72237\n104.81.15.205 - [06.04.2025 01:21:37 PDT] \"POST /ukiny/elfif/i.jpg HTTP/2.0\" 304 72282\n220.170.171.177 - [06.04.2025 01:21:37 PDT] \"LINK /ugwqc/zz.html HTTP/1.2\" 503 83184\n103.208.200.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /nzu/prwvj.pdf FTP/2.0\" 503 94356\n70.47.157.235 - [06.04.2025 01:21:37 PDT] \"PUT /mu/jzfh/uxfla/zeygp/tkpot.html FTP/1.2\" 434 22908\n95.195.142.4 - [06.04.2025 01:21:37 PDT] \"OPTIONS /hnc/an/jszm/sfr/jsmue.bmp HTTP/2.0\" 200 65179\n193.67.90.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /wrc/ofi/i.pdf HTTPS/1.2\" 434 26921\n232.36.66.158 - [06.04.2025 01:21:37 PDT] \"OPTIONS /qfr/ez/ahvgv.jpg FTP/0.9\" 400 34350\n227.5.0.175 - [06.04.2025 01:21:37 PDT] \"HEAD /rptu.jpg FTP/0.9\" 204 37901\n67.1.93.71 - [06.04.2025 01:21:37 PDT] \"PUT /yzfhc/ps/u.jpg FTP/0.9\" 404 87568\n159.160.232.249 - [06.04.2025 01:21:37 PDT] \"TRACE /gmyi/h/lr/jwwhl/xitgj.gif FTP/1.2\" 423 93997\n69.183.116.68 - [06.04.2025 01:21:37 PDT] \"PUT /tyk.bmp HTTPS/2.0\" 303 62788\n28.177.36.84 - [06.04.2025 01:21:37 PDT] \"UNLINK /uvy/q.pdf HTTP/3.0\" 307 43317\n193.100.152.3 - [06.04.2025 01:21:37 PDT] \"CONNECT /nm/liie/xehu/ya.html HTTP/3.0\" 400 39993\n59.118.39.86 - [06.04.2025 01:21:37 PDT] \"POST /wgte/szfs.jpg HTTPS/3.0\" 201 51059\n202.168.49.215 - [06.04.2025 01:21:37 PDT] \"TRACE /y/im/ghe/tecl.pdf FTP/2.0\" 423 8440\n239.130.149.53 - [06.04.2025 01:21:37 PDT] \"POST /a/atj/nzac/uoa.doc HTTPS/1.0\" 302 1312\n101.163.154.140 - [06.04.2025 01:21:37 PDT] \"DELETE /nau.doc FTP/1.2\" 302 17661\n139.124.250.81 - [06.04.2025 01:21:37 PDT] \"POST /y.mp3 FTP/1.0\" 400 3120\n95.129.73.143 - [06.04.2025 01:21:37 PDT] \"CONNECT /gaj/wm/rsg.html HTTP/0.9\" 202 85016\n97.190.85.169 - [06.04.2025 01:21:37 PDT] \"CONNECT /pw/lgwa/hwj.html FTP/2.0\" 505 59894\n"
+return.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+return.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+return.records.getClass().getName() == java.util.ArrayList.class
+return.NewL has only one value
+return.NewL.toString == "\n"
+size(return.records[]) == 30
+===========================================================================
+logfilegen.allparsers.ParserDate:::OBJECT
+===========================================================================
+logfilegen.allparsers.ParserDate.ParserDate():::EXIT
+===========================================================================
+logfilegen.allparsers.ParserDate.parser(java.lang.String):::ENTER
+arg0 != null
+arg0.toString == "06.04.2025 01:21:37 PDT"
+===========================================================================
+logfilegen.allparsers.ParserDate.parser(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "06.04.2025 01:21:37 PDT"
+return != null
+return.date != null
+return.format != null
+===========================================================================
+logfilegen.allparsers.ParserExtension:::OBJECT
+===========================================================================
+logfilegen.allparsers.ParserExtension.ParserExtension():::EXIT
+===========================================================================
+logfilegen.allparsers.ParserExtension.parser(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allparsers.ParserExtension.parser(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+return.extension == orig(arg0)
+return != null
+return.extension != null
+===========================================================================
+logfilegen.allparsers.ParserIp:::OBJECT
+===========================================================================
+logfilegen.allparsers.ParserIp.ParserIp():::EXIT
+===========================================================================
+logfilegen.allparsers.ParserIp.parser(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allparsers.ParserIp.parser(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+return != null
+return.ip != null
+size(return.ip[]) == 4
+===========================================================================
+logfilegen.allparsers.ParserMethod:::OBJECT
+===========================================================================
+logfilegen.allparsers.ParserMethod.ParserMethod():::EXIT
+===========================================================================
+logfilegen.allparsers.ParserMethod.parser(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allparsers.ParserMethod.parser(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+return.method == orig(arg0)
+return != null
+return.method != null
+===========================================================================
+logfilegen.allparsers.ParserPath:::OBJECT
+===========================================================================
+logfilegen.allparsers.ParserPath.ParserPath():::EXIT
+===========================================================================
+logfilegen.allparsers.ParserPath.parser(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allparsers.ParserPath.parser(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+return.path == orig(arg0)
+return != null
+return.path != null
+===========================================================================
+logfilegen.allparsers.ParserProtocol:::OBJECT
+===========================================================================
+logfilegen.allparsers.ParserProtocol.ParserProtocol():::EXIT
+===========================================================================
+logfilegen.allparsers.ParserProtocol.parser(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allparsers.ParserProtocol.parser(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+return != null
+return.protocol != null
+return.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+return.version != null
+===========================================================================
+logfilegen.allparsers.ParserRequest:::OBJECT
+this.parserMethod != null
+this.parserUrl != null
+this.parserUrl.parserPath != null
+this.parserUrl.parserExt != null
+this.parserProtocol != null
+===========================================================================
+logfilegen.allparsers.ParserRequest.ParserRequest():::EXIT
+===========================================================================
+logfilegen.allparsers.ParserRequest.parser(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allparsers.ParserRequest.parser(java.lang.String):::EXIT
+this.parserMethod == orig(this.parserMethod)
+this.parserUrl == orig(this.parserUrl)
+this.parserUrl.parserPath == orig(this.parserUrl.parserPath)
+this.parserUrl.parserExt == orig(this.parserUrl.parserExt)
+this.parserProtocol == orig(this.parserProtocol)
+arg0.toString == orig(arg0.toString)
+return != null
+return.method != null
+return.method.method != null
+return.url != null
+return.url.path != null
+return.url.extension != null
+return.protocol != null
+return.protocol.protocol != null
+return.protocol.protocol.toString one of { "FTP", "HTTP", "HTTPS" }
+return.protocol.version != null
+===========================================================================
+logfilegen.allparsers.ParserSize:::OBJECT
+===========================================================================
+logfilegen.allparsers.ParserSize.ParserSize():::EXIT
+===========================================================================
+logfilegen.allparsers.ParserSize.parser(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allparsers.ParserSize.parser(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+return != null
+===========================================================================
+logfilegen.allparsers.ParserStatus:::OBJECT
+===========================================================================
+logfilegen.allparsers.ParserStatus.ParserStatus():::EXIT
+===========================================================================
+logfilegen.allparsers.ParserStatus.parser(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allparsers.ParserStatus.parser(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+return.status == orig(arg0)
+return != null
+return.status != null
+===========================================================================
+logfilegen.allparsers.ParserUrl:::OBJECT
+this.parserPath != null
+this.parserExt != null
+===========================================================================
+logfilegen.allparsers.ParserUrl.ParserUrl():::EXIT
+===========================================================================
+logfilegen.allparsers.ParserUrl.parser(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allparsers.ParserUrl.parser(java.lang.String):::EXIT
+this.parserPath == orig(this.parserPath)
+this.parserExt == orig(this.parserExt)
+arg0.toString == orig(arg0.toString)
+return != null
+return.path != null
+return.path.path != null
+return.extension != null
+return.extension.extension != null
+===========================================================================
+logfilegen.allparsers.RecordPars:::OBJECT
+this.parserIp != null
+this.parserRequest != null
+this.parserRequest.parserMethod != null
+this.parserRequest.parserUrl != null
+this.parserRequest.parserUrl.parserPath != null
+this.parserRequest.parserUrl.parserExt != null
+this.parserRequest.parserProtocol != null
+this.parserSize != null
+this.parserStatus != null
+this.parserDate != null
+===========================================================================
+logfilegen.allparsers.RecordPars.RecordPars():::EXIT
+===========================================================================
+logfilegen.allparsers.RecordPars.parser(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+logfilegen.allparsers.RecordPars.parser(java.lang.String):::EXIT
+this.parserIp == orig(this.parserIp)
+this.parserRequest == orig(this.parserRequest)
+this.parserRequest.parserMethod == orig(this.parserRequest.parserMethod)
+this.parserRequest.parserUrl == orig(this.parserRequest.parserUrl)
+this.parserRequest.parserUrl.parserPath == orig(this.parserRequest.parserUrl.parserPath)
+this.parserRequest.parserUrl.parserExt == orig(this.parserRequest.parserUrl.parserExt)
+this.parserRequest.parserProtocol == orig(this.parserRequest.parserProtocol)
+this.parserSize == orig(this.parserSize)
+this.parserStatus == orig(this.parserStatus)
+this.parserDate == orig(this.parserDate)
+arg0.toString == orig(arg0.toString)
+return != null
+return.userIp != null
+return.userIp.ip != null
+return.userTime != null
+return.userTime.date != null
+return.userTime.format != null
+return.request != null
+return.request.method != null
+return.request.url != null
+return.request.protocol != null
+return.userStatus != null
+return.userStatus.status != null
+return.size != null
+size(return.userIp.ip[]) == 4
+return.userIp.ip[] elements < return.size.size
+===========================================================================
+logfilegen.forFile.Reader:::OBJECT
+this.file has only one value
+this.file.toString == "LogFile.log"
+===========================================================================
+logfilegen.forFile.Reader.Reader(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "LogFile.log"
+===========================================================================
+logfilegen.forFile.Reader.Reader(java.lang.String):::EXIT
+this.file == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg0.toString == "LogFile.log"
+===========================================================================
+logfilegen.forFile.Reader.read():::ENTER
+===========================================================================
+logfilegen.forFile.Reader.read():::EXIT21
+===========================================================================
+logfilegen.forFile.Reader.read():::EXIT
+this.file == orig(this.file)
+this.file.toString == orig(this.file.toString)
+return.toString == "177.28.149.124 - [06.04.2025 01:21:37 PDT] \"UNLINK /u/ggt/pxorp/ozt/rupvq.mp3 HTTP/1.2\" 201 23541\n160.87.156.10 - [06.04.2025 01:21:37 PDT] \"GET /a/t.html HTTPS/1.0\" 504 47461\n21.207.44.168 - [06.04.2025 01:21:37 PDT] \"GET /gh.jpg HTTP/1.0\" 501 46122\n109.116.113.237 - [06.04.2025 01:21:37 PDT] \"CONNECT /p.gif HTTP/1.2\" 204 65543\n181.34.28.218 - [06.04.2025 01:21:37 PDT] \"CONNECT /i/q.html FTP/1.2\" 504 74729\n112.237.88.213 - [06.04.2025 01:21:37 PDT] \"OPTIONS /mtx/w/h/sj.bmp HTTPS/1.1\" 456 38558\n157.154.87.77 - [06.04.2025 01:21:37 PDT] \"TRACE /x/gxs.pdf HTTP/1.0\" 307 99468\n46.138.22.203 - [06.04.2025 01:21:37 PDT] \"TRACE /ff.doc HTTPS/2.0\" 504 35441\n155.107.65.12 - [06.04.2025 01:21:37 PDT] \"POST /kylzr/k/f/n.gif HTTP/0.9\" 456 63815\n234.172.13.65 - [06.04.2025 01:21:37 PDT] \"DELETE /itjnk.pdf FTP/1.0\" 402 72237\n104.81.15.205 - [06.04.2025 01:21:37 PDT] \"POST /ukiny/elfif/i.jpg HTTP/2.0\" 304 72282\n220.170.171.177 - [06.04.2025 01:21:37 PDT] \"LINK /ugwqc/zz.html HTTP/1.2\" 503 83184\n103.208.200.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /nzu/prwvj.pdf FTP/2.0\" 503 94356\n70.47.157.235 - [06.04.2025 01:21:37 PDT] \"PUT /mu/jzfh/uxfla/zeygp/tkpot.html FTP/1.2\" 434 22908\n95.195.142.4 - [06.04.2025 01:21:37 PDT] \"OPTIONS /hnc/an/jszm/sfr/jsmue.bmp HTTP/2.0\" 200 65179\n193.67.90.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /wrc/ofi/i.pdf HTTPS/1.2\" 434 26921\n232.36.66.158 - [06.04.2025 01:21:37 PDT] \"OPTIONS /qfr/ez/ahvgv.jpg FTP/0.9\" 400 34350\n227.5.0.175 - [06.04.2025 01:21:37 PDT] \"HEAD /rptu.jpg FTP/0.9\" 204 37901\n67.1.93.71 - [06.04.2025 01:21:37 PDT] \"PUT /yzfhc/ps/u.jpg FTP/0.9\" 404 87568\n159.160.232.249 - [06.04.2025 01:21:37 PDT] \"TRACE /gmyi/h/lr/jwwhl/xitgj.gif FTP/1.2\" 423 93997\n69.183.116.68 - [06.04.2025 01:21:37 PDT] \"PUT /tyk.bmp HTTPS/2.0\" 303 62788\n28.177.36.84 - [06.04.2025 01:21:37 PDT] \"UNLINK /uvy/q.pdf HTTP/3.0\" 307 43317\n193.100.152.3 - [06.04.2025 01:21:37 PDT] \"CONNECT /nm/liie/xehu/ya.html HTTP/3.0\" 400 39993\n59.118.39.86 - [06.04.2025 01:21:37 PDT] \"POST /wgte/szfs.jpg HTTPS/3.0\" 201 51059\n202.168.49.215 - [06.04.2025 01:21:37 PDT] \"TRACE /y/im/ghe/tecl.pdf FTP/2.0\" 423 8440\n239.130.149.53 - [06.04.2025 01:21:37 PDT] \"POST /a/atj/nzac/uoa.doc HTTPS/1.0\" 302 1312\n101.163.154.140 - [06.04.2025 01:21:37 PDT] \"DELETE /nau.doc FTP/1.2\" 302 17661\n139.124.250.81 - [06.04.2025 01:21:37 PDT] \"POST /y.mp3 FTP/1.0\" 400 3120\n95.129.73.143 - [06.04.2025 01:21:37 PDT] \"CONNECT /gaj/wm/rsg.html HTTP/0.9\" 202 85016\n97.190.85.169 - [06.04.2025 01:21:37 PDT] \"CONNECT /pw/lgwa/hwj.html FTP/2.0\" 505 59894\n"
+===========================================================================
+logfilegen.forFile.WriterFile:::OBJECT
+this has only one value
+this.file has only one value
+this.file.toString == "LogFile.log"
+this.source has only one value
+this.source.toString == "177.28.149.124 - [06.04.2025 01:21:37 PDT] \"UNLINK /u/ggt/pxorp/ozt/rupvq.mp3 HTTP/1.2\" 201 23541\n160.87.156.10 - [06.04.2025 01:21:37 PDT] \"GET /a/t.html HTTPS/1.0\" 504 47461\n21.207.44.168 - [06.04.2025 01:21:37 PDT] \"GET /gh.jpg HTTP/1.0\" 501 46122\n109.116.113.237 - [06.04.2025 01:21:37 PDT] \"CONNECT /p.gif HTTP/1.2\" 204 65543\n181.34.28.218 - [06.04.2025 01:21:37 PDT] \"CONNECT /i/q.html FTP/1.2\" 504 74729\n112.237.88.213 - [06.04.2025 01:21:37 PDT] \"OPTIONS /mtx/w/h/sj.bmp HTTPS/1.1\" 456 38558\n157.154.87.77 - [06.04.2025 01:21:37 PDT] \"TRACE /x/gxs.pdf HTTP/1.0\" 307 99468\n46.138.22.203 - [06.04.2025 01:21:37 PDT] \"TRACE /ff.doc HTTPS/2.0\" 504 35441\n155.107.65.12 - [06.04.2025 01:21:37 PDT] \"POST /kylzr/k/f/n.gif HTTP/0.9\" 456 63815\n234.172.13.65 - [06.04.2025 01:21:37 PDT] \"DELETE /itjnk.pdf FTP/1.0\" 402 72237\n104.81.15.205 - [06.04.2025 01:21:37 PDT] \"POST /ukiny/elfif/i.jpg HTTP/2.0\" 304 72282\n220.170.171.177 - [06.04.2025 01:21:37 PDT] \"LINK /ugwqc/zz.html HTTP/1.2\" 503 83184\n103.208.200.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /nzu/prwvj.pdf FTP/2.0\" 503 94356\n70.47.157.235 - [06.04.2025 01:21:37 PDT] \"PUT /mu/jzfh/uxfla/zeygp/tkpot.html FTP/1.2\" 434 22908\n95.195.142.4 - [06.04.2025 01:21:37 PDT] \"OPTIONS /hnc/an/jszm/sfr/jsmue.bmp HTTP/2.0\" 200 65179\n193.67.90.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /wrc/ofi/i.pdf HTTPS/1.2\" 434 26921\n232.36.66.158 - [06.04.2025 01:21:37 PDT] \"OPTIONS /qfr/ez/ahvgv.jpg FTP/0.9\" 400 34350\n227.5.0.175 - [06.04.2025 01:21:37 PDT] \"HEAD /rptu.jpg FTP/0.9\" 204 37901\n67.1.93.71 - [06.04.2025 01:21:37 PDT] \"PUT /yzfhc/ps/u.jpg FTP/0.9\" 404 87568\n159.160.232.249 - [06.04.2025 01:21:37 PDT] \"TRACE /gmyi/h/lr/jwwhl/xitgj.gif FTP/1.2\" 423 93997\n69.183.116.68 - [06.04.2025 01:21:37 PDT] \"PUT /tyk.bmp HTTPS/2.0\" 303 62788\n28.177.36.84 - [06.04.2025 01:21:37 PDT] \"UNLINK /uvy/q.pdf HTTP/3.0\" 307 43317\n193.100.152.3 - [06.04.2025 01:21:37 PDT] \"CONNECT /nm/liie/xehu/ya.html HTTP/3.0\" 400 39993\n59.118.39.86 - [06.04.2025 01:21:37 PDT] \"POST /wgte/szfs.jpg HTTPS/3.0\" 201 51059\n202.168.49.215 - [06.04.2025 01:21:37 PDT] \"TRACE /y/im/ghe/tecl.pdf FTP/2.0\" 423 8440\n239.130.149.53 - [06.04.2025 01:21:37 PDT] \"POST /a/atj/nzac/uoa.doc HTTPS/1.0\" 302 1312\n101.163.154.140 - [06.04.2025 01:21:37 PDT] \"DELETE /nau.doc FTP/1.2\" 302 17661\n139.124.250.81 - [06.04.2025 01:21:37 PDT] \"POST /y.mp3 FTP/1.0\" 400 3120\n95.129.73.143 - [06.04.2025 01:21:37 PDT] \"CONNECT /gaj/wm/rsg.html HTTP/0.9\" 202 85016\n97.190.85.169 - [06.04.2025 01:21:37 PDT] \"CONNECT /pw/lgwa/hwj.html FTP/2.0\" 505 59894\n"
+===========================================================================
+logfilegen.forFile.WriterFile.WriterFile(java.lang.String, java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "LogFile.log"
+arg1 has only one value
+arg1.toString == "177.28.149.124 - [06.04.2025 01:21:37 PDT] \"UNLINK /u/ggt/pxorp/ozt/rupvq.mp3 HTTP/1.2\" 201 23541\n160.87.156.10 - [06.04.2025 01:21:37 PDT] \"GET /a/t.html HTTPS/1.0\" 504 47461\n21.207.44.168 - [06.04.2025 01:21:37 PDT] \"GET /gh.jpg HTTP/1.0\" 501 46122\n109.116.113.237 - [06.04.2025 01:21:37 PDT] \"CONNECT /p.gif HTTP/1.2\" 204 65543\n181.34.28.218 - [06.04.2025 01:21:37 PDT] \"CONNECT /i/q.html FTP/1.2\" 504 74729\n112.237.88.213 - [06.04.2025 01:21:37 PDT] \"OPTIONS /mtx/w/h/sj.bmp HTTPS/1.1\" 456 38558\n157.154.87.77 - [06.04.2025 01:21:37 PDT] \"TRACE /x/gxs.pdf HTTP/1.0\" 307 99468\n46.138.22.203 - [06.04.2025 01:21:37 PDT] \"TRACE /ff.doc HTTPS/2.0\" 504 35441\n155.107.65.12 - [06.04.2025 01:21:37 PDT] \"POST /kylzr/k/f/n.gif HTTP/0.9\" 456 63815\n234.172.13.65 - [06.04.2025 01:21:37 PDT] \"DELETE /itjnk.pdf FTP/1.0\" 402 72237\n104.81.15.205 - [06.04.2025 01:21:37 PDT] \"POST /ukiny/elfif/i.jpg HTTP/2.0\" 304 72282\n220.170.171.177 - [06.04.2025 01:21:37 PDT] \"LINK /ugwqc/zz.html HTTP/1.2\" 503 83184\n103.208.200.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /nzu/prwvj.pdf FTP/2.0\" 503 94356\n70.47.157.235 - [06.04.2025 01:21:37 PDT] \"PUT /mu/jzfh/uxfla/zeygp/tkpot.html FTP/1.2\" 434 22908\n95.195.142.4 - [06.04.2025 01:21:37 PDT] \"OPTIONS /hnc/an/jszm/sfr/jsmue.bmp HTTP/2.0\" 200 65179\n193.67.90.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /wrc/ofi/i.pdf HTTPS/1.2\" 434 26921\n232.36.66.158 - [06.04.2025 01:21:37 PDT] \"OPTIONS /qfr/ez/ahvgv.jpg FTP/0.9\" 400 34350\n227.5.0.175 - [06.04.2025 01:21:37 PDT] \"HEAD /rptu.jpg FTP/0.9\" 204 37901\n67.1.93.71 - [06.04.2025 01:21:37 PDT] \"PUT /yzfhc/ps/u.jpg FTP/0.9\" 404 87568\n159.160.232.249 - [06.04.2025 01:21:37 PDT] \"TRACE /gmyi/h/lr/jwwhl/xitgj.gif FTP/1.2\" 423 93997\n69.183.116.68 - [06.04.2025 01:21:37 PDT] \"PUT /tyk.bmp HTTPS/2.0\" 303 62788\n28.177.36.84 - [06.04.2025 01:21:37 PDT] \"UNLINK /uvy/q.pdf HTTP/3.0\" 307 43317\n193.100.152.3 - [06.04.2025 01:21:37 PDT] \"CONNECT /nm/liie/xehu/ya.html HTTP/3.0\" 400 39993\n59.118.39.86 - [06.04.2025 01:21:37 PDT] \"POST /wgte/szfs.jpg HTTPS/3.0\" 201 51059\n202.168.49.215 - [06.04.2025 01:21:37 PDT] \"TRACE /y/im/ghe/tecl.pdf FTP/2.0\" 423 8440\n239.130.149.53 - [06.04.2025 01:21:37 PDT] \"POST /a/atj/nzac/uoa.doc HTTPS/1.0\" 302 1312\n101.163.154.140 - [06.04.2025 01:21:37 PDT] \"DELETE /nau.doc FTP/1.2\" 302 17661\n139.124.250.81 - [06.04.2025 01:21:37 PDT] \"POST /y.mp3 FTP/1.0\" 400 3120\n95.129.73.143 - [06.04.2025 01:21:37 PDT] \"CONNECT /gaj/wm/rsg.html HTTP/0.9\" 202 85016\n97.190.85.169 - [06.04.2025 01:21:37 PDT] \"CONNECT /pw/lgwa/hwj.html FTP/2.0\" 505 59894\n"
+===========================================================================
+logfilegen.forFile.WriterFile.WriterFile(java.lang.String, java.lang.String):::EXIT
+this.file == orig(arg0)
+this.source == orig(arg1)
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg0.toString == "LogFile.log"
+arg1.toString == "177.28.149.124 - [06.04.2025 01:21:37 PDT] \"UNLINK /u/ggt/pxorp/ozt/rupvq.mp3 HTTP/1.2\" 201 23541\n160.87.156.10 - [06.04.2025 01:21:37 PDT] \"GET /a/t.html HTTPS/1.0\" 504 47461\n21.207.44.168 - [06.04.2025 01:21:37 PDT] \"GET /gh.jpg HTTP/1.0\" 501 46122\n109.116.113.237 - [06.04.2025 01:21:37 PDT] \"CONNECT /p.gif HTTP/1.2\" 204 65543\n181.34.28.218 - [06.04.2025 01:21:37 PDT] \"CONNECT /i/q.html FTP/1.2\" 504 74729\n112.237.88.213 - [06.04.2025 01:21:37 PDT] \"OPTIONS /mtx/w/h/sj.bmp HTTPS/1.1\" 456 38558\n157.154.87.77 - [06.04.2025 01:21:37 PDT] \"TRACE /x/gxs.pdf HTTP/1.0\" 307 99468\n46.138.22.203 - [06.04.2025 01:21:37 PDT] \"TRACE /ff.doc HTTPS/2.0\" 504 35441\n155.107.65.12 - [06.04.2025 01:21:37 PDT] \"POST /kylzr/k/f/n.gif HTTP/0.9\" 456 63815\n234.172.13.65 - [06.04.2025 01:21:37 PDT] \"DELETE /itjnk.pdf FTP/1.0\" 402 72237\n104.81.15.205 - [06.04.2025 01:21:37 PDT] \"POST /ukiny/elfif/i.jpg HTTP/2.0\" 304 72282\n220.170.171.177 - [06.04.2025 01:21:37 PDT] \"LINK /ugwqc/zz.html HTTP/1.2\" 503 83184\n103.208.200.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /nzu/prwvj.pdf FTP/2.0\" 503 94356\n70.47.157.235 - [06.04.2025 01:21:37 PDT] \"PUT /mu/jzfh/uxfla/zeygp/tkpot.html FTP/1.2\" 434 22908\n95.195.142.4 - [06.04.2025 01:21:37 PDT] \"OPTIONS /hnc/an/jszm/sfr/jsmue.bmp HTTP/2.0\" 200 65179\n193.67.90.202 - [06.04.2025 01:21:37 PDT] \"UNLINK /wrc/ofi/i.pdf HTTPS/1.2\" 434 26921\n232.36.66.158 - [06.04.2025 01:21:37 PDT] \"OPTIONS /qfr/ez/ahvgv.jpg FTP/0.9\" 400 34350\n227.5.0.175 - [06.04.2025 01:21:37 PDT] \"HEAD /rptu.jpg FTP/0.9\" 204 37901\n67.1.93.71 - [06.04.2025 01:21:37 PDT] \"PUT /yzfhc/ps/u.jpg FTP/0.9\" 404 87568\n159.160.232.249 - [06.04.2025 01:21:37 PDT] \"TRACE /gmyi/h/lr/jwwhl/xitgj.gif FTP/1.2\" 423 93997\n69.183.116.68 - [06.04.2025 01:21:37 PDT] \"PUT /tyk.bmp HTTPS/2.0\" 303 62788\n28.177.36.84 - [06.04.2025 01:21:37 PDT] \"UNLINK /uvy/q.pdf HTTP/3.0\" 307 43317\n193.100.152.3 - [06.04.2025 01:21:37 PDT] \"CONNECT /nm/liie/xehu/ya.html HTTP/3.0\" 400 39993\n59.118.39.86 - [06.04.2025 01:21:37 PDT] \"POST /wgte/szfs.jpg HTTPS/3.0\" 201 51059\n202.168.49.215 - [06.04.2025 01:21:37 PDT] \"TRACE /y/im/ghe/tecl.pdf FTP/2.0\" 423 8440\n239.130.149.53 - [06.04.2025 01:21:37 PDT] \"POST /a/atj/nzac/uoa.doc HTTPS/1.0\" 302 1312\n101.163.154.140 - [06.04.2025 01:21:37 PDT] \"DELETE /nau.doc FTP/1.2\" 302 17661\n139.124.250.81 - [06.04.2025 01:21:37 PDT] \"POST /y.mp3 FTP/1.0\" 400 3120\n95.129.73.143 - [06.04.2025 01:21:37 PDT] \"CONNECT /gaj/wm/rsg.html HTTP/0.9\" 202 85016\n97.190.85.169 - [06.04.2025 01:21:37 PDT] \"CONNECT /pw/lgwa/hwj.html FTP/2.0\" 505 59894\n"
+===========================================================================
+logfilegen.forFile.WriterFile.write():::ENTER
+===========================================================================
+logfilegen.forFile.WriterFile.write():::EXIT
+this.file == orig(this.file)
+this.file.toString == orig(this.file.toString)
+this.source == orig(this.source)
+this.source.toString == orig(this.source.toString)
+===========================================================================
+logfilegen.forFile.WriterLog:::OBJECT
+this has only one value
+===========================================================================
+logfilegen.forFile.WriterLog.WriterLog():::EXIT
+===========================================================================
+logfilegen.forFile.WriterLog.record(logfilegen.allmodels.Log, java.lang.String):::ENTER
+arg0 has only one value
+arg0.records has only one value
+arg0.records[] contains no nulls and has only one value, of length 30
+arg0.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+arg0.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+arg0.records.getClass().getName() == java.util.ArrayList.class
+arg0.NewL has only one value
+arg0.NewL.toString == "\n"
+arg1 has only one value
+arg1.toString == "LogFile.log"
+size(arg0.records[]) == 30
+===========================================================================
+logfilegen.forFile.WriterLog.record(logfilegen.allmodels.Log, java.lang.String):::EXIT
+arg0.records == orig(arg0.records)
+arg0.records[] == orig(arg0.records[])
+arg0.records.getClass().getName() == orig(arg0.records.getClass().getName())
+arg0.NewL == orig(arg0.NewL)
+arg0.NewL.toString == orig(arg0.NewL.toString)
+arg1.toString == orig(arg1.toString)
+arg0.records has only one value
+arg0.records[] contains no nulls and has only one value, of length 30
+arg0.records[].getClass().getName() == [logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record, logfilegen.allmodels.Record]
+arg0.records[].getClass().getName() elements == logfilegen.allmodels.Record.class
+arg0.records.getClass().getName() == java.util.ArrayList.class
+arg0.NewL has only one value
+arg0.NewL.toString == "\n"
+arg1.toString == "LogFile.log"
+size(arg0.records[]) == 30
+Exiting Daikon.

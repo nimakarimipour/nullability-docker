@@ -1,0 +1,2880 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+org.json.simple.JSONArray:::CLASS
+===========================================================================
+org.json.simple.JSONArray:::OBJECT
+===========================================================================
+org.json.simple.JSONArray.JSONArray():::EXIT
+===========================================================================
+org.json.simple.JSONArray.toJSONString():::ENTER
+===========================================================================
+org.json.simple.JSONArray.toJSONString():::EXIT
+===========================================================================
+org.json.simple.JSONArray.toJSONString(java.util.List):::ENTER
+list[].getClass().getName() elements == java.lang.String.class
+list.getClass().getName() == org.json.simple.JSONArray.class
+size(list[]) one of { 0, 1, 2 }
+===========================================================================
+org.json.simple.JSONArray.toJSONString(java.util.List):::EXIT94
+===========================================================================
+org.json.simple.JSONArray.toJSONString(java.util.List):::EXIT
+list[] == orig(list[])
+list[].getClass().getName() elements == java.lang.String.class
+===========================================================================
+org.json.simple.JSONObject:::CLASS
+===========================================================================
+org.json.simple.JSONObject:::OBJECT
+this has only one value
+===========================================================================
+org.json.simple.JSONObject.JSONObject():::EXIT
+===========================================================================
+org.json.simple.JSONObject.toJSONString():::ENTER
+===========================================================================
+org.json.simple.JSONObject.toJSONString():::EXIT
+return has only one value
+return.toString == "{\"select\":[\"age\",\"lastName\"],\"offset\":0,\"name\":\"sqlQuery\",\"limit\":5,\"orderBy\":[\"age\"],\"from\":[\"student\"],\"where\":\" lastName like Lopez and age > 18 and age < 21 and not age < 18\",\"groupBy\":[]}"
+===========================================================================
+org.json.simple.JSONObject.toJSONString(java.lang.String, java.lang.Object, java.lang.StringBuffer):::ENTER
+sb has only one value
+===========================================================================
+org.json.simple.JSONObject.toJSONString(java.lang.String, java.lang.Object, java.lang.StringBuffer):::EXIT
+key.toString == orig(key.toString)
+===========================================================================
+org.json.simple.JSONObject.toJSONString(java.util.Map):::ENTER
+map has only one value
+map.getClass().getName() == org.json.simple.JSONObject.class
+===========================================================================
+org.json.simple.JSONObject.toJSONString(java.util.Map):::EXIT104
+===========================================================================
+org.json.simple.JSONObject.toJSONString(java.util.Map):::EXIT
+return has only one value
+return.toString == "{\"select\":[\"age\",\"lastName\"],\"offset\":0,\"name\":\"sqlQuery\",\"limit\":5,\"orderBy\":[\"age\"],\"from\":[\"student\"],\"where\":\" lastName like Lopez and age > 18 and age < 21 and not age < 18\",\"groupBy\":[]}"
+===========================================================================
+org.json.simple.JSONValue.escape(java.lang.String):::ENTER
+===========================================================================
+org.json.simple.JSONValue.escape(java.lang.String):::EXIT220
+===========================================================================
+org.json.simple.JSONValue.escape(java.lang.String):::EXIT
+s.toString == orig(s.toString)
+===========================================================================
+org.json.simple.JSONValue.escape(java.lang.String, java.lang.StringBuffer):::ENTER
+s != null
+sb != null
+===========================================================================
+org.json.simple.JSONValue.escape(java.lang.String, java.lang.StringBuffer):::EXIT
+s.toString == orig(s.toString)
+===========================================================================
+org.json.simple.JSONValue.toJSONString(java.lang.Object):::ENTER
+value != null
+===========================================================================
+org.json.simple.JSONValue.toJSONString(java.lang.Object):::EXIT176
+orig(value.getClass().getName()) == java.lang.String.class
+===========================================================================
+org.json.simple.JSONValue.toJSONString(java.lang.Object):::EXIT193
+return.toString one of { "0", "5" }
+orig(value.getClass().getName()) == java.lang.Integer.class
+===========================================================================
+org.json.simple.JSONValue.toJSONString(java.lang.Object):::EXIT199
+orig(value.getClass().getName()) == org.json.simple.JSONArray.class
+===========================================================================
+org.json.simple.JSONValue.toJSONString(java.lang.Object):::EXIT
+return != null
+===========================================================================
+tp1.BinaryCondition:::OBJECT
+this.left != null
+this.right != null
+this.operator != null
+tp1.Operator.AND has only one value
+tp1.Operator.AND != null
+tp1.Operator.OR has only one value
+tp1.Operator.OR != null
+tp1.Operator.LESS has only one value
+tp1.Operator.LESS != null
+tp1.Operator.GREAT has only one value
+tp1.Operator.GREAT != null
+tp1.Operator.EQ has only one value
+tp1.Operator.EQ != null
+tp1.Operator.NE has only one value
+tp1.Operator.NE != null
+tp1.Operator.STARTS has only one value
+tp1.Operator.STARTS != null
+tp1.Operator.CONTAINS has only one value
+tp1.Operator.CONTAINS != null
+tp1.Operator.IS_NULL has only one value
+tp1.Operator.IS_NULL != null
+tp1.Operator.IS_NOT_NULL has only one value
+tp1.Operator.IS_NOT_NULL != null
+tp1.Operator.NOT has only one value
+tp1.Operator.NOT != null
+tp1.Operator.EMPTY has only one value
+tp1.Operator.EMPTY != null
+tp1.Operator.AND.name has only one value
+tp1.Operator.AND.name != null
+tp1.Operator.AND.name.toString == "and"
+tp1.Operator.$VALUES has only one value
+tp1.Operator.$VALUES != null
+tp1.Operator.$VALUES.getClass().getName() == tp1.Operator[].class
+tp1.Operator.$VALUES[] contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[] elements != null
+tp1.Operator.$VALUES[].getClass().getName() == [tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator]
+tp1.Operator.$VALUES[].getClass().getName() elements == tp1.Operator.class
+tp1.Operator.$VALUES[].name contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[].name elements != null
+tp1.Operator.$VALUES[].name.toString == [and, or, <, >, =, !=, like, contains, is null, is not null, not, ]
+tp1.Operator.OR.name has only one value
+tp1.Operator.OR.name != null
+tp1.Operator.OR.name.toString == "or"
+tp1.Operator.LESS.name has only one value
+tp1.Operator.LESS.name != null
+tp1.Operator.LESS.name.toString == "<"
+tp1.Operator.GREAT.name has only one value
+tp1.Operator.GREAT.name != null
+tp1.Operator.GREAT.name.toString == ">"
+tp1.Operator.EQ.name has only one value
+tp1.Operator.EQ.name != null
+tp1.Operator.EQ.name.toString == "="
+tp1.Operator.NE.name has only one value
+tp1.Operator.NE.name != null
+tp1.Operator.NE.name.toString == "!="
+tp1.Operator.STARTS.name has only one value
+tp1.Operator.STARTS.name != null
+tp1.Operator.STARTS.name.toString == "like"
+tp1.Operator.CONTAINS.name has only one value
+tp1.Operator.CONTAINS.name != null
+tp1.Operator.CONTAINS.name.toString == "contains"
+tp1.Operator.IS_NULL.name has only one value
+tp1.Operator.IS_NULL.name != null
+tp1.Operator.IS_NULL.name.toString == "is null"
+tp1.Operator.IS_NOT_NULL.name has only one value
+tp1.Operator.IS_NOT_NULL.name != null
+tp1.Operator.IS_NOT_NULL.name.toString == "is not null"
+tp1.Operator.NOT.name has only one value
+tp1.Operator.NOT.name != null
+tp1.Operator.NOT.name.toString == "not"
+tp1.Operator.EMPTY.name has only one value
+tp1.Operator.EMPTY.name != null
+tp1.Operator.EMPTY.name.toString == ""
+this.operator.name != null
+size(tp1.Operator.$VALUES[]) == 12
+this.left.getClass().getName() != tp1.Operator.$VALUES.getClass().getName()
+this.right.getClass().getName() != tp1.Operator.$VALUES.getClass().getName()
+===========================================================================
+tp1.BinaryCondition.BinaryCondition(tp1.Operator, tp1.Statement, tp1.Statement):::ENTER
+tp1.Operator.AND has only one value
+tp1.Operator.OR has only one value
+tp1.Operator.LESS has only one value
+tp1.Operator.GREAT has only one value
+tp1.Operator.EQ has only one value
+tp1.Operator.NE has only one value
+tp1.Operator.STARTS has only one value
+tp1.Operator.CONTAINS has only one value
+tp1.Operator.IS_NULL has only one value
+tp1.Operator.IS_NOT_NULL has only one value
+tp1.Operator.NOT has only one value
+tp1.Operator.EMPTY has only one value
+tp1.Operator.AND.name has only one value
+tp1.Operator.AND.name.toString == "and"
+tp1.Operator.$VALUES has only one value
+tp1.Operator.$VALUES.getClass().getName() == tp1.Operator[].class
+tp1.Operator.$VALUES[] contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[].getClass().getName() == [tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator]
+tp1.Operator.$VALUES[].getClass().getName() elements == tp1.Operator.class
+tp1.Operator.$VALUES[].name contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[].name.toString == [and, or, <, >, =, !=, like, contains, is null, is not null, not, ]
+tp1.Operator.OR.name has only one value
+tp1.Operator.OR.name.toString == "or"
+tp1.Operator.LESS.name has only one value
+tp1.Operator.LESS.name.toString == "<"
+tp1.Operator.GREAT.name has only one value
+tp1.Operator.GREAT.name.toString == ">"
+tp1.Operator.EQ.name has only one value
+tp1.Operator.EQ.name.toString == "="
+tp1.Operator.NE.name has only one value
+tp1.Operator.NE.name.toString == "!="
+tp1.Operator.STARTS.name has only one value
+tp1.Operator.STARTS.name.toString == "like"
+tp1.Operator.CONTAINS.name has only one value
+tp1.Operator.CONTAINS.name.toString == "contains"
+tp1.Operator.IS_NULL.name has only one value
+tp1.Operator.IS_NULL.name.toString == "is null"
+tp1.Operator.IS_NOT_NULL.name has only one value
+tp1.Operator.IS_NOT_NULL.name.toString == "is not null"
+tp1.Operator.NOT.name has only one value
+tp1.Operator.NOT.name.toString == "not"
+tp1.Operator.EMPTY.name has only one value
+tp1.Operator.EMPTY.name.toString == ""
+size(tp1.Operator.$VALUES[]) == 12
+tp1.Operator.$VALUES.getClass().getName() != arg1.getClass().getName()
+tp1.Operator.$VALUES.getClass().getName() != arg2.getClass().getName()
+===========================================================================
+tp1.BinaryCondition.BinaryCondition(tp1.Operator, tp1.Statement, tp1.Statement):::EXIT
+this.left == orig(arg1)
+this.left.getClass().getName() == orig(arg1.getClass().getName())
+this.right == orig(arg2)
+this.right.getClass().getName() == orig(arg2.getClass().getName())
+this.operator == orig(arg0)
+tp1.Operator.AND == orig(tp1.Operator.AND)
+tp1.Operator.OR == orig(tp1.Operator.OR)
+tp1.Operator.LESS == orig(tp1.Operator.LESS)
+tp1.Operator.GREAT == orig(tp1.Operator.GREAT)
+tp1.Operator.EQ == orig(tp1.Operator.EQ)
+tp1.Operator.NE == orig(tp1.Operator.NE)
+tp1.Operator.STARTS == orig(tp1.Operator.STARTS)
+tp1.Operator.CONTAINS == orig(tp1.Operator.CONTAINS)
+tp1.Operator.IS_NULL == orig(tp1.Operator.IS_NULL)
+tp1.Operator.IS_NOT_NULL == orig(tp1.Operator.IS_NOT_NULL)
+tp1.Operator.NOT == orig(tp1.Operator.NOT)
+tp1.Operator.EMPTY == orig(tp1.Operator.EMPTY)
+tp1.Operator.AND.name == orig(tp1.Operator.AND.name)
+tp1.Operator.AND.name.toString == orig(tp1.Operator.AND.name.toString)
+tp1.Operator.$VALUES == orig(tp1.Operator.$VALUES)
+tp1.Operator.$VALUES.getClass().getName() == orig(tp1.Operator.$VALUES.getClass().getName())
+tp1.Operator.$VALUES[] == orig(tp1.Operator.$VALUES[])
+tp1.Operator.$VALUES[].name == orig(tp1.Operator.$VALUES[].name)
+tp1.Operator.OR.name == orig(tp1.Operator.OR.name)
+tp1.Operator.OR.name.toString == orig(tp1.Operator.OR.name.toString)
+tp1.Operator.LESS.name == orig(tp1.Operator.LESS.name)
+tp1.Operator.LESS.name.toString == orig(tp1.Operator.LESS.name.toString)
+tp1.Operator.GREAT.name == orig(tp1.Operator.GREAT.name)
+tp1.Operator.GREAT.name.toString == orig(tp1.Operator.GREAT.name.toString)
+tp1.Operator.EQ.name == orig(tp1.Operator.EQ.name)
+tp1.Operator.EQ.name.toString == orig(tp1.Operator.EQ.name.toString)
+tp1.Operator.NE.name == orig(tp1.Operator.NE.name)
+tp1.Operator.NE.name.toString == orig(tp1.Operator.NE.name.toString)
+tp1.Operator.STARTS.name == orig(tp1.Operator.STARTS.name)
+tp1.Operator.STARTS.name.toString == orig(tp1.Operator.STARTS.name.toString)
+tp1.Operator.CONTAINS.name == orig(tp1.Operator.CONTAINS.name)
+tp1.Operator.CONTAINS.name.toString == orig(tp1.Operator.CONTAINS.name.toString)
+tp1.Operator.IS_NULL.name == orig(tp1.Operator.IS_NULL.name)
+tp1.Operator.IS_NULL.name.toString == orig(tp1.Operator.IS_NULL.name.toString)
+tp1.Operator.IS_NOT_NULL.name == orig(tp1.Operator.IS_NOT_NULL.name)
+tp1.Operator.IS_NOT_NULL.name.toString == orig(tp1.Operator.IS_NOT_NULL.name.toString)
+tp1.Operator.NOT.name == orig(tp1.Operator.NOT.name)
+tp1.Operator.NOT.name.toString == orig(tp1.Operator.NOT.name.toString)
+tp1.Operator.EMPTY.name == orig(tp1.Operator.EMPTY.name)
+tp1.Operator.EMPTY.name.toString == orig(tp1.Operator.EMPTY.name.toString)
+this.operator.name == arg0.name
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+===========================================================================
+tp1.BinaryCondition.accept(tp1.visitor.QueryVisitor):::ENTER
+arg0 != null
+this.left.getClass().getName() != arg0.getClass().getName()
+this.right.getClass().getName() != arg0.getClass().getName()
+tp1.Operator.$VALUES.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+tp1.BinaryCondition.accept(tp1.visitor.QueryVisitor):::EXIT
+this.left == orig(this.left)
+this.left.getClass().getName() == orig(this.left.getClass().getName())
+this.right == orig(this.right)
+this.right.getClass().getName() == orig(this.right.getClass().getName())
+this.operator == orig(this.operator)
+tp1.Operator.AND == orig(tp1.Operator.AND)
+tp1.Operator.OR == orig(tp1.Operator.OR)
+tp1.Operator.LESS == orig(tp1.Operator.LESS)
+tp1.Operator.GREAT == orig(tp1.Operator.GREAT)
+tp1.Operator.EQ == orig(tp1.Operator.EQ)
+tp1.Operator.NE == orig(tp1.Operator.NE)
+tp1.Operator.STARTS == orig(tp1.Operator.STARTS)
+tp1.Operator.CONTAINS == orig(tp1.Operator.CONTAINS)
+tp1.Operator.IS_NULL == orig(tp1.Operator.IS_NULL)
+tp1.Operator.IS_NOT_NULL == orig(tp1.Operator.IS_NOT_NULL)
+tp1.Operator.NOT == orig(tp1.Operator.NOT)
+tp1.Operator.EMPTY == orig(tp1.Operator.EMPTY)
+tp1.Operator.AND.name == orig(tp1.Operator.AND.name)
+tp1.Operator.AND.name.toString == orig(tp1.Operator.AND.name.toString)
+tp1.Operator.$VALUES == orig(tp1.Operator.$VALUES)
+tp1.Operator.$VALUES.getClass().getName() == orig(tp1.Operator.$VALUES.getClass().getName())
+tp1.Operator.$VALUES[] == orig(tp1.Operator.$VALUES[])
+tp1.Operator.$VALUES[].name == orig(tp1.Operator.$VALUES[].name)
+tp1.Operator.OR.name == orig(tp1.Operator.OR.name)
+tp1.Operator.OR.name.toString == orig(tp1.Operator.OR.name.toString)
+tp1.Operator.LESS.name == orig(tp1.Operator.LESS.name)
+tp1.Operator.LESS.name.toString == orig(tp1.Operator.LESS.name.toString)
+tp1.Operator.GREAT.name == orig(tp1.Operator.GREAT.name)
+tp1.Operator.GREAT.name.toString == orig(tp1.Operator.GREAT.name.toString)
+tp1.Operator.EQ.name == orig(tp1.Operator.EQ.name)
+tp1.Operator.EQ.name.toString == orig(tp1.Operator.EQ.name.toString)
+tp1.Operator.NE.name == orig(tp1.Operator.NE.name)
+tp1.Operator.NE.name.toString == orig(tp1.Operator.NE.name.toString)
+tp1.Operator.STARTS.name == orig(tp1.Operator.STARTS.name)
+tp1.Operator.STARTS.name.toString == orig(tp1.Operator.STARTS.name.toString)
+tp1.Operator.CONTAINS.name == orig(tp1.Operator.CONTAINS.name)
+tp1.Operator.CONTAINS.name.toString == orig(tp1.Operator.CONTAINS.name.toString)
+tp1.Operator.IS_NULL.name == orig(tp1.Operator.IS_NULL.name)
+tp1.Operator.IS_NULL.name.toString == orig(tp1.Operator.IS_NULL.name.toString)
+tp1.Operator.IS_NOT_NULL.name == orig(tp1.Operator.IS_NOT_NULL.name)
+tp1.Operator.IS_NOT_NULL.name.toString == orig(tp1.Operator.IS_NOT_NULL.name.toString)
+tp1.Operator.NOT.name == orig(tp1.Operator.NOT.name)
+tp1.Operator.NOT.name.toString == orig(tp1.Operator.NOT.name.toString)
+tp1.Operator.EMPTY.name == orig(tp1.Operator.EMPTY.name)
+tp1.Operator.EMPTY.name.toString == orig(tp1.Operator.EMPTY.name.toString)
+this.operator.name == orig(this.operator.name)
+this.operator.name.toString == orig(this.operator.name.toString)
+this.left.getClass().getName() != orig(arg0.getClass().getName())
+this.right.getClass().getName() != orig(arg0.getClass().getName())
+tp1.Operator.$VALUES.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+tp1.BinaryCondition.getOperator():::ENTER
+===========================================================================
+tp1.BinaryCondition.getOperator():::EXIT
+this.left == orig(this.left)
+this.left.getClass().getName() == orig(this.left.getClass().getName())
+this.right == orig(this.right)
+this.right.getClass().getName() == orig(this.right.getClass().getName())
+this.operator == return
+tp1.Operator.AND == orig(tp1.Operator.AND)
+tp1.Operator.OR == orig(tp1.Operator.OR)
+tp1.Operator.LESS == orig(tp1.Operator.LESS)
+tp1.Operator.GREAT == orig(tp1.Operator.GREAT)
+tp1.Operator.EQ == orig(tp1.Operator.EQ)
+tp1.Operator.NE == orig(tp1.Operator.NE)
+tp1.Operator.STARTS == orig(tp1.Operator.STARTS)
+tp1.Operator.CONTAINS == orig(tp1.Operator.CONTAINS)
+tp1.Operator.IS_NULL == orig(tp1.Operator.IS_NULL)
+tp1.Operator.IS_NOT_NULL == orig(tp1.Operator.IS_NOT_NULL)
+tp1.Operator.NOT == orig(tp1.Operator.NOT)
+tp1.Operator.EMPTY == orig(tp1.Operator.EMPTY)
+tp1.Operator.AND.name == orig(tp1.Operator.AND.name)
+tp1.Operator.AND.name.toString == orig(tp1.Operator.AND.name.toString)
+tp1.Operator.$VALUES == orig(tp1.Operator.$VALUES)
+tp1.Operator.$VALUES.getClass().getName() == orig(tp1.Operator.$VALUES.getClass().getName())
+tp1.Operator.$VALUES[] == orig(tp1.Operator.$VALUES[])
+tp1.Operator.$VALUES[].name == orig(tp1.Operator.$VALUES[].name)
+tp1.Operator.OR.name == orig(tp1.Operator.OR.name)
+tp1.Operator.OR.name.toString == orig(tp1.Operator.OR.name.toString)
+tp1.Operator.LESS.name == orig(tp1.Operator.LESS.name)
+tp1.Operator.LESS.name.toString == orig(tp1.Operator.LESS.name.toString)
+tp1.Operator.GREAT.name == orig(tp1.Operator.GREAT.name)
+tp1.Operator.GREAT.name.toString == orig(tp1.Operator.GREAT.name.toString)
+tp1.Operator.EQ.name == orig(tp1.Operator.EQ.name)
+tp1.Operator.EQ.name.toString == orig(tp1.Operator.EQ.name.toString)
+tp1.Operator.NE.name == orig(tp1.Operator.NE.name)
+tp1.Operator.NE.name.toString == orig(tp1.Operator.NE.name.toString)
+tp1.Operator.STARTS.name == orig(tp1.Operator.STARTS.name)
+tp1.Operator.STARTS.name.toString == orig(tp1.Operator.STARTS.name.toString)
+tp1.Operator.CONTAINS.name == orig(tp1.Operator.CONTAINS.name)
+tp1.Operator.CONTAINS.name.toString == orig(tp1.Operator.CONTAINS.name.toString)
+tp1.Operator.IS_NULL.name == orig(tp1.Operator.IS_NULL.name)
+tp1.Operator.IS_NULL.name.toString == orig(tp1.Operator.IS_NULL.name.toString)
+tp1.Operator.IS_NOT_NULL.name == orig(tp1.Operator.IS_NOT_NULL.name)
+tp1.Operator.IS_NOT_NULL.name.toString == orig(tp1.Operator.IS_NOT_NULL.name.toString)
+tp1.Operator.NOT.name == orig(tp1.Operator.NOT.name)
+tp1.Operator.NOT.name.toString == orig(tp1.Operator.NOT.name.toString)
+tp1.Operator.EMPTY.name == orig(tp1.Operator.EMPTY.name)
+tp1.Operator.EMPTY.name.toString == orig(tp1.Operator.EMPTY.name.toString)
+this.operator.name == return.name
+this.operator.name.toString == orig(this.operator.name.toString)
+return == orig(this.operator)
+return.name == orig(this.operator.name)
+return != null
+return.name != null
+===========================================================================
+tp1.BinaryCondition.isEmpty():::ENTER
+this.operator == tp1.Operator.AND
+this has only one value
+this.left has only one value
+this.left.getClass().getName() == tp1.BinaryCondition.class
+this.right has only one value
+this.right.getClass().getName() == tp1.UnitaryCondition.class
+this.operator.name has only one value
+this.operator.name.toString == "and"
+===========================================================================
+tp1.BinaryCondition.isEmpty():::EXIT
+this.left == orig(this.left)
+this.left.getClass().getName() == orig(this.left.getClass().getName())
+this.right == orig(this.right)
+this.right.getClass().getName() == orig(this.right.getClass().getName())
+this.operator == tp1.Operator.AND
+tp1.Operator.AND == orig(this.operator)
+tp1.Operator.AND == orig(tp1.Operator.AND)
+tp1.Operator.OR == orig(tp1.Operator.OR)
+tp1.Operator.LESS == orig(tp1.Operator.LESS)
+tp1.Operator.GREAT == orig(tp1.Operator.GREAT)
+tp1.Operator.EQ == orig(tp1.Operator.EQ)
+tp1.Operator.NE == orig(tp1.Operator.NE)
+tp1.Operator.STARTS == orig(tp1.Operator.STARTS)
+tp1.Operator.CONTAINS == orig(tp1.Operator.CONTAINS)
+tp1.Operator.IS_NULL == orig(tp1.Operator.IS_NULL)
+tp1.Operator.IS_NOT_NULL == orig(tp1.Operator.IS_NOT_NULL)
+tp1.Operator.NOT == orig(tp1.Operator.NOT)
+tp1.Operator.EMPTY == orig(tp1.Operator.EMPTY)
+tp1.Operator.AND.name == orig(tp1.Operator.AND.name)
+tp1.Operator.AND.name.toString == orig(tp1.Operator.AND.name.toString)
+tp1.Operator.$VALUES == orig(tp1.Operator.$VALUES)
+tp1.Operator.$VALUES.getClass().getName() == orig(tp1.Operator.$VALUES.getClass().getName())
+tp1.Operator.$VALUES[] == orig(tp1.Operator.$VALUES[])
+tp1.Operator.$VALUES[].name == orig(tp1.Operator.$VALUES[].name)
+tp1.Operator.OR.name == orig(tp1.Operator.OR.name)
+tp1.Operator.OR.name.toString == orig(tp1.Operator.OR.name.toString)
+tp1.Operator.LESS.name == orig(tp1.Operator.LESS.name)
+tp1.Operator.LESS.name.toString == orig(tp1.Operator.LESS.name.toString)
+tp1.Operator.GREAT.name == orig(tp1.Operator.GREAT.name)
+tp1.Operator.GREAT.name.toString == orig(tp1.Operator.GREAT.name.toString)
+tp1.Operator.EQ.name == orig(tp1.Operator.EQ.name)
+tp1.Operator.EQ.name.toString == orig(tp1.Operator.EQ.name.toString)
+tp1.Operator.NE.name == orig(tp1.Operator.NE.name)
+tp1.Operator.NE.name.toString == orig(tp1.Operator.NE.name.toString)
+tp1.Operator.STARTS.name == orig(tp1.Operator.STARTS.name)
+tp1.Operator.STARTS.name.toString == orig(tp1.Operator.STARTS.name.toString)
+tp1.Operator.CONTAINS.name == orig(tp1.Operator.CONTAINS.name)
+tp1.Operator.CONTAINS.name.toString == orig(tp1.Operator.CONTAINS.name.toString)
+tp1.Operator.IS_NULL.name == orig(tp1.Operator.IS_NULL.name)
+tp1.Operator.IS_NULL.name.toString == orig(tp1.Operator.IS_NULL.name.toString)
+tp1.Operator.IS_NOT_NULL.name == orig(tp1.Operator.IS_NOT_NULL.name)
+tp1.Operator.IS_NOT_NULL.name.toString == orig(tp1.Operator.IS_NOT_NULL.name.toString)
+tp1.Operator.NOT.name == orig(tp1.Operator.NOT.name)
+tp1.Operator.NOT.name.toString == orig(tp1.Operator.NOT.name.toString)
+tp1.Operator.EMPTY.name == orig(tp1.Operator.EMPTY.name)
+tp1.Operator.EMPTY.name.toString == orig(tp1.Operator.EMPTY.name.toString)
+this.operator.name == orig(this.operator.name)
+this.operator.name.toString == orig(this.operator.name.toString)
+this.left has only one value
+this.left.getClass().getName() == tp1.BinaryCondition.class
+this.right has only one value
+this.right.getClass().getName() == tp1.UnitaryCondition.class
+this.operator.name has only one value
+this.operator.name.toString == "and"
+return == false
+===========================================================================
+tp1.BinaryCondition.isEmpty():::EXIT;condition="not(return == true)"
+===========================================================================
+tp1.Column:::OBJECT
+this.columnName != null
+this.columnName.toString one of { "age", "lastName" }
+this.value == null
+===========================================================================
+tp1.Column.Column(java.lang.String):::ENTER
+arg0.toString one of { "age", "lastName" }
+===========================================================================
+tp1.Column.Column(java.lang.String):::EXIT
+this.columnName == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "age", "lastName" }
+===========================================================================
+tp1.Column.accept(tp1.visitor.QueryVisitor):::ENTER
+===========================================================================
+tp1.Column.accept(tp1.visitor.QueryVisitor):::EXIT
+this.columnName == orig(this.columnName)
+this.columnName.toString == orig(this.columnName.toString)
+this.value == orig(this.value)
+===========================================================================
+tp1.Column.getName():::ENTER
+===========================================================================
+tp1.Column.getName():::EXIT
+this.columnName == return
+this.columnName.toString == orig(this.columnName.toString)
+this.value == orig(this.value)
+return == orig(this.columnName)
+return != null
+return.toString one of { "age", "lastName" }
+===========================================================================
+tp1.Condition:::OBJECT
+===========================================================================
+tp1.Condition.Condition():::EXIT
+===========================================================================
+tp1.Condition.and(tp1.Statement):::ENTER
+this.getClass().getName() == tp1.BinaryCondition.class
+===========================================================================
+tp1.Condition.and(tp1.Statement):::EXIT
+return.getClass().getName() == orig(this.getClass().getName())
+return.getClass().getName() == tp1.BinaryCondition.class
+===========================================================================
+tp1.Condition.condition(tp1.Operator, tp1.Statement, tp1.Statement):::ENTER
+tp1.Operator.AND has only one value
+tp1.Operator.OR has only one value
+tp1.Operator.LESS has only one value
+tp1.Operator.GREAT has only one value
+tp1.Operator.EQ has only one value
+tp1.Operator.NE has only one value
+tp1.Operator.STARTS has only one value
+tp1.Operator.CONTAINS has only one value
+tp1.Operator.IS_NULL has only one value
+tp1.Operator.IS_NOT_NULL has only one value
+tp1.Operator.NOT has only one value
+tp1.Operator.EMPTY has only one value
+tp1.Operator.AND.name has only one value
+tp1.Operator.AND.name.toString == "and"
+tp1.Operator.$VALUES has only one value
+tp1.Operator.$VALUES.getClass().getName() == tp1.Operator[].class
+tp1.Operator.$VALUES[] contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[].getClass().getName() == [tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator]
+tp1.Operator.$VALUES[].getClass().getName() elements == tp1.Operator.class
+tp1.Operator.$VALUES[].name contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[].name.toString == [and, or, <, >, =, !=, like, contains, is null, is not null, not, ]
+tp1.Operator.OR.name has only one value
+tp1.Operator.OR.name.toString == "or"
+tp1.Operator.LESS.name has only one value
+tp1.Operator.LESS.name.toString == "<"
+tp1.Operator.GREAT.name has only one value
+tp1.Operator.GREAT.name.toString == ">"
+tp1.Operator.EQ.name has only one value
+tp1.Operator.EQ.name.toString == "="
+tp1.Operator.NE.name has only one value
+tp1.Operator.NE.name.toString == "!="
+tp1.Operator.STARTS.name has only one value
+tp1.Operator.STARTS.name.toString == "like"
+tp1.Operator.CONTAINS.name has only one value
+tp1.Operator.CONTAINS.name.toString == "contains"
+tp1.Operator.IS_NULL.name has only one value
+tp1.Operator.IS_NULL.name.toString == "is null"
+tp1.Operator.IS_NOT_NULL.name has only one value
+tp1.Operator.IS_NOT_NULL.name.toString == "is not null"
+tp1.Operator.NOT.name has only one value
+tp1.Operator.NOT.name.toString == "not"
+tp1.Operator.EMPTY.name has only one value
+tp1.Operator.EMPTY.name.toString == ""
+arg0.name.toString one of { "<", ">", "like" }
+arg2.getClass().getName() == tp1.Const.class
+size(tp1.Operator.$VALUES[]) == 12
+===========================================================================
+tp1.Condition.condition(tp1.Operator, tp1.Statement, tp1.Statement):::EXIT
+tp1.Operator.AND == orig(tp1.Operator.AND)
+tp1.Operator.OR == orig(tp1.Operator.OR)
+tp1.Operator.LESS == orig(tp1.Operator.LESS)
+tp1.Operator.GREAT == orig(tp1.Operator.GREAT)
+tp1.Operator.EQ == orig(tp1.Operator.EQ)
+tp1.Operator.NE == orig(tp1.Operator.NE)
+tp1.Operator.STARTS == orig(tp1.Operator.STARTS)
+tp1.Operator.CONTAINS == orig(tp1.Operator.CONTAINS)
+tp1.Operator.IS_NULL == orig(tp1.Operator.IS_NULL)
+tp1.Operator.IS_NOT_NULL == orig(tp1.Operator.IS_NOT_NULL)
+tp1.Operator.NOT == orig(tp1.Operator.NOT)
+tp1.Operator.EMPTY == orig(tp1.Operator.EMPTY)
+tp1.Operator.AND.name == orig(tp1.Operator.AND.name)
+tp1.Operator.AND.name.toString == orig(tp1.Operator.AND.name.toString)
+tp1.Operator.$VALUES == orig(tp1.Operator.$VALUES)
+tp1.Operator.$VALUES.getClass().getName() == orig(tp1.Operator.$VALUES.getClass().getName())
+tp1.Operator.$VALUES[] == orig(tp1.Operator.$VALUES[])
+tp1.Operator.$VALUES[].name == orig(tp1.Operator.$VALUES[].name)
+tp1.Operator.OR.name == orig(tp1.Operator.OR.name)
+tp1.Operator.OR.name.toString == orig(tp1.Operator.OR.name.toString)
+tp1.Operator.LESS.name == orig(tp1.Operator.LESS.name)
+tp1.Operator.LESS.name.toString == orig(tp1.Operator.LESS.name.toString)
+tp1.Operator.GREAT.name == orig(tp1.Operator.GREAT.name)
+tp1.Operator.GREAT.name.toString == orig(tp1.Operator.GREAT.name.toString)
+tp1.Operator.EQ.name == orig(tp1.Operator.EQ.name)
+tp1.Operator.EQ.name.toString == orig(tp1.Operator.EQ.name.toString)
+tp1.Operator.NE.name == orig(tp1.Operator.NE.name)
+tp1.Operator.NE.name.toString == orig(tp1.Operator.NE.name.toString)
+tp1.Operator.STARTS.name == orig(tp1.Operator.STARTS.name)
+tp1.Operator.STARTS.name.toString == orig(tp1.Operator.STARTS.name.toString)
+tp1.Operator.CONTAINS.name == orig(tp1.Operator.CONTAINS.name)
+tp1.Operator.CONTAINS.name.toString == orig(tp1.Operator.CONTAINS.name.toString)
+tp1.Operator.IS_NULL.name == orig(tp1.Operator.IS_NULL.name)
+tp1.Operator.IS_NULL.name.toString == orig(tp1.Operator.IS_NULL.name.toString)
+tp1.Operator.IS_NOT_NULL.name == orig(tp1.Operator.IS_NOT_NULL.name)
+tp1.Operator.IS_NOT_NULL.name.toString == orig(tp1.Operator.IS_NOT_NULL.name.toString)
+tp1.Operator.NOT.name == orig(tp1.Operator.NOT.name)
+tp1.Operator.NOT.name.toString == orig(tp1.Operator.NOT.name.toString)
+tp1.Operator.EMPTY.name == orig(tp1.Operator.EMPTY.name)
+tp1.Operator.EMPTY.name.toString == orig(tp1.Operator.EMPTY.name.toString)
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+tp1.Operator.AND has only one value
+tp1.Operator.OR has only one value
+tp1.Operator.LESS has only one value
+tp1.Operator.GREAT has only one value
+tp1.Operator.EQ has only one value
+tp1.Operator.NE has only one value
+tp1.Operator.STARTS has only one value
+tp1.Operator.CONTAINS has only one value
+tp1.Operator.IS_NULL has only one value
+tp1.Operator.IS_NOT_NULL has only one value
+tp1.Operator.NOT has only one value
+tp1.Operator.EMPTY has only one value
+tp1.Operator.AND.name has only one value
+tp1.Operator.AND.name.toString == "and"
+tp1.Operator.$VALUES has only one value
+tp1.Operator.$VALUES.getClass().getName() == tp1.Operator[].class
+tp1.Operator.$VALUES[] contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[].getClass().getName() == [tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator]
+tp1.Operator.$VALUES[].getClass().getName() elements == tp1.Operator.class
+tp1.Operator.$VALUES[].name contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[].name.toString == [and, or, <, >, =, !=, like, contains, is null, is not null, not, ]
+tp1.Operator.OR.name has only one value
+tp1.Operator.OR.name.toString == "or"
+tp1.Operator.LESS.name has only one value
+tp1.Operator.LESS.name.toString == "<"
+tp1.Operator.GREAT.name has only one value
+tp1.Operator.GREAT.name.toString == ">"
+tp1.Operator.EQ.name has only one value
+tp1.Operator.EQ.name.toString == "="
+tp1.Operator.NE.name has only one value
+tp1.Operator.NE.name.toString == "!="
+tp1.Operator.STARTS.name has only one value
+tp1.Operator.STARTS.name.toString == "like"
+tp1.Operator.CONTAINS.name has only one value
+tp1.Operator.CONTAINS.name.toString == "contains"
+tp1.Operator.IS_NULL.name has only one value
+tp1.Operator.IS_NULL.name.toString == "is null"
+tp1.Operator.IS_NOT_NULL.name has only one value
+tp1.Operator.IS_NOT_NULL.name.toString == "is not null"
+tp1.Operator.NOT.name has only one value
+tp1.Operator.NOT.name.toString == "not"
+tp1.Operator.EMPTY.name has only one value
+tp1.Operator.EMPTY.name.toString == ""
+arg0.name.toString one of { "<", ">", "like" }
+return.getClass().getName() == tp1.BinaryCondition.class
+size(tp1.Operator.$VALUES[]) == 12
+===========================================================================
+tp1.Condition.not():::ENTER
+this has only one value
+this.getClass().getName() == tp1.BinaryCondition.class
+===========================================================================
+tp1.Condition.not():::EXIT
+return has only one value
+return.getClass().getName() == tp1.UnitaryCondition.class
+===========================================================================
+tp1.Const:::OBJECT
+this.str != null
+this.value == null
+===========================================================================
+tp1.Const.Const(java.lang.Object):::ENTER
+===========================================================================
+tp1.Const.Const(java.lang.Object):::EXIT
+this.str == orig(arg0)
+this.str.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+tp1.Const.accept(tp1.visitor.QueryVisitor):::ENTER
+this.str.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+tp1.Const.accept(tp1.visitor.QueryVisitor):::EXIT
+this.str == orig(this.str)
+this.str.getClass().getName() == orig(this.str.getClass().getName())
+this.value == orig(this.value)
+this.str.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+tp1.Const.cons(java.lang.Integer):::ENTER
+===========================================================================
+tp1.Const.cons(java.lang.Integer):::EXIT
+return.str.getClass().getName() == java.lang.Integer.class
+return.value == null
+===========================================================================
+tp1.Const.cons(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Lopez"
+===========================================================================
+tp1.Const.cons(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+return.str == orig(arg0)
+arg0.toString == "Lopez"
+return has only one value
+return.str has only one value
+return.str.getClass().getName() == java.lang.String.class
+return.value == null
+===========================================================================
+tp1.Const.getValue():::ENTER
+===========================================================================
+tp1.Const.getValue():::EXIT
+this.str == return
+this.str.getClass().getName() == return.getClass().getName()
+this.value == orig(this.value)
+return == orig(this.str)
+return.getClass().getName() == orig(this.str.getClass().getName())
+===========================================================================
+tp1.EmptyCondition:::OBJECT
+this has only one value
+===========================================================================
+tp1.EmptyCondition.EmptyCondition():::EXIT
+===========================================================================
+tp1.From:::OBJECT
+this has only one value
+this.fromTables has only one value
+this.fromTables[] contains no nulls and has only one value, of length 1
+this.fromTables[] elements has only one value
+this.fromTables[].getClass().getName() == [tp1.Table]
+this.fromTables[].getClass().getName() elements == tp1.Table.class
+this.fromTables.getClass().getName() == java.util.Arrays$ArrayList.class
+size(this.fromTables[]) == 1
+===========================================================================
+tp1.From.From(java.util.List):::ENTER
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 1
+arg0[] elements has only one value
+arg0[].getClass().getName() == [tp1.Table]
+arg0[].getClass().getName() elements == tp1.Table.class
+arg0.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0[]) == 1
+===========================================================================
+tp1.From.From(java.util.List):::EXIT
+this.fromTables == orig(arg0)
+this.fromTables.getClass().getName() == orig(arg0.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 1
+arg0[] elements has only one value
+arg0[].getClass().getName() == [tp1.Table]
+arg0[].getClass().getName() elements == tp1.Table.class
+===========================================================================
+tp1.From.accept(tp1.visitor.QueryVisitor):::ENTER
+===========================================================================
+tp1.From.accept(tp1.visitor.QueryVisitor):::EXIT
+this.fromTables == orig(this.fromTables)
+this.fromTables[] == orig(this.fromTables[])
+this.fromTables.getClass().getName() == orig(this.fromTables.getClass().getName())
+===========================================================================
+tp1.From.getFromTables():::ENTER
+===========================================================================
+tp1.From.getFromTables():::EXIT
+this.fromTables == return
+this.fromTables[] == orig(this.fromTables[])
+this.fromTables.getClass().getName() == return.getClass().getName()
+return == orig(this.fromTables)
+return.getClass().getName() == orig(this.fromTables.getClass().getName())
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+return[].getClass().getName() == [tp1.Table]
+return[].getClass().getName() elements == tp1.Table.class
+return.getClass().getName() == java.util.Arrays$ArrayList.class
+size(return[]) == 1
+===========================================================================
+tp1.GroupBy:::OBJECT
+this has only one value
+this.groupByColumns has only one value
+this.groupByColumns[] == []
+this.groupByColumns[].getClass().getName() == []
+this.groupByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+===========================================================================
+tp1.GroupBy.GroupBy(java.util.List):::ENTER
+arg0 has only one value
+arg0[] == []
+arg0[].getClass().getName() == []
+arg0.getClass().getName() == java.util.Collections$EmptyList.class
+===========================================================================
+tp1.GroupBy.GroupBy(java.util.List):::EXIT
+this.groupByColumns == orig(arg0)
+this.groupByColumns.getClass().getName() == orig(arg0.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].getClass().getName() == []
+===========================================================================
+tp1.GroupBy.accept(tp1.visitor.QueryVisitor):::ENTER
+===========================================================================
+tp1.GroupBy.accept(tp1.visitor.QueryVisitor):::EXIT
+this.groupByColumns == orig(this.groupByColumns)
+this.groupByColumns[] == orig(this.groupByColumns[])
+this.groupByColumns.getClass().getName() == orig(this.groupByColumns.getClass().getName())
+===========================================================================
+tp1.GroupBy.getGroupByColumns():::ENTER
+===========================================================================
+tp1.GroupBy.getGroupByColumns():::EXIT
+this.groupByColumns == return
+this.groupByColumns[] == orig(this.groupByColumns[])
+this.groupByColumns.getClass().getName() == return.getClass().getName()
+return == orig(this.groupByColumns)
+return.getClass().getName() == orig(this.groupByColumns.getClass().getName())
+return has only one value
+return[] == []
+return[].getClass().getName() == []
+return.getClass().getName() == java.util.Collections$EmptyList.class
+===========================================================================
+tp1.GroupBy.isEmpty():::ENTER
+===========================================================================
+tp1.GroupBy.isEmpty():::EXIT
+this.groupByColumns == orig(this.groupByColumns)
+this.groupByColumns[] == orig(this.groupByColumns[])
+this.groupByColumns.getClass().getName() == orig(this.groupByColumns.getClass().getName())
+return == true
+===========================================================================
+tp1.GroupBy.isEmpty():::EXIT;condition="return == true"
+===========================================================================
+tp1.IntColumn:::OBJECT
+this has only one value
+this.columnName has only one value
+this.columnName.toString == "age"
+this.value == null
+===========================================================================
+tp1.IntColumn.IntColumn(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "age"
+===========================================================================
+tp1.IntColumn.IntColumn(java.lang.String):::EXIT
+this.columnName == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg0.toString == "age"
+===========================================================================
+tp1.IntColumn.between(tp1.Value, tp1.Value):::ENTER
+arg0 has only one value
+arg0.value == null
+arg1 has only one value
+arg1.value == null
+===========================================================================
+tp1.IntColumn.between(tp1.Value, tp1.Value):::EXIT
+this.columnName == orig(this.columnName)
+this.columnName.toString == orig(this.columnName.toString)
+this.value == orig(this.value)
+arg0.value == orig(arg0.value)
+arg1.value == orig(arg1.value)
+arg0.value == null
+arg1.value == null
+return has only one value
+return.getClass().getName() == tp1.BinaryCondition.class
+===========================================================================
+tp1.IntColumn.greaterThan(tp1.Value):::ENTER
+arg0 has only one value
+arg0.value == null
+===========================================================================
+tp1.IntColumn.greaterThan(tp1.Value):::EXIT
+this.columnName == orig(this.columnName)
+this.columnName.toString == orig(this.columnName.toString)
+this.value == orig(this.value)
+arg0.value == orig(arg0.value)
+arg0.value == null
+return has only one value
+return.getClass().getName() == tp1.BinaryCondition.class
+===========================================================================
+tp1.IntColumn.lessThan(tp1.Value):::ENTER
+arg0.value == null
+===========================================================================
+tp1.IntColumn.lessThan(tp1.Value):::EXIT
+this.columnName == orig(this.columnName)
+this.columnName.toString == orig(this.columnName.toString)
+this.value == orig(this.value)
+arg0.value == orig(arg0.value)
+arg0.value == null
+return.getClass().getName() == tp1.BinaryCondition.class
+===========================================================================
+tp1.Limit:::OBJECT
+this has only one value
+this.limit == 5
+===========================================================================
+tp1.Limit.Limit(int):::ENTER
+arg0 == 5
+===========================================================================
+tp1.Limit.Limit(int):::EXIT
+this.limit == orig(arg0)
+===========================================================================
+tp1.Limit.accept(tp1.visitor.QueryVisitor):::ENTER
+===========================================================================
+tp1.Limit.accept(tp1.visitor.QueryVisitor):::EXIT
+this.limit == orig(this.limit)
+===========================================================================
+tp1.Limit.getLimit():::ENTER
+===========================================================================
+tp1.Limit.getLimit():::EXIT
+this.limit == return
+return == orig(this.limit)
+return == 5
+===========================================================================
+tp1.Limit.isEmpty():::ENTER
+===========================================================================
+tp1.Limit.isEmpty():::EXIT
+this.limit == orig(this.limit)
+return == false
+===========================================================================
+tp1.Limit.isEmpty():::EXIT;condition="not(return == true)"
+===========================================================================
+tp1.MainTp1.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+tp1.MainTp1.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+tp1.MainTp1.table(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "student"
+===========================================================================
+tp1.MainTp1.table(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+return.name == orig(arg0)
+arg0.toString == "student"
+return has only one value
+return.columns has only one value
+return.columns[] == []
+return.columns[].getClass().getName() == []
+return.columns.getClass().getName() == java.util.LinkedList.class
+return.name has only one value
+return.name.toString == "student"
+===========================================================================
+tp1.Offset:::OBJECT
+this has only one value
+this.offset == 0
+===========================================================================
+tp1.Offset.Offset(int):::ENTER
+arg0 == 0
+===========================================================================
+tp1.Offset.Offset(int):::EXIT
+this.offset == orig(arg0)
+===========================================================================
+tp1.Offset.accept(tp1.visitor.QueryVisitor):::ENTER
+===========================================================================
+tp1.Offset.accept(tp1.visitor.QueryVisitor):::EXIT
+this.offset == orig(this.offset)
+===========================================================================
+tp1.Offset.getOffset():::ENTER
+===========================================================================
+tp1.Offset.getOffset():::EXIT
+this.offset == return
+return == orig(this.offset)
+return == 0
+===========================================================================
+tp1.Offset.isEmpty():::ENTER
+===========================================================================
+tp1.Offset.isEmpty():::EXIT
+this.offset == orig(this.offset)
+return == true
+===========================================================================
+tp1.Offset.isEmpty():::EXIT;condition="return == true"
+===========================================================================
+tp1.Operator:::CLASS
+tp1.Operator.AND has only one value
+tp1.Operator.AND != null
+tp1.Operator.OR has only one value
+tp1.Operator.OR != null
+tp1.Operator.LESS has only one value
+tp1.Operator.LESS != null
+tp1.Operator.GREAT has only one value
+tp1.Operator.GREAT != null
+tp1.Operator.EQ has only one value
+tp1.Operator.EQ != null
+tp1.Operator.NE has only one value
+tp1.Operator.NE != null
+tp1.Operator.STARTS has only one value
+tp1.Operator.STARTS != null
+tp1.Operator.CONTAINS has only one value
+tp1.Operator.CONTAINS != null
+tp1.Operator.IS_NULL has only one value
+tp1.Operator.IS_NULL != null
+tp1.Operator.IS_NOT_NULL has only one value
+tp1.Operator.IS_NOT_NULL != null
+tp1.Operator.NOT has only one value
+tp1.Operator.NOT != null
+tp1.Operator.EMPTY has only one value
+tp1.Operator.EMPTY != null
+tp1.Operator.AND.name has only one value
+tp1.Operator.AND.name != null
+tp1.Operator.AND.name.toString == "and"
+tp1.Operator.$VALUES has only one value
+tp1.Operator.$VALUES != null
+tp1.Operator.$VALUES.getClass().getName() == tp1.Operator[].class
+tp1.Operator.$VALUES[] contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[] elements != null
+tp1.Operator.$VALUES[].getClass().getName() == [tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator]
+tp1.Operator.$VALUES[].getClass().getName() elements == tp1.Operator.class
+tp1.Operator.$VALUES[].name contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[].name elements != null
+tp1.Operator.$VALUES[].name.toString == [and, or, <, >, =, !=, like, contains, is null, is not null, not, ]
+tp1.Operator.OR.name has only one value
+tp1.Operator.OR.name != null
+tp1.Operator.OR.name.toString == "or"
+tp1.Operator.LESS.name has only one value
+tp1.Operator.LESS.name != null
+tp1.Operator.LESS.name.toString == "<"
+tp1.Operator.GREAT.name has only one value
+tp1.Operator.GREAT.name != null
+tp1.Operator.GREAT.name.toString == ">"
+tp1.Operator.EQ.name has only one value
+tp1.Operator.EQ.name != null
+tp1.Operator.EQ.name.toString == "="
+tp1.Operator.NE.name has only one value
+tp1.Operator.NE.name != null
+tp1.Operator.NE.name.toString == "!="
+tp1.Operator.STARTS.name has only one value
+tp1.Operator.STARTS.name != null
+tp1.Operator.STARTS.name.toString == "like"
+tp1.Operator.CONTAINS.name has only one value
+tp1.Operator.CONTAINS.name != null
+tp1.Operator.CONTAINS.name.toString == "contains"
+tp1.Operator.IS_NULL.name has only one value
+tp1.Operator.IS_NULL.name != null
+tp1.Operator.IS_NULL.name.toString == "is null"
+tp1.Operator.IS_NOT_NULL.name has only one value
+tp1.Operator.IS_NOT_NULL.name != null
+tp1.Operator.IS_NOT_NULL.name.toString == "is not null"
+tp1.Operator.NOT.name has only one value
+tp1.Operator.NOT.name != null
+tp1.Operator.NOT.name.toString == "not"
+tp1.Operator.EMPTY.name has only one value
+tp1.Operator.EMPTY.name != null
+tp1.Operator.EMPTY.name.toString == ""
+size(tp1.Operator.$VALUES[]) == 12
+===========================================================================
+tp1.Operator:::OBJECT
+this.name != null
+===========================================================================
+tp1.Operator.Operator(java.lang.String, int, java.lang.String):::ENTER
+arg0 != null
+arg2 != null
+===========================================================================
+tp1.Operator.Operator(java.lang.String, int, java.lang.String):::EXIT
+this.name == orig(arg2)
+arg0.toString == orig(arg0.toString)
+arg2.toString == orig(arg2.toString)
+===========================================================================
+tp1.Operator.toString():::ENTER
+===========================================================================
+tp1.Operator.toString():::EXIT
+tp1.Operator.AND == orig(tp1.Operator.AND)
+tp1.Operator.OR == orig(tp1.Operator.OR)
+tp1.Operator.LESS == orig(tp1.Operator.LESS)
+tp1.Operator.GREAT == orig(tp1.Operator.GREAT)
+tp1.Operator.EQ == orig(tp1.Operator.EQ)
+tp1.Operator.NE == orig(tp1.Operator.NE)
+tp1.Operator.STARTS == orig(tp1.Operator.STARTS)
+tp1.Operator.CONTAINS == orig(tp1.Operator.CONTAINS)
+tp1.Operator.IS_NULL == orig(tp1.Operator.IS_NULL)
+tp1.Operator.IS_NOT_NULL == orig(tp1.Operator.IS_NOT_NULL)
+tp1.Operator.NOT == orig(tp1.Operator.NOT)
+tp1.Operator.EMPTY == orig(tp1.Operator.EMPTY)
+tp1.Operator.AND.name == orig(tp1.Operator.AND.name)
+tp1.Operator.AND.name.toString == orig(tp1.Operator.AND.name.toString)
+tp1.Operator.$VALUES == orig(tp1.Operator.$VALUES)
+tp1.Operator.$VALUES.getClass().getName() == orig(tp1.Operator.$VALUES.getClass().getName())
+tp1.Operator.$VALUES[] == orig(tp1.Operator.$VALUES[])
+tp1.Operator.$VALUES[].name == orig(tp1.Operator.$VALUES[].name)
+tp1.Operator.OR.name == orig(tp1.Operator.OR.name)
+tp1.Operator.OR.name.toString == orig(tp1.Operator.OR.name.toString)
+tp1.Operator.LESS.name == orig(tp1.Operator.LESS.name)
+tp1.Operator.LESS.name.toString == orig(tp1.Operator.LESS.name.toString)
+tp1.Operator.GREAT.name == orig(tp1.Operator.GREAT.name)
+tp1.Operator.GREAT.name.toString == orig(tp1.Operator.GREAT.name.toString)
+tp1.Operator.EQ.name == orig(tp1.Operator.EQ.name)
+tp1.Operator.EQ.name.toString == orig(tp1.Operator.EQ.name.toString)
+tp1.Operator.NE.name == orig(tp1.Operator.NE.name)
+tp1.Operator.NE.name.toString == orig(tp1.Operator.NE.name.toString)
+tp1.Operator.STARTS.name == orig(tp1.Operator.STARTS.name)
+tp1.Operator.STARTS.name.toString == orig(tp1.Operator.STARTS.name.toString)
+tp1.Operator.CONTAINS.name == orig(tp1.Operator.CONTAINS.name)
+tp1.Operator.CONTAINS.name.toString == orig(tp1.Operator.CONTAINS.name.toString)
+tp1.Operator.IS_NULL.name == orig(tp1.Operator.IS_NULL.name)
+tp1.Operator.IS_NULL.name.toString == orig(tp1.Operator.IS_NULL.name.toString)
+tp1.Operator.IS_NOT_NULL.name == orig(tp1.Operator.IS_NOT_NULL.name)
+tp1.Operator.IS_NOT_NULL.name.toString == orig(tp1.Operator.IS_NOT_NULL.name.toString)
+tp1.Operator.NOT.name == orig(tp1.Operator.NOT.name)
+tp1.Operator.NOT.name.toString == orig(tp1.Operator.NOT.name.toString)
+tp1.Operator.EMPTY.name == orig(tp1.Operator.EMPTY.name)
+tp1.Operator.EMPTY.name.toString == orig(tp1.Operator.EMPTY.name.toString)
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+return != null
+===========================================================================
+tp1.OrderBy:::OBJECT
+this has only one value
+this.orderByColumns has only one value
+this.orderByColumns[] contains no nulls and has only one value, of length 1
+this.orderByColumns[] elements has only one value
+this.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+this.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+this.orderByColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+size(this.orderByColumns[]) == 1
+===========================================================================
+tp1.OrderBy.OrderBy(java.util.List):::ENTER
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 1
+arg0[] elements has only one value
+arg0[].getClass().getName() == [tp1.IntColumn]
+arg0[].getClass().getName() elements == tp1.IntColumn.class
+arg0.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0[]) == 1
+===========================================================================
+tp1.OrderBy.OrderBy(java.util.List):::EXIT
+this.orderByColumns == orig(arg0)
+this.orderByColumns.getClass().getName() == orig(arg0.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 1
+arg0[] elements has only one value
+arg0[].getClass().getName() == [tp1.IntColumn]
+arg0[].getClass().getName() elements == tp1.IntColumn.class
+===========================================================================
+tp1.OrderBy.accept(tp1.visitor.QueryVisitor):::ENTER
+===========================================================================
+tp1.OrderBy.accept(tp1.visitor.QueryVisitor):::EXIT
+this.orderByColumns == orig(this.orderByColumns)
+this.orderByColumns[] == orig(this.orderByColumns[])
+this.orderByColumns.getClass().getName() == orig(this.orderByColumns.getClass().getName())
+===========================================================================
+tp1.OrderBy.getOrderByColumns():::ENTER
+===========================================================================
+tp1.OrderBy.getOrderByColumns():::EXIT
+this.orderByColumns == return
+this.orderByColumns[] == orig(this.orderByColumns[])
+this.orderByColumns.getClass().getName() == return.getClass().getName()
+return == orig(this.orderByColumns)
+return.getClass().getName() == orig(this.orderByColumns.getClass().getName())
+return has only one value
+return[] contains no nulls and has only one value, of length 1
+return[] elements has only one value
+return[].getClass().getName() == [tp1.IntColumn]
+return[].getClass().getName() elements == tp1.IntColumn.class
+return.getClass().getName() == java.util.Arrays$ArrayList.class
+size(return[]) == 1
+===========================================================================
+tp1.OrderBy.isEmpty():::ENTER
+===========================================================================
+tp1.OrderBy.isEmpty():::EXIT
+this.orderByColumns == orig(this.orderByColumns)
+this.orderByColumns[] == orig(this.orderByColumns[])
+this.orderByColumns.getClass().getName() == orig(this.orderByColumns.getClass().getName())
+return == false
+===========================================================================
+tp1.OrderBy.isEmpty():::EXIT;condition="not(return == true)"
+===========================================================================
+tp1.Select:::OBJECT
+this has only one value
+this.selectColumns has only one value
+this.selectColumns[] contains no nulls and has only one value, of length 2
+this.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+size(this.selectColumns[]) == 2
+===========================================================================
+tp1.Select.Select(java.util.List):::ENTER
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 2
+arg0[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+arg0.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0[]) == 2
+===========================================================================
+tp1.Select.Select(java.util.List):::EXIT
+this.selectColumns == orig(arg0)
+this.selectColumns.getClass().getName() == orig(arg0.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 2
+arg0[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+===========================================================================
+tp1.Select.accept(tp1.visitor.QueryVisitor):::ENTER
+===========================================================================
+tp1.Select.accept(tp1.visitor.QueryVisitor):::EXIT
+this.selectColumns == orig(this.selectColumns)
+this.selectColumns[] == orig(this.selectColumns[])
+this.selectColumns.getClass().getName() == orig(this.selectColumns.getClass().getName())
+===========================================================================
+tp1.Select.getSelectColumns():::ENTER
+===========================================================================
+tp1.Select.getSelectColumns():::EXIT
+this.selectColumns == return
+this.selectColumns[] == orig(this.selectColumns[])
+this.selectColumns.getClass().getName() == return.getClass().getName()
+return == orig(this.selectColumns)
+return.getClass().getName() == orig(this.selectColumns.getClass().getName())
+return has only one value
+return[] contains no nulls and has only one value, of length 2
+return[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+return.getClass().getName() == java.util.Arrays$ArrayList.class
+size(return[]) == 2
+===========================================================================
+tp1.Select.isEmpty():::ENTER
+===========================================================================
+tp1.Select.isEmpty():::EXIT
+this.selectColumns == orig(this.selectColumns)
+this.selectColumns[] == orig(this.selectColumns[])
+this.selectColumns.getClass().getName() == orig(this.selectColumns.getClass().getName())
+return == false
+===========================================================================
+tp1.Select.isEmpty():::EXIT;condition="not(return == true)"
+===========================================================================
+tp1.SqlQuery:::OBJECT
+this.select.selectColumns.getClass().getName() == this.from.fromTables.getClass().getName()
+this.select.selectColumns.getClass().getName() == this.orderBy.orderByColumns.getClass().getName()
+this has only one value
+this.select has only one value
+this.select.selectColumns has only one value
+this.select.selectColumns[] contains no nulls and has only one value, of length 2
+this.select.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.select.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+this.from has only one value
+this.from.fromTables has only one value
+this.from.fromTables[] contains no nulls and has only one value, of length 1
+this.from.fromTables[] elements has only one value
+this.from.fromTables[].getClass().getName() == [tp1.Table]
+this.from.fromTables[].getClass().getName() elements == tp1.Table.class
+this.where has only one value
+this.where.condition has only one value
+this.where.condition.getClass().getName() == tp1.BinaryCondition.class
+this.orderBy has only one value
+this.orderBy.orderByColumns has only one value
+this.orderBy.orderByColumns[] contains no nulls and has only one value, of length 1
+this.orderBy.orderByColumns[] elements has only one value
+this.orderBy.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+this.orderBy.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+this.groupBy has only one value
+this.groupBy.groupByColumns has only one value
+this.groupBy.groupByColumns[] == []
+this.groupBy.groupByColumns[].getClass().getName() == []
+this.groupBy.groupByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+this.limit has only one value
+this.limit.limit == 5
+this.offset has only one value
+this.offset.offset == 0
+size(this.select.selectColumns[]) == 2
+size(this.from.fromTables[]) == 1
+size(this.orderBy.orderByColumns[]) == 1
+===========================================================================
+tp1.SqlQuery.SqlQuery(java.util.List, java.util.List, tp1.Condition, java.util.List, java.util.List, int):::ENTER
+arg0.getClass().getName() == arg1.getClass().getName()
+arg0.getClass().getName() == arg3.getClass().getName()
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 2
+arg0[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+arg0.getClass().getName() == java.util.Arrays$ArrayList.class
+arg1 has only one value
+arg1[] contains no nulls and has only one value, of length 1
+arg1[] elements has only one value
+arg1[].getClass().getName() == [tp1.Table]
+arg1[].getClass().getName() elements == tp1.Table.class
+arg2 has only one value
+arg2.getClass().getName() == tp1.BinaryCondition.class
+arg3 has only one value
+arg3[] contains no nulls and has only one value, of length 1
+arg3[] elements has only one value
+arg3[].getClass().getName() == [tp1.IntColumn]
+arg3[].getClass().getName() elements == tp1.IntColumn.class
+arg4 has only one value
+arg4[] == []
+arg4[].getClass().getName() == []
+arg4.getClass().getName() == java.util.Collections$EmptyList.class
+arg5 == 5
+size(arg0[]) == 2
+size(arg1[]) == 1
+size(arg3[]) == 1
+===========================================================================
+tp1.SqlQuery.SqlQuery(java.util.List, java.util.List, tp1.Condition, java.util.List, java.util.List, int):::EXIT
+this.select.selectColumns == orig(arg0)
+this.select.selectColumns.getClass().getName() == orig(arg0.getClass().getName())
+this.from.fromTables == orig(arg1)
+this.from.fromTables.getClass().getName() == orig(arg0.getClass().getName())
+this.where.condition == orig(arg2)
+this.where.condition.getClass().getName() == orig(arg2.getClass().getName())
+this.orderBy.orderByColumns == orig(arg3)
+this.orderBy.orderByColumns.getClass().getName() == orig(arg0.getClass().getName())
+this.groupBy.groupByColumns == orig(arg4)
+this.groupBy.groupByColumns.getClass().getName() == orig(arg4.getClass().getName())
+this.limit.limit == orig(arg5)
+arg0[] == orig(arg0[])
+arg1[] == orig(arg1[])
+arg3[] == orig(arg3[])
+arg4[] == orig(arg4[])
+arg0[] contains no nulls and has only one value, of length 2
+arg0[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+arg1[] contains no nulls and has only one value, of length 1
+arg1[] elements has only one value
+arg1[].getClass().getName() == [tp1.Table]
+arg1[].getClass().getName() elements == tp1.Table.class
+arg3[] contains no nulls and has only one value, of length 1
+arg3[] elements has only one value
+arg3[].getClass().getName() == [tp1.IntColumn]
+arg3[].getClass().getName() elements == tp1.IntColumn.class
+arg4[] == []
+arg4[].getClass().getName() == []
+===========================================================================
+tp1.SqlQuery.accept(tp1.visitor.QueryVisitor):::ENTER
+===========================================================================
+tp1.SqlQuery.accept(tp1.visitor.QueryVisitor):::EXIT
+this.select == orig(this.select)
+this.select.selectColumns == orig(this.select.selectColumns)
+this.select.selectColumns[] == orig(this.select.selectColumns[])
+this.select.selectColumns.getClass().getName() == orig(this.select.selectColumns.getClass().getName())
+this.select.selectColumns.getClass().getName() == orig(this.from.fromTables.getClass().getName())
+this.select.selectColumns.getClass().getName() == orig(this.orderBy.orderByColumns.getClass().getName())
+this.from == orig(this.from)
+this.from.fromTables == orig(this.from.fromTables)
+this.from.fromTables[] == orig(this.from.fromTables[])
+this.where == orig(this.where)
+this.where.condition == orig(this.where.condition)
+this.where.condition.getClass().getName() == orig(this.where.condition.getClass().getName())
+this.orderBy == orig(this.orderBy)
+this.orderBy.orderByColumns == orig(this.orderBy.orderByColumns)
+this.orderBy.orderByColumns[] == orig(this.orderBy.orderByColumns[])
+this.groupBy == orig(this.groupBy)
+this.groupBy.groupByColumns == orig(this.groupBy.groupByColumns)
+this.groupBy.groupByColumns[] == orig(this.groupBy.groupByColumns[])
+this.groupBy.groupByColumns.getClass().getName() == orig(this.groupBy.groupByColumns.getClass().getName())
+this.limit == orig(this.limit)
+this.limit.limit == orig(this.limit.limit)
+this.offset == orig(this.offset)
+this.offset.offset == orig(this.offset.offset)
+===========================================================================
+tp1.SqlQueryBuilder:::OBJECT
+this has only one value
+this.selectColumns != null
+this.selectColumns[] elements != null
+this.selectColumns[].getClass().getName() one of { [], [tp1.IntColumn, tp1.StrColumn] }
+this.fromTables != null
+this.fromTables[] elements has only one value
+this.fromTables[] elements != null
+this.fromTables[].getClass().getName() elements == tp1.Table.class
+this.fromTables[].getClass().getName() one of { [], [tp1.Table] }
+this.whereClause != null
+this.orderByColumns != null
+this.orderByColumns[] elements has only one value
+this.orderByColumns[] elements != null
+this.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+this.orderByColumns[].getClass().getName() one of { [], [tp1.IntColumn] }
+this.groupByColumns has only one value
+this.groupByColumns != null
+this.groupByColumns[] == []
+this.groupByColumns[].getClass().getName() == []
+this.groupByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+this.limit one of { 0, 5 }
+size(this.selectColumns[]) one of { 0, 2 }
+size(this.selectColumns[])-1 != 0
+size(this.fromTables[]) one of { 0, 1 }
+size(this.orderByColumns[]) one of { 0, 1 }
+this.selectColumns.getClass().getName() != this.whereClause.getClass().getName()
+this.selectColumns.getClass().getName() != this.groupByColumns.getClass().getName()
+this.fromTables.getClass().getName() != this.whereClause.getClass().getName()
+this.whereClause.getClass().getName() != this.orderByColumns.getClass().getName()
+this.whereClause.getClass().getName() != this.groupByColumns.getClass().getName()
+===========================================================================
+tp1.SqlQueryBuilder.SqlQueryBuilder():::EXIT
+this.fromTables == this.orderByColumns
+this.fromTables == this.groupByColumns
+this.fromTables.getClass().getName() == this.orderByColumns.getClass().getName()
+this.fromTables.getClass().getName() == this.groupByColumns.getClass().getName()
+this.selectColumns has only one value
+this.selectColumns[] == []
+this.selectColumns[].getClass().getName() == []
+this.selectColumns.getClass().getName() == java.util.ArrayList.class
+this.fromTables has only one value
+this.fromTables[] == []
+this.fromTables[].getClass().getName() == []
+this.fromTables.getClass().getName() == java.util.Collections$EmptyList.class
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.EmptyCondition.class
+this.orderByColumns[] == []
+this.orderByColumns[].getClass().getName() == []
+this.limit == 0
+===========================================================================
+tp1.SqlQueryBuilder.build():::ENTER
+this.selectColumns.getClass().getName() == this.fromTables.getClass().getName()
+this.selectColumns.getClass().getName() == this.orderByColumns.getClass().getName()
+this.selectColumns has only one value
+this.selectColumns[] contains no nulls and has only one value, of length 2
+this.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+this.fromTables has only one value
+this.fromTables[] contains no nulls and has only one value, of length 1
+this.fromTables[].getClass().getName() == [tp1.Table]
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.BinaryCondition.class
+this.orderByColumns has only one value
+this.orderByColumns[] contains no nulls and has only one value, of length 1
+this.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+this.limit == 5
+size(this.selectColumns[]) == 2
+size(this.fromTables[]) == 1
+size(this.orderByColumns[]) == 1
+===========================================================================
+tp1.SqlQueryBuilder.build():::EXIT
+this.selectColumns == return.select.selectColumns
+this.selectColumns == orig(this.selectColumns)
+this.selectColumns[] == orig(this.selectColumns[])
+this.selectColumns.getClass().getName() == this.fromTables.getClass().getName()
+this.selectColumns.getClass().getName() == this.orderByColumns.getClass().getName()
+this.selectColumns.getClass().getName() == return.select.selectColumns.getClass().getName()
+this.selectColumns.getClass().getName() == return.from.fromTables.getClass().getName()
+this.selectColumns.getClass().getName() == return.orderBy.orderByColumns.getClass().getName()
+this.selectColumns.getClass().getName() == orig(this.selectColumns.getClass().getName())
+this.selectColumns.getClass().getName() == orig(this.fromTables.getClass().getName())
+this.selectColumns.getClass().getName() == orig(this.orderByColumns.getClass().getName())
+this.fromTables == return.from.fromTables
+this.fromTables == orig(this.fromTables)
+this.fromTables[] == orig(this.fromTables[])
+this.whereClause == return.where.condition
+this.whereClause == orig(this.whereClause)
+this.whereClause.getClass().getName() == return.where.condition.getClass().getName()
+this.whereClause.getClass().getName() == orig(this.whereClause.getClass().getName())
+this.orderByColumns == return.orderBy.orderByColumns
+this.orderByColumns == orig(this.orderByColumns)
+this.orderByColumns[] == orig(this.orderByColumns[])
+this.groupByColumns == return.groupBy.groupByColumns
+this.groupByColumns == orig(this.groupByColumns)
+this.groupByColumns[] == orig(this.groupByColumns[])
+this.groupByColumns.getClass().getName() == return.groupBy.groupByColumns.getClass().getName()
+this.groupByColumns.getClass().getName() == orig(this.groupByColumns.getClass().getName())
+this.limit == return.limit.limit
+this.limit == orig(this.limit)
+this.selectColumns has only one value
+this.selectColumns[] contains no nulls and has only one value, of length 2
+this.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+this.fromTables has only one value
+this.fromTables[] contains no nulls and has only one value, of length 1
+this.fromTables[].getClass().getName() == [tp1.Table]
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.BinaryCondition.class
+this.orderByColumns has only one value
+this.orderByColumns[] contains no nulls and has only one value, of length 1
+this.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+this.limit == 5
+return has only one value
+return.select has only one value
+return.select.selectColumns[] contains no nulls and has only one value, of length 2
+return.select.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+return.from has only one value
+return.from.fromTables[] contains no nulls and has only one value, of length 1
+return.from.fromTables[] elements has only one value
+return.from.fromTables[].getClass().getName() == [tp1.Table]
+return.from.fromTables[].getClass().getName() elements == tp1.Table.class
+return.where has only one value
+return.orderBy has only one value
+return.orderBy.orderByColumns[] contains no nulls and has only one value, of length 1
+return.orderBy.orderByColumns[] elements has only one value
+return.orderBy.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+return.orderBy.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+return.groupBy has only one value
+return.groupBy.groupByColumns[] == []
+return.groupBy.groupByColumns[].getClass().getName() == []
+return.limit has only one value
+return.offset has only one value
+return.offset.offset == 0
+size(this.selectColumns[]) == 2
+size(this.fromTables[]) == 1
+size(this.orderByColumns[]) == 1
+size(return.select.selectColumns[]) == 2
+size(return.from.fromTables[]) == 1
+size(return.orderBy.orderByColumns[]) == 1
+===========================================================================
+tp1.SqlQueryBuilder.from(tp1.Table[]):::ENTER
+this.fromTables == this.orderByColumns
+this.fromTables == this.groupByColumns
+this.fromTables.getClass().getName() == this.orderByColumns.getClass().getName()
+this.fromTables.getClass().getName() == this.groupByColumns.getClass().getName()
+this.selectColumns has only one value
+this.selectColumns[] contains no nulls and has only one value, of length 2
+this.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+this.fromTables has only one value
+this.fromTables[] == []
+this.fromTables[].getClass().getName() == []
+this.fromTables.getClass().getName() == java.util.Collections$EmptyList.class
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.EmptyCondition.class
+this.orderByColumns[] == []
+this.orderByColumns[].getClass().getName() == []
+this.limit == 0
+arg0 has only one value
+arg0.getClass().getName() == tp1.Table[].class
+arg0[] contains no nulls and has only one value, of length 1
+arg0[] elements has only one value
+arg0[].columns contains no nulls and has only one value, of length 1
+arg0[].columns elements has only one value
+arg0[].columns.getClass().getName() == [java.util.LinkedList]
+arg0[].columns.getClass().getName() elements == java.util.LinkedList.class
+arg0[].name contains no nulls and has only one value, of length 1
+arg0[].name elements has only one value
+arg0[].name.toString == [student]
+arg0[].name.toString elements == "student"
+size(this.selectColumns[]) == 2
+size(arg0[]) == 1
+===========================================================================
+tp1.SqlQueryBuilder.from(tp1.Table[]):::EXIT
+this.selectColumns == return.selectColumns
+this.selectColumns == orig(this.selectColumns)
+this.selectColumns[] == orig(this.selectColumns[])
+this.selectColumns.getClass().getName() == this.fromTables.getClass().getName()
+this.selectColumns.getClass().getName() == return.selectColumns.getClass().getName()
+this.selectColumns.getClass().getName() == return.fromTables.getClass().getName()
+this.selectColumns.getClass().getName() == orig(this.selectColumns.getClass().getName())
+this.fromTables == return.fromTables
+this.whereClause == return.whereClause
+this.whereClause == orig(this.whereClause)
+this.whereClause.getClass().getName() == return.whereClause.getClass().getName()
+this.whereClause.getClass().getName() == orig(this.whereClause.getClass().getName())
+this.orderByColumns == this.groupByColumns
+this.orderByColumns == return.orderByColumns
+this.orderByColumns == return.groupByColumns
+this.orderByColumns == orig(this.fromTables)
+this.orderByColumns == orig(this.orderByColumns)
+this.orderByColumns == orig(this.groupByColumns)
+this.orderByColumns[] == orig(this.orderByColumns[])
+this.orderByColumns.getClass().getName() == this.groupByColumns.getClass().getName()
+this.orderByColumns.getClass().getName() == return.orderByColumns.getClass().getName()
+this.orderByColumns.getClass().getName() == return.groupByColumns.getClass().getName()
+this.orderByColumns.getClass().getName() == orig(this.fromTables.getClass().getName())
+this.orderByColumns.getClass().getName() == orig(this.orderByColumns.getClass().getName())
+this.orderByColumns.getClass().getName() == orig(this.groupByColumns.getClass().getName())
+this.groupByColumns[] == orig(this.groupByColumns[])
+this.limit == orig(this.limit)
+arg0[] == orig(arg0[])
+arg0[].columns == orig(arg0[].columns)
+arg0[].name == orig(arg0[].name)
+return == orig(this)
+size(this.fromTables[])-1 == orig(size(this.fromTables[]))
+this.selectColumns has only one value
+this.selectColumns[] contains no nulls and has only one value, of length 2
+this.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+this.fromTables has only one value
+this.fromTables[] contains no nulls and has only one value, of length 1
+this.fromTables[].getClass().getName() == [tp1.Table]
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.EmptyCondition.class
+this.orderByColumns has only one value
+this.orderByColumns[] == []
+this.orderByColumns[].getClass().getName() == []
+this.orderByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+this.limit == 0
+arg0[] contains no nulls and has only one value, of length 1
+arg0[] elements has only one value
+arg0[].columns contains no nulls and has only one value, of length 1
+arg0[].columns elements has only one value
+arg0[].columns.getClass().getName() == [java.util.LinkedList]
+arg0[].columns.getClass().getName() elements == java.util.LinkedList.class
+arg0[].name contains no nulls and has only one value, of length 1
+arg0[].name elements has only one value
+arg0[].name.toString == [student]
+arg0[].name.toString elements == "student"
+return has only one value
+return.selectColumns[] contains no nulls and has only one value, of length 2
+return.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+return.fromTables[] contains no nulls and has only one value, of length 1
+return.fromTables[] elements has only one value
+return.fromTables[].getClass().getName() == [tp1.Table]
+return.fromTables[].getClass().getName() elements == tp1.Table.class
+return.orderByColumns[] == []
+return.orderByColumns[].getClass().getName() == []
+return.groupByColumns[] == []
+return.groupByColumns[].getClass().getName() == []
+return.limit == 0
+size(this.selectColumns[]) == 2
+size(this.fromTables[]) == 1
+size(return.selectColumns[]) == 2
+size(return.fromTables[]) == 1
+===========================================================================
+tp1.SqlQueryBuilder.limit(int):::ENTER
+this.selectColumns.getClass().getName() == this.fromTables.getClass().getName()
+this.selectColumns.getClass().getName() == this.orderByColumns.getClass().getName()
+this.selectColumns has only one value
+this.selectColumns[] contains no nulls and has only one value, of length 2
+this.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+this.fromTables has only one value
+this.fromTables[] contains no nulls and has only one value, of length 1
+this.fromTables[].getClass().getName() == [tp1.Table]
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.BinaryCondition.class
+this.orderByColumns has only one value
+this.orderByColumns[] contains no nulls and has only one value, of length 1
+this.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+this.limit == 0
+arg0 == 5
+size(this.selectColumns[]) == 2
+size(this.fromTables[]) == 1
+size(this.orderByColumns[]) == 1
+===========================================================================
+tp1.SqlQueryBuilder.limit(int):::EXIT
+this.selectColumns == return.selectColumns
+this.selectColumns == orig(this.selectColumns)
+this.selectColumns[] == orig(this.selectColumns[])
+this.selectColumns.getClass().getName() == this.fromTables.getClass().getName()
+this.selectColumns.getClass().getName() == this.orderByColumns.getClass().getName()
+this.selectColumns.getClass().getName() == return.selectColumns.getClass().getName()
+this.selectColumns.getClass().getName() == return.fromTables.getClass().getName()
+this.selectColumns.getClass().getName() == return.orderByColumns.getClass().getName()
+this.selectColumns.getClass().getName() == orig(this.selectColumns.getClass().getName())
+this.selectColumns.getClass().getName() == orig(this.fromTables.getClass().getName())
+this.selectColumns.getClass().getName() == orig(this.orderByColumns.getClass().getName())
+this.fromTables == return.fromTables
+this.fromTables == orig(this.fromTables)
+this.fromTables[] == orig(this.fromTables[])
+this.whereClause == return.whereClause
+this.whereClause == orig(this.whereClause)
+this.whereClause.getClass().getName() == return.whereClause.getClass().getName()
+this.whereClause.getClass().getName() == orig(this.whereClause.getClass().getName())
+this.orderByColumns == return.orderByColumns
+this.orderByColumns == orig(this.orderByColumns)
+this.orderByColumns[] == orig(this.orderByColumns[])
+this.groupByColumns == return.groupByColumns
+this.groupByColumns == orig(this.groupByColumns)
+this.groupByColumns[] == orig(this.groupByColumns[])
+this.groupByColumns.getClass().getName() == return.groupByColumns.getClass().getName()
+this.groupByColumns.getClass().getName() == orig(this.groupByColumns.getClass().getName())
+this.limit == return.limit
+this.limit == orig(arg0)
+return == orig(this)
+this.selectColumns has only one value
+this.selectColumns[] contains no nulls and has only one value, of length 2
+this.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+this.fromTables has only one value
+this.fromTables[] contains no nulls and has only one value, of length 1
+this.fromTables[].getClass().getName() == [tp1.Table]
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.BinaryCondition.class
+this.orderByColumns has only one value
+this.orderByColumns[] contains no nulls and has only one value, of length 1
+this.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+this.limit == 5
+return has only one value
+return.selectColumns[] contains no nulls and has only one value, of length 2
+return.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+return.fromTables[] contains no nulls and has only one value, of length 1
+return.fromTables[] elements has only one value
+return.fromTables[].getClass().getName() == [tp1.Table]
+return.fromTables[].getClass().getName() elements == tp1.Table.class
+return.orderByColumns[] contains no nulls and has only one value, of length 1
+return.orderByColumns[] elements has only one value
+return.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+return.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+return.groupByColumns[] == []
+return.groupByColumns[].getClass().getName() == []
+size(this.selectColumns[]) == 2
+size(this.fromTables[]) == 1
+size(this.orderByColumns[]) == 1
+size(return.selectColumns[]) == 2
+size(return.fromTables[]) == 1
+size(return.orderByColumns[]) == 1
+===========================================================================
+tp1.SqlQueryBuilder.orderBy(tp1.Column[]):::ENTER
+this.selectColumns.getClass().getName() == this.fromTables.getClass().getName()
+this.orderByColumns == this.groupByColumns
+this.orderByColumns.getClass().getName() == this.groupByColumns.getClass().getName()
+this.selectColumns has only one value
+this.selectColumns[] contains no nulls and has only one value, of length 2
+this.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+this.fromTables has only one value
+this.fromTables[] contains no nulls and has only one value, of length 1
+this.fromTables[].getClass().getName() == [tp1.Table]
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.BinaryCondition.class
+this.orderByColumns has only one value
+this.orderByColumns[] == []
+this.orderByColumns[].getClass().getName() == []
+this.orderByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+this.limit == 0
+arg0 has only one value
+arg0.getClass().getName() == tp1.Column[].class
+arg0[] contains no nulls and has only one value, of length 1
+arg0[] elements has only one value
+arg0[].columnName contains no nulls and has only one value, of length 1
+arg0[].columnName elements has only one value
+arg0[].columnName.toString == [age]
+arg0[].columnName.toString elements == "age"
+arg0[].value == [null]
+arg0[].value elements == null
+arg0[].value.getClass().getName() == [null]
+arg0[].value.getClass().getName() elements == null
+size(this.selectColumns[]) == 2
+size(this.fromTables[]) == 1
+size(arg0[]) == 1
+===========================================================================
+tp1.SqlQueryBuilder.orderBy(tp1.Column[]):::EXIT
+this.selectColumns == return.selectColumns
+this.selectColumns == orig(this.selectColumns)
+this.selectColumns[] == orig(this.selectColumns[])
+this.selectColumns.getClass().getName() == this.fromTables.getClass().getName()
+this.selectColumns.getClass().getName() == this.orderByColumns.getClass().getName()
+this.selectColumns.getClass().getName() == return.selectColumns.getClass().getName()
+this.selectColumns.getClass().getName() == return.fromTables.getClass().getName()
+this.selectColumns.getClass().getName() == return.orderByColumns.getClass().getName()
+this.selectColumns.getClass().getName() == orig(this.selectColumns.getClass().getName())
+this.selectColumns.getClass().getName() == orig(this.fromTables.getClass().getName())
+this.fromTables == return.fromTables
+this.fromTables == orig(this.fromTables)
+this.fromTables[] == orig(this.fromTables[])
+this.whereClause == return.whereClause
+this.whereClause == orig(this.whereClause)
+this.whereClause.getClass().getName() == return.whereClause.getClass().getName()
+this.whereClause.getClass().getName() == orig(this.whereClause.getClass().getName())
+this.orderByColumns == return.orderByColumns
+this.groupByColumns == return.groupByColumns
+this.groupByColumns == orig(this.orderByColumns)
+this.groupByColumns == orig(this.groupByColumns)
+this.groupByColumns[] == orig(this.groupByColumns[])
+this.groupByColumns.getClass().getName() == return.groupByColumns.getClass().getName()
+this.groupByColumns.getClass().getName() == orig(this.orderByColumns.getClass().getName())
+this.groupByColumns.getClass().getName() == orig(this.groupByColumns.getClass().getName())
+this.limit == orig(this.limit)
+arg0[] == orig(arg0[])
+arg0[].columnName == orig(arg0[].columnName)
+arg0[].value == orig(arg0[].value)
+return == orig(this)
+size(this.orderByColumns[])-1 == orig(size(this.orderByColumns[]))
+this.selectColumns has only one value
+this.selectColumns[] contains no nulls and has only one value, of length 2
+this.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+this.fromTables has only one value
+this.fromTables[] contains no nulls and has only one value, of length 1
+this.fromTables[].getClass().getName() == [tp1.Table]
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.BinaryCondition.class
+this.orderByColumns has only one value
+this.orderByColumns[] contains no nulls and has only one value, of length 1
+this.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+this.limit == 0
+arg0[] contains no nulls and has only one value, of length 1
+arg0[] elements has only one value
+arg0[].columnName contains no nulls and has only one value, of length 1
+arg0[].columnName elements has only one value
+arg0[].columnName.toString == [age]
+arg0[].columnName.toString elements == "age"
+arg0[].value == [null]
+arg0[].value elements == null
+arg0[].value.getClass().getName() == [null]
+arg0[].value.getClass().getName() elements == null
+return has only one value
+return.selectColumns[] contains no nulls and has only one value, of length 2
+return.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+return.fromTables[] contains no nulls and has only one value, of length 1
+return.fromTables[] elements has only one value
+return.fromTables[].getClass().getName() == [tp1.Table]
+return.fromTables[].getClass().getName() elements == tp1.Table.class
+return.orderByColumns[] contains no nulls and has only one value, of length 1
+return.orderByColumns[] elements has only one value
+return.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+return.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+return.groupByColumns[] == []
+return.groupByColumns[].getClass().getName() == []
+return.limit == 0
+size(this.selectColumns[]) == 2
+size(this.fromTables[]) == 1
+size(this.orderByColumns[]) == 1
+size(return.selectColumns[]) == 2
+size(return.fromTables[]) == 1
+size(return.orderByColumns[]) == 1
+===========================================================================
+tp1.SqlQueryBuilder.select(tp1.Column[]):::ENTER
+this.fromTables == this.orderByColumns
+this.fromTables == this.groupByColumns
+this.fromTables.getClass().getName() == this.orderByColumns.getClass().getName()
+this.fromTables.getClass().getName() == this.groupByColumns.getClass().getName()
+this.selectColumns has only one value
+this.selectColumns[] == []
+this.selectColumns[].getClass().getName() == []
+this.selectColumns.getClass().getName() == java.util.ArrayList.class
+this.fromTables has only one value
+this.fromTables[] == []
+this.fromTables[].getClass().getName() == []
+this.fromTables.getClass().getName() == java.util.Collections$EmptyList.class
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.EmptyCondition.class
+this.orderByColumns[] == []
+this.orderByColumns[].getClass().getName() == []
+this.limit == 0
+arg0 has only one value
+arg0.getClass().getName() == tp1.Column[].class
+arg0[] contains no nulls and has only one value, of length 2
+arg0[].columnName contains no nulls and has only one value, of length 2
+arg0[].columnName.toString == [age, lastName]
+arg0[].columnName.toString elements one of { "age", "lastName" }
+arg0[].value contains only nulls and has only one value, of length 2
+arg0[].value elements == null
+arg0[].value.getClass().getName() == [null, null]
+arg0[].value.getClass().getName() elements == null
+size(arg0[]) == 2
+===========================================================================
+tp1.SqlQueryBuilder.select(tp1.Column[]):::EXIT
+this.selectColumns == return.selectColumns
+this.selectColumns.getClass().getName() == return.selectColumns.getClass().getName()
+this.fromTables == this.orderByColumns
+this.fromTables == this.groupByColumns
+this.fromTables == return.fromTables
+this.fromTables == return.orderByColumns
+this.fromTables == return.groupByColumns
+this.fromTables == orig(this.fromTables)
+this.fromTables == orig(this.orderByColumns)
+this.fromTables == orig(this.groupByColumns)
+this.fromTables[] == orig(this.fromTables[])
+this.fromTables.getClass().getName() == this.orderByColumns.getClass().getName()
+this.fromTables.getClass().getName() == this.groupByColumns.getClass().getName()
+this.fromTables.getClass().getName() == return.fromTables.getClass().getName()
+this.fromTables.getClass().getName() == return.orderByColumns.getClass().getName()
+this.fromTables.getClass().getName() == return.groupByColumns.getClass().getName()
+this.fromTables.getClass().getName() == orig(this.fromTables.getClass().getName())
+this.fromTables.getClass().getName() == orig(this.orderByColumns.getClass().getName())
+this.fromTables.getClass().getName() == orig(this.groupByColumns.getClass().getName())
+this.whereClause == return.whereClause
+this.whereClause == orig(this.whereClause)
+this.whereClause.getClass().getName() == return.whereClause.getClass().getName()
+this.whereClause.getClass().getName() == orig(this.whereClause.getClass().getName())
+this.orderByColumns[] == orig(this.orderByColumns[])
+this.groupByColumns[] == orig(this.groupByColumns[])
+this.limit == orig(this.limit)
+arg0[] == orig(arg0[])
+arg0[].columnName == orig(arg0[].columnName)
+arg0[].value == orig(arg0[].value)
+return == orig(this)
+this.selectColumns has only one value
+this.selectColumns[] contains no nulls and has only one value, of length 2
+this.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+this.fromTables has only one value
+this.fromTables[] == []
+this.fromTables[].getClass().getName() == []
+this.fromTables.getClass().getName() == java.util.Collections$EmptyList.class
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.EmptyCondition.class
+this.orderByColumns[] == []
+this.orderByColumns[].getClass().getName() == []
+this.limit == 0
+arg0[] contains no nulls and has only one value, of length 2
+arg0[].columnName contains no nulls and has only one value, of length 2
+arg0[].columnName.toString == [age, lastName]
+arg0[].columnName.toString elements one of { "age", "lastName" }
+arg0[].value contains only nulls and has only one value, of length 2
+arg0[].value elements == null
+arg0[].value.getClass().getName() == [null, null]
+arg0[].value.getClass().getName() elements == null
+return has only one value
+return.selectColumns[] contains no nulls and has only one value, of length 2
+return.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+return.fromTables[] == []
+return.fromTables[].getClass().getName() == []
+return.orderByColumns[] == []
+return.orderByColumns[].getClass().getName() == []
+return.groupByColumns[] == []
+return.groupByColumns[].getClass().getName() == []
+return.limit == 0
+size(this.selectColumns[]) == 2
+size(return.selectColumns[]) == 2
+===========================================================================
+tp1.SqlQueryBuilder.sqlQuery():::EXIT
+return.fromTables == return.orderByColumns
+return.fromTables == return.groupByColumns
+return.fromTables.getClass().getName() == return.orderByColumns.getClass().getName()
+return.fromTables.getClass().getName() == return.groupByColumns.getClass().getName()
+return has only one value
+return.selectColumns has only one value
+return.selectColumns[] == []
+return.selectColumns[].getClass().getName() == []
+return.selectColumns.getClass().getName() == java.util.ArrayList.class
+return.fromTables has only one value
+return.fromTables[] == []
+return.fromTables[].getClass().getName() == []
+return.fromTables.getClass().getName() == java.util.Collections$EmptyList.class
+return.whereClause has only one value
+return.whereClause.getClass().getName() == tp1.EmptyCondition.class
+return.orderByColumns[] == []
+return.orderByColumns[].getClass().getName() == []
+return.groupByColumns[] == []
+return.groupByColumns[].getClass().getName() == []
+return.limit == 0
+===========================================================================
+tp1.SqlQueryBuilder.where(tp1.Condition):::ENTER
+this.selectColumns.getClass().getName() == this.fromTables.getClass().getName()
+this.orderByColumns == this.groupByColumns
+this.orderByColumns.getClass().getName() == this.groupByColumns.getClass().getName()
+this.selectColumns has only one value
+this.selectColumns[] contains no nulls and has only one value, of length 2
+this.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+this.fromTables has only one value
+this.fromTables[] contains no nulls and has only one value, of length 1
+this.fromTables[].getClass().getName() == [tp1.Table]
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.EmptyCondition.class
+this.orderByColumns has only one value
+this.orderByColumns[] == []
+this.orderByColumns[].getClass().getName() == []
+this.orderByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+this.limit == 0
+arg0 has only one value
+arg0.getClass().getName() == tp1.BinaryCondition.class
+size(this.selectColumns[]) == 2
+size(this.fromTables[]) == 1
+===========================================================================
+tp1.SqlQueryBuilder.where(tp1.Condition):::EXIT
+this.selectColumns == return.selectColumns
+this.selectColumns == orig(this.selectColumns)
+this.selectColumns[] == orig(this.selectColumns[])
+this.selectColumns.getClass().getName() == this.fromTables.getClass().getName()
+this.selectColumns.getClass().getName() == return.selectColumns.getClass().getName()
+this.selectColumns.getClass().getName() == return.fromTables.getClass().getName()
+this.selectColumns.getClass().getName() == orig(this.selectColumns.getClass().getName())
+this.selectColumns.getClass().getName() == orig(this.fromTables.getClass().getName())
+this.fromTables == return.fromTables
+this.fromTables == orig(this.fromTables)
+this.fromTables[] == orig(this.fromTables[])
+this.whereClause == return.whereClause
+this.whereClause == orig(arg0)
+this.whereClause.getClass().getName() == return.whereClause.getClass().getName()
+this.whereClause.getClass().getName() == orig(arg0.getClass().getName())
+this.orderByColumns == this.groupByColumns
+this.orderByColumns == return.orderByColumns
+this.orderByColumns == return.groupByColumns
+this.orderByColumns == orig(this.orderByColumns)
+this.orderByColumns == orig(this.groupByColumns)
+this.orderByColumns[] == orig(this.orderByColumns[])
+this.orderByColumns.getClass().getName() == this.groupByColumns.getClass().getName()
+this.orderByColumns.getClass().getName() == return.orderByColumns.getClass().getName()
+this.orderByColumns.getClass().getName() == return.groupByColumns.getClass().getName()
+this.orderByColumns.getClass().getName() == orig(this.orderByColumns.getClass().getName())
+this.orderByColumns.getClass().getName() == orig(this.groupByColumns.getClass().getName())
+this.groupByColumns[] == orig(this.groupByColumns[])
+this.limit == orig(this.limit)
+return == orig(this)
+this.selectColumns has only one value
+this.selectColumns[] contains no nulls and has only one value, of length 2
+this.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+this.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+this.fromTables has only one value
+this.fromTables[] contains no nulls and has only one value, of length 1
+this.fromTables[].getClass().getName() == [tp1.Table]
+this.whereClause has only one value
+this.whereClause.getClass().getName() == tp1.BinaryCondition.class
+this.orderByColumns has only one value
+this.orderByColumns[] == []
+this.orderByColumns[].getClass().getName() == []
+this.orderByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+this.limit == 0
+return has only one value
+return.selectColumns[] contains no nulls and has only one value, of length 2
+return.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+return.fromTables[] contains no nulls and has only one value, of length 1
+return.fromTables[] elements has only one value
+return.fromTables[].getClass().getName() == [tp1.Table]
+return.fromTables[].getClass().getName() elements == tp1.Table.class
+return.orderByColumns[] == []
+return.orderByColumns[].getClass().getName() == []
+return.groupByColumns[] == []
+return.groupByColumns[].getClass().getName() == []
+return.limit == 0
+size(this.selectColumns[]) == 2
+size(this.fromTables[]) == 1
+size(return.selectColumns[]) == 2
+size(return.fromTables[]) == 1
+===========================================================================
+tp1.Statement:::OBJECT
+===========================================================================
+tp1.Statement.Statement():::EXIT
+===========================================================================
+tp1.StrColumn:::OBJECT
+this has only one value
+this.columnName has only one value
+this.columnName.toString == "lastName"
+this.value == null
+===========================================================================
+tp1.StrColumn.StrColumn(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "lastName"
+===========================================================================
+tp1.StrColumn.StrColumn(java.lang.String):::EXIT
+this.columnName == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg0.toString == "lastName"
+===========================================================================
+tp1.StrColumn.startsWith(tp1.Value):::ENTER
+arg0 has only one value
+arg0.value == null
+===========================================================================
+tp1.StrColumn.startsWith(tp1.Value):::EXIT
+this.columnName == orig(this.columnName)
+this.columnName.toString == orig(this.columnName.toString)
+this.value == orig(this.value)
+arg0.value == orig(arg0.value)
+arg0.value == null
+return has only one value
+return.getClass().getName() == tp1.BinaryCondition.class
+===========================================================================
+tp1.Table:::OBJECT
+this has only one value
+this.columns has only one value
+this.columns.getClass().getName() == java.util.LinkedList.class
+this.name has only one value
+this.name.toString == "student"
+size(this.columns[]) one of { 0, 1, 2 }
+===========================================================================
+tp1.Table.Table(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "student"
+===========================================================================
+tp1.Table.Table(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.columns[] == []
+this.columns[].getClass().getName() == []
+arg0.toString == "student"
+===========================================================================
+tp1.Table.getName():::ENTER
+this.columns[] contains no nulls and has only one value, of length 2
+this.columns[].getClass().getName() == [tp1.StrColumn, tp1.IntColumn]
+size(this.columns[]) == 2
+===========================================================================
+tp1.Table.getName():::EXIT
+this.columns == orig(this.columns)
+this.columns[] == orig(this.columns[])
+this.columns.getClass().getName() == orig(this.columns.getClass().getName())
+this.name == return
+this.name.toString == orig(this.name.toString)
+return == orig(this.name)
+this.columns[] contains no nulls and has only one value, of length 2
+this.columns[].getClass().getName() == [tp1.StrColumn, tp1.IntColumn]
+return has only one value
+return.toString == "student"
+size(this.columns[]) == 2
+===========================================================================
+tp1.Table.number(java.lang.String):::ENTER
+this.columns[] contains no nulls and has only one value, of length 1
+this.columns[] elements has only one value
+this.columns[].getClass().getName() == [tp1.StrColumn]
+this.columns[].getClass().getName() elements == tp1.StrColumn.class
+arg0 has only one value
+arg0.toString == "age"
+size(this.columns[]) == 1
+===========================================================================
+tp1.Table.number(java.lang.String):::EXIT49
+===========================================================================
+tp1.Table.number(java.lang.String):::EXIT
+this.columns == orig(this.columns)
+this.columns.getClass().getName() == orig(this.columns.getClass().getName())
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+arg0.toString == orig(arg0.toString)
+return.columnName == orig(arg0)
+size(this.columns[])-1 == orig(size(this.columns[]))
+this.columns[] contains no nulls and has only one value, of length 2
+this.columns[].getClass().getName() == [tp1.StrColumn, tp1.IntColumn]
+arg0.toString == "age"
+return has only one value
+return.columnName has only one value
+return.columnName.toString == "age"
+return.value == null
+size(this.columns[]) == 2
+===========================================================================
+tp1.Table.str(java.lang.String):::ENTER
+this.columns[] == []
+this.columns[].getClass().getName() == []
+arg0 has only one value
+arg0.toString == "lastName"
+===========================================================================
+tp1.Table.str(java.lang.String):::EXIT36
+===========================================================================
+tp1.Table.str(java.lang.String):::EXIT
+this.columns == orig(this.columns)
+this.columns.getClass().getName() == orig(this.columns.getClass().getName())
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+arg0.toString == orig(arg0.toString)
+return.columnName == orig(arg0)
+size(this.columns[])-1 == orig(size(this.columns[]))
+this.columns[] contains no nulls and has only one value, of length 1
+this.columns[] elements has only one value
+this.columns[].getClass().getName() == [tp1.StrColumn]
+this.columns[].getClass().getName() elements == tp1.StrColumn.class
+arg0.toString == "lastName"
+return has only one value
+return.columnName has only one value
+return.columnName.toString == "lastName"
+return.value == null
+size(this.columns[]) == 1
+===========================================================================
+tp1.UnitaryCondition:::OBJECT
+this.operator == tp1.Operator.NOT
+this has only one value
+tp1.Operator.AND has only one value
+tp1.Operator.OR has only one value
+tp1.Operator.LESS has only one value
+tp1.Operator.GREAT has only one value
+tp1.Operator.EQ has only one value
+tp1.Operator.NE has only one value
+tp1.Operator.STARTS has only one value
+tp1.Operator.CONTAINS has only one value
+tp1.Operator.IS_NULL has only one value
+tp1.Operator.IS_NOT_NULL has only one value
+tp1.Operator.NOT has only one value
+tp1.Operator.EMPTY has only one value
+tp1.Operator.AND.name has only one value
+tp1.Operator.AND.name.toString == "and"
+tp1.Operator.$VALUES has only one value
+tp1.Operator.$VALUES.getClass().getName() == tp1.Operator[].class
+tp1.Operator.$VALUES[] contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[].getClass().getName() == [tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator]
+tp1.Operator.$VALUES[].getClass().getName() elements == tp1.Operator.class
+tp1.Operator.$VALUES[].name contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[].name.toString == [and, or, <, >, =, !=, like, contains, is null, is not null, not, ]
+tp1.Operator.OR.name has only one value
+tp1.Operator.OR.name.toString == "or"
+tp1.Operator.LESS.name has only one value
+tp1.Operator.LESS.name.toString == "<"
+tp1.Operator.GREAT.name has only one value
+tp1.Operator.GREAT.name.toString == ">"
+tp1.Operator.EQ.name has only one value
+tp1.Operator.EQ.name.toString == "="
+tp1.Operator.NE.name has only one value
+tp1.Operator.NE.name.toString == "!="
+tp1.Operator.STARTS.name has only one value
+tp1.Operator.STARTS.name.toString == "like"
+tp1.Operator.CONTAINS.name has only one value
+tp1.Operator.CONTAINS.name.toString == "contains"
+tp1.Operator.IS_NULL.name has only one value
+tp1.Operator.IS_NULL.name.toString == "is null"
+tp1.Operator.IS_NOT_NULL.name has only one value
+tp1.Operator.IS_NOT_NULL.name.toString == "is not null"
+tp1.Operator.NOT.name has only one value
+tp1.Operator.NOT.name.toString == "not"
+tp1.Operator.EMPTY.name has only one value
+tp1.Operator.EMPTY.name.toString == ""
+this.operator.name has only one value
+this.operator.name.toString == "not"
+this.left has only one value
+this.left.getClass().getName() == tp1.BinaryCondition.class
+size(tp1.Operator.$VALUES[]) == 12
+tp1.Operator.$VALUES.getClass().getName() != this.left.getClass().getName()
+===========================================================================
+tp1.UnitaryCondition.UnitaryCondition(tp1.Operator, tp1.Statement):::ENTER
+arg0 == tp1.Operator.NOT
+tp1.Operator.AND has only one value
+tp1.Operator.OR has only one value
+tp1.Operator.LESS has only one value
+tp1.Operator.GREAT has only one value
+tp1.Operator.EQ has only one value
+tp1.Operator.NE has only one value
+tp1.Operator.STARTS has only one value
+tp1.Operator.CONTAINS has only one value
+tp1.Operator.IS_NULL has only one value
+tp1.Operator.IS_NOT_NULL has only one value
+tp1.Operator.NOT has only one value
+tp1.Operator.EMPTY has only one value
+tp1.Operator.AND.name has only one value
+tp1.Operator.AND.name.toString == "and"
+tp1.Operator.$VALUES has only one value
+tp1.Operator.$VALUES.getClass().getName() == tp1.Operator[].class
+tp1.Operator.$VALUES[] contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[].getClass().getName() == [tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator, tp1.Operator]
+tp1.Operator.$VALUES[].getClass().getName() elements == tp1.Operator.class
+tp1.Operator.$VALUES[].name contains no nulls and has only one value, of length 12
+tp1.Operator.$VALUES[].name.toString == [and, or, <, >, =, !=, like, contains, is null, is not null, not, ]
+tp1.Operator.OR.name has only one value
+tp1.Operator.OR.name.toString == "or"
+tp1.Operator.LESS.name has only one value
+tp1.Operator.LESS.name.toString == "<"
+tp1.Operator.GREAT.name has only one value
+tp1.Operator.GREAT.name.toString == ">"
+tp1.Operator.EQ.name has only one value
+tp1.Operator.EQ.name.toString == "="
+tp1.Operator.NE.name has only one value
+tp1.Operator.NE.name.toString == "!="
+tp1.Operator.STARTS.name has only one value
+tp1.Operator.STARTS.name.toString == "like"
+tp1.Operator.CONTAINS.name has only one value
+tp1.Operator.CONTAINS.name.toString == "contains"
+tp1.Operator.IS_NULL.name has only one value
+tp1.Operator.IS_NULL.name.toString == "is null"
+tp1.Operator.IS_NOT_NULL.name has only one value
+tp1.Operator.IS_NOT_NULL.name.toString == "is not null"
+tp1.Operator.NOT.name has only one value
+tp1.Operator.NOT.name.toString == "not"
+tp1.Operator.EMPTY.name has only one value
+tp1.Operator.EMPTY.name.toString == ""
+arg0.name has only one value
+arg0.name.toString == "not"
+arg1 has only one value
+arg1.getClass().getName() == tp1.BinaryCondition.class
+size(tp1.Operator.$VALUES[]) == 12
+===========================================================================
+tp1.UnitaryCondition.UnitaryCondition(tp1.Operator, tp1.Statement):::EXIT
+tp1.Operator.AND == orig(tp1.Operator.AND)
+tp1.Operator.OR == orig(tp1.Operator.OR)
+tp1.Operator.LESS == orig(tp1.Operator.LESS)
+tp1.Operator.GREAT == orig(tp1.Operator.GREAT)
+tp1.Operator.EQ == orig(tp1.Operator.EQ)
+tp1.Operator.NE == orig(tp1.Operator.NE)
+tp1.Operator.STARTS == orig(tp1.Operator.STARTS)
+tp1.Operator.CONTAINS == orig(tp1.Operator.CONTAINS)
+tp1.Operator.IS_NULL == orig(tp1.Operator.IS_NULL)
+tp1.Operator.IS_NOT_NULL == orig(tp1.Operator.IS_NOT_NULL)
+tp1.Operator.NOT == orig(arg0)
+tp1.Operator.NOT == orig(tp1.Operator.NOT)
+tp1.Operator.EMPTY == orig(tp1.Operator.EMPTY)
+tp1.Operator.AND.name == orig(tp1.Operator.AND.name)
+tp1.Operator.AND.name.toString == orig(tp1.Operator.AND.name.toString)
+tp1.Operator.$VALUES == orig(tp1.Operator.$VALUES)
+tp1.Operator.$VALUES.getClass().getName() == orig(tp1.Operator.$VALUES.getClass().getName())
+tp1.Operator.$VALUES[] == orig(tp1.Operator.$VALUES[])
+tp1.Operator.$VALUES[].name == orig(tp1.Operator.$VALUES[].name)
+tp1.Operator.OR.name == orig(tp1.Operator.OR.name)
+tp1.Operator.OR.name.toString == orig(tp1.Operator.OR.name.toString)
+tp1.Operator.LESS.name == orig(tp1.Operator.LESS.name)
+tp1.Operator.LESS.name.toString == orig(tp1.Operator.LESS.name.toString)
+tp1.Operator.GREAT.name == orig(tp1.Operator.GREAT.name)
+tp1.Operator.GREAT.name.toString == orig(tp1.Operator.GREAT.name.toString)
+tp1.Operator.EQ.name == orig(tp1.Operator.EQ.name)
+tp1.Operator.EQ.name.toString == orig(tp1.Operator.EQ.name.toString)
+tp1.Operator.NE.name == orig(tp1.Operator.NE.name)
+tp1.Operator.NE.name.toString == orig(tp1.Operator.NE.name.toString)
+tp1.Operator.STARTS.name == orig(tp1.Operator.STARTS.name)
+tp1.Operator.STARTS.name.toString == orig(tp1.Operator.STARTS.name.toString)
+tp1.Operator.CONTAINS.name == orig(tp1.Operator.CONTAINS.name)
+tp1.Operator.CONTAINS.name.toString == orig(tp1.Operator.CONTAINS.name.toString)
+tp1.Operator.IS_NULL.name == orig(tp1.Operator.IS_NULL.name)
+tp1.Operator.IS_NULL.name.toString == orig(tp1.Operator.IS_NULL.name.toString)
+tp1.Operator.IS_NOT_NULL.name == orig(tp1.Operator.IS_NOT_NULL.name)
+tp1.Operator.IS_NOT_NULL.name.toString == orig(tp1.Operator.IS_NOT_NULL.name.toString)
+tp1.Operator.NOT.name == orig(tp1.Operator.NOT.name)
+tp1.Operator.NOT.name.toString == orig(tp1.Operator.NOT.name.toString)
+tp1.Operator.EMPTY.name == orig(tp1.Operator.EMPTY.name)
+tp1.Operator.EMPTY.name.toString == orig(tp1.Operator.EMPTY.name.toString)
+this.operator.name == arg0.name
+this.left == orig(arg1)
+this.left.getClass().getName() == orig(arg1.getClass().getName())
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+arg0.name has only one value
+arg0.name.toString == "not"
+===========================================================================
+tp1.UnitaryCondition.accept(tp1.visitor.QueryVisitor):::ENTER
+===========================================================================
+tp1.UnitaryCondition.accept(tp1.visitor.QueryVisitor):::EXIT
+tp1.Operator.AND == orig(tp1.Operator.AND)
+tp1.Operator.OR == orig(tp1.Operator.OR)
+tp1.Operator.LESS == orig(tp1.Operator.LESS)
+tp1.Operator.GREAT == orig(tp1.Operator.GREAT)
+tp1.Operator.EQ == orig(tp1.Operator.EQ)
+tp1.Operator.NE == orig(tp1.Operator.NE)
+tp1.Operator.STARTS == orig(tp1.Operator.STARTS)
+tp1.Operator.CONTAINS == orig(tp1.Operator.CONTAINS)
+tp1.Operator.IS_NULL == orig(tp1.Operator.IS_NULL)
+tp1.Operator.IS_NOT_NULL == orig(tp1.Operator.IS_NOT_NULL)
+tp1.Operator.NOT == orig(this.operator)
+tp1.Operator.NOT == orig(tp1.Operator.NOT)
+tp1.Operator.EMPTY == orig(tp1.Operator.EMPTY)
+tp1.Operator.AND.name == orig(tp1.Operator.AND.name)
+tp1.Operator.AND.name.toString == orig(tp1.Operator.AND.name.toString)
+tp1.Operator.$VALUES == orig(tp1.Operator.$VALUES)
+tp1.Operator.$VALUES.getClass().getName() == orig(tp1.Operator.$VALUES.getClass().getName())
+tp1.Operator.$VALUES[] == orig(tp1.Operator.$VALUES[])
+tp1.Operator.$VALUES[].name == orig(tp1.Operator.$VALUES[].name)
+tp1.Operator.OR.name == orig(tp1.Operator.OR.name)
+tp1.Operator.OR.name.toString == orig(tp1.Operator.OR.name.toString)
+tp1.Operator.LESS.name == orig(tp1.Operator.LESS.name)
+tp1.Operator.LESS.name.toString == orig(tp1.Operator.LESS.name.toString)
+tp1.Operator.GREAT.name == orig(tp1.Operator.GREAT.name)
+tp1.Operator.GREAT.name.toString == orig(tp1.Operator.GREAT.name.toString)
+tp1.Operator.EQ.name == orig(tp1.Operator.EQ.name)
+tp1.Operator.EQ.name.toString == orig(tp1.Operator.EQ.name.toString)
+tp1.Operator.NE.name == orig(tp1.Operator.NE.name)
+tp1.Operator.NE.name.toString == orig(tp1.Operator.NE.name.toString)
+tp1.Operator.STARTS.name == orig(tp1.Operator.STARTS.name)
+tp1.Operator.STARTS.name.toString == orig(tp1.Operator.STARTS.name.toString)
+tp1.Operator.CONTAINS.name == orig(tp1.Operator.CONTAINS.name)
+tp1.Operator.CONTAINS.name.toString == orig(tp1.Operator.CONTAINS.name.toString)
+tp1.Operator.IS_NULL.name == orig(tp1.Operator.IS_NULL.name)
+tp1.Operator.IS_NULL.name.toString == orig(tp1.Operator.IS_NULL.name.toString)
+tp1.Operator.IS_NOT_NULL.name == orig(tp1.Operator.IS_NOT_NULL.name)
+tp1.Operator.IS_NOT_NULL.name.toString == orig(tp1.Operator.IS_NOT_NULL.name.toString)
+tp1.Operator.NOT.name == orig(tp1.Operator.NOT.name)
+tp1.Operator.NOT.name.toString == orig(tp1.Operator.NOT.name.toString)
+tp1.Operator.EMPTY.name == orig(tp1.Operator.EMPTY.name)
+tp1.Operator.EMPTY.name.toString == orig(tp1.Operator.EMPTY.name.toString)
+this.operator.name == orig(this.operator.name)
+this.operator.name.toString == orig(this.operator.name.toString)
+this.left == orig(this.left)
+this.left.getClass().getName() == orig(this.left.getClass().getName())
+===========================================================================
+tp1.UnitaryCondition.getOperator():::ENTER
+===========================================================================
+tp1.UnitaryCondition.getOperator():::EXIT
+tp1.Operator.AND == orig(tp1.Operator.AND)
+tp1.Operator.OR == orig(tp1.Operator.OR)
+tp1.Operator.LESS == orig(tp1.Operator.LESS)
+tp1.Operator.GREAT == orig(tp1.Operator.GREAT)
+tp1.Operator.EQ == orig(tp1.Operator.EQ)
+tp1.Operator.NE == orig(tp1.Operator.NE)
+tp1.Operator.STARTS == orig(tp1.Operator.STARTS)
+tp1.Operator.CONTAINS == orig(tp1.Operator.CONTAINS)
+tp1.Operator.IS_NULL == orig(tp1.Operator.IS_NULL)
+tp1.Operator.IS_NOT_NULL == orig(tp1.Operator.IS_NOT_NULL)
+tp1.Operator.NOT == return
+tp1.Operator.NOT == orig(this.operator)
+tp1.Operator.NOT == orig(tp1.Operator.NOT)
+tp1.Operator.EMPTY == orig(tp1.Operator.EMPTY)
+tp1.Operator.AND.name == orig(tp1.Operator.AND.name)
+tp1.Operator.AND.name.toString == orig(tp1.Operator.AND.name.toString)
+tp1.Operator.$VALUES == orig(tp1.Operator.$VALUES)
+tp1.Operator.$VALUES.getClass().getName() == orig(tp1.Operator.$VALUES.getClass().getName())
+tp1.Operator.$VALUES[] == orig(tp1.Operator.$VALUES[])
+tp1.Operator.$VALUES[].name == orig(tp1.Operator.$VALUES[].name)
+tp1.Operator.OR.name == orig(tp1.Operator.OR.name)
+tp1.Operator.OR.name.toString == orig(tp1.Operator.OR.name.toString)
+tp1.Operator.LESS.name == orig(tp1.Operator.LESS.name)
+tp1.Operator.LESS.name.toString == orig(tp1.Operator.LESS.name.toString)
+tp1.Operator.GREAT.name == orig(tp1.Operator.GREAT.name)
+tp1.Operator.GREAT.name.toString == orig(tp1.Operator.GREAT.name.toString)
+tp1.Operator.EQ.name == orig(tp1.Operator.EQ.name)
+tp1.Operator.EQ.name.toString == orig(tp1.Operator.EQ.name.toString)
+tp1.Operator.NE.name == orig(tp1.Operator.NE.name)
+tp1.Operator.NE.name.toString == orig(tp1.Operator.NE.name.toString)
+tp1.Operator.STARTS.name == orig(tp1.Operator.STARTS.name)
+tp1.Operator.STARTS.name.toString == orig(tp1.Operator.STARTS.name.toString)
+tp1.Operator.CONTAINS.name == orig(tp1.Operator.CONTAINS.name)
+tp1.Operator.CONTAINS.name.toString == orig(tp1.Operator.CONTAINS.name.toString)
+tp1.Operator.IS_NULL.name == orig(tp1.Operator.IS_NULL.name)
+tp1.Operator.IS_NULL.name.toString == orig(tp1.Operator.IS_NULL.name.toString)
+tp1.Operator.IS_NOT_NULL.name == orig(tp1.Operator.IS_NOT_NULL.name)
+tp1.Operator.IS_NOT_NULL.name.toString == orig(tp1.Operator.IS_NOT_NULL.name.toString)
+tp1.Operator.NOT.name == orig(tp1.Operator.NOT.name)
+tp1.Operator.NOT.name.toString == orig(tp1.Operator.NOT.name.toString)
+tp1.Operator.EMPTY.name == orig(tp1.Operator.EMPTY.name)
+tp1.Operator.EMPTY.name.toString == orig(tp1.Operator.EMPTY.name.toString)
+this.operator.name == return.name
+this.operator.name.toString == orig(this.operator.name.toString)
+this.left == orig(this.left)
+this.left.getClass().getName() == orig(this.left.getClass().getName())
+return.name == orig(this.operator.name)
+return.name has only one value
+return.name.toString == "not"
+===========================================================================
+tp1.Value:::OBJECT
+this.value == null
+===========================================================================
+tp1.Value.Value():::EXIT
+===========================================================================
+tp1.Where:::OBJECT
+this has only one value
+this.condition has only one value
+this.condition.getClass().getName() == tp1.BinaryCondition.class
+===========================================================================
+tp1.Where.Where(tp1.Condition):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == tp1.BinaryCondition.class
+===========================================================================
+tp1.Where.Where(tp1.Condition):::EXIT
+this.condition == orig(arg0)
+this.condition.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+tp1.Where.accept(tp1.visitor.QueryVisitor):::ENTER
+===========================================================================
+tp1.Where.accept(tp1.visitor.QueryVisitor):::EXIT
+this.condition == orig(this.condition)
+this.condition.getClass().getName() == orig(this.condition.getClass().getName())
+===========================================================================
+tp1.Where.isEmpty():::ENTER
+===========================================================================
+tp1.Where.isEmpty():::EXIT
+this.condition == orig(this.condition)
+this.condition.getClass().getName() == orig(this.condition.getClass().getName())
+return == false
+===========================================================================
+tp1.Where.isEmpty():::EXIT;condition="not(return == true)"
+===========================================================================
+tp1.visitor.ConsoleVisitor:::OBJECT
+this has only one value
+===========================================================================
+tp1.visitor.ConsoleVisitor.ConsoleVisitor():::EXIT
+===========================================================================
+tp1.visitor.ConsoleVisitor.createSVFromList(java.util.List, java.lang.String, java.lang.String, java.lang.String):::ENTER
+arg1 == arg3
+arg0[].getClass().getName() elements == java.lang.String.class
+arg0[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+arg0.getClass().getName() == java.util.LinkedList.class
+arg1 has only one value
+arg1.toString == ""
+arg2 has only one value
+arg2.toString == ","
+arg3.toString == ""
+size(arg0[]) one of { 1, 2 }
+===========================================================================
+tp1.visitor.ConsoleVisitor.createSVFromList(java.util.List, java.lang.String, java.lang.String, java.lang.String):::EXIT
+arg0[] == orig(arg0[])
+arg1.toString == orig(arg1.toString)
+arg2.toString == orig(arg2.toString)
+arg3.toString == orig(arg3.toString)
+arg0[].getClass().getName() elements == java.lang.String.class
+arg0[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+arg1.toString == ""
+arg2.toString == ","
+arg3.toString == ""
+return.toString one of { "age", "age,lastName", "student" }
+===========================================================================
+tp1.visitor.ConsoleVisitor.createSimpleSVFromList(java.util.List, java.lang.String):::ENTER
+arg0[].getClass().getName() elements == java.lang.String.class
+arg0[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+arg0.getClass().getName() == java.util.LinkedList.class
+arg1 has only one value
+arg1.toString == ","
+size(arg0[]) one of { 1, 2 }
+===========================================================================
+tp1.visitor.ConsoleVisitor.createSimpleSVFromList(java.util.List, java.lang.String):::EXIT
+arg0[] == orig(arg0[])
+arg1.toString == orig(arg1.toString)
+arg0[].getClass().getName() elements == java.lang.String.class
+arg0[].getClass().getName() one of { [java.lang.String], [java.lang.String, java.lang.String] }
+arg1.toString == ","
+return.toString one of { "age", "age,lastName", "student" }
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Column):::ENTER
+arg0.columnName.toString one of { "age", "lastName" }
+arg0.value == null
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Column):::EXIT
+arg0.columnName == orig(arg0.columnName)
+arg0.columnName.toString == orig(arg0.columnName.toString)
+arg0.value == orig(arg0.value)
+arg0.columnName.toString one of { "age", "lastName" }
+arg0.value == null
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Condition):::ENTER
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Condition):::EXIT
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Const):::ENTER
+arg0.value == null
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Const):::EXIT
+arg0.str == orig(arg0.str)
+arg0.str.getClass().getName() == orig(arg0.str.getClass().getName())
+arg0.value == orig(arg0.value)
+arg0.value == null
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.From):::ENTER
+arg0 has only one value
+arg0.fromTables has only one value
+arg0.fromTables[] contains no nulls and has only one value, of length 1
+arg0.fromTables[] elements has only one value
+arg0.fromTables[].getClass().getName() == [tp1.Table]
+arg0.fromTables[].getClass().getName() elements == tp1.Table.class
+arg0.fromTables.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0.fromTables[]) == 1
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.From):::EXIT
+arg0.fromTables == orig(arg0.fromTables)
+arg0.fromTables[] == orig(arg0.fromTables[])
+arg0.fromTables.getClass().getName() == orig(arg0.fromTables.getClass().getName())
+arg0.fromTables has only one value
+arg0.fromTables[] contains no nulls and has only one value, of length 1
+arg0.fromTables[] elements has only one value
+arg0.fromTables[].getClass().getName() == [tp1.Table]
+arg0.fromTables[].getClass().getName() elements == tp1.Table.class
+arg0.fromTables.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0.fromTables[]) == 1
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.GroupBy):::ENTER
+arg0 has only one value
+arg0.groupByColumns has only one value
+arg0.groupByColumns[] == []
+arg0.groupByColumns[].getClass().getName() == []
+arg0.groupByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.GroupBy):::EXIT
+arg0.groupByColumns == orig(arg0.groupByColumns)
+arg0.groupByColumns[] == orig(arg0.groupByColumns[])
+arg0.groupByColumns.getClass().getName() == orig(arg0.groupByColumns.getClass().getName())
+arg0.groupByColumns has only one value
+arg0.groupByColumns[] == []
+arg0.groupByColumns[].getClass().getName() == []
+arg0.groupByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Limit):::ENTER
+arg0 has only one value
+arg0.limit == 5
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Limit):::EXIT
+arg0.limit == orig(arg0.limit)
+arg0.limit == 5
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Offset):::ENTER
+arg0 has only one value
+arg0.offset == 0
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Offset):::EXIT
+arg0.offset == orig(arg0.offset)
+arg0.offset == 0
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.OrderBy):::ENTER
+arg0 has only one value
+arg0.orderByColumns has only one value
+arg0.orderByColumns[] contains no nulls and has only one value, of length 1
+arg0.orderByColumns[] elements has only one value
+arg0.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+arg0.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+arg0.orderByColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0.orderByColumns[]) == 1
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.OrderBy):::EXIT
+arg0.orderByColumns == orig(arg0.orderByColumns)
+arg0.orderByColumns[] == orig(arg0.orderByColumns[])
+arg0.orderByColumns.getClass().getName() == orig(arg0.orderByColumns.getClass().getName())
+arg0.orderByColumns has only one value
+arg0.orderByColumns[] contains no nulls and has only one value, of length 1
+arg0.orderByColumns[] elements has only one value
+arg0.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+arg0.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+arg0.orderByColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0.orderByColumns[]) == 1
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Select):::ENTER
+arg0 has only one value
+arg0.selectColumns has only one value
+arg0.selectColumns[] contains no nulls and has only one value, of length 2
+arg0.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+arg0.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0.selectColumns[]) == 2
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Select):::EXIT
+arg0.selectColumns == orig(arg0.selectColumns)
+arg0.selectColumns[] == orig(arg0.selectColumns[])
+arg0.selectColumns.getClass().getName() == orig(arg0.selectColumns.getClass().getName())
+arg0.selectColumns has only one value
+arg0.selectColumns[] contains no nulls and has only one value, of length 2
+arg0.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+arg0.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0.selectColumns[]) == 2
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.SqlQuery):::ENTER
+arg0.select.selectColumns.getClass().getName() == arg0.from.fromTables.getClass().getName()
+arg0.select.selectColumns.getClass().getName() == arg0.orderBy.orderByColumns.getClass().getName()
+arg0 has only one value
+arg0.select has only one value
+arg0.select.selectColumns has only one value
+arg0.select.selectColumns[] contains no nulls and has only one value, of length 2
+arg0.select.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+arg0.select.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+arg0.from has only one value
+arg0.from.fromTables has only one value
+arg0.from.fromTables[] contains no nulls and has only one value, of length 1
+arg0.from.fromTables[] elements has only one value
+arg0.from.fromTables[].getClass().getName() == [tp1.Table]
+arg0.from.fromTables[].getClass().getName() elements == tp1.Table.class
+arg0.where has only one value
+arg0.where.condition has only one value
+arg0.where.condition.getClass().getName() == tp1.BinaryCondition.class
+arg0.orderBy has only one value
+arg0.orderBy.orderByColumns has only one value
+arg0.orderBy.orderByColumns[] contains no nulls and has only one value, of length 1
+arg0.orderBy.orderByColumns[] elements has only one value
+arg0.orderBy.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+arg0.orderBy.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+arg0.groupBy has only one value
+arg0.groupBy.groupByColumns has only one value
+arg0.groupBy.groupByColumns[] == []
+arg0.groupBy.groupByColumns[].getClass().getName() == []
+arg0.groupBy.groupByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+arg0.limit has only one value
+arg0.limit.limit == 5
+arg0.offset has only one value
+arg0.offset.offset == 0
+size(arg0.select.selectColumns[]) == 2
+size(arg0.from.fromTables[]) == 1
+size(arg0.orderBy.orderByColumns[]) == 1
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.SqlQuery):::EXIT
+arg0.select == orig(arg0.select)
+arg0.select.selectColumns == orig(arg0.select.selectColumns)
+arg0.select.selectColumns[] == orig(arg0.select.selectColumns[])
+arg0.select.selectColumns.getClass().getName() == arg0.from.fromTables.getClass().getName()
+arg0.select.selectColumns.getClass().getName() == arg0.orderBy.orderByColumns.getClass().getName()
+arg0.select.selectColumns.getClass().getName() == orig(arg0.select.selectColumns.getClass().getName())
+arg0.select.selectColumns.getClass().getName() == orig(arg0.from.fromTables.getClass().getName())
+arg0.select.selectColumns.getClass().getName() == orig(arg0.orderBy.orderByColumns.getClass().getName())
+arg0.from == orig(arg0.from)
+arg0.from.fromTables == orig(arg0.from.fromTables)
+arg0.from.fromTables[] == orig(arg0.from.fromTables[])
+arg0.where == orig(arg0.where)
+arg0.where.condition == orig(arg0.where.condition)
+arg0.where.condition.getClass().getName() == orig(arg0.where.condition.getClass().getName())
+arg0.orderBy == orig(arg0.orderBy)
+arg0.orderBy.orderByColumns == orig(arg0.orderBy.orderByColumns)
+arg0.orderBy.orderByColumns[] == orig(arg0.orderBy.orderByColumns[])
+arg0.groupBy == orig(arg0.groupBy)
+arg0.groupBy.groupByColumns == orig(arg0.groupBy.groupByColumns)
+arg0.groupBy.groupByColumns[] == orig(arg0.groupBy.groupByColumns[])
+arg0.groupBy.groupByColumns.getClass().getName() == orig(arg0.groupBy.groupByColumns.getClass().getName())
+arg0.limit == orig(arg0.limit)
+arg0.limit.limit == orig(arg0.limit.limit)
+arg0.offset == orig(arg0.offset)
+arg0.offset.offset == orig(arg0.offset.offset)
+arg0.select has only one value
+arg0.select.selectColumns has only one value
+arg0.select.selectColumns[] contains no nulls and has only one value, of length 2
+arg0.select.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+arg0.select.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+arg0.from has only one value
+arg0.from.fromTables has only one value
+arg0.from.fromTables[] contains no nulls and has only one value, of length 1
+arg0.from.fromTables[] elements has only one value
+arg0.from.fromTables[].getClass().getName() == [tp1.Table]
+arg0.from.fromTables[].getClass().getName() elements == tp1.Table.class
+arg0.where has only one value
+arg0.where.condition has only one value
+arg0.where.condition.getClass().getName() == tp1.BinaryCondition.class
+arg0.orderBy has only one value
+arg0.orderBy.orderByColumns has only one value
+arg0.orderBy.orderByColumns[] contains no nulls and has only one value, of length 1
+arg0.orderBy.orderByColumns[] elements has only one value
+arg0.orderBy.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+arg0.orderBy.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+arg0.groupBy has only one value
+arg0.groupBy.groupByColumns has only one value
+arg0.groupBy.groupByColumns[] == []
+arg0.groupBy.groupByColumns[].getClass().getName() == []
+arg0.groupBy.groupByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+arg0.limit has only one value
+arg0.limit.limit == 5
+arg0.offset has only one value
+arg0.offset.offset == 0
+size(arg0.select.selectColumns[]) == 2
+size(arg0.from.fromTables[]) == 1
+size(arg0.orderBy.orderByColumns[]) == 1
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Where):::ENTER
+arg0 has only one value
+arg0.condition has only one value
+arg0.condition.getClass().getName() == tp1.BinaryCondition.class
+===========================================================================
+tp1.visitor.ConsoleVisitor.visit(tp1.Where):::EXIT
+arg0.condition == orig(arg0.condition)
+arg0.condition.getClass().getName() == orig(arg0.condition.getClass().getName())
+arg0.condition has only one value
+arg0.condition.getClass().getName() == tp1.BinaryCondition.class
+===========================================================================
+tp1.visitor.JsonVisitor:::OBJECT
+this has only one value
+this.obj has only one value
+this.obj != null
+this.query == null
+===========================================================================
+tp1.visitor.JsonVisitor.JsonVisitor():::EXIT
+===========================================================================
+tp1.visitor.JsonVisitor.print():::ENTER
+===========================================================================
+tp1.visitor.JsonVisitor.print():::EXIT
+this.obj == orig(this.obj)
+this.query == orig(this.query)
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Column):::ENTER
+arg0.columnName.toString one of { "age", "lastName" }
+arg0.value == null
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Column):::EXIT
+this.obj == orig(this.obj)
+this.query == orig(this.query)
+arg0.columnName == orig(arg0.columnName)
+arg0.columnName.toString == orig(arg0.columnName.toString)
+arg0.value == orig(arg0.value)
+arg0.columnName.toString one of { "age", "lastName" }
+arg0.value == null
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Condition):::ENTER
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Condition):::EXIT
+this.obj == orig(this.obj)
+this.query == orig(this.query)
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Const):::ENTER
+arg0.value == null
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Const):::EXIT
+this.obj == orig(this.obj)
+this.query == orig(this.query)
+arg0.str == orig(arg0.str)
+arg0.str.getClass().getName() == orig(arg0.str.getClass().getName())
+arg0.value == orig(arg0.value)
+arg0.value == null
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.From):::ENTER
+arg0 has only one value
+arg0.fromTables has only one value
+arg0.fromTables[] contains no nulls and has only one value, of length 1
+arg0.fromTables[] elements has only one value
+arg0.fromTables[].getClass().getName() == [tp1.Table]
+arg0.fromTables[].getClass().getName() elements == tp1.Table.class
+arg0.fromTables.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0.fromTables[]) == 1
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.From):::EXIT
+this.obj == orig(this.obj)
+this.query == orig(this.query)
+arg0.fromTables == orig(arg0.fromTables)
+arg0.fromTables[] == orig(arg0.fromTables[])
+arg0.fromTables.getClass().getName() == orig(arg0.fromTables.getClass().getName())
+arg0.fromTables has only one value
+arg0.fromTables[] contains no nulls and has only one value, of length 1
+arg0.fromTables[] elements has only one value
+arg0.fromTables[].getClass().getName() == [tp1.Table]
+arg0.fromTables[].getClass().getName() elements == tp1.Table.class
+arg0.fromTables.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0.fromTables[]) == 1
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.GroupBy):::ENTER
+arg0 has only one value
+arg0.groupByColumns has only one value
+arg0.groupByColumns[] == []
+arg0.groupByColumns[].getClass().getName() == []
+arg0.groupByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.GroupBy):::EXIT
+this.obj == orig(this.obj)
+this.query == orig(this.query)
+arg0.groupByColumns == orig(arg0.groupByColumns)
+arg0.groupByColumns[] == orig(arg0.groupByColumns[])
+arg0.groupByColumns.getClass().getName() == orig(arg0.groupByColumns.getClass().getName())
+arg0.groupByColumns has only one value
+arg0.groupByColumns[] == []
+arg0.groupByColumns[].getClass().getName() == []
+arg0.groupByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Limit):::ENTER
+arg0 has only one value
+arg0.limit == 5
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Limit):::EXIT
+this.obj == orig(this.obj)
+this.query == orig(this.query)
+arg0.limit == orig(arg0.limit)
+arg0.limit == 5
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Offset):::ENTER
+arg0 has only one value
+arg0.offset == 0
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Offset):::EXIT
+this.obj == orig(this.obj)
+this.query == orig(this.query)
+arg0.offset == orig(arg0.offset)
+arg0.offset == 0
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.OrderBy):::ENTER
+arg0 has only one value
+arg0.orderByColumns has only one value
+arg0.orderByColumns[] contains no nulls and has only one value, of length 1
+arg0.orderByColumns[] elements has only one value
+arg0.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+arg0.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+arg0.orderByColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0.orderByColumns[]) == 1
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.OrderBy):::EXIT
+this.obj == orig(this.obj)
+this.query == orig(this.query)
+arg0.orderByColumns == orig(arg0.orderByColumns)
+arg0.orderByColumns[] == orig(arg0.orderByColumns[])
+arg0.orderByColumns.getClass().getName() == orig(arg0.orderByColumns.getClass().getName())
+arg0.orderByColumns has only one value
+arg0.orderByColumns[] contains no nulls and has only one value, of length 1
+arg0.orderByColumns[] elements has only one value
+arg0.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+arg0.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+arg0.orderByColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0.orderByColumns[]) == 1
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Select):::ENTER
+arg0 has only one value
+arg0.selectColumns has only one value
+arg0.selectColumns[] contains no nulls and has only one value, of length 2
+arg0.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+arg0.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0.selectColumns[]) == 2
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Select):::EXIT
+this.obj == orig(this.obj)
+this.query == orig(this.query)
+arg0.selectColumns == orig(arg0.selectColumns)
+arg0.selectColumns[] == orig(arg0.selectColumns[])
+arg0.selectColumns.getClass().getName() == orig(arg0.selectColumns.getClass().getName())
+arg0.selectColumns has only one value
+arg0.selectColumns[] contains no nulls and has only one value, of length 2
+arg0.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+arg0.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+size(arg0.selectColumns[]) == 2
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.SqlQuery):::ENTER
+arg0.select.selectColumns.getClass().getName() == arg0.from.fromTables.getClass().getName()
+arg0.select.selectColumns.getClass().getName() == arg0.orderBy.orderByColumns.getClass().getName()
+arg0 has only one value
+arg0.select has only one value
+arg0.select.selectColumns has only one value
+arg0.select.selectColumns[] contains no nulls and has only one value, of length 2
+arg0.select.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+arg0.select.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+arg0.from has only one value
+arg0.from.fromTables has only one value
+arg0.from.fromTables[] contains no nulls and has only one value, of length 1
+arg0.from.fromTables[] elements has only one value
+arg0.from.fromTables[].getClass().getName() == [tp1.Table]
+arg0.from.fromTables[].getClass().getName() elements == tp1.Table.class
+arg0.where has only one value
+arg0.where.condition has only one value
+arg0.where.condition.getClass().getName() == tp1.BinaryCondition.class
+arg0.orderBy has only one value
+arg0.orderBy.orderByColumns has only one value
+arg0.orderBy.orderByColumns[] contains no nulls and has only one value, of length 1
+arg0.orderBy.orderByColumns[] elements has only one value
+arg0.orderBy.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+arg0.orderBy.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+arg0.groupBy has only one value
+arg0.groupBy.groupByColumns has only one value
+arg0.groupBy.groupByColumns[] == []
+arg0.groupBy.groupByColumns[].getClass().getName() == []
+arg0.groupBy.groupByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+arg0.limit has only one value
+arg0.limit.limit == 5
+arg0.offset has only one value
+arg0.offset.offset == 0
+size(arg0.select.selectColumns[]) == 2
+size(arg0.from.fromTables[]) == 1
+size(arg0.orderBy.orderByColumns[]) == 1
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.SqlQuery):::EXIT
+this.obj == orig(this.obj)
+this.query == orig(this.query)
+arg0.select == orig(arg0.select)
+arg0.select.selectColumns == orig(arg0.select.selectColumns)
+arg0.select.selectColumns[] == orig(arg0.select.selectColumns[])
+arg0.select.selectColumns.getClass().getName() == arg0.from.fromTables.getClass().getName()
+arg0.select.selectColumns.getClass().getName() == arg0.orderBy.orderByColumns.getClass().getName()
+arg0.select.selectColumns.getClass().getName() == orig(arg0.select.selectColumns.getClass().getName())
+arg0.select.selectColumns.getClass().getName() == orig(arg0.from.fromTables.getClass().getName())
+arg0.select.selectColumns.getClass().getName() == orig(arg0.orderBy.orderByColumns.getClass().getName())
+arg0.from == orig(arg0.from)
+arg0.from.fromTables == orig(arg0.from.fromTables)
+arg0.from.fromTables[] == orig(arg0.from.fromTables[])
+arg0.where == orig(arg0.where)
+arg0.where.condition == orig(arg0.where.condition)
+arg0.where.condition.getClass().getName() == orig(arg0.where.condition.getClass().getName())
+arg0.orderBy == orig(arg0.orderBy)
+arg0.orderBy.orderByColumns == orig(arg0.orderBy.orderByColumns)
+arg0.orderBy.orderByColumns[] == orig(arg0.orderBy.orderByColumns[])
+arg0.groupBy == orig(arg0.groupBy)
+arg0.groupBy.groupByColumns == orig(arg0.groupBy.groupByColumns)
+arg0.groupBy.groupByColumns[] == orig(arg0.groupBy.groupByColumns[])
+arg0.groupBy.groupByColumns.getClass().getName() == orig(arg0.groupBy.groupByColumns.getClass().getName())
+arg0.limit == orig(arg0.limit)
+arg0.limit.limit == orig(arg0.limit.limit)
+arg0.offset == orig(arg0.offset)
+arg0.offset.offset == orig(arg0.offset.offset)
+arg0.select has only one value
+arg0.select.selectColumns has only one value
+arg0.select.selectColumns[] contains no nulls and has only one value, of length 2
+arg0.select.selectColumns[].getClass().getName() == [tp1.IntColumn, tp1.StrColumn]
+arg0.select.selectColumns.getClass().getName() == java.util.Arrays$ArrayList.class
+arg0.from has only one value
+arg0.from.fromTables has only one value
+arg0.from.fromTables[] contains no nulls and has only one value, of length 1
+arg0.from.fromTables[] elements has only one value
+arg0.from.fromTables[].getClass().getName() == [tp1.Table]
+arg0.from.fromTables[].getClass().getName() elements == tp1.Table.class
+arg0.where has only one value
+arg0.where.condition has only one value
+arg0.where.condition.getClass().getName() == tp1.BinaryCondition.class
+arg0.orderBy has only one value
+arg0.orderBy.orderByColumns has only one value
+arg0.orderBy.orderByColumns[] contains no nulls and has only one value, of length 1
+arg0.orderBy.orderByColumns[] elements has only one value
+arg0.orderBy.orderByColumns[].getClass().getName() == [tp1.IntColumn]
+arg0.orderBy.orderByColumns[].getClass().getName() elements == tp1.IntColumn.class
+arg0.groupBy has only one value
+arg0.groupBy.groupByColumns has only one value
+arg0.groupBy.groupByColumns[] == []
+arg0.groupBy.groupByColumns[].getClass().getName() == []
+arg0.groupBy.groupByColumns.getClass().getName() == java.util.Collections$EmptyList.class
+arg0.limit has only one value
+arg0.limit.limit == 5
+arg0.offset has only one value
+arg0.offset.offset == 0
+size(arg0.select.selectColumns[]) == 2
+size(arg0.from.fromTables[]) == 1
+size(arg0.orderBy.orderByColumns[]) == 1
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Where):::ENTER
+arg0 has only one value
+arg0.condition has only one value
+arg0.condition.getClass().getName() == tp1.BinaryCondition.class
+===========================================================================
+tp1.visitor.JsonVisitor.visit(tp1.Where):::EXIT
+this.obj == orig(this.obj)
+this.query == orig(this.query)
+arg0.condition == orig(arg0.condition)
+arg0.condition.getClass().getName() == orig(arg0.condition.getClass().getName())
+arg0.condition has only one value
+arg0.condition.getClass().getName() == tp1.BinaryCondition.class
+Exiting Daikon.

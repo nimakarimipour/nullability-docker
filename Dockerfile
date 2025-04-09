@@ -83,4 +83,14 @@ COPY ./table_3/ /opt/table_3/
 COPY ./nullability-inference-comparison-tools /opt/nullability-inference-comparison-tools
 RUN cd /opt/nullability-inference-comparison-tools/java/AnnotUtils && ./gradlew publishToMavenLocal
 
+# install Daikon, make daikonparent dir
+RUN mkdir -p /opt/daikonparent
+RUN wget -P /opt/daikonparent http://plse.cs.washington.edu/daikon/download/daikon-5.8.20.tar.gz
+RUN tar -xzf /opt/daikonparent/daikon-5.8.20.tar.gz -C /opt/daikonparent
+ENV DAIKONDIR=/opt/daikonparent/daikon-5.8.20
+RUN echo "source $DAIKONDIR/scripts/daikon.bashrc" >> /root/.bashrc
+
+# Copy dynamic nullability
+COPY ./DynamicNullability /opt/dynamic-nullability
+
 CMD ["tail", "-f", "/dev/null"]

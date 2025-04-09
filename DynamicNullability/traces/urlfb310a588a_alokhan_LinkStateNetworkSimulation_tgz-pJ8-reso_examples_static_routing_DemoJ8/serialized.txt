@@ -1,0 +1,2 @@
+FIELD	reso.ip.IPRouteEntry	null	gateway	null
+FIELD	reso.ip.IPRouteEntry	null	oif	null

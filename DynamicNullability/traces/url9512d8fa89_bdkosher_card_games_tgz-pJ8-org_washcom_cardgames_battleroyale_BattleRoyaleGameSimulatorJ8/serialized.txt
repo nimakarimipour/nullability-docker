@@ -1,0 +1,2 @@
+METHOD	org.washcom.cardgames.battleroyale.TwoBattlerAssessor	pickWinner(org.washcom.cardgames.battleroyale.Battle)	null	null
+METHOD	org.washcom.cardgames.battleroyale.ThreeBattlerAssessor	pickWinner(org.washcom.cardgames.battleroyale.Battle)	null	null

@@ -1,0 +1,165 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 4 times.  Unmatched entries are ignored!
+Unterminated calls:
+  risiko.XMI2XMLtransformer.main(java.lang.String[]) : 1 invocation
+  risiko.XMI2XMLtransformer.initializeResourceSet(org.eclipse.emf.ecore.resource.Resource$Factory) : 1 invocation
+  org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getPackageRegistry() : 1 invocation
+  org.eclipse.emf.ecore.impl.EPackageRegistryImpl.createGlobalRegistry() : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+org.eclipse.emf.common.notify.impl.BasicNotifierImpl:::OBJECT
+this has only one value
+===========================================================================
+org.eclipse.emf.common.notify.impl.BasicNotifierImpl.BasicNotifierImpl():::EXIT
+===========================================================================
+org.eclipse.emf.common.notify.impl.NotifierImpl:::CLASS
+===========================================================================
+org.eclipse.emf.common.notify.impl.NotifierImpl:::OBJECT
+this has only one value
+this.eFlags == 1
+this.eAdapters == null
+===========================================================================
+org.eclipse.emf.common.notify.impl.NotifierImpl.NotifierImpl():::EXIT
+===========================================================================
+org.eclipse.emf.ecore.impl.EPackageRegistryImpl$1:::OBJECT
+this has only one value
+===========================================================================
+org.eclipse.emf.ecore.impl.EPackageRegistryImpl$1.():::EXIT
+===========================================================================
+org.eclipse.emf.ecore.impl.EPackageRegistryImpl$ParentClassLoaderGetter:::OBJECT
+this has only one value
+this.classLoader == null
+===========================================================================
+org.eclipse.emf.ecore.impl.EPackageRegistryImpl$ParentClassLoaderGetter.ParentClassLoaderGetter():::EXIT
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl:::OBJECT
+this has only one value
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl.ResourceFactoryImpl():::EXIT
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl:::CLASS
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_TYPE_REQUESTED_PROPERTIES has only one value
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_TYPE_REQUESTED_PROPERTIES.getClass().getName() == java.util.Collections$SingletonSet.class
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_DESCRIPTION_OPTIONS has only one value
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_DESCRIPTION_OPTIONS.getClass().getName() == java.util.Collections$SingletonMap.class
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl:::OBJECT
+this has only one value
+this.protocolToFactoryMap has only one value
+this.protocolToFactoryMap.getClass().getName() == java.util.HashMap.class
+this.extensionToFactoryMap has only one value
+this.extensionToFactoryMap.getClass().getName() == java.util.HashMap.class
+this.contentTypeIdentifierToFactoryMap has only one value
+this.contentTypeIdentifierToFactoryMap.getClass().getName() == java.util.HashMap.class
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.ResourceFactoryRegistryImpl():::EXIT
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.getExtensionToFactoryMap():::ENTER
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.getExtensionToFactoryMap():::EXIT
+this.protocolToFactoryMap == orig(this.protocolToFactoryMap)
+this.protocolToFactoryMap.getClass().getName() == orig(this.protocolToFactoryMap.getClass().getName())
+this.extensionToFactoryMap == orig(this.extensionToFactoryMap)
+this.extensionToFactoryMap.getClass().getName() == orig(this.extensionToFactoryMap.getClass().getName())
+this.contentTypeIdentifierToFactoryMap == orig(this.contentTypeIdentifierToFactoryMap)
+this.contentTypeIdentifierToFactoryMap.getClass().getName() == orig(this.contentTypeIdentifierToFactoryMap.getClass().getName())
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_TYPE_REQUESTED_PROPERTIES == orig(org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_TYPE_REQUESTED_PROPERTIES)
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_TYPE_REQUESTED_PROPERTIES.getClass().getName() == orig(org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_TYPE_REQUESTED_PROPERTIES.getClass().getName())
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_DESCRIPTION_OPTIONS == orig(org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_DESCRIPTION_OPTIONS)
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_DESCRIPTION_OPTIONS.getClass().getName() == orig(org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_DESCRIPTION_OPTIONS.getClass().getName())
+return has only one value
+return.getClass().getName() == java.util.HashMap.class
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$2:::CLASS
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_TYPE_REQUESTED_PROPERTIES has only one value
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_TYPE_REQUESTED_PROPERTIES.getClass().getName() == java.util.Collections$SingletonSet.class
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_DESCRIPTION_OPTIONS has only one value
+org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl.CONTENT_DESCRIPTION_OPTIONS.getClass().getName() == java.util.Collections$SingletonMap.class
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$2:::OBJECT
+this has only one value
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this has only one value
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.resources == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.adapterFactories == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.loadOptions == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.resourceFactoryRegistry == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.uriConverter == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.packageRegistry == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.uriResourceMap == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.resourceLocator == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.eFlags == 1
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.eAdapters == null
+this.protocolToFactoryMap has only one value
+this.protocolToFactoryMap.getClass().getName() == java.util.HashMap.class
+this.extensionToFactoryMap has only one value
+this.extensionToFactoryMap.getClass().getName() == java.util.HashMap.class
+this.contentTypeIdentifierToFactoryMap has only one value
+this.contentTypeIdentifierToFactoryMap.getClass().getName() == java.util.HashMap.class
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$2.(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl):::ENTER
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this has only one value
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.resources == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.adapterFactories == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.loadOptions == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.resourceFactoryRegistry == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.uriConverter == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.packageRegistry == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.uriResourceMap == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.resourceLocator == null
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.eFlags == 1
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.eAdapters == null
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$2.(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl):::EXIT
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this == orig(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.resources == orig(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.resources)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.adapterFactories == orig(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.adapterFactories)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.loadOptions == orig(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.loadOptions)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.resourceFactoryRegistry == orig(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.resourceFactoryRegistry)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.uriConverter == orig(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.uriConverter)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.packageRegistry == orig(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.packageRegistry)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.uriResourceMap == orig(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.uriResourceMap)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.resourceLocator == orig(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.resourceLocator)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.eFlags == orig(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.eFlags)
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.eAdapters == orig(org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.this.eAdapters)
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl:::OBJECT
+this has only one value
+this.resources == null
+this.adapterFactories == null
+this.loadOptions == null
+this.resourceFactoryRegistry.getClass().getName() == org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$2.class
+this.uriConverter == null
+this.packageRegistry == null
+this.uriResourceMap == null
+this.resourceLocator == null
+this.eFlags == 1
+this.eAdapters == null
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.ResourceSetImpl():::EXIT
+this.resourceFactoryRegistry == null
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResourceFactoryRegistry():::ENTER
+this.resourceFactoryRegistry == null
+===========================================================================
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResourceFactoryRegistry():::EXIT
+this.resources == orig(this.resources)
+this.adapterFactories == orig(this.adapterFactories)
+this.loadOptions == orig(this.loadOptions)
+this.uriConverter == orig(this.uriConverter)
+this.packageRegistry == orig(this.packageRegistry)
+this.uriResourceMap == orig(this.uriResourceMap)
+this.resourceLocator == orig(this.resourceLocator)
+this.eFlags == orig(this.eFlags)
+this.eAdapters == orig(this.eAdapters)
+this.resourceFactoryRegistry has only one value
+return has only one value
+return.getClass().getName() == org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$2.class
+===========================================================================
+org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl:::OBJECT
+this has only one value
+===========================================================================
+org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl.XMLResourceFactoryImpl():::EXIT
+Exiting Daikon.

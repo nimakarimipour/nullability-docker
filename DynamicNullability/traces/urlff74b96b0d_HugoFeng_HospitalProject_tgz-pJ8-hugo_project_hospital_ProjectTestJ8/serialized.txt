@@ -1,0 +1,3 @@
+METHOD	hugo.util.structure.EdgeGraph	findNode(java.lang.Comparable)	null	null
+METHOD	hugo.project.hospital.Hospital$Department	hasDevice(java.lang.String)	null	null
+METHOD	hugo.util.structure.EdgeGraph	findPathAvoiding(java.lang.Comparable,java.lang.Comparable,java.lang.Comparable)	null	null

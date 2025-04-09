@@ -1,0 +1,1949 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+martin.gui.Main.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+martin.gui.Main.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+martin.math.Complex:::CLASS
+===========================================================================
+martin.math.Complex:::OBJECT
+this.I one of { 0.0, Double.NaN }
+===========================================================================
+martin.math.Complex.Complex(double, double):::ENTER
+arg1 one of { 0.0, Double.NaN }
+===========================================================================
+martin.math.Complex.Complex(double, double):::EXIT
+===========================================================================
+martin.math.Complex.add(martin.math.Complex):::ENTER
+this.R one of { 0.0, Double.NaN }
+arg0 != null
+arg0.I one of { 0.0, Double.NaN }
+===========================================================================
+martin.math.Complex.add(martin.math.Complex):::EXIT
+arg0.I one of { 0.0, Double.NaN }
+===========================================================================
+martin.math.Complex.equals(java.lang.Object):::ENTER
+arg0 != null
+arg0.getClass().getName() == martin.math.Complex.class
+===========================================================================
+martin.math.Complex.equals(java.lang.Object):::EXIT88
+this.R == Double.NaN
+this.I == Double.NaN
+return == false
+orig(this.R) == Double.NaN
+orig(this.I) == Double.NaN
+===========================================================================
+martin.math.Complex.equals(java.lang.Object):::EXIT88;condition="not(return == true)"
+===========================================================================
+martin.math.Complex.equals(java.lang.Object):::EXIT90
+this.R == orig(this.R)
+this.I == orig(this.I)
+(return == false)  ==>  (this.R one of { 1.0, 2.0, 4.0 })
+(return == true)  ==>  (this.R == 4.0)
+this.R one of { 1.0, 2.0, 4.0 }
+this.I == 0.0
+===========================================================================
+martin.math.Complex.equals(java.lang.Object):::EXIT90;condition="return == true"
+===========================================================================
+martin.math.Complex.equals(java.lang.Object):::EXIT90;condition="not(return == true)"
+===========================================================================
+martin.math.Complex.equals(java.lang.Object):::EXIT
+(return == false)  ==>  (orig(this.I) one of { 0.0, Double.NaN })
+(return == false)  ==>  (this.I one of { 0.0, Double.NaN })
+(return == true)  ==>  (orig(this.I) == 0.0)
+(return == true)  ==>  (orig(this.R) == 4.0)
+(return == true)  ==>  (this.I == 0.0)
+(return == true)  ==>  (this.I == orig(this.I))
+(return == true)  ==>  (this.R == 4.0)
+(return == true)  ==>  (this.R == orig(this.R))
+===========================================================================
+martin.math.Complex.equals(java.lang.Object):::EXIT;condition="return == true"
+this.R == orig(this.R)
+this.I == orig(this.I)
+this.R == 4.0
+this.I == 0.0
+return == true
+===========================================================================
+martin.math.Complex.equals(java.lang.Object):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.Complex.isNaN():::ENTER
+===========================================================================
+martin.math.Complex.isNaN():::EXIT
+===========================================================================
+martin.math.Complex.isNaN():::EXIT;condition="return == true"
+this.R == Double.NaN
+this.I == Double.NaN
+return == true
+orig(this.R) == Double.NaN
+orig(this.I) == Double.NaN
+===========================================================================
+martin.math.Complex.isNaN():::EXIT;condition="not(return == true)"
+this.R == orig(this.R)
+this.I == orig(this.I)
+this.I == 0.0
+return == false
+===========================================================================
+martin.math.Complex.isOne():::ENTER
+this.R == 2.0
+this.I == 0.0
+===========================================================================
+martin.math.Complex.isOne():::EXIT
+this.R == orig(this.R)
+this.I == orig(this.I)
+this.R == 2.0
+this.I == 0.0
+return == false
+===========================================================================
+martin.math.Complex.isOne():::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.Complex.isZero():::ENTER
+===========================================================================
+martin.math.Complex.isZero():::EXIT
+(this.R == 0.0)  <==>  (orig(this.R) == 0.0)
+(this.R == 0.0)  <==>  (return == true)
+(this.R == 0.0)  ==>  (orig(this.I) == 0.0)
+(this.R == 0.0)  ==>  (this.I == 0.0)
+(this.R == 0.0)  ==>  (this.I == orig(this.I))
+(this.R == 0.0)  ==>  (this.R == orig(this.R))
+===========================================================================
+martin.math.Complex.isZero():::EXIT;condition="return == true"
+this.R == orig(this.R)
+this.I == orig(this.I)
+this.R == 0.0
+this.I == 0.0
+return == true
+===========================================================================
+martin.math.Complex.isZero():::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.Complex.multiply(martin.math.Complex):::ENTER
+this.R != 0
+arg0 != null
+arg0.I one of { 0.0, Double.NaN }
+===========================================================================
+martin.math.Complex.multiply(martin.math.Complex):::EXIT
+arg0.I one of { 0.0, Double.NaN }
+===========================================================================
+martin.math.MathExp:::CLASS
+martin.math.MathExp.name has only one value
+martin.math.MathExp.name != null
+martin.math.MathExp.name.toString == "exp"
+===========================================================================
+martin.math.MathExp:::OBJECT
+martin.math.MathExp.name == this.name
+this.name.toString == "exp"
+this.expr != null
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == 50
+this.expr.items != null
+martin.math.MathExpression.DEEP_SIMPLIFY == true
+this.negative == false
+===========================================================================
+martin.math.MathExp.MathExp(martin.math.MathsItem):::ENTER
+arg0.getClass().getName() == martin.math.MathIm.class
+===========================================================================
+martin.math.MathExp.MathExp(martin.math.MathsItem):::EXIT
+===========================================================================
+martin.math.MathExp.clone():::ENTER
+===========================================================================
+martin.math.MathExp.clone():::EXIT89
+===========================================================================
+martin.math.MathExp.clone():::EXIT
+martin.math.MathExp.name == orig(martin.math.MathExp.name)
+martin.math.MathExp.name == orig(this.name)
+martin.math.MathExp.name.toString == orig(martin.math.MathExp.name.toString)
+this.name.toString == orig(this.name.toString)
+this.expr == orig(this.expr)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.expr.items == orig(this.expr.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.negative == orig(this.negative)
+return.getClass().getName() == martin.math.MathNumber.class
+===========================================================================
+martin.math.MathExpression:::CLASS
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == 50
+martin.math.MathExpression.DEEP_SIMPLIFY == true
+===========================================================================
+martin.math.MathExpression:::OBJECT
+this.items != null
+===========================================================================
+martin.math.MathExpression.MathExpression():::EXIT
+===========================================================================
+martin.math.MathExpression.add(martin.math.MathsItem):::ENTER
+arg0 != null
+===========================================================================
+martin.math.MathExpression.add(martin.math.MathsItem):::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+return == true
+===========================================================================
+martin.math.MathExpression.add(martin.math.MathsItem):::EXIT;condition="return == true"
+===========================================================================
+martin.math.MathExpression.clone():::ENTER
+===========================================================================
+martin.math.MathExpression.clone():::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+return != null
+return.getClass().getName() == martin.math.MathExpression.class
+===========================================================================
+martin.math.MathExpression.cloneItems(java.util.HashSet):::ENTER
+arg0 != null
+===========================================================================
+martin.math.MathExpression.cloneItems(java.util.HashSet):::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+===========================================================================
+martin.math.MathExpression.commonFactors():::ENTER
+===========================================================================
+martin.math.MathExpression.commonFactors():::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+===========================================================================
+martin.math.MathExpression.commonFactors():::EXIT;condition="return == true"
+return == true
+===========================================================================
+martin.math.MathExpression.commonFactors():::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.MathExpression.containsInstance(java.util.HashSet, java.lang.Object):::ENTER
+arg0 != null
+arg1 != null
+===========================================================================
+martin.math.MathExpression.containsInstance(java.util.HashSet, java.lang.Object):::EXIT338
+return == true
+orig(arg1.getClass().getName()) == martin.math.MathSymbol.class
+===========================================================================
+martin.math.MathExpression.containsInstance(java.util.HashSet, java.lang.Object):::EXIT338;condition="return == true"
+===========================================================================
+martin.math.MathExpression.containsInstance(java.util.HashSet, java.lang.Object):::EXIT340
+return == false
+===========================================================================
+martin.math.MathExpression.containsInstance(java.util.HashSet, java.lang.Object):::EXIT340;condition="not(return == true)"
+===========================================================================
+martin.math.MathExpression.containsInstance(java.util.HashSet, java.lang.Object):::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+(return == true)  ==>  (orig(arg1.getClass().getName()) == martin.math.MathSymbol.class)
+===========================================================================
+martin.math.MathExpression.containsInstance(java.util.HashSet, java.lang.Object):::EXIT;condition="return == true"
+return == true
+orig(arg1.getClass().getName()) == martin.math.MathSymbol.class
+===========================================================================
+martin.math.MathExpression.containsInstance(java.util.HashSet, java.lang.Object):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.MathExpression.deepSimplify():::ENTER
+===========================================================================
+martin.math.MathExpression.deepSimplify():::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+===========================================================================
+martin.math.MathExpression.divide(martin.math.MathsItem):::ENTER
+arg0.getClass().getName() == martin.math.MathNumber.class
+===========================================================================
+martin.math.MathExpression.divide(martin.math.MathsItem):::EXIT609
+===========================================================================
+martin.math.MathExpression.divide(martin.math.MathsItem):::EXIT609;condition="return == true"
+===========================================================================
+martin.math.MathExpression.divide(martin.math.MathsItem):::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+return == true
+===========================================================================
+martin.math.MathExpression.divide(martin.math.MathsItem):::EXIT;condition="return == true"
+===========================================================================
+martin.math.MathExpression.equals(java.lang.Object):::ENTER
+arg0 != null
+arg0.getClass().getName() == martin.math.MathExpression.class
+===========================================================================
+martin.math.MathExpression.equals(java.lang.Object):::EXIT571
+===========================================================================
+martin.math.MathExpression.equals(java.lang.Object):::EXIT571;condition="return == true"
+===========================================================================
+martin.math.MathExpression.equals(java.lang.Object):::EXIT571;condition="not(return == true)"
+===========================================================================
+martin.math.MathExpression.equals(java.lang.Object):::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+===========================================================================
+martin.math.MathExpression.equals(java.lang.Object):::EXIT;condition="return == true"
+return == true
+===========================================================================
+martin.math.MathExpression.equals(java.lang.Object):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.MathExpression.getValue(java.util.HashMap):::ENTER
+arg0 == null
+===========================================================================
+martin.math.MathExpression.getValue(java.util.HashMap):::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+return != null
+return.I one of { 0.0, Double.NaN }
+===========================================================================
+martin.math.MathExpression.isOne():::ENTER
+===========================================================================
+martin.math.MathExpression.isOne():::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+return == false
+===========================================================================
+martin.math.MathExpression.isOne():::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathExpression.isZero():::ENTER
+===========================================================================
+martin.math.MathExpression.isZero():::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+===========================================================================
+martin.math.MathExpression.isZero():::EXIT;condition="return == true"
+return == true
+===========================================================================
+martin.math.MathExpression.isZero():::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.MathExpression.multiply(martin.math.MathsItem):::ENTER
+arg0 != null
+===========================================================================
+martin.math.MathExpression.multiply(martin.math.MathsItem):::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+return == true
+===========================================================================
+martin.math.MathExpression.multiply(martin.math.MathsItem):::EXIT;condition="return == true"
+===========================================================================
+martin.math.MathExpression.performAdditionOnSimpleExpressions():::ENTER
+===========================================================================
+martin.math.MathExpression.performAdditionOnSimpleExpressions():::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+===========================================================================
+martin.math.MathExpression.performAdditionOnSimpleExpressions():::EXIT;condition="return == true"
+return == true
+===========================================================================
+martin.math.MathExpression.performAdditionOnSimpleExpressions():::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.MathExpression.removeAllOnes():::ENTER
+===========================================================================
+martin.math.MathExpression.removeAllOnes():::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+===========================================================================
+martin.math.MathExpression.removeAllOnes():::EXIT;condition="return == true"
+return == true
+===========================================================================
+martin.math.MathExpression.removeAllOnes():::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.MathExpression.removeAllZeros():::ENTER
+===========================================================================
+martin.math.MathExpression.removeAllZeros():::EXIT256
+return == false
+===========================================================================
+martin.math.MathExpression.removeAllZeros():::EXIT256;condition="not(return == true)"
+===========================================================================
+martin.math.MathExpression.removeAllZeros():::EXIT263
+===========================================================================
+martin.math.MathExpression.removeAllZeros():::EXIT263;condition="return == true"
+===========================================================================
+martin.math.MathExpression.removeAllZeros():::EXIT263;condition="not(return == true)"
+===========================================================================
+martin.math.MathExpression.removeAllZeros():::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+===========================================================================
+martin.math.MathExpression.removeAllZeros():::EXIT;condition="return == true"
+return == true
+===========================================================================
+martin.math.MathExpression.removeAllZeros():::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.MathExpression.removeNestedExps():::ENTER
+===========================================================================
+martin.math.MathExpression.removeNestedExps():::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+return == false
+===========================================================================
+martin.math.MathExpression.removeNestedExps():::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathExpression.simplify():::ENTER
+===========================================================================
+martin.math.MathExpression.simplify():::EXIT370
+===========================================================================
+martin.math.MathExpression.simplify():::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+===========================================================================
+martin.math.MathExpression.simplifyMultiplicators():::ENTER
+===========================================================================
+martin.math.MathExpression.simplifyMultiplicators():::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+===========================================================================
+martin.math.MathExpression.simplifyMultiplicators():::EXIT;condition="return == true"
+return == true
+===========================================================================
+martin.math.MathExpression.simplifyMultiplicators():::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.MathExpression.toString():::ENTER
+===========================================================================
+martin.math.MathExpression.toString():::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.items == orig(this.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+return != null
+===========================================================================
+martin.math.MathFract:::OBJECT
+this.num != null
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == 50
+this.num.items != null
+martin.math.MathExpression.DEEP_SIMPLIFY == true
+this.den != null
+this.den.items != null
+===========================================================================
+martin.math.MathFract.MathFract(martin.math.MathsItem, martin.math.MathsItem):::ENTER
+arg0 != null
+arg1 != null
+===========================================================================
+martin.math.MathFract.MathFract(martin.math.MathsItem, martin.math.MathsItem):::EXIT
+===========================================================================
+martin.math.MathFract.add(martin.math.MathsItem):::ENTER
+arg0.getClass().getName() == martin.math.MathFract.class
+===========================================================================
+martin.math.MathFract.add(martin.math.MathsItem):::EXIT193
+this.num == orig(this.num)
+this.num.items == orig(this.num.items)
+this.den == orig(this.den)
+this.den.items == orig(this.den.items)
+===========================================================================
+martin.math.MathFract.add(martin.math.MathsItem):::EXIT193;condition="return == true"
+===========================================================================
+martin.math.MathFract.add(martin.math.MathsItem):::EXIT211
+===========================================================================
+martin.math.MathFract.add(martin.math.MathsItem):::EXIT211;condition="return == true"
+===========================================================================
+martin.math.MathFract.add(martin.math.MathsItem):::EXIT
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+return == true
+===========================================================================
+martin.math.MathFract.add(martin.math.MathsItem):::EXIT;condition="return == true"
+===========================================================================
+martin.math.MathFract.clone():::ENTER
+===========================================================================
+martin.math.MathFract.clone():::EXIT222
+===========================================================================
+martin.math.MathFract.clone():::EXIT
+this.num == orig(this.num)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.num.items == orig(this.num.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.den == orig(this.den)
+this.den.items == orig(this.den.items)
+return != null
+return.getClass().getName() == martin.math.MathFract.class
+===========================================================================
+martin.math.MathFract.gcd(java.lang.Iterable):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+martin.math.MathFract.gcd(java.lang.Iterable):::EXIT157
+return one of { 2, 16 }
+===========================================================================
+martin.math.MathFract.gcd(java.lang.Iterable):::EXIT160
+return == 1
+===========================================================================
+martin.math.MathFract.gcd(java.lang.Iterable):::EXIT
+return one of { 1, 2, 16 }
+===========================================================================
+martin.math.MathFract.getValue(java.util.HashMap):::ENTER
+arg0 == null
+===========================================================================
+martin.math.MathFract.getValue(java.util.HashMap):::EXIT
+this.num == orig(this.num)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.num.items == orig(this.num.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.den == orig(this.den)
+this.den.items == orig(this.den.items)
+return.R == Double.NaN
+return.I == Double.NaN
+===========================================================================
+martin.math.MathFract.hasNegativeSign():::ENTER
+===========================================================================
+martin.math.MathFract.hasNegativeSign():::EXIT
+this.num == orig(this.num)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.num.items == orig(this.num.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.den == orig(this.den)
+this.den.items == orig(this.den.items)
+return == false
+===========================================================================
+martin.math.MathFract.hasNegativeSign():::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathFract.isOne():::ENTER
+===========================================================================
+martin.math.MathFract.isOne():::EXIT
+this.num == orig(this.num)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.num.items == orig(this.num.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.den == orig(this.den)
+this.den.items == orig(this.den.items)
+return == false
+===========================================================================
+martin.math.MathFract.isOne():::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathFract.isZero():::ENTER
+===========================================================================
+martin.math.MathFract.isZero():::EXIT
+this.num == orig(this.num)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.num.items == orig(this.num.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.den == orig(this.den)
+this.den.items == orig(this.den.items)
+(return == true)  ==>  (orig(this) has only one value)
+(return == true)  ==>  (this.den has only one value)
+(return == true)  ==>  (this.den.items has only one value)
+(return == true)  ==>  (this.num has only one value)
+(return == true)  ==>  (this.num.items has only one value)
+===========================================================================
+martin.math.MathFract.isZero():::EXIT;condition="return == true"
+this.num has only one value
+this.num.items has only one value
+this.den has only one value
+this.den.items has only one value
+return == true
+orig(this) has only one value
+===========================================================================
+martin.math.MathFract.isZero():::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.MathFract.min(java.lang.Iterable):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+martin.math.MathFract.min(java.lang.Iterable):::EXIT
+return != null
+===========================================================================
+martin.math.MathFract.multiply(martin.math.MathsItem):::ENTER
+arg0 != null
+===========================================================================
+martin.math.MathFract.multiply(martin.math.MathsItem):::EXIT179
+orig(arg0.getClass().getName()) == martin.math.MathFract.class
+===========================================================================
+martin.math.MathFract.multiply(martin.math.MathsItem):::EXIT179;condition="return == true"
+===========================================================================
+martin.math.MathFract.multiply(martin.math.MathsItem):::EXIT181
+===========================================================================
+martin.math.MathFract.multiply(martin.math.MathsItem):::EXIT181;condition="return == true"
+===========================================================================
+martin.math.MathFract.multiply(martin.math.MathsItem):::EXIT
+this.num == orig(this.num)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.num.items == orig(this.num.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.den == orig(this.den)
+this.den.items == orig(this.den.items)
+return == true
+===========================================================================
+martin.math.MathFract.multiply(martin.math.MathsItem):::EXIT;condition="return == true"
+===========================================================================
+martin.math.MathFract.putIntsInHere(martin.math.MathExpression, java.util.Collection):::ENTER
+arg0 != null
+arg0.items != null
+arg1 != null
+arg1.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+martin.math.MathFract.putIntsInHere(martin.math.MathExpression, java.util.Collection):::EXIT142
+return == false
+===========================================================================
+martin.math.MathFract.putIntsInHere(martin.math.MathExpression, java.util.Collection):::EXIT142;condition="not(return == true)"
+===========================================================================
+martin.math.MathFract.putIntsInHere(martin.math.MathExpression, java.util.Collection):::EXIT145
+return == true
+===========================================================================
+martin.math.MathFract.putIntsInHere(martin.math.MathExpression, java.util.Collection):::EXIT145;condition="return == true"
+===========================================================================
+martin.math.MathFract.putIntsInHere(martin.math.MathExpression, java.util.Collection):::EXIT
+this.num == orig(this.num)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.num.items == orig(this.num.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.den == orig(this.den)
+this.den.items == orig(this.den.items)
+arg0.items == orig(arg0.items)
+arg0.items != null
+===========================================================================
+martin.math.MathFract.putIntsInHere(martin.math.MathExpression, java.util.Collection):::EXIT;condition="return == true"
+return == true
+===========================================================================
+martin.math.MathFract.putIntsInHere(martin.math.MathExpression, java.util.Collection):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.MathFract.simplify():::ENTER
+===========================================================================
+martin.math.MathFract.simplify():::EXIT102
+===========================================================================
+martin.math.MathFract.simplify():::EXIT125
+===========================================================================
+martin.math.MathFract.simplify():::EXIT
+this.num == orig(this.num)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.num.items == orig(this.num.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.den == orig(this.den)
+this.den.items == orig(this.den.items)
+===========================================================================
+martin.math.MathFract.toString():::ENTER
+===========================================================================
+martin.math.MathFract.toString():::EXIT
+this.num == orig(this.num)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.num.items == orig(this.num.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.den == orig(this.den)
+this.den.items == orig(this.den.items)
+return.toString one of { "((1)/(sqrt(2)))", "((a)/(2))", "((b)/(2))" }
+===========================================================================
+martin.math.MathFunction:::OBJECT
+this.name != null
+this.name.toString one of { "Im", "exp", "sqrt" }
+this.expr != null
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == 50
+this.expr.items != null
+martin.math.MathExpression.DEEP_SIMPLIFY == true
+this.negative == false
+===========================================================================
+martin.math.MathFunction.MathFunction(java.lang.String, martin.math.MathsItem):::ENTER
+arg0 != null
+arg0.toString one of { "Im", "exp", "sqrt" }
+arg1 != null
+===========================================================================
+martin.math.MathFunction.MathFunction(java.lang.String, martin.math.MathsItem):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "Im", "exp", "sqrt" }
+===========================================================================
+martin.math.MathFunction.hasNegativeSign():::ENTER
+this.getClass().getName() == martin.math.MathSqrt.class
+this.name has only one value
+this.name.toString == "sqrt"
+===========================================================================
+martin.math.MathFunction.hasNegativeSign():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.expr == orig(this.expr)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.expr.items == orig(this.expr.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.negative == orig(this.negative)
+this.name has only one value
+this.name.toString == "sqrt"
+return == false
+===========================================================================
+martin.math.MathFunction.hasNegativeSign():::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathFunction.toString():::ENTER
+this.getClass().getName() == martin.math.MathSqrt.class
+this.name has only one value
+this.name.toString == "sqrt"
+===========================================================================
+martin.math.MathFunction.toString():::EXIT86
+===========================================================================
+martin.math.MathFunction.toString():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.expr == orig(this.expr)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.expr.items == orig(this.expr.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.negative == orig(this.negative)
+this.name has only one value
+this.name.toString == "sqrt"
+return.toString == "sqrt(2)"
+===========================================================================
+martin.math.MathIm:::CLASS
+martin.math.MathIm.name has only one value
+martin.math.MathIm.name != null
+martin.math.MathIm.name.toString == "Im"
+===========================================================================
+martin.math.MathIm:::OBJECT
+martin.math.MathIm.name == this.name
+this.real == false
+this.name.toString == "Im"
+this.expr != null
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == 50
+this.expr.items != null
+martin.math.MathExpression.DEEP_SIMPLIFY == true
+this.negative == false
+===========================================================================
+martin.math.MathIm.MathIm(martin.math.MathsItem):::ENTER
+arg0.getClass().getName() == martin.math.MathExpression.class
+===========================================================================
+martin.math.MathIm.MathIm(martin.math.MathsItem):::EXIT
+===========================================================================
+martin.math.MathIm.clone():::ENTER
+===========================================================================
+martin.math.MathIm.clone():::EXIT151
+===========================================================================
+martin.math.MathIm.clone():::EXIT
+martin.math.MathIm.name == orig(martin.math.MathIm.name)
+martin.math.MathIm.name == orig(this.name)
+martin.math.MathIm.name.toString == orig(martin.math.MathIm.name.toString)
+this.real == orig(this.real)
+this.name.toString == orig(this.name.toString)
+this.expr == orig(this.expr)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.expr.items == orig(this.expr.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.negative == orig(this.negative)
+return.getClass().getName() == martin.math.MathNumber.class
+===========================================================================
+martin.math.MathNumber:::OBJECT
+===========================================================================
+martin.math.MathNumber.MathNumber(double):::ENTER
+===========================================================================
+martin.math.MathNumber.MathNumber(double):::EXIT
+this.number == orig(arg0)
+===========================================================================
+martin.math.MathNumber.add(martin.math.MathsItem):::ENTER
+this.number one of { -8.0, 1.0 }
+arg0.getClass().getName() == martin.math.MathNumber.class
+===========================================================================
+martin.math.MathNumber.add(martin.math.MathsItem):::EXIT55
+===========================================================================
+martin.math.MathNumber.add(martin.math.MathsItem):::EXIT55;condition="return == true"
+===========================================================================
+martin.math.MathNumber.add(martin.math.MathsItem):::EXIT
+this.number one of { 0.0, 2.0 }
+return == true
+===========================================================================
+martin.math.MathNumber.add(martin.math.MathsItem):::EXIT;condition="return == true"
+===========================================================================
+martin.math.MathNumber.clone():::ENTER
+===========================================================================
+martin.math.MathNumber.clone():::EXIT
+this.number == orig(this.number)
+return != null
+return.getClass().getName() == martin.math.MathNumber.class
+===========================================================================
+martin.math.MathNumber.divide(martin.math.MathsItem):::ENTER
+arg0.getClass().getName() == martin.math.MathNumber.class
+===========================================================================
+martin.math.MathNumber.divide(martin.math.MathsItem):::EXIT131
+===========================================================================
+martin.math.MathNumber.divide(martin.math.MathsItem):::EXIT131;condition="return == true"
+===========================================================================
+martin.math.MathNumber.divide(martin.math.MathsItem):::EXIT
+this.number one of { 1.0, 2.0 }
+return == true
+orig(this.number) % this.number == 0
+===========================================================================
+martin.math.MathNumber.divide(martin.math.MathsItem):::EXIT;condition="return == true"
+===========================================================================
+martin.math.MathNumber.equals(java.lang.Object):::ENTER
+arg0 != null
+===========================================================================
+martin.math.MathNumber.equals(java.lang.Object):::EXIT75
+orig(arg0.getClass().getName()) == martin.math.MathNumber.class
+===========================================================================
+martin.math.MathNumber.equals(java.lang.Object):::EXIT75;condition="not(return == true)"
+===========================================================================
+martin.math.MathNumber.equals(java.lang.Object):::EXIT77
+orig(arg0.getClass().getName()) == martin.math.MathSymbol.class
+===========================================================================
+martin.math.MathNumber.equals(java.lang.Object):::EXIT77;condition="not(return == true)"
+===========================================================================
+martin.math.MathNumber.equals(java.lang.Object):::EXIT
+this.number == orig(this.number)
+return == false
+===========================================================================
+martin.math.MathNumber.equals(java.lang.Object):::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathNumber.getValue(java.util.HashMap):::ENTER
+arg0 == null
+===========================================================================
+martin.math.MathNumber.getValue(java.util.HashMap):::EXIT
+this.number == return.R
+this.number == orig(this.number)
+return != null
+return.I == 0.0
+===========================================================================
+martin.math.MathNumber.hasNegativeSign():::ENTER
+this.number one of { 1.0, 2.0 }
+===========================================================================
+martin.math.MathNumber.hasNegativeSign():::EXIT
+this.number == orig(this.number)
+this.number one of { 1.0, 2.0 }
+return == false
+===========================================================================
+martin.math.MathNumber.hasNegativeSign():::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathNumber.isInteger():::ENTER
+===========================================================================
+martin.math.MathNumber.isInteger():::EXIT
+this.number == orig(this.number)
+return == true
+===========================================================================
+martin.math.MathNumber.isInteger():::EXIT;condition="return == true"
+===========================================================================
+martin.math.MathNumber.isOne():::ENTER
+this.number != 0
+===========================================================================
+martin.math.MathNumber.isOne():::EXIT
+this.number == orig(this.number)
+(return == true)  ==>  (this.number == 1.0)
+this.number != 0
+===========================================================================
+martin.math.MathNumber.isOne():::EXIT;condition="return == true"
+this.number == 1.0
+return == true
+===========================================================================
+martin.math.MathNumber.isOne():::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.MathNumber.isZero():::ENTER
+===========================================================================
+martin.math.MathNumber.isZero():::EXIT
+this.number == orig(this.number)
+(this.number != 0)  <==>  (return == false)
+(this.number == 0.0)  <==>  (return == true)
+===========================================================================
+martin.math.MathNumber.isZero():::EXIT;condition="return == true"
+this.number == 0.0
+return == true
+===========================================================================
+martin.math.MathNumber.isZero():::EXIT;condition="not(return == true)"
+this.number != 0
+return == false
+===========================================================================
+martin.math.MathNumber.multiply(martin.math.MathsItem):::ENTER
+arg0 != null
+===========================================================================
+martin.math.MathNumber.multiply(martin.math.MathsItem):::EXIT44
+return == true
+orig(arg0.getClass().getName()) == martin.math.MathNumber.class
+this.number != orig(this.number)
+===========================================================================
+martin.math.MathNumber.multiply(martin.math.MathsItem):::EXIT44;condition="return == true"
+===========================================================================
+martin.math.MathNumber.multiply(martin.math.MathsItem):::EXIT47
+this.number == orig(this.number)
+return == false
+===========================================================================
+martin.math.MathNumber.multiply(martin.math.MathsItem):::EXIT47;condition="not(return == true)"
+===========================================================================
+martin.math.MathNumber.multiply(martin.math.MathsItem):::EXIT
+(return == false)  <==>  (this.number == orig(this.number))
+(return == true)  <==>  (this.number != orig(this.number))
+(return == true)  ==>  (orig(arg0.getClass().getName()) == martin.math.MathNumber.class)
+this.number % orig(this.number) == 0
+===========================================================================
+martin.math.MathNumber.multiply(martin.math.MathsItem):::EXIT;condition="return == true"
+return == true
+orig(arg0.getClass().getName()) == martin.math.MathNumber.class
+this.number != orig(this.number)
+===========================================================================
+martin.math.MathNumber.multiply(martin.math.MathsItem):::EXIT;condition="not(return == true)"
+this.number == orig(this.number)
+return == false
+===========================================================================
+martin.math.MathNumber.simplify():::ENTER
+===========================================================================
+martin.math.MathNumber.simplify():::EXIT
+this.number == orig(this.number)
+===========================================================================
+martin.math.MathNumber.toString():::ENTER
+this.number one of { 0.0, 1.0, 2.0 }
+===========================================================================
+martin.math.MathNumber.toString():::EXIT87
+===========================================================================
+martin.math.MathNumber.toString():::EXIT
+this.number == orig(this.number)
+this.number one of { 0.0, 1.0, 2.0 }
+return != null
+return.toString one of { "0", "1", "2" }
+===========================================================================
+martin.math.MathSqrt:::CLASS
+martin.math.MathSqrt.name has only one value
+martin.math.MathSqrt.name != null
+martin.math.MathSqrt.name.toString == "sqrt"
+===========================================================================
+martin.math.MathSqrt:::OBJECT
+martin.math.MathSqrt.name == this.name
+this.name.toString == "sqrt"
+this.expr != null
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == 50
+this.expr.items != null
+martin.math.MathExpression.DEEP_SIMPLIFY == true
+this.negative == false
+===========================================================================
+martin.math.MathSqrt.MathSqrt(martin.math.MathsItem):::ENTER
+arg0.getClass().getName() == martin.math.MathNumber.class
+===========================================================================
+martin.math.MathSqrt.MathSqrt(martin.math.MathsItem):::EXIT
+===========================================================================
+martin.math.MathSqrt.MathSqrt(martin.math.MathsItem, boolean):::ENTER
+arg0 != null
+arg0.getClass().getName() == martin.math.MathExpression.class
+arg1 == false
+===========================================================================
+martin.math.MathSqrt.MathSqrt(martin.math.MathsItem, boolean):::EXIT
+this.negative == orig(arg1)
+===========================================================================
+martin.math.MathSqrt.clone():::ENTER
+===========================================================================
+martin.math.MathSqrt.clone():::EXIT104
+return.getClass().getName() == martin.math.MathNumber.class
+===========================================================================
+martin.math.MathSqrt.clone():::EXIT107
+return.getClass().getName() == martin.math.MathSqrt.class
+===========================================================================
+martin.math.MathSqrt.clone():::EXIT
+martin.math.MathSqrt.name == orig(martin.math.MathSqrt.name)
+martin.math.MathSqrt.name == orig(this.name)
+martin.math.MathSqrt.name.toString == orig(martin.math.MathSqrt.name.toString)
+this.name.toString == orig(this.name.toString)
+this.expr == orig(this.expr)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.expr.items == orig(this.expr.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.negative == orig(this.negative)
+return != null
+===========================================================================
+martin.math.MathSqrt.getValue(java.util.HashMap):::ENTER
+arg0 == null
+===========================================================================
+martin.math.MathSqrt.getValue(java.util.HashMap):::EXIT
+martin.math.MathSqrt.name == orig(martin.math.MathSqrt.name)
+martin.math.MathSqrt.name == orig(this.name)
+martin.math.MathSqrt.name.toString == orig(martin.math.MathSqrt.name.toString)
+this.name.toString == orig(this.name.toString)
+this.expr == orig(this.expr)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.expr.items == orig(this.expr.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.negative == orig(this.negative)
+return != null
+return.R one of { 1.4142135623730951, 2.0 }
+return.I == 0.0
+return.R > return.I
+===========================================================================
+martin.math.MathSqrt.isOne():::ENTER
+===========================================================================
+martin.math.MathSqrt.isOne():::EXIT
+martin.math.MathSqrt.name == orig(martin.math.MathSqrt.name)
+martin.math.MathSqrt.name == orig(this.name)
+martin.math.MathSqrt.name.toString == orig(martin.math.MathSqrt.name.toString)
+this.name.toString == orig(this.name.toString)
+this.expr == orig(this.expr)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.expr.items == orig(this.expr.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.negative == orig(this.negative)
+return == false
+===========================================================================
+martin.math.MathSqrt.isOne():::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathSqrt.isZero():::ENTER
+===========================================================================
+martin.math.MathSqrt.isZero():::EXIT
+martin.math.MathSqrt.name == orig(martin.math.MathSqrt.name)
+martin.math.MathSqrt.name == orig(this.name)
+martin.math.MathSqrt.name.toString == orig(martin.math.MathSqrt.name.toString)
+this.name.toString == orig(this.name.toString)
+this.expr == orig(this.expr)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.expr.items == orig(this.expr.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.negative == orig(this.negative)
+return == false
+===========================================================================
+martin.math.MathSqrt.isZero():::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathSqrt.multiply(martin.math.MathsItem):::ENTER
+arg0 != null
+===========================================================================
+martin.math.MathSqrt.multiply(martin.math.MathsItem):::EXIT86
+return == true
+orig(arg0.getClass().getName()) == martin.math.MathSqrt.class
+===========================================================================
+martin.math.MathSqrt.multiply(martin.math.MathsItem):::EXIT86;condition="return == true"
+===========================================================================
+martin.math.MathSqrt.multiply(martin.math.MathsItem):::EXIT89
+return == false
+orig(arg0.getClass().getName()) == martin.math.MathNumber.class
+===========================================================================
+martin.math.MathSqrt.multiply(martin.math.MathsItem):::EXIT89;condition="not(return == true)"
+===========================================================================
+martin.math.MathSqrt.multiply(martin.math.MathsItem):::EXIT
+martin.math.MathSqrt.name == orig(martin.math.MathSqrt.name)
+martin.math.MathSqrt.name == orig(this.name)
+martin.math.MathSqrt.name.toString == orig(martin.math.MathSqrt.name.toString)
+this.name.toString == orig(this.name.toString)
+this.expr == orig(this.expr)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.expr.items == orig(this.expr.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.negative == orig(this.negative)
+(return == false)  <==>  (orig(arg0.getClass().getName()) == martin.math.MathNumber.class)
+(return == true)  <==>  (orig(arg0.getClass().getName()) == martin.math.MathSqrt.class)
+===========================================================================
+martin.math.MathSqrt.multiply(martin.math.MathsItem):::EXIT;condition="return == true"
+return == true
+orig(arg0.getClass().getName()) == martin.math.MathSqrt.class
+===========================================================================
+martin.math.MathSqrt.multiply(martin.math.MathsItem):::EXIT;condition="not(return == true)"
+return == false
+orig(arg0.getClass().getName()) == martin.math.MathNumber.class
+===========================================================================
+martin.math.MathSqrt.simplify():::ENTER
+===========================================================================
+martin.math.MathSqrt.simplify():::EXIT
+martin.math.MathSqrt.name == orig(martin.math.MathSqrt.name)
+martin.math.MathSqrt.name == orig(this.name)
+martin.math.MathSqrt.name.toString == orig(martin.math.MathSqrt.name.toString)
+this.name.toString == orig(this.name.toString)
+this.expr == orig(this.expr)
+martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS == orig(martin.math.MathExpression.MAX_NUMBER_OF_SIMPLIFICAITON_STEPS)
+this.expr.items == orig(this.expr.items)
+martin.math.MathExpression.DEEP_SIMPLIFY == orig(martin.math.MathExpression.DEEP_SIMPLIFY)
+this.negative == orig(this.negative)
+===========================================================================
+martin.math.MathSymbol:::OBJECT
+this.symbol != null
+this.symbol.toString one of { "a", "b" }
+this.negative == false
+this.zero == false
+this.complexconj == false
+===========================================================================
+martin.math.MathSymbol.MathSymbol(java.lang.String):::ENTER
+arg0.toString one of { "a", "b" }
+===========================================================================
+martin.math.MathSymbol.MathSymbol(java.lang.String):::EXIT
+this.symbol == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "a", "b" }
+===========================================================================
+martin.math.MathSymbol.MathSymbol(java.lang.String, boolean, boolean, boolean):::ENTER
+arg0 != null
+arg0.toString one of { "a", "b" }
+arg1 == false
+arg2 == false
+arg3 == false
+===========================================================================
+martin.math.MathSymbol.MathSymbol(java.lang.String, boolean, boolean, boolean):::EXIT
+this.symbol == orig(arg0)
+this.negative == orig(arg1)
+this.zero == orig(arg2)
+this.complexconj == orig(arg3)
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "a", "b" }
+===========================================================================
+martin.math.MathSymbol.add(martin.math.MathsItem):::ENTER
+arg0.getClass().getName() == martin.math.MathSymbol.class
+===========================================================================
+martin.math.MathSymbol.add(martin.math.MathsItem):::EXIT96
+===========================================================================
+martin.math.MathSymbol.add(martin.math.MathsItem):::EXIT96;condition="not(return == true)"
+===========================================================================
+martin.math.MathSymbol.add(martin.math.MathsItem):::EXIT
+this.symbol == orig(this.symbol)
+this.symbol.toString == orig(this.symbol.toString)
+this.negative == orig(this.negative)
+this.zero == orig(this.zero)
+this.complexconj == orig(this.complexconj)
+return == false
+===========================================================================
+martin.math.MathSymbol.add(martin.math.MathsItem):::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathSymbol.clone():::ENTER
+===========================================================================
+martin.math.MathSymbol.clone():::EXIT111
+===========================================================================
+martin.math.MathSymbol.clone():::EXIT
+this.symbol == orig(this.symbol)
+this.symbol.toString == orig(this.symbol.toString)
+this.negative == orig(this.negative)
+this.zero == orig(this.zero)
+this.complexconj == orig(this.complexconj)
+return != null
+return.getClass().getName() == martin.math.MathSymbol.class
+===========================================================================
+martin.math.MathSymbol.equals(java.lang.Object):::ENTER
+arg0 != null
+===========================================================================
+martin.math.MathSymbol.equals(java.lang.Object):::EXIT143
+orig(arg0.getClass().getName()) == martin.math.MathSymbol.class
+===========================================================================
+martin.math.MathSymbol.equals(java.lang.Object):::EXIT143;condition="return == true"
+===========================================================================
+martin.math.MathSymbol.equals(java.lang.Object):::EXIT143;condition="not(return == true)"
+===========================================================================
+martin.math.MathSymbol.equals(java.lang.Object):::EXIT146
+return == false
+orig(arg0.getClass().getName()) == martin.math.MathNumber.class
+===========================================================================
+martin.math.MathSymbol.equals(java.lang.Object):::EXIT146;condition="not(return == true)"
+===========================================================================
+martin.math.MathSymbol.equals(java.lang.Object):::EXIT
+this.symbol == orig(this.symbol)
+this.symbol.toString == orig(this.symbol.toString)
+this.negative == orig(this.negative)
+this.zero == orig(this.zero)
+this.complexconj == orig(this.complexconj)
+(orig(arg0.getClass().getName()) == martin.math.MathNumber.class)  ==>  (return == false)
+(return == true)  ==>  (orig(arg0.getClass().getName()) == martin.math.MathSymbol.class)
+===========================================================================
+martin.math.MathSymbol.equals(java.lang.Object):::EXIT;condition="return == true"
+return == true
+orig(arg0.getClass().getName()) == martin.math.MathSymbol.class
+===========================================================================
+martin.math.MathSymbol.equals(java.lang.Object):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+martin.math.MathSymbol.getValue(java.util.HashMap):::ENTER
+arg0 == null
+===========================================================================
+martin.math.MathSymbol.getValue(java.util.HashMap):::EXIT63
+===========================================================================
+martin.math.MathSymbol.getValue(java.util.HashMap):::EXIT
+this.symbol == orig(this.symbol)
+this.symbol.toString == orig(this.symbol.toString)
+this.negative == orig(this.negative)
+this.zero == orig(this.zero)
+this.complexconj == orig(this.complexconj)
+return != null
+return.R == Double.NaN
+return.I == Double.NaN
+===========================================================================
+martin.math.MathSymbol.hasNegativeSign():::ENTER
+===========================================================================
+martin.math.MathSymbol.hasNegativeSign():::EXIT
+this.symbol == orig(this.symbol)
+this.symbol.toString == orig(this.symbol.toString)
+this.negative == orig(this.negative)
+this.zero == orig(this.zero)
+this.complexconj == orig(this.complexconj)
+return == false
+===========================================================================
+martin.math.MathSymbol.hasNegativeSign():::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathSymbol.isOne():::ENTER
+===========================================================================
+martin.math.MathSymbol.isOne():::EXIT
+this.symbol == orig(this.symbol)
+this.symbol.toString == orig(this.symbol.toString)
+this.negative == orig(this.negative)
+this.zero == orig(this.zero)
+this.complexconj == orig(this.complexconj)
+return == false
+===========================================================================
+martin.math.MathSymbol.isOne():::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathSymbol.isZero():::ENTER
+===========================================================================
+martin.math.MathSymbol.isZero():::EXIT
+this.symbol == orig(this.symbol)
+this.symbol.toString == orig(this.symbol.toString)
+this.negative == orig(this.negative)
+this.zero == return
+this.complexconj == orig(this.complexconj)
+return == orig(this.zero)
+return == false
+===========================================================================
+martin.math.MathSymbol.isZero():::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathSymbol.multiply(martin.math.MathsItem):::ENTER
+arg0 != null
+===========================================================================
+martin.math.MathSymbol.multiply(martin.math.MathsItem):::EXIT
+this.symbol == orig(this.symbol)
+this.symbol.toString == orig(this.symbol.toString)
+this.negative == orig(this.negative)
+this.zero == orig(this.zero)
+this.complexconj == orig(this.complexconj)
+return == false
+===========================================================================
+martin.math.MathSymbol.multiply(martin.math.MathsItem):::EXIT;condition="not(return == true)"
+===========================================================================
+martin.math.MathSymbol.simplify():::ENTER
+===========================================================================
+martin.math.MathSymbol.simplify():::EXIT
+this.symbol == orig(this.symbol)
+this.symbol.toString == orig(this.symbol.toString)
+this.negative == orig(this.negative)
+this.zero == orig(this.zero)
+this.complexconj == orig(this.complexconj)
+===========================================================================
+martin.math.MathSymbol.toString():::ENTER
+===========================================================================
+martin.math.MathSymbol.toString():::EXIT136
+===========================================================================
+martin.math.MathSymbol.toString():::EXIT
+this.symbol == orig(this.symbol)
+this.symbol.toString == orig(this.symbol.toString)
+this.negative == orig(this.negative)
+this.zero == orig(this.zero)
+this.complexconj == orig(this.complexconj)
+return.toString one of { "a", "b" }
+===========================================================================
+martin.operators.AddCoeffTogether:::OBJECT
+this has only one value
+===========================================================================
+martin.operators.AddCoeffTogether.AddCoeffTogether():::EXIT
+===========================================================================
+martin.operators.AddCoeffTogether.operate(martin.quantum.SystemMatrix):::ENTER
+arg0.mNumbQubits == size(arg0.measured[])
+arg0.size == size(arg0.coeff[])
+arg0 has only one value
+arg0.mNumbQubits == 3
+arg0.coeff has only one value
+arg0.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg0.coeff[] contains no nulls and has only one value, of length 8
+arg0.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg0.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg0.measured has only one value
+arg0.measured[] == [1, 1, 0]
+arg0.size == 8
+arg0.coeff[arg0.mNumbQubits] has only one value
+arg0.coeff[arg0.mNumbQubits-1] has only one value
+arg0.measured[arg0.mNumbQubits-1] == false
+arg0.coeff[arg0.size-1] has only one value
+===========================================================================
+martin.operators.AddCoeffTogether.operate(martin.quantum.SystemMatrix):::EXIT
+arg0.mNumbQubits == orig(arg0.mNumbQubits)
+arg0.mNumbQubits == size(arg0.measured[])
+arg0.mNumbQubits == orig(size(arg0.measured[]))
+arg0.coeff == orig(arg0.coeff)
+arg0.coeff.getClass().getName() == orig(arg0.coeff.getClass().getName())
+arg0.measured == orig(arg0.measured)
+arg0.measured[] == orig(arg0.measured[])
+arg0.size == orig(arg0.size)
+arg0.size == size(arg0.coeff[])
+arg0.size == orig(size(arg0.coeff[]))
+arg0.mNumbQubits == 3
+arg0.coeff has only one value
+arg0.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg0.coeff[] contains no nulls and has only one value, of length 8
+arg0.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg0.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg0.measured has only one value
+arg0.measured[] == [1, 1, 0]
+arg0.size == 8
+arg0.coeff[arg0.mNumbQubits] has only one value
+arg0.coeff[arg0.mNumbQubits-1] has only one value
+arg0.measured[arg0.mNumbQubits-1] == false
+arg0.coeff[arg0.size-1] has only one value
+===========================================================================
+martin.operators.AddCoeffTogether.toString():::ENTER
+===========================================================================
+martin.operators.AddCoeffTogether.toString():::EXIT
+return has only one value
+return.toString == "Add coefficients together"
+===========================================================================
+martin.operators.E:::CLASS
+martin.operators.E.MINUS_ONE has only one value
+martin.operators.E.MINUS_ONE.getClass().getName() == martin.math.MathNumber.class
+===========================================================================
+martin.operators.E:::OBJECT
+this.bitId1 one of { 0, 1 }
+this.bitId2 one of { 1, 2 }
+===========================================================================
+martin.operators.E.E(int, int):::ENTER
+arg0 one of { 0, 1 }
+arg1 one of { 1, 2 }
+===========================================================================
+martin.operators.E.E(int, int):::EXIT
+this.bitId1 == orig(arg0)
+this.bitId2 == orig(arg1)
+===========================================================================
+martin.operators.E.operate(martin.quantum.SystemMatrix):::ENTER
+arg0.mNumbQubits == size(arg0.measured[])
+arg0.size == size(arg0.coeff[])
+arg0.coeff[this.bitId1] == arg0.coeff[this.bitId2-1]
+arg0.measured[this.bitId1] == arg0.measured[this.bitId2]
+arg0.measured[this.bitId1] == arg0.measured[this.bitId2-1]
+arg0.measured[this.bitId1] == arg0.measured[arg0.mNumbQubits-1]
+arg0 has only one value
+arg0.mNumbQubits == 3
+arg0.coeff has only one value
+arg0.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg0.coeff[] contains no nulls and has only one value, of length 8
+arg0.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg0.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg0.measured has only one value
+arg0.measured[] == [0, 0, 0]
+arg0.measured[] elements == false
+arg0.size == 8
+arg0.coeff[arg0.mNumbQubits] has only one value
+arg0.coeff[arg0.mNumbQubits-1] has only one value
+arg0.coeff[arg0.size-1] has only one value
+arg0.measured[] elements == arg0.measured[this.bitId1]
+===========================================================================
+martin.operators.E.operate(martin.quantum.SystemMatrix):::EXIT
+this.bitId1 == orig(this.bitId1)
+this.bitId2 == orig(this.bitId2)
+martin.operators.E.MINUS_ONE == orig(martin.operators.E.MINUS_ONE)
+martin.operators.E.MINUS_ONE.getClass().getName() == orig(martin.operators.E.MINUS_ONE.getClass().getName())
+arg0.mNumbQubits == orig(arg0.mNumbQubits)
+arg0.mNumbQubits == size(arg0.measured[])
+arg0.mNumbQubits == orig(size(arg0.measured[]))
+arg0.coeff == orig(arg0.coeff)
+arg0.coeff.getClass().getName() == orig(arg0.coeff.getClass().getName())
+arg0.coeff[] == orig(arg0.coeff[])
+arg0.measured == orig(arg0.measured)
+arg0.measured[] == orig(arg0.measured[])
+arg0.size == orig(arg0.size)
+arg0.size == size(arg0.coeff[])
+arg0.size == orig(size(arg0.coeff[]))
+arg0.coeff[this.bitId1] == arg0.coeff[this.bitId2-1]
+arg0.coeff[this.bitId1] == orig(arg0.coeff[post(this.bitId2)-1])
+arg0.coeff[this.bitId1] == arg0.coeff[orig(this.bitId2)-1]
+arg0.coeff[this.bitId1] == orig(arg0.coeff[this.bitId2-1])
+arg0.measured[this.bitId1] == arg0.measured[this.bitId2]
+arg0.measured[this.bitId1] == arg0.measured[this.bitId2-1]
+arg0.measured[this.bitId1] == orig(arg0.measured[post(this.bitId2)])
+arg0.measured[this.bitId1] == orig(arg0.measured[post(this.bitId2)-1])
+arg0.measured[this.bitId1] == arg0.measured[arg0.mNumbQubits-1]
+arg0.measured[this.bitId1] == orig(arg0.measured[post(arg0.mNumbQubits)-1])
+arg0.measured[this.bitId1] == arg0.measured[orig(this.bitId2)]
+arg0.measured[this.bitId1] == arg0.measured[orig(this.bitId2)-1]
+arg0.measured[this.bitId1] == arg0.measured[orig(arg0.mNumbQubits)-1]
+arg0.measured[this.bitId1] == orig(arg0.measured[this.bitId2])
+arg0.measured[this.bitId1] == orig(arg0.measured[this.bitId2-1])
+arg0.measured[this.bitId1] == orig(arg0.measured[arg0.mNumbQubits-1])
+arg0.mNumbQubits == 3
+arg0.coeff has only one value
+arg0.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg0.coeff[] contains no nulls and has only one value, of length 8
+arg0.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg0.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg0.measured has only one value
+arg0.measured[] == [0, 0, 0]
+arg0.measured[] elements == false
+arg0.size == 8
+arg0.coeff[arg0.mNumbQubits] has only one value
+arg0.coeff[arg0.mNumbQubits-1] has only one value
+arg0.coeff[arg0.size-1] has only one value
+arg0.measured[] elements == arg0.measured[this.bitId1]
+===========================================================================
+martin.operators.E.toString():::ENTER
+===========================================================================
+martin.operators.E.toString():::EXIT
+this.bitId1 == orig(this.bitId1)
+this.bitId2 == orig(this.bitId2)
+martin.operators.E.MINUS_ONE == orig(martin.operators.E.MINUS_ONE)
+martin.operators.E.MINUS_ONE.getClass().getName() == orig(martin.operators.E.MINUS_ONE.getClass().getName())
+return.toString one of { "E(q1=0, q2=1)", "E(q1=1, q2=2)" }
+===========================================================================
+martin.operators.M:::CLASS
+martin.operators.M.MINUS_ONE has only one value
+martin.operators.M.MINUS_ONE != null
+martin.operators.M.MINUS_ONE.getClass().getName() == martin.math.MathNumber.class
+martin.operators.M.ONE_OVER_SQRT_2 has only one value
+martin.operators.M.ONE_OVER_SQRT_2 != null
+martin.operators.M.ONE_OVER_SQRT_2.getClass().getName() == martin.math.MathFract.class
+===========================================================================
+martin.operators.M:::OBJECT
+this.t one of { 0, 1 }
+this.s == 0
+this.qubitId one of { 0, 1 }
+this.b == 1
+this.alpha != null
+this.alpha.getClass().getName() == martin.math.MathNumber.class
+===========================================================================
+martin.operators.M.M(int, int, int, martin.math.MathsItem, int):::ENTER
+arg0 one of { 0, 1 }
+arg1 one of { 0, 1 }
+arg2 == 0
+arg3.getClass().getName() == martin.math.MathNumber.class
+arg4 == 1
+===========================================================================
+martin.operators.M.M(int, int, int, martin.math.MathsItem, int):::EXIT
+martin.operators.M.MINUS_ONE.getClass().getName() == this.alpha.getClass().getName()
+martin.operators.M.MINUS_ONE.getClass().getName() == orig(arg3.getClass().getName())
+this.t == orig(arg1)
+this.s == orig(arg2)
+this.qubitId == orig(arg0)
+this.b == orig(arg4)
+this.alpha == orig(arg3)
+===========================================================================
+martin.operators.M.operate(martin.quantum.SystemMatrix):::ENTER
+martin.operators.M.MINUS_ONE.getClass().getName() == this.alpha.getClass().getName()
+arg0.mNumbQubits == size(arg0.measured[])
+arg0.size == size(arg0.coeff[])
+arg0.measured[this.qubitId] == arg0.measured[arg0.mNumbQubits-1]
+arg0 has only one value
+arg0.mNumbQubits == 3
+arg0.coeff has only one value
+arg0.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg0.coeff[] contains no nulls and has only one value, of length 8
+arg0.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg0.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg0.measured has only one value
+arg0.measured[] one of { [0, 0, 0], [1, 0, 0] }
+arg0.size == 8
+arg0.measured[this.qubitId] == false
+arg0.coeff[arg0.mNumbQubits] has only one value
+arg0.coeff[arg0.mNumbQubits-1] has only one value
+arg0.coeff[arg0.size-1] has only one value
+===========================================================================
+martin.operators.M.operate(martin.quantum.SystemMatrix):::EXIT
+martin.operators.M.MINUS_ONE == orig(martin.operators.M.MINUS_ONE)
+martin.operators.M.MINUS_ONE.getClass().getName() == this.alpha.getClass().getName()
+martin.operators.M.MINUS_ONE.getClass().getName() == orig(martin.operators.M.MINUS_ONE.getClass().getName())
+martin.operators.M.MINUS_ONE.getClass().getName() == orig(this.alpha.getClass().getName())
+martin.operators.M.ONE_OVER_SQRT_2 == orig(martin.operators.M.ONE_OVER_SQRT_2)
+martin.operators.M.ONE_OVER_SQRT_2.getClass().getName() == orig(martin.operators.M.ONE_OVER_SQRT_2.getClass().getName())
+this.t == orig(this.t)
+this.s == orig(this.s)
+this.qubitId == orig(this.qubitId)
+this.b == orig(this.b)
+this.alpha == orig(this.alpha)
+arg0.mNumbQubits == orig(arg0.mNumbQubits)
+arg0.mNumbQubits == size(arg0.measured[])
+arg0.mNumbQubits == orig(size(arg0.measured[]))
+arg0.coeff == orig(arg0.coeff)
+arg0.coeff.getClass().getName() == orig(arg0.coeff.getClass().getName())
+arg0.coeff[] == orig(arg0.coeff[])
+arg0.measured == orig(arg0.measured)
+arg0.size == orig(arg0.size)
+arg0.size == size(arg0.coeff[])
+arg0.size == orig(size(arg0.coeff[]))
+orig(arg0.measured[post(this.qubitId)]) == arg0.measured[arg0.mNumbQubits-1]
+arg0.measured[arg0.mNumbQubits-1] == orig(arg0.measured[post(arg0.mNumbQubits)-1])
+arg0.measured[arg0.mNumbQubits-1] == orig(arg0.measured[this.qubitId])
+arg0.measured[arg0.mNumbQubits-1] == orig(arg0.measured[arg0.mNumbQubits-1])
+arg0.mNumbQubits == 3
+arg0.coeff has only one value
+arg0.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg0.coeff[] contains no nulls and has only one value, of length 8
+arg0.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg0.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg0.measured has only one value
+arg0.measured[] one of { [1, 0, 0], [1, 1, 0] }
+arg0.size == 8
+arg0.measured[this.qubitId] == true
+arg0.coeff[arg0.mNumbQubits] has only one value
+arg0.coeff[arg0.mNumbQubits-1] has only one value
+arg0.measured[arg0.mNumbQubits-1] == false
+arg0.coeff[arg0.size-1] has only one value
+===========================================================================
+martin.operators.M.perform(int, martin.quantum.SystemMatrix):::ENTER
+martin.operators.M.MINUS_ONE.getClass().getName() == this.alpha.getClass().getName()
+arg1.mNumbQubits == size(arg1.measured[])
+arg1.size == size(arg1.coeff[])
+arg1 has only one value
+arg1 != null
+arg1.mNumbQubits == 3
+arg1.coeff has only one value
+arg1.coeff != null
+arg1.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg1.coeff[] contains no nulls and has only one value, of length 8
+arg1.coeff[] elements != null
+arg1.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg1.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg1.measured has only one value
+arg1.measured != null
+arg1.measured[] one of { [1, 0, 0], [1, 1, 0] }
+arg1.size == 8
+arg1.measured[this.qubitId] == true
+arg1.coeff[arg1.mNumbQubits] has only one value
+arg1.coeff[arg1.mNumbQubits-1] has only one value
+arg1.measured[arg1.mNumbQubits-1] == false
+arg1.coeff[arg1.size-1] has only one value
+martin.operators.M.MINUS_ONE.getClass().getName() != martin.operators.M.ONE_OVER_SQRT_2.getClass().getName()
+martin.operators.M.MINUS_ONE.getClass().getName() != arg1.coeff.getClass().getName()
+martin.operators.M.ONE_OVER_SQRT_2.getClass().getName() != arg1.coeff.getClass().getName()
+this.qubitId < size(arg1.coeff[])-1
+this.qubitId < size(arg1.measured[])-1
+arg0 <= size(arg1.coeff[])-1
+===========================================================================
+martin.operators.M.perform(int, martin.quantum.SystemMatrix):::EXIT
+martin.operators.M.MINUS_ONE == orig(martin.operators.M.MINUS_ONE)
+martin.operators.M.MINUS_ONE.getClass().getName() == this.alpha.getClass().getName()
+martin.operators.M.MINUS_ONE.getClass().getName() == orig(martin.operators.M.MINUS_ONE.getClass().getName())
+martin.operators.M.MINUS_ONE.getClass().getName() == orig(this.alpha.getClass().getName())
+martin.operators.M.ONE_OVER_SQRT_2 == orig(martin.operators.M.ONE_OVER_SQRT_2)
+martin.operators.M.ONE_OVER_SQRT_2.getClass().getName() == orig(martin.operators.M.ONE_OVER_SQRT_2.getClass().getName())
+this.t == orig(this.t)
+this.s == orig(this.s)
+this.qubitId == orig(this.qubitId)
+this.b == orig(this.b)
+this.alpha == orig(this.alpha)
+arg1.mNumbQubits == orig(arg1.mNumbQubits)
+arg1.mNumbQubits == size(arg1.measured[])
+arg1.mNumbQubits == orig(size(arg1.measured[]))
+arg1.coeff == orig(arg1.coeff)
+arg1.coeff.getClass().getName() == orig(arg1.coeff.getClass().getName())
+arg1.coeff[] == orig(arg1.coeff[])
+arg1.measured == orig(arg1.measured)
+arg1.measured[] == orig(arg1.measured[])
+arg1.size == orig(arg1.size)
+arg1.size == size(arg1.coeff[])
+arg1.size == orig(size(arg1.coeff[]))
+arg1.mNumbQubits == 3
+arg1.coeff has only one value
+arg1.coeff != null
+arg1.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg1.coeff[] contains no nulls and has only one value, of length 8
+arg1.coeff[] elements != null
+arg1.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg1.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg1.measured has only one value
+arg1.measured != null
+arg1.measured[] one of { [1, 0, 0], [1, 1, 0] }
+arg1.size == 8
+arg1.measured[this.qubitId] == true
+arg1.coeff[arg1.mNumbQubits] has only one value
+arg1.coeff[arg1.mNumbQubits-1] has only one value
+arg1.measured[arg1.mNumbQubits-1] == false
+arg1.coeff[arg1.size-1] has only one value
+martin.operators.M.MINUS_ONE.getClass().getName() != martin.operators.M.ONE_OVER_SQRT_2.getClass().getName()
+martin.operators.M.MINUS_ONE.getClass().getName() != arg1.coeff.getClass().getName()
+martin.operators.M.ONE_OVER_SQRT_2.getClass().getName() != arg1.coeff.getClass().getName()
+this.qubitId < size(arg1.coeff[])-1
+this.qubitId < size(arg1.measured[])-1
+orig(arg0) <= size(arg1.coeff[])-1
+===========================================================================
+martin.operators.M.toString():::ENTER
+===========================================================================
+martin.operators.M.toString():::EXIT
+martin.operators.M.MINUS_ONE == orig(martin.operators.M.MINUS_ONE)
+martin.operators.M.MINUS_ONE.getClass().getName() == orig(martin.operators.M.MINUS_ONE.getClass().getName())
+martin.operators.M.ONE_OVER_SQRT_2 == orig(martin.operators.M.ONE_OVER_SQRT_2)
+martin.operators.M.ONE_OVER_SQRT_2.getClass().getName() == orig(martin.operators.M.ONE_OVER_SQRT_2.getClass().getName())
+this.t == orig(this.t)
+this.s == orig(this.s)
+this.qubitId == orig(this.qubitId)
+this.b == orig(this.b)
+this.alpha == orig(this.alpha)
+this.alpha.getClass().getName() == orig(this.alpha.getClass().getName())
+return.toString one of { "M(id=0, t=0, s=0, alpha=0, b=1)", "M(id=1, t=1, s=0, alpha=0, b=1)" }
+===========================================================================
+martin.operators.N:::OBJECT
+this.qubitId one of { 0, 1, 2 }
+this.st1 != null
+this.st2 != null
+===========================================================================
+martin.operators.N.N(int):::ENTER
+arg0 one of { 1, 2 }
+===========================================================================
+martin.operators.N.N(int):::EXIT
+this.qubitId == orig(arg0)
+this.st1.getClass().getName() == this.st2.getClass().getName()
+this.qubitId one of { 1, 2 }
+this.st1.getClass().getName() == martin.math.MathFract.class
+===========================================================================
+martin.operators.N.N(int, martin.math.MathsItem, martin.math.MathsItem):::ENTER
+arg1.getClass().getName() == arg2.getClass().getName()
+arg0 == 0
+arg1 has only one value
+arg1.getClass().getName() == martin.math.MathSymbol.class
+arg2 has only one value
+===========================================================================
+martin.operators.N.N(int, martin.math.MathsItem, martin.math.MathsItem):::EXIT
+this.qubitId == orig(arg0)
+this.st1 == orig(arg1)
+this.st1.getClass().getName() == this.st2.getClass().getName()
+this.st1.getClass().getName() == orig(arg1.getClass().getName())
+this.st1.getClass().getName() == orig(arg2.getClass().getName())
+this.st2 == orig(arg2)
+this.qubitId == 0
+this.st1 has only one value
+this.st1.getClass().getName() == martin.math.MathSymbol.class
+this.st2 has only one value
+===========================================================================
+martin.operators.N.operate(martin.quantum.SystemMatrix):::ENTER
+this.st1.getClass().getName() == this.st2.getClass().getName()
+arg0.mNumbQubits == size(arg0.measured[])
+arg0.size == size(arg0.coeff[])
+arg0.measured[this.qubitId] == arg0.measured[arg0.mNumbQubits-1]
+arg0 has only one value
+arg0.mNumbQubits == 3
+arg0.coeff has only one value
+arg0.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg0.coeff[] contains no nulls and has only one value, of length 8
+arg0.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg0.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg0.measured has only one value
+arg0.measured[] == [0, 0, 0]
+arg0.measured[] elements == false
+arg0.size == 8
+arg0.coeff[arg0.mNumbQubits] has only one value
+arg0.coeff[arg0.mNumbQubits-1] has only one value
+arg0.coeff[arg0.size-1] has only one value
+arg0.measured[] elements == arg0.measured[this.qubitId]
+===========================================================================
+martin.operators.N.operate(martin.quantum.SystemMatrix):::EXIT
+this.qubitId == orig(this.qubitId)
+this.st1 == orig(this.st1)
+this.st1.getClass().getName() == this.st2.getClass().getName()
+this.st1.getClass().getName() == orig(this.st1.getClass().getName())
+this.st1.getClass().getName() == orig(this.st2.getClass().getName())
+this.st2 == orig(this.st2)
+arg0.mNumbQubits == orig(arg0.mNumbQubits)
+arg0.mNumbQubits == size(arg0.measured[])
+arg0.mNumbQubits == orig(size(arg0.measured[]))
+arg0.coeff == orig(arg0.coeff)
+arg0.coeff.getClass().getName() == orig(arg0.coeff.getClass().getName())
+arg0.coeff[] == orig(arg0.coeff[])
+arg0.measured == orig(arg0.measured)
+arg0.measured[] == orig(arg0.measured[])
+arg0.size == orig(arg0.size)
+arg0.size == size(arg0.coeff[])
+arg0.size == orig(size(arg0.coeff[]))
+arg0.measured[this.qubitId] == arg0.measured[arg0.mNumbQubits-1]
+arg0.measured[this.qubitId] == orig(arg0.measured[post(arg0.mNumbQubits)-1])
+arg0.measured[this.qubitId] == arg0.measured[orig(arg0.mNumbQubits)-1]
+arg0.measured[this.qubitId] == orig(arg0.measured[arg0.mNumbQubits-1])
+arg0.mNumbQubits == 3
+arg0.coeff has only one value
+arg0.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg0.coeff[] contains no nulls and has only one value, of length 8
+arg0.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg0.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg0.measured has only one value
+arg0.measured[] == [0, 0, 0]
+arg0.measured[] elements == false
+arg0.size == 8
+arg0.coeff[arg0.mNumbQubits] has only one value
+arg0.coeff[arg0.mNumbQubits-1] has only one value
+arg0.coeff[arg0.size-1] has only one value
+arg0.measured[] elements == arg0.measured[this.qubitId]
+===========================================================================
+martin.operators.N.toString():::ENTER
+===========================================================================
+martin.operators.N.toString():::EXIT
+this.qubitId == orig(this.qubitId)
+this.st1 == orig(this.st1)
+this.st1.getClass().getName() == orig(this.st1.getClass().getName())
+this.st2 == orig(this.st2)
+this.st2.getClass().getName() == orig(this.st2.getClass().getName())
+return.toString one of { "N(q=0, a=a, b=b)", "N(q=1, a=((1)/(sqrt(2))), b=((1)/(sqrt(2))))", "N(q=2, a=((1)/(sqrt(2))), b=((1)/(sqrt(2))))" }
+===========================================================================
+martin.operators.X:::OBJECT
+this has only one value
+this.qubitId == 2
+this.skip == false
+===========================================================================
+martin.operators.X.X(int, int):::ENTER
+arg0 == 2
+arg1 == 1
+===========================================================================
+martin.operators.X.X(int, int):::EXIT
+this.qubitId == orig(arg0)
+===========================================================================
+martin.operators.X.operate(martin.quantum.SystemMatrix):::ENTER
+this.qubitId == size(arg0.measured[])-1
+arg0.mNumbQubits == size(arg0.measured[])
+arg0.size == size(arg0.coeff[])
+arg0.coeff[this.qubitId] == arg0.coeff[arg0.mNumbQubits-1]
+arg0.measured[this.qubitId] == arg0.measured[arg0.mNumbQubits-1]
+arg0 has only one value
+arg0.mNumbQubits == 3
+arg0.coeff has only one value
+arg0.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg0.coeff[] contains no nulls and has only one value, of length 8
+arg0.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg0.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg0.measured has only one value
+arg0.measured[] == [1, 1, 0]
+arg0.size == 8
+arg0.coeff[this.qubitId] has only one value
+arg0.coeff[this.qubitId-1] has only one value
+arg0.measured[this.qubitId] == false
+arg0.measured[this.qubitId-1] == true
+arg0.coeff[arg0.mNumbQubits] has only one value
+arg0.coeff[arg0.size-1] has only one value
+===========================================================================
+martin.operators.X.operate(martin.quantum.SystemMatrix):::EXIT52
+===========================================================================
+martin.operators.X.operate(martin.quantum.SystemMatrix):::EXIT
+this.qubitId == orig(this.qubitId)
+this.qubitId == size(arg0.measured[])-1
+this.qubitId == orig(size(arg0.measured[]))-1
+this.skip == orig(this.skip)
+arg0.mNumbQubits == orig(arg0.mNumbQubits)
+arg0.mNumbQubits == size(arg0.measured[])
+arg0.mNumbQubits == orig(size(arg0.measured[]))
+arg0.coeff == orig(arg0.coeff)
+arg0.coeff.getClass().getName() == orig(arg0.coeff.getClass().getName())
+arg0.measured == orig(arg0.measured)
+arg0.measured[] == orig(arg0.measured[])
+arg0.size == orig(arg0.size)
+arg0.size == size(arg0.coeff[])
+arg0.size == orig(size(arg0.coeff[]))
+arg0.coeff[this.qubitId] == arg0.coeff[arg0.mNumbQubits-1]
+arg0.coeff[this.qubitId] == orig(arg0.coeff[post(arg0.mNumbQubits)])
+arg0.coeff[this.qubitId] == arg0.coeff[orig(arg0.mNumbQubits)-1]
+arg0.coeff[this.qubitId] == orig(arg0.coeff[arg0.mNumbQubits])
+arg0.measured[this.qubitId] == arg0.measured[arg0.mNumbQubits-1]
+arg0.measured[this.qubitId] == orig(arg0.measured[post(arg0.mNumbQubits)-1])
+arg0.measured[this.qubitId] == arg0.measured[orig(arg0.mNumbQubits)-1]
+arg0.measured[this.qubitId] == orig(arg0.measured[arg0.mNumbQubits-1])
+orig(arg0.coeff[post(this.qubitId)]) == arg0.coeff[arg0.mNumbQubits]
+arg0.coeff[arg0.mNumbQubits] == orig(arg0.coeff[post(arg0.mNumbQubits)-1])
+arg0.coeff[arg0.mNumbQubits] == orig(arg0.coeff[this.qubitId])
+arg0.coeff[arg0.mNumbQubits] == orig(arg0.coeff[arg0.mNumbQubits-1])
+arg0.mNumbQubits == 3
+arg0.coeff has only one value
+arg0.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg0.coeff[] contains no nulls and has only one value, of length 8
+arg0.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg0.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg0.measured has only one value
+arg0.measured[] == [1, 1, 0]
+arg0.size == 8
+arg0.coeff[this.qubitId] has only one value
+arg0.coeff[this.qubitId-1] has only one value
+arg0.measured[this.qubitId] == false
+arg0.measured[this.qubitId-1] == true
+arg0.coeff[arg0.mNumbQubits] has only one value
+arg0.coeff[arg0.size-1] has only one value
+orig(arg0.coeff[this.qubitId-1]) in arg0.coeff[]
+orig(arg0.coeff[arg0.size-1]) in arg0.coeff[]
+arg0.coeff[this.qubitId-1] in orig(arg0.coeff[])
+arg0.coeff[arg0.size-1] in orig(arg0.coeff[])
+===========================================================================
+martin.operators.X.toString():::ENTER
+===========================================================================
+martin.operators.X.toString():::EXIT
+this.qubitId == orig(this.qubitId)
+this.skip == orig(this.skip)
+return has only one value
+return.toString == "X(q=2, s=1)"
+===========================================================================
+martin.operators.Z:::CLASS
+martin.operators.Z.MINUS_ONE has only one value
+martin.operators.Z.MINUS_ONE.number == -1.0
+===========================================================================
+martin.operators.Z:::OBJECT
+this has only one value
+this.qubitId == 2
+this.skip == false
+===========================================================================
+martin.operators.Z.Z(int, int):::ENTER
+arg0 == 2
+arg1 == 1
+===========================================================================
+martin.operators.Z.Z(int, int):::EXIT
+this.qubitId == orig(arg0)
+===========================================================================
+martin.operators.Z.operate(martin.quantum.SystemMatrix):::ENTER
+this.qubitId == size(arg0.measured[])-1
+arg0.mNumbQubits == size(arg0.measured[])
+arg0.size == size(arg0.coeff[])
+arg0.coeff[this.qubitId] == arg0.coeff[arg0.mNumbQubits-1]
+arg0.measured[this.qubitId] == arg0.measured[arg0.mNumbQubits-1]
+arg0 has only one value
+arg0.mNumbQubits == 3
+arg0.coeff has only one value
+arg0.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg0.coeff[] contains no nulls and has only one value, of length 8
+arg0.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg0.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg0.measured has only one value
+arg0.measured[] == [1, 1, 0]
+arg0.size == 8
+arg0.coeff[this.qubitId] has only one value
+arg0.coeff[this.qubitId-1] has only one value
+arg0.measured[this.qubitId] == false
+arg0.measured[this.qubitId-1] == true
+arg0.coeff[arg0.mNumbQubits] has only one value
+arg0.coeff[arg0.size-1] has only one value
+===========================================================================
+martin.operators.Z.operate(martin.quantum.SystemMatrix):::EXIT45
+===========================================================================
+martin.operators.Z.operate(martin.quantum.SystemMatrix):::EXIT
+martin.operators.Z.MINUS_ONE == orig(martin.operators.Z.MINUS_ONE)
+martin.operators.Z.MINUS_ONE.number == orig(martin.operators.Z.MINUS_ONE.number)
+this.qubitId == orig(this.qubitId)
+this.qubitId == size(arg0.measured[])-1
+this.qubitId == orig(size(arg0.measured[]))-1
+this.skip == orig(this.skip)
+arg0.mNumbQubits == orig(arg0.mNumbQubits)
+arg0.mNumbQubits == size(arg0.measured[])
+arg0.mNumbQubits == orig(size(arg0.measured[]))
+arg0.coeff == orig(arg0.coeff)
+arg0.coeff.getClass().getName() == orig(arg0.coeff.getClass().getName())
+arg0.coeff[] == orig(arg0.coeff[])
+arg0.measured == orig(arg0.measured)
+arg0.measured[] == orig(arg0.measured[])
+arg0.size == orig(arg0.size)
+arg0.size == size(arg0.coeff[])
+arg0.size == orig(size(arg0.coeff[]))
+arg0.coeff[this.qubitId] == arg0.coeff[arg0.mNumbQubits-1]
+arg0.coeff[this.qubitId] == orig(arg0.coeff[post(arg0.mNumbQubits)-1])
+arg0.coeff[this.qubitId] == arg0.coeff[orig(arg0.mNumbQubits)-1]
+arg0.coeff[this.qubitId] == orig(arg0.coeff[arg0.mNumbQubits-1])
+arg0.measured[this.qubitId] == arg0.measured[arg0.mNumbQubits-1]
+arg0.measured[this.qubitId] == orig(arg0.measured[post(arg0.mNumbQubits)-1])
+arg0.measured[this.qubitId] == arg0.measured[orig(arg0.mNumbQubits)-1]
+arg0.measured[this.qubitId] == orig(arg0.measured[arg0.mNumbQubits-1])
+arg0.mNumbQubits == 3
+arg0.coeff has only one value
+arg0.coeff.getClass().getName() == martin.math.MathsItem[].class
+arg0.coeff[] contains no nulls and has only one value, of length 8
+arg0.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+arg0.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+arg0.measured has only one value
+arg0.measured[] == [1, 1, 0]
+arg0.size == 8
+arg0.coeff[this.qubitId] has only one value
+arg0.coeff[this.qubitId-1] has only one value
+arg0.measured[this.qubitId] == false
+arg0.measured[this.qubitId-1] == true
+arg0.coeff[arg0.mNumbQubits] has only one value
+arg0.coeff[arg0.size-1] has only one value
+===========================================================================
+martin.operators.Z.toString():::ENTER
+===========================================================================
+martin.operators.Z.toString():::EXIT
+martin.operators.Z.MINUS_ONE == orig(martin.operators.Z.MINUS_ONE)
+martin.operators.Z.MINUS_ONE.number == orig(martin.operators.Z.MINUS_ONE.number)
+this.qubitId == orig(this.qubitId)
+this.skip == orig(this.skip)
+return has only one value
+return.toString == "Z(q=2, s=1)"
+===========================================================================
+martin.quantum.SystemMatrix:::OBJECT
+this has only one value
+this.mNumbQubits == 3
+this.coeff has only one value
+this.coeff.getClass().getName() == martin.math.MathsItem[].class
+this.coeff[].getClass().getName() == [martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression, martin.math.MathExpression]
+this.coeff[].getClass().getName() elements == martin.math.MathExpression.class
+this.measured has only one value
+this.measured[] one of { [0, 0, 0], [1, 1, 0] }
+this.size == 8
+size(this.coeff[]) == 8
+size(this.measured[]) == 3
+this.measured[this.mNumbQubits-1] == false
+===========================================================================
+martin.quantum.SystemMatrix.SystemMatrix(int):::ENTER
+arg0 == 3
+===========================================================================
+martin.quantum.SystemMatrix.SystemMatrix(int):::EXIT
+this.mNumbQubits == orig(arg0)
+this.mNumbQubits == size(this.measured[])
+this.size == size(this.coeff[])
+this.coeff[] contains no nulls and has only one value, of length 8
+this.measured[] == [0, 0, 0]
+this.measured[] elements == false
+this.coeff[this.mNumbQubits] has only one value
+this.coeff[this.mNumbQubits-1] has only one value
+this.coeff[this.size-1] has only one value
+this.measured[] elements == this.measured[this.mNumbQubits-1]
+===========================================================================
+martin.quantum.SystemMatrix.getBraKet(int):::ENTER
+this.mNumbQubits == size(this.measured[])
+this.size == size(this.coeff[])
+this.coeff[] contains no nulls and has only one value, of length 8
+this.measured[] == [1, 1, 0]
+arg0 one of { 0, 1 }
+this.coeff[this.mNumbQubits] has only one value
+this.coeff[this.mNumbQubits-1] has only one value
+this.coeff[this.size-1] has only one value
+===========================================================================
+martin.quantum.SystemMatrix.getBraKet(int):::EXIT
+this.mNumbQubits == orig(this.mNumbQubits)
+this.mNumbQubits == size(this.measured[])
+this.mNumbQubits == orig(size(this.measured[]))
+this.coeff == orig(this.coeff)
+this.coeff.getClass().getName() == orig(this.coeff.getClass().getName())
+this.coeff[] == orig(this.coeff[])
+this.measured == orig(this.measured)
+this.measured[] == orig(this.measured[])
+this.size == orig(this.size)
+this.size == size(this.coeff[])
+this.size == orig(size(this.coeff[]))
+this.coeff[] contains no nulls and has only one value, of length 8
+this.measured[] == [1, 1, 0]
+return.toString one of { "|__0>", "|__1>" }
+this.coeff[this.mNumbQubits] has only one value
+this.coeff[this.mNumbQubits-1] has only one value
+this.coeff[this.size-1] has only one value
+===========================================================================
+martin.quantum.SystemMatrix.getIndexesFromId(int, int):::ENTER
+arg0 one of { 0, 1 }
+arg1 == 3
+===========================================================================
+martin.quantum.SystemMatrix.getIndexesFromId(int, int):::EXIT
+return[] elements one of { 0, 1 }
+return[] one of { [0, 0, 0], [0, 0, 1] }
+size(return[]) == 3
+===========================================================================
+martin.quantum.SystemMatrix.performReverse(martin.operators.Operator[]):::ENTER
+this.mNumbQubits == size(this.measured[])
+this.size == size(this.coeff[])
+arg0.getClass().getName() == martin.operators.Operator[].class
+size(arg0[]) one of { 1, 9 }
+===========================================================================
+martin.quantum.SystemMatrix.performReverse(martin.operators.Operator[]):::EXIT
+this.mNumbQubits == orig(this.mNumbQubits)
+this.mNumbQubits == size(this.measured[])
+this.mNumbQubits == orig(size(this.measured[]))
+this.coeff == orig(this.coeff)
+this.coeff.getClass().getName() == orig(this.coeff.getClass().getName())
+this.measured == orig(this.measured)
+this.size == orig(this.size)
+this.size == size(this.coeff[])
+this.size == orig(size(this.coeff[]))
+arg0[] == orig(arg0[])
+this.measured[this.mNumbQubits-1] == orig(this.measured[post(this.mNumbQubits)-1])
+this.measured[this.mNumbQubits-1] == orig(this.measured[this.mNumbQubits-1])
+this.measured[] == [1, 1, 0]
+===========================================================================
+martin.quantum.SystemMatrix.toString():::ENTER
+this.coeff[] contains no nulls and has only one value, of length 8
+this.measured[] == [1, 1, 0]
+===========================================================================
+martin.quantum.SystemMatrix.toString():::EXIT
+this.mNumbQubits == orig(this.mNumbQubits)
+this.coeff == orig(this.coeff)
+this.coeff.getClass().getName() == orig(this.coeff.getClass().getName())
+this.coeff[] == orig(this.coeff[])
+this.measured == orig(this.measured)
+this.measured[] == orig(this.measured[])
+this.size == orig(this.size)
+this.coeff[] contains no nulls and has only one value, of length 8
+this.measured[] == [1, 1, 0]
+return has only one value
+return.toString == "(((b)/(2)))\t|__0> + \n(((a)/(2)))\t|__1>"
+Exiting Daikon.

@@ -1,0 +1,4 @@
+METHOD	org.KonohaScript.KClass	LookupMethod(java.lang.String,int)	null	null
+FIELD	org.KonohaScript.UntypedNode	null	NodeList	null
+METHOD	org.KonohaScript.KFunc	LookupMethod(java.lang.Object,java.lang.String)	null	null
+FIELD	org.KonohaScript.KClass	null	SuperClass	null

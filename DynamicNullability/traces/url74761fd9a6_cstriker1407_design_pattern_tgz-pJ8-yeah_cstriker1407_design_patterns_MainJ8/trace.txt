@@ -1,0 +1,1794 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Crop:::OBJECT
+this.name != null
+this.cropList != null
+this.cropList[] elements != null
+this.cropList.getClass().getName() == java.util.ArrayList.class
+this.getClass().getName() != this.cropList.getClass().getName()
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Crop.Crop(java.lang.String):::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Crop.Crop(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.cropList[] == []
+this.cropList[].getClass().getName() == []
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Crop.addCrop(yeah.cstriker1407.design_patterns.Composite.Crop):::ENTER
+this.cropList.getClass().getName() == arg0.cropList.getClass().getName()
+this.getClass().getName() == yeah.cstriker1407.design_patterns.Composite.Leader.class
+this.name.toString one of { "A01", "A11", "A12" }
+arg0.cropList[] == []
+arg0.cropList[].getClass().getName() == []
+size(this.cropList[]) one of { 0, 1, 2 }
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Crop.addCrop(yeah.cstriker1407.design_patterns.Composite.Crop):::EXIT
+this.name == return.name
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.cropList == return.cropList
+this.cropList == orig(this.cropList)
+this.cropList.getClass().getName() == arg0.cropList.getClass().getName()
+this.cropList.getClass().getName() == return.cropList.getClass().getName()
+this.cropList.getClass().getName() == orig(this.cropList.getClass().getName())
+this.cropList.getClass().getName() == orig(arg0.cropList.getClass().getName())
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+arg0.cropList == orig(arg0.cropList)
+arg0.cropList[] == orig(arg0.cropList[])
+return == orig(this)
+return.getClass().getName() == orig(this.getClass().getName())
+size(this.cropList[])-1 == orig(size(this.cropList[]))
+this.name.toString one of { "A01", "A11", "A12" }
+arg0.cropList[] == []
+arg0.cropList[].getClass().getName() == []
+return.getClass().getName() == yeah.cstriker1407.design_patterns.Composite.Leader.class
+return.name.toString one of { "A01", "A11", "A12" }
+size(this.cropList[]) one of { 1, 2, 3 }
+size(return.cropList[]) one of { 1, 2, 3 }
+orig(arg0.getClass().getName()) in this.cropList[].getClass().getName()
+orig(arg0.getClass().getName()) in return.cropList[].getClass().getName()
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Crop.info():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Crop.info():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.cropList == orig(this.cropList)
+this.cropList[] == orig(this.cropList[])
+this.cropList.getClass().getName() == orig(this.cropList.getClass().getName())
+this.cropList.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Leader:::OBJECT
+this.name.toString one of { "A01", "A11", "A12" }
+this.cropList.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Leader.Leader(java.lang.String):::ENTER
+arg0.toString one of { "A01", "A11", "A12" }
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Leader.Leader(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.cropList[] == []
+this.cropList[].getClass().getName() == []
+arg0.toString one of { "A01", "A11", "A12" }
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Leader.oper():::ENTER
+size(this.cropList[]) one of { 1, 2, 3 }
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Leader.oper():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.cropList == orig(this.cropList)
+this.cropList[] == orig(this.cropList[])
+this.cropList.getClass().getName() == orig(this.cropList.getClass().getName())
+return has only one value
+return.toString == "LeaderOper"
+size(this.cropList[]) one of { 1, 2, 3 }
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Leaf:::OBJECT
+this.name != null
+this.cropList != null
+this.cropList[] == []
+this.cropList[].getClass().getName() == []
+this.cropList.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Leaf.Leaf(java.lang.String):::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Leaf.Leaf(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Leaf.oper():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.Composite.Leaf.oper():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.cropList == orig(this.cropList)
+this.cropList[] == orig(this.cropList[])
+this.cropList.getClass().getName() == orig(this.cropList.getClass().getName())
+return has only one value
+return.toString == "LeafOper"
+===========================================================================
+yeah.cstriker1407.design_patterns.Main.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+yeah.cstriker1407.design_patterns.Main.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.Factory:::OBJECT
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.Factory.Factory(yeah.cstriker1407.design_patterns.bridge.implementor.Product):::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.Factory.Factory(yeah.cstriker1407.design_patterns.bridge.implementor.Product):::EXIT
+this.product == orig(arg0)
+this.product.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.Factory.makeMoney():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.Factory.makeMoney():::EXIT
+this.product == orig(this.product)
+this.product.getClass().getName() == orig(this.product.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.HouseFactory:::OBJECT
+this has only one value
+this.product has only one value
+this.product.getClass().getName() == yeah.cstriker1407.design_patterns.bridge.implementor.House.class
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.HouseFactory.HouseFactory(yeah.cstriker1407.design_patterns.bridge.implementor.House):::ENTER
+arg0 has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.HouseFactory.HouseFactory(yeah.cstriker1407.design_patterns.bridge.implementor.House):::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.HouseFactory.makeMoney():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.HouseFactory.makeMoney():::EXIT
+this.product == orig(this.product)
+this.product.getClass().getName() == orig(this.product.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.SanzaiFactory:::OBJECT
+this has only one value
+this.product has only one value
+this.product.getClass().getName() == yeah.cstriker1407.design_patterns.bridge.implementor.Mp3.class
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.SanzaiFactory.SanzaiFactory(yeah.cstriker1407.design_patterns.bridge.implementor.Product):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == yeah.cstriker1407.design_patterns.bridge.implementor.Mp3.class
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.SanzaiFactory.SanzaiFactory(yeah.cstriker1407.design_patterns.bridge.implementor.Product):::EXIT
+this.product == orig(arg0)
+this.product.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.SanzaiFactory.makeMoney():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.abstraction.SanzaiFactory.makeMoney():::EXIT
+this.product == orig(this.product)
+this.product.getClass().getName() == orig(this.product.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.House:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.House.House():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.House.beProducted():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.House.beProducted():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.House.beSelled():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.House.beSelled():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.Mp3:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.Mp3.Mp3():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.Mp3.beProducted():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.Mp3.beProducted():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.Mp3.beSelled():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.Mp3.beSelled():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.Product:::OBJECT
+===========================================================================
+yeah.cstriker1407.design_patterns.bridge.implementor.Product.Product():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACar:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACar.ACar():::EXIT
+this.bIsAlarm == false
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACar.alarm():::ENTER
+this.bIsAlarm == true
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACar.alarm():::EXIT
+this.bIsAlarm == orig(this.bIsAlarm)
+this.bIsAlarm == true
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACar.start():::ENTER
+this.bIsAlarm == true
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACar.start():::EXIT
+this.bIsAlarm == orig(this.bIsAlarm)
+this.bIsAlarm == true
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACar.stop():::ENTER
+this.bIsAlarm == true
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACar.stop():::EXIT
+this.bIsAlarm == orig(this.bIsAlarm)
+this.bIsAlarm == true
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACarBuilder:::OBJECT
+this has only one value
+this.aCar has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACarBuilder.ACarBuilder():::EXIT
+this.aCar.bIsAlarm == false
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACarBuilder.getCar():::ENTER
+this.aCar.bIsAlarm == true
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACarBuilder.getCar():::EXIT
+this.aCar == orig(this.aCar)
+this.aCar.bIsAlarm == return.bIsAlarm
+return.bIsAlarm == orig(this.aCar.bIsAlarm)
+return has only one value
+return.getClass().getName() == yeah.cstriker1407.design_patterns.builder.ACar.class
+return.bIsAlarm == true
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACarBuilder.setAlarm(boolean):::ENTER
+this.aCar.bIsAlarm == false
+arg0 == true
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.ACarBuilder.setAlarm(boolean):::EXIT
+this.aCar == orig(this.aCar)
+this.aCar.bIsAlarm == orig(arg0)
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BCar:::OBJECT
+this has only one value
+this.bIsAlarm == false
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BCar.BCar():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BCar.start():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BCar.start():::EXIT
+this.bIsAlarm == orig(this.bIsAlarm)
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BCar.stop():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BCar.stop():::EXIT
+this.bIsAlarm == orig(this.bIsAlarm)
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BCarBuilder:::OBJECT
+this has only one value
+this.bCar has only one value
+this.bCar.bIsAlarm == false
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BCarBuilder.BCarBuilder():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BCarBuilder.getCar():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BCarBuilder.getCar():::EXIT
+this.bCar == orig(this.bCar)
+this.bCar.bIsAlarm == return.bIsAlarm
+return.bIsAlarm == orig(this.bCar.bIsAlarm)
+return has only one value
+return.getClass().getName() == yeah.cstriker1407.design_patterns.builder.BCar.class
+return.bIsAlarm == false
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BCarBuilder.setAlarm(boolean):::ENTER
+this.bCar.bIsAlarm == arg0
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BCarBuilder.setAlarm(boolean):::EXIT
+this.bCar == orig(this.bCar)
+this.bCar.bIsAlarm == orig(arg0)
+orig(arg0) == false
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BuilderDirector:::OBJECT
+this has only one value
+this.aCarBuilder has only one value
+this.aCarBuilder.aCar has only one value
+this.bCarBuilder has only one value
+this.bCarBuilder.bCar has only one value
+this.bCarBuilder.bCar.bIsAlarm == false
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BuilderDirector.BuilderDirector():::EXIT
+this.aCarBuilder.aCar.bIsAlarm == false
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BuilderDirector.getACar():::ENTER
+this.aCarBuilder.aCar.bIsAlarm == false
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BuilderDirector.getACar():::EXIT
+this.aCarBuilder == orig(this.aCarBuilder)
+this.aCarBuilder.aCar == return
+this.aCarBuilder.aCar.bIsAlarm == return.bIsAlarm
+this.bCarBuilder == orig(this.bCarBuilder)
+this.bCarBuilder.bCar == orig(this.bCarBuilder.bCar)
+this.bCarBuilder.bCar.bIsAlarm == orig(this.bCarBuilder.bCar.bIsAlarm)
+return == orig(this.aCarBuilder.aCar)
+return has only one value
+return.bIsAlarm == true
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BuilderDirector.getBCar():::ENTER
+this.aCarBuilder.aCar.bIsAlarm == true
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.BuilderDirector.getBCar():::EXIT
+this.aCarBuilder == orig(this.aCarBuilder)
+this.aCarBuilder.aCar == orig(this.aCarBuilder.aCar)
+this.aCarBuilder.aCar.bIsAlarm == orig(this.aCarBuilder.aCar.bIsAlarm)
+this.bCarBuilder == orig(this.bCarBuilder)
+this.bCarBuilder.bCar == return
+this.bCarBuilder.bCar.bIsAlarm == return.bIsAlarm
+return == orig(this.bCarBuilder.bCar)
+return.bIsAlarm == orig(this.bCarBuilder.bCar.bIsAlarm)
+this.aCarBuilder.aCar.bIsAlarm == true
+return has only one value
+return.bIsAlarm == false
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.CarBuilder:::OBJECT
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.CarBuilder.CarBuilder():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.CarModel:::OBJECT
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.CarModel.CarModel():::EXIT
+this.bIsAlarm == false
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.CarModel.isAlarm():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.CarModel.isAlarm():::EXIT
+this.bIsAlarm == return
+return == orig(this.bIsAlarm)
+(return == false)  <==>  (orig(this.getClass().getName()) == yeah.cstriker1407.design_patterns.builder.BCar.class)
+(return == true)  <==>  (orig(this.getClass().getName()) == yeah.cstriker1407.design_patterns.builder.ACar.class)
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.CarModel.isAlarm():::EXIT;condition="return == true"
+return == true
+orig(this) has only one value
+orig(this.getClass().getName()) == yeah.cstriker1407.design_patterns.builder.ACar.class
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.CarModel.isAlarm():::EXIT;condition="not(return == true)"
+return == false
+orig(this) has only one value
+orig(this.getClass().getName()) == yeah.cstriker1407.design_patterns.builder.BCar.class
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.CarModel.run():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.CarModel.run():::EXIT
+this.bIsAlarm == orig(this.bIsAlarm)
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.CarModel.setAlarm(boolean):::ENTER
+this.bIsAlarm == false
+===========================================================================
+yeah.cstriker1407.design_patterns.builder.CarModel.setAlarm(boolean):::EXIT
+this.bIsAlarm == orig(arg0)
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.DecoratorSchoolReport:::OBJECT
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.DecoratorSchoolReport.DecoratorSchoolReport(yeah.cstriker1407.design_patterns.decorator.SchoolReport):::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.DecoratorSchoolReport.DecoratorSchoolReport(yeah.cstriker1407.design_patterns.decorator.SchoolReport):::EXIT
+this.report == orig(arg0)
+this.report.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.DecoratorSchoolReport.report():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.DecoratorSchoolReport.report():::EXIT
+this.report == orig(this.report)
+this.report.getClass().getName() == orig(this.report.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.FinalTestReport:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.FinalTestReport.FinalTestReport():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.FinalTestReport.report():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.FinalTestReport.report():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.HighScoreDecorator:::OBJECT
+this has only one value
+this.report has only one value
+this.report.getClass().getName() == yeah.cstriker1407.design_patterns.decorator.FinalTestReport.class
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.HighScoreDecorator.HighScoreDecorator(yeah.cstriker1407.design_patterns.decorator.SchoolReport):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == yeah.cstriker1407.design_patterns.decorator.FinalTestReport.class
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.HighScoreDecorator.HighScoreDecorator(yeah.cstriker1407.design_patterns.decorator.SchoolReport):::EXIT
+this.report == orig(arg0)
+this.report.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.HighScoreDecorator.report():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.HighScoreDecorator.report():::EXIT
+this.report == orig(this.report)
+this.report.getClass().getName() == orig(this.report.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.SchoolReport:::OBJECT
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.SchoolReport.SchoolReport():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.SortDecorator:::OBJECT
+this has only one value
+this.report has only one value
+this.report.getClass().getName() == yeah.cstriker1407.design_patterns.decorator.HighScoreDecorator.class
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.SortDecorator.SortDecorator(yeah.cstriker1407.design_patterns.decorator.SchoolReport):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == yeah.cstriker1407.design_patterns.decorator.HighScoreDecorator.class
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.SortDecorator.SortDecorator(yeah.cstriker1407.design_patterns.decorator.SchoolReport):::EXIT
+this.report == orig(arg0)
+this.report.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.SortDecorator.report():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.decorator.SortDecorator.report():::EXIT
+this.report == orig(this.report)
+this.report.getClass().getName() == orig(this.report.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.Linux:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.Linux.Linux():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.Linux.draw():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.Linux.draw():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.LinuxProvider:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.LinuxProvider.LinuxProvider():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.LinuxProvider.produce():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.LinuxProvider.produce():::EXIT
+return has only one value
+return.getClass().getName() == yeah.cstriker1407.design_patterns.factory.abstractfactory.Linux.class
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.Win:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.Win.Win():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.Win.draw():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.Win.draw():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.WinProvider:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.WinProvider.WinProvider():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.WinProvider.produce():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.factory.abstractfactory.WinProvider.produce():::EXIT
+return has only one value
+return.getClass().getName() == yeah.cstriker1407.design_patterns.factory.abstractfactory.Win.class
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.AddExpression:::OBJECT
+this.right.getClass().getName() == yeah.cstriker1407.design_patterns.interpreter.VarExpression.class
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.AddExpression.AddExpression(yeah.cstriker1407.design_patterns.interpreter.Expression, yeah.cstriker1407.design_patterns.interpreter.Expression):::ENTER
+arg1.getClass().getName() == yeah.cstriker1407.design_patterns.interpreter.VarExpression.class
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.AddExpression.AddExpression(yeah.cstriker1407.design_patterns.interpreter.Expression, yeah.cstriker1407.design_patterns.interpreter.Expression):::EXIT
+this.left == orig(arg0)
+this.left.getClass().getName() == orig(arg0.getClass().getName())
+this.right == orig(arg1)
+this.right.getClass().getName() == orig(arg1.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.AddExpression.interpreter(java.util.HashMap):::ENTER
+arg0 has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.AddExpression.interpreter(java.util.HashMap):::EXIT
+this.left == orig(this.left)
+this.left.getClass().getName() == orig(this.left.getClass().getName())
+this.right == orig(this.right)
+this.right.getClass().getName() == orig(this.right.getClass().getName())
+return one of { 30, 40 }
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.Calculator.cal(java.lang.String, java.util.HashMap):::ENTER
+arg0 has only one value
+arg0.toString == "a+b-c+d"
+arg1 has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.Calculator.cal(java.lang.String, java.util.HashMap):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "a+b-c+d"
+return == 40
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.Expression:::OBJECT
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.Expression.Expression():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.SubExpression:::OBJECT
+this has only one value
+this.left has only one value
+this.left.getClass().getName() == yeah.cstriker1407.design_patterns.interpreter.AddExpression.class
+this.right has only one value
+this.right.getClass().getName() == yeah.cstriker1407.design_patterns.interpreter.VarExpression.class
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.SubExpression.SubExpression(yeah.cstriker1407.design_patterns.interpreter.Expression, yeah.cstriker1407.design_patterns.interpreter.Expression):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == yeah.cstriker1407.design_patterns.interpreter.AddExpression.class
+arg1 has only one value
+arg1.getClass().getName() == yeah.cstriker1407.design_patterns.interpreter.VarExpression.class
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.SubExpression.SubExpression(yeah.cstriker1407.design_patterns.interpreter.Expression, yeah.cstriker1407.design_patterns.interpreter.Expression):::EXIT
+this.left == orig(arg0)
+this.left.getClass().getName() == orig(arg0.getClass().getName())
+this.right == orig(arg1)
+this.right.getClass().getName() == orig(arg1.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.SubExpression.interpreter(java.util.HashMap):::ENTER
+arg0 has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.SubExpression.interpreter(java.util.HashMap):::EXIT
+this.left == orig(this.left)
+this.left.getClass().getName() == orig(this.left.getClass().getName())
+this.right == orig(this.right)
+this.right.getClass().getName() == orig(this.right.getClass().getName())
+return == 0
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.SymbolExpression:::OBJECT
+this.right.getClass().getName() == yeah.cstriker1407.design_patterns.interpreter.VarExpression.class
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.SymbolExpression.SymbolExpression(yeah.cstriker1407.design_patterns.interpreter.Expression, yeah.cstriker1407.design_patterns.interpreter.Expression):::ENTER
+arg1.getClass().getName() == yeah.cstriker1407.design_patterns.interpreter.VarExpression.class
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.SymbolExpression.SymbolExpression(yeah.cstriker1407.design_patterns.interpreter.Expression, yeah.cstriker1407.design_patterns.interpreter.Expression):::EXIT
+this.left == orig(arg0)
+this.left.getClass().getName() == orig(arg0.getClass().getName())
+this.right == orig(arg1)
+this.right.getClass().getName() == orig(arg1.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.VarExpression:::OBJECT
+this.key != null
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.VarExpression.VarExpression(java.lang.String):::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.VarExpression.VarExpression(java.lang.String):::EXIT
+this.key == orig(arg0)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.VarExpression.interpreter(java.util.HashMap):::ENTER
+arg0 has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.interpreter.VarExpression.interpreter(java.util.HashMap):::EXIT
+this.key == orig(this.key)
+this.key.toString == orig(this.key.toString)
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.AbstractColleague:::OBJECT
+this.mediator has only one value
+this.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+this.mediator.purchase == null
+this.mediator.sale == null
+this.mediator.stock == null
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.AbstractColleague.AbstractColleague(yeah.cstriker1407.design_patterns.mediator.AbstractMediator):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+arg0.purchase == null
+arg0.sale == null
+arg0.stock == null
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.AbstractColleague.AbstractColleague(yeah.cstriker1407.design_patterns.mediator.AbstractMediator):::EXIT
+this.mediator == orig(arg0)
+this.mediator.getClass().getName() == orig(arg0.getClass().getName())
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+arg0.purchase == orig(arg0.purchase)
+arg0.sale == orig(arg0.sale)
+arg0.stock == orig(arg0.stock)
+arg0.purchase == null
+arg0.sale == null
+arg0.stock == null
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.AbstractMediator:::OBJECT
+this == this.purchase.mediator
+this == this.sale.mediator
+this == this.stock.mediator
+this.getClass().getName() == this.purchase.mediator.getClass().getName()
+this.getClass().getName() == this.sale.mediator.getClass().getName()
+this.getClass().getName() == this.stock.mediator.getClass().getName()
+this.purchase == this.purchase.mediator.purchase
+this.purchase == this.sale.mediator.purchase
+this.purchase == this.stock.mediator.purchase
+this.purchase.mediator == this.sale.mediator
+this.purchase.mediator == this.stock.mediator
+this.purchase.mediator.getClass().getName() == this.sale.mediator.getClass().getName()
+this.purchase.mediator.getClass().getName() == this.stock.mediator.getClass().getName()
+this.purchase.mediator.purchase == this.sale.mediator.purchase
+this.purchase.mediator.purchase == this.stock.mediator.purchase
+this.purchase.mediator.sale == this.sale
+this.purchase.mediator.sale == this.sale.mediator.sale
+this.purchase.mediator.sale == this.stock.mediator.sale
+this.purchase.mediator.stock == this.sale.mediator.stock
+this.purchase.mediator.stock == this.stock
+this.purchase.mediator.stock == this.stock.mediator.stock
+this.sale == this.sale.mediator.sale
+this.sale == this.stock.mediator.sale
+this.sale.mediator == this.stock.mediator
+this.sale.mediator.getClass().getName() == this.stock.mediator.getClass().getName()
+this.sale.mediator.purchase == this.stock.mediator.purchase
+this.sale.mediator.sale == this.stock.mediator.sale
+this.sale.mediator.stock == this.stock
+this.sale.mediator.stock == this.stock.mediator.stock
+this.stock == this.stock.mediator.stock
+this has only one value
+this.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+this.purchase.mediator has only one value
+this.purchase.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+this.purchase.mediator.purchase has only one value
+this.sale.mediator has only one value
+this.sale.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+this.sale.mediator.purchase has only one value
+this.sale.mediator.sale has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+this.stock.mediator has only one value
+this.stock.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+this.stock.mediator.purchase has only one value
+this.stock.mediator.sale has only one value
+this.stock.mediator.stock has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.AbstractMediator.AbstractMediator():::EXIT
+this.purchase == null
+this.sale == null
+this.stock == null
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.AbstractMediator.setPurchase(yeah.cstriker1407.design_patterns.mediator.Purchase):::ENTER
+this == arg0.mediator
+this.getClass().getName() == arg0.mediator.getClass().getName()
+this.purchase == arg0.mediator.purchase
+this.purchase == null
+this.sale == null
+this.stock == null
+arg0 has only one value
+arg0.mediator has only one value
+arg0.mediator.sale == null
+arg0.mediator.stock == null
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.AbstractMediator.setPurchase(yeah.cstriker1407.design_patterns.mediator.Purchase):::EXIT
+this.purchase == arg0.mediator.purchase
+this.purchase == orig(arg0)
+this.purchase.mediator == arg0.mediator
+this.purchase.mediator.getClass().getName() == arg0.mediator.getClass().getName()
+this.sale == orig(this.sale)
+this.stock == orig(this.stock)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+arg0.mediator == orig(this)
+arg0.mediator == orig(arg0.mediator)
+arg0.mediator.getClass().getName() == orig(this.getClass().getName())
+arg0.mediator.getClass().getName() == orig(arg0.mediator.getClass().getName())
+arg0.mediator.sale == orig(arg0.mediator.sale)
+arg0.mediator.stock == orig(arg0.mediator.stock)
+this.purchase has only one value
+this.sale == null
+this.stock == null
+arg0.mediator has only one value
+arg0.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+arg0.mediator.sale == null
+arg0.mediator.stock == null
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.AbstractMediator.setSale(yeah.cstriker1407.design_patterns.mediator.Sale):::ENTER
+this.purchase == arg0.mediator.purchase
+this.purchase.mediator == arg0.mediator
+this.purchase.mediator.getClass().getName() == arg0.mediator.getClass().getName()
+this.sale == arg0.mediator.sale
+this.purchase has only one value
+this.sale == null
+this.stock == null
+arg0 has only one value
+arg0.mediator.stock == null
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.AbstractMediator.setSale(yeah.cstriker1407.design_patterns.mediator.Sale):::EXIT
+this.purchase == arg0.mediator.purchase
+this.purchase == orig(this.purchase)
+this.purchase == orig(this.purchase.mediator.purchase)
+this.purchase == orig(arg0.mediator.purchase)
+this.purchase.mediator == arg0.mediator
+this.purchase.mediator.getClass().getName() == arg0.mediator.getClass().getName()
+this.sale == arg0.mediator.sale
+this.sale == orig(arg0)
+this.sale.mediator == arg0.mediator
+this.sale.mediator.getClass().getName() == arg0.mediator.getClass().getName()
+this.stock == orig(this.purchase.mediator.stock)
+this.stock == orig(this.stock)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+arg0.mediator == orig(this)
+arg0.mediator == orig(this.purchase.mediator)
+arg0.mediator == orig(arg0.mediator)
+arg0.mediator.getClass().getName() == orig(this.getClass().getName())
+arg0.mediator.getClass().getName() == orig(this.purchase.mediator.getClass().getName())
+arg0.mediator.getClass().getName() == orig(arg0.mediator.getClass().getName())
+arg0.mediator.stock == orig(arg0.mediator.stock)
+this.purchase has only one value
+this.sale has only one value
+this.stock == null
+arg0.mediator has only one value
+arg0.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+arg0.mediator.stock == null
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.AbstractMediator.setStock(yeah.cstriker1407.design_patterns.mediator.Stock):::ENTER
+this.purchase == arg0.mediator.purchase
+this.purchase.mediator == arg0.mediator
+this.purchase.mediator.getClass().getName() == arg0.mediator.getClass().getName()
+this.sale == arg0.mediator.sale
+this.stock == arg0.mediator.stock
+this.purchase has only one value
+this.sale has only one value
+this.stock == null
+arg0 has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.AbstractMediator.setStock(yeah.cstriker1407.design_patterns.mediator.Stock):::EXIT
+this.purchase == arg0.mediator.purchase
+this.purchase == orig(this.purchase)
+this.purchase == orig(this.purchase.mediator.purchase)
+this.purchase == orig(this.sale.mediator.purchase)
+this.purchase == orig(arg0.mediator.purchase)
+this.purchase.mediator == arg0.mediator
+this.purchase.mediator.getClass().getName() == arg0.mediator.getClass().getName()
+this.sale == arg0.mediator.sale
+this.sale == orig(this.purchase.mediator.sale)
+this.sale == orig(this.sale)
+this.sale == orig(this.sale.mediator.sale)
+this.sale == orig(arg0.mediator.sale)
+this.sale.mediator == arg0.mediator
+this.sale.mediator.getClass().getName() == arg0.mediator.getClass().getName()
+this.stock == arg0.mediator.stock
+this.stock == orig(arg0)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+this.stock.mediator == arg0.mediator
+this.stock.mediator.getClass().getName() == arg0.mediator.getClass().getName()
+arg0.mediator == orig(this)
+arg0.mediator == orig(this.purchase.mediator)
+arg0.mediator == orig(this.sale.mediator)
+arg0.mediator == orig(arg0.mediator)
+arg0.mediator.getClass().getName() == orig(this.getClass().getName())
+arg0.mediator.getClass().getName() == orig(this.purchase.mediator.getClass().getName())
+arg0.mediator.getClass().getName() == orig(this.sale.mediator.getClass().getName())
+arg0.mediator.getClass().getName() == orig(arg0.mediator.getClass().getName())
+this.purchase has only one value
+this.sale has only one value
+this.stock has only one value
+arg0.mediator has only one value
+arg0.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Mediator:::OBJECT
+this.purchase == this.purchase.mediator.purchase
+this.purchase.mediator == this.sale.mediator
+this.purchase.mediator == this.stock.mediator
+this.purchase.mediator.getClass().getName() == this.sale.mediator.getClass().getName()
+this.purchase.mediator.getClass().getName() == this.stock.mediator.getClass().getName()
+this.purchase.mediator.purchase == this.sale.mediator.purchase
+this.purchase.mediator.purchase == this.stock.mediator.purchase
+this.purchase.mediator.sale == this.sale
+this.purchase.mediator.sale == this.sale.mediator.sale
+this.purchase.mediator.sale == this.stock.mediator.sale
+this.purchase.mediator.stock == this.sale.mediator.stock
+this.purchase.mediator.stock == this.stock
+this.purchase.mediator.stock == this.stock.mediator.stock
+this has only one value
+this.purchase.mediator has only one value
+this.purchase.mediator != null
+this.purchase.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+this.purchase.mediator.purchase has only one value
+this.purchase.mediator.purchase != null
+this.purchase.mediator.sale has only one value
+this.purchase.mediator.sale != null
+this.purchase.mediator.stock has only one value
+this.purchase.mediator.stock != null
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER one of { 99, 100 }
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Mediator.Mediator():::EXIT
+this.purchase == null
+this.sale == null
+this.stock == null
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Mediator.buyComputer(int):::ENTER
+this.purchase == this.sale.mediator.purchase
+this.purchase == this.stock.mediator.purchase
+this.sale == this.sale.mediator.sale
+this.sale == this.stock.mediator.sale
+this.sale.mediator.stock == this.stock
+this.stock == this.stock.mediator.stock
+this.purchase has only one value
+this.sale has only one value
+this.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+arg0 == 100
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Mediator.buyComputer(int):::EXIT
+this.purchase == this.sale.mediator.purchase
+this.purchase == this.stock.mediator.purchase
+this.purchase == orig(this.purchase)
+this.purchase == orig(this.purchase.mediator.purchase)
+this.purchase == orig(this.sale.mediator.purchase)
+this.purchase == orig(this.stock.mediator.purchase)
+this.purchase.mediator == orig(this.purchase.mediator)
+this.purchase.mediator == orig(this.sale.mediator)
+this.purchase.mediator == orig(this.stock.mediator)
+this.purchase.mediator.getClass().getName() == orig(this.purchase.mediator.getClass().getName())
+this.purchase.mediator.getClass().getName() == orig(this.sale.mediator.getClass().getName())
+this.purchase.mediator.getClass().getName() == orig(this.stock.mediator.getClass().getName())
+this.sale == this.sale.mediator.sale
+this.sale == this.stock.mediator.sale
+this.sale == orig(this.purchase.mediator.sale)
+this.sale == orig(this.sale)
+this.sale == orig(this.sale.mediator.sale)
+this.sale == orig(this.stock.mediator.sale)
+this.sale.mediator.stock == this.stock
+this.stock == this.stock.mediator.stock
+this.stock == orig(this.purchase.mediator.stock)
+this.stock == orig(this.sale.mediator.stock)
+this.stock == orig(this.stock)
+this.stock == orig(this.stock.mediator.stock)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+this.purchase has only one value
+this.sale has only one value
+this.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Mediator.clearStock():::ENTER
+this.purchase == this.sale.mediator.purchase
+this.purchase == this.stock.mediator.purchase
+this.sale == this.sale.mediator.sale
+this.sale == this.stock.mediator.sale
+this.sale.mediator.stock == this.stock
+this.stock == this.stock.mediator.stock
+this.purchase has only one value
+this.sale has only one value
+this.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Mediator.clearStock():::EXIT
+this.purchase == this.sale.mediator.purchase
+this.purchase == this.stock.mediator.purchase
+this.purchase == orig(this.purchase)
+this.purchase == orig(this.purchase.mediator.purchase)
+this.purchase == orig(this.sale.mediator.purchase)
+this.purchase == orig(this.stock.mediator.purchase)
+this.purchase.mediator == orig(this.purchase.mediator)
+this.purchase.mediator == orig(this.sale.mediator)
+this.purchase.mediator == orig(this.stock.mediator)
+this.purchase.mediator.getClass().getName() == orig(this.purchase.mediator.getClass().getName())
+this.purchase.mediator.getClass().getName() == orig(this.sale.mediator.getClass().getName())
+this.purchase.mediator.getClass().getName() == orig(this.stock.mediator.getClass().getName())
+this.sale == this.sale.mediator.sale
+this.sale == this.stock.mediator.sale
+this.sale == orig(this.purchase.mediator.sale)
+this.sale == orig(this.sale)
+this.sale == orig(this.sale.mediator.sale)
+this.sale == orig(this.stock.mediator.sale)
+this.sale.mediator.stock == this.stock
+this.stock == this.stock.mediator.stock
+this.stock == orig(this.purchase.mediator.stock)
+this.stock == orig(this.sale.mediator.stock)
+this.stock == orig(this.stock)
+this.stock == orig(this.stock.mediator.stock)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+this.purchase has only one value
+this.sale has only one value
+this.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Mediator.execute(java.lang.String, java.lang.Object[]):::ENTER
+this.purchase == this.sale.mediator.purchase
+this.purchase == this.stock.mediator.purchase
+this.sale == this.sale.mediator.sale
+this.sale == this.stock.mediator.sale
+this.sale.mediator.stock == this.stock
+this.stock == this.stock.mediator.stock
+this.purchase has only one value
+this.sale has only one value
+this.stock has only one value
+arg1.getClass().getName() == java.lang.Object[].class
+size(arg1[]) one of { 0, 1 }
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Mediator.execute(java.lang.String, java.lang.Object[]):::EXIT
+this.purchase == this.sale.mediator.purchase
+this.purchase == this.stock.mediator.purchase
+this.purchase == orig(this.purchase)
+this.purchase == orig(this.purchase.mediator.purchase)
+this.purchase == orig(this.sale.mediator.purchase)
+this.purchase == orig(this.stock.mediator.purchase)
+this.purchase.mediator == orig(this.purchase.mediator)
+this.purchase.mediator == orig(this.sale.mediator)
+this.purchase.mediator == orig(this.stock.mediator)
+this.purchase.mediator.getClass().getName() == orig(this.purchase.mediator.getClass().getName())
+this.purchase.mediator.getClass().getName() == orig(this.sale.mediator.getClass().getName())
+this.purchase.mediator.getClass().getName() == orig(this.stock.mediator.getClass().getName())
+this.sale == this.sale.mediator.sale
+this.sale == this.stock.mediator.sale
+this.sale == orig(this.purchase.mediator.sale)
+this.sale == orig(this.sale)
+this.sale == orig(this.sale.mediator.sale)
+this.sale == orig(this.stock.mediator.sale)
+this.sale.mediator.stock == this.stock
+this.stock == this.stock.mediator.stock
+this.stock == orig(this.purchase.mediator.stock)
+this.stock == orig(this.sale.mediator.stock)
+this.stock == orig(this.stock)
+this.stock == orig(this.stock.mediator.stock)
+arg0.toString == orig(arg0.toString)
+arg1[] == orig(arg1[])
+this.purchase has only one value
+this.sale has only one value
+this.stock has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Mediator.offSell():::ENTER
+this.purchase == this.sale.mediator.purchase
+this.purchase == this.stock.mediator.purchase
+this.sale == this.sale.mediator.sale
+this.sale == this.stock.mediator.sale
+this.sale.mediator.stock == this.stock
+this.stock == this.stock.mediator.stock
+this.purchase has only one value
+this.sale has only one value
+this.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Mediator.offSell():::EXIT
+this.purchase == this.sale.mediator.purchase
+this.purchase == this.stock.mediator.purchase
+this.purchase == orig(this.purchase)
+this.purchase == orig(this.purchase.mediator.purchase)
+this.purchase == orig(this.sale.mediator.purchase)
+this.purchase == orig(this.stock.mediator.purchase)
+this.purchase.mediator == orig(this.purchase.mediator)
+this.purchase.mediator == orig(this.sale.mediator)
+this.purchase.mediator == orig(this.stock.mediator)
+this.purchase.mediator.getClass().getName() == orig(this.purchase.mediator.getClass().getName())
+this.purchase.mediator.getClass().getName() == orig(this.sale.mediator.getClass().getName())
+this.purchase.mediator.getClass().getName() == orig(this.stock.mediator.getClass().getName())
+this.sale == this.sale.mediator.sale
+this.sale == this.stock.mediator.sale
+this.sale == orig(this.purchase.mediator.sale)
+this.sale == orig(this.sale)
+this.sale == orig(this.sale.mediator.sale)
+this.sale == orig(this.stock.mediator.sale)
+this.sale.mediator.stock == this.stock
+this.stock == this.stock.mediator.stock
+this.stock == orig(this.purchase.mediator.stock)
+this.stock == orig(this.sale.mediator.stock)
+this.stock == orig(this.stock)
+this.stock == orig(this.stock.mediator.stock)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+this.purchase has only one value
+this.sale has only one value
+this.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Mediator.sellComputer(int):::ENTER
+this.purchase == this.sale.mediator.purchase
+this.purchase == this.stock.mediator.purchase
+this.sale == this.sale.mediator.sale
+this.sale == this.stock.mediator.sale
+this.sale.mediator.stock == this.stock
+this.stock == this.stock.mediator.stock
+this.purchase has only one value
+this.sale has only one value
+this.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+arg0 == 1
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Mediator.sellComputer(int):::EXIT
+this.purchase == this.sale.mediator.purchase
+this.purchase == this.stock.mediator.purchase
+this.purchase == orig(this.purchase)
+this.purchase == orig(this.purchase.mediator.purchase)
+this.purchase == orig(this.sale.mediator.purchase)
+this.purchase == orig(this.stock.mediator.purchase)
+this.purchase.mediator == orig(this.purchase.mediator)
+this.purchase.mediator == orig(this.sale.mediator)
+this.purchase.mediator == orig(this.stock.mediator)
+this.purchase.mediator.getClass().getName() == orig(this.purchase.mediator.getClass().getName())
+this.purchase.mediator.getClass().getName() == orig(this.sale.mediator.getClass().getName())
+this.purchase.mediator.getClass().getName() == orig(this.stock.mediator.getClass().getName())
+this.sale == this.sale.mediator.sale
+this.sale == this.stock.mediator.sale
+this.sale == orig(this.purchase.mediator.sale)
+this.sale == orig(this.sale)
+this.sale == orig(this.sale.mediator.sale)
+this.sale == orig(this.stock.mediator.sale)
+this.sale.mediator.stock == this.stock
+this.stock == this.stock.mediator.stock
+this.stock == orig(this.purchase.mediator.stock)
+this.stock == orig(this.sale.mediator.stock)
+this.stock == orig(this.stock)
+this.stock == orig(this.stock.mediator.stock)
+this.purchase has only one value
+this.sale has only one value
+this.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Purchase:::OBJECT
+this.mediator == this.mediator.purchase.mediator
+this.mediator.getClass().getName() == this.mediator.purchase.mediator.getClass().getName()
+this.mediator.purchase.mediator == this.mediator.sale.mediator
+this.mediator.purchase.mediator == this.mediator.stock.mediator
+this.mediator.purchase.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.purchase.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this has only one value
+this.mediator has only one value
+this.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+this.mediator.purchase.mediator has only one value
+this.mediator.purchase.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER one of { 99, 100 }
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Purchase.Purchase(yeah.cstriker1407.design_patterns.mediator.AbstractMediator):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+arg0.purchase == null
+arg0.sale == null
+arg0.stock == null
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Purchase.Purchase(yeah.cstriker1407.design_patterns.mediator.AbstractMediator):::EXIT
+this.mediator == orig(arg0)
+this.mediator.getClass().getName() == orig(arg0.getClass().getName())
+arg0.purchase == orig(arg0.purchase)
+arg0.sale == orig(arg0.sale)
+arg0.stock == orig(arg0.stock)
+this.mediator.purchase == null
+this.mediator.sale == null
+this.mediator.stock == null
+arg0.purchase == null
+arg0.sale == null
+arg0.stock == null
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Purchase.buyIBMcomputer(int):::ENTER
+this == this.mediator.purchase
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+arg0 == 100
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Purchase.buyIBMcomputer(int):::EXIT
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator == orig(this.mediator)
+this.mediator == orig(this.mediator.purchase.mediator)
+this.mediator == orig(this.mediator.sale.mediator)
+this.mediator == orig(this.mediator.stock.mediator)
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.getClass().getName() == orig(this.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.purchase.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.sale.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.stock.mediator.getClass().getName())
+this.mediator.purchase == orig(this)
+this.mediator.purchase == orig(this.mediator.purchase)
+this.mediator.sale == orig(this.mediator.sale)
+this.mediator.stock == orig(this.mediator.stock)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Purchase.refuseBuyIBM():::ENTER
+this == this.mediator.purchase
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Purchase.refuseBuyIBM():::EXIT
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator == orig(this.mediator)
+this.mediator == orig(this.mediator.purchase.mediator)
+this.mediator == orig(this.mediator.sale.mediator)
+this.mediator == orig(this.mediator.stock.mediator)
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.getClass().getName() == orig(this.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.purchase.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.sale.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.stock.mediator.getClass().getName())
+this.mediator.purchase == orig(this)
+this.mediator.purchase == orig(this.mediator.purchase)
+this.mediator.sale == orig(this.mediator.sale)
+this.mediator.stock == orig(this.mediator.stock)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Sale:::OBJECT
+this.mediator == this.mediator.purchase.mediator
+this.mediator.getClass().getName() == this.mediator.purchase.mediator.getClass().getName()
+this.mediator.purchase.mediator == this.mediator.sale.mediator
+this.mediator.purchase.mediator == this.mediator.stock.mediator
+this.mediator.purchase.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.purchase.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this has only one value
+this.mediator has only one value
+this.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+this.mediator.purchase.mediator has only one value
+this.mediator.purchase.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER one of { 99, 100 }
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Sale.Sale(yeah.cstriker1407.design_patterns.mediator.AbstractMediator):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+arg0.purchase == null
+arg0.sale == null
+arg0.stock == null
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Sale.Sale(yeah.cstriker1407.design_patterns.mediator.AbstractMediator):::EXIT
+this.mediator == orig(arg0)
+this.mediator.getClass().getName() == orig(arg0.getClass().getName())
+arg0.purchase == orig(arg0.purchase)
+arg0.sale == orig(arg0.sale)
+arg0.stock == orig(arg0.stock)
+this.mediator.purchase == null
+this.mediator.sale == null
+this.mediator.stock == null
+arg0.purchase == null
+arg0.sale == null
+arg0.stock == null
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Sale.getSaleStatus():::ENTER
+this == this.mediator.sale
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Sale.getSaleStatus():::EXIT
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator == orig(this.mediator)
+this.mediator == orig(this.mediator.purchase.mediator)
+this.mediator == orig(this.mediator.sale.mediator)
+this.mediator == orig(this.mediator.stock.mediator)
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.getClass().getName() == orig(this.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.purchase.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.sale.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.stock.mediator.getClass().getName())
+this.mediator.purchase == orig(this.mediator.purchase)
+this.mediator.sale == orig(this)
+this.mediator.sale == orig(this.mediator.sale)
+this.mediator.stock == orig(this.mediator.stock)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+return == 29
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Sale.offSale():::ENTER
+this == this.mediator.sale
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Sale.offSale():::EXIT
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator == orig(this.mediator)
+this.mediator == orig(this.mediator.purchase.mediator)
+this.mediator == orig(this.mediator.sale.mediator)
+this.mediator == orig(this.mediator.stock.mediator)
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.getClass().getName() == orig(this.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.purchase.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.sale.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.stock.mediator.getClass().getName())
+this.mediator.purchase == orig(this.mediator.purchase)
+this.mediator.sale == orig(this)
+this.mediator.sale == orig(this.mediator.sale)
+this.mediator.stock == orig(this.mediator.stock)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Sale.sellIBMComputer(int):::ENTER
+this == this.mediator.sale
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+arg0 == 1
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Sale.sellIBMComputer(int):::EXIT
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator == orig(this.mediator)
+this.mediator == orig(this.mediator.purchase.mediator)
+this.mediator == orig(this.mediator.sale.mediator)
+this.mediator == orig(this.mediator.stock.mediator)
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.getClass().getName() == orig(this.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.purchase.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.sale.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.stock.mediator.getClass().getName())
+this.mediator.purchase == orig(this.mediator.purchase)
+this.mediator.sale == orig(this)
+this.mediator.sale == orig(this.mediator.sale)
+this.mediator.stock == orig(this.mediator.stock)
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Stock:::CLASS
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER one of { 99, 100 }
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Stock:::OBJECT
+this.mediator == this.mediator.purchase.mediator
+this.mediator.getClass().getName() == this.mediator.purchase.mediator.getClass().getName()
+this.mediator.purchase.mediator == this.mediator.sale.mediator
+this.mediator.purchase.mediator == this.mediator.stock.mediator
+this.mediator.purchase.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.purchase.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this has only one value
+this.mediator has only one value
+this.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+this.mediator.purchase.mediator has only one value
+this.mediator.purchase.mediator.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Stock.Stock(yeah.cstriker1407.design_patterns.mediator.AbstractMediator):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == yeah.cstriker1407.design_patterns.mediator.Mediator.class
+arg0.purchase == null
+arg0.sale == null
+arg0.stock == null
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Stock.Stock(yeah.cstriker1407.design_patterns.mediator.AbstractMediator):::EXIT
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+this.mediator == orig(arg0)
+this.mediator.getClass().getName() == orig(arg0.getClass().getName())
+arg0.purchase == orig(arg0.purchase)
+arg0.sale == orig(arg0.sale)
+arg0.stock == orig(arg0.stock)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+this.mediator.purchase == null
+this.mediator.sale == null
+this.mediator.stock == null
+arg0.purchase == null
+arg0.sale == null
+arg0.stock == null
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Stock.clearStock():::ENTER
+this == this.mediator.stock
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Stock.clearStock():::EXIT
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator == orig(this.mediator)
+this.mediator == orig(this.mediator.purchase.mediator)
+this.mediator == orig(this.mediator.sale.mediator)
+this.mediator == orig(this.mediator.stock.mediator)
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.getClass().getName() == orig(this.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.purchase.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.sale.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.stock.mediator.getClass().getName())
+this.mediator.purchase == orig(this.mediator.purchase)
+this.mediator.sale == orig(this.mediator.sale)
+this.mediator.stock == orig(this)
+this.mediator.stock == orig(this.mediator.stock)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Stock.decrease(int):::ENTER
+this == this.mediator.stock
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 100
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+arg0 == 1
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Stock.decrease(int):::EXIT
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator == orig(this.mediator)
+this.mediator == orig(this.mediator.purchase.mediator)
+this.mediator == orig(this.mediator.sale.mediator)
+this.mediator == orig(this.mediator.stock.mediator)
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.getClass().getName() == orig(this.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.purchase.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.sale.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.stock.mediator.getClass().getName())
+this.mediator.purchase == orig(this.mediator.purchase)
+this.mediator.sale == orig(this.mediator.sale)
+this.mediator.stock == orig(this)
+this.mediator.stock == orig(this.mediator.stock)
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == 99
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Stock.getStockNumber():::ENTER
+this == this.mediator.stock
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.mediator.Stock.getStockNumber():::EXIT
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == return
+yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER == orig(yeah.cstriker1407.design_patterns.mediator.Stock.COMPUTER_NUMBER)
+this.mediator == this.mediator.sale.mediator
+this.mediator == this.mediator.stock.mediator
+this.mediator == orig(this.mediator)
+this.mediator == orig(this.mediator.purchase.mediator)
+this.mediator == orig(this.mediator.sale.mediator)
+this.mediator == orig(this.mediator.stock.mediator)
+this.mediator.getClass().getName() == this.mediator.sale.mediator.getClass().getName()
+this.mediator.getClass().getName() == this.mediator.stock.mediator.getClass().getName()
+this.mediator.getClass().getName() == orig(this.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.purchase.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.sale.mediator.getClass().getName())
+this.mediator.getClass().getName() == orig(this.mediator.stock.mediator.getClass().getName())
+this.mediator.purchase == orig(this.mediator.purchase)
+this.mediator.sale == orig(this.mediator.sale)
+this.mediator.stock == orig(this)
+this.mediator.stock == orig(this.mediator.stock)
+this.mediator.purchase has only one value
+this.mediator.sale has only one value
+this.mediator.stock has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.observe.MyObservable:::OBJECT
+this has only one value
+this.str has only one value
+this.str.toString == "this is MyObservable"
+===========================================================================
+yeah.cstriker1407.design_patterns.observe.MyObservable.MyObservable():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.observe.MyObservable.changed():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.observe.MyObservable.changed():::EXIT
+this.str == orig(this.str)
+this.str.toString == orig(this.str.toString)
+===========================================================================
+yeah.cstriker1407.design_patterns.observe.MyObserver:::OBJECT
+this.name.toString one of { "A", "B", "C" }
+===========================================================================
+yeah.cstriker1407.design_patterns.observe.MyObserver.MyObserver(java.lang.String):::ENTER
+arg0.toString one of { "A", "B", "C" }
+===========================================================================
+yeah.cstriker1407.design_patterns.observe.MyObserver.MyObserver(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "A", "B", "C" }
+===========================================================================
+yeah.cstriker1407.design_patterns.observe.MyObserver.update(java.util.Observable, java.lang.Object):::ENTER
+arg0 has only one value
+arg1 has only one value
+arg1.getClass().getName() == java.lang.String.class
+===========================================================================
+yeah.cstriker1407.design_patterns.observe.MyObserver.update(java.util.Observable, java.lang.Object):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler:::OBJECT
+this.maxNum one of { 0, 1, 2 }
+this.next.maxNum one of { 1, 2 }
+this.next.next.getClass().getName() == yeah.cstriker1407.design_patterns.responsechain.ChainHandler2.class
+this.next.next.maxNum == 2
+this.next.next.next == null
+this.getClass().getName() != this.next.getClass().getName()
+this.getClass().getName() != this.next.next.getClass().getName()
+this.maxNum < this.next.maxNum
+this.maxNum < this.next.next.maxNum
+this.next.getClass().getName() != this.next.next.getClass().getName()
+this.next.maxNum < this.next.next.maxNum
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler0:::OBJECT
+this has only one value
+this.maxNum == 0
+this.next.getClass().getName() == yeah.cstriker1407.design_patterns.responsechain.ChainHandler1.class
+this.next.maxNum == 1
+this.next.next has only one value
+this.next.next.getClass().getName() == yeah.cstriker1407.design_patterns.responsechain.ChainHandler2.class
+this.next.next.maxNum == 2
+this.next.next.next == null
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler0.ChainHandler0():::EXIT
+this.next == null
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler0.showInfo(int):::ENTER
+this.maxNum == arg0
+this.next has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler0.showInfo(int):::EXIT
+this.maxNum == orig(this.maxNum)
+this.maxNum == orig(arg0)
+this.next == orig(this.next)
+this.next.getClass().getName() == orig(this.next.getClass().getName())
+this.next.maxNum == orig(this.next.maxNum)
+this.next.next == orig(this.next.next)
+this.next.next.getClass().getName() == orig(this.next.next.getClass().getName())
+this.next.next.maxNum == orig(this.next.next.maxNum)
+this.next.next.next == orig(this.next.next.next)
+this.next has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler1:::OBJECT
+this has only one value
+this.maxNum == 1
+this.next.getClass().getName() == yeah.cstriker1407.design_patterns.responsechain.ChainHandler2.class
+this.next.maxNum == 2
+this.next.next == null
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler1.ChainHandler1():::EXIT
+this.next == null
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler1.showInfo(int):::ENTER
+this.maxNum == arg0
+this.next has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler1.showInfo(int):::EXIT
+this.maxNum == orig(this.maxNum)
+this.maxNum == orig(arg0)
+this.next == orig(this.next)
+this.next.getClass().getName() == orig(this.next.getClass().getName())
+this.next.maxNum == orig(this.next.maxNum)
+this.next.next == orig(this.next.next)
+this.next has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler2:::OBJECT
+this has only one value
+this.maxNum == 2
+this.next == null
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler2.ChainHandler2():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler2.showInfo(int):::ENTER
+this.maxNum == arg0
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler2.showInfo(int):::EXIT
+this.maxNum == orig(this.maxNum)
+this.maxNum == orig(arg0)
+this.next == orig(this.next)
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler.ChainHandler(int):::ENTER
+arg0 one of { 0, 1, 2 }
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler.ChainHandler(int):::EXIT
+this.maxNum == orig(arg0)
+this.next == null
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler.process(int):::ENTER
+this.maxNum <= arg0
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler.process(int):::EXIT
+this.maxNum == orig(this.maxNum)
+this.next == orig(this.next)
+this.next.getClass().getName() == orig(this.next.getClass().getName())
+this.next.maxNum == orig(this.next.maxNum)
+this.next.next == orig(this.next.next)
+this.next.next.getClass().getName() == orig(this.next.next.getClass().getName())
+this.next.next.maxNum == orig(this.next.next.maxNum)
+this.next.next.next == orig(this.next.next.next)
+this.maxNum <= orig(arg0)
+this.next.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler.setNext(yeah.cstriker1407.design_patterns.responsechain.ChainHandler):::ENTER
+this.maxNum one of { 0, 1 }
+this.next == null
+arg0.maxNum one of { 1, 2 }
+arg0.next == null
+===========================================================================
+yeah.cstriker1407.design_patterns.responsechain.ChainHandler.setNext(yeah.cstriker1407.design_patterns.responsechain.ChainHandler):::EXIT
+this.maxNum == orig(this.maxNum)
+this.next == orig(arg0)
+this.next.getClass().getName() == orig(arg0.getClass().getName())
+this.next.maxNum == arg0.maxNum
+arg0.maxNum == orig(arg0.maxNum)
+arg0.next == orig(arg0.next)
+this.maxNum one of { 0, 1 }
+this.next.next == null
+arg0.maxNum one of { 1, 2 }
+arg0.next == null
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck:::CLASS
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.Singleton_doublecheck():::EXIT
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.instance == null
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.getInstance():::ENTER
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.instance == null
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.getInstance():::EXIT19
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.getInstance():::EXIT
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.instance == return
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.instance has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.sayHello():::ENTER
+this == yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.instance
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.instance has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.sayHello():::EXIT
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.instance == orig(this)
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.instance == orig(yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.instance)
+yeah.cstriker1407.design_patterns.singleton.Singleton_doublecheck.instance has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum:::CLASS
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.INSTANCE has only one value
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.INSTANCE.i == 0
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES has only one value
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES.getClass().getName() == yeah.cstriker1407.design_patterns.singleton.Singleton_enum[].class
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES[] contains no nulls and has only one value, of length 1
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES[] elements has only one value
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES[].getClass().getName() == [yeah.cstriker1407.design_patterns.singleton.Singleton_enum]
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES[].getClass().getName() elements == yeah.cstriker1407.design_patterns.singleton.Singleton_enum.class
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES[].i == [0]
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES[].i elements == 0
+size(yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES[]) == 1
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum:::OBJECT
+this has only one value
+this.i == 0
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.Singleton_enum(java.lang.String, int):::ENTER
+arg0 has only one value
+arg0.toString == "INSTANCE"
+arg1 == 0
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.Singleton_enum(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "INSTANCE"
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.sayHello():::ENTER
+this == yeah.cstriker1407.design_patterns.singleton.Singleton_enum.INSTANCE
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.sayHello():::EXIT
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.INSTANCE == orig(this)
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.INSTANCE == orig(yeah.cstriker1407.design_patterns.singleton.Singleton_enum.INSTANCE)
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.INSTANCE.i == orig(yeah.cstriker1407.design_patterns.singleton.Singleton_enum.INSTANCE.i)
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES == orig(yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES)
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES.getClass().getName() == orig(yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES.getClass().getName())
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES[] == orig(yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES[])
+yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES[].i == orig(yeah.cstriker1407.design_patterns.singleton.Singleton_enum.$VALUES[].i)
+this.i == orig(this.i)
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_hungry:::CLASS
+yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.instance has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_hungry:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.Singleton_hungry():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.getInstance():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.getInstance():::EXIT
+yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.instance == return
+yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.instance == orig(yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.instance)
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.sayHello():::ENTER
+this == yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.instance
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.sayHello():::EXIT
+yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.instance == orig(this)
+yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.instance == orig(yeah.cstriker1407.design_patterns.singleton.Singleton_hungry.instance)
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_lazy:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_lazy.Singleton_lazy():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_lazy.getInstance():::EXIT
+return has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_lazy.sayHello():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.singleton.Singleton_lazy.sayHello():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftClose:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftClose.LiftClose():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftClose.close():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftClose.close():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftClose.open():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftClose.open():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftClose.run():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftClose.run():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftOpen:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftOpen.LiftOpen():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftOpen.close():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftOpen.close():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftOpen.open():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftOpen.open():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftRun:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftRun.LiftRun():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftRun.stop():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftRun.stop():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftStates:::CLASS
+yeah.cstriker1407.design_patterns.state.LiftStates.StopState.getClass().getName() == yeah.cstriker1407.design_patterns.state.LiftStates.currentLiftState.getClass().getName()
+yeah.cstriker1407.design_patterns.state.LiftStates.OpenState has only one value
+yeah.cstriker1407.design_patterns.state.LiftStates.OpenState.getClass().getName() == yeah.cstriker1407.design_patterns.state.LiftOpen.class
+yeah.cstriker1407.design_patterns.state.LiftStates.CloseState has only one value
+yeah.cstriker1407.design_patterns.state.LiftStates.CloseState.getClass().getName() == yeah.cstriker1407.design_patterns.state.LiftClose.class
+yeah.cstriker1407.design_patterns.state.LiftStates.RunState has only one value
+yeah.cstriker1407.design_patterns.state.LiftStates.RunState.getClass().getName() == yeah.cstriker1407.design_patterns.state.LiftRun.class
+yeah.cstriker1407.design_patterns.state.LiftStates.StopState has only one value
+yeah.cstriker1407.design_patterns.state.LiftStates.StopState.getClass().getName() == yeah.cstriker1407.design_patterns.state.LiftStop.class
+yeah.cstriker1407.design_patterns.state.LiftStates.currentLiftState.getClass().getName() == yeah.cstriker1407.design_patterns.state.LiftStop.class
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftStates.normal():::ENTER
+yeah.cstriker1407.design_patterns.state.LiftStates.currentLiftState == null
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftStates.normal():::EXIT
+yeah.cstriker1407.design_patterns.state.LiftStates.OpenState == orig(yeah.cstriker1407.design_patterns.state.LiftStates.OpenState)
+yeah.cstriker1407.design_patterns.state.LiftStates.OpenState.getClass().getName() == orig(yeah.cstriker1407.design_patterns.state.LiftStates.OpenState.getClass().getName())
+yeah.cstriker1407.design_patterns.state.LiftStates.CloseState == orig(yeah.cstriker1407.design_patterns.state.LiftStates.CloseState)
+yeah.cstriker1407.design_patterns.state.LiftStates.CloseState.getClass().getName() == orig(yeah.cstriker1407.design_patterns.state.LiftStates.CloseState.getClass().getName())
+yeah.cstriker1407.design_patterns.state.LiftStates.RunState == orig(yeah.cstriker1407.design_patterns.state.LiftStates.RunState)
+yeah.cstriker1407.design_patterns.state.LiftStates.RunState.getClass().getName() == orig(yeah.cstriker1407.design_patterns.state.LiftStates.RunState.getClass().getName())
+yeah.cstriker1407.design_patterns.state.LiftStates.StopState == yeah.cstriker1407.design_patterns.state.LiftStates.currentLiftState
+yeah.cstriker1407.design_patterns.state.LiftStates.StopState == orig(yeah.cstriker1407.design_patterns.state.LiftStates.StopState)
+yeah.cstriker1407.design_patterns.state.LiftStates.StopState.getClass().getName() == orig(yeah.cstriker1407.design_patterns.state.LiftStates.StopState.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftStates.test():::ENTER
+yeah.cstriker1407.design_patterns.state.LiftStates.StopState == yeah.cstriker1407.design_patterns.state.LiftStates.currentLiftState
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftStates.test():::EXIT
+yeah.cstriker1407.design_patterns.state.LiftStates.OpenState == orig(yeah.cstriker1407.design_patterns.state.LiftStates.OpenState)
+yeah.cstriker1407.design_patterns.state.LiftStates.OpenState.getClass().getName() == orig(yeah.cstriker1407.design_patterns.state.LiftStates.OpenState.getClass().getName())
+yeah.cstriker1407.design_patterns.state.LiftStates.CloseState == orig(yeah.cstriker1407.design_patterns.state.LiftStates.CloseState)
+yeah.cstriker1407.design_patterns.state.LiftStates.CloseState.getClass().getName() == orig(yeah.cstriker1407.design_patterns.state.LiftStates.CloseState.getClass().getName())
+yeah.cstriker1407.design_patterns.state.LiftStates.RunState == orig(yeah.cstriker1407.design_patterns.state.LiftStates.RunState)
+yeah.cstriker1407.design_patterns.state.LiftStates.RunState.getClass().getName() == orig(yeah.cstriker1407.design_patterns.state.LiftStates.RunState.getClass().getName())
+yeah.cstriker1407.design_patterns.state.LiftStates.StopState == yeah.cstriker1407.design_patterns.state.LiftStates.currentLiftState
+yeah.cstriker1407.design_patterns.state.LiftStates.StopState == orig(yeah.cstriker1407.design_patterns.state.LiftStates.StopState)
+yeah.cstriker1407.design_patterns.state.LiftStates.StopState == orig(yeah.cstriker1407.design_patterns.state.LiftStates.currentLiftState)
+yeah.cstriker1407.design_patterns.state.LiftStates.StopState.getClass().getName() == orig(yeah.cstriker1407.design_patterns.state.LiftStates.StopState.getClass().getName())
+yeah.cstriker1407.design_patterns.state.LiftStates.StopState.getClass().getName() == orig(yeah.cstriker1407.design_patterns.state.LiftStates.currentLiftState.getClass().getName())
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftStop:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftStop.LiftStop():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftStop.run():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.state.LiftStop.run():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.template.ACar:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.template.ACar.ACar():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.template.ACar.isAlarm():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.template.ACar.isAlarm():::EXIT
+return == false
+===========================================================================
+yeah.cstriker1407.design_patterns.template.ACar.isAlarm():::EXIT;condition="not(return == true)"
+===========================================================================
+yeah.cstriker1407.design_patterns.template.ACar.start():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.template.ACar.start():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.template.ACar.stop():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.template.ACar.stop():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.template.BCar:::OBJECT
+this has only one value
+===========================================================================
+yeah.cstriker1407.design_patterns.template.BCar.BCar():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.template.BCar.alarm():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.template.BCar.alarm():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.template.BCar.isAlarm():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.template.BCar.isAlarm():::EXIT
+return == true
+===========================================================================
+yeah.cstriker1407.design_patterns.template.BCar.isAlarm():::EXIT;condition="return == true"
+===========================================================================
+yeah.cstriker1407.design_patterns.template.BCar.start():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.template.BCar.start():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.template.BCar.stop():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.template.BCar.stop():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.template.CarModel:::OBJECT
+===========================================================================
+yeah.cstriker1407.design_patterns.template.CarModel.CarModel():::EXIT
+===========================================================================
+yeah.cstriker1407.design_patterns.template.CarModel.run():::ENTER
+===========================================================================
+yeah.cstriker1407.design_patterns.template.CarModel.run():::EXIT
+Exiting Daikon.

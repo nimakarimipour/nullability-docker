@@ -1,0 +1,3 @@
+METHOD	edu.tum.cup2.util.Reflection	getFieldValueFromObject(java.lang.Object,java.lang.String)	null	null
+METHOD	edu.tum.cup2.spec.util.RHSSymbols	getPrecedence()	null	null
+METHOD	edu.tum.cup2.parser.tables.LRActionTable	getWithNull(edu.tum.cup2.parser.states.LRParserState,edu.tum.cup2.grammar.Terminal)	null	null

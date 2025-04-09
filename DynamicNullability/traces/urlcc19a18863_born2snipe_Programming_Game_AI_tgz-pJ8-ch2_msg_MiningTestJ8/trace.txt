@@ -1,0 +1,3361 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+ch2.msg.BaseGameEntity:::OBJECT
+this.id != null
+this.id.toString one of { "Elsa", "Miner Bob" }
+===========================================================================
+ch2.msg.BaseGameEntity.BaseGameEntity(java.lang.String):::ENTER
+arg0.toString one of { "Elsa", "Miner Bob" }
+===========================================================================
+ch2.msg.BaseGameEntity.BaseGameEntity(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "Elsa", "Miner Bob" }
+===========================================================================
+ch2.msg.BaseGameEntity.getId():::ENTER
+===========================================================================
+ch2.msg.BaseGameEntity.getId():::EXIT
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+return != null
+return.toString one of { "Elsa", "Miner Bob" }
+===========================================================================
+ch2.msg.CookStew:::CLASS
+ch2.msg.CookStew.instance has only one value
+ch2.msg.CookStew.instance != null
+===========================================================================
+ch2.msg.CookStew:::OBJECT
+this has only one value
+===========================================================================
+ch2.msg.CookStew.CookStew():::EXIT
+===========================================================================
+ch2.msg.CookStew.enter(ch2.msg.MinersWife):::ENTER
+this == ch2.msg.CookStew.instance
+arg0.location == ch2.msg.Location.SHACK
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.CookStew.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.CookStew.enter(ch2.msg.MinersWife):::EXIT
+ch2.msg.CookStew.instance == orig(this)
+ch2.msg.CookStew.instance == orig(ch2.msg.CookStew.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.previous == orig(arg0.machine.previous)
+arg0.machine.previous.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.machine.global.getClass().getName() == orig(arg0.machine.global.getClass().getName())
+arg0.location == ch2.msg.Location.SHACK
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(arg0.location)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.CookStew.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == true
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.CookStew.execute(ch2.msg.MinersWife):::ENTER
+this == ch2.msg.CookStew.instance
+arg0.location == ch2.msg.Location.SHACK
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.CookStew.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == true
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.CookStew.execute(ch2.msg.MinersWife):::EXIT
+ch2.msg.CookStew.instance == orig(this)
+ch2.msg.CookStew.instance == orig(ch2.msg.CookStew.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.previous == orig(arg0.machine.previous)
+arg0.machine.previous.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.machine.global.getClass().getName() == orig(arg0.machine.global.getClass().getName())
+arg0.location == ch2.msg.Location.SHACK
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(arg0.location)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.cooking == orig(arg0.cooking)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.CookStew.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == true
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.CookStew.exit(ch2.msg.MinersWife):::ENTER
+arg0.machine.current.getClass().getName() == arg0.machine.previous.getClass().getName()
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.CookStew.class
+arg0.machine.previous has only one value
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+arg0.location has only one value
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == true
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.CookStew.exit(ch2.msg.MinersWife):::EXIT
+ch2.msg.CookStew.instance == orig(ch2.msg.CookStew.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current.getClass().getName() == arg0.machine.previous.getClass().getName()
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.current.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.previous == orig(arg0.machine.previous)
+arg0.machine.global == orig(arg0.machine.global)
+arg0.machine.global.getClass().getName() == orig(arg0.machine.global.getClass().getName())
+arg0.location == orig(arg0.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.cooking == orig(arg0.cooking)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.CookStew.class
+arg0.machine.previous has only one value
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+arg0.location has only one value
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == true
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.CookStew.instance():::ENTER
+===========================================================================
+ch2.msg.CookStew.instance():::EXIT
+ch2.msg.CookStew.instance == return
+ch2.msg.CookStew.instance == orig(ch2.msg.CookStew.instance)
+===========================================================================
+ch2.msg.DoHouseWork:::CLASS
+ch2.msg.DoHouseWork.instance has only one value
+ch2.msg.DoHouseWork.instance != null
+===========================================================================
+ch2.msg.DoHouseWork:::OBJECT
+this has only one value
+===========================================================================
+ch2.msg.DoHouseWork.DoHouseWork():::EXIT
+===========================================================================
+ch2.msg.DoHouseWork.execute(ch2.msg.MinersWife):::ENTER
+this == ch2.msg.DoHouseWork.instance
+arg0.location == ch2.msg.Location.SHACK
+arg0 has only one value
+arg0 != null
+arg0.machine has only one value
+arg0.machine != null
+arg0.machine.owner has only one value
+arg0.machine.owner != null
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current != null
+arg0.machine.current.getClass().getName() == ch2.msg.DoHouseWork.class
+arg0.machine.previous == null
+arg0.machine.global has only one value
+arg0.machine.global != null
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.GOLDMINE != null
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.SHACK != null
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.BANK != null
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.SALOON != null
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES != null
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[] elements != null
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == false
+arg0.id has only one value
+arg0.id != null
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+arg0.machine.owner.getClass().getName() != arg0.machine.current.getClass().getName()
+arg0.machine.owner.getClass().getName() != arg0.machine.global.getClass().getName()
+arg0.machine.owner.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.current.getClass().getName() != arg0.machine.global.getClass().getName()
+arg0.machine.current.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.global.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+===========================================================================
+ch2.msg.DoHouseWork.execute(ch2.msg.MinersWife):::EXIT
+ch2.msg.DoHouseWork.instance == orig(this)
+ch2.msg.DoHouseWork.instance == orig(ch2.msg.DoHouseWork.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.previous == orig(arg0.machine.previous)
+arg0.machine.global == orig(arg0.machine.global)
+arg0.machine.global.getClass().getName() == orig(arg0.machine.global.getClass().getName())
+arg0.location == ch2.msg.Location.SHACK
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(arg0.location)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.cooking == orig(arg0.cooking)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine != null
+arg0.machine.owner has only one value
+arg0.machine.owner != null
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current != null
+arg0.machine.current.getClass().getName() == ch2.msg.DoHouseWork.class
+arg0.machine.previous == null
+arg0.machine.global has only one value
+arg0.machine.global != null
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.GOLDMINE != null
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.SHACK != null
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.BANK != null
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.SALOON != null
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES != null
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[] elements != null
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == false
+arg0.id has only one value
+arg0.id != null
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+arg0.machine.owner.getClass().getName() != arg0.machine.current.getClass().getName()
+arg0.machine.owner.getClass().getName() != arg0.machine.global.getClass().getName()
+arg0.machine.owner.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.current.getClass().getName() != arg0.machine.global.getClass().getName()
+arg0.machine.current.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.global.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+===========================================================================
+ch2.msg.DoHouseWork.exit(ch2.msg.MinersWife):::ENTER
+this == ch2.msg.DoHouseWork.instance
+arg0.machine.current == arg0.machine.previous
+arg0.machine.current.getClass().getName() == arg0.machine.previous.getClass().getName()
+arg0.location == ch2.msg.Location.SHACK
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.DoHouseWork.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == false
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.DoHouseWork.exit(ch2.msg.MinersWife):::EXIT
+ch2.msg.DoHouseWork.instance == orig(this)
+ch2.msg.DoHouseWork.instance == orig(ch2.msg.DoHouseWork.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == arg0.machine.previous
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current == orig(arg0.machine.previous)
+arg0.machine.current.getClass().getName() == arg0.machine.previous.getClass().getName()
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.current.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.machine.global.getClass().getName() == orig(arg0.machine.global.getClass().getName())
+arg0.location == ch2.msg.Location.SHACK
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(arg0.location)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.cooking == orig(arg0.cooking)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.DoHouseWork.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == false
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.DoHouseWork.instance():::ENTER
+===========================================================================
+ch2.msg.DoHouseWork.instance():::EXIT
+ch2.msg.DoHouseWork.instance == return
+ch2.msg.DoHouseWork.instance == orig(ch2.msg.DoHouseWork.instance)
+===========================================================================
+ch2.msg.DoHouseWork.onMessage(ch2.msg.MinersWife, ch2.msg.Telegram):::ENTER
+this == ch2.msg.DoHouseWork.instance
+arg0.location == ch2.msg.Location.SHACK
+arg0.id == arg1.receiver
+arg1.type == ch2.msg.MessageType.HI_HONEY_IM_HOME
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.DoHouseWork.class
+arg0.machine.previous == null
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == false
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+arg1 has only one value
+arg1.sender has only one value
+arg1.sender.toString == "Miner Bob"
+arg1.receiver.toString == "Elsa"
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+arg1.dispatchTime == 0.0
+size(ch2.msg.Location.$VALUES[]) == 4
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.DoHouseWork.onMessage(ch2.msg.MinersWife, ch2.msg.Telegram):::EXIT
+ch2.msg.DoHouseWork.instance == orig(this)
+ch2.msg.DoHouseWork.instance == orig(ch2.msg.DoHouseWork.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.previous == orig(arg0.machine.previous)
+arg0.machine.global == orig(arg0.machine.global)
+arg0.machine.global.getClass().getName() == orig(arg0.machine.global.getClass().getName())
+arg0.location == ch2.msg.Location.SHACK
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(arg0.location)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.cooking == orig(arg0.cooking)
+arg0.id == arg1.receiver
+arg0.id == orig(arg0.id)
+arg0.id == orig(arg1.receiver)
+arg0.id.toString == orig(arg0.id.toString)
+arg1.sender == orig(arg1.sender)
+arg1.sender.toString == orig(arg1.sender.toString)
+arg1.receiver.toString == orig(arg1.receiver.toString)
+arg1.type == ch2.msg.MessageType.HI_HONEY_IM_HOME
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(arg1.type)
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(ch2.msg.MessageType.HI_HONEY_IM_HOME)
+ch2.msg.MessageType.STEW_READY == orig(ch2.msg.MessageType.STEW_READY)
+ch2.msg.MessageType.$VALUES == orig(ch2.msg.MessageType.$VALUES)
+ch2.msg.MessageType.$VALUES.getClass().getName() == orig(ch2.msg.MessageType.$VALUES.getClass().getName())
+ch2.msg.MessageType.$VALUES[] == orig(ch2.msg.MessageType.$VALUES[])
+arg1.dispatchTime == orig(arg1.dispatchTime)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.DoHouseWork.class
+arg0.machine.previous == null
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == false
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+arg1.sender has only one value
+arg1.sender.toString == "Miner Bob"
+arg1.receiver.toString == "Elsa"
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+arg1.dispatchTime == 0.0
+size(ch2.msg.Location.$VALUES[]) == 4
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.EnterMineAndDigForNugget:::CLASS
+ch2.msg.EnterMineAndDigForNugget.instance has only one value
+ch2.msg.EnterMineAndDigForNugget.instance != null
+===========================================================================
+ch2.msg.EnterMineAndDigForNugget:::OBJECT
+this has only one value
+===========================================================================
+ch2.msg.EnterMineAndDigForNugget.EnterMineAndDigForNugget():::EXIT
+===========================================================================
+ch2.msg.EnterMineAndDigForNugget.enter(ch2.msg.Miner):::ENTER
+this == ch2.msg.EnterMineAndDigForNugget.instance
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried one of { 0, 1, 2 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.EnterMineAndDigForNugget.enter(ch2.msg.Miner):::EXIT
+ch2.msg.EnterMineAndDigForNugget.instance == orig(this)
+ch2.msg.EnterMineAndDigForNugget.instance == orig(ch2.msg.EnterMineAndDigForNugget.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.previous == orig(arg0.machine.previous)
+arg0.machine.previous.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.location == ch2.msg.Location.GOLDMINE
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.goldCarried == orig(arg0.goldCarried)
+arg0.moneyInTheBank == orig(arg0.moneyInTheBank)
+arg0.thirst == orig(arg0.thirst)
+arg0.fatigue == orig(arg0.fatigue)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried one of { 0, 1, 2 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.EnterMineAndDigForNugget.execute(ch2.msg.Miner):::ENTER
+this == ch2.msg.EnterMineAndDigForNugget.instance
+arg0.location == ch2.msg.Location.GOLDMINE
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried one of { 0, 1, 2 }
+arg0.moneyInTheBank >= 0
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+arg0.machine.owner.getClass().getName() != arg0.machine.current.getClass().getName()
+arg0.machine.owner.getClass().getName() != arg0.machine.previous.getClass().getName()
+arg0.machine.owner.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.current.getClass().getName() != arg0.machine.previous.getClass().getName()
+arg0.machine.current.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.previous.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+===========================================================================
+ch2.msg.EnterMineAndDigForNugget.execute(ch2.msg.Miner):::EXIT
+ch2.msg.EnterMineAndDigForNugget.instance == orig(this)
+ch2.msg.EnterMineAndDigForNugget.instance == orig(ch2.msg.EnterMineAndDigForNugget.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+ch2.msg.Location.GOLDMINE == orig(arg0.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.moneyInTheBank == orig(arg0.moneyInTheBank)
+arg0.thirst == orig(arg0.thirst)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried one of { 1, 2, 3 }
+arg0.moneyInTheBank >= 0
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+arg0.machine.owner.getClass().getName() != arg0.machine.current.getClass().getName()
+arg0.machine.owner.getClass().getName() != arg0.machine.previous.getClass().getName()
+arg0.machine.owner.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.owner.getClass().getName() != orig(arg0.machine.current.getClass().getName())
+arg0.machine.owner.getClass().getName() != orig(arg0.machine.previous.getClass().getName())
+arg0.machine.current.getClass().getName() != arg0.machine.previous.getClass().getName()
+arg0.machine.current.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.current.getClass().getName() != orig(arg0.machine.previous.getClass().getName())
+arg0.machine.previous.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+ch2.msg.Location.$VALUES.getClass().getName() != orig(arg0.machine.current.getClass().getName())
+ch2.msg.Location.$VALUES.getClass().getName() != orig(arg0.machine.previous.getClass().getName())
+arg0.goldCarried > orig(arg0.goldCarried)
+arg0.fatigue - orig(arg0.fatigue) - 1 == 0
+===========================================================================
+ch2.msg.EnterMineAndDigForNugget.exit(ch2.msg.Miner):::ENTER
+this == ch2.msg.EnterMineAndDigForNugget.instance
+arg0.machine.current == arg0.machine.previous
+arg0.machine.current.getClass().getName() == arg0.machine.previous.getClass().getName()
+arg0.location == ch2.msg.Location.GOLDMINE
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried one of { 1, 2, 3 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.EnterMineAndDigForNugget.exit(ch2.msg.Miner):::EXIT
+ch2.msg.EnterMineAndDigForNugget.instance == orig(this)
+ch2.msg.EnterMineAndDigForNugget.instance == orig(ch2.msg.EnterMineAndDigForNugget.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == arg0.machine.previous
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current == orig(arg0.machine.previous)
+arg0.machine.current.getClass().getName() == arg0.machine.previous.getClass().getName()
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.current.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.location == ch2.msg.Location.GOLDMINE
+ch2.msg.Location.GOLDMINE == orig(arg0.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.goldCarried == orig(arg0.goldCarried)
+arg0.moneyInTheBank == orig(arg0.moneyInTheBank)
+arg0.thirst == orig(arg0.thirst)
+arg0.fatigue == orig(arg0.fatigue)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried one of { 1, 2, 3 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.EnterMineAndDigForNugget.instance():::ENTER
+===========================================================================
+ch2.msg.EnterMineAndDigForNugget.instance():::EXIT
+ch2.msg.EnterMineAndDigForNugget.instance == return
+ch2.msg.EnterMineAndDigForNugget.instance == orig(ch2.msg.EnterMineAndDigForNugget.instance)
+===========================================================================
+ch2.msg.EntityManager:::CLASS
+ch2.msg.EntityManager.instance has only one value
+ch2.msg.EntityManager.instance != null
+ch2.msg.EntityManager.instance.entities has only one value
+ch2.msg.EntityManager.instance.entities != null
+ch2.msg.EntityManager.instance.entities.getClass().getName() == java.util.HashMap.class
+===========================================================================
+ch2.msg.EntityManager:::OBJECT
+ch2.msg.EntityManager.instance.entities.getClass().getName() == this.entities.getClass().getName()
+this has only one value
+this.entities has only one value
+this.entities.getClass().getName() == java.util.HashMap.class
+===========================================================================
+ch2.msg.EntityManager.EntityManager():::EXIT
+===========================================================================
+ch2.msg.EntityManager.get(java.lang.String):::ENTER
+this == ch2.msg.EntityManager.instance
+arg0.toString one of { "", "Elsa" }
+===========================================================================
+ch2.msg.EntityManager.get(java.lang.String):::EXIT
+ch2.msg.EntityManager.instance == orig(this)
+ch2.msg.EntityManager.instance == orig(ch2.msg.EntityManager.instance)
+ch2.msg.EntityManager.instance.entities == orig(ch2.msg.EntityManager.instance.entities)
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(ch2.msg.EntityManager.instance.entities.getClass().getName())
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(this.entities.getClass().getName())
+this.entities == orig(this.entities)
+arg0.toString == orig(arg0.toString)
+return.id == orig(arg0)
+arg0.toString one of { "", "Elsa" }
+return.getClass().getName() == ch2.msg.MinersWife.class
+return.id has only one value
+return.id.toString == "Elsa"
+===========================================================================
+ch2.msg.EntityManager.instance():::ENTER
+===========================================================================
+ch2.msg.EntityManager.instance():::EXIT
+ch2.msg.EntityManager.instance == return
+ch2.msg.EntityManager.instance == orig(ch2.msg.EntityManager.instance)
+ch2.msg.EntityManager.instance.entities == orig(ch2.msg.EntityManager.instance.entities)
+ch2.msg.EntityManager.instance.entities.getClass().getName() == return.entities.getClass().getName()
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(ch2.msg.EntityManager.instance.entities.getClass().getName())
+return.entities has only one value
+===========================================================================
+ch2.msg.EntityManager.register(ch2.msg.BaseGameEntity):::ENTER
+this == ch2.msg.EntityManager.instance
+arg0.id.toString one of { "Elsa", "Miner Bob" }
+===========================================================================
+ch2.msg.EntityManager.register(ch2.msg.BaseGameEntity):::EXIT
+ch2.msg.EntityManager.instance == orig(this)
+ch2.msg.EntityManager.instance == orig(ch2.msg.EntityManager.instance)
+ch2.msg.EntityManager.instance.entities == orig(ch2.msg.EntityManager.instance.entities)
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(ch2.msg.EntityManager.instance.entities.getClass().getName())
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(this.entities.getClass().getName())
+this.entities == orig(this.entities)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.id.toString one of { "Elsa", "Miner Bob" }
+===========================================================================
+ch2.msg.GoHomeAndSleepTilRested:::CLASS
+ch2.msg.GoHomeAndSleepTilRested.instance has only one value
+ch2.msg.GoHomeAndSleepTilRested.instance != null
+===========================================================================
+ch2.msg.GoHomeAndSleepTilRested:::OBJECT
+this has only one value
+===========================================================================
+ch2.msg.GoHomeAndSleepTilRested.GoHomeAndSleepTilRested():::EXIT
+===========================================================================
+ch2.msg.GoHomeAndSleepTilRested.enter(ch2.msg.Miner):::ENTER
+this == ch2.msg.GoHomeAndSleepTilRested.instance
+arg0.location == ch2.msg.Location.BANK
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.GoHomeAndSleepTilRested.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried == 0
+arg0.moneyInTheBank == 5
+arg0.thirst == 2
+arg0.fatigue == 9
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.GoHomeAndSleepTilRested.enter(ch2.msg.Miner):::EXIT
+ch2.msg.GoHomeAndSleepTilRested.instance == orig(this)
+ch2.msg.GoHomeAndSleepTilRested.instance == orig(ch2.msg.GoHomeAndSleepTilRested.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.previous == orig(arg0.machine.previous)
+arg0.machine.previous.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.location == ch2.msg.Location.SHACK
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(arg0.location)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.goldCarried == orig(arg0.goldCarried)
+arg0.moneyInTheBank == orig(arg0.moneyInTheBank)
+arg0.thirst == orig(arg0.thirst)
+arg0.fatigue == orig(arg0.fatigue)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.GoHomeAndSleepTilRested.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried == 0
+arg0.moneyInTheBank == 5
+arg0.thirst == 2
+arg0.fatigue == 9
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.GoHomeAndSleepTilRested.execute(ch2.msg.Miner):::ENTER
+this == ch2.msg.GoHomeAndSleepTilRested.instance
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.GoHomeAndSleepTilRested.class
+arg0.machine.previous.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried == 0
+arg0.moneyInTheBank one of { 0, 5 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.GoHomeAndSleepTilRested.execute(ch2.msg.Miner):::EXIT
+ch2.msg.GoHomeAndSleepTilRested.instance == orig(this)
+ch2.msg.GoHomeAndSleepTilRested.instance == orig(ch2.msg.GoHomeAndSleepTilRested.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.previous.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.goldCarried == orig(arg0.goldCarried)
+arg0.moneyInTheBank == orig(arg0.moneyInTheBank)
+arg0.thirst == orig(arg0.thirst)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried == 0
+arg0.moneyInTheBank one of { 0, 5 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.GoHomeAndSleepTilRested.exit(ch2.msg.Miner):::ENTER
+this == ch2.msg.GoHomeAndSleepTilRested.instance
+arg0.machine.current == arg0.machine.previous
+arg0.machine.current.getClass().getName() == arg0.machine.previous.getClass().getName()
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.GoHomeAndSleepTilRested.class
+arg0.machine.global == null
+arg0.location == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried == 0
+arg0.moneyInTheBank == 0
+arg0.thirst == 1
+arg0.fatigue == 0
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.GoHomeAndSleepTilRested.exit(ch2.msg.Miner):::EXIT
+ch2.msg.GoHomeAndSleepTilRested.instance == orig(this)
+ch2.msg.GoHomeAndSleepTilRested.instance == orig(ch2.msg.GoHomeAndSleepTilRested.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == arg0.machine.previous
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current == orig(arg0.machine.previous)
+arg0.machine.current.getClass().getName() == arg0.machine.previous.getClass().getName()
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.current.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.location == orig(arg0.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.goldCarried == orig(arg0.goldCarried)
+arg0.moneyInTheBank == orig(arg0.moneyInTheBank)
+arg0.thirst == orig(arg0.thirst)
+arg0.fatigue == orig(arg0.fatigue)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.GoHomeAndSleepTilRested.class
+arg0.machine.global == null
+arg0.location == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried == 0
+arg0.moneyInTheBank == 0
+arg0.thirst == 1
+arg0.fatigue == 0
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.GoHomeAndSleepTilRested.instance():::ENTER
+===========================================================================
+ch2.msg.GoHomeAndSleepTilRested.instance():::EXIT
+ch2.msg.GoHomeAndSleepTilRested.instance == return
+ch2.msg.GoHomeAndSleepTilRested.instance == orig(ch2.msg.GoHomeAndSleepTilRested.instance)
+===========================================================================
+ch2.msg.Location:::OBJECT
+===========================================================================
+ch2.msg.Location.Location(java.lang.String, int):::ENTER
+===========================================================================
+ch2.msg.Location.Location(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+===========================================================================
+ch2.msg.MessageDispatcher:::CLASS
+ch2.msg.EntityManager.instance.entities.getClass().getName() == ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities.getClass().getName()
+ch2.msg.MessageDispatcher.ENTITY_MANAGER has only one value
+ch2.msg.MessageDispatcher.ENTITY_MANAGER != null
+ch2.msg.EntityManager.instance has only one value
+ch2.msg.EntityManager.instance != null
+ch2.msg.EntityManager.instance.entities has only one value
+ch2.msg.EntityManager.instance.entities != null
+ch2.msg.EntityManager.instance.entities.getClass().getName() == java.util.HashMap.class
+ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities has only one value
+ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities != null
+ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities.getClass().getName() == java.util.HashMap.class
+ch2.msg.MessageDispatcher.instance has only one value
+ch2.msg.MessageDispatcher.instance != null
+ch2.msg.MessageDispatcher.instance.messages has only one value
+ch2.msg.MessageDispatcher.instance.messages != null
+ch2.msg.MessageDispatcher.instance.messages[] == []
+ch2.msg.MessageDispatcher.instance.messages[].getClass().getName() == []
+===========================================================================
+ch2.msg.MessageDispatcher:::OBJECT
+this has only one value
+this.messages has only one value
+this.messages != null
+this.messages[] == []
+this.messages[].getClass().getName() == []
+===========================================================================
+ch2.msg.MessageDispatcher.MessageDispatcher():::EXIT
+===========================================================================
+ch2.msg.MessageDispatcher.discharge(ch2.msg.BaseGameEntity, ch2.msg.Telegram):::ENTER
+this == ch2.msg.MessageDispatcher.instance
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == ch2.msg.EntityManager.instance
+ch2.msg.EntityManager.instance.entities == ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities
+arg0.id == arg1.receiver
+arg1.type == ch2.msg.MessageType.HI_HONEY_IM_HOME
+arg0 has only one value
+arg0.getClass().getName() == ch2.msg.MinersWife.class
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+arg1 has only one value
+arg1.sender has only one value
+arg1.sender.toString == "Miner Bob"
+arg1.receiver.toString == "Elsa"
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+arg1.dispatchTime == 0.0
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.MessageDispatcher.discharge(ch2.msg.BaseGameEntity, ch2.msg.Telegram):::EXIT
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == ch2.msg.EntityManager.instance
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == orig(ch2.msg.MessageDispatcher.ENTITY_MANAGER)
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == orig(ch2.msg.EntityManager.instance)
+ch2.msg.EntityManager.instance.entities == ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities
+ch2.msg.EntityManager.instance.entities == orig(ch2.msg.EntityManager.instance.entities)
+ch2.msg.EntityManager.instance.entities == orig(ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities)
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(ch2.msg.EntityManager.instance.entities.getClass().getName())
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities.getClass().getName())
+ch2.msg.MessageDispatcher.instance == orig(this)
+ch2.msg.MessageDispatcher.instance == orig(ch2.msg.MessageDispatcher.instance)
+ch2.msg.MessageDispatcher.instance.messages == orig(ch2.msg.MessageDispatcher.instance.messages)
+ch2.msg.MessageDispatcher.instance.messages[] == orig(ch2.msg.MessageDispatcher.instance.messages[])
+this.messages == orig(this.messages)
+this.messages[] == orig(this.messages[])
+arg0.id == arg1.receiver
+arg0.id == orig(arg0.id)
+arg0.id == orig(arg1.receiver)
+arg0.id.toString == orig(arg0.id.toString)
+arg1.sender == orig(arg1.sender)
+arg1.sender.toString == orig(arg1.sender.toString)
+arg1.receiver.toString == orig(arg1.receiver.toString)
+arg1.type == ch2.msg.MessageType.HI_HONEY_IM_HOME
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(arg1.type)
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(ch2.msg.MessageType.HI_HONEY_IM_HOME)
+ch2.msg.MessageType.STEW_READY == orig(ch2.msg.MessageType.STEW_READY)
+ch2.msg.MessageType.$VALUES == orig(ch2.msg.MessageType.$VALUES)
+ch2.msg.MessageType.$VALUES.getClass().getName() == orig(ch2.msg.MessageType.$VALUES.getClass().getName())
+ch2.msg.MessageType.$VALUES[] == orig(ch2.msg.MessageType.$VALUES[])
+arg1.dispatchTime == orig(arg1.dispatchTime)
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+arg1.sender has only one value
+arg1.sender.toString == "Miner Bob"
+arg1.receiver.toString == "Elsa"
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+arg1.dispatchTime == 0.0
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.MessageDispatcher.dispatch(java.lang.String, java.lang.String, ch2.msg.MessageType, double):::ENTER
+this == ch2.msg.MessageDispatcher.instance
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == ch2.msg.EntityManager.instance
+ch2.msg.EntityManager.instance.entities == ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities
+arg0.toString one of { "Elsa", "Miner Bob" }
+arg1.toString one of { "", "Elsa" }
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+arg3 one of { 0.0, 1.5 }
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.MessageDispatcher.dispatch(java.lang.String, java.lang.String, ch2.msg.MessageType, double):::EXIT28
+ch2.msg.MessageType.STEW_READY == orig(arg2)
+arg0.toString == "Elsa"
+arg1.toString == ""
+orig(arg0) has only one value
+orig(arg1) has only one value
+orig(arg3) == 1.5
+===========================================================================
+ch2.msg.MessageDispatcher.dispatch(java.lang.String, java.lang.String, ch2.msg.MessageType, double):::EXIT47
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(arg2)
+arg0.toString == "Miner Bob"
+arg1.toString == "Elsa"
+orig(arg0) has only one value
+orig(arg1) has only one value
+orig(arg3) == 0.0
+===========================================================================
+ch2.msg.MessageDispatcher.dispatch(java.lang.String, java.lang.String, ch2.msg.MessageType, double):::EXIT
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == ch2.msg.EntityManager.instance
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == orig(ch2.msg.MessageDispatcher.ENTITY_MANAGER)
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == orig(ch2.msg.EntityManager.instance)
+ch2.msg.EntityManager.instance.entities == ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities
+ch2.msg.EntityManager.instance.entities == orig(ch2.msg.EntityManager.instance.entities)
+ch2.msg.EntityManager.instance.entities == orig(ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities)
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(ch2.msg.EntityManager.instance.entities.getClass().getName())
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities.getClass().getName())
+ch2.msg.MessageDispatcher.instance == orig(this)
+ch2.msg.MessageDispatcher.instance == orig(ch2.msg.MessageDispatcher.instance)
+ch2.msg.MessageDispatcher.instance.messages == orig(ch2.msg.MessageDispatcher.instance.messages)
+ch2.msg.MessageDispatcher.instance.messages[] == orig(ch2.msg.MessageDispatcher.instance.messages[])
+this.messages == orig(this.messages)
+this.messages[] == orig(this.messages[])
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(ch2.msg.MessageType.HI_HONEY_IM_HOME)
+ch2.msg.MessageType.STEW_READY == orig(ch2.msg.MessageType.STEW_READY)
+ch2.msg.MessageType.$VALUES == orig(ch2.msg.MessageType.$VALUES)
+ch2.msg.MessageType.$VALUES.getClass().getName() == orig(ch2.msg.MessageType.$VALUES.getClass().getName())
+ch2.msg.MessageType.$VALUES[] == orig(ch2.msg.MessageType.$VALUES[])
+(arg0.toString == "Elsa")  <==>  (arg1.toString == "")
+(arg0.toString == "Elsa")  <==>  (orig(arg3) == 1.5)
+(arg0.toString == "Elsa")  ==>  (ch2.msg.MessageType.STEW_READY == orig(arg2))
+(arg0.toString == "Miner Bob")  <==>  (arg1.toString == "Elsa")
+(arg0.toString == "Miner Bob")  <==>  (orig(arg3) == 0.0)
+(arg0.toString == "Miner Bob")  ==>  (ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(arg2))
+arg0.toString one of { "Elsa", "Miner Bob" }
+arg1.toString one of { "", "Elsa" }
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.MessageDispatcher.dispatchMessages():::ENTER
+this == ch2.msg.MessageDispatcher.instance
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == ch2.msg.EntityManager.instance
+ch2.msg.EntityManager.instance.entities == ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities
+===========================================================================
+ch2.msg.MessageDispatcher.dispatchMessages():::EXIT
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == ch2.msg.EntityManager.instance
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == orig(ch2.msg.MessageDispatcher.ENTITY_MANAGER)
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == orig(ch2.msg.EntityManager.instance)
+ch2.msg.EntityManager.instance.entities == ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities
+ch2.msg.EntityManager.instance.entities == orig(ch2.msg.EntityManager.instance.entities)
+ch2.msg.EntityManager.instance.entities == orig(ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities)
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(ch2.msg.EntityManager.instance.entities.getClass().getName())
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities.getClass().getName())
+ch2.msg.MessageDispatcher.instance == orig(this)
+ch2.msg.MessageDispatcher.instance == orig(ch2.msg.MessageDispatcher.instance)
+ch2.msg.MessageDispatcher.instance.messages == orig(ch2.msg.MessageDispatcher.instance.messages)
+ch2.msg.MessageDispatcher.instance.messages[] == orig(ch2.msg.MessageDispatcher.instance.messages[])
+this.messages == orig(this.messages)
+this.messages[] == orig(this.messages[])
+===========================================================================
+ch2.msg.MessageDispatcher.instance():::ENTER
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == ch2.msg.EntityManager.instance
+ch2.msg.EntityManager.instance.entities == ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities
+===========================================================================
+ch2.msg.MessageDispatcher.instance():::EXIT
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == ch2.msg.EntityManager.instance
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == orig(ch2.msg.MessageDispatcher.ENTITY_MANAGER)
+ch2.msg.MessageDispatcher.ENTITY_MANAGER == orig(ch2.msg.EntityManager.instance)
+ch2.msg.EntityManager.instance.entities == ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities
+ch2.msg.EntityManager.instance.entities == orig(ch2.msg.EntityManager.instance.entities)
+ch2.msg.EntityManager.instance.entities == orig(ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities)
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(ch2.msg.EntityManager.instance.entities.getClass().getName())
+ch2.msg.EntityManager.instance.entities.getClass().getName() == orig(ch2.msg.MessageDispatcher.ENTITY_MANAGER.entities.getClass().getName())
+ch2.msg.MessageDispatcher.instance == return
+ch2.msg.MessageDispatcher.instance == orig(ch2.msg.MessageDispatcher.instance)
+ch2.msg.MessageDispatcher.instance.messages == orig(ch2.msg.MessageDispatcher.instance.messages)
+ch2.msg.MessageDispatcher.instance.messages[] == orig(ch2.msg.MessageDispatcher.instance.messages[])
+return.messages has only one value
+return.messages != null
+return.messages[] == []
+return.messages[].getClass().getName() == []
+===========================================================================
+ch2.msg.MessageType:::CLASS
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.MessageType:::OBJECT
+===========================================================================
+ch2.msg.MessageType.MessageType(java.lang.String, int):::ENTER
+arg0.toString one of { "HI_HONEY_IM_HOME", "STEW_READY" }
+arg1 one of { 0, 1 }
+===========================================================================
+ch2.msg.MessageType.MessageType(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "HI_HONEY_IM_HOME", "STEW_READY" }
+===========================================================================
+ch2.msg.MessageType.values():::ENTER
+===========================================================================
+ch2.msg.MessageType.values():::EXIT
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(ch2.msg.MessageType.HI_HONEY_IM_HOME)
+ch2.msg.MessageType.STEW_READY == orig(ch2.msg.MessageType.STEW_READY)
+ch2.msg.MessageType.$VALUES == orig(ch2.msg.MessageType.$VALUES)
+ch2.msg.MessageType.$VALUES.getClass().getName() == orig(ch2.msg.MessageType.$VALUES.getClass().getName())
+ch2.msg.MessageType.$VALUES[] == orig(ch2.msg.MessageType.$VALUES[])
+return has only one value
+return.getClass().getName() == ch2.msg.MessageType[].class
+return[] contains no nulls and has only one value, of length 2
+size(return[]) == 2
+===========================================================================
+ch2.msg.Miner:::CLASS
+===========================================================================
+ch2.msg.Miner:::OBJECT
+this.machine.owner.id == this.id
+this has only one value
+this.machine has only one value
+this.machine != null
+this.machine.owner has only one value
+this.machine.owner != null
+this.machine.owner.getClass().getName() == ch2.msg.Miner.class
+this.machine.owner.id.toString == "Miner Bob"
+this.machine.current != null
+this.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.GOLDMINE != null
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.SHACK != null
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.BANK != null
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.SALOON != null
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES != null
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[] elements != null
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+this.goldCarried >= 0
+this.moneyInTheBank >= 0
+this.thirst >= 0
+this.fatigue >= 0
+this.id has only one value
+this.id != null
+this.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+this.machine.owner.getClass().getName() != this.machine.current.getClass().getName()
+this.machine.owner.getClass().getName() != this.machine.previous.getClass().getName()
+this.machine.owner.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+this.machine.current.getClass().getName() != this.machine.previous.getClass().getName()
+this.machine.current.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+this.machine.previous.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+===========================================================================
+ch2.msg.Miner.Miner():::EXIT
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.GoHomeAndSleepTilRested.class
+this.machine.previous == null
+this.location == null
+this.goldCarried == 0
+this.moneyInTheBank == 0
+this.thirst == 0
+this.fatigue == 0
+===========================================================================
+ch2.msg.Miner.addToGoldCarried(int):::ENTER
+this.location == ch2.msg.Location.GOLDMINE
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+this.goldCarried one of { 0, 1, 2 }
+arg0 == 1
+===========================================================================
+ch2.msg.Miner.addToGoldCarried(int):::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.location == ch2.msg.Location.GOLDMINE
+ch2.msg.Location.GOLDMINE == orig(this.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.moneyInTheBank == orig(this.moneyInTheBank)
+this.thirst == orig(this.thirst)
+this.fatigue == orig(this.fatigue)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+this.goldCarried one of { 1, 2, 3 }
+this.goldCarried > orig(this.goldCarried)
+this.goldCarried >= orig(arg0)
+===========================================================================
+ch2.msg.Miner.arePocketsFull():::ENTER
+this.location == ch2.msg.Location.GOLDMINE
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+this.goldCarried one of { 1, 2, 3 }
+===========================================================================
+ch2.msg.Miner.arePocketsFull():::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.location == ch2.msg.Location.GOLDMINE
+ch2.msg.Location.GOLDMINE == orig(this.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.goldCarried == orig(this.goldCarried)
+this.moneyInTheBank == orig(this.moneyInTheBank)
+this.thirst == orig(this.thirst)
+this.fatigue == orig(this.fatigue)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+(this.goldCarried == 3)  <==>  (return == true)
+(this.goldCarried == 3)  ==>  (this.fatigue one of { 3, 6, 9 })
+(this.goldCarried == 3)  ==>  (this.moneyInTheBank one of { 0, 1, 2 })
+(this.goldCarried == 3)  ==>  (this.thirst one of { 1, 2, 4 })
+(this.goldCarried one of { 1, 2 })  <==>  (return == false)
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+this.goldCarried one of { 1, 2, 3 }
+===========================================================================
+ch2.msg.Miner.arePocketsFull():::EXIT;condition="return == true"
+this.goldCarried == 3
+this.moneyInTheBank one of { 0, 1, 2 }
+this.thirst one of { 1, 2, 4 }
+this.fatigue one of { 3, 6, 9 }
+return == true
+===========================================================================
+ch2.msg.Miner.arePocketsFull():::EXIT;condition="not(return == true)"
+this.goldCarried one of { 1, 2 }
+return == false
+===========================================================================
+ch2.msg.Miner.buyAndDrinkAWhiskey():::ENTER
+this.location == ch2.msg.Location.SALOON
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.QuenchThirst.class
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+this.goldCarried one of { 1, 2 }
+this.moneyInTheBank one of { 3, 4 }
+this.thirst one of { 6, 7 }
+this.fatigue one of { 4, 8 }
+===========================================================================
+ch2.msg.Miner.buyAndDrinkAWhiskey():::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.location == ch2.msg.Location.SALOON
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(this.location)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.goldCarried == orig(this.goldCarried)
+this.fatigue == orig(this.fatigue)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.QuenchThirst.class
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+this.goldCarried one of { 1, 2 }
+this.moneyInTheBank one of { 1, 2 }
+this.thirst == 0
+this.fatigue one of { 4, 8 }
+===========================================================================
+ch2.msg.Miner.changeLocation(ch2.msg.Location):::ENTER
+===========================================================================
+ch2.msg.Miner.changeLocation(ch2.msg.Location):::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.location == orig(arg0)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.goldCarried == orig(this.goldCarried)
+this.moneyInTheBank == orig(this.moneyInTheBank)
+this.thirst == orig(this.thirst)
+this.fatigue == orig(this.fatigue)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+===========================================================================
+ch2.msg.Miner.changeState(ch2.msg.State):::ENTER
+this.machine.owner.getClass().getName() != arg0.getClass().getName()
+this.machine.current.getClass().getName() != arg0.getClass().getName()
+ch2.msg.Location.$VALUES.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+ch2.msg.Miner.changeState(ch2.msg.State):::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(arg0)
+this.machine.current.getClass().getName() == orig(arg0.getClass().getName())
+this.machine.previous == orig(this.machine.current)
+this.machine.previous.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.global == orig(this.machine.global)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.goldCarried == orig(this.goldCarried)
+this.moneyInTheBank == orig(this.moneyInTheBank)
+this.thirst == orig(this.thirst)
+this.fatigue == orig(this.fatigue)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+this.machine.owner.getClass().getName() != orig(this.machine.previous.getClass().getName())
+this.machine.owner.getClass().getName() != orig(arg0.getClass().getName())
+this.machine.previous.getClass().getName() != orig(this.machine.previous.getClass().getName())
+this.machine.previous.getClass().getName() != orig(arg0.getClass().getName())
+ch2.msg.Location.$VALUES.getClass().getName() != orig(this.machine.previous.getClass().getName())
+ch2.msg.Location.$VALUES.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+ch2.msg.Miner.depositGold():::ENTER
+this.location == ch2.msg.Location.BANK
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+this.goldCarried == 3
+this.moneyInTheBank one of { 0, 1, 2 }
+this.thirst one of { 2, 3, 5 }
+this.fatigue one of { 3, 6, 9 }
+===========================================================================
+ch2.msg.Miner.depositGold():::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.location == ch2.msg.Location.BANK
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(this.location)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.thirst == orig(this.thirst)
+this.fatigue == orig(this.fatigue)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+this.goldCarried == 0
+this.moneyInTheBank one of { 3, 4, 5 }
+this.thirst one of { 2, 3, 5 }
+this.fatigue one of { 3, 6, 9 }
+===========================================================================
+ch2.msg.Miner.getLocation():::ENTER
+===========================================================================
+ch2.msg.Miner.getLocation():::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.location == return
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.goldCarried == orig(this.goldCarried)
+this.moneyInTheBank == orig(this.moneyInTheBank)
+this.thirst == orig(this.thirst)
+this.fatigue == orig(this.fatigue)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+return == orig(this.location)
+===========================================================================
+ch2.msg.Miner.getWealth():::ENTER
+this.location == ch2.msg.Location.BANK
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+this.goldCarried == 0
+this.moneyInTheBank one of { 3, 4, 5 }
+this.thirst one of { 2, 3, 5 }
+this.fatigue one of { 3, 6, 9 }
+===========================================================================
+ch2.msg.Miner.getWealth():::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.location == ch2.msg.Location.BANK
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(this.location)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.goldCarried == orig(this.goldCarried)
+this.moneyInTheBank == return
+this.thirst == orig(this.thirst)
+this.fatigue == orig(this.fatigue)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+return == orig(this.moneyInTheBank)
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+this.goldCarried == 0
+this.thirst one of { 2, 3, 5 }
+this.fatigue one of { 3, 6, 9 }
+return one of { 3, 4, 5 }
+===========================================================================
+ch2.msg.Miner.increaseFatigue():::ENTER
+this.location == ch2.msg.Location.GOLDMINE
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+this.goldCarried one of { 1, 2, 3 }
+===========================================================================
+ch2.msg.Miner.increaseFatigue():::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.location == ch2.msg.Location.GOLDMINE
+ch2.msg.Location.GOLDMINE == orig(this.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.goldCarried == orig(this.goldCarried)
+this.moneyInTheBank == orig(this.moneyInTheBank)
+this.thirst == orig(this.thirst)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+this.goldCarried one of { 1, 2, 3 }
+this.fatigue - orig(this.fatigue) - 1 == 0
+===========================================================================
+ch2.msg.Miner.isFatigued():::ENTER
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.GoHomeAndSleepTilRested.class
+this.machine.previous.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+this.goldCarried == 0
+this.moneyInTheBank one of { 0, 5 }
+===========================================================================
+ch2.msg.Miner.isFatigued():::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.location == orig(this.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.goldCarried == orig(this.goldCarried)
+this.moneyInTheBank == orig(this.moneyInTheBank)
+this.thirst == orig(this.thirst)
+this.fatigue == orig(this.fatigue)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+(this.machine.previous == null)  <==>  (return == false)
+(this.machine.previous == null)  <==>  (this.fatigue == 0)
+(this.machine.previous == null)  <==>  (this.location == null)
+(this.machine.previous == null)  <==>  (this.moneyInTheBank == 0)
+(this.machine.previous == null)  <==>  (this.thirst == 1)
+(this.machine.previous has only one value)  <==>  (return == true)
+(this.machine.previous has only one value)  <==>  (this.location has only one value)
+(this.machine.previous has only one value)  <==>  (this.moneyInTheBank == 5)
+(this.machine.previous has only one value)  ==>  (this.location == ch2.msg.Location.SHACK)
+(this.machine.previous has only one value)  ==>  (this.machine.previous.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class)
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.GoHomeAndSleepTilRested.class
+this.machine.previous.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+this.goldCarried == 0
+this.moneyInTheBank one of { 0, 5 }
+===========================================================================
+ch2.msg.Miner.isFatigued():::EXIT;condition="return == true"
+this.location == ch2.msg.Location.SHACK
+ch2.msg.Location.SHACK == orig(this.location)
+this.machine.previous has only one value
+this.moneyInTheBank == 5
+return == true
+===========================================================================
+ch2.msg.Miner.isFatigued():::EXIT;condition="not(return == true)"
+this.machine.previous == null
+this.location == null
+this.moneyInTheBank == 0
+this.thirst == 1
+this.fatigue == 0
+return == false
+===========================================================================
+ch2.msg.Miner.isThirsty():::ENTER
+this.goldCarried one of { 1, 2, 3 }
+===========================================================================
+ch2.msg.Miner.isThirsty():::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.location == orig(this.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.goldCarried == orig(this.goldCarried)
+this.moneyInTheBank == orig(this.moneyInTheBank)
+this.thirst == orig(this.thirst)
+this.fatigue == orig(this.fatigue)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+(return == false)  ==>  (this.goldCarried one of { 1, 2, 3 })
+(this.thirst one of { 5, 6, 7 })  <==>  (return == true)
+(this.thirst one of { 5, 6, 7 })  ==>  (this.fatigue one of { 4, 8 })
+(this.thirst one of { 5, 6, 7 })  ==>  (this.goldCarried one of { 1, 2 })
+(this.thirst one of { 5, 6, 7 })  ==>  (this.moneyInTheBank one of { 3, 4 })
+this.goldCarried one of { 1, 2, 3 }
+===========================================================================
+ch2.msg.Miner.isThirsty():::EXIT;condition="return == true"
+this.goldCarried one of { 1, 2 }
+this.moneyInTheBank one of { 3, 4 }
+this.thirst one of { 5, 6, 7 }
+this.fatigue one of { 4, 8 }
+return == true
+===========================================================================
+ch2.msg.Miner.isThirsty():::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+ch2.msg.Miner.sleep():::ENTER
+this.location == ch2.msg.Location.SHACK
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.GoHomeAndSleepTilRested.class
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+this.goldCarried == 0
+this.moneyInTheBank == 5
+===========================================================================
+ch2.msg.Miner.sleep():::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.location == ch2.msg.Location.SHACK
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(this.location)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.goldCarried == orig(this.goldCarried)
+this.moneyInTheBank == orig(this.moneyInTheBank)
+this.thirst == orig(this.thirst)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.GoHomeAndSleepTilRested.class
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+this.goldCarried == 0
+this.moneyInTheBank == 5
+this.fatigue - orig(this.fatigue) + 1 == 0
+===========================================================================
+ch2.msg.Miner.update():::ENTER
+===========================================================================
+ch2.msg.Miner.update():::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.global == orig(this.machine.global)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+this.machine.previous != null
+this.location != null
+this.machine.owner.getClass().getName() != orig(this.machine.current.getClass().getName())
+this.machine.owner.getClass().getName() != orig(this.machine.previous.getClass().getName())
+ch2.msg.Location.$VALUES.getClass().getName() != orig(this.machine.current.getClass().getName())
+ch2.msg.Location.$VALUES.getClass().getName() != orig(this.machine.previous.getClass().getName())
+this.thirst != orig(this.thirst)
+===========================================================================
+ch2.msg.MinersWife:::OBJECT
+this.machine.owner.id == this.id
+this.location == ch2.msg.Location.SHACK
+this has only one value
+this.machine has only one value
+this.machine != null
+this.machine.owner has only one value
+this.machine.owner != null
+this.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+this.machine.owner.id.toString == "Elsa"
+this.machine.current != null
+this.machine.global has only one value
+this.machine.global != null
+this.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.GOLDMINE != null
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.SHACK != null
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.BANK != null
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.SALOON != null
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES != null
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[] elements != null
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+this.id has only one value
+this.id != null
+this.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+this.machine.owner.getClass().getName() != this.machine.current.getClass().getName()
+this.machine.owner.getClass().getName() != this.machine.previous.getClass().getName()
+this.machine.owner.getClass().getName() != this.machine.global.getClass().getName()
+this.machine.owner.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+this.machine.current.getClass().getName() != this.machine.previous.getClass().getName()
+this.machine.current.getClass().getName() != this.machine.global.getClass().getName()
+this.machine.current.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+this.machine.previous.getClass().getName() != this.machine.global.getClass().getName()
+this.machine.previous.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+this.machine.global.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+===========================================================================
+ch2.msg.MinersWife.MinersWife():::EXIT
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.DoHouseWork.class
+this.machine.previous == null
+this.cooking == false
+===========================================================================
+ch2.msg.MinersWife.handleMessage(ch2.msg.Telegram):::ENTER
+this.id == arg0.receiver
+arg0.type == ch2.msg.MessageType.HI_HONEY_IM_HOME
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.DoHouseWork.class
+this.machine.previous == null
+this.cooking == false
+arg0 has only one value
+arg0.sender has only one value
+arg0.sender.toString == "Miner Bob"
+arg0.receiver.toString == "Elsa"
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+arg0.dispatchTime == 0.0
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.MinersWife.handleMessage(ch2.msg.Telegram):::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.previous.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.machine.global.getClass().getName() == orig(this.machine.global.getClass().getName())
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(this.location)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.id == arg0.receiver
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id == orig(arg0.receiver)
+this.id.toString == orig(this.id.toString)
+arg0.sender == orig(arg0.sender)
+arg0.sender.toString == orig(arg0.sender.toString)
+arg0.receiver.toString == orig(arg0.receiver.toString)
+arg0.type == ch2.msg.MessageType.HI_HONEY_IM_HOME
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(arg0.type)
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(ch2.msg.MessageType.HI_HONEY_IM_HOME)
+ch2.msg.MessageType.STEW_READY == orig(ch2.msg.MessageType.STEW_READY)
+ch2.msg.MessageType.$VALUES == orig(ch2.msg.MessageType.$VALUES)
+ch2.msg.MessageType.$VALUES.getClass().getName() == orig(ch2.msg.MessageType.$VALUES.getClass().getName())
+ch2.msg.MessageType.$VALUES[] == orig(ch2.msg.MessageType.$VALUES[])
+arg0.dispatchTime == orig(arg0.dispatchTime)
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.CookStew.class
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.DoHouseWork.class
+this.cooking == true
+arg0.sender has only one value
+arg0.sender.toString == "Miner Bob"
+arg0.receiver.toString == "Elsa"
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+arg0.dispatchTime == 0.0
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.MinersWife.isCooking():::ENTER
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.CookStew.class
+===========================================================================
+ch2.msg.MinersWife.isCooking():::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.machine.global.getClass().getName() == orig(this.machine.global.getClass().getName())
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(this.location)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.cooking == return
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+return == orig(this.cooking)
+(this.machine.previous.getClass().getName() == ch2.msg.DoHouseWork.class)  <==>  (return == false)
+(this.machine.previous.getClass().getName() == ch2.msg.VisitBathroom.class)  <==>  (return == true)
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.CookStew.class
+===========================================================================
+ch2.msg.MinersWife.isCooking():::EXIT;condition="return == true"
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.VisitBathroom.class
+return == true
+===========================================================================
+ch2.msg.MinersWife.isCooking():::EXIT;condition="not(return == true)"
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.DoHouseWork.class
+return == false
+===========================================================================
+ch2.msg.MinersWife.setCooking(boolean):::ENTER
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.CookStew.class
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.DoHouseWork.class
+this.cooking == false
+arg0 == true
+===========================================================================
+ch2.msg.MinersWife.setCooking(boolean):::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.previous == orig(this.machine.previous)
+this.machine.previous.getClass().getName() == orig(this.machine.previous.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.machine.global.getClass().getName() == orig(this.machine.global.getClass().getName())
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(this.location)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.cooking == orig(arg0)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+this.machine.current has only one value
+this.machine.current.getClass().getName() == ch2.msg.CookStew.class
+this.machine.previous has only one value
+this.machine.previous.getClass().getName() == ch2.msg.DoHouseWork.class
+this.cooking == true
+===========================================================================
+ch2.msg.MinersWife.update():::ENTER
+===========================================================================
+ch2.msg.MinersWife.update():::EXIT
+this.machine == orig(this.machine)
+this.machine.owner == orig(this.machine.owner)
+this.machine.owner.getClass().getName() == orig(this.machine.owner.getClass().getName())
+this.machine.owner.id.toString == orig(this.machine.owner.id.toString)
+this.machine.current == orig(this.machine.current)
+this.machine.current.getClass().getName() == orig(this.machine.current.getClass().getName())
+this.machine.global == orig(this.machine.global)
+this.machine.global.getClass().getName() == orig(this.machine.global.getClass().getName())
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(this.location)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+this.cooking == orig(this.cooking)
+this.id == orig(this.machine.owner.id)
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+===========================================================================
+ch2.msg.MiningTest.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+ch2.msg.MiningTest.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+ch2.msg.QuenchThirst:::CLASS
+ch2.msg.QuenchThirst.instance has only one value
+ch2.msg.QuenchThirst.instance != null
+===========================================================================
+ch2.msg.QuenchThirst:::OBJECT
+this has only one value
+===========================================================================
+ch2.msg.QuenchThirst.QuenchThirst():::EXIT
+===========================================================================
+ch2.msg.QuenchThirst.enter(ch2.msg.Miner):::ENTER
+this == ch2.msg.QuenchThirst.instance
+arg0.location == ch2.msg.Location.GOLDMINE
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.QuenchThirst.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried one of { 1, 2 }
+arg0.moneyInTheBank one of { 3, 4 }
+arg0.thirst one of { 5, 6 }
+arg0.fatigue one of { 4, 8 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.QuenchThirst.enter(ch2.msg.Miner):::EXIT
+ch2.msg.QuenchThirst.instance == orig(this)
+ch2.msg.QuenchThirst.instance == orig(ch2.msg.QuenchThirst.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.previous == orig(arg0.machine.previous)
+arg0.machine.previous.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.location == ch2.msg.Location.SALOON
+ch2.msg.Location.GOLDMINE == orig(arg0.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.goldCarried == orig(arg0.goldCarried)
+arg0.moneyInTheBank == orig(arg0.moneyInTheBank)
+arg0.thirst == orig(arg0.thirst)
+arg0.fatigue == orig(arg0.fatigue)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.QuenchThirst.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried one of { 1, 2 }
+arg0.moneyInTheBank one of { 3, 4 }
+arg0.thirst one of { 5, 6 }
+arg0.fatigue one of { 4, 8 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.QuenchThirst.execute(ch2.msg.Miner):::ENTER
+this == ch2.msg.QuenchThirst.instance
+arg0.location == ch2.msg.Location.SALOON
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.QuenchThirst.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried one of { 1, 2 }
+arg0.moneyInTheBank one of { 3, 4 }
+arg0.thirst one of { 6, 7 }
+arg0.fatigue one of { 4, 8 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.QuenchThirst.execute(ch2.msg.Miner):::EXIT
+ch2.msg.QuenchThirst.instance == orig(this)
+ch2.msg.QuenchThirst.instance == orig(ch2.msg.QuenchThirst.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.previous.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.location == ch2.msg.Location.GOLDMINE
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(arg0.location)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.goldCarried == orig(arg0.goldCarried)
+arg0.fatigue == orig(arg0.fatigue)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.QuenchThirst.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried one of { 1, 2 }
+arg0.moneyInTheBank one of { 1, 2 }
+arg0.thirst == 0
+arg0.fatigue one of { 4, 8 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.QuenchThirst.exit(ch2.msg.Miner):::ENTER
+this == ch2.msg.QuenchThirst.instance
+arg0.machine.current == arg0.machine.previous
+arg0.machine.current.getClass().getName() == arg0.machine.previous.getClass().getName()
+arg0.location == ch2.msg.Location.SALOON
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.QuenchThirst.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried one of { 1, 2 }
+arg0.moneyInTheBank one of { 1, 2 }
+arg0.thirst == 0
+arg0.fatigue one of { 4, 8 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.QuenchThirst.exit(ch2.msg.Miner):::EXIT
+ch2.msg.QuenchThirst.instance == orig(this)
+ch2.msg.QuenchThirst.instance == orig(ch2.msg.QuenchThirst.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == arg0.machine.previous
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current == orig(arg0.machine.previous)
+arg0.machine.current.getClass().getName() == arg0.machine.previous.getClass().getName()
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.current.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.location == ch2.msg.Location.SALOON
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(arg0.location)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.goldCarried == orig(arg0.goldCarried)
+arg0.moneyInTheBank == orig(arg0.moneyInTheBank)
+arg0.thirst == orig(arg0.thirst)
+arg0.fatigue == orig(arg0.fatigue)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.QuenchThirst.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried one of { 1, 2 }
+arg0.moneyInTheBank one of { 1, 2 }
+arg0.thirst == 0
+arg0.fatigue one of { 4, 8 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.QuenchThirst.instance():::ENTER
+===========================================================================
+ch2.msg.QuenchThirst.instance():::EXIT
+ch2.msg.QuenchThirst.instance == return
+ch2.msg.QuenchThirst.instance == orig(ch2.msg.QuenchThirst.instance)
+===========================================================================
+ch2.msg.StateMachine:::OBJECT
+this.owner != null
+this.owner.id != null
+this.owner.id.toString one of { "Elsa", "Miner Bob" }
+this.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+this.owner.getClass().getName() != this.current.getClass().getName()
+this.owner.getClass().getName() != this.previous.getClass().getName()
+this.owner.getClass().getName() != this.global.getClass().getName()
+this.current.getClass().getName() != this.previous.getClass().getName()
+this.current.getClass().getName() != this.global.getClass().getName()
+this.previous.getClass().getName() != this.global.getClass().getName()
+===========================================================================
+ch2.msg.StateMachine.StateMachine(ch2.msg.BaseGameEntity):::ENTER
+arg0.id.toString one of { "Elsa", "Miner Bob" }
+===========================================================================
+ch2.msg.StateMachine.StateMachine(ch2.msg.BaseGameEntity):::EXIT
+this.owner == orig(arg0)
+this.owner.getClass().getName() == orig(arg0.getClass().getName())
+this.owner.id == arg0.id
+this.current == this.previous
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+this.current == null
+this.global == null
+arg0.id.toString one of { "Elsa", "Miner Bob" }
+===========================================================================
+ch2.msg.StateMachine.changeState(ch2.msg.State):::ENTER
+this.current != null
+arg0 != null
+this.owner.getClass().getName() != arg0.getClass().getName()
+this.current.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+ch2.msg.StateMachine.changeState(ch2.msg.State):::EXIT
+this.owner == orig(this.owner)
+this.owner.getClass().getName() == orig(this.owner.getClass().getName())
+this.owner.id == orig(this.owner.id)
+this.owner.id.toString == orig(this.owner.id.toString)
+this.current == orig(arg0)
+this.current.getClass().getName() == orig(arg0.getClass().getName())
+this.previous == orig(this.current)
+this.previous.getClass().getName() == orig(this.current.getClass().getName())
+this.global == orig(this.global)
+this.global.getClass().getName() == orig(this.global.getClass().getName())
+this.current != null
+this.previous != null
+this.owner.getClass().getName() != orig(this.previous.getClass().getName())
+this.previous.getClass().getName() != orig(this.previous.getClass().getName())
+===========================================================================
+ch2.msg.StateMachine.handleMessage(ch2.msg.Telegram):::ENTER
+this.owner.id == arg0.receiver
+arg0.type == ch2.msg.MessageType.HI_HONEY_IM_HOME
+this has only one value
+this.owner has only one value
+this.owner.getClass().getName() == ch2.msg.MinersWife.class
+this.owner.id has only one value
+this.owner.id.toString == "Elsa"
+this.current has only one value
+this.current.getClass().getName() == ch2.msg.DoHouseWork.class
+this.previous == null
+this.global has only one value
+arg0 has only one value
+arg0.sender has only one value
+arg0.sender.toString == "Miner Bob"
+arg0.receiver.toString == "Elsa"
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+arg0.dispatchTime == 0.0
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.StateMachine.handleMessage(ch2.msg.Telegram):::EXIT
+this.owner == orig(this.owner)
+this.owner.getClass().getName() == orig(this.owner.getClass().getName())
+this.owner.id == arg0.receiver
+this.owner.id.toString == orig(this.owner.id.toString)
+this.previous == orig(this.current)
+this.previous.getClass().getName() == orig(this.current.getClass().getName())
+this.global == orig(this.global)
+this.global.getClass().getName() == orig(this.global.getClass().getName())
+arg0.sender == orig(arg0.sender)
+arg0.sender.toString == orig(arg0.sender.toString)
+arg0.receiver == orig(this.owner.id)
+arg0.receiver == orig(arg0.receiver)
+arg0.receiver.toString == orig(arg0.receiver.toString)
+arg0.type == ch2.msg.MessageType.HI_HONEY_IM_HOME
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(arg0.type)
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(ch2.msg.MessageType.HI_HONEY_IM_HOME)
+ch2.msg.MessageType.STEW_READY == orig(ch2.msg.MessageType.STEW_READY)
+ch2.msg.MessageType.$VALUES == orig(ch2.msg.MessageType.$VALUES)
+ch2.msg.MessageType.$VALUES.getClass().getName() == orig(ch2.msg.MessageType.$VALUES.getClass().getName())
+ch2.msg.MessageType.$VALUES[] == orig(ch2.msg.MessageType.$VALUES[])
+arg0.dispatchTime == orig(arg0.dispatchTime)
+this.owner has only one value
+this.owner.getClass().getName() == ch2.msg.MinersWife.class
+this.owner.id.toString == "Elsa"
+this.current has only one value
+this.current.getClass().getName() == ch2.msg.CookStew.class
+this.previous has only one value
+this.previous.getClass().getName() == ch2.msg.DoHouseWork.class
+this.global has only one value
+arg0.sender has only one value
+arg0.sender.toString == "Miner Bob"
+arg0.receiver has only one value
+arg0.receiver.toString == "Elsa"
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+arg0.dispatchTime == 0.0
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.StateMachine.revertToPreviousState():::ENTER
+this has only one value
+this.owner has only one value
+this.owner.getClass().getName() == ch2.msg.MinersWife.class
+this.owner.id has only one value
+this.owner.id.toString == "Elsa"
+this.current has only one value
+this.current.getClass().getName() == ch2.msg.VisitBathroom.class
+this.previous has only one value
+this.previous.getClass().getName() == ch2.msg.CookStew.class
+this.global has only one value
+===========================================================================
+ch2.msg.StateMachine.revertToPreviousState():::EXIT
+this.owner == orig(this.owner)
+this.owner.getClass().getName() == orig(this.owner.getClass().getName())
+this.owner.id == orig(this.owner.id)
+this.owner.id.toString == orig(this.owner.id.toString)
+this.current == orig(this.previous)
+this.current.getClass().getName() == orig(this.previous.getClass().getName())
+this.previous == orig(this.current)
+this.previous.getClass().getName() == orig(this.current.getClass().getName())
+this.global == orig(this.global)
+this.global.getClass().getName() == orig(this.global.getClass().getName())
+this.owner has only one value
+this.owner.getClass().getName() == ch2.msg.MinersWife.class
+this.owner.id has only one value
+this.owner.id.toString == "Elsa"
+this.current has only one value
+this.current.getClass().getName() == ch2.msg.CookStew.class
+this.previous has only one value
+this.previous.getClass().getName() == ch2.msg.VisitBathroom.class
+this.global has only one value
+===========================================================================
+ch2.msg.StateMachine.setCurrentState(ch2.msg.State):::ENTER
+this.current == this.previous
+this.current == null
+===========================================================================
+ch2.msg.StateMachine.setCurrentState(ch2.msg.State):::EXIT
+this.owner == orig(this.owner)
+this.owner.getClass().getName() == orig(this.owner.getClass().getName())
+this.owner.id == orig(this.owner.id)
+this.owner.id.toString == orig(this.owner.id.toString)
+this.current == orig(arg0)
+this.current.getClass().getName() == orig(arg0.getClass().getName())
+this.previous == orig(this.current)
+this.previous == orig(this.previous)
+this.global == orig(this.global)
+this.previous == null
+===========================================================================
+ch2.msg.StateMachine.setGlobalState(ch2.msg.State):::ENTER
+this.current == this.previous
+this has only one value
+this.owner has only one value
+this.owner.getClass().getName() == ch2.msg.MinersWife.class
+this.owner.id has only one value
+this.owner.id.toString == "Elsa"
+this.current == null
+this.global == null
+arg0 has only one value
+arg0.getClass().getName() == ch2.msg.WifesGlobalState.class
+===========================================================================
+ch2.msg.StateMachine.setGlobalState(ch2.msg.State):::EXIT
+this.owner == orig(this.owner)
+this.owner.getClass().getName() == orig(this.owner.getClass().getName())
+this.owner.id == orig(this.owner.id)
+this.owner.id.toString == orig(this.owner.id.toString)
+this.current == this.previous
+this.current == orig(this.current)
+this.current == orig(this.previous)
+this.global == orig(arg0)
+this.global.getClass().getName() == orig(arg0.getClass().getName())
+this.owner has only one value
+this.owner.getClass().getName() == ch2.msg.MinersWife.class
+this.owner.id has only one value
+this.owner.id.toString == "Elsa"
+this.current == null
+this.global has only one value
+===========================================================================
+ch2.msg.StateMachine.update():::ENTER
+this.current != null
+===========================================================================
+ch2.msg.StateMachine.update():::EXIT
+this.owner == orig(this.owner)
+this.owner.getClass().getName() == orig(this.owner.getClass().getName())
+this.owner.id == orig(this.owner.id)
+this.owner.id.toString == orig(this.owner.id.toString)
+this.global == orig(this.global)
+this.global.getClass().getName() == orig(this.global.getClass().getName())
+this.current != null
+this.owner.getClass().getName() != orig(this.current.getClass().getName())
+this.owner.getClass().getName() != orig(this.previous.getClass().getName())
+this.global.getClass().getName() != orig(this.current.getClass().getName())
+===========================================================================
+ch2.msg.Telegram:::OBJECT
+this has only one value
+this.sender has only one value
+this.sender.toString == "Miner Bob"
+this.receiver has only one value
+this.receiver.toString == "Elsa"
+this.type has only one value
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+this.dispatchTime == 0.0
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.Telegram.Telegram(java.lang.String, java.lang.String, ch2.msg.MessageType, double):::ENTER
+arg0 has only one value
+arg0.toString == "Miner Bob"
+arg1 has only one value
+arg1.toString == "Elsa"
+arg2 has only one value
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+arg3 == 0.0
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.Telegram.Telegram(java.lang.String, java.lang.String, ch2.msg.MessageType, double):::EXIT
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(ch2.msg.MessageType.HI_HONEY_IM_HOME)
+ch2.msg.MessageType.STEW_READY == orig(ch2.msg.MessageType.STEW_READY)
+ch2.msg.MessageType.$VALUES == orig(ch2.msg.MessageType.$VALUES)
+ch2.msg.MessageType.$VALUES.getClass().getName() == orig(ch2.msg.MessageType.$VALUES.getClass().getName())
+ch2.msg.MessageType.$VALUES[] == orig(ch2.msg.MessageType.$VALUES[])
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg0.toString == "Miner Bob"
+arg1.toString == "Elsa"
+===========================================================================
+ch2.msg.VisitBankAndDepositGold:::CLASS
+ch2.msg.VisitBankAndDepositGold.instance has only one value
+ch2.msg.VisitBankAndDepositGold.instance != null
+===========================================================================
+ch2.msg.VisitBankAndDepositGold:::OBJECT
+this has only one value
+===========================================================================
+ch2.msg.VisitBankAndDepositGold.VisitBankAndDepositGold():::EXIT
+===========================================================================
+ch2.msg.VisitBankAndDepositGold.enter(ch2.msg.Miner):::ENTER
+this == ch2.msg.VisitBankAndDepositGold.instance
+arg0.location == ch2.msg.Location.GOLDMINE
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried == 3
+arg0.moneyInTheBank one of { 0, 1, 2 }
+arg0.thirst one of { 1, 2, 4 }
+arg0.fatigue one of { 3, 6, 9 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.VisitBankAndDepositGold.enter(ch2.msg.Miner):::EXIT
+ch2.msg.VisitBankAndDepositGold.instance == orig(this)
+ch2.msg.VisitBankAndDepositGold.instance == orig(ch2.msg.VisitBankAndDepositGold.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.previous == orig(arg0.machine.previous)
+arg0.machine.previous.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.location == ch2.msg.Location.BANK
+ch2.msg.Location.GOLDMINE == orig(arg0.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.goldCarried == orig(arg0.goldCarried)
+arg0.moneyInTheBank == orig(arg0.moneyInTheBank)
+arg0.thirst == orig(arg0.thirst)
+arg0.fatigue == orig(arg0.fatigue)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried == 3
+arg0.moneyInTheBank one of { 0, 1, 2 }
+arg0.thirst one of { 1, 2, 4 }
+arg0.fatigue one of { 3, 6, 9 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.VisitBankAndDepositGold.execute(ch2.msg.Miner):::ENTER
+this == ch2.msg.VisitBankAndDepositGold.instance
+arg0.location == ch2.msg.Location.BANK
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.EnterMineAndDigForNugget.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried == 3
+arg0.moneyInTheBank one of { 0, 1, 2 }
+arg0.thirst one of { 2, 3, 5 }
+arg0.fatigue one of { 3, 6, 9 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.VisitBankAndDepositGold.execute(ch2.msg.Miner):::EXIT
+ch2.msg.VisitBankAndDepositGold.instance == orig(this)
+ch2.msg.VisitBankAndDepositGold.instance == orig(ch2.msg.VisitBankAndDepositGold.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.previous.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(arg0.location)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.thirst == orig(arg0.thirst)
+arg0.fatigue == orig(arg0.fatigue)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried == 0
+arg0.moneyInTheBank one of { 3, 4, 5 }
+arg0.thirst one of { 2, 3, 5 }
+arg0.fatigue one of { 3, 6, 9 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.VisitBankAndDepositGold.exit(ch2.msg.Miner):::ENTER
+this == ch2.msg.VisitBankAndDepositGold.instance
+arg0.machine.current == arg0.machine.previous
+arg0.machine.current.getClass().getName() == arg0.machine.previous.getClass().getName()
+arg0.location == ch2.msg.Location.BANK
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried == 0
+arg0.moneyInTheBank one of { 3, 4, 5 }
+arg0.thirst one of { 2, 3, 5 }
+arg0.fatigue one of { 3, 6, 9 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.VisitBankAndDepositGold.exit(ch2.msg.Miner):::EXIT
+ch2.msg.VisitBankAndDepositGold.instance == orig(this)
+ch2.msg.VisitBankAndDepositGold.instance == orig(ch2.msg.VisitBankAndDepositGold.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == arg0.machine.previous
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current == orig(arg0.machine.previous)
+arg0.machine.current.getClass().getName() == arg0.machine.previous.getClass().getName()
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.current.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.location == ch2.msg.Location.BANK
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(arg0.location)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.goldCarried == orig(arg0.goldCarried)
+arg0.moneyInTheBank == orig(arg0.moneyInTheBank)
+arg0.thirst == orig(arg0.thirst)
+arg0.fatigue == orig(arg0.fatigue)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.Miner.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.VisitBankAndDepositGold.class
+arg0.machine.global == null
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.goldCarried == 0
+arg0.moneyInTheBank one of { 3, 4, 5 }
+arg0.thirst one of { 2, 3, 5 }
+arg0.fatigue one of { 3, 6, 9 }
+arg0.id has only one value
+arg0.id.toString == "Miner Bob"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.VisitBankAndDepositGold.instance():::ENTER
+===========================================================================
+ch2.msg.VisitBankAndDepositGold.instance():::EXIT
+ch2.msg.VisitBankAndDepositGold.instance == return
+ch2.msg.VisitBankAndDepositGold.instance == orig(ch2.msg.VisitBankAndDepositGold.instance)
+===========================================================================
+ch2.msg.VisitBathroom:::CLASS
+ch2.msg.VisitBathroom.instance has only one value
+===========================================================================
+ch2.msg.VisitBathroom:::OBJECT
+this has only one value
+===========================================================================
+ch2.msg.VisitBathroom.VisitBathroom():::EXIT
+===========================================================================
+ch2.msg.VisitBathroom.enter(ch2.msg.MinersWife):::ENTER
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.VisitBathroom.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.CookStew.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+arg0.location has only one value
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == true
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.VisitBathroom.enter(ch2.msg.MinersWife):::EXIT
+ch2.msg.VisitBathroom.instance == orig(ch2.msg.VisitBathroom.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.previous == orig(arg0.machine.previous)
+arg0.machine.previous.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.machine.global.getClass().getName() == orig(arg0.machine.global.getClass().getName())
+arg0.location == orig(arg0.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.cooking == orig(arg0.cooking)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.VisitBathroom.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.CookStew.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+arg0.location has only one value
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == true
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.VisitBathroom.execute(ch2.msg.MinersWife):::ENTER
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.VisitBathroom.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.CookStew.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+arg0.location has only one value
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == true
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.VisitBathroom.execute(ch2.msg.MinersWife):::EXIT
+ch2.msg.VisitBathroom.instance == orig(ch2.msg.VisitBathroom.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.machine.global.getClass().getName() == orig(arg0.machine.global.getClass().getName())
+arg0.location == orig(arg0.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.cooking == orig(arg0.cooking)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.CookStew.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.VisitBathroom.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+arg0.location has only one value
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == true
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.VisitBathroom.exit(ch2.msg.MinersWife):::ENTER
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.VisitBathroom.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.VisitBathroom.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+arg0.location has only one value
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == true
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.VisitBathroom.exit(ch2.msg.MinersWife):::EXIT
+ch2.msg.VisitBathroom.instance == orig(ch2.msg.VisitBathroom.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.current == orig(arg0.machine.current)
+arg0.machine.current.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.previous == orig(arg0.machine.previous)
+arg0.machine.previous.getClass().getName() == orig(arg0.machine.previous.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.machine.global.getClass().getName() == orig(arg0.machine.global.getClass().getName())
+arg0.location == orig(arg0.location)
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.cooking == orig(arg0.cooking)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.VisitBathroom.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.VisitBathroom.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+arg0.location has only one value
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == true
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+===========================================================================
+ch2.msg.VisitBathroom.instance():::ENTER
+===========================================================================
+ch2.msg.VisitBathroom.instance():::EXIT
+ch2.msg.VisitBathroom.instance == orig(ch2.msg.VisitBathroom.instance)
+return has only one value
+===========================================================================
+ch2.msg.WifesGlobalState:::CLASS
+ch2.msg.WifesGlobalState.instance has only one value
+ch2.msg.WifesGlobalState.instance != null
+===========================================================================
+ch2.msg.WifesGlobalState:::OBJECT
+this has only one value
+===========================================================================
+ch2.msg.WifesGlobalState.WifesGlobalState():::EXIT
+===========================================================================
+ch2.msg.WifesGlobalState.execute(ch2.msg.MinersWife):::ENTER
+this == ch2.msg.WifesGlobalState.instance
+arg0.location == ch2.msg.Location.SHACK
+arg0 has only one value
+arg0 != null
+arg0.machine has only one value
+arg0.machine != null
+arg0.machine.owner has only one value
+arg0.machine.owner != null
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current != null
+arg0.machine.global has only one value
+arg0.machine.global != null
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.GOLDMINE != null
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.SHACK != null
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.BANK != null
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.SALOON != null
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES != null
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[] elements != null
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.id has only one value
+arg0.id != null
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+arg0.machine.owner.getClass().getName() != arg0.machine.current.getClass().getName()
+arg0.machine.owner.getClass().getName() != arg0.machine.global.getClass().getName()
+arg0.machine.owner.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.current.getClass().getName() != arg0.machine.global.getClass().getName()
+arg0.machine.current.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.global.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+===========================================================================
+ch2.msg.WifesGlobalState.execute(ch2.msg.MinersWife):::EXIT
+ch2.msg.WifesGlobalState.instance == orig(this)
+ch2.msg.WifesGlobalState.instance == orig(ch2.msg.WifesGlobalState.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.machine.global.getClass().getName() == orig(arg0.machine.global.getClass().getName())
+arg0.location == ch2.msg.Location.SHACK
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(arg0.location)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.cooking == orig(arg0.cooking)
+arg0.id == orig(arg0.id)
+arg0.id.toString == orig(arg0.id.toString)
+arg0.machine has only one value
+arg0.machine != null
+arg0.machine.owner has only one value
+arg0.machine.owner != null
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current != null
+arg0.machine.global has only one value
+arg0.machine.global != null
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.GOLDMINE != null
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.SHACK != null
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.BANK != null
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.SALOON != null
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES != null
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[] elements != null
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.id has only one value
+arg0.id != null
+arg0.id.toString == "Elsa"
+size(ch2.msg.Location.$VALUES[]) == 4
+arg0.machine.owner.getClass().getName() != arg0.machine.current.getClass().getName()
+arg0.machine.owner.getClass().getName() != arg0.machine.global.getClass().getName()
+arg0.machine.owner.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.owner.getClass().getName() != orig(arg0.machine.current.getClass().getName())
+arg0.machine.current.getClass().getName() != arg0.machine.global.getClass().getName()
+arg0.machine.current.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.global.getClass().getName() != ch2.msg.Location.$VALUES.getClass().getName()
+arg0.machine.global.getClass().getName() != orig(arg0.machine.current.getClass().getName())
+ch2.msg.Location.$VALUES.getClass().getName() != orig(arg0.machine.current.getClass().getName())
+===========================================================================
+ch2.msg.WifesGlobalState.instance():::ENTER
+===========================================================================
+ch2.msg.WifesGlobalState.instance():::EXIT
+ch2.msg.WifesGlobalState.instance == return
+ch2.msg.WifesGlobalState.instance == orig(ch2.msg.WifesGlobalState.instance)
+===========================================================================
+ch2.msg.WifesGlobalState.onMessage(ch2.msg.MinersWife, ch2.msg.Telegram):::ENTER
+this == ch2.msg.WifesGlobalState.instance
+arg0.location == ch2.msg.Location.SHACK
+arg0.id == arg1.receiver
+arg1.type == ch2.msg.MessageType.HI_HONEY_IM_HOME
+arg0 has only one value
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.DoHouseWork.class
+arg0.machine.previous == null
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == false
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+arg1 has only one value
+arg1.sender has only one value
+arg1.sender.toString == "Miner Bob"
+arg1.receiver.toString == "Elsa"
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+arg1.dispatchTime == 0.0
+size(ch2.msg.Location.$VALUES[]) == 4
+size(ch2.msg.MessageType.$VALUES[]) == 2
+===========================================================================
+ch2.msg.WifesGlobalState.onMessage(ch2.msg.MinersWife, ch2.msg.Telegram):::EXIT
+ch2.msg.WifesGlobalState.instance == orig(this)
+ch2.msg.WifesGlobalState.instance == orig(ch2.msg.WifesGlobalState.instance)
+arg0.machine == orig(arg0.machine)
+arg0.machine.owner == orig(arg0.machine.owner)
+arg0.machine.owner.getClass().getName() == orig(arg0.machine.owner.getClass().getName())
+arg0.machine.previous.getClass().getName() == orig(arg0.machine.current.getClass().getName())
+arg0.machine.global == orig(arg0.machine.global)
+arg0.machine.global.getClass().getName() == orig(arg0.machine.global.getClass().getName())
+arg0.location == ch2.msg.Location.SHACK
+ch2.msg.Location.GOLDMINE == orig(ch2.msg.Location.GOLDMINE)
+ch2.msg.Location.SHACK == orig(arg0.location)
+ch2.msg.Location.SHACK == orig(ch2.msg.Location.SHACK)
+ch2.msg.Location.BANK == orig(ch2.msg.Location.BANK)
+ch2.msg.Location.SALOON == orig(ch2.msg.Location.SALOON)
+ch2.msg.Location.$VALUES == orig(ch2.msg.Location.$VALUES)
+ch2.msg.Location.$VALUES.getClass().getName() == orig(ch2.msg.Location.$VALUES.getClass().getName())
+ch2.msg.Location.$VALUES[] == orig(ch2.msg.Location.$VALUES[])
+arg0.id == arg1.receiver
+arg0.id == orig(arg0.id)
+arg0.id == orig(arg1.receiver)
+arg0.id.toString == orig(arg0.id.toString)
+arg1.sender == orig(arg1.sender)
+arg1.sender.toString == orig(arg1.sender.toString)
+arg1.receiver.toString == orig(arg1.receiver.toString)
+arg1.type == ch2.msg.MessageType.HI_HONEY_IM_HOME
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(arg1.type)
+ch2.msg.MessageType.HI_HONEY_IM_HOME == orig(ch2.msg.MessageType.HI_HONEY_IM_HOME)
+ch2.msg.MessageType.STEW_READY == orig(ch2.msg.MessageType.STEW_READY)
+ch2.msg.MessageType.$VALUES == orig(ch2.msg.MessageType.$VALUES)
+ch2.msg.MessageType.$VALUES.getClass().getName() == orig(ch2.msg.MessageType.$VALUES.getClass().getName())
+ch2.msg.MessageType.$VALUES[] == orig(ch2.msg.MessageType.$VALUES[])
+arg1.dispatchTime == orig(arg1.dispatchTime)
+arg0.machine has only one value
+arg0.machine.owner has only one value
+arg0.machine.owner.getClass().getName() == ch2.msg.MinersWife.class
+arg0.machine.current has only one value
+arg0.machine.current.getClass().getName() == ch2.msg.CookStew.class
+arg0.machine.previous has only one value
+arg0.machine.previous.getClass().getName() == ch2.msg.DoHouseWork.class
+arg0.machine.global has only one value
+arg0.machine.global.getClass().getName() == ch2.msg.WifesGlobalState.class
+ch2.msg.Location.GOLDMINE has only one value
+ch2.msg.Location.SHACK has only one value
+ch2.msg.Location.BANK has only one value
+ch2.msg.Location.SALOON has only one value
+ch2.msg.Location.$VALUES has only one value
+ch2.msg.Location.$VALUES.getClass().getName() == ch2.msg.Location[].class
+ch2.msg.Location.$VALUES[] contains no nulls and has only one value, of length 4
+ch2.msg.Location.$VALUES[].getClass().getName() == [ch2.msg.Location, ch2.msg.Location, ch2.msg.Location, ch2.msg.Location]
+ch2.msg.Location.$VALUES[].getClass().getName() elements == ch2.msg.Location.class
+arg0.cooking == true
+arg0.id has only one value
+arg0.id.toString == "Elsa"
+arg1.sender has only one value
+arg1.sender.toString == "Miner Bob"
+arg1.receiver.toString == "Elsa"
+ch2.msg.MessageType.HI_HONEY_IM_HOME has only one value
+ch2.msg.MessageType.STEW_READY has only one value
+ch2.msg.MessageType.$VALUES has only one value
+ch2.msg.MessageType.$VALUES.getClass().getName() == ch2.msg.MessageType[].class
+ch2.msg.MessageType.$VALUES[] contains no nulls and has only one value, of length 2
+ch2.msg.MessageType.$VALUES[].getClass().getName() == [ch2.msg.MessageType, ch2.msg.MessageType]
+ch2.msg.MessageType.$VALUES[].getClass().getName() elements == ch2.msg.MessageType.class
+arg1.dispatchTime == 0.0
+size(ch2.msg.Location.$VALUES[]) == 4
+size(ch2.msg.MessageType.$VALUES[]) == 2
+Exiting Daikon.

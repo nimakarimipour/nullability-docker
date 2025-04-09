@@ -1,0 +1,1019 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 2 times.  Unmatched entries are ignored!
+Unterminated calls:
+  org.javastack.bouncer.ClusterTest.main(java.lang.String[]) : 1 invocation
+  org.javastack.bouncer.ClusterTest.start() : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+missing variables in newEnterExitRel:
+  parent = org.javastack.bouncer.ClusterServer$ClusterServerListen.ClusterServerListen(org.javastack.bouncer.ClusterServer, org.javastack.bouncer.InboundAddress):::ENTER
+  child = org.javastack.bouncer.ClusterServer$ClusterServerListen.ClusterServerListen(org.javastack.bouncer.ClusterServer, org.javastack.bouncer.InboundAddress):::EXIT
+  parent.var_infos = [Ldaikon.VarInfo;@407873d3
+parent varinfos missing from parent_to_child_map:
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.ClusterServer.this.left.port]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.ClusterServer.this.left.port-1]
+   org.javastack.bouncer.SSLFactory.DEFAULT_PWD[org.javastack.bouncer.ClusterServer.this.left.port]
+   org.javastack.bouncer.SSLFactory.DEFAULT_PWD[org.javastack.bouncer.ClusterServer.this.left.port-1]
+   arg1.addrs[org.javastack.bouncer.ClusterServer.this.left.port]
+   arg1.addrs[org.javastack.bouncer.ClusterServer.this.left.port-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.ClusterServer.this.left.lastResolv]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.ClusterServer.this.left.lastResolv-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[arg1.port]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[arg1.port-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.LB_ORDER]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.LB_ORDER-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.LB_RR]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.LB_RR-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.LB_RAND]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.LB_RAND-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.TUN_SSL]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.TUN_SSL-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.MUX_AES]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.MUX_AES-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.MUX_SSL]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.MUX_SSL-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.TUN_ENDSSL]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.TUN_ENDSSL-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.MUX_OUT]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.MUX_OUT-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.MUX_IN]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.MUX_IN-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.PROXY_SEND]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.PROXY_SEND-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.CLUSTER_AES]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.CLUSTER_AES-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.CLUSTER_SSL]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[org.javastack.bouncer.Options.CLUSTER_SSL-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[arg1.opts.flags]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[arg1.opts.flags-1]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[arg1.lastResolv]
+   org.javastack.bouncer.ClusterServer.this.left.addrs[arg1.lastResolv-1]
+   org.javastack.bouncer.SSLFactory.DEFAULT_PWD[org.javastack.bouncer.ClusterServer.this.left.lastResolv]
+   org.javastack.bouncer.SSLFactory.DEFAULT_PWD[org.javastack.bouncer.ClusterServer.this.left.lastResolv-1]
+   arg1.addrs[org.javastack.bouncer.ClusterServer.this.left.lastResolv]
+   arg1.addrs[org.javastack.bouncer.ClusterServer.this.left.lastResolv-1]
+rel.parent_to_child_map:
+    org.javastack.bouncer.ClusterServer.this => orig(org.javastack.bouncer.ClusterServer.this)
+    org.javastack.bouncer.ClusterServer.this.context => orig(org.javastack.bouncer.ClusterServer.this.context)
+    org.javastack.bouncer.ClusterServer.this.context.getClass().getName() => orig(org.javastack.bouncer.ClusterServer.this.context.getClass().getName())
+    org.javastack.bouncer.ClusterServer.this.left => orig(org.javastack.bouncer.ClusterServer.this.left)
+    org.javastack.bouncer.ClusterServer.this.left.host => orig(org.javastack.bouncer.ClusterServer.this.left.host)
+    org.javastack.bouncer.ClusterServer.this.left.host.toString => orig(org.javastack.bouncer.ClusterServer.this.left.host.toString)
+    org.javastack.bouncer.ClusterServer.this.left.port => orig(org.javastack.bouncer.ClusterServer.this.left.port)
+    org.javastack.bouncer.ClusterServer.this.left.opts => orig(org.javastack.bouncer.ClusterServer.this.left.opts)
+    org.javastack.bouncer.ClusterServer.this.left.sslFactory => orig(org.javastack.bouncer.ClusterServer.this.left.sslFactory)
+    org.javastack.bouncer.ClusterServer.this.left.addrs => orig(org.javastack.bouncer.ClusterServer.this.left.addrs)
+    org.javastack.bouncer.ClusterServer.this.left.addrs.getClass().getName() => orig(org.javastack.bouncer.ClusterServer.this.left.addrs.getClass().getName())
+    org.javastack.bouncer.ClusterServer.this.left.addrs[..] => orig(org.javastack.bouncer.ClusterServer.this.left.addrs[..])
+    org.javastack.bouncer.ClusterServer.this.left.addrs[..].getClass().getName() => orig(org.javastack.bouncer.ClusterServer.this.left.addrs[..].getClass().getName())
+    org.javastack.bouncer.ClusterServer.this.left.context => orig(org.javastack.bouncer.ClusterServer.this.left.context)
+    org.javastack.bouncer.ClusterServer.this.left.context.getClass().getName() => orig(org.javastack.bouncer.ClusterServer.this.left.context.getClass().getName())
+    org.javastack.bouncer.ClusterServer.this.left.lastResolv => orig(org.javastack.bouncer.ClusterServer.this.left.lastResolv)
+    org.javastack.bouncer.ClusterServer.this.localListen => orig(org.javastack.bouncer.ClusterServer.this.localListen)
+    org.javastack.bouncer.ClusterServer.this.localListen.inboundAddress => orig(org.javastack.bouncer.ClusterServer.this.localListen.inboundAddress)
+    org.javastack.bouncer.ClusterServer.this.localListen.listen => orig(org.javastack.bouncer.ClusterServer.this.localListen.listen)
+    org.javastack.bouncer.ClusterServer.this.localListen.shutdown => orig(org.javastack.bouncer.ClusterServer.this.localListen.shutdown)
+    arg1 => orig(arg1)
+    arg1.host => orig(arg1.host)
+    arg1.host.toString => orig(arg1.host.toString)
+    arg1.port => orig(arg1.port)
+    arg1.opts => orig(arg1.opts)
+    org.javastack.bouncer.Options.S_NULL => orig(org.javastack.bouncer.Options.S_NULL)
+    org.javastack.bouncer.Options.S_NULL.toString => orig(org.javastack.bouncer.Options.S_NULL.toString)
+    org.javastack.bouncer.Options.I_NULL => orig(org.javastack.bouncer.Options.I_NULL)
+    org.javastack.bouncer.Options.L_NULL => orig(org.javastack.bouncer.Options.L_NULL)
+    org.javastack.bouncer.Options.LB_ORDER => org.javastack.bouncer.Options.LB_ORDER
+    org.javastack.bouncer.Options.LB_RR => org.javastack.bouncer.Options.LB_RR
+    org.javastack.bouncer.Options.LB_RAND => org.javastack.bouncer.Options.LB_RAND
+    org.javastack.bouncer.Options.TUN_SSL => org.javastack.bouncer.Options.TUN_SSL
+    org.javastack.bouncer.Options.MUX_AES => org.javastack.bouncer.Options.MUX_AES
+    org.javastack.bouncer.Options.MUX_SSL => org.javastack.bouncer.Options.MUX_SSL
+    org.javastack.bouncer.Options.TUN_ENDSSL => org.javastack.bouncer.Options.TUN_ENDSSL
+    org.javastack.bouncer.Options.MUX_OUT => org.javastack.bouncer.Options.MUX_OUT
+    org.javastack.bouncer.Options.MUX_IN => org.javastack.bouncer.Options.MUX_IN
+    org.javastack.bouncer.Options.PROXY_SEND => org.javastack.bouncer.Options.PROXY_SEND
+    org.javastack.bouncer.Options.CLUSTER_AES => org.javastack.bouncer.Options.CLUSTER_AES
+    org.javastack.bouncer.Options.CLUSTER_SSL => org.javastack.bouncer.Options.CLUSTER_SSL
+    org.javastack.bouncer.Options.P_AES => orig(org.javastack.bouncer.Options.P_AES)
+    org.javastack.bouncer.Options.P_AES.toString => orig(org.javastack.bouncer.Options.P_AES.toString)
+    org.javastack.bouncer.Options.P_AES_ALG => orig(org.javastack.bouncer.Options.P_AES_ALG)
+    org.javastack.bouncer.Options.P_AES_ALG.toString => orig(org.javastack.bouncer.Options.P_AES_ALG.toString)
+    org.javastack.bouncer.Options.P_AES_BITS => orig(org.javastack.bouncer.Options.P_AES_BITS)
+    org.javastack.bouncer.Options.P_AES_BITS.toString => orig(org.javastack.bouncer.Options.P_AES_BITS.toString)
+    org.javastack.bouncer.Options.P_SSL => orig(org.javastack.bouncer.Options.P_SSL)
+    org.javastack.bouncer.Options.P_SSL.toString => orig(org.javastack.bouncer.Options.P_SSL.toString)
+    org.javastack.bouncer.Options.P_ENDSSL => orig(org.javastack.bouncer.Options.P_ENDSSL)
+    org.javastack.bouncer.Options.P_ENDSSL.toString => orig(org.javastack.bouncer.Options.P_ENDSSL.toString)
+    org.javastack.bouncer.Options.P_CONNECT_TIMEOUT => orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT)
+    org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString => orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString)
+    org.javastack.bouncer.Options.P_READ_TIMEOUT => orig(org.javastack.bouncer.Options.P_READ_TIMEOUT)
+    org.javastack.bouncer.Options.P_READ_TIMEOUT.toString => orig(org.javastack.bouncer.Options.P_READ_TIMEOUT.toString)
+    org.javastack.bouncer.Options.P_MUX_NAME => orig(org.javastack.bouncer.Options.P_MUX_NAME)
+    org.javastack.bouncer.Options.P_MUX_NAME.toString => orig(org.javastack.bouncer.Options.P_MUX_NAME.toString)
+    org.javastack.bouncer.Options.P_TUN_ID => orig(org.javastack.bouncer.Options.P_TUN_ID)
+    org.javastack.bouncer.Options.P_TUN_ID.toString => orig(org.javastack.bouncer.Options.P_TUN_ID.toString)
+    org.javastack.bouncer.Options.P_STICKY => orig(org.javastack.bouncer.Options.P_STICKY)
+    org.javastack.bouncer.Options.P_STICKY.toString => orig(org.javastack.bouncer.Options.P_STICKY.toString)
+    org.javastack.bouncer.Options.P_CLUSTER_ID => orig(org.javastack.bouncer.Options.P_CLUSTER_ID)
+    org.javastack.bouncer.Options.P_CLUSTER_ID.toString => orig(org.javastack.bouncer.Options.P_CLUSTER_ID.toString)
+    org.javastack.bouncer.Options.MAP_FLAGS => orig(org.javastack.bouncer.Options.MAP_FLAGS)
+    org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() => orig(org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName())
+    arg1.opts.stickyConfig => orig(arg1.opts.stickyConfig)
+    arg1.opts.flags => orig(arg1.opts.flags)
+    arg1.opts.strParams => orig(arg1.opts.strParams)
+    arg1.opts.strParams.getClass().getName() => orig(arg1.opts.strParams.getClass().getName())
+    arg1.opts.intParams => orig(arg1.opts.intParams)
+    arg1.opts.intParams.getClass().getName() => orig(arg1.opts.intParams.getClass().getName())
+    arg1.opts.longParams => orig(arg1.opts.longParams)
+    arg1.opts.longParams.getClass().getName() => orig(arg1.opts.longParams.getClass().getName())
+    arg1.sslFactory => orig(arg1.sslFactory)
+    org.javastack.bouncer.SSLFactory.DEFAULT_PWD => orig(org.javastack.bouncer.SSLFactory.DEFAULT_PWD)
+    org.javastack.bouncer.SSLFactory.DEFAULT_PWD[..] => orig(org.javastack.bouncer.SSLFactory.DEFAULT_PWD[..])
+    arg1.sslFactory.ks => orig(arg1.sslFactory.ks)
+    arg1.sslFactory.ctx => orig(arg1.sslFactory.ctx)
+    arg1.sslFactory.cipherSuites => orig(arg1.sslFactory.cipherSuites)
+    arg1.sslFactory.needClientCert => orig(arg1.sslFactory.needClientCert)
+    arg1.addrs => orig(arg1.addrs)
+    arg1.addrs.getClass().getName() => orig(arg1.addrs.getClass().getName())
+    arg1.addrs[..] => orig(arg1.addrs[..])
+    arg1.addrs[..].getClass().getName() => orig(arg1.addrs[..].getClass().getName())
+    arg1.context => orig(arg1.context)
+    arg1.context.getClass().getName() => orig(arg1.context.getClass().getName())
+    arg1.lastResolv => orig(arg1.lastResolv)
+    size(org.javastack.bouncer.ClusterServer.this.left.addrs[..]) => orig(size(org.javastack.bouncer.ClusterServer.this.left.addrs[..]))
+    size(org.javastack.bouncer.ClusterServer.this.left.addrs[..])-1 => orig(size(org.javastack.bouncer.ClusterServer.this.left.addrs[..]))-1
+    size(org.javastack.bouncer.SSLFactory.DEFAULT_PWD[..]) => orig(size(org.javastack.bouncer.SSLFactory.DEFAULT_PWD[..]))
+    size(org.javastack.bouncer.SSLFactory.DEFAULT_PWD[..])-1 => orig(size(org.javastack.bouncer.SSLFactory.DEFAULT_PWD[..]))-1
+    size(arg1.addrs[..]) => orig(size(arg1.addrs[..]))
+    size(arg1.addrs[..])-1 => orig(size(arg1.addrs[..]))-1
+child.var_infos:
+    this
+    this.inboundAddress
+    this.inboundAddress.host
+    this.inboundAddress.host.toString
+    this.inboundAddress.port
+    this.inboundAddress.opts
+    org.javastack.bouncer.Options.S_NULL
+    org.javastack.bouncer.Options.S_NULL.toString
+    org.javastack.bouncer.Options.I_NULL
+    org.javastack.bouncer.Options.L_NULL
+    org.javastack.bouncer.Options.LB_ORDER
+    org.javastack.bouncer.Options.LB_RR
+    org.javastack.bouncer.Options.LB_RAND
+    org.javastack.bouncer.Options.TUN_SSL
+    org.javastack.bouncer.Options.MUX_AES
+    org.javastack.bouncer.Options.MUX_SSL
+    org.javastack.bouncer.Options.TUN_ENDSSL
+    org.javastack.bouncer.Options.MUX_OUT
+    org.javastack.bouncer.Options.MUX_IN
+    org.javastack.bouncer.Options.PROXY_SEND
+    org.javastack.bouncer.Options.CLUSTER_AES
+    org.javastack.bouncer.Options.CLUSTER_SSL
+    org.javastack.bouncer.Options.P_AES
+    org.javastack.bouncer.Options.P_AES.toString
+    org.javastack.bouncer.Options.P_AES_ALG
+    org.javastack.bouncer.Options.P_AES_ALG.toString
+    org.javastack.bouncer.Options.P_AES_BITS
+    org.javastack.bouncer.Options.P_AES_BITS.toString
+    org.javastack.bouncer.Options.P_SSL
+    org.javastack.bouncer.Options.P_SSL.toString
+    org.javastack.bouncer.Options.P_ENDSSL
+    org.javastack.bouncer.Options.P_ENDSSL.toString
+    org.javastack.bouncer.Options.P_CONNECT_TIMEOUT
+    org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString
+    org.javastack.bouncer.Options.P_READ_TIMEOUT
+    org.javastack.bouncer.Options.P_READ_TIMEOUT.toString
+    org.javastack.bouncer.Options.P_MUX_NAME
+    org.javastack.bouncer.Options.P_MUX_NAME.toString
+    org.javastack.bouncer.Options.P_TUN_ID
+    org.javastack.bouncer.Options.P_TUN_ID.toString
+    org.javastack.bouncer.Options.P_STICKY
+    org.javastack.bouncer.Options.P_STICKY.toString
+    org.javastack.bouncer.Options.P_CLUSTER_ID
+    org.javastack.bouncer.Options.P_CLUSTER_ID.toString
+    org.javastack.bouncer.Options.MAP_FLAGS
+    org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName()
+    this.inboundAddress.opts.stickyConfig
+    this.inboundAddress.opts.flags
+    this.inboundAddress.opts.strParams
+    this.inboundAddress.opts.strParams.getClass().getName()
+    this.inboundAddress.opts.intParams
+    this.inboundAddress.opts.intParams.getClass().getName()
+    this.inboundAddress.opts.longParams
+    this.inboundAddress.opts.longParams.getClass().getName()
+    this.inboundAddress.sslFactory
+    org.javastack.bouncer.SSLFactory.DEFAULT_PWD
+    org.javastack.bouncer.SSLFactory.DEFAULT_PWD[..]
+    this.inboundAddress.sslFactory.ks
+    this.inboundAddress.sslFactory.ctx
+    this.inboundAddress.sslFactory.cipherSuites
+    this.inboundAddress.sslFactory.needClientCert
+    this.inboundAddress.addrs
+    this.inboundAddress.addrs.getClass().getName()
+    this.inboundAddress.addrs[..]
+    this.inboundAddress.addrs[..].getClass().getName()
+    this.inboundAddress.context
+    this.inboundAddress.context.getClass().getName()
+    this.inboundAddress.lastResolv
+    this.listen
+    this.shutdown
+    org.javastack.bouncer.ClusterServer.this
+    org.javastack.bouncer.ClusterServer.this.context
+    org.javastack.bouncer.ClusterServer.this.context.getClass().getName()
+    org.javastack.bouncer.ClusterServer.this.left
+    org.javastack.bouncer.ClusterServer.this.left.host
+    org.javastack.bouncer.ClusterServer.this.left.host.toString
+    org.javastack.bouncer.ClusterServer.this.left.port
+    org.javastack.bouncer.ClusterServer.this.left.opts
+    org.javastack.bouncer.ClusterServer.this.left.sslFactory
+    org.javastack.bouncer.ClusterServer.this.left.addrs
+    org.javastack.bouncer.ClusterServer.this.left.addrs.getClass().getName()
+    org.javastack.bouncer.ClusterServer.this.left.addrs[..]
+    org.javastack.bouncer.ClusterServer.this.left.addrs[..].getClass().getName()
+    org.javastack.bouncer.ClusterServer.this.left.context
+    org.javastack.bouncer.ClusterServer.this.left.context.getClass().getName()
+    org.javastack.bouncer.ClusterServer.this.left.lastResolv
+    org.javastack.bouncer.ClusterServer.this.localListen
+    org.javastack.bouncer.ClusterServer.this.localListen.inboundAddress
+    org.javastack.bouncer.ClusterServer.this.localListen.listen
+    org.javastack.bouncer.ClusterServer.this.localListen.shutdown
+    arg1
+    arg1.host
+    arg1.host.toString
+    arg1.port
+    arg1.opts
+    arg1.opts.stickyConfig
+    arg1.opts.flags
+    arg1.opts.strParams
+    arg1.opts.strParams.getClass().getName()
+    arg1.opts.intParams
+    arg1.opts.intParams.getClass().getName()
+    arg1.opts.longParams
+    arg1.opts.longParams.getClass().getName()
+    arg1.sslFactory
+    arg1.sslFactory.ks
+    arg1.sslFactory.ctx
+    arg1.sslFactory.cipherSuites
+    arg1.sslFactory.needClientCert
+    arg1.addrs
+    arg1.addrs.getClass().getName()
+    arg1.addrs[..]
+    arg1.addrs[..].getClass().getName()
+    arg1.context
+    arg1.context.getClass().getName()
+    arg1.lastResolv
+    orig(org.javastack.bouncer.ClusterServer.this)
+    orig(org.javastack.bouncer.ClusterServer.this.context)
+    orig(org.javastack.bouncer.ClusterServer.this.context.getClass().getName())
+    orig(org.javastack.bouncer.ClusterServer.this.left)
+    orig(org.javastack.bouncer.ClusterServer.this.left.host)
+    orig(org.javastack.bouncer.ClusterServer.this.left.host.toString)
+    orig(org.javastack.bouncer.ClusterServer.this.left.port)
+    orig(org.javastack.bouncer.ClusterServer.this.left.opts)
+    orig(org.javastack.bouncer.ClusterServer.this.left.sslFactory)
+    orig(org.javastack.bouncer.ClusterServer.this.left.addrs)
+    orig(org.javastack.bouncer.ClusterServer.this.left.addrs.getClass().getName())
+    orig(org.javastack.bouncer.ClusterServer.this.left.addrs[..])
+    orig(org.javastack.bouncer.ClusterServer.this.left.addrs[..].getClass().getName())
+    orig(org.javastack.bouncer.ClusterServer.this.left.context)
+    orig(org.javastack.bouncer.ClusterServer.this.left.context.getClass().getName())
+    orig(org.javastack.bouncer.ClusterServer.this.left.lastResolv)
+    orig(org.javastack.bouncer.ClusterServer.this.localListen)
+    orig(org.javastack.bouncer.ClusterServer.this.localListen.inboundAddress)
+    orig(org.javastack.bouncer.ClusterServer.this.localListen.listen)
+    orig(org.javastack.bouncer.ClusterServer.this.localListen.shutdown)
+    orig(arg1)
+    orig(arg1.host)
+    orig(arg1.host.toString)
+    orig(arg1.port)
+    orig(arg1.opts)
+    orig(org.javastack.bouncer.Options.S_NULL)
+    orig(org.javastack.bouncer.Options.S_NULL.toString)
+    orig(org.javastack.bouncer.Options.I_NULL)
+    orig(org.javastack.bouncer.Options.L_NULL)
+    orig(org.javastack.bouncer.Options.P_AES)
+    orig(org.javastack.bouncer.Options.P_AES.toString)
+    orig(org.javastack.bouncer.Options.P_AES_ALG)
+    orig(org.javastack.bouncer.Options.P_AES_ALG.toString)
+    orig(org.javastack.bouncer.Options.P_AES_BITS)
+    orig(org.javastack.bouncer.Options.P_AES_BITS.toString)
+    orig(org.javastack.bouncer.Options.P_SSL)
+    orig(org.javastack.bouncer.Options.P_SSL.toString)
+    orig(org.javastack.bouncer.Options.P_ENDSSL)
+    orig(org.javastack.bouncer.Options.P_ENDSSL.toString)
+    orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT)
+    orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString)
+    orig(org.javastack.bouncer.Options.P_READ_TIMEOUT)
+    orig(org.javastack.bouncer.Options.P_READ_TIMEOUT.toString)
+    orig(org.javastack.bouncer.Options.P_MUX_NAME)
+    orig(org.javastack.bouncer.Options.P_MUX_NAME.toString)
+    orig(org.javastack.bouncer.Options.P_TUN_ID)
+    orig(org.javastack.bouncer.Options.P_TUN_ID.toString)
+    orig(org.javastack.bouncer.Options.P_STICKY)
+    orig(org.javastack.bouncer.Options.P_STICKY.toString)
+    orig(org.javastack.bouncer.Options.P_CLUSTER_ID)
+    orig(org.javastack.bouncer.Options.P_CLUSTER_ID.toString)
+    orig(org.javastack.bouncer.Options.MAP_FLAGS)
+    orig(org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName())
+    orig(arg1.opts.stickyConfig)
+    orig(arg1.opts.flags)
+    orig(arg1.opts.strParams)
+    orig(arg1.opts.strParams.getClass().getName())
+    orig(arg1.opts.intParams)
+    orig(arg1.opts.intParams.getClass().getName())
+    orig(arg1.opts.longParams)
+    orig(arg1.opts.longParams.getClass().getName())
+    orig(arg1.sslFactory)
+    orig(org.javastack.bouncer.SSLFactory.DEFAULT_PWD)
+    orig(org.javastack.bouncer.SSLFactory.DEFAULT_PWD[..])
+    orig(arg1.sslFactory.ks)
+    orig(arg1.sslFactory.ctx)
+    orig(arg1.sslFactory.cipherSuites)
+    orig(arg1.sslFactory.needClientCert)
+    orig(arg1.addrs)
+    orig(arg1.addrs.getClass().getName())
+    orig(arg1.addrs[..])
+    orig(arg1.addrs[..].getClass().getName())
+    orig(arg1.context)
+    orig(arg1.context.getClass().getName())
+    orig(arg1.lastResolv)
+    size(org.javastack.bouncer.SSLFactory.DEFAULT_PWD[..])
+    size(org.javastack.bouncer.SSLFactory.DEFAULT_PWD[..])-1
+    size(this.inboundAddress.addrs[..])
+    size(this.inboundAddress.addrs[..])-1
+    size(org.javastack.bouncer.ClusterServer.this.left.addrs[..])
+    size(org.javastack.bouncer.ClusterServer.this.left.addrs[..])-1
+    size(arg1.addrs[..])
+    size(arg1.addrs[..])-1
+    orig(size(org.javastack.bouncer.ClusterServer.this.left.addrs[..]))
+    orig(size(org.javastack.bouncer.ClusterServer.this.left.addrs[..]))-1
+    orig(size(org.javastack.bouncer.SSLFactory.DEFAULT_PWD[..]))
+    orig(size(org.javastack.bouncer.SSLFactory.DEFAULT_PWD[..]))-1
+    orig(size(arg1.addrs[..]))
+    orig(size(arg1.addrs[..]))-1
+End of diagnostics for newEnterExitRel(org.javastack.bouncer.ClusterServer$ClusterServerListen.ClusterServerListen(org.javastack.bouncer.ClusterServer, org.javastack.bouncer.InboundAddress):::ENTER, org.javastack.bouncer.ClusterServer$ClusterServerListen.ClusterServerListen(org.javastack.bouncer.ClusterServer, org.javastack.bouncer.InboundAddress):::EXIT)
+===========================================================================
+org.javastack.bouncer.BouncerAddress:::OBJECT
+this has only one value
+this.getClass().getName() == org.javastack.bouncer.InboundAddress.class
+this.context has only one value
+this.context.getClass().getName() == org.javastack.bouncer.ClusterTest.class
+this.lastResolv == 0
+===========================================================================
+org.javastack.bouncer.BouncerAddress.BouncerAddress(org.javastack.bouncer.ServerContext):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.javastack.bouncer.ClusterTest.class
+===========================================================================
+org.javastack.bouncer.BouncerAddress.BouncerAddress(org.javastack.bouncer.ServerContext):::EXIT
+===========================================================================
+org.javastack.bouncer.ClusterTest:::OBJECT
+this has only one value
+this.taskMgr has only one value
+this.taskMgr.threadPool has only one value
+this.taskMgr.threadPool.getClass().getName() == java.util.concurrent.ThreadPoolExecutor.class
+this.taskMgr.taskCounter has only one value
+this.taskMgr.taskList has only one value
+this.taskMgr.taskList.getClass().getName() == java.util.Collections$SynchronizedMap.class
+this.stats has only one value
+org.javastack.bouncer.jmx.BouncerStatistics.MY_NAME has only one value
+org.javastack.bouncer.jmx.BouncerStatistics.MY_NAME.toString == "org.javastack.bouncer.jmx:type=BouncerStatistics"
+this.stats.tryingConnections has only one value
+this.stats.activeConnections has only one value
+this.stats.reloads has only one value
+this.stats.attendedConnections has only one value
+this.stats.failedConnections has only one value
+this.stats.inMsgs has only one value
+this.stats.outMsgs has only one value
+this.stats.inBytes has only one value
+this.stats.outBytes has only one value
+===========================================================================
+org.javastack.bouncer.ClusterTest.ClusterTest():::EXIT
+===========================================================================
+org.javastack.bouncer.InboundAddress:::OBJECT
+this has only one value
+this.host has only one value
+this.host.toString == "0.0.0.0"
+this.port == 1234
+this.opts has only one value
+org.javastack.bouncer.Options.S_NULL has only one value
+org.javastack.bouncer.Options.S_NULL.toString == ""
+org.javastack.bouncer.Options.I_NULL has only one value
+org.javastack.bouncer.Options.L_NULL has only one value
+org.javastack.bouncer.Options.P_AES has only one value
+org.javastack.bouncer.Options.P_AES.toString == "AES"
+org.javastack.bouncer.Options.P_AES_ALG has only one value
+org.javastack.bouncer.Options.P_AES_ALG.toString == "AESALG"
+org.javastack.bouncer.Options.P_AES_BITS has only one value
+org.javastack.bouncer.Options.P_AES_BITS.toString == "AESBITS"
+org.javastack.bouncer.Options.P_SSL has only one value
+org.javastack.bouncer.Options.P_SSL.toString == "SSL"
+org.javastack.bouncer.Options.P_ENDSSL has only one value
+org.javastack.bouncer.Options.P_ENDSSL.toString == "ENDSSL"
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == "CONNECT_TIMEOUT"
+org.javastack.bouncer.Options.P_READ_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == "READ_TIMEOUT"
+org.javastack.bouncer.Options.P_MUX_NAME has only one value
+org.javastack.bouncer.Options.P_MUX_NAME.toString == "MUX_NAME"
+org.javastack.bouncer.Options.P_TUN_ID has only one value
+org.javastack.bouncer.Options.P_TUN_ID.toString == "TUN_ID"
+org.javastack.bouncer.Options.P_STICKY has only one value
+org.javastack.bouncer.Options.P_STICKY.toString == "STICKY"
+org.javastack.bouncer.Options.P_CLUSTER_ID has only one value
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == "CLUSTER_ID"
+org.javastack.bouncer.Options.MAP_FLAGS has only one value
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == java.util.Collections$UnmodifiableMap.class
+this.opts.stickyConfig == null
+this.opts.flags == 0
+this.opts.strParams has only one value
+this.opts.strParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+this.opts.intParams has only one value
+this.opts.intParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+this.opts.longParams has only one value
+this.opts.longParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+this.sslFactory == null
+this.addrs == null
+this.context has only one value
+this.context.getClass().getName() == org.javastack.bouncer.ClusterTest.class
+this.lastResolv == 0
+===========================================================================
+org.javastack.bouncer.InboundAddress.InboundAddress(org.javastack.bouncer.ServerContext, java.lang.String, int, org.javastack.bouncer.Options):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == org.javastack.bouncer.ClusterTest.class
+arg1 has only one value
+arg1.toString == "0.0.0.0"
+arg2 == 1234
+arg3 has only one value
+org.javastack.bouncer.Options.S_NULL has only one value
+org.javastack.bouncer.Options.S_NULL.toString == ""
+org.javastack.bouncer.Options.I_NULL has only one value
+org.javastack.bouncer.Options.L_NULL has only one value
+org.javastack.bouncer.Options.P_AES has only one value
+org.javastack.bouncer.Options.P_AES.toString == "AES"
+org.javastack.bouncer.Options.P_AES_ALG has only one value
+org.javastack.bouncer.Options.P_AES_ALG.toString == "AESALG"
+org.javastack.bouncer.Options.P_AES_BITS has only one value
+org.javastack.bouncer.Options.P_AES_BITS.toString == "AESBITS"
+org.javastack.bouncer.Options.P_SSL has only one value
+org.javastack.bouncer.Options.P_SSL.toString == "SSL"
+org.javastack.bouncer.Options.P_ENDSSL has only one value
+org.javastack.bouncer.Options.P_ENDSSL.toString == "ENDSSL"
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == "CONNECT_TIMEOUT"
+org.javastack.bouncer.Options.P_READ_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == "READ_TIMEOUT"
+org.javastack.bouncer.Options.P_MUX_NAME has only one value
+org.javastack.bouncer.Options.P_MUX_NAME.toString == "MUX_NAME"
+org.javastack.bouncer.Options.P_TUN_ID has only one value
+org.javastack.bouncer.Options.P_TUN_ID.toString == "TUN_ID"
+org.javastack.bouncer.Options.P_STICKY has only one value
+org.javastack.bouncer.Options.P_STICKY.toString == "STICKY"
+org.javastack.bouncer.Options.P_CLUSTER_ID has only one value
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == "CLUSTER_ID"
+org.javastack.bouncer.Options.MAP_FLAGS has only one value
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == java.util.Collections$UnmodifiableMap.class
+arg3.stickyConfig == null
+arg3.flags == 0
+arg3.strParams has only one value
+arg3.strParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+arg3.intParams has only one value
+arg3.intParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+arg3.longParams has only one value
+arg3.longParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+===========================================================================
+org.javastack.bouncer.InboundAddress.InboundAddress(org.javastack.bouncer.ServerContext, java.lang.String, int, org.javastack.bouncer.Options):::EXIT
+org.javastack.bouncer.Options.S_NULL == orig(org.javastack.bouncer.Options.S_NULL)
+org.javastack.bouncer.Options.S_NULL.toString == orig(org.javastack.bouncer.Options.S_NULL.toString)
+org.javastack.bouncer.Options.I_NULL == orig(org.javastack.bouncer.Options.I_NULL)
+org.javastack.bouncer.Options.L_NULL == orig(org.javastack.bouncer.Options.L_NULL)
+org.javastack.bouncer.Options.P_AES == orig(org.javastack.bouncer.Options.P_AES)
+org.javastack.bouncer.Options.P_AES.toString == orig(org.javastack.bouncer.Options.P_AES.toString)
+org.javastack.bouncer.Options.P_AES_ALG == orig(org.javastack.bouncer.Options.P_AES_ALG)
+org.javastack.bouncer.Options.P_AES_ALG.toString == orig(org.javastack.bouncer.Options.P_AES_ALG.toString)
+org.javastack.bouncer.Options.P_AES_BITS == orig(org.javastack.bouncer.Options.P_AES_BITS)
+org.javastack.bouncer.Options.P_AES_BITS.toString == orig(org.javastack.bouncer.Options.P_AES_BITS.toString)
+org.javastack.bouncer.Options.P_SSL == orig(org.javastack.bouncer.Options.P_SSL)
+org.javastack.bouncer.Options.P_SSL.toString == orig(org.javastack.bouncer.Options.P_SSL.toString)
+org.javastack.bouncer.Options.P_ENDSSL == orig(org.javastack.bouncer.Options.P_ENDSSL)
+org.javastack.bouncer.Options.P_ENDSSL.toString == orig(org.javastack.bouncer.Options.P_ENDSSL.toString)
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT == orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT)
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString)
+org.javastack.bouncer.Options.P_READ_TIMEOUT == orig(org.javastack.bouncer.Options.P_READ_TIMEOUT)
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == orig(org.javastack.bouncer.Options.P_READ_TIMEOUT.toString)
+org.javastack.bouncer.Options.P_MUX_NAME == orig(org.javastack.bouncer.Options.P_MUX_NAME)
+org.javastack.bouncer.Options.P_MUX_NAME.toString == orig(org.javastack.bouncer.Options.P_MUX_NAME.toString)
+org.javastack.bouncer.Options.P_TUN_ID == orig(org.javastack.bouncer.Options.P_TUN_ID)
+org.javastack.bouncer.Options.P_TUN_ID.toString == orig(org.javastack.bouncer.Options.P_TUN_ID.toString)
+org.javastack.bouncer.Options.P_STICKY == orig(org.javastack.bouncer.Options.P_STICKY)
+org.javastack.bouncer.Options.P_STICKY.toString == orig(org.javastack.bouncer.Options.P_STICKY.toString)
+org.javastack.bouncer.Options.P_CLUSTER_ID == orig(org.javastack.bouncer.Options.P_CLUSTER_ID)
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == orig(org.javastack.bouncer.Options.P_CLUSTER_ID.toString)
+org.javastack.bouncer.Options.MAP_FLAGS == orig(org.javastack.bouncer.Options.MAP_FLAGS)
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == orig(org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName())
+arg1.toString == orig(arg1.toString)
+arg3.stickyConfig == orig(arg3.stickyConfig)
+arg3.flags == orig(arg3.flags)
+arg3.strParams == orig(arg3.strParams)
+arg3.strParams.getClass().getName() == orig(arg3.strParams.getClass().getName())
+arg3.intParams == orig(arg3.intParams)
+arg3.intParams.getClass().getName() == orig(arg3.intParams.getClass().getName())
+arg3.longParams == orig(arg3.longParams)
+arg3.longParams.getClass().getName() == orig(arg3.longParams.getClass().getName())
+arg1.toString == "0.0.0.0"
+arg3.stickyConfig == null
+arg3.flags == 0
+arg3.strParams has only one value
+arg3.strParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+arg3.intParams has only one value
+arg3.intParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+arg3.longParams has only one value
+arg3.longParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+===========================================================================
+org.javastack.bouncer.Options$1:::OBJECT
+this has only one value
+===========================================================================
+org.javastack.bouncer.Options$1.():::EXIT
+===========================================================================
+org.javastack.bouncer.Options$2:::OBJECT
+this has only one value
+org.javastack.bouncer.Options.this has only one value
+org.javastack.bouncer.Options.S_NULL has only one value
+org.javastack.bouncer.Options.S_NULL.toString == ""
+org.javastack.bouncer.Options.I_NULL has only one value
+org.javastack.bouncer.Options.L_NULL has only one value
+org.javastack.bouncer.Options.P_AES has only one value
+org.javastack.bouncer.Options.P_AES.toString == "AES"
+org.javastack.bouncer.Options.P_AES_ALG has only one value
+org.javastack.bouncer.Options.P_AES_ALG.toString == "AESALG"
+org.javastack.bouncer.Options.P_AES_BITS has only one value
+org.javastack.bouncer.Options.P_AES_BITS.toString == "AESBITS"
+org.javastack.bouncer.Options.P_SSL has only one value
+org.javastack.bouncer.Options.P_SSL.toString == "SSL"
+org.javastack.bouncer.Options.P_ENDSSL has only one value
+org.javastack.bouncer.Options.P_ENDSSL.toString == "ENDSSL"
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == "CONNECT_TIMEOUT"
+org.javastack.bouncer.Options.P_READ_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == "READ_TIMEOUT"
+org.javastack.bouncer.Options.P_MUX_NAME has only one value
+org.javastack.bouncer.Options.P_MUX_NAME.toString == "MUX_NAME"
+org.javastack.bouncer.Options.P_TUN_ID has only one value
+org.javastack.bouncer.Options.P_TUN_ID.toString == "TUN_ID"
+org.javastack.bouncer.Options.P_STICKY has only one value
+org.javastack.bouncer.Options.P_STICKY.toString == "STICKY"
+org.javastack.bouncer.Options.P_CLUSTER_ID has only one value
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == "CLUSTER_ID"
+org.javastack.bouncer.Options.MAP_FLAGS has only one value
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == java.util.Collections$UnmodifiableMap.class
+org.javastack.bouncer.Options.this.stickyConfig == null
+org.javastack.bouncer.Options.this.flags == 0
+org.javastack.bouncer.Options.this.strParams == null
+org.javastack.bouncer.Options.this.intParams == null
+org.javastack.bouncer.Options.this.longParams == null
+===========================================================================
+org.javastack.bouncer.Options$2.(org.javastack.bouncer.Options):::ENTER
+org.javastack.bouncer.Options.this has only one value
+org.javastack.bouncer.Options.S_NULL has only one value
+org.javastack.bouncer.Options.S_NULL.toString == ""
+org.javastack.bouncer.Options.I_NULL has only one value
+org.javastack.bouncer.Options.L_NULL has only one value
+org.javastack.bouncer.Options.P_AES has only one value
+org.javastack.bouncer.Options.P_AES.toString == "AES"
+org.javastack.bouncer.Options.P_AES_ALG has only one value
+org.javastack.bouncer.Options.P_AES_ALG.toString == "AESALG"
+org.javastack.bouncer.Options.P_AES_BITS has only one value
+org.javastack.bouncer.Options.P_AES_BITS.toString == "AESBITS"
+org.javastack.bouncer.Options.P_SSL has only one value
+org.javastack.bouncer.Options.P_SSL.toString == "SSL"
+org.javastack.bouncer.Options.P_ENDSSL has only one value
+org.javastack.bouncer.Options.P_ENDSSL.toString == "ENDSSL"
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == "CONNECT_TIMEOUT"
+org.javastack.bouncer.Options.P_READ_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == "READ_TIMEOUT"
+org.javastack.bouncer.Options.P_MUX_NAME has only one value
+org.javastack.bouncer.Options.P_MUX_NAME.toString == "MUX_NAME"
+org.javastack.bouncer.Options.P_TUN_ID has only one value
+org.javastack.bouncer.Options.P_TUN_ID.toString == "TUN_ID"
+org.javastack.bouncer.Options.P_STICKY has only one value
+org.javastack.bouncer.Options.P_STICKY.toString == "STICKY"
+org.javastack.bouncer.Options.P_CLUSTER_ID has only one value
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == "CLUSTER_ID"
+org.javastack.bouncer.Options.MAP_FLAGS has only one value
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == java.util.Collections$UnmodifiableMap.class
+org.javastack.bouncer.Options.this.stickyConfig == null
+org.javastack.bouncer.Options.this.flags == 0
+org.javastack.bouncer.Options.this.strParams == null
+org.javastack.bouncer.Options.this.intParams == null
+org.javastack.bouncer.Options.this.longParams == null
+===========================================================================
+org.javastack.bouncer.Options$2.(org.javastack.bouncer.Options):::EXIT
+org.javastack.bouncer.Options.this == orig(org.javastack.bouncer.Options.this)
+org.javastack.bouncer.Options.S_NULL == orig(org.javastack.bouncer.Options.S_NULL)
+org.javastack.bouncer.Options.S_NULL.toString == orig(org.javastack.bouncer.Options.S_NULL.toString)
+org.javastack.bouncer.Options.I_NULL == orig(org.javastack.bouncer.Options.I_NULL)
+org.javastack.bouncer.Options.L_NULL == orig(org.javastack.bouncer.Options.L_NULL)
+org.javastack.bouncer.Options.P_AES == orig(org.javastack.bouncer.Options.P_AES)
+org.javastack.bouncer.Options.P_AES.toString == orig(org.javastack.bouncer.Options.P_AES.toString)
+org.javastack.bouncer.Options.P_AES_ALG == orig(org.javastack.bouncer.Options.P_AES_ALG)
+org.javastack.bouncer.Options.P_AES_ALG.toString == orig(org.javastack.bouncer.Options.P_AES_ALG.toString)
+org.javastack.bouncer.Options.P_AES_BITS == orig(org.javastack.bouncer.Options.P_AES_BITS)
+org.javastack.bouncer.Options.P_AES_BITS.toString == orig(org.javastack.bouncer.Options.P_AES_BITS.toString)
+org.javastack.bouncer.Options.P_SSL == orig(org.javastack.bouncer.Options.P_SSL)
+org.javastack.bouncer.Options.P_SSL.toString == orig(org.javastack.bouncer.Options.P_SSL.toString)
+org.javastack.bouncer.Options.P_ENDSSL == orig(org.javastack.bouncer.Options.P_ENDSSL)
+org.javastack.bouncer.Options.P_ENDSSL.toString == orig(org.javastack.bouncer.Options.P_ENDSSL.toString)
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT == orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT)
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString)
+org.javastack.bouncer.Options.P_READ_TIMEOUT == orig(org.javastack.bouncer.Options.P_READ_TIMEOUT)
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == orig(org.javastack.bouncer.Options.P_READ_TIMEOUT.toString)
+org.javastack.bouncer.Options.P_MUX_NAME == orig(org.javastack.bouncer.Options.P_MUX_NAME)
+org.javastack.bouncer.Options.P_MUX_NAME.toString == orig(org.javastack.bouncer.Options.P_MUX_NAME.toString)
+org.javastack.bouncer.Options.P_TUN_ID == orig(org.javastack.bouncer.Options.P_TUN_ID)
+org.javastack.bouncer.Options.P_TUN_ID.toString == orig(org.javastack.bouncer.Options.P_TUN_ID.toString)
+org.javastack.bouncer.Options.P_STICKY == orig(org.javastack.bouncer.Options.P_STICKY)
+org.javastack.bouncer.Options.P_STICKY.toString == orig(org.javastack.bouncer.Options.P_STICKY.toString)
+org.javastack.bouncer.Options.P_CLUSTER_ID == orig(org.javastack.bouncer.Options.P_CLUSTER_ID)
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == orig(org.javastack.bouncer.Options.P_CLUSTER_ID.toString)
+org.javastack.bouncer.Options.MAP_FLAGS == orig(org.javastack.bouncer.Options.MAP_FLAGS)
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == orig(org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName())
+org.javastack.bouncer.Options.this.stickyConfig == orig(org.javastack.bouncer.Options.this.stickyConfig)
+org.javastack.bouncer.Options.this.flags == orig(org.javastack.bouncer.Options.this.flags)
+org.javastack.bouncer.Options.this.strParams == orig(org.javastack.bouncer.Options.this.strParams)
+org.javastack.bouncer.Options.this.intParams == orig(org.javastack.bouncer.Options.this.intParams)
+org.javastack.bouncer.Options.this.longParams == orig(org.javastack.bouncer.Options.this.longParams)
+===========================================================================
+org.javastack.bouncer.Options$3:::OBJECT
+this has only one value
+org.javastack.bouncer.Options.this has only one value
+org.javastack.bouncer.Options.S_NULL has only one value
+org.javastack.bouncer.Options.S_NULL.toString == ""
+org.javastack.bouncer.Options.I_NULL has only one value
+org.javastack.bouncer.Options.L_NULL has only one value
+org.javastack.bouncer.Options.P_AES has only one value
+org.javastack.bouncer.Options.P_AES.toString == "AES"
+org.javastack.bouncer.Options.P_AES_ALG has only one value
+org.javastack.bouncer.Options.P_AES_ALG.toString == "AESALG"
+org.javastack.bouncer.Options.P_AES_BITS has only one value
+org.javastack.bouncer.Options.P_AES_BITS.toString == "AESBITS"
+org.javastack.bouncer.Options.P_SSL has only one value
+org.javastack.bouncer.Options.P_SSL.toString == "SSL"
+org.javastack.bouncer.Options.P_ENDSSL has only one value
+org.javastack.bouncer.Options.P_ENDSSL.toString == "ENDSSL"
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == "CONNECT_TIMEOUT"
+org.javastack.bouncer.Options.P_READ_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == "READ_TIMEOUT"
+org.javastack.bouncer.Options.P_MUX_NAME has only one value
+org.javastack.bouncer.Options.P_MUX_NAME.toString == "MUX_NAME"
+org.javastack.bouncer.Options.P_TUN_ID has only one value
+org.javastack.bouncer.Options.P_TUN_ID.toString == "TUN_ID"
+org.javastack.bouncer.Options.P_STICKY has only one value
+org.javastack.bouncer.Options.P_STICKY.toString == "STICKY"
+org.javastack.bouncer.Options.P_CLUSTER_ID has only one value
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == "CLUSTER_ID"
+org.javastack.bouncer.Options.MAP_FLAGS has only one value
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == java.util.Collections$UnmodifiableMap.class
+org.javastack.bouncer.Options.this.stickyConfig == null
+org.javastack.bouncer.Options.this.flags == 0
+org.javastack.bouncer.Options.this.strParams has only one value
+org.javastack.bouncer.Options.this.strParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+org.javastack.bouncer.Options.this.intParams == null
+org.javastack.bouncer.Options.this.longParams == null
+===========================================================================
+org.javastack.bouncer.Options$3.(org.javastack.bouncer.Options):::ENTER
+org.javastack.bouncer.Options.this has only one value
+org.javastack.bouncer.Options.S_NULL has only one value
+org.javastack.bouncer.Options.S_NULL.toString == ""
+org.javastack.bouncer.Options.I_NULL has only one value
+org.javastack.bouncer.Options.L_NULL has only one value
+org.javastack.bouncer.Options.P_AES has only one value
+org.javastack.bouncer.Options.P_AES.toString == "AES"
+org.javastack.bouncer.Options.P_AES_ALG has only one value
+org.javastack.bouncer.Options.P_AES_ALG.toString == "AESALG"
+org.javastack.bouncer.Options.P_AES_BITS has only one value
+org.javastack.bouncer.Options.P_AES_BITS.toString == "AESBITS"
+org.javastack.bouncer.Options.P_SSL has only one value
+org.javastack.bouncer.Options.P_SSL.toString == "SSL"
+org.javastack.bouncer.Options.P_ENDSSL has only one value
+org.javastack.bouncer.Options.P_ENDSSL.toString == "ENDSSL"
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == "CONNECT_TIMEOUT"
+org.javastack.bouncer.Options.P_READ_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == "READ_TIMEOUT"
+org.javastack.bouncer.Options.P_MUX_NAME has only one value
+org.javastack.bouncer.Options.P_MUX_NAME.toString == "MUX_NAME"
+org.javastack.bouncer.Options.P_TUN_ID has only one value
+org.javastack.bouncer.Options.P_TUN_ID.toString == "TUN_ID"
+org.javastack.bouncer.Options.P_STICKY has only one value
+org.javastack.bouncer.Options.P_STICKY.toString == "STICKY"
+org.javastack.bouncer.Options.P_CLUSTER_ID has only one value
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == "CLUSTER_ID"
+org.javastack.bouncer.Options.MAP_FLAGS has only one value
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == java.util.Collections$UnmodifiableMap.class
+org.javastack.bouncer.Options.this.stickyConfig == null
+org.javastack.bouncer.Options.this.flags == 0
+org.javastack.bouncer.Options.this.strParams has only one value
+org.javastack.bouncer.Options.this.strParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+org.javastack.bouncer.Options.this.intParams == null
+org.javastack.bouncer.Options.this.longParams == null
+===========================================================================
+org.javastack.bouncer.Options$3.(org.javastack.bouncer.Options):::EXIT
+org.javastack.bouncer.Options.this == orig(org.javastack.bouncer.Options.this)
+org.javastack.bouncer.Options.S_NULL == orig(org.javastack.bouncer.Options.S_NULL)
+org.javastack.bouncer.Options.S_NULL.toString == orig(org.javastack.bouncer.Options.S_NULL.toString)
+org.javastack.bouncer.Options.I_NULL == orig(org.javastack.bouncer.Options.I_NULL)
+org.javastack.bouncer.Options.L_NULL == orig(org.javastack.bouncer.Options.L_NULL)
+org.javastack.bouncer.Options.P_AES == orig(org.javastack.bouncer.Options.P_AES)
+org.javastack.bouncer.Options.P_AES.toString == orig(org.javastack.bouncer.Options.P_AES.toString)
+org.javastack.bouncer.Options.P_AES_ALG == orig(org.javastack.bouncer.Options.P_AES_ALG)
+org.javastack.bouncer.Options.P_AES_ALG.toString == orig(org.javastack.bouncer.Options.P_AES_ALG.toString)
+org.javastack.bouncer.Options.P_AES_BITS == orig(org.javastack.bouncer.Options.P_AES_BITS)
+org.javastack.bouncer.Options.P_AES_BITS.toString == orig(org.javastack.bouncer.Options.P_AES_BITS.toString)
+org.javastack.bouncer.Options.P_SSL == orig(org.javastack.bouncer.Options.P_SSL)
+org.javastack.bouncer.Options.P_SSL.toString == orig(org.javastack.bouncer.Options.P_SSL.toString)
+org.javastack.bouncer.Options.P_ENDSSL == orig(org.javastack.bouncer.Options.P_ENDSSL)
+org.javastack.bouncer.Options.P_ENDSSL.toString == orig(org.javastack.bouncer.Options.P_ENDSSL.toString)
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT == orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT)
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString)
+org.javastack.bouncer.Options.P_READ_TIMEOUT == orig(org.javastack.bouncer.Options.P_READ_TIMEOUT)
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == orig(org.javastack.bouncer.Options.P_READ_TIMEOUT.toString)
+org.javastack.bouncer.Options.P_MUX_NAME == orig(org.javastack.bouncer.Options.P_MUX_NAME)
+org.javastack.bouncer.Options.P_MUX_NAME.toString == orig(org.javastack.bouncer.Options.P_MUX_NAME.toString)
+org.javastack.bouncer.Options.P_TUN_ID == orig(org.javastack.bouncer.Options.P_TUN_ID)
+org.javastack.bouncer.Options.P_TUN_ID.toString == orig(org.javastack.bouncer.Options.P_TUN_ID.toString)
+org.javastack.bouncer.Options.P_STICKY == orig(org.javastack.bouncer.Options.P_STICKY)
+org.javastack.bouncer.Options.P_STICKY.toString == orig(org.javastack.bouncer.Options.P_STICKY.toString)
+org.javastack.bouncer.Options.P_CLUSTER_ID == orig(org.javastack.bouncer.Options.P_CLUSTER_ID)
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == orig(org.javastack.bouncer.Options.P_CLUSTER_ID.toString)
+org.javastack.bouncer.Options.MAP_FLAGS == orig(org.javastack.bouncer.Options.MAP_FLAGS)
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == orig(org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName())
+org.javastack.bouncer.Options.this.stickyConfig == orig(org.javastack.bouncer.Options.this.stickyConfig)
+org.javastack.bouncer.Options.this.flags == orig(org.javastack.bouncer.Options.this.flags)
+org.javastack.bouncer.Options.this.strParams == orig(org.javastack.bouncer.Options.this.strParams)
+org.javastack.bouncer.Options.this.strParams.getClass().getName() == orig(org.javastack.bouncer.Options.this.strParams.getClass().getName())
+org.javastack.bouncer.Options.this.intParams == orig(org.javastack.bouncer.Options.this.intParams)
+org.javastack.bouncer.Options.this.longParams == orig(org.javastack.bouncer.Options.this.longParams)
+===========================================================================
+org.javastack.bouncer.Options$4:::OBJECT
+org.javastack.bouncer.Options.this.strParams.getClass().getName() == org.javastack.bouncer.Options.this.intParams.getClass().getName()
+this has only one value
+org.javastack.bouncer.Options.this has only one value
+org.javastack.bouncer.Options.S_NULL has only one value
+org.javastack.bouncer.Options.S_NULL.toString == ""
+org.javastack.bouncer.Options.I_NULL has only one value
+org.javastack.bouncer.Options.L_NULL has only one value
+org.javastack.bouncer.Options.P_AES has only one value
+org.javastack.bouncer.Options.P_AES.toString == "AES"
+org.javastack.bouncer.Options.P_AES_ALG has only one value
+org.javastack.bouncer.Options.P_AES_ALG.toString == "AESALG"
+org.javastack.bouncer.Options.P_AES_BITS has only one value
+org.javastack.bouncer.Options.P_AES_BITS.toString == "AESBITS"
+org.javastack.bouncer.Options.P_SSL has only one value
+org.javastack.bouncer.Options.P_SSL.toString == "SSL"
+org.javastack.bouncer.Options.P_ENDSSL has only one value
+org.javastack.bouncer.Options.P_ENDSSL.toString == "ENDSSL"
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == "CONNECT_TIMEOUT"
+org.javastack.bouncer.Options.P_READ_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == "READ_TIMEOUT"
+org.javastack.bouncer.Options.P_MUX_NAME has only one value
+org.javastack.bouncer.Options.P_MUX_NAME.toString == "MUX_NAME"
+org.javastack.bouncer.Options.P_TUN_ID has only one value
+org.javastack.bouncer.Options.P_TUN_ID.toString == "TUN_ID"
+org.javastack.bouncer.Options.P_STICKY has only one value
+org.javastack.bouncer.Options.P_STICKY.toString == "STICKY"
+org.javastack.bouncer.Options.P_CLUSTER_ID has only one value
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == "CLUSTER_ID"
+org.javastack.bouncer.Options.MAP_FLAGS has only one value
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == java.util.Collections$UnmodifiableMap.class
+org.javastack.bouncer.Options.this.stickyConfig == null
+org.javastack.bouncer.Options.this.flags == 0
+org.javastack.bouncer.Options.this.strParams has only one value
+org.javastack.bouncer.Options.this.strParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+org.javastack.bouncer.Options.this.intParams has only one value
+org.javastack.bouncer.Options.this.longParams == null
+===========================================================================
+org.javastack.bouncer.Options$4.(org.javastack.bouncer.Options):::ENTER
+org.javastack.bouncer.Options.this.strParams.getClass().getName() == org.javastack.bouncer.Options.this.intParams.getClass().getName()
+org.javastack.bouncer.Options.this has only one value
+org.javastack.bouncer.Options.S_NULL has only one value
+org.javastack.bouncer.Options.S_NULL.toString == ""
+org.javastack.bouncer.Options.I_NULL has only one value
+org.javastack.bouncer.Options.L_NULL has only one value
+org.javastack.bouncer.Options.P_AES has only one value
+org.javastack.bouncer.Options.P_AES.toString == "AES"
+org.javastack.bouncer.Options.P_AES_ALG has only one value
+org.javastack.bouncer.Options.P_AES_ALG.toString == "AESALG"
+org.javastack.bouncer.Options.P_AES_BITS has only one value
+org.javastack.bouncer.Options.P_AES_BITS.toString == "AESBITS"
+org.javastack.bouncer.Options.P_SSL has only one value
+org.javastack.bouncer.Options.P_SSL.toString == "SSL"
+org.javastack.bouncer.Options.P_ENDSSL has only one value
+org.javastack.bouncer.Options.P_ENDSSL.toString == "ENDSSL"
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == "CONNECT_TIMEOUT"
+org.javastack.bouncer.Options.P_READ_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == "READ_TIMEOUT"
+org.javastack.bouncer.Options.P_MUX_NAME has only one value
+org.javastack.bouncer.Options.P_MUX_NAME.toString == "MUX_NAME"
+org.javastack.bouncer.Options.P_TUN_ID has only one value
+org.javastack.bouncer.Options.P_TUN_ID.toString == "TUN_ID"
+org.javastack.bouncer.Options.P_STICKY has only one value
+org.javastack.bouncer.Options.P_STICKY.toString == "STICKY"
+org.javastack.bouncer.Options.P_CLUSTER_ID has only one value
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == "CLUSTER_ID"
+org.javastack.bouncer.Options.MAP_FLAGS has only one value
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == java.util.Collections$UnmodifiableMap.class
+org.javastack.bouncer.Options.this.stickyConfig == null
+org.javastack.bouncer.Options.this.flags == 0
+org.javastack.bouncer.Options.this.strParams has only one value
+org.javastack.bouncer.Options.this.strParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+org.javastack.bouncer.Options.this.intParams has only one value
+org.javastack.bouncer.Options.this.longParams == null
+===========================================================================
+org.javastack.bouncer.Options$4.(org.javastack.bouncer.Options):::EXIT
+org.javastack.bouncer.Options.this == orig(org.javastack.bouncer.Options.this)
+org.javastack.bouncer.Options.S_NULL == orig(org.javastack.bouncer.Options.S_NULL)
+org.javastack.bouncer.Options.S_NULL.toString == orig(org.javastack.bouncer.Options.S_NULL.toString)
+org.javastack.bouncer.Options.I_NULL == orig(org.javastack.bouncer.Options.I_NULL)
+org.javastack.bouncer.Options.L_NULL == orig(org.javastack.bouncer.Options.L_NULL)
+org.javastack.bouncer.Options.P_AES == orig(org.javastack.bouncer.Options.P_AES)
+org.javastack.bouncer.Options.P_AES.toString == orig(org.javastack.bouncer.Options.P_AES.toString)
+org.javastack.bouncer.Options.P_AES_ALG == orig(org.javastack.bouncer.Options.P_AES_ALG)
+org.javastack.bouncer.Options.P_AES_ALG.toString == orig(org.javastack.bouncer.Options.P_AES_ALG.toString)
+org.javastack.bouncer.Options.P_AES_BITS == orig(org.javastack.bouncer.Options.P_AES_BITS)
+org.javastack.bouncer.Options.P_AES_BITS.toString == orig(org.javastack.bouncer.Options.P_AES_BITS.toString)
+org.javastack.bouncer.Options.P_SSL == orig(org.javastack.bouncer.Options.P_SSL)
+org.javastack.bouncer.Options.P_SSL.toString == orig(org.javastack.bouncer.Options.P_SSL.toString)
+org.javastack.bouncer.Options.P_ENDSSL == orig(org.javastack.bouncer.Options.P_ENDSSL)
+org.javastack.bouncer.Options.P_ENDSSL.toString == orig(org.javastack.bouncer.Options.P_ENDSSL.toString)
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT == orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT)
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString)
+org.javastack.bouncer.Options.P_READ_TIMEOUT == orig(org.javastack.bouncer.Options.P_READ_TIMEOUT)
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == orig(org.javastack.bouncer.Options.P_READ_TIMEOUT.toString)
+org.javastack.bouncer.Options.P_MUX_NAME == orig(org.javastack.bouncer.Options.P_MUX_NAME)
+org.javastack.bouncer.Options.P_MUX_NAME.toString == orig(org.javastack.bouncer.Options.P_MUX_NAME.toString)
+org.javastack.bouncer.Options.P_TUN_ID == orig(org.javastack.bouncer.Options.P_TUN_ID)
+org.javastack.bouncer.Options.P_TUN_ID.toString == orig(org.javastack.bouncer.Options.P_TUN_ID.toString)
+org.javastack.bouncer.Options.P_STICKY == orig(org.javastack.bouncer.Options.P_STICKY)
+org.javastack.bouncer.Options.P_STICKY.toString == orig(org.javastack.bouncer.Options.P_STICKY.toString)
+org.javastack.bouncer.Options.P_CLUSTER_ID == orig(org.javastack.bouncer.Options.P_CLUSTER_ID)
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == orig(org.javastack.bouncer.Options.P_CLUSTER_ID.toString)
+org.javastack.bouncer.Options.MAP_FLAGS == orig(org.javastack.bouncer.Options.MAP_FLAGS)
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == orig(org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName())
+org.javastack.bouncer.Options.this.stickyConfig == orig(org.javastack.bouncer.Options.this.stickyConfig)
+org.javastack.bouncer.Options.this.flags == orig(org.javastack.bouncer.Options.this.flags)
+org.javastack.bouncer.Options.this.strParams == orig(org.javastack.bouncer.Options.this.strParams)
+org.javastack.bouncer.Options.this.strParams.getClass().getName() == orig(org.javastack.bouncer.Options.this.strParams.getClass().getName())
+org.javastack.bouncer.Options.this.strParams.getClass().getName() == orig(org.javastack.bouncer.Options.this.intParams.getClass().getName())
+org.javastack.bouncer.Options.this.intParams == orig(org.javastack.bouncer.Options.this.intParams)
+org.javastack.bouncer.Options.this.longParams == orig(org.javastack.bouncer.Options.this.longParams)
+===========================================================================
+org.javastack.bouncer.Options:::CLASS
+org.javastack.bouncer.Options.S_NULL has only one value
+org.javastack.bouncer.Options.S_NULL.toString == ""
+org.javastack.bouncer.Options.I_NULL has only one value
+org.javastack.bouncer.Options.L_NULL has only one value
+org.javastack.bouncer.Options.P_AES has only one value
+org.javastack.bouncer.Options.P_AES.toString == "AES"
+org.javastack.bouncer.Options.P_AES_ALG has only one value
+org.javastack.bouncer.Options.P_AES_ALG.toString == "AESALG"
+org.javastack.bouncer.Options.P_AES_BITS has only one value
+org.javastack.bouncer.Options.P_AES_BITS.toString == "AESBITS"
+org.javastack.bouncer.Options.P_SSL has only one value
+org.javastack.bouncer.Options.P_SSL.toString == "SSL"
+org.javastack.bouncer.Options.P_ENDSSL has only one value
+org.javastack.bouncer.Options.P_ENDSSL.toString == "ENDSSL"
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == "CONNECT_TIMEOUT"
+org.javastack.bouncer.Options.P_READ_TIMEOUT has only one value
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == "READ_TIMEOUT"
+org.javastack.bouncer.Options.P_MUX_NAME has only one value
+org.javastack.bouncer.Options.P_MUX_NAME.toString == "MUX_NAME"
+org.javastack.bouncer.Options.P_TUN_ID has only one value
+org.javastack.bouncer.Options.P_TUN_ID.toString == "TUN_ID"
+org.javastack.bouncer.Options.P_STICKY has only one value
+org.javastack.bouncer.Options.P_STICKY.toString == "STICKY"
+org.javastack.bouncer.Options.P_CLUSTER_ID has only one value
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == "CLUSTER_ID"
+org.javastack.bouncer.Options.MAP_FLAGS has only one value
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == java.util.Collections$UnmodifiableMap.class
+===========================================================================
+org.javastack.bouncer.Options:::OBJECT
+this.strParams.getClass().getName() == this.intParams.getClass().getName()
+this.strParams.getClass().getName() == this.longParams.getClass().getName()
+this has only one value
+this.stickyConfig == null
+this.flags == 0
+this.strParams has only one value
+this.strParams.getClass().getName() == java.util.Collections$SynchronizedMap.class
+this.intParams has only one value
+this.longParams has only one value
+===========================================================================
+org.javastack.bouncer.Options.Options(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == ""
+===========================================================================
+org.javastack.bouncer.Options.Options(java.lang.String):::EXIT
+org.javastack.bouncer.Options.S_NULL == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg0.toString == ""
+===========================================================================
+org.javastack.bouncer.Options.parseOptions(java.lang.String):::ENTER
+org.javastack.bouncer.Options.S_NULL == arg0
+arg0.toString == ""
+===========================================================================
+org.javastack.bouncer.Options.parseOptions(java.lang.String):::EXIT
+org.javastack.bouncer.Options.S_NULL == orig(org.javastack.bouncer.Options.S_NULL)
+org.javastack.bouncer.Options.S_NULL == orig(arg0)
+org.javastack.bouncer.Options.S_NULL.toString == orig(org.javastack.bouncer.Options.S_NULL.toString)
+org.javastack.bouncer.Options.I_NULL == orig(org.javastack.bouncer.Options.I_NULL)
+org.javastack.bouncer.Options.L_NULL == orig(org.javastack.bouncer.Options.L_NULL)
+org.javastack.bouncer.Options.P_AES == orig(org.javastack.bouncer.Options.P_AES)
+org.javastack.bouncer.Options.P_AES.toString == orig(org.javastack.bouncer.Options.P_AES.toString)
+org.javastack.bouncer.Options.P_AES_ALG == orig(org.javastack.bouncer.Options.P_AES_ALG)
+org.javastack.bouncer.Options.P_AES_ALG.toString == orig(org.javastack.bouncer.Options.P_AES_ALG.toString)
+org.javastack.bouncer.Options.P_AES_BITS == orig(org.javastack.bouncer.Options.P_AES_BITS)
+org.javastack.bouncer.Options.P_AES_BITS.toString == orig(org.javastack.bouncer.Options.P_AES_BITS.toString)
+org.javastack.bouncer.Options.P_SSL == orig(org.javastack.bouncer.Options.P_SSL)
+org.javastack.bouncer.Options.P_SSL.toString == orig(org.javastack.bouncer.Options.P_SSL.toString)
+org.javastack.bouncer.Options.P_ENDSSL == orig(org.javastack.bouncer.Options.P_ENDSSL)
+org.javastack.bouncer.Options.P_ENDSSL.toString == orig(org.javastack.bouncer.Options.P_ENDSSL.toString)
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT == orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT)
+org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString == orig(org.javastack.bouncer.Options.P_CONNECT_TIMEOUT.toString)
+org.javastack.bouncer.Options.P_READ_TIMEOUT == orig(org.javastack.bouncer.Options.P_READ_TIMEOUT)
+org.javastack.bouncer.Options.P_READ_TIMEOUT.toString == orig(org.javastack.bouncer.Options.P_READ_TIMEOUT.toString)
+org.javastack.bouncer.Options.P_MUX_NAME == orig(org.javastack.bouncer.Options.P_MUX_NAME)
+org.javastack.bouncer.Options.P_MUX_NAME.toString == orig(org.javastack.bouncer.Options.P_MUX_NAME.toString)
+org.javastack.bouncer.Options.P_TUN_ID == orig(org.javastack.bouncer.Options.P_TUN_ID)
+org.javastack.bouncer.Options.P_TUN_ID.toString == orig(org.javastack.bouncer.Options.P_TUN_ID.toString)
+org.javastack.bouncer.Options.P_STICKY == orig(org.javastack.bouncer.Options.P_STICKY)
+org.javastack.bouncer.Options.P_STICKY.toString == orig(org.javastack.bouncer.Options.P_STICKY.toString)
+org.javastack.bouncer.Options.P_CLUSTER_ID == orig(org.javastack.bouncer.Options.P_CLUSTER_ID)
+org.javastack.bouncer.Options.P_CLUSTER_ID.toString == orig(org.javastack.bouncer.Options.P_CLUSTER_ID.toString)
+org.javastack.bouncer.Options.MAP_FLAGS == orig(org.javastack.bouncer.Options.MAP_FLAGS)
+org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName() == orig(org.javastack.bouncer.Options.MAP_FLAGS.getClass().getName())
+this.stickyConfig == orig(this.stickyConfig)
+this.flags == orig(this.flags)
+this.strParams == orig(this.strParams)
+this.strParams.getClass().getName() == orig(this.strParams.getClass().getName())
+this.strParams.getClass().getName() == orig(this.intParams.getClass().getName())
+this.strParams.getClass().getName() == orig(this.longParams.getClass().getName())
+this.intParams == orig(this.intParams)
+this.longParams == orig(this.longParams)
+arg0.toString == orig(arg0.toString)
+arg0.toString == ""
+return == 0
+===========================================================================
+org.javastack.bouncer.Statistics:::OBJECT
+this has only one value
+this.tryingConnections has only one value
+this.activeConnections has only one value
+this.reloads has only one value
+this.attendedConnections has only one value
+this.failedConnections has only one value
+this.inMsgs has only one value
+this.outMsgs has only one value
+this.inBytes has only one value
+this.outBytes has only one value
+===========================================================================
+org.javastack.bouncer.Statistics.Statistics():::EXIT
+===========================================================================
+org.javastack.bouncer.TaskManager$AuditableThreadFactory:::OBJECT
+this has only one value
+this.defThreadFactory has only one value
+this.defThreadFactory.getClass().getName() == java.util.concurrent.Executors$DefaultThreadFactory.class
+===========================================================================
+org.javastack.bouncer.TaskManager$AuditableThreadFactory.AuditableThreadFactory():::EXIT
+===========================================================================
+org.javastack.bouncer.TaskManager:::OBJECT
+this has only one value
+this.threadPool has only one value
+this.threadPool.getClass().getName() == java.util.concurrent.ThreadPoolExecutor.class
+this.taskCounter has only one value
+this.taskList has only one value
+this.taskList.getClass().getName() == java.util.Collections$SynchronizedMap.class
+===========================================================================
+org.javastack.bouncer.TaskManager.TaskManager():::EXIT
+===========================================================================
+org.javastack.bouncer.jmx.BouncerStatistics:::CLASS
+org.javastack.bouncer.jmx.BouncerStatistics.MY_NAME has only one value
+org.javastack.bouncer.jmx.BouncerStatistics.MY_NAME.toString == "org.javastack.bouncer.jmx:type=BouncerStatistics"
+===========================================================================
+org.javastack.bouncer.jmx.BouncerStatistics:::OBJECT
+this has only one value
+this.tryingConnections has only one value
+this.activeConnections has only one value
+this.reloads has only one value
+this.attendedConnections has only one value
+this.failedConnections has only one value
+this.inMsgs has only one value
+this.outMsgs has only one value
+this.inBytes has only one value
+this.outBytes has only one value
+===========================================================================
+org.javastack.bouncer.jmx.BouncerStatistics.BouncerStatistics():::EXIT
+Exiting Daikon.

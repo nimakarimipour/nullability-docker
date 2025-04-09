@@ -1,0 +1,2049 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+kth.game.othello.OthelloFactoryImpl:::OBJECT
+===========================================================================
+kth.game.othello.OthelloFactoryImpl.OthelloFactoryImpl():::EXIT
+===========================================================================
+kth.game.othello.OthelloFactoryImpl.createGame(java.util.Set, java.util.List):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.util.HashSet.class
+arg1 != null
+arg1[] elements != null
+arg1[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg1[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+arg1.getClass().getName() == java.util.ArrayList.class
+size(arg1[]) == 2
+arg0.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+kth.game.othello.OthelloFactoryImpl.createGame(java.util.Set, java.util.List):::EXIT
+arg1[] == orig(arg1[])
+arg1[] elements != null
+arg1[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg1[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+return != null
+return.getClass().getName() == kth.game.othello.OthelloImpl.class
+return.getClass().getName() != orig(arg0.getClass().getName())
+return.getClass().getName() != orig(arg1.getClass().getName())
+===========================================================================
+kth.game.othello.OthelloFactoryImpl.createOthelloBoardHandler(java.util.Set):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.util.HashSet.class
+===========================================================================
+kth.game.othello.OthelloFactoryImpl.createOthelloBoardHandler(java.util.Set):::EXIT
+return.board == return.boardHistoryHandler.board
+return != null
+return.board != null
+return.board.nodes != null
+return.boardHistoryHandler != null
+return.boardHistoryHandler.moves != null
+===========================================================================
+kth.game.othello.OthelloFactoryImpl.createPlayerHandler(java.util.List):::ENTER
+arg0 != null
+arg0[] elements != null
+arg0[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg0[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 2
+===========================================================================
+kth.game.othello.OthelloFactoryImpl.createPlayerHandler(java.util.List):::EXIT
+arg0[] == orig(arg0[])
+return.players == orig(arg0)
+return.players.getClass().getName() == orig(arg0.getClass().getName())
+arg0[] elements != null
+arg0[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg0[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+return != null
+return.players != null
+return.players[] elements != null
+return.players[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+return.players[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+return.players.getClass().getName() == java.util.ArrayList.class
+return.turnDecider != null
+return.turnDecider.getClass().getName() == kth.game.othello.player.turndecider.Rotation.class
+size(return.players[]) == 2
+return.players.getClass().getName() != return.turnDecider.getClass().getName()
+===========================================================================
+kth.game.othello.OthelloFactoryImpl.createScore(java.util.List, java.util.List):::ENTER
+arg0.getClass().getName() == arg1.getClass().getName()
+arg0 != null
+arg0[] elements != null
+arg0[].getClass().getName() == [kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl]
+arg0[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+arg0.getClass().getName() == java.util.ArrayList.class
+arg1 != null
+arg1[] elements != null
+arg1[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg1[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+size(arg0[]) == 64
+size(arg1[]) == 2
+===========================================================================
+kth.game.othello.OthelloFactoryImpl.createScore(java.util.List, java.util.List):::EXIT
+arg0[] == orig(arg0[])
+arg1[] == orig(arg1[])
+arg0[] elements != null
+arg0[].getClass().getName() == [kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl]
+arg0[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+arg1[] elements != null
+arg1[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg1[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+return != null
+return.getClass().getName() == kth.game.othello.score.ScoreImpl.class
+return.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+kth.game.othello.OthelloImpl:::OBJECT
+this.playerHandler != null
+this.playerHandler.players != null
+this.playerHandler.players[] elements != null
+this.playerHandler.players[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+this.playerHandler.players[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+this.playerHandler.players.getClass().getName() == java.util.ArrayList.class
+this.playerHandler.turnDecider != null
+this.playerHandler.turnDecider.getClass().getName() == kth.game.othello.player.turndecider.Rotation.class
+this.boardHandler != null
+this.boardHandler.board != null
+this.boardHandler.board.nodes != null
+this.boardHandler.boardHistoryHandler != null
+this.boardHandler.boardHistoryHandler.moves != null
+this.boardHandler.boardHistoryHandler.board != null
+this.score != null
+this.score.getClass().getName() == kth.game.othello.score.ScoreImpl.class
+this.gameFinishedObservers != null
+this.gameFinishedObservers[] == []
+this.gameFinishedObservers[].getClass().getName() == []
+this.gameFinishedObservers.getClass().getName() == java.util.ArrayList.class
+this.moveObservers != null
+this.moveObservers[] == []
+this.moveObservers[].getClass().getName() == []
+this.moveObservers.getClass().getName() == java.util.ArrayList.class
+size(this.playerHandler.players[]) == 2
+===========================================================================
+kth.game.othello.OthelloImpl.OthelloImpl(kth.game.othello.board.BoardHandler, kth.game.othello.player.PlayerHandler, kth.game.othello.score.Score):::ENTER
+arg0 != null
+arg0.board != null
+arg0.board.nodes != null
+arg0.boardHistoryHandler != null
+arg0.boardHistoryHandler.moves != null
+arg0.boardHistoryHandler.board != null
+arg1 != null
+arg1.players != null
+arg1.players[] elements != null
+arg1.players[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg1.players[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+arg1.players.getClass().getName() == java.util.ArrayList.class
+arg1.turnDecider != null
+arg1.turnDecider.getClass().getName() == kth.game.othello.player.turndecider.Rotation.class
+arg2 != null
+arg2.getClass().getName() == kth.game.othello.score.ScoreImpl.class
+size(arg1.players[]) == 2
+===========================================================================
+kth.game.othello.OthelloImpl.OthelloImpl(kth.game.othello.board.BoardHandler, kth.game.othello.player.PlayerHandler, kth.game.othello.score.Score):::EXIT
+arg0.board == orig(arg0.board)
+arg0.board.nodes == orig(arg0.board.nodes)
+arg0.boardHistoryHandler == orig(arg0.boardHistoryHandler)
+arg0.boardHistoryHandler.moves == orig(arg0.boardHistoryHandler.moves)
+arg0.boardHistoryHandler.board == orig(arg0.boardHistoryHandler.board)
+arg1.players == orig(arg1.players)
+arg1.players[] == orig(arg1.players[])
+arg1.players.getClass().getName() == orig(arg1.players.getClass().getName())
+arg1.turnDecider == orig(arg1.turnDecider)
+arg1.turnDecider.getClass().getName() == orig(arg1.turnDecider.getClass().getName())
+arg0.board != null
+arg0.board.nodes != null
+arg0.boardHistoryHandler != null
+arg0.boardHistoryHandler.moves != null
+arg0.boardHistoryHandler.board != null
+arg1.players != null
+arg1.players[] elements != null
+arg1.players[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg1.players[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+arg1.players.getClass().getName() == java.util.ArrayList.class
+arg1.turnDecider != null
+arg1.turnDecider.getClass().getName() == kth.game.othello.player.turndecider.Rotation.class
+size(arg1.players[]) == 2
+===========================================================================
+kth.game.othello.OthelloImpl.getBoard():::ENTER
+===========================================================================
+kth.game.othello.OthelloImpl.getBoard():::EXIT
+this.playerHandler == orig(this.playerHandler)
+this.playerHandler.players == orig(this.playerHandler.players)
+this.playerHandler.players[] == orig(this.playerHandler.players[])
+this.playerHandler.players.getClass().getName() == orig(this.playerHandler.players.getClass().getName())
+this.playerHandler.turnDecider == orig(this.playerHandler.turnDecider)
+this.playerHandler.turnDecider.getClass().getName() == orig(this.playerHandler.turnDecider.getClass().getName())
+this.boardHandler == orig(this.boardHandler)
+this.boardHandler.board == orig(this.boardHandler.board)
+this.boardHandler.board.nodes == orig(this.boardHandler.board.nodes)
+this.boardHandler.boardHistoryHandler == orig(this.boardHandler.boardHistoryHandler)
+this.boardHandler.boardHistoryHandler.moves == orig(this.boardHandler.boardHistoryHandler.moves)
+this.boardHandler.boardHistoryHandler.board == orig(this.boardHandler.boardHistoryHandler.board)
+this.score == orig(this.score)
+this.score.getClass().getName() == orig(this.score.getClass().getName())
+this.gameFinishedObservers == orig(this.gameFinishedObservers)
+this.gameFinishedObservers[] == orig(this.gameFinishedObservers[])
+this.gameFinishedObservers.getClass().getName() == orig(this.gameFinishedObservers.getClass().getName())
+this.moveObservers == orig(this.moveObservers)
+this.moveObservers[] == orig(this.moveObservers[])
+this.moveObservers.getClass().getName() == orig(this.moveObservers.getClass().getName())
+return != null
+return.getClass().getName() == kth.game.othello.board.BoardImpl.class
+===========================================================================
+kth.game.othello.OthelloImpl.getScore():::ENTER
+===========================================================================
+kth.game.othello.OthelloImpl.getScore():::EXIT
+this.playerHandler == orig(this.playerHandler)
+this.playerHandler.players == orig(this.playerHandler.players)
+this.playerHandler.players[] == orig(this.playerHandler.players[])
+this.playerHandler.players.getClass().getName() == orig(this.playerHandler.players.getClass().getName())
+this.playerHandler.turnDecider == orig(this.playerHandler.turnDecider)
+this.playerHandler.turnDecider.getClass().getName() == orig(this.playerHandler.turnDecider.getClass().getName())
+this.boardHandler == orig(this.boardHandler)
+this.boardHandler.board == orig(this.boardHandler.board)
+this.boardHandler.board.nodes == orig(this.boardHandler.board.nodes)
+this.boardHandler.boardHistoryHandler == orig(this.boardHandler.boardHistoryHandler)
+this.boardHandler.boardHistoryHandler.moves == orig(this.boardHandler.boardHistoryHandler.moves)
+this.boardHandler.boardHistoryHandler.board == orig(this.boardHandler.boardHistoryHandler.board)
+this.score == orig(this.score)
+this.score.getClass().getName() == orig(this.score.getClass().getName())
+this.gameFinishedObservers == orig(this.gameFinishedObservers)
+this.gameFinishedObservers[] == orig(this.gameFinishedObservers[])
+this.gameFinishedObservers.getClass().getName() == orig(this.gameFinishedObservers.getClass().getName())
+this.moveObservers == orig(this.moveObservers)
+this.moveObservers[] == orig(this.moveObservers[])
+this.moveObservers.getClass().getName() == orig(this.moveObservers.getClass().getName())
+return != null
+return.getClass().getName() == kth.game.othello.score.ScoreImpl.class
+===========================================================================
+kth.game.othello.OthelloImpl.isActive():::ENTER
+===========================================================================
+kth.game.othello.OthelloImpl.isActive():::EXIT
+this.playerHandler == orig(this.playerHandler)
+this.playerHandler.players == orig(this.playerHandler.players)
+this.playerHandler.players[] == orig(this.playerHandler.players[])
+this.playerHandler.players.getClass().getName() == orig(this.playerHandler.players.getClass().getName())
+this.playerHandler.turnDecider == orig(this.playerHandler.turnDecider)
+this.playerHandler.turnDecider.getClass().getName() == orig(this.playerHandler.turnDecider.getClass().getName())
+this.boardHandler == orig(this.boardHandler)
+this.boardHandler.board == orig(this.boardHandler.board)
+this.boardHandler.board.nodes == orig(this.boardHandler.board.nodes)
+this.boardHandler.boardHistoryHandler == orig(this.boardHandler.boardHistoryHandler)
+this.boardHandler.boardHistoryHandler.moves == orig(this.boardHandler.boardHistoryHandler.moves)
+this.boardHandler.boardHistoryHandler.board == orig(this.boardHandler.boardHistoryHandler.board)
+this.score == orig(this.score)
+this.score.getClass().getName() == orig(this.score.getClass().getName())
+this.gameFinishedObservers == orig(this.gameFinishedObservers)
+this.gameFinishedObservers[] == orig(this.gameFinishedObservers[])
+this.gameFinishedObservers.getClass().getName() == orig(this.gameFinishedObservers.getClass().getName())
+this.moveObservers == orig(this.moveObservers)
+this.moveObservers[] == orig(this.moveObservers[])
+this.moveObservers.getClass().getName() == orig(this.moveObservers.getClass().getName())
+===========================================================================
+kth.game.othello.OthelloImpl.isActive():::EXIT;condition="return == true"
+return == true
+===========================================================================
+kth.game.othello.OthelloImpl.isActive():::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+kth.game.othello.OthelloImpl.move():::ENTER
+===========================================================================
+kth.game.othello.OthelloImpl.move():::EXIT
+this.playerHandler == orig(this.playerHandler)
+this.playerHandler.players == orig(this.playerHandler.players)
+this.playerHandler.players[] == orig(this.playerHandler.players[])
+this.playerHandler.players.getClass().getName() == orig(this.playerHandler.players.getClass().getName())
+this.playerHandler.turnDecider == orig(this.playerHandler.turnDecider)
+this.playerHandler.turnDecider.getClass().getName() == orig(this.playerHandler.turnDecider.getClass().getName())
+this.boardHandler == orig(this.boardHandler)
+this.boardHandler.board == orig(this.boardHandler.board)
+this.boardHandler.board.nodes == orig(this.boardHandler.board.nodes)
+this.boardHandler.boardHistoryHandler == orig(this.boardHandler.boardHistoryHandler)
+this.boardHandler.boardHistoryHandler.moves == orig(this.boardHandler.boardHistoryHandler.moves)
+this.boardHandler.boardHistoryHandler.board == orig(this.boardHandler.boardHistoryHandler.board)
+this.score == orig(this.score)
+this.score.getClass().getName() == orig(this.score.getClass().getName())
+this.gameFinishedObservers == orig(this.gameFinishedObservers)
+this.gameFinishedObservers[] == orig(this.gameFinishedObservers[])
+this.gameFinishedObservers.getClass().getName() == orig(this.gameFinishedObservers.getClass().getName())
+this.moveObservers == orig(this.moveObservers)
+this.moveObservers[] == orig(this.moveObservers[])
+this.moveObservers.getClass().getName() == orig(this.moveObservers.getClass().getName())
+return != null
+return[] elements != null
+return[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+return.getClass().getName() == java.util.LinkedList.class
+size(return[]) >= 2
+===========================================================================
+kth.game.othello.OthelloImpl.move(java.lang.String, java.lang.String):::ENTER
+arg0 != null
+arg1 != null
+===========================================================================
+kth.game.othello.OthelloImpl.move(java.lang.String, java.lang.String):::EXIT
+this.playerHandler == orig(this.playerHandler)
+this.playerHandler.players == orig(this.playerHandler.players)
+this.playerHandler.players[] == orig(this.playerHandler.players[])
+this.playerHandler.players.getClass().getName() == orig(this.playerHandler.players.getClass().getName())
+this.playerHandler.turnDecider == orig(this.playerHandler.turnDecider)
+this.playerHandler.turnDecider.getClass().getName() == orig(this.playerHandler.turnDecider.getClass().getName())
+this.boardHandler == orig(this.boardHandler)
+this.boardHandler.board == orig(this.boardHandler.board)
+this.boardHandler.board.nodes == orig(this.boardHandler.board.nodes)
+this.boardHandler.boardHistoryHandler == orig(this.boardHandler.boardHistoryHandler)
+this.boardHandler.boardHistoryHandler.moves == orig(this.boardHandler.boardHistoryHandler.moves)
+this.boardHandler.boardHistoryHandler.board == orig(this.boardHandler.boardHistoryHandler.board)
+this.score == orig(this.score)
+this.score.getClass().getName() == orig(this.score.getClass().getName())
+this.gameFinishedObservers == orig(this.gameFinishedObservers)
+this.gameFinishedObservers[] == orig(this.gameFinishedObservers[])
+this.gameFinishedObservers.getClass().getName() == orig(this.gameFinishedObservers.getClass().getName())
+this.moveObservers == orig(this.moveObservers)
+this.moveObservers[] == orig(this.moveObservers[])
+this.moveObservers.getClass().getName() == orig(this.moveObservers.getClass().getName())
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+return != null
+return[] elements != null
+return[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+return.getClass().getName() == java.util.LinkedList.class
+size(return[]) >= 2
+===========================================================================
+kth.game.othello.OthelloImpl.notifyAllGameFinishedObservers():::ENTER
+===========================================================================
+kth.game.othello.OthelloImpl.notifyAllGameFinishedObservers():::EXIT
+this.playerHandler == orig(this.playerHandler)
+this.playerHandler.players == orig(this.playerHandler.players)
+this.playerHandler.players[] == orig(this.playerHandler.players[])
+this.playerHandler.players.getClass().getName() == orig(this.playerHandler.players.getClass().getName())
+this.playerHandler.turnDecider == orig(this.playerHandler.turnDecider)
+this.playerHandler.turnDecider.getClass().getName() == orig(this.playerHandler.turnDecider.getClass().getName())
+this.boardHandler == orig(this.boardHandler)
+this.boardHandler.board == orig(this.boardHandler.board)
+this.boardHandler.board.nodes == orig(this.boardHandler.board.nodes)
+this.boardHandler.boardHistoryHandler == orig(this.boardHandler.boardHistoryHandler)
+this.boardHandler.boardHistoryHandler.moves == orig(this.boardHandler.boardHistoryHandler.moves)
+this.boardHandler.boardHistoryHandler.board == orig(this.boardHandler.boardHistoryHandler.board)
+this.score == orig(this.score)
+this.score.getClass().getName() == orig(this.score.getClass().getName())
+this.gameFinishedObservers == orig(this.gameFinishedObservers)
+this.gameFinishedObservers[] == orig(this.gameFinishedObservers[])
+this.gameFinishedObservers.getClass().getName() == orig(this.gameFinishedObservers.getClass().getName())
+this.moveObservers == orig(this.moveObservers)
+this.moveObservers[] == orig(this.moveObservers[])
+this.moveObservers.getClass().getName() == orig(this.moveObservers.getClass().getName())
+===========================================================================
+kth.game.othello.OthelloImpl.notifyAllMoveObservers(java.util.List):::ENTER
+arg0 != null
+arg0[] elements != null
+arg0[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+arg0.getClass().getName() == java.util.LinkedList.class
+size(arg0[]) >= 2
+===========================================================================
+kth.game.othello.OthelloImpl.notifyAllMoveObservers(java.util.List):::EXIT
+this.playerHandler == orig(this.playerHandler)
+this.playerHandler.players == orig(this.playerHandler.players)
+this.playerHandler.players[] == orig(this.playerHandler.players[])
+this.playerHandler.players.getClass().getName() == orig(this.playerHandler.players.getClass().getName())
+this.playerHandler.turnDecider == orig(this.playerHandler.turnDecider)
+this.playerHandler.turnDecider.getClass().getName() == orig(this.playerHandler.turnDecider.getClass().getName())
+this.boardHandler == orig(this.boardHandler)
+this.boardHandler.board == orig(this.boardHandler.board)
+this.boardHandler.board.nodes == orig(this.boardHandler.board.nodes)
+this.boardHandler.boardHistoryHandler == orig(this.boardHandler.boardHistoryHandler)
+this.boardHandler.boardHistoryHandler.moves == orig(this.boardHandler.boardHistoryHandler.moves)
+this.boardHandler.boardHistoryHandler.board == orig(this.boardHandler.boardHistoryHandler.board)
+this.score == orig(this.score)
+this.score.getClass().getName() == orig(this.score.getClass().getName())
+this.gameFinishedObservers == orig(this.gameFinishedObservers)
+this.gameFinishedObservers[] == orig(this.gameFinishedObservers[])
+this.gameFinishedObservers.getClass().getName() == orig(this.gameFinishedObservers.getClass().getName())
+this.moveObservers == orig(this.moveObservers)
+this.moveObservers[] == orig(this.moveObservers[])
+this.moveObservers.getClass().getName() == orig(this.moveObservers.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[] elements != null
+arg0[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+===========================================================================
+kth.game.othello.OthelloImpl.start(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+kth.game.othello.OthelloImpl.start(java.lang.String):::EXIT
+this.playerHandler == orig(this.playerHandler)
+this.playerHandler.players == orig(this.playerHandler.players)
+this.playerHandler.players[] == orig(this.playerHandler.players[])
+this.playerHandler.players.getClass().getName() == orig(this.playerHandler.players.getClass().getName())
+this.playerHandler.turnDecider == orig(this.playerHandler.turnDecider)
+this.playerHandler.turnDecider.getClass().getName() == orig(this.playerHandler.turnDecider.getClass().getName())
+this.boardHandler == orig(this.boardHandler)
+this.boardHandler.board == orig(this.boardHandler.board)
+this.boardHandler.board.nodes == orig(this.boardHandler.board.nodes)
+this.boardHandler.boardHistoryHandler == orig(this.boardHandler.boardHistoryHandler)
+this.boardHandler.boardHistoryHandler.moves == orig(this.boardHandler.boardHistoryHandler.moves)
+this.boardHandler.boardHistoryHandler.board == orig(this.boardHandler.boardHistoryHandler.board)
+this.score == orig(this.score)
+this.score.getClass().getName() == orig(this.score.getClass().getName())
+this.gameFinishedObservers == orig(this.gameFinishedObservers)
+this.gameFinishedObservers[] == orig(this.gameFinishedObservers[])
+this.gameFinishedObservers.getClass().getName() == orig(this.gameFinishedObservers.getClass().getName())
+this.moveObservers == orig(this.moveObservers)
+this.moveObservers[] == orig(this.moveObservers[])
+this.moveObservers.getClass().getName() == orig(this.moveObservers.getClass().getName())
+arg0.toString == orig(arg0.toString)
+===========================================================================
+kth.game.othello.board.BoardFactory:::OBJECT
+===========================================================================
+kth.game.othello.board.BoardFactory.BoardFactory():::EXIT
+===========================================================================
+kth.game.othello.board.BoardFactory.convertNodeData(kth.game.othello.board.factory.NodeData):::ENTER
+arg0 != null
+arg0.x >= 0
+arg0.y >= 0
+===========================================================================
+kth.game.othello.board.BoardFactory.convertNodeData(kth.game.othello.board.factory.NodeData):::EXIT
+arg0.occupantPlayerId == orig(arg0.occupantPlayerId)
+arg0.occupantPlayerId.toString == orig(arg0.occupantPlayerId.toString)
+arg0.x == orig(arg0.x)
+arg0.y == orig(arg0.y)
+arg0.x >= 0
+arg0.y >= 0
+return != null
+return.nodeId != null
+return.x >= 0
+return.y >= 0
+===========================================================================
+kth.game.othello.board.BoardFactory.convertNodeDataSet(java.util.Set):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.util.HashSet.class
+===========================================================================
+kth.game.othello.board.BoardFactory.convertNodeDataSet(java.util.Set):::EXIT
+return != null
+return.getClass().getName() == java.util.ArrayList.class
+return.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+kth.game.othello.board.BoardFactory.createBoard(java.util.Set):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.util.HashSet.class
+===========================================================================
+kth.game.othello.board.BoardFactory.createBoard(java.util.Set):::EXIT
+return != null
+return.nodes != null
+===========================================================================
+kth.game.othello.board.BoardHandler:::OBJECT
+this.board == this.boardHistoryHandler.board
+this.board.nodes == this.boardHistoryHandler.board.nodes
+this.board != null
+this.board.nodes != null
+this.boardHistoryHandler != null
+this.boardHistoryHandler.moves != null
+===========================================================================
+kth.game.othello.board.BoardHandler.BoardHandler(kth.game.othello.board.BoardImpl, kth.game.othello.board.BoardHistoryHandler):::ENTER
+arg0 == arg1.board
+arg0.nodes == arg1.board.nodes
+arg0 != null
+arg0.nodes != null
+arg1 != null
+arg1.moves != null
+===========================================================================
+kth.game.othello.board.BoardHandler.BoardHandler(kth.game.othello.board.BoardImpl, kth.game.othello.board.BoardHistoryHandler):::EXIT
+this.board == arg1.board
+this.board == orig(arg0)
+this.board == orig(arg1.board)
+this.board.nodes == arg0.nodes
+this.boardHistoryHandler == orig(arg1)
+this.boardHistoryHandler.moves == arg1.moves
+this.boardHistoryHandler.board.nodes == arg0.nodes
+arg0.nodes == arg1.board.nodes
+arg0.nodes == orig(arg0.nodes)
+arg0.nodes == orig(arg1.board.nodes)
+arg1.moves == orig(arg1.moves)
+arg0.nodes != null
+arg1.moves != null
+===========================================================================
+kth.game.othello.board.BoardHandler.getBoard():::ENTER
+===========================================================================
+kth.game.othello.board.BoardHandler.getBoard():::EXIT
+this.board == orig(this.board)
+this.board == orig(this.boardHistoryHandler.board)
+this.board.nodes == orig(this.board.nodes)
+this.board.nodes == orig(this.boardHistoryHandler.board.nodes)
+this.boardHistoryHandler == orig(this.boardHistoryHandler)
+this.boardHistoryHandler.moves == orig(this.boardHistoryHandler.moves)
+return != null
+return.getClass().getName() == kth.game.othello.board.BoardImpl.class
+===========================================================================
+kth.game.othello.board.BoardHandler.getNodesToSwap(java.lang.String, java.lang.String):::ENTER
+arg0 != null
+arg1 != null
+===========================================================================
+kth.game.othello.board.BoardHandler.getNodesToSwap(java.lang.String, java.lang.String):::EXIT
+this.board == orig(this.board)
+this.board == orig(this.boardHistoryHandler.board)
+this.board.nodes == orig(this.board.nodes)
+this.board.nodes == orig(this.boardHistoryHandler.board.nodes)
+this.boardHistoryHandler == orig(this.boardHistoryHandler)
+this.boardHistoryHandler.moves == orig(this.boardHistoryHandler.moves)
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+return != null
+return[] elements != null
+return[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+return.getClass().getName() == java.util.LinkedList.class
+===========================================================================
+kth.game.othello.board.BoardHandler.getNumNodesToSwap(java.lang.String, java.lang.String):::ENTER
+arg0 != null
+arg0.toString one of { "cpu0", "cpu2" }
+arg1 != null
+===========================================================================
+kth.game.othello.board.BoardHandler.getNumNodesToSwap(java.lang.String, java.lang.String):::EXIT
+this.board == orig(this.board)
+this.board == orig(this.boardHistoryHandler.board)
+this.board.nodes == orig(this.board.nodes)
+this.board.nodes == orig(this.boardHistoryHandler.board.nodes)
+this.boardHistoryHandler == orig(this.boardHistoryHandler)
+this.boardHistoryHandler.moves == orig(this.boardHistoryHandler.moves)
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg0.toString one of { "cpu0", "cpu2" }
+return >= 1
+===========================================================================
+kth.game.othello.board.BoardHandler.getSwapsDirection(java.lang.String, kth.game.othello.board.Node, int, int):::ENTER
+arg0 != null
+arg1 != null
+arg1.getClass().getName() == kth.game.othello.board.NodeImpl.class
+arg2 one of { -1, 0, 1 }
+arg3 one of { -1, 0, 1 }
+===========================================================================
+kth.game.othello.board.BoardHandler.getSwapsDirection(java.lang.String, kth.game.othello.board.Node, int, int):::EXIT140
+return[] == []
+return[].getClass().getName() == []
+===========================================================================
+kth.game.othello.board.BoardHandler.getSwapsDirection(java.lang.String, kth.game.othello.board.Node, int, int):::EXIT144
+===========================================================================
+kth.game.othello.board.BoardHandler.getSwapsDirection(java.lang.String, kth.game.othello.board.Node, int, int):::EXIT150
+return[] == []
+return[].getClass().getName() == []
+===========================================================================
+kth.game.othello.board.BoardHandler.getSwapsDirection(java.lang.String, kth.game.othello.board.Node, int, int):::EXIT
+this.board == orig(this.board)
+this.board == orig(this.boardHistoryHandler.board)
+this.board.nodes == orig(this.board.nodes)
+this.board.nodes == orig(this.boardHistoryHandler.board.nodes)
+this.boardHistoryHandler == orig(this.boardHistoryHandler)
+this.boardHistoryHandler.moves == orig(this.boardHistoryHandler.moves)
+arg0.toString == orig(arg0.toString)
+return != null
+return[] elements != null
+return[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+return.getClass().getName() == java.util.LinkedList.class
+return.getClass().getName() != orig(arg1.getClass().getName())
+===========================================================================
+kth.game.othello.board.BoardHandler.getValidMoves(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+kth.game.othello.board.BoardHandler.getValidMoves(java.lang.String):::EXIT
+this.board == orig(this.board)
+this.board == orig(this.boardHistoryHandler.board)
+this.board.nodes == orig(this.board.nodes)
+this.board.nodes == orig(this.boardHistoryHandler.board.nodes)
+this.boardHistoryHandler == orig(this.boardHistoryHandler)
+this.boardHistoryHandler.moves == orig(this.boardHistoryHandler.moves)
+arg0.toString == orig(arg0.toString)
+return != null
+return[] elements != null
+return[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+return.getClass().getName() == java.util.LinkedList.class
+===========================================================================
+kth.game.othello.board.BoardHandler.hasAnyAValidMove(java.util.List):::ENTER
+arg0 != null
+arg0[] elements != null
+arg0[].getClass().getName() == [java.lang.String, java.lang.String]
+arg0[].getClass().getName() elements == java.lang.String.class
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 2
+===========================================================================
+kth.game.othello.board.BoardHandler.hasAnyAValidMove(java.util.List):::EXIT110
+return == true
+===========================================================================
+kth.game.othello.board.BoardHandler.hasAnyAValidMove(java.util.List):::EXIT110;condition="return == true"
+===========================================================================
+kth.game.othello.board.BoardHandler.hasAnyAValidMove(java.util.List):::EXIT113
+return == false
+===========================================================================
+kth.game.othello.board.BoardHandler.hasAnyAValidMove(java.util.List):::EXIT113;condition="not(return == true)"
+===========================================================================
+kth.game.othello.board.BoardHandler.hasAnyAValidMove(java.util.List):::EXIT
+this.board == orig(this.board)
+this.board == orig(this.boardHistoryHandler.board)
+this.board.nodes == orig(this.board.nodes)
+this.board.nodes == orig(this.boardHistoryHandler.board.nodes)
+this.boardHistoryHandler == orig(this.boardHistoryHandler)
+this.boardHistoryHandler.moves == orig(this.boardHistoryHandler.moves)
+arg0[] == orig(arg0[])
+arg0[] elements != null
+arg0[].getClass().getName() == [java.lang.String, java.lang.String]
+arg0[].getClass().getName() elements == java.lang.String.class
+===========================================================================
+kth.game.othello.board.BoardHandler.hasAnyAValidMove(java.util.List):::EXIT;condition="return == true"
+return == true
+===========================================================================
+kth.game.othello.board.BoardHandler.hasAnyAValidMove(java.util.List):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+kth.game.othello.board.BoardHandler.hasValidMove(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+kth.game.othello.board.BoardHandler.hasValidMove(java.lang.String):::EXIT
+this.board == orig(this.board)
+this.board == orig(this.boardHistoryHandler.board)
+this.board.nodes == orig(this.board.nodes)
+this.board.nodes == orig(this.boardHistoryHandler.board.nodes)
+this.boardHistoryHandler == orig(this.boardHistoryHandler)
+this.boardHistoryHandler.moves == orig(this.boardHistoryHandler.moves)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+kth.game.othello.board.BoardHandler.hasValidMove(java.lang.String):::EXIT;condition="return == true"
+return == true
+===========================================================================
+kth.game.othello.board.BoardHandler.hasValidMove(java.lang.String):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+kth.game.othello.board.BoardHandler.isMoveValid(java.lang.String, java.lang.String):::ENTER
+arg0 != null
+arg1 != null
+===========================================================================
+kth.game.othello.board.BoardHandler.isMoveValid(java.lang.String, java.lang.String):::EXIT
+this.board == orig(this.board)
+this.board == orig(this.boardHistoryHandler.board)
+this.board.nodes == orig(this.board.nodes)
+this.board.nodes == orig(this.boardHistoryHandler.board.nodes)
+this.boardHistoryHandler == orig(this.boardHistoryHandler)
+this.boardHistoryHandler.moves == orig(this.boardHistoryHandler.moves)
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+===========================================================================
+kth.game.othello.board.BoardHandler.isMoveValid(java.lang.String, java.lang.String):::EXIT;condition="return == true"
+return == true
+===========================================================================
+kth.game.othello.board.BoardHandler.isMoveValid(java.lang.String, java.lang.String):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+kth.game.othello.board.BoardHandler.move(java.lang.String, java.lang.String):::ENTER
+arg0 != null
+arg1 != null
+===========================================================================
+kth.game.othello.board.BoardHandler.move(java.lang.String, java.lang.String):::EXIT
+this.board == orig(this.board)
+this.board == orig(this.boardHistoryHandler.board)
+this.board.nodes == orig(this.board.nodes)
+this.board.nodes == orig(this.boardHistoryHandler.board.nodes)
+this.boardHistoryHandler == orig(this.boardHistoryHandler)
+this.boardHistoryHandler.moves == orig(this.boardHistoryHandler.moves)
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+return != null
+return[] elements != null
+return[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+return.getClass().getName() == java.util.LinkedList.class
+size(return[]) >= 2
+===========================================================================
+kth.game.othello.board.BoardHandlerFactory:::OBJECT
+===========================================================================
+kth.game.othello.board.BoardHandlerFactory.BoardHandlerFactory():::EXIT
+===========================================================================
+kth.game.othello.board.BoardHandlerFactory.createOthelloBoardHandler(kth.game.othello.board.BoardImpl):::ENTER
+arg0 != null
+arg0.nodes != null
+===========================================================================
+kth.game.othello.board.BoardHandlerFactory.createOthelloBoardHandler(kth.game.othello.board.BoardImpl):::EXIT
+arg0.nodes == return.board.nodes
+arg0.nodes == orig(arg0.nodes)
+return.board == return.boardHistoryHandler.board
+return.board == orig(arg0)
+arg0.nodes != null
+return != null
+return.board != null
+return.boardHistoryHandler != null
+return.boardHistoryHandler.moves != null
+===========================================================================
+kth.game.othello.board.BoardHistoryHandler:::OBJECT
+this.moves != null
+this.board != null
+this.board.nodes != null
+===========================================================================
+kth.game.othello.board.BoardHistoryHandler.BoardHistoryHandler(kth.game.othello.board.BoardImpl):::ENTER
+arg0 != null
+arg0.nodes != null
+===========================================================================
+kth.game.othello.board.BoardHistoryHandler.BoardHistoryHandler(kth.game.othello.board.BoardImpl):::EXIT
+this.board == orig(arg0)
+this.board.nodes == arg0.nodes
+arg0.nodes == orig(arg0.nodes)
+arg0.nodes != null
+===========================================================================
+kth.game.othello.board.BoardHistoryHandler.save(java.util.List):::ENTER
+arg0 != null
+arg0[] elements != null
+arg0[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+arg0.getClass().getName() == java.util.LinkedList.class
+size(arg0[]) >= 2
+===========================================================================
+kth.game.othello.board.BoardHistoryHandler.save(java.util.List):::EXIT
+this.moves == orig(this.moves)
+this.board == orig(this.board)
+this.board.nodes == orig(this.board.nodes)
+arg0[] == orig(arg0[])
+arg0[] elements != null
+arg0[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+===========================================================================
+kth.game.othello.board.BoardImpl:::OBJECT
+this.nodes != null
+===========================================================================
+kth.game.othello.board.BoardImpl.BoardImpl(java.util.Collection):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+kth.game.othello.board.BoardImpl.BoardImpl(java.util.Collection):::EXIT
+===========================================================================
+kth.game.othello.board.BoardImpl.getNode(int, int):::ENTER
+arg0 >= 0
+arg1 >= 0
+===========================================================================
+kth.game.othello.board.BoardImpl.getNode(int, int):::EXIT
+this.nodes == orig(this.nodes)
+return != null
+return.getClass().getName() == kth.game.othello.board.NodeImpl.class
+===========================================================================
+kth.game.othello.board.BoardImpl.getNode(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+kth.game.othello.board.BoardImpl.getNode(java.lang.String):::EXIT
+this.nodes == orig(this.nodes)
+arg0.toString == orig(arg0.toString)
+return != null
+return.getClass().getName() == kth.game.othello.board.NodeImpl.class
+===========================================================================
+kth.game.othello.board.BoardImpl.getNodes():::ENTER
+===========================================================================
+kth.game.othello.board.BoardImpl.getNodes():::EXIT
+this.nodes == orig(this.nodes)
+return != null
+return[] elements != null
+return[].getClass().getName() == [kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl, kth.game.othello.board.NodeImpl]
+return[].getClass().getName() elements == kth.game.othello.board.NodeImpl.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 64
+===========================================================================
+kth.game.othello.board.BoardImpl.hasNode(int, int):::ENTER
+arg0 >= -1
+arg1 >= -1
+===========================================================================
+kth.game.othello.board.BoardImpl.hasNode(int, int):::EXIT
+this.nodes == orig(this.nodes)
+(return == false)  ==>  (orig(arg0) >= -1)
+(return == false)  ==>  (orig(arg1) >= -1)
+(return == true)  ==>  (orig(arg0) >= 0)
+(return == true)  ==>  (orig(arg1) >= 0)
+===========================================================================
+kth.game.othello.board.BoardImpl.hasNode(int, int):::EXIT;condition="return == true"
+return == true
+orig(arg0) >= 0
+orig(arg1) >= 0
+===========================================================================
+kth.game.othello.board.BoardImpl.hasNode(int, int):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+kth.game.othello.board.BoardImpl.occupyNode(java.lang.String, java.lang.String):::ENTER
+arg0 != null
+arg1 != null
+===========================================================================
+kth.game.othello.board.BoardImpl.occupyNode(java.lang.String, java.lang.String):::EXIT
+this.nodes == orig(this.nodes)
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+===========================================================================
+kth.game.othello.board.NodeIdUtil.createNodeId(int, int):::ENTER
+arg0 >= -1
+arg1 >= -1
+===========================================================================
+kth.game.othello.board.NodeIdUtil.createNodeId(int, int):::EXIT
+return != null
+===========================================================================
+kth.game.othello.board.NodeImpl:::OBJECT
+this.nodeId != null
+this.x >= 0
+this.y >= 0
+===========================================================================
+kth.game.othello.board.NodeImpl.NodeImpl(java.lang.String, int, int):::ENTER
+arg1 >= 0
+arg2 >= 0
+===========================================================================
+kth.game.othello.board.NodeImpl.NodeImpl(java.lang.String, int, int):::EXIT
+arg0.toString == orig(arg0.toString)
+===========================================================================
+kth.game.othello.board.NodeImpl.NodeImpl(kth.game.othello.board.Node):::ENTER
+arg0 != null
+arg0.getClass().getName() == kth.game.othello.board.NodeImpl.class
+===========================================================================
+kth.game.othello.board.NodeImpl.NodeImpl(kth.game.othello.board.Node):::EXIT
+===========================================================================
+kth.game.othello.board.NodeImpl.compareTo(kth.game.othello.board.NodeImpl):::ENTER
+arg0 != null
+arg0.nodeId != null
+arg0.x >= 0
+arg0.y >= 0
+===========================================================================
+kth.game.othello.board.NodeImpl.compareTo(kth.game.othello.board.NodeImpl):::EXIT128
+arg0.x >= 1
+return == -1
+this.x < arg0.x
+===========================================================================
+kth.game.othello.board.NodeImpl.compareTo(kth.game.othello.board.NodeImpl):::EXIT130
+this.x >= 2
+return == 1
+this.x > arg0.x
+===========================================================================
+kth.game.othello.board.NodeImpl.compareTo(kth.game.othello.board.NodeImpl):::EXIT132
+this.x == arg0.x
+this.x == orig(arg0.x)
+this.nodeId.toString one of { "6:0", "7:0" }
+this.x one of { 6, 7 }
+this.y == 0
+arg0.y >= 1
+return == -1
+this.y < arg0.y
+===========================================================================
+kth.game.othello.board.NodeImpl.compareTo(kth.game.othello.board.NodeImpl):::EXIT134
+this.x == arg0.x
+this.x == orig(arg0.x)
+this.y >= 1
+return == 1
+this.y > arg0.y
+===========================================================================
+kth.game.othello.board.NodeImpl.compareTo(kth.game.othello.board.NodeImpl):::EXIT
+this.nodeId == orig(this.nodeId)
+this.nodeId.toString == orig(this.nodeId.toString)
+this.playerId == orig(this.playerId)
+this.playerId.toString == orig(this.playerId.toString)
+this.x == orig(this.x)
+this.y == orig(this.y)
+arg0.nodeId == orig(arg0.nodeId)
+arg0.nodeId.toString == orig(arg0.nodeId.toString)
+arg0.playerId == orig(arg0.playerId)
+arg0.playerId.toString == orig(arg0.playerId.toString)
+arg0.x == orig(arg0.x)
+arg0.y == orig(arg0.y)
+arg0.nodeId != null
+arg0.x >= 0
+arg0.y >= 0
+return one of { -1, 1 }
+return != 0
+===========================================================================
+kth.game.othello.board.NodeImpl.getId():::ENTER
+===========================================================================
+kth.game.othello.board.NodeImpl.getId():::EXIT
+this.nodeId == return
+this.nodeId.toString == orig(this.nodeId.toString)
+this.playerId == orig(this.playerId)
+this.playerId.toString == orig(this.playerId.toString)
+this.x == orig(this.x)
+this.y == orig(this.y)
+return == orig(this.nodeId)
+return != null
+===========================================================================
+kth.game.othello.board.NodeImpl.getOccupantPlayerId():::ENTER
+===========================================================================
+kth.game.othello.board.NodeImpl.getOccupantPlayerId():::EXIT
+this.nodeId == orig(this.nodeId)
+this.nodeId.toString == orig(this.nodeId.toString)
+this.playerId == return
+this.playerId.toString == orig(this.playerId.toString)
+this.x == orig(this.x)
+this.y == orig(this.y)
+return == orig(this.playerId)
+===========================================================================
+kth.game.othello.board.NodeImpl.getXCoordinate():::ENTER
+===========================================================================
+kth.game.othello.board.NodeImpl.getXCoordinate():::EXIT
+this.nodeId == orig(this.nodeId)
+this.nodeId.toString == orig(this.nodeId.toString)
+this.playerId == orig(this.playerId)
+this.playerId.toString == orig(this.playerId.toString)
+this.x == return
+this.y == orig(this.y)
+return == orig(this.x)
+return >= 0
+===========================================================================
+kth.game.othello.board.NodeImpl.getYCoordinate():::ENTER
+===========================================================================
+kth.game.othello.board.NodeImpl.getYCoordinate():::EXIT
+this.nodeId == orig(this.nodeId)
+this.nodeId.toString == orig(this.nodeId.toString)
+this.playerId == orig(this.playerId)
+this.playerId.toString == orig(this.playerId.toString)
+this.x == orig(this.x)
+this.y == return
+return == orig(this.y)
+return >= 0
+===========================================================================
+kth.game.othello.board.NodeImpl.isMarked():::ENTER
+===========================================================================
+kth.game.othello.board.NodeImpl.isMarked():::EXIT
+this.nodeId == orig(this.nodeId)
+this.nodeId.toString == orig(this.nodeId.toString)
+this.playerId == orig(this.playerId)
+this.playerId.toString == orig(this.playerId.toString)
+this.x == orig(this.x)
+this.y == orig(this.y)
+(this.playerId != null)  <==>  (return == true)
+(this.playerId == null)  <==>  (return == false)
+===========================================================================
+kth.game.othello.board.NodeImpl.isMarked():::EXIT;condition="return == true"
+this.playerId != null
+return == true
+===========================================================================
+kth.game.othello.board.NodeImpl.isMarked():::EXIT;condition="not(return == true)"
+this.playerId == null
+return == false
+===========================================================================
+kth.game.othello.board.NodeImpl.isOccupiedPlayerEqual(java.lang.String, java.lang.String):::ENTER
+this.playerId == arg1
+this.playerId != null
+===========================================================================
+kth.game.othello.board.NodeImpl.isOccupiedPlayerEqual(java.lang.String, java.lang.String):::EXIT158
+orig(arg0) != null
+===========================================================================
+kth.game.othello.board.NodeImpl.isOccupiedPlayerEqual(java.lang.String, java.lang.String):::EXIT158;condition="not(return == true)"
+===========================================================================
+kth.game.othello.board.NodeImpl.isOccupiedPlayerEqual(java.lang.String, java.lang.String):::EXIT161
+orig(arg0) == null
+===========================================================================
+kth.game.othello.board.NodeImpl.isOccupiedPlayerEqual(java.lang.String, java.lang.String):::EXIT161;condition="not(return == true)"
+===========================================================================
+kth.game.othello.board.NodeImpl.isOccupiedPlayerEqual(java.lang.String, java.lang.String):::EXIT
+this.nodeId == orig(this.nodeId)
+this.nodeId.toString == orig(this.nodeId.toString)
+this.playerId == orig(this.playerId)
+this.playerId == orig(arg1)
+this.playerId.toString == orig(this.playerId.toString)
+this.x == orig(this.x)
+this.y == orig(this.y)
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+this.playerId != null
+return == false
+===========================================================================
+kth.game.othello.board.NodeImpl.isOccupiedPlayerEqual(java.lang.String, java.lang.String):::EXIT;condition="not(return == true)"
+===========================================================================
+kth.game.othello.board.NodeImpl.setOccupantPlayerId(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+kth.game.othello.board.NodeImpl.setOccupantPlayerId(java.lang.String):::EXIT
+this.nodeId == orig(this.nodeId)
+this.nodeId.toString == orig(this.nodeId.toString)
+this.playerId == orig(arg0)
+this.x == orig(this.x)
+this.y == orig(this.y)
+arg0.toString == orig(arg0.toString)
+this.playerId != null
+this.playerId.toString != orig(this.playerId.toString)
+===========================================================================
+kth.game.othello.board.factory.NodeData:::OBJECT
+this.x >= 0
+this.y >= 0
+===========================================================================
+kth.game.othello.board.factory.NodeData.NodeData(int, int):::ENTER
+arg0 >= 0
+arg1 >= 0
+===========================================================================
+kth.game.othello.board.factory.NodeData.NodeData(int, int):::EXIT
+this.x == orig(arg0)
+this.y == orig(arg1)
+this.occupantPlayerId == null
+===========================================================================
+kth.game.othello.board.factory.NodeData.NodeData(int, int, java.lang.String):::ENTER
+arg0 >= 0
+arg1 >= 0
+===========================================================================
+kth.game.othello.board.factory.NodeData.NodeData(int, int, java.lang.String):::EXIT
+this.occupantPlayerId == orig(arg2)
+this.x == orig(arg0)
+this.y == orig(arg1)
+arg2.toString == orig(arg2.toString)
+===========================================================================
+kth.game.othello.board.factory.NodeData.equals(java.lang.Object):::ENTER
+this.occupantPlayerId == null
+this.x one of { 3, 4 }
+this.y one of { 3, 4 }
+arg0 != null
+arg0.getClass().getName() == kth.game.othello.board.factory.NodeData.class
+===========================================================================
+kth.game.othello.board.factory.NodeData.equals(java.lang.Object):::EXIT78
+===========================================================================
+kth.game.othello.board.factory.NodeData.equals(java.lang.Object):::EXIT78;condition="return == true"
+===========================================================================
+kth.game.othello.board.factory.NodeData.equals(java.lang.Object):::EXIT
+this.occupantPlayerId == orig(this.occupantPlayerId)
+this.x == orig(this.x)
+this.y == orig(this.y)
+this.occupantPlayerId == null
+this.x one of { 3, 4 }
+this.y one of { 3, 4 }
+return == true
+===========================================================================
+kth.game.othello.board.factory.NodeData.equals(java.lang.Object):::EXIT;condition="return == true"
+===========================================================================
+kth.game.othello.board.factory.NodeData.getOccupantPlayerId():::ENTER
+===========================================================================
+kth.game.othello.board.factory.NodeData.getOccupantPlayerId():::EXIT
+this.occupantPlayerId == orig(this.occupantPlayerId)
+this.occupantPlayerId.toString == orig(this.occupantPlayerId.toString)
+this.x == orig(this.x)
+this.y == orig(this.y)
+===========================================================================
+kth.game.othello.board.factory.NodeData.getXCoordinate():::ENTER
+===========================================================================
+kth.game.othello.board.factory.NodeData.getXCoordinate():::EXIT
+this.occupantPlayerId == orig(this.occupantPlayerId)
+this.occupantPlayerId.toString == orig(this.occupantPlayerId.toString)
+this.x == orig(this.x)
+this.y == orig(this.y)
+return >= 0
+===========================================================================
+kth.game.othello.board.factory.NodeData.getYCoordinate():::ENTER
+===========================================================================
+kth.game.othello.board.factory.NodeData.getYCoordinate():::EXIT
+this.occupantPlayerId == orig(this.occupantPlayerId)
+this.occupantPlayerId.toString == orig(this.occupantPlayerId.toString)
+this.x == orig(this.x)
+this.y == orig(this.y)
+return >= 0
+===========================================================================
+kth.game.othello.board.factory.NodeData.hashCode():::ENTER
+===========================================================================
+kth.game.othello.board.factory.NodeData.hashCode():::EXIT
+this.occupantPlayerId == orig(this.occupantPlayerId)
+this.occupantPlayerId.toString == orig(this.occupantPlayerId.toString)
+this.x == orig(this.x)
+this.y == orig(this.y)
+return >= 0
+===========================================================================
+kth.game.othello.board.factory.Square:::OBJECT
+===========================================================================
+kth.game.othello.board.factory.Square.Square():::EXIT
+===========================================================================
+kth.game.othello.board.factory.Square.getNodes(int, java.util.List):::ENTER
+arg0 == 8
+arg1 != null
+arg1[] elements != null
+arg1[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg1[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+arg1.getClass().getName() == java.util.ArrayList.class
+size(arg1[]) == 2
+===========================================================================
+kth.game.othello.board.factory.Square.getNodes(int, java.util.List):::EXIT
+arg1[] == orig(arg1[])
+arg1[] elements != null
+arg1[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg1[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+return != null
+return.getClass().getName() == java.util.HashSet.class
+return.getClass().getName() != orig(arg1.getClass().getName())
+===========================================================================
+kth.game.othello.board.factory.Square.getNodes(int, java.util.List, int, int):::ENTER
+arg2 == arg3
+arg0 == 8
+arg1 != null
+arg1[] elements != null
+arg1[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg1[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+arg1.getClass().getName() == java.util.ArrayList.class
+arg2 == 0
+size(arg1[]) == 2
+===========================================================================
+kth.game.othello.board.factory.Square.getNodes(int, java.util.List, int, int):::EXIT
+arg1[] == orig(arg1[])
+arg1[] elements != null
+arg1[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg1[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+return != null
+return.getClass().getName() == java.util.HashSet.class
+return.getClass().getName() != orig(arg1.getClass().getName())
+===========================================================================
+kth.game.othello.player.ComputerPlayer:::OBJECT
+this.type == kth.game.othello.player.Player$Type.COMPUTER
+kth.game.othello.player.Player$Type.COMPUTER has only one value
+kth.game.othello.player.Player$Type.HUMAN has only one value
+kth.game.othello.player.Player$Type.$VALUES has only one value
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() == kth.game.othello.player.Player$Type[].class
+kth.game.othello.player.Player$Type.$VALUES[] contains no nulls and has only one value, of length 2
+kth.game.othello.player.Player$Type.$VALUES[].getClass().getName() == [kth.game.othello.player.Player.Type, kth.game.othello.player.Player.Type]
+kth.game.othello.player.Player$Type.$VALUES[].getClass().getName() elements == kth.game.othello.player.Player.Type.class
+size(kth.game.othello.player.Player$Type.$VALUES[]) == 2
+===========================================================================
+kth.game.othello.player.ComputerPlayer.ComputerPlayer(java.lang.String, java.lang.String, kth.game.othello.player.movestrategy.MoveStrategy):::ENTER
+===========================================================================
+kth.game.othello.player.ComputerPlayer.ComputerPlayer(java.lang.String, java.lang.String, kth.game.othello.player.movestrategy.MoveStrategy):::EXIT
+this.id == orig(arg0)
+this.name == orig(arg1)
+this.moveStrategy == orig(arg2)
+this.moveStrategy.getClass().getName() == orig(arg2.getClass().getName())
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+===========================================================================
+kth.game.othello.player.Player$Type:::OBJECT
+===========================================================================
+kth.game.othello.player.Player$Type.Type(java.lang.String, int):::ENTER
+arg0.toString one of { "COMPUTER", "HUMAN" }
+arg1 one of { 0, 1 }
+===========================================================================
+kth.game.othello.player.Player$Type.Type(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "COMPUTER", "HUMAN" }
+===========================================================================
+kth.game.othello.player.PlayerHandler:::OBJECT
+this.players != null
+this.players[] elements != null
+this.players[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+this.players[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+this.players.getClass().getName() == java.util.ArrayList.class
+this.turnDecider != null
+this.turnDecider.getClass().getName() == kth.game.othello.player.turndecider.Rotation.class
+size(this.players[]) == 2
+===========================================================================
+kth.game.othello.player.PlayerHandler.PlayerHandler(java.util.List, kth.game.othello.player.turndecider.TurnDecider):::ENTER
+arg0 != null
+arg0[] elements != null
+arg0[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg0[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+arg0.getClass().getName() == java.util.ArrayList.class
+arg1 != null
+arg1.getClass().getName() == kth.game.othello.player.turndecider.Rotation.class
+size(arg0[]) == 2
+===========================================================================
+kth.game.othello.player.PlayerHandler.PlayerHandler(java.util.List, kth.game.othello.player.turndecider.TurnDecider):::EXIT
+arg0[] == orig(arg0[])
+arg0[] elements != null
+arg0[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg0[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayer(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayer(java.lang.String):::EXIT70
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayer(java.lang.String):::EXIT
+this.players == orig(this.players)
+this.players[] == orig(this.players[])
+this.players.getClass().getName() == orig(this.players.getClass().getName())
+this.turnDecider == orig(this.turnDecider)
+this.turnDecider.getClass().getName() == orig(this.turnDecider.getClass().getName())
+arg0.toString == orig(arg0.toString)
+return != null
+return.getClass().getName() == kth.game.othello.player.ComputerPlayer.class
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayerIds():::ENTER
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayerIds():::EXIT
+this.players == orig(this.players)
+this.players[] == orig(this.players[])
+this.players.getClass().getName() == orig(this.players.getClass().getName())
+this.turnDecider == orig(this.turnDecider)
+this.turnDecider.getClass().getName() == orig(this.turnDecider.getClass().getName())
+return != null
+return[] elements != null
+return[].getClass().getName() == [java.lang.String, java.lang.String]
+return[].getClass().getName() elements == java.lang.String.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 2
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayerIds(java.util.List):::ENTER
+arg0 != null
+arg0[] elements != null
+arg0[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg0[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 2
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayerIds(java.util.List):::EXIT
+this.players == orig(this.players)
+this.players[] == orig(this.players[])
+this.players.getClass().getName() == orig(this.players.getClass().getName())
+this.turnDecider == orig(this.turnDecider)
+this.turnDecider.getClass().getName() == orig(this.turnDecider.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[] elements != null
+arg0[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+arg0[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+return != null
+return[] elements != null
+return[].getClass().getName() == [java.lang.String, java.lang.String]
+return[].getClass().getName() elements == java.lang.String.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 2
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayerInTurn():::ENTER
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayerInTurn():::EXIT
+this.players == orig(this.players)
+this.players[] == orig(this.players[])
+this.players.getClass().getName() == orig(this.players.getClass().getName())
+this.turnDecider == orig(this.turnDecider)
+this.turnDecider.getClass().getName() == orig(this.turnDecider.getClass().getName())
+return != null
+return.getClass().getName() == kth.game.othello.player.ComputerPlayer.class
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayers():::ENTER
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayers():::EXIT
+this.players == orig(this.players)
+this.players[] == orig(this.players[])
+this.players.getClass().getName() == orig(this.players.getClass().getName())
+this.turnDecider == orig(this.turnDecider)
+this.turnDecider.getClass().getName() == orig(this.turnDecider.getClass().getName())
+return != null
+return[] elements != null
+return[].getClass().getName() == [kth.game.othello.player.ComputerPlayer, kth.game.othello.player.ComputerPlayer]
+return[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 2
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayers(java.util.List):::ENTER
+arg0 != null
+arg0[] elements != null
+arg0[].getClass().getName() elements == java.lang.String.class
+arg0[].getClass().getName() one of { [], [java.lang.String] }
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) one of { 0, 1 }
+===========================================================================
+kth.game.othello.player.PlayerHandler.getPlayers(java.util.List):::EXIT
+this.players == orig(this.players)
+this.players[] == orig(this.players[])
+this.players.getClass().getName() == orig(this.players.getClass().getName())
+this.turnDecider == orig(this.turnDecider)
+this.turnDecider.getClass().getName() == orig(this.turnDecider.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[] elements != null
+arg0[].getClass().getName() elements == java.lang.String.class
+arg0[].getClass().getName() one of { [], [java.lang.String] }
+return != null
+return[] elements != null
+return[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+return[].getClass().getName() one of { [], [kth.game.othello.player.ComputerPlayer] }
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) one of { 0, 1 }
+===========================================================================
+kth.game.othello.player.PlayerHandler.setStartingPlayer(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+kth.game.othello.player.PlayerHandler.setStartingPlayer(java.lang.String):::EXIT
+this.players == orig(this.players)
+this.players[] == orig(this.players[])
+this.players.getClass().getName() == orig(this.players.getClass().getName())
+this.turnDecider == orig(this.turnDecider)
+this.turnDecider.getClass().getName() == orig(this.turnDecider.getClass().getName())
+arg0.toString == orig(arg0.toString)
+return != null
+return.getClass().getName() == kth.game.othello.player.ComputerPlayer.class
+===========================================================================
+kth.game.othello.player.PlayerHandler.updatePlayerInTurn(kth.game.othello.rules.Rules):::ENTER
+arg0 != null
+arg0.getClass().getName() == kth.game.othello.board.BoardHandler.class
+===========================================================================
+kth.game.othello.player.PlayerHandler.updatePlayerInTurn(kth.game.othello.rules.Rules):::EXIT
+this.players == orig(this.players)
+this.players[] == orig(this.players[])
+this.players.getClass().getName() == orig(this.players.getClass().getName())
+this.turnDecider == orig(this.turnDecider)
+this.turnDecider.getClass().getName() == orig(this.turnDecider.getClass().getName())
+return != null
+return[] elements != null
+return[].getClass().getName() elements == kth.game.othello.player.ComputerPlayer.class
+return[].getClass().getName() one of { [], [kth.game.othello.player.ComputerPlayer] }
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) one of { 0, 1 }
+===========================================================================
+kth.game.othello.player.PlayerImpl:::OBJECT
+this.type == kth.game.othello.player.Player$Type.COMPUTER
+this.getClass().getName() == kth.game.othello.player.ComputerPlayer.class
+this.id != null
+this.name != null
+kth.game.othello.player.Player$Type.COMPUTER has only one value
+kth.game.othello.player.Player$Type.COMPUTER != null
+kth.game.othello.player.Player$Type.HUMAN has only one value
+kth.game.othello.player.Player$Type.HUMAN != null
+kth.game.othello.player.Player$Type.$VALUES has only one value
+kth.game.othello.player.Player$Type.$VALUES != null
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() == kth.game.othello.player.Player$Type[].class
+kth.game.othello.player.Player$Type.$VALUES[] contains no nulls and has only one value, of length 2
+kth.game.othello.player.Player$Type.$VALUES[] elements != null
+kth.game.othello.player.Player$Type.$VALUES[].getClass().getName() == [kth.game.othello.player.Player.Type, kth.game.othello.player.Player.Type]
+kth.game.othello.player.Player$Type.$VALUES[].getClass().getName() elements == kth.game.othello.player.Player.Type.class
+this.moveStrategy != null
+size(kth.game.othello.player.Player$Type.$VALUES[]) == 2
+this.getClass().getName() != kth.game.othello.player.Player$Type.$VALUES.getClass().getName()
+this.getClass().getName() != this.moveStrategy.getClass().getName()
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() != this.moveStrategy.getClass().getName()
+===========================================================================
+kth.game.othello.player.PlayerImpl.PlayerImpl(java.lang.String, java.lang.String, kth.game.othello.player.Player$Type, kth.game.othello.player.movestrategy.MoveStrategy):::ENTER
+arg2 == kth.game.othello.player.Player$Type.COMPUTER
+kth.game.othello.player.Player$Type.COMPUTER has only one value
+kth.game.othello.player.Player$Type.HUMAN has only one value
+kth.game.othello.player.Player$Type.$VALUES has only one value
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() == kth.game.othello.player.Player$Type[].class
+kth.game.othello.player.Player$Type.$VALUES[] contains no nulls and has only one value, of length 2
+kth.game.othello.player.Player$Type.$VALUES[].getClass().getName() == [kth.game.othello.player.Player.Type, kth.game.othello.player.Player.Type]
+kth.game.othello.player.Player$Type.$VALUES[].getClass().getName() elements == kth.game.othello.player.Player.Type.class
+size(kth.game.othello.player.Player$Type.$VALUES[]) == 2
+===========================================================================
+kth.game.othello.player.PlayerImpl.PlayerImpl(java.lang.String, java.lang.String, kth.game.othello.player.Player$Type, kth.game.othello.player.movestrategy.MoveStrategy):::EXIT
+this.id == orig(arg0)
+this.name == orig(arg1)
+kth.game.othello.player.Player$Type.COMPUTER == orig(arg2)
+kth.game.othello.player.Player$Type.COMPUTER == orig(kth.game.othello.player.Player$Type.COMPUTER)
+kth.game.othello.player.Player$Type.HUMAN == orig(kth.game.othello.player.Player$Type.HUMAN)
+kth.game.othello.player.Player$Type.$VALUES == orig(kth.game.othello.player.Player$Type.$VALUES)
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() == orig(kth.game.othello.player.Player$Type.$VALUES.getClass().getName())
+kth.game.othello.player.Player$Type.$VALUES[] == orig(kth.game.othello.player.Player$Type.$VALUES[])
+this.moveStrategy == orig(arg3)
+this.moveStrategy.getClass().getName() == orig(arg3.getClass().getName())
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+===========================================================================
+kth.game.othello.player.PlayerImpl.getId():::ENTER
+===========================================================================
+kth.game.othello.player.PlayerImpl.getId():::EXIT
+this.id == return
+this.id.toString == orig(this.id.toString)
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+kth.game.othello.player.Player$Type.COMPUTER == orig(this.type)
+kth.game.othello.player.Player$Type.COMPUTER == orig(kth.game.othello.player.Player$Type.COMPUTER)
+kth.game.othello.player.Player$Type.HUMAN == orig(kth.game.othello.player.Player$Type.HUMAN)
+kth.game.othello.player.Player$Type.$VALUES == orig(kth.game.othello.player.Player$Type.$VALUES)
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() == orig(kth.game.othello.player.Player$Type.$VALUES.getClass().getName())
+kth.game.othello.player.Player$Type.$VALUES[] == orig(kth.game.othello.player.Player$Type.$VALUES[])
+this.moveStrategy == orig(this.moveStrategy)
+this.moveStrategy.getClass().getName() == orig(this.moveStrategy.getClass().getName())
+return == orig(this.id)
+return != null
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() != orig(this.getClass().getName())
+this.moveStrategy.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+kth.game.othello.player.PlayerImpl.getMoveStrategy():::ENTER
+===========================================================================
+kth.game.othello.player.PlayerImpl.getMoveStrategy():::EXIT
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+kth.game.othello.player.Player$Type.COMPUTER == orig(this.type)
+kth.game.othello.player.Player$Type.COMPUTER == orig(kth.game.othello.player.Player$Type.COMPUTER)
+kth.game.othello.player.Player$Type.HUMAN == orig(kth.game.othello.player.Player$Type.HUMAN)
+kth.game.othello.player.Player$Type.$VALUES == orig(kth.game.othello.player.Player$Type.$VALUES)
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() == orig(kth.game.othello.player.Player$Type.$VALUES.getClass().getName())
+kth.game.othello.player.Player$Type.$VALUES[] == orig(kth.game.othello.player.Player$Type.$VALUES[])
+this.moveStrategy == return
+this.moveStrategy.getClass().getName() == return.getClass().getName()
+return == orig(this.moveStrategy)
+return.getClass().getName() == orig(this.moveStrategy.getClass().getName())
+return != null
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() != return.getClass().getName()
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() != orig(this.getClass().getName())
+return.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+kth.game.othello.player.PlayerImpl.getName():::ENTER
+===========================================================================
+kth.game.othello.player.PlayerImpl.getName():::EXIT
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+this.name == return
+this.name.toString == orig(this.name.toString)
+kth.game.othello.player.Player$Type.COMPUTER == orig(this.type)
+kth.game.othello.player.Player$Type.COMPUTER == orig(kth.game.othello.player.Player$Type.COMPUTER)
+kth.game.othello.player.Player$Type.HUMAN == orig(kth.game.othello.player.Player$Type.HUMAN)
+kth.game.othello.player.Player$Type.$VALUES == orig(kth.game.othello.player.Player$Type.$VALUES)
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() == orig(kth.game.othello.player.Player$Type.$VALUES.getClass().getName())
+kth.game.othello.player.Player$Type.$VALUES[] == orig(kth.game.othello.player.Player$Type.$VALUES[])
+this.moveStrategy == orig(this.moveStrategy)
+this.moveStrategy.getClass().getName() == orig(this.moveStrategy.getClass().getName())
+return == orig(this.name)
+===========================================================================
+kth.game.othello.player.PlayerImpl.getType():::ENTER
+===========================================================================
+kth.game.othello.player.PlayerImpl.getType():::EXIT
+this.id == orig(this.id)
+this.id.toString == orig(this.id.toString)
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+kth.game.othello.player.Player$Type.COMPUTER == return
+kth.game.othello.player.Player$Type.COMPUTER == orig(this.type)
+kth.game.othello.player.Player$Type.COMPUTER == orig(kth.game.othello.player.Player$Type.COMPUTER)
+kth.game.othello.player.Player$Type.HUMAN == orig(kth.game.othello.player.Player$Type.HUMAN)
+kth.game.othello.player.Player$Type.$VALUES == orig(kth.game.othello.player.Player$Type.$VALUES)
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() == orig(kth.game.othello.player.Player$Type.$VALUES.getClass().getName())
+kth.game.othello.player.Player$Type.$VALUES[] == orig(kth.game.othello.player.Player$Type.$VALUES[])
+this.moveStrategy == orig(this.moveStrategy)
+this.moveStrategy.getClass().getName() == orig(this.moveStrategy.getClass().getName())
+kth.game.othello.player.Player$Type.$VALUES.getClass().getName() != orig(this.getClass().getName())
+this.moveStrategy.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+kth.game.othello.player.movestrategy.GreedyStrategy:::OBJECT
+this has only one value
+===========================================================================
+kth.game.othello.player.movestrategy.GreedyStrategy.GreedyStrategy():::EXIT
+===========================================================================
+kth.game.othello.player.movestrategy.GreedyStrategy.getName():::ENTER
+===========================================================================
+kth.game.othello.player.movestrategy.GreedyStrategy.getName():::EXIT
+return has only one value
+return.toString == "Greedy"
+===========================================================================
+kth.game.othello.player.movestrategy.GreedyStrategy.move(java.lang.String, kth.game.othello.rules.Rules, kth.game.othello.board.Board):::ENTER
+arg0 has only one value
+arg0 != null
+arg0.toString == "cpu0"
+arg1 != null
+arg1.getClass().getName() == kth.game.othello.board.BoardHandler.class
+arg2 != null
+arg2.getClass().getName() == kth.game.othello.board.BoardImpl.class
+arg1.getClass().getName() != arg2.getClass().getName()
+===========================================================================
+kth.game.othello.player.movestrategy.GreedyStrategy.move(java.lang.String, kth.game.othello.rules.Rules, kth.game.othello.board.Board):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "cpu0"
+return != null
+return.getClass().getName() == kth.game.othello.board.NodeImpl.class
+return.getClass().getName() != orig(arg1.getClass().getName())
+return.getClass().getName() != orig(arg2.getClass().getName())
+===========================================================================
+kth.game.othello.player.movestrategy.LowestStrategy:::OBJECT
+this has only one value
+===========================================================================
+kth.game.othello.player.movestrategy.LowestStrategy.LowestStrategy():::EXIT
+===========================================================================
+kth.game.othello.player.movestrategy.LowestStrategy.getName():::ENTER
+===========================================================================
+kth.game.othello.player.movestrategy.LowestStrategy.getName():::EXIT
+return has only one value
+return.toString == "Lowest"
+===========================================================================
+kth.game.othello.player.movestrategy.LowestStrategy.move(java.lang.String, kth.game.othello.rules.Rules, kth.game.othello.board.Board):::ENTER
+arg0 has only one value
+arg0 != null
+arg0.toString == "cpu2"
+arg1 != null
+arg1.getClass().getName() == kth.game.othello.board.BoardHandler.class
+arg2 != null
+arg2.getClass().getName() == kth.game.othello.board.BoardImpl.class
+arg1.getClass().getName() != arg2.getClass().getName()
+===========================================================================
+kth.game.othello.player.movestrategy.LowestStrategy.move(java.lang.String, kth.game.othello.rules.Rules, kth.game.othello.board.Board):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "cpu2"
+return != null
+return.getClass().getName() == kth.game.othello.board.NodeImpl.class
+return.getClass().getName() != orig(arg1.getClass().getName())
+return.getClass().getName() != orig(arg2.getClass().getName())
+===========================================================================
+kth.game.othello.player.movestrategy.RandomStrategy:::OBJECT
+this has only one value
+===========================================================================
+kth.game.othello.player.movestrategy.RandomStrategy.RandomStrategy():::EXIT
+===========================================================================
+kth.game.othello.player.movestrategy.RandomStrategy.getName():::ENTER
+===========================================================================
+kth.game.othello.player.movestrategy.RandomStrategy.getName():::EXIT
+return has only one value
+return.toString == "Random"
+===========================================================================
+kth.game.othello.player.movestrategy.RandomStrategy.move(java.lang.String, kth.game.othello.rules.Rules, kth.game.othello.board.Board):::ENTER
+arg0 has only one value
+arg0 != null
+arg0.toString == "cpu1"
+arg1 != null
+arg1.getClass().getName() == kth.game.othello.board.BoardHandler.class
+arg2 != null
+arg2.getClass().getName() == kth.game.othello.board.BoardImpl.class
+arg1.getClass().getName() != arg2.getClass().getName()
+===========================================================================
+kth.game.othello.player.movestrategy.RandomStrategy.move(java.lang.String, kth.game.othello.rules.Rules, kth.game.othello.board.Board):::EXIT38
+===========================================================================
+kth.game.othello.player.movestrategy.RandomStrategy.move(java.lang.String, kth.game.othello.rules.Rules, kth.game.othello.board.Board):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "cpu1"
+return != null
+return.getClass().getName() == kth.game.othello.board.NodeImpl.class
+return.getClass().getName() != orig(arg1.getClass().getName())
+return.getClass().getName() != orig(arg2.getClass().getName())
+===========================================================================
+kth.game.othello.player.movestrategy.TopLeftStrategy:::OBJECT
+this has only one value
+===========================================================================
+kth.game.othello.player.movestrategy.TopLeftStrategy.TopLeftStrategy():::EXIT
+===========================================================================
+kth.game.othello.player.movestrategy.TopLeftStrategy.getName():::ENTER
+===========================================================================
+kth.game.othello.player.movestrategy.TopLeftStrategy.getName():::EXIT
+return has only one value
+return.toString == "TopLeft"
+===========================================================================
+kth.game.othello.player.movestrategy.TopLeftStrategy.move(java.lang.String, kth.game.othello.rules.Rules, kth.game.othello.board.Board):::ENTER
+arg0 has only one value
+arg0 != null
+arg0.toString == "cpu3"
+arg1 != null
+arg1.getClass().getName() == kth.game.othello.board.BoardHandler.class
+arg2 != null
+arg2.getClass().getName() == kth.game.othello.board.BoardImpl.class
+arg1.getClass().getName() != arg2.getClass().getName()
+===========================================================================
+kth.game.othello.player.movestrategy.TopLeftStrategy.move(java.lang.String, kth.game.othello.rules.Rules, kth.game.othello.board.Board):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "cpu3"
+return != null
+return.getClass().getName() == kth.game.othello.board.NodeImpl.class
+return.getClass().getName() != orig(arg1.getClass().getName())
+return.getClass().getName() != orig(arg2.getClass().getName())
+===========================================================================
+kth.game.othello.player.turndecider.Rotation:::CLASS
+===========================================================================
+kth.game.othello.player.turndecider.Rotation:::OBJECT
+this.players != null
+this.players[] elements != null
+this.players[].getClass().getName() == [java.lang.String, java.lang.String]
+this.players[].getClass().getName() elements == java.lang.String.class
+this.players.getClass().getName() == java.util.ArrayList.class
+this.playerInTurnIndex one of { -1, 0, 1 }
+size(this.players[]) == 2
+===========================================================================
+kth.game.othello.player.turndecider.Rotation.Rotation(java.util.List):::ENTER
+arg0 != null
+arg0[] elements != null
+arg0[].getClass().getName() == [java.lang.String, java.lang.String]
+arg0[].getClass().getName() elements == java.lang.String.class
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 2
+===========================================================================
+kth.game.othello.player.turndecider.Rotation.Rotation(java.util.List):::EXIT
+this.players == orig(arg0)
+this.players.getClass().getName() == orig(arg0.getClass().getName())
+arg0[] == orig(arg0[])
+this.playerInTurnIndex == -1
+arg0[] elements != null
+arg0[].getClass().getName() == [java.lang.String, java.lang.String]
+arg0[].getClass().getName() elements == java.lang.String.class
+===========================================================================
+kth.game.othello.player.turndecider.Rotation.getPlayerInTurn():::ENTER
+this.playerInTurnIndex one of { 0, 1 }
+===========================================================================
+kth.game.othello.player.turndecider.Rotation.getPlayerInTurn():::EXIT68
+===========================================================================
+kth.game.othello.player.turndecider.Rotation.getPlayerInTurn():::EXIT
+this.players == orig(this.players)
+this.players[] == orig(this.players[])
+this.players.getClass().getName() == orig(this.players.getClass().getName())
+this.playerInTurnIndex == orig(this.playerInTurnIndex)
+this.playerInTurnIndex one of { 0, 1 }
+return != null
+===========================================================================
+kth.game.othello.player.turndecider.Rotation.noPlayerIsInTurn():::ENTER
+this.playerInTurnIndex one of { 0, 1 }
+===========================================================================
+kth.game.othello.player.turndecider.Rotation.noPlayerIsInTurn():::EXIT
+this.players == orig(this.players)
+this.players[] == orig(this.players[])
+this.players.getClass().getName() == orig(this.players.getClass().getName())
+this.playerInTurnIndex == orig(this.playerInTurnIndex)
+this.playerInTurnIndex one of { 0, 1 }
+return == false
+===========================================================================
+kth.game.othello.player.turndecider.Rotation.noPlayerIsInTurn():::EXIT;condition="not(return == true)"
+===========================================================================
+kth.game.othello.player.turndecider.Rotation.setFirstPlayerInTurn(java.lang.String):::ENTER
+this.playerInTurnIndex == -1
+arg0 != null
+===========================================================================
+kth.game.othello.player.turndecider.Rotation.setFirstPlayerInTurn(java.lang.String):::EXIT
+this.players == orig(this.players)
+this.players[] == orig(this.players[])
+this.players.getClass().getName() == orig(this.players.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.playerInTurnIndex == 0
+===========================================================================
+kth.game.othello.player.turndecider.Rotation.updatePlayerInTurn(kth.game.othello.rules.Rules):::ENTER
+this.playerInTurnIndex one of { 0, 1 }
+arg0 != null
+arg0.getClass().getName() == kth.game.othello.board.BoardHandler.class
+this.players.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+kth.game.othello.player.turndecider.Rotation.updatePlayerInTurn(kth.game.othello.rules.Rules):::EXIT
+this.players == orig(this.players)
+this.players[] == orig(this.players[])
+this.players.getClass().getName() == return.getClass().getName()
+return.getClass().getName() == orig(this.players.getClass().getName())
+this.playerInTurnIndex one of { 0, 1 }
+return != null
+return[] elements != null
+return[].getClass().getName() elements == java.lang.String.class
+return[].getClass().getName() one of { [], [java.lang.String] }
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) one of { 0, 1 }
+return.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+kth.game.othello.score.ScoreImpl:::OBJECT
+this.playerScores != null
+===========================================================================
+kth.game.othello.score.ScoreImpl.ScoreImpl(java.util.List):::ENTER
+arg0 != null
+arg0[] elements != null
+arg0[].getClass().getName() == [kth.game.othello.score.ScoreItem, kth.game.othello.score.ScoreItem]
+arg0[].getClass().getName() elements == kth.game.othello.score.ScoreItem.class
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 2
+===========================================================================
+kth.game.othello.score.ScoreImpl.ScoreImpl(java.util.List):::EXIT
+arg0[] == orig(arg0[])
+arg0[] elements != null
+arg0[].getClass().getName() == [kth.game.othello.score.ScoreItem, kth.game.othello.score.ScoreItem]
+arg0[].getClass().getName() elements == kth.game.othello.score.ScoreItem.class
+===========================================================================
+kth.game.othello.score.ScoreImpl.addToScore(java.lang.String, int):::ENTER
+arg0 != null
+arg1 one of { -1, 1 }
+arg1 != 0
+===========================================================================
+kth.game.othello.score.ScoreImpl.addToScore(java.lang.String, int):::EXIT
+this.playerScores == orig(this.playerScores)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+kth.game.othello.score.ScoreImpl.getPoints(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+kth.game.othello.score.ScoreImpl.getPoints(java.lang.String):::EXIT50
+===========================================================================
+kth.game.othello.score.ScoreImpl.getPoints(java.lang.String):::EXIT
+this.playerScores == orig(this.playerScores)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+kth.game.othello.score.ScoreImpl.onNodeChanged(kth.game.othello.board.Node, java.lang.String):::ENTER
+arg0 != null
+arg0.getClass().getName() == kth.game.othello.board.NodeImpl.class
+===========================================================================
+kth.game.othello.score.ScoreImpl.onNodeChanged(kth.game.othello.board.Node, java.lang.String):::EXIT
+this.playerScores == orig(this.playerScores)
+arg1.toString == orig(arg1.toString)
+===========================================================================
+kth.game.othello.score.ScoreImpl.update(java.util.Observable, java.lang.Object):::ENTER
+arg0 != null
+arg1.getClass().getName() == java.lang.String.class
+===========================================================================
+kth.game.othello.score.ScoreImpl.update(java.util.Observable, java.lang.Object):::EXIT
+this.playerScores == orig(this.playerScores)
+===========================================================================
+kth.game.othello.score.ScoreItem:::OBJECT
+this.playerId != null
+===========================================================================
+kth.game.othello.score.ScoreItem.ScoreItem(java.lang.String, int):::ENTER
+arg0 != null
+===========================================================================
+kth.game.othello.score.ScoreItem.ScoreItem(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+===========================================================================
+kth.game.othello.score.ScoreItem.getPlayerId():::ENTER
+this.score == 2
+===========================================================================
+kth.game.othello.score.ScoreItem.getPlayerId():::EXIT
+this.playerId == orig(this.playerId)
+this.playerId.toString == orig(this.playerId.toString)
+this.score == orig(this.score)
+this.score == 2
+return != null
+===========================================================================
+kth.game.othello.score.ScoreItem.getScore():::ENTER
+===========================================================================
+kth.game.othello.score.ScoreItem.getScore():::EXIT
+this.playerId == orig(this.playerId)
+this.playerId.toString == orig(this.playerId.toString)
+this.score == orig(this.score)
+===========================================================================
+kth.game.othello.tournament.Main.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+kth.game.othello.tournament.Main.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+kth.game.othello.tournament.PlayerResult:::OBJECT
+this.name != null
+this.wins >= 0
+this.losses >= 0
+this.draws one of { 0, 1 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.PlayerResult(java.lang.String, int, int, int):::ENTER
+arg0 != null
+arg1 >= 0
+arg2 >= 0
+arg3 one of { 0, 1 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.PlayerResult(java.lang.String, int, int, int):::EXIT
+this.name == orig(arg0)
+this.wins == orig(arg1)
+this.losses == orig(arg2)
+this.draws == orig(arg3)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+kth.game.othello.tournament.PlayerResult.compareTo(kth.game.othello.tournament.PlayerResult):::ENTER
+this.name.toString one of { "Lowest", "Random", "TopLeft" }
+this.wins == 3
+this.losses one of { 2, 3 }
+arg0.name.toString one of { "Greedy", "Lowest", "Random" }
+arg0.wins one of { 2, 3 }
+arg0.losses one of { 2, 3, 4 }
+arg0.draws one of { 0, 1 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.compareTo(kth.game.othello.tournament.PlayerResult):::EXIT109
+this.draws == arg0.draws
+this.draws == orig(arg0.draws)
+this.name has only one value
+this.name.toString == "Random"
+this.losses == 3
+this.draws == 0
+arg0.name has only one value
+arg0.name.toString == "Greedy"
+arg0.wins == 2
+arg0.losses == 4
+return == -1
+orig(this) has only one value
+orig(arg0) has only one value
+===========================================================================
+kth.game.othello.tournament.PlayerResult.compareTo(kth.game.othello.tournament.PlayerResult):::EXIT113
+this.wins == arg0.wins
+this.wins == orig(arg0.wins)
+this.name.toString one of { "Lowest", "TopLeft" }
+this.losses == 2
+this.draws == 1
+arg0.name has only one value
+arg0.name.toString == "Random"
+arg0.losses == 3
+arg0.draws == 0
+return == -1
+orig(arg0) has only one value
+===========================================================================
+kth.game.othello.tournament.PlayerResult.compareTo(kth.game.othello.tournament.PlayerResult):::EXIT116
+this.wins == arg0.wins
+this.wins == orig(arg0.wins)
+this.draws == arg0.draws
+this.draws == orig(arg0.draws)
+this.name has only one value
+this.name.toString == "TopLeft"
+this.losses == 2
+this.draws == 1
+arg0.name has only one value
+arg0.name.toString == "Lowest"
+arg0.losses == 2
+return == 8
+orig(this) has only one value
+orig(arg0) has only one value
+===========================================================================
+kth.game.othello.tournament.PlayerResult.compareTo(kth.game.othello.tournament.PlayerResult):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.wins == orig(this.wins)
+this.losses == orig(this.losses)
+this.draws == orig(this.draws)
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+arg0.wins == orig(arg0.wins)
+arg0.losses == orig(arg0.losses)
+arg0.draws == orig(arg0.draws)
+this.name.toString one of { "Lowest", "Random", "TopLeft" }
+this.wins == 3
+this.losses one of { 2, 3 }
+arg0.name.toString one of { "Greedy", "Lowest", "Random" }
+arg0.wins one of { 2, 3 }
+arg0.losses one of { 2, 3, 4 }
+arg0.draws one of { 0, 1 }
+return one of { -1, 8 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.getDraws():::ENTER
+this.wins one of { 2, 3 }
+this.losses one of { 2, 3, 4 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.getDraws():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.wins == orig(this.wins)
+this.losses == orig(this.losses)
+this.draws == return
+return == orig(this.draws)
+this.wins one of { 2, 3 }
+this.losses one of { 2, 3, 4 }
+return one of { 0, 1 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.getLosses():::ENTER
+this.wins one of { 2, 3 }
+this.losses one of { 2, 3, 4 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.getLosses():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.wins == orig(this.wins)
+this.losses == return
+this.draws == orig(this.draws)
+return == orig(this.losses)
+this.wins one of { 2, 3 }
+return one of { 2, 3, 4 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.getName():::ENTER
+this.wins one of { 2, 3 }
+this.losses one of { 2, 3, 4 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.getName():::EXIT
+this.name == return
+this.name.toString == orig(this.name.toString)
+this.wins == orig(this.wins)
+this.losses == orig(this.losses)
+this.draws == orig(this.draws)
+return == orig(this.name)
+this.wins one of { 2, 3 }
+this.losses one of { 2, 3, 4 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.getWins():::ENTER
+this.wins one of { 2, 3 }
+this.losses one of { 2, 3, 4 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.getWins():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.wins == return
+this.losses == orig(this.losses)
+this.draws == orig(this.draws)
+return == orig(this.wins)
+this.losses one of { 2, 3, 4 }
+return one of { 2, 3 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.incrementDraws():::ENTER
+this.name.toString one of { "Lowest", "TopLeft" }
+this.wins == 3
+this.losses == 2
+this.draws == 0
+===========================================================================
+kth.game.othello.tournament.PlayerResult.incrementDraws():::EXIT
+this.name == return.name
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.wins == return.wins
+this.wins == orig(this.wins)
+this.losses == return.losses
+this.losses == orig(this.losses)
+this.draws == orig(this.draws)
+this.name.toString one of { "Lowest", "TopLeft" }
+this.wins == 3
+this.losses == 2
+this.draws == 0
+return.name.toString one of { "Lowest", "TopLeft" }
+return.draws == 1
+===========================================================================
+kth.game.othello.tournament.PlayerResult.incrementLosses():::ENTER
+this.wins one of { 0, 2, 3 }
+this.draws == 0
+===========================================================================
+kth.game.othello.tournament.PlayerResult.incrementLosses():::EXIT
+this.name == return.name
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.wins == return.wins
+this.wins == orig(this.wins)
+this.losses == orig(this.losses)
+this.draws == return.draws
+this.draws == orig(this.draws)
+this.wins one of { 0, 2, 3 }
+this.draws == 0
+return.losses >= 1
+this.losses - return.losses + 1 == 0
+===========================================================================
+kth.game.othello.tournament.PlayerResult.incrementWins():::ENTER
+this.wins one of { 0, 1, 2 }
+this.draws == 0
+===========================================================================
+kth.game.othello.tournament.PlayerResult.incrementWins():::EXIT
+this.name == return.name
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.wins == orig(this.wins)
+this.losses == return.losses
+this.losses == orig(this.losses)
+this.draws == return.draws
+this.draws == orig(this.draws)
+this.wins one of { 0, 1, 2 }
+this.draws == 0
+return.wins one of { 1, 2, 3 }
+this.wins < return.wins
+===========================================================================
+kth.game.othello.tournament.PlayerResult.isScoreEqual(kth.game.othello.tournament.PlayerResult):::ENTER
+this.name.toString one of { "Greedy", "Random", "TopLeft" }
+this.wins one of { 2, 3 }
+this.losses one of { 2, 3, 4 }
+arg0.name.toString one of { "Lowest", "Random", "TopLeft" }
+arg0.wins == 3
+arg0.losses one of { 2, 3 }
+arg0.draws one of { 0, 1 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.isScoreEqual(kth.game.othello.tournament.PlayerResult):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.wins == orig(this.wins)
+this.losses == orig(this.losses)
+this.draws == orig(this.draws)
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+arg0.wins == orig(arg0.wins)
+arg0.losses == orig(arg0.losses)
+arg0.draws == orig(arg0.draws)
+(this.name.toString == "TopLeft")  <==>  (arg0.name.toString == "Lowest")
+(this.name.toString == "TopLeft")  <==>  (return == true)
+(this.name.toString == "TopLeft")  <==>  (this.draws == 1)
+(this.name.toString == "TopLeft")  <==>  (this.losses == 2)
+(this.name.toString == "TopLeft")  ==>  (arg0.draws == 1)
+(this.name.toString == "TopLeft")  ==>  (arg0.losses == 2)
+(this.name.toString == "TopLeft")  ==>  (arg0.name has only one value)
+(this.name.toString == "TopLeft")  ==>  (orig(arg0) has only one value)
+(this.name.toString == "TopLeft")  ==>  (orig(this) has only one value)
+(this.name.toString == "TopLeft")  ==>  (this.draws == arg0.draws)
+(this.name.toString == "TopLeft")  ==>  (this.name has only one value)
+(this.name.toString == "TopLeft")  ==>  (this.wins == 3)
+(this.name.toString == "TopLeft")  ==>  (this.wins == arg0.wins)
+(this.name.toString one of { "Greedy", "Random" })  <==>  (arg0.name.toString one of { "Random", "TopLeft" })
+(this.name.toString one of { "Greedy", "Random" })  <==>  (return == false)
+(this.name.toString one of { "Greedy", "Random" })  <==>  (this.draws == 0)
+(this.name.toString one of { "Greedy", "Random" })  <==>  (this.losses one of { 3, 4 })
+(this.name.toString one of { "Greedy", "Random" })  ==>  (arg0.draws one of { 0, 1 })
+(this.name.toString one of { "Greedy", "Random" })  ==>  (arg0.losses one of { 2, 3 })
+(this.name.toString one of { "Greedy", "Random" })  ==>  (this.wins one of { 2, 3 })
+this.name.toString one of { "Greedy", "Random", "TopLeft" }
+this.wins one of { 2, 3 }
+this.losses one of { 2, 3, 4 }
+arg0.name.toString one of { "Lowest", "Random", "TopLeft" }
+arg0.wins == 3
+arg0.losses one of { 2, 3 }
+arg0.draws one of { 0, 1 }
+===========================================================================
+kth.game.othello.tournament.PlayerResult.isScoreEqual(kth.game.othello.tournament.PlayerResult):::EXIT;condition="return == true"
+this.wins == arg0.wins
+this.wins == orig(arg0.wins)
+this.draws == arg0.draws
+this.draws == orig(arg0.draws)
+this.name has only one value
+this.name.toString == "TopLeft"
+this.wins == 3
+this.losses == 2
+this.draws == 1
+arg0.name has only one value
+arg0.name.toString == "Lowest"
+arg0.losses == 2
+return == true
+orig(this) has only one value
+orig(arg0) has only one value
+===========================================================================
+kth.game.othello.tournament.PlayerResult.isScoreEqual(kth.game.othello.tournament.PlayerResult):::EXIT;condition="not(return == true)"
+this.name.toString one of { "Greedy", "Random" }
+this.losses one of { 3, 4 }
+this.draws == 0
+arg0.name.toString one of { "Random", "TopLeft" }
+return == false
+===========================================================================
+kth.game.othello.tournament.Tournament:::CLASS
+===========================================================================
+kth.game.othello.tournament.Tournament:::OBJECT
+this has only one value
+this.strategies has only one value
+this.strategies != null
+this.strategies[] contains no nulls and has only one value, of length 4
+this.strategies[] elements != null
+this.strategies[].getClass().getName() == [kth.game.othello.player.movestrategy.GreedyStrategy, kth.game.othello.player.movestrategy.RandomStrategy, kth.game.othello.player.movestrategy.LowestStrategy, kth.game.othello.player.movestrategy.TopLeftStrategy]
+this.strategies.getClass().getName() == java.util.ArrayList.class
+size(this.strategies[]) == 4
+===========================================================================
+kth.game.othello.tournament.Tournament.Tournament(java.util.List):::ENTER
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 4
+arg0[].getClass().getName() == [kth.game.othello.player.movestrategy.GreedyStrategy, kth.game.othello.player.movestrategy.RandomStrategy, kth.game.othello.player.movestrategy.LowestStrategy, kth.game.othello.player.movestrategy.TopLeftStrategy]
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 4
+===========================================================================
+kth.game.othello.tournament.Tournament.Tournament(java.util.List):::EXIT
+this.strategies == orig(arg0)
+this.strategies.getClass().getName() == orig(arg0.getClass().getName())
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 4
+arg0[].getClass().getName() == [kth.game.othello.player.movestrategy.GreedyStrategy, kth.game.othello.player.movestrategy.RandomStrategy, kth.game.othello.player.movestrategy.LowestStrategy, kth.game.othello.player.movestrategy.TopLeftStrategy]
+===========================================================================
+kth.game.othello.tournament.Tournament.play(boolean):::ENTER
+arg0 == false
+===========================================================================
+kth.game.othello.tournament.Tournament.play(boolean):::EXIT
+this.strategies == orig(this.strategies)
+this.strategies[] == orig(this.strategies[])
+this.strategies.getClass().getName() == return.getClass().getName()
+return.getClass().getName() == orig(this.strategies.getClass().getName())
+return has only one value
+return[] contains no nulls and has only one value, of length 4
+return[].getClass().getName() == [kth.game.othello.tournament.PlayerResult, kth.game.othello.tournament.PlayerResult, kth.game.othello.tournament.PlayerResult, kth.game.othello.tournament.PlayerResult]
+return[].getClass().getName() elements == kth.game.othello.tournament.PlayerResult.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 4
+===========================================================================
+kth.game.othello.tournament.Tournament.playGame(kth.game.othello.player.Player, kth.game.othello.player.Player, boolean):::ENTER
+arg0.getClass().getName() == arg1.getClass().getName()
+arg0 != null
+arg0.getClass().getName() == kth.game.othello.player.ComputerPlayer.class
+arg1 != null
+arg2 == false
+this.strategies.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+kth.game.othello.tournament.Tournament.playGame(kth.game.othello.player.Player, kth.game.othello.player.Player, boolean):::EXIT100
+return == 1
+===========================================================================
+kth.game.othello.tournament.Tournament.playGame(kth.game.othello.player.Player, kth.game.othello.player.Player, boolean):::EXIT101
+return == 0
+orig(arg0) has only one value
+orig(arg1) has only one value
+===========================================================================
+kth.game.othello.tournament.Tournament.playGame(kth.game.othello.player.Player, kth.game.othello.player.Player, boolean):::EXIT98
+return == -1
+===========================================================================
+kth.game.othello.tournament.Tournament.playGame(kth.game.othello.player.Player, kth.game.othello.player.Player, boolean):::EXIT
+this.strategies == orig(this.strategies)
+this.strategies[] == orig(this.strategies[])
+this.strategies.getClass().getName() == orig(this.strategies.getClass().getName())
+return one of { -1, 0, 1 }
+this.strategies.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+kth.game.othello.tournament.TournamentPrinter:::OBJECT
+this has only one value
+this.out has only one value
+===========================================================================
+kth.game.othello.tournament.TournamentPrinter.TournamentPrinter(java.io.PrintWriter):::ENTER
+arg0 has only one value
+===========================================================================
+kth.game.othello.tournament.TournamentPrinter.TournamentPrinter(java.io.PrintWriter):::EXIT
+this.out == orig(arg0)
+===========================================================================
+kth.game.othello.tournament.TournamentPrinter.printResults(java.util.List):::ENTER
+arg0 has only one value
+arg0[] contains no nulls and has only one value, of length 4
+arg0[].getClass().getName() == [kth.game.othello.tournament.PlayerResult, kth.game.othello.tournament.PlayerResult, kth.game.othello.tournament.PlayerResult, kth.game.othello.tournament.PlayerResult]
+arg0[].getClass().getName() elements == kth.game.othello.tournament.PlayerResult.class
+arg0.getClass().getName() == java.util.ArrayList.class
+size(arg0[]) == 4
+===========================================================================
+kth.game.othello.tournament.TournamentPrinter.printResults(java.util.List):::EXIT
+this.out == orig(this.out)
+arg0[] == orig(arg0[])
+arg0[] contains no nulls and has only one value, of length 4
+arg0[].getClass().getName() == [kth.game.othello.tournament.PlayerResult, kth.game.othello.tournament.PlayerResult, kth.game.othello.tournament.PlayerResult, kth.game.othello.tournament.PlayerResult]
+arg0[].getClass().getName() elements == kth.game.othello.tournament.PlayerResult.class
+Exiting Daikon.

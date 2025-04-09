@@ -1,0 +1,5 @@
+METHOD	solver.methods.HiddenSingleBlock	getStep(solver.Sudoku)	null	null
+METHOD	solver.methods.HiddenSingleRow	getStep(solver.Sudoku)	null	null
+METHOD	solver.methods.LockedCandidatesPointing	getStep(solver.Sudoku)	null	null
+METHOD	solver.methods.HiddenSingleCol	getStep(solver.Sudoku)	null	null
+METHOD	solver.methods.NakedSingle	getStep(solver.Sudoku)	null	null

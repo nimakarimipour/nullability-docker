@@ -1,0 +1,3193 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 39 times.  Unmatched entries are ignored!
+Unterminated calls:
+  json.JSONObject.getBoolean(java.lang.String) : 1 invocation
+  json.JSONObject.get(java.lang.String) : 3 invocations
+  json.JSONArray.put(double) : 2 invocations
+  json.JSONObject.testValidity(java.lang.Object) : 2 invocations
+  json.JSONObject.getDouble(java.lang.String) : 2 invocations
+  json.JSONObject.put(java.lang.String, java.lang.Object) : 1 invocation
+  json.JSONArray.getDouble(int) : 1 invocation
+  json.JSONArray.get(int) : 2 invocations
+  json.XML.toJSONObject(java.lang.String) : 3 invocations
+  json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String) : 6 invocations
+  json.XMLTokener.nextToken() : 2 invocations
+  json.JSONArray.JSONArray(java.lang.Object) : 1 invocation
+  json.JSONArray.JSONArray(java.lang.String) : 1 invocation
+  json.JSONArray.JSONArray(json.JSONTokener) : 1 invocation
+  json.JSONML.toJSONArray(java.lang.String) : 2 invocations
+  json.JSONML.toJSONArray(json.XMLTokener) : 2 invocations
+  json.JSONML.parse(json.XMLTokener, boolean, json.JSONArray) : 2 invocations
+  json.JSONObject.JSONObject(java.lang.String) : 1 invocation
+  json.JSONObject.JSONObject(json.JSONTokener) : 1 invocation
+  json.JSONObject.putOnce(java.lang.String, java.lang.Object) : 2 invocations
+  json.JSONWriter.key(java.lang.String) : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+Warning: No non-obvious non-suppressed exclusive invariants found in json.JSONArray.toString(int, int):::EXIT
+===========================================================================
+json.CDL.getValue(json.JSONTokener):::ENTER
+arg0 != null
+arg0.reader != null
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar one of { 0, 10, 44 }
+arg0.useLastChar == false
+===========================================================================
+json.CDL.getValue(json.JSONTokener):::EXIT64
+arg0.index == orig(arg0.index)
+arg0.useLastChar == orig(arg0.useLastChar)
+arg0.index == 86
+arg0.reader has only one value
+arg0.lastChar == 0
+arg0.useLastChar == false
+return == null
+orig(arg0) has only one value
+orig(arg0.lastChar) == 10
+===========================================================================
+json.CDL.getValue(json.JSONTokener):::EXIT79
+arg0.useLastChar == orig(arg0.useLastChar)
+arg0.lastChar one of { 34, 39 }
+arg0.useLastChar == false
+orig(arg0.lastChar) one of { 0, 44 }
+arg0.index > orig(arg0.index)
+arg0.lastChar != orig(arg0.lastChar)
+===========================================================================
+json.CDL.getValue(json.JSONTokener):::EXIT82
+arg0.index == orig(arg0.index)
+arg0.index == 114
+arg0.reader has only one value
+arg0.lastChar == 44
+arg0.useLastChar == true
+return has only one value
+return.toString == ""
+orig(arg0) has only one value
+orig(arg0.lastChar) == 10
+===========================================================================
+json.CDL.getValue(json.JSONTokener):::EXIT85
+arg0.lastChar one of { 10, 44 }
+arg0.useLastChar == true
+===========================================================================
+json.CDL.getValue(json.JSONTokener):::EXIT
+arg0.reader == orig(arg0.reader)
+arg0.reader.getClass().getName() == orig(arg0.reader.getClass().getName())
+arg0.reader != null
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.index >= orig(arg0.index)
+===========================================================================
+json.CDL.rowToJSONArray(json.JSONTokener):::ENTER
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar one of { 0, 10 }
+arg0.useLastChar == false
+===========================================================================
+json.CDL.rowToJSONArray(json.JSONTokener):::EXIT102
+arg0.index one of { 86, 145 }
+return == null
+orig(arg0.index) one of { 86, 144 }
+orig(arg0.lastChar) == 10
+===========================================================================
+json.CDL.rowToJSONArray(json.JSONTokener):::EXIT111
+arg0.lastChar == 10
+===========================================================================
+json.CDL.rowToJSONArray(json.JSONTokener):::EXIT
+arg0.reader == orig(arg0.reader)
+arg0.reader.getClass().getName() == orig(arg0.reader.getClass().getName())
+arg0.useLastChar == orig(arg0.useLastChar)
+(return == null)  ==>  (arg0.index one of { 86, 145 })
+(return == null)  ==>  (arg0.lastChar one of { 0, 10 })
+(return == null)  ==>  (orig(arg0.index) one of { 86, 144 })
+(return == null)  ==>  (orig(arg0.lastChar) == 10)
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar one of { 0, 10 }
+arg0.useLastChar == false
+return.myArrayList[].getClass().getName() elements == java.lang.String.class
+return.myArrayList[].getClass().getName() one of { [java.lang.String, java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String] }
+size(return.myArrayList[]) one of { 3, 6 }
+arg0.index >= orig(arg0.index)
+===========================================================================
+json.CDL.rowToJSONObject(json.JSONArray, json.JSONTokener):::ENTER
+arg0.myArrayList[].getClass().getName() elements == java.lang.String.class
+arg0.myArrayList[].getClass().getName() one of { [java.lang.String, java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String] }
+arg1.reader.getClass().getName() == java.io.StringReader.class
+arg1.lastChar == 10
+arg1.useLastChar == false
+size(arg0.myArrayList[]) one of { 3, 6 }
+===========================================================================
+json.CDL.rowToJSONObject(json.JSONArray, json.JSONTokener):::EXIT
+arg0.myArrayList == orig(arg0.myArrayList)
+arg0.myArrayList[] == orig(arg0.myArrayList[])
+arg1.reader == orig(arg1.reader)
+arg1.reader.getClass().getName() == orig(arg1.reader.getClass().getName())
+arg1.useLastChar == orig(arg1.useLastChar)
+arg0.myArrayList[].getClass().getName() elements == java.lang.String.class
+arg0.myArrayList[].getClass().getName() one of { [java.lang.String, java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String] }
+arg1.reader.getClass().getName() == java.io.StringReader.class
+arg1.lastChar one of { 0, 10 }
+arg1.useLastChar == false
+return.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+size(arg0.myArrayList[]) one of { 3, 6 }
+===========================================================================
+json.CDL.rowToString(json.JSONArray):::ENTER
+arg0.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+arg0.myArrayList[].getClass().getName() elements == java.lang.String.class
+size(arg0.myArrayList[]) == 3
+===========================================================================
+json.CDL.rowToString(json.JSONArray):::EXIT
+arg0.myArrayList == orig(arg0.myArrayList)
+arg0.myArrayList[] == orig(arg0.myArrayList[])
+arg0.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+arg0.myArrayList[].getClass().getName() elements == java.lang.String.class
+return.toString one of { "\"quote, comma\",\"StripQuotes\",Comma delimited list test\n", "3,2,1\n", "It works.,\"It is good,\",\n" }
+size(arg0.myArrayList[]) == 3
+===========================================================================
+json.CDL.toJSONArray(java.lang.String):::ENTER
+arg0.toString one of { "\"quote, comma\",\"StripQuotes\",Comma delimited list test\n3,2,1\nIt works.,\"It is good,\",\n", "Comma delimited list test, '\"Strip\"Quotes', 'quote, comma', No quotes, 'Single Quotes', \"Double Quotes\"\n1,'2',\"3\"\n,'It is \"good,\"', \"It works.\"\n\n" }
+===========================================================================
+json.CDL.toJSONArray(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "\"quote, comma\",\"StripQuotes\",Comma delimited list test\n3,2,1\nIt works.,\"It is good,\",\n", "Comma delimited list test, '\"Strip\"Quotes', 'quote, comma', No quotes, 'Single Quotes', \"Double Quotes\"\n1,'2',\"3\"\n,'It is \"good,\"', \"It works.\"\n\n" }
+return.myArrayList[].getClass().getName() == [json.JSONObject, json.JSONObject]
+return.myArrayList[].getClass().getName() elements == json.JSONObject.class
+size(return.myArrayList[]) == 2
+===========================================================================
+json.CDL.toJSONArray(json.JSONArray, json.JSONTokener):::ENTER
+arg0.myArrayList[].getClass().getName() elements == java.lang.String.class
+arg0.myArrayList[].getClass().getName() one of { [java.lang.String, java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String] }
+arg1.index one of { 55, 104 }
+arg1.reader.getClass().getName() == java.io.StringReader.class
+arg1.lastChar == 10
+arg1.useLastChar == false
+size(arg0.myArrayList[]) one of { 3, 6 }
+===========================================================================
+json.CDL.toJSONArray(json.JSONArray, json.JSONTokener):::EXIT196
+===========================================================================
+json.CDL.toJSONArray(json.JSONArray, json.JSONTokener):::EXIT
+arg0.myArrayList == orig(arg0.myArrayList)
+arg0.myArrayList[] == orig(arg0.myArrayList[])
+arg1.reader == orig(arg1.reader)
+arg1.reader.getClass().getName() == orig(arg1.reader.getClass().getName())
+arg1.useLastChar == orig(arg1.useLastChar)
+arg0.myArrayList[].getClass().getName() elements == java.lang.String.class
+arg0.myArrayList[].getClass().getName() one of { [java.lang.String, java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String] }
+arg1.index one of { 86, 145 }
+arg1.reader.getClass().getName() == java.io.StringReader.class
+arg1.lastChar one of { 0, 10 }
+arg1.useLastChar == false
+return.myArrayList[].getClass().getName() == [json.JSONObject, json.JSONObject]
+return.myArrayList[].getClass().getName() elements == json.JSONObject.class
+size(arg0.myArrayList[]) one of { 3, 6 }
+size(return.myArrayList[]) == 2
+===========================================================================
+json.CDL.toJSONArray(json.JSONTokener):::ENTER
+arg0.index == 0
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar == 0
+arg0.useLastChar == false
+===========================================================================
+json.CDL.toJSONArray(json.JSONTokener):::EXIT
+arg0.reader == orig(arg0.reader)
+arg0.reader.getClass().getName() == orig(arg0.reader.getClass().getName())
+arg0.useLastChar == orig(arg0.useLastChar)
+arg0.index one of { 86, 145 }
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar one of { 0, 10 }
+arg0.useLastChar == false
+return.myArrayList[].getClass().getName() == [json.JSONObject, json.JSONObject]
+return.myArrayList[].getClass().getName() elements == json.JSONObject.class
+size(return.myArrayList[]) == 2
+===========================================================================
+json.CDL.toString(json.JSONArray):::ENTER
+arg0 has only one value
+arg0.myArrayList has only one value
+arg0.myArrayList[] contains no nulls and has only one value, of length 2
+arg0.myArrayList[].getClass().getName() == [json.JSONObject, json.JSONObject]
+arg0.myArrayList[].getClass().getName() elements == json.JSONObject.class
+size(arg0.myArrayList[]) == 2
+===========================================================================
+json.CDL.toString(json.JSONArray):::EXIT250
+===========================================================================
+json.CDL.toString(json.JSONArray):::EXIT
+arg0.myArrayList == orig(arg0.myArrayList)
+arg0.myArrayList[] == orig(arg0.myArrayList[])
+arg0.myArrayList has only one value
+arg0.myArrayList[] contains no nulls and has only one value, of length 2
+arg0.myArrayList[].getClass().getName() == [json.JSONObject, json.JSONObject]
+arg0.myArrayList[].getClass().getName() elements == json.JSONObject.class
+return has only one value
+return.toString == "\"quote, comma\",\"StripQuotes\",Comma delimited list test\n3,2,1\nIt works.,\"It is good,\",\n"
+size(arg0.myArrayList[]) == 2
+===========================================================================
+json.CDL.toString(json.JSONArray, json.JSONArray):::ENTER
+arg0 has only one value
+arg0.myArrayList has only one value
+arg0.myArrayList[] contains no nulls and has only one value, of length 3
+arg0.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+arg0.myArrayList[].getClass().getName() elements == java.lang.String.class
+arg1 has only one value
+arg1.myArrayList has only one value
+arg1.myArrayList[] contains no nulls and has only one value, of length 2
+arg1.myArrayList[].getClass().getName() == [json.JSONObject, json.JSONObject]
+arg1.myArrayList[].getClass().getName() elements == json.JSONObject.class
+size(arg0.myArrayList[]) == 3
+size(arg1.myArrayList[]) == 2
+===========================================================================
+json.CDL.toString(json.JSONArray, json.JSONArray):::EXIT277
+===========================================================================
+json.CDL.toString(json.JSONArray, json.JSONArray):::EXIT
+arg0.myArrayList == orig(arg0.myArrayList)
+arg0.myArrayList[] == orig(arg0.myArrayList[])
+arg1.myArrayList == orig(arg1.myArrayList)
+arg1.myArrayList[] == orig(arg1.myArrayList[])
+arg0.myArrayList has only one value
+arg0.myArrayList[] contains no nulls and has only one value, of length 3
+arg0.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+arg0.myArrayList[].getClass().getName() elements == java.lang.String.class
+arg1.myArrayList has only one value
+arg1.myArrayList[] contains no nulls and has only one value, of length 2
+arg1.myArrayList[].getClass().getName() == [json.JSONObject, json.JSONObject]
+arg1.myArrayList[].getClass().getName() elements == json.JSONObject.class
+return has only one value
+return.toString == "3,2,1\nIt works.,\"It is good,\",\n"
+size(arg0.myArrayList[]) == 3
+size(arg1.myArrayList[]) == 2
+===========================================================================
+json.Cookie.escape(java.lang.String):::ENTER
+===========================================================================
+json.Cookie.escape(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+===========================================================================
+json.Cookie.toJSONObject(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "f%oo=blah; secure ;expires = April 24, 2002"
+===========================================================================
+json.Cookie.toJSONObject(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "f%oo=blah; secure ;expires = April 24, 2002"
+return has only one value
+return.map has only one value
+return.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+===========================================================================
+json.Cookie.toString(json.JSONObject):::ENTER
+arg0 has only one value
+arg0.map has only one value
+arg0.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+===========================================================================
+json.Cookie.toString(json.JSONObject):::EXIT
+arg0.map == orig(arg0.map)
+arg0.map.getClass().getName() == orig(arg0.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.map has only one value
+arg0.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+return has only one value
+return.toString == "f%25oo=blah;expires=April 24, 2002;secure"
+===========================================================================
+json.Cookie.unescape(java.lang.String):::ENTER
+===========================================================================
+json.Cookie.unescape(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+===========================================================================
+json.CookieList.toJSONObject(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "  f%oo = b+l=ah  ; o;n%40e = t.wo "
+===========================================================================
+json.CookieList.toJSONObject(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "  f%oo = b+l=ah  ; o;n%40e = t.wo "
+return has only one value
+return.map has only one value
+return.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+===========================================================================
+json.CookieList.toString(json.JSONObject):::ENTER
+arg0 has only one value
+arg0.map has only one value
+arg0.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+===========================================================================
+json.CookieList.toString(json.JSONObject):::EXIT
+arg0.map == orig(arg0.map)
+arg0.map.getClass().getName() == orig(arg0.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.map has only one value
+arg0.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+return has only one value
+return.toString == "f%25oo=b l%3dah;o%3bn@e=t.wo"
+===========================================================================
+json.HTTP:::CLASS
+json.HTTP.CRLF has only one value
+json.HTTP.CRLF.toString == "\r\n"
+===========================================================================
+json.HTTP.toJSONObject(java.lang.String):::ENTER
+arg0.toString one of { "GET / HTTP/1.0\nAccept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-powerpoint, application/vnd.ms-excel, application/msword, */*\nAccept-Language: en-us\nUser-Agent: Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90; T312461; Q312461)\nHost: www.nokko.com\nConnection: keep-alive\nAccept-encoding: gzip, deflate\n", "HTTP/1.1 200 Oki Doki\nDate: Sun, 26 May 2002 17:38:52 GMT\nServer: Apache/1.3.23 (Unix) mod_perl/1.26\nKeep-Alive: timeout=15, max=100\nConnection: Keep-Alive\nTransfer-Encoding: chunked\nContent-Type: text/html\n" }
+===========================================================================
+json.HTTP.toJSONObject(java.lang.String):::EXIT
+json.HTTP.CRLF == orig(json.HTTP.CRLF)
+json.HTTP.CRLF.toString == orig(json.HTTP.CRLF.toString)
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "GET / HTTP/1.0\nAccept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-powerpoint, application/vnd.ms-excel, application/msword, */*\nAccept-Language: en-us\nUser-Agent: Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90; T312461; Q312461)\nHost: www.nokko.com\nConnection: keep-alive\nAccept-encoding: gzip, deflate\n", "HTTP/1.1 200 Oki Doki\nDate: Sun, 26 May 2002 17:38:52 GMT\nServer: Apache/1.3.23 (Unix) mod_perl/1.26\nKeep-Alive: timeout=15, max=100\nConnection: Keep-Alive\nTransfer-Encoding: chunked\nContent-Type: text/html\n" }
+return.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+===========================================================================
+json.HTTP.toString(json.JSONObject):::ENTER
+arg0.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+===========================================================================
+json.HTTP.toString(json.JSONObject):::EXIT
+json.HTTP.CRLF == orig(json.HTTP.CRLF)
+json.HTTP.CRLF.toString == orig(json.HTTP.CRLF.toString)
+arg0.map == orig(arg0.map)
+arg0.map.getClass().getName() == orig(arg0.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+return.toString one of { "GET \"/\" HTTP/1.0\r\nAccept-encoding: gzip, deflate\r\nAccept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-powerpoint, application/vnd.ms-excel, application/msword, */*\r\nUser-Agent: Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90; T312461; Q312461)\r\nConnection: keep-alive\r\nHost: www.nokko.com\r\nAccept-Language: en-us\r\n\r\n", "GET \"/\" HTTP/1.0\r\nnux: false\r\nnull: null\r\n\r\n", "HTTP/1.1 200 Oki Doki\r\nKeep-Alive: timeout=15, max=100\r\nTransfer-Encoding: chunked\r\nServer: Apache/1.3.23 (Unix) mod_perl/1.26\r\nConnection: Keep-Alive\r\nDate: Sun, 26 May 2002 17:38:52 GMT\r\nContent-Type: text/html\r\n\r\n" }
+===========================================================================
+json.HTTPTokener:::OBJECT
+this.index >= 0
+this.reader != null
+this.reader.getClass().getName() == java.io.StringReader.class
+this.lastChar one of { 0, 10, 32 }
+this.useLastChar == false
+===========================================================================
+json.HTTPTokener.HTTPTokener(java.lang.String):::ENTER
+arg0.toString one of { "GET / HTTP/1.0\nAccept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-powerpoint, application/vnd.ms-excel, application/msword, */*\nAccept-Language: en-us\nUser-Agent: Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90; T312461; Q312461)\nHost: www.nokko.com\nConnection: keep-alive\nAccept-encoding: gzip, deflate\n", "HTTP/1.1 200 Oki Doki\nDate: Sun, 26 May 2002 17:38:52 GMT\nServer: Apache/1.3.23 (Unix) mod_perl/1.26\nKeep-Alive: timeout=15, max=100\nConnection: Keep-Alive\nTransfer-Encoding: chunked\nContent-Type: text/html\n" }
+===========================================================================
+json.HTTPTokener.HTTPTokener(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+this.index == 0
+this.lastChar == 0
+arg0.toString one of { "GET / HTTP/1.0\nAccept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/vnd.ms-powerpoint, application/vnd.ms-excel, application/msword, */*\nAccept-Language: en-us\nUser-Agent: Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90; T312461; Q312461)\nHost: www.nokko.com\nConnection: keep-alive\nAccept-encoding: gzip, deflate\n", "HTTP/1.1 200 Oki Doki\nDate: Sun, 26 May 2002 17:38:52 GMT\nServer: Apache/1.3.23 (Unix) mod_perl/1.26\nKeep-Alive: timeout=15, max=100\nConnection: Keep-Alive\nTransfer-Encoding: chunked\nContent-Type: text/html\n" }
+===========================================================================
+json.HTTPTokener.nextToken():::ENTER
+this.lastChar one of { 0, 32 }
+===========================================================================
+json.HTTPTokener.nextToken():::EXIT71
+===========================================================================
+json.HTTPTokener.nextToken():::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.useLastChar == orig(this.useLastChar)
+this.lastChar one of { 10, 32 }
+===========================================================================
+json.JSONArray:::OBJECT
+this.myArrayList != null
+===========================================================================
+json.JSONArray.JSONArray():::EXIT
+this.myArrayList[] == []
+this.myArrayList[].getClass().getName() == []
+===========================================================================
+json.JSONArray.JSONArray(java.lang.Object):::ENTER
+===========================================================================
+json.JSONArray.JSONArray(java.lang.Object):::EXIT
+size(this.myArrayList[]) one of { 3, 16 }
+===========================================================================
+json.JSONArray.JSONArray(java.lang.String):::ENTER
+===========================================================================
+json.JSONArray.JSONArray(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+size(this.myArrayList[]) one of { 4, 6, 7 }
+===========================================================================
+json.JSONArray.JSONArray(java.util.Collection):::ENTER
+arg0 == null
+===========================================================================
+json.JSONArray.JSONArray(java.util.Collection):::EXIT
+this.myArrayList[] == []
+this.myArrayList[].getClass().getName() == []
+===========================================================================
+json.JSONArray.JSONArray(json.JSONTokener):::ENTER
+arg0 != null
+arg0.index >= 0
+arg0.reader != null
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar one of { 0, 91 }
+===========================================================================
+json.JSONArray.JSONArray(json.JSONTokener):::EXIT116
+this.myArrayList[] == []
+this.myArrayList[].getClass().getName() == []
+arg0.index one of { 27, 133 }
+arg0.lastChar == 93
+orig(arg0.index) one of { 25, 131 }
+orig(arg0.lastChar) == 91
+orig(arg0.useLastChar) == true
+===========================================================================
+json.JSONArray.JSONArray(json.JSONTokener):::EXIT132
+this.myArrayList[].getClass().getName() one of { [java.lang.String, java.lang.String, null, java.lang.String], [json.JSONArray, json.JSONArray] }
+arg0.index one of { 46, 69 }
+arg0.lastChar == 93
+orig(arg0.index) one of { 0, 24 }
+size(this.myArrayList[]) one of { 2, 4 }
+===========================================================================
+json.JSONArray.JSONArray(json.JSONTokener):::EXIT141
+this.myArrayList[] elements != null
+size(this.myArrayList[]) >= 1
+===========================================================================
+json.JSONArray.JSONArray(json.JSONTokener):::EXIT
+arg0.reader == orig(arg0.reader)
+arg0.reader.getClass().getName() == orig(arg0.reader.getClass().getName())
+arg0.reader != null
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar one of { 41, 93 }
+arg0.useLastChar == false
+arg0.index > orig(arg0.index)
+arg0.lastChar > orig(arg0.lastChar)
+===========================================================================
+json.JSONArray.get(int):::ENTER
+this.myArrayList[] elements != null
+arg0 >= 0
+size(this.myArrayList[]) >= 1
+===========================================================================
+json.JSONArray.get(int):::EXIT
+this.myArrayList == orig(this.myArrayList)
+this.myArrayList[] == orig(this.myArrayList[])
+this.myArrayList[] elements != null
+return != null
+size(this.myArrayList[]) >= 1
+return.getClass().getName() in this.myArrayList[].getClass().getName()
+===========================================================================
+json.JSONArray.getString(int):::ENTER
+this.myArrayList[] elements != null
+arg0 >= 0
+size(this.myArrayList[]) >= 1
+===========================================================================
+json.JSONArray.getString(int):::EXIT
+this.myArrayList == orig(this.myArrayList)
+this.myArrayList[] == orig(this.myArrayList[])
+this.myArrayList[] elements != null
+return != null
+size(this.myArrayList[]) >= 1
+===========================================================================
+json.JSONArray.join(java.lang.String):::ENTER
+arg0 has only one value
+arg0 != null
+arg0.toString == ","
+===========================================================================
+json.JSONArray.join(java.lang.String):::EXIT
+this.myArrayList == orig(this.myArrayList)
+this.myArrayList[] == orig(this.myArrayList[])
+arg0.toString == orig(arg0.toString)
+arg0.toString == ","
+return != null
+===========================================================================
+json.JSONArray.length():::ENTER
+===========================================================================
+json.JSONArray.length():::EXIT
+this.myArrayList == orig(this.myArrayList)
+this.myArrayList[] == orig(this.myArrayList[])
+return >= 0
+===========================================================================
+json.JSONArray.opt(int):::ENTER
+===========================================================================
+json.JSONArray.opt(int):::EXIT
+this.myArrayList == orig(this.myArrayList)
+this.myArrayList[] == orig(this.myArrayList[])
+return.getClass().getName() in this.myArrayList[].getClass().getName()
+===========================================================================
+json.JSONArray.optJSONObject(int):::ENTER
+this has only one value
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 2
+this.myArrayList[].getClass().getName() == [json.JSONObject, json.JSONObject]
+this.myArrayList[].getClass().getName() elements == json.JSONObject.class
+arg0 one of { 0, 1 }
+size(this.myArrayList[]) == 2
+===========================================================================
+json.JSONArray.optJSONObject(int):::EXIT
+this.myArrayList == orig(this.myArrayList)
+this.myArrayList[] == orig(this.myArrayList[])
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 2
+this.myArrayList[].getClass().getName() == [json.JSONObject, json.JSONObject]
+this.myArrayList[].getClass().getName() elements == json.JSONObject.class
+return.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+size(this.myArrayList[]) == 2
+===========================================================================
+json.JSONArray.put(boolean):::ENTER
+this has only one value
+this.myArrayList has only one value
+this.myArrayList[].getClass().getName() one of { [java.lang.Boolean, java.lang.Boolean, java.lang.Long, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Integer, json.JSONArray, json.JSONObject, java.lang.String, java.lang.Integer, java.lang.Double, java.lang.String, java.lang.String], [java.lang.Boolean, java.lang.Boolean, java.lang.Long, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Integer, json.JSONArray, json.JSONObject, java.lang.String, java.lang.Integer, java.lang.Double, java.lang.String, java.lang.String, java.lang.Boolean] }
+size(this.myArrayList[]) one of { 19, 20 }
+===========================================================================
+json.JSONArray.put(boolean):::EXIT
+this.myArrayList == orig(this.myArrayList)
+size(this.myArrayList[])-1 == orig(size(this.myArrayList[]))
+this.myArrayList has only one value
+this.myArrayList[].getClass().getName() one of { [java.lang.Boolean, java.lang.Boolean, java.lang.Long, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Integer, json.JSONArray, json.JSONObject, java.lang.String, java.lang.Integer, java.lang.Double, java.lang.String, java.lang.String, java.lang.Boolean], [java.lang.Boolean, java.lang.Boolean, java.lang.Long, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Integer, json.JSONArray, json.JSONObject, java.lang.String, java.lang.Integer, java.lang.Double, java.lang.String, java.lang.String, java.lang.Boolean, java.lang.Boolean] }
+return has only one value
+return.myArrayList has only one value
+return.myArrayList[].getClass().getName() one of { [java.lang.Boolean, java.lang.Boolean, java.lang.Long, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Integer, json.JSONArray, json.JSONObject, java.lang.String, java.lang.Integer, java.lang.Double, java.lang.String, java.lang.String, java.lang.Boolean], [java.lang.Boolean, java.lang.Boolean, java.lang.Long, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Integer, json.JSONArray, json.JSONObject, java.lang.String, java.lang.Integer, java.lang.Double, java.lang.String, java.lang.String, java.lang.Boolean, java.lang.Boolean] }
+size(this.myArrayList[]) one of { 20, 21 }
+size(return.myArrayList[]) one of { 20, 21 }
+===========================================================================
+json.JSONArray.put(double):::ENTER
+this has only one value
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 16
+this.myArrayList[].getClass().getName() == [java.lang.Boolean, java.lang.Boolean, java.lang.Long, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Integer, json.JSONArray, json.JSONObject, java.lang.String, java.lang.Integer]
+arg0 == 2001.99
+size(this.myArrayList[]) == 16
+===========================================================================
+json.JSONArray.put(double):::EXIT
+this.myArrayList == orig(this.myArrayList)
+size(this.myArrayList[])-1 == orig(size(this.myArrayList[]))
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 17
+this.myArrayList[].getClass().getName() == [java.lang.Boolean, java.lang.Boolean, java.lang.Long, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Integer, json.JSONArray, json.JSONObject, java.lang.String, java.lang.Integer, java.lang.Double]
+return has only one value
+return.myArrayList has only one value
+return.myArrayList[] contains no nulls and has only one value, of length 17
+return.myArrayList[].getClass().getName() == [java.lang.Boolean, java.lang.Boolean, java.lang.Long, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Integer, json.JSONArray, json.JSONObject, java.lang.String, java.lang.Integer, java.lang.Double]
+size(this.myArrayList[]) == 17
+size(return.myArrayList[]) == 17
+===========================================================================
+json.JSONArray.put(int):::ENTER
+this has only one value
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 15
+this.myArrayList[].getClass().getName() == [java.lang.Boolean, java.lang.Boolean, java.lang.Long, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Integer, json.JSONArray, json.JSONObject, java.lang.String]
+arg0 == 666
+size(this.myArrayList[]) == 15
+===========================================================================
+json.JSONArray.put(int):::EXIT
+this.myArrayList == orig(this.myArrayList)
+size(this.myArrayList[])-1 == orig(size(this.myArrayList[]))
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 16
+this.myArrayList[].getClass().getName() == [java.lang.Boolean, java.lang.Boolean, java.lang.Long, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Integer, json.JSONArray, json.JSONObject, java.lang.String, java.lang.Integer]
+return has only one value
+return.myArrayList has only one value
+return.myArrayList[] contains no nulls and has only one value, of length 16
+return.myArrayList[].getClass().getName() == [java.lang.Boolean, java.lang.Boolean, java.lang.Long, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Double, java.lang.Integer, json.JSONArray, json.JSONObject, java.lang.String, java.lang.Integer]
+size(this.myArrayList[]) == 16
+size(return.myArrayList[]) == 16
+===========================================================================
+json.JSONArray.put(int, java.lang.Object):::ENTER
+this has only one value
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 3
+this.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+this.myArrayList[].getClass().getName() elements == java.lang.String.class
+arg0 == 5
+arg1 has only one value
+arg1.getClass().getName() == java.lang.String.class
+size(this.myArrayList[]) == 3
+arg1.getClass().getName() in this.myArrayList[].getClass().getName()
+===========================================================================
+json.JSONArray.put(int, java.lang.Object):::EXIT
+this.myArrayList == orig(this.myArrayList)
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 6
+this.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, json.JSONObject.Null, json.JSONObject.Null, java.lang.String]
+return has only one value
+return.myArrayList has only one value
+return.myArrayList[] contains no nulls and has only one value, of length 6
+return.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, json.JSONObject.Null, json.JSONObject.Null, java.lang.String]
+size(this.myArrayList[]) == 6
+size(return.myArrayList[]) == 6
+orig(arg1.getClass().getName()) in this.myArrayList[].getClass().getName()
+orig(arg1.getClass().getName()) in return.myArrayList[].getClass().getName()
+===========================================================================
+json.JSONArray.put(java.lang.Object):::ENTER
+this.myArrayList[] elements != null
+arg0 != null
+===========================================================================
+json.JSONArray.put(java.lang.Object):::EXIT
+this.myArrayList == return.myArrayList
+this.myArrayList == orig(this.myArrayList)
+return == orig(this)
+size(this.myArrayList[])-1 == orig(size(this.myArrayList[]))
+this.myArrayList[] elements != null
+return != null
+return.myArrayList[] elements != null
+size(this.myArrayList[]) >= 1
+size(return.myArrayList[]) >= 1
+===========================================================================
+json.JSONArray.put(java.util.Collection):::ENTER
+this has only one value
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 1
+this.myArrayList[] elements has only one value
+this.myArrayList[].getClass().getName() == [json.JSONObject]
+this.myArrayList[].getClass().getName() elements == json.JSONObject.class
+arg0 == null
+size(this.myArrayList[]) == 1
+===========================================================================
+json.JSONArray.put(java.util.Collection):::EXIT
+this.myArrayList == orig(this.myArrayList)
+size(this.myArrayList[])-1 == orig(size(this.myArrayList[]))
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 2
+this.myArrayList[].getClass().getName() == [json.JSONObject, json.JSONArray]
+return has only one value
+return.myArrayList has only one value
+return.myArrayList[] contains no nulls and has only one value, of length 2
+return.myArrayList[].getClass().getName() == [json.JSONObject, json.JSONArray]
+size(this.myArrayList[]) == 2
+size(return.myArrayList[]) == 2
+===========================================================================
+json.JSONArray.put(java.util.Map):::ENTER
+this has only one value
+this.myArrayList has only one value
+this.myArrayList[] == []
+this.myArrayList[].getClass().getName() == []
+arg0 == null
+===========================================================================
+json.JSONArray.put(java.util.Map):::EXIT
+this.myArrayList == orig(this.myArrayList)
+size(this.myArrayList[])-1 == orig(size(this.myArrayList[]))
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 1
+this.myArrayList[] elements has only one value
+this.myArrayList[].getClass().getName() == [json.JSONObject]
+this.myArrayList[].getClass().getName() elements == json.JSONObject.class
+return has only one value
+return.myArrayList has only one value
+return.myArrayList[] contains no nulls and has only one value, of length 1
+return.myArrayList[] elements has only one value
+return.myArrayList[].getClass().getName() == [json.JSONObject]
+return.myArrayList[].getClass().getName() elements == json.JSONObject.class
+size(this.myArrayList[]) == 1
+size(return.myArrayList[]) == 1
+===========================================================================
+json.JSONArray.toJSONObject(json.JSONArray):::ENTER
+this.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+this.myArrayList[].getClass().getName() elements == java.lang.String.class
+arg0.myArrayList[].getClass().getName() elements == java.lang.String.class
+arg0.myArrayList[].getClass().getName() one of { [java.lang.String, java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String] }
+size(this.myArrayList[]) == 3
+size(arg0.myArrayList[]) one of { 3, 6 }
+===========================================================================
+json.JSONArray.toJSONObject(json.JSONArray):::EXIT841
+===========================================================================
+json.JSONArray.toJSONObject(json.JSONArray):::EXIT
+this.myArrayList == orig(this.myArrayList)
+this.myArrayList[] == orig(this.myArrayList[])
+arg0.myArrayList == orig(arg0.myArrayList)
+arg0.myArrayList[] == orig(arg0.myArrayList[])
+this.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+this.myArrayList[].getClass().getName() elements == java.lang.String.class
+arg0.myArrayList[].getClass().getName() elements == java.lang.String.class
+arg0.myArrayList[].getClass().getName() one of { [java.lang.String, java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String] }
+return.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+size(this.myArrayList[]) == 3
+size(arg0.myArrayList[]) one of { 3, 6 }
+===========================================================================
+json.JSONArray.toString():::ENTER
+===========================================================================
+json.JSONArray.toString():::EXIT858
+===========================================================================
+json.JSONArray.toString():::EXIT
+this.myArrayList == orig(this.myArrayList)
+this.myArrayList[] == orig(this.myArrayList[])
+return != null
+===========================================================================
+json.JSONArray.toString(int):::ENTER
+arg0 == 4
+===========================================================================
+json.JSONArray.toString(int):::EXIT
+this.myArrayList == orig(this.myArrayList)
+this.myArrayList[] == orig(this.myArrayList[])
+===========================================================================
+json.JSONArray.toString(int, int):::ENTER
+this.myArrayList[] elements != null
+arg0 one of { 2, 4 }
+arg1 >= 0
+===========================================================================
+json.JSONArray.toString(int, int):::EXIT894
+this.myArrayList[] == []
+this.myArrayList[].getClass().getName() == []
+return has only one value
+return.toString == "[]"
+orig(arg0) == 4
+orig(arg1) one of { 4, 8, 16 }
+===========================================================================
+json.JSONArray.toString(int, int):::EXIT920
+size(this.myArrayList[]) >= 1
+===========================================================================
+json.JSONArray.toString(int, int):::EXIT
+this.myArrayList == orig(this.myArrayList)
+this.myArrayList[] == orig(this.myArrayList[])
+(size(this.myArrayList[]) == 0)  ==>  (orig(arg0) == 4)
+(size(this.myArrayList[]) == 0)  ==>  (orig(arg1) one of { 4, 8, 16 })
+(size(this.myArrayList[]) == 0)  ==>  (return has only one value)
+(size(this.myArrayList[]) == 0)  ==>  (return.toString == "[]")
+(size(this.myArrayList[]) == 0)  ==>  (this.myArrayList[] == [])
+(size(this.myArrayList[]) == 0)  ==>  (this.myArrayList[].getClass().getName() == [])
+this.myArrayList[] elements != null
+return != null
+===========================================================================
+json.JSONArray.write(java.io.Writer):::ENTER
+this has only one value
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 6
+this.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, json.JSONObject.Null, json.JSONObject.Null, java.lang.String]
+arg0 has only one value
+arg0.getClass().getName() == java.io.StringWriter.class
+size(this.myArrayList[]) == 6
+===========================================================================
+json.JSONArray.write(java.io.Writer):::EXIT
+this.myArrayList == orig(this.myArrayList)
+this.myArrayList[] == orig(this.myArrayList[])
+return.getClass().getName() == orig(arg0.getClass().getName())
+this.myArrayList has only one value
+this.myArrayList[] contains no nulls and has only one value, of length 6
+this.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, json.JSONObject.Null, json.JSONObject.Null, java.lang.String]
+return has only one value
+return.getClass().getName() == java.io.StringWriter.class
+size(this.myArrayList[]) == 6
+===========================================================================
+json.JSONException:::OBJECT
+this.cause == null
+===========================================================================
+json.JSONException.JSONException(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+json.JSONException.JSONException(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+===========================================================================
+json.JSONML.parse(json.XMLTokener, boolean, json.JSONArray):::ENTER
+arg0 != null
+json.XMLTokener.entity has only one value
+json.XMLTokener.entity != null
+arg0.index >= 0
+arg0.reader != null
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar one of { 0, 62 }
+arg0.useLastChar == false
+arg2.myArrayList != null
+arg2.myArrayList[] elements != null
+size(arg2.myArrayList[]) one of { 0, 1, 2 }
+===========================================================================
+json.JSONML.parse(json.XMLTokener, boolean, json.JSONArray):::EXIT211
+return.getClass().getName() == json.JSONArray.class
+orig(arg0.index) == 0
+orig(arg0.lastChar) == 0
+orig(arg1) == true
+orig(arg2) == null
+===========================================================================
+json.JSONML.parse(json.XMLTokener, boolean, json.JSONArray):::EXIT213
+arg0.index one of { 96, 239, 703 }
+return.getClass().getName() == json.JSONObject.class
+orig(arg0.index) == 0
+orig(arg0.lastChar) == 0
+orig(arg1) == false
+orig(arg2) == null
+===========================================================================
+json.JSONML.parse(json.XMLTokener, boolean, json.JSONArray):::EXIT83
+arg0.lastChar == orig(arg0.lastChar)
+return.getClass().getName() == java.lang.String.class
+orig(arg2) != null
+===========================================================================
+json.JSONML.parse(json.XMLTokener, boolean, json.JSONArray):::EXIT
+json.XMLTokener.entity == orig(json.XMLTokener.entity)
+arg0.reader == orig(arg0.reader)
+arg0.reader.getClass().getName() == orig(arg0.reader.getClass().getName())
+arg0.useLastChar == orig(arg0.useLastChar)
+arg2.myArrayList == orig(arg2.myArrayList)
+json.XMLTokener.entity has only one value
+json.XMLTokener.entity != null
+arg0.reader != null
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar == 62
+arg0.useLastChar == false
+arg2.myArrayList != null
+arg2.myArrayList[] elements != null
+return != null
+size(arg2.myArrayList[]) >= 1
+arg0.index > orig(arg0.index)
+arg0.reader.getClass().getName() != return.getClass().getName()
+arg0.lastChar >= orig(arg0.lastChar)
+size(arg2.myArrayList[]) >= orig(size(arg2.myArrayList[]))
+size(arg2.myArrayList[])-1 >= orig(size(arg2.myArrayList[]))-1
+===========================================================================
+json.JSONML.toJSONArray(java.lang.String):::ENTER
+===========================================================================
+json.JSONML.toJSONArray(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+===========================================================================
+json.JSONML.toJSONArray(json.XMLTokener):::ENTER
+json.XMLTokener.entity has only one value
+arg0.index == 0
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar == 0
+arg0.useLastChar == false
+===========================================================================
+json.JSONML.toJSONArray(json.XMLTokener):::EXIT
+json.XMLTokener.entity == orig(json.XMLTokener.entity)
+arg0.reader == orig(arg0.reader)
+arg0.reader.getClass().getName() == orig(arg0.reader.getClass().getName())
+arg0.useLastChar == orig(arg0.useLastChar)
+json.XMLTokener.entity has only one value
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar == 62
+arg0.useLastChar == false
+arg0.index > orig(arg0.index)
+===========================================================================
+json.JSONML.toJSONObject(java.lang.String):::ENTER
+arg0.toString one of { "<Root><MsgType type=\"node\"><BatchType type=\"string\">111111111111111</BatchType></MsgType></Root>", "<div id=\"demo\" class=\"JSONML\"><p>JSONML is a transformation between <b>JSON</b> and <b>XML</b> that preserves ordering of document features.</p><p>JSONML can work with JSON arrays or JSON objects.</p><p>Three<br/>little<br/>words</p></div>", "<recipe name=\"bread\" prep_time=\"5 mins\" cook_time=\"3 hours\"> <title>Basic bread</title> <ingredient amount=\"8\" unit=\"dL\">Flour</ingredient> <ingredient amount=\"10\" unit=\"grams\">Yeast</ingredient> <ingredient amount=\"4\" unit=\"dL\" state=\"warm\">Water</ingredient> <ingredient amount=\"1\" unit=\"teaspoon\">Salt</ingredient> <instructions> <step>Mix all ingredients together.</step> <step>Knead thoroughly.</step> <step>Cover with a cloth, and leave for one hour in warm room.</step> <step>Knead again.</step> <step>Place in a bread baking tin.</step> <step>Cover with a cloth, and leave for one hour in warm room.</step> <step>Bake in the oven at 180(degrees)C for 30 minutes.</step> </instructions> </recipe> " }
+===========================================================================
+json.JSONML.toJSONObject(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "<Root><MsgType type=\"node\"><BatchType type=\"string\">111111111111111</BatchType></MsgType></Root>", "<div id=\"demo\" class=\"JSONML\"><p>JSONML is a transformation between <b>JSON</b> and <b>XML</b> that preserves ordering of document features.</p><p>JSONML can work with JSON arrays or JSON objects.</p><p>Three<br/>little<br/>words</p></div>", "<recipe name=\"bread\" prep_time=\"5 mins\" cook_time=\"3 hours\"> <title>Basic bread</title> <ingredient amount=\"8\" unit=\"dL\">Flour</ingredient> <ingredient amount=\"10\" unit=\"grams\">Yeast</ingredient> <ingredient amount=\"4\" unit=\"dL\" state=\"warm\">Water</ingredient> <ingredient amount=\"1\" unit=\"teaspoon\">Salt</ingredient> <instructions> <step>Mix all ingredients together.</step> <step>Knead thoroughly.</step> <step>Cover with a cloth, and leave for one hour in warm room.</step> <step>Knead again.</step> <step>Place in a bread baking tin.</step> <step>Cover with a cloth, and leave for one hour in warm room.</step> <step>Bake in the oven at 180(degrees)C for 30 minutes.</step> </instructions> </recipe> " }
+return.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+===========================================================================
+json.JSONML.toJSONObject(json.XMLTokener):::ENTER
+json.XMLTokener.entity has only one value
+arg0.index == 0
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar == 0
+arg0.useLastChar == false
+===========================================================================
+json.JSONML.toJSONObject(json.XMLTokener):::EXIT
+json.XMLTokener.entity == orig(json.XMLTokener.entity)
+arg0.reader == orig(arg0.reader)
+arg0.reader.getClass().getName() == orig(arg0.reader.getClass().getName())
+arg0.useLastChar == orig(arg0.useLastChar)
+json.XMLTokener.entity has only one value
+arg0.index one of { 96, 239, 703 }
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar == 62
+arg0.useLastChar == false
+return.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+===========================================================================
+json.JSONML.toString(json.JSONArray):::ENTER
+arg0 != null
+arg0.myArrayList != null
+arg0.myArrayList[] elements != null
+size(arg0.myArrayList[]) >= 1
+===========================================================================
+json.JSONML.toString(json.JSONArray):::EXIT
+arg0.myArrayList == orig(arg0.myArrayList)
+arg0.myArrayList[] == orig(arg0.myArrayList[])
+arg0.myArrayList != null
+arg0.myArrayList[] elements != null
+return != null
+size(arg0.myArrayList[]) >= 1
+===========================================================================
+json.JSONML.toString(json.JSONObject):::ENTER
+arg0 != null
+arg0.map != null
+arg0.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL != null
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+===========================================================================
+json.JSONML.toString(json.JSONObject):::EXIT453
+===========================================================================
+json.JSONML.toString(json.JSONObject):::EXIT
+arg0.map == orig(arg0.map)
+arg0.map.getClass().getName() == orig(arg0.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.map != null
+arg0.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL != null
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+return != null
+===========================================================================
+json.JSONObject$Null:::OBJECT
+this has only one value
+===========================================================================
+json.JSONObject$Null.Null():::EXIT
+===========================================================================
+json.JSONObject$Null.equals(java.lang.Object):::ENTER
+===========================================================================
+json.JSONObject$Null.equals(java.lang.Object):::EXIT
+(return == false)  ==>  (orig(arg0) != null)
+(return == true)  ==>  (orig(arg0.getClass().getName()) == json.JSONObject$Null.class)
+===========================================================================
+json.JSONObject$Null.equals(java.lang.Object):::EXIT;condition="return == true"
+return == true
+orig(arg0.getClass().getName()) == json.JSONObject$Null.class
+===========================================================================
+json.JSONObject$Null.equals(java.lang.Object):::EXIT;condition="not(return == true)"
+return == false
+orig(arg0) != null
+===========================================================================
+json.JSONObject$Null.toString():::ENTER
+===========================================================================
+json.JSONObject$Null.toString():::EXIT
+return has only one value
+return.toString == "null"
+===========================================================================
+json.JSONObject:::CLASS
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL != null
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+===========================================================================
+json.JSONObject:::OBJECT
+this.map != null
+this.map.getClass().getName() == java.util.HashMap.class
+===========================================================================
+json.JSONObject.JSONObject():::EXIT
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.JSONObject(java.lang.Object):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == json.Test$1Obj.class
+===========================================================================
+json.JSONObject.JSONObject(java.lang.Object):::EXIT
+this.map has only one value
+===========================================================================
+json.JSONObject.JSONObject(java.lang.Object, java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == json.Test$1Obj.class
+arg1 has only one value
+arg1.getClass().getName() == java.lang.String[].class
+arg1[] contains no nulls and has only one value, of length 3
+arg1[].toString == [aString, aNumber, aBoolean]
+arg1[].toString elements one of { "aBoolean", "aNumber", "aString" }
+size(arg1[]) == 3
+===========================================================================
+json.JSONObject.JSONObject(java.lang.Object, java.lang.String[]):::EXIT
+arg1[] == orig(arg1[])
+this.map has only one value
+arg1[] contains no nulls and has only one value, of length 3
+arg1[].toString == [aString, aNumber, aBoolean]
+arg1[].toString elements one of { "aBoolean", "aNumber", "aString" }
+===========================================================================
+json.JSONObject.JSONObject(java.lang.String):::ENTER
+===========================================================================
+json.JSONObject.JSONObject(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.JSONObject(java.util.Map):::ENTER
+arg0 == null
+===========================================================================
+json.JSONObject.JSONObject(java.util.Map):::EXIT
+===========================================================================
+json.JSONObject.JSONObject(json.JSONObject, java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.map has only one value
+arg0.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+arg1 has only one value
+arg1.getClass().getName() == java.lang.String[].class
+arg1[] contains no nulls and has only one value, of length 4
+arg1[].toString == [dec, oct, hex, missing]
+size(arg1[]) == 4
+===========================================================================
+json.JSONObject.JSONObject(json.JSONObject, java.lang.String[]):::EXIT
+this.map.getClass().getName() == arg0.map.getClass().getName()
+this.map.getClass().getName() == orig(arg0.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.map == orig(arg0.map)
+arg1[] == orig(arg1[])
+this.map has only one value
+arg0.map has only one value
+arg1[] contains no nulls and has only one value, of length 4
+arg1[].toString == [dec, oct, hex, missing]
+===========================================================================
+json.JSONObject.JSONObject(json.JSONTokener):::ENTER
+arg0 != null
+arg0.index >= 0
+arg0.reader != null
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar one of { 0, 123 }
+===========================================================================
+json.JSONObject.JSONObject(json.JSONTokener):::EXIT184
+arg0.index one of { 136, 138, 192 }
+orig(arg0.index) one of { 134, 136, 190 }
+orig(arg0.lastChar) == 123
+orig(arg0.useLastChar) == true
+===========================================================================
+json.JSONObject.JSONObject(json.JSONTokener):::EXIT212
+arg0.index one of { 77, 240 }
+arg0.reader has only one value
+orig(arg0) has only one value
+orig(arg0.index) one of { 29, 198 }
+orig(arg0.lastChar) == 123
+orig(arg0.useLastChar) == true
+===========================================================================
+json.JSONObject.JSONObject(json.JSONTokener):::EXIT217
+===========================================================================
+json.JSONObject.JSONObject(json.JSONTokener):::EXIT
+arg0.reader == orig(arg0.reader)
+arg0.reader.getClass().getName() == orig(arg0.reader.getClass().getName())
+arg0.reader != null
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar == 125
+arg0.useLastChar == false
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+this.map.getClass().getName() != arg0.reader.getClass().getName()
+json.JSONObject.NULL.getClass().getName() != arg0.reader.getClass().getName()
+arg0.index > orig(arg0.index)
+arg0.lastChar > orig(arg0.lastChar)
+===========================================================================
+json.JSONObject.accumulate(java.lang.String, java.lang.Object):::ENTER
+arg0 != null
+arg1 != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+this.map.getClass().getName() != arg1.getClass().getName()
+json.JSONObject.NULL.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+json.JSONObject.accumulate(java.lang.String, java.lang.Object):::EXIT
+this.map == return.map
+this.map == orig(this.map)
+this.map.getClass().getName() == return.map.getClass().getName()
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+return == orig(this)
+return != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+this.map.getClass().getName() != orig(arg1.getClass().getName())
+json.JSONObject.NULL.getClass().getName() != orig(arg1.getClass().getName())
+===========================================================================
+json.JSONObject.append(java.lang.String, java.lang.Object):::ENTER
+this has only one value
+this.map has only one value
+arg0 has only one value
+arg0.toString == "stooge"
+arg1.getClass().getName() == java.lang.String.class
+===========================================================================
+json.JSONObject.append(java.lang.String, java.lang.Object):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == return.map.getClass().getName()
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map has only one value
+arg0.toString == "stooge"
+return has only one value
+return.map has only one value
+===========================================================================
+json.JSONObject.doubleToString(double):::ENTER
+arg0 == 42.0
+===========================================================================
+json.JSONObject.doubleToString(double):::EXIT498
+===========================================================================
+json.JSONObject.doubleToString(double):::EXIT
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return.toString == "42"
+===========================================================================
+json.JSONObject.get(java.lang.String):::ENTER
+arg0 != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.get(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+return != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+this.map.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.JSONObject.getBoolean(java.lang.String):::ENTER
+===========================================================================
+json.JSONObject.getBoolean(java.lang.String):::EXIT532
+this.map has only one value
+arg0.toString == "false"
+return == false
+orig(this) has only one value
+orig(arg0) has only one value
+===========================================================================
+json.JSONObject.getBoolean(java.lang.String):::EXIT532;condition="not(return == true)"
+===========================================================================
+json.JSONObject.getBoolean(java.lang.String):::EXIT536
+arg0.toString one of { "bool", "secure", "true" }
+return == true
+===========================================================================
+json.JSONObject.getBoolean(java.lang.String):::EXIT536;condition="return == true"
+===========================================================================
+json.JSONObject.getBoolean(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+(arg0.toString == "false")  <==>  (return == false)
+(arg0.toString == "false")  ==>  (orig(arg0) has only one value)
+(arg0.toString == "false")  ==>  (orig(this) has only one value)
+(arg0.toString == "false")  ==>  (this.map has only one value)
+(arg0.toString one of { "bool", "secure", "true" })  <==>  (return == true)
+===========================================================================
+json.JSONObject.getBoolean(java.lang.String):::EXIT;condition="return == true"
+arg0.toString one of { "bool", "secure", "true" }
+return == true
+===========================================================================
+json.JSONObject.getBoolean(java.lang.String):::EXIT;condition="not(return == true)"
+this.map has only one value
+arg0.toString == "false"
+return == false
+orig(this) has only one value
+orig(arg0) has only one value
+===========================================================================
+json.JSONObject.getDouble(java.lang.String):::ENTER
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.getDouble(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+return one of { 98.6, 2.147483647E9, 9.223372036854776E18 }
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.getInt(java.lang.String):::ENTER
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.getInt(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.getJSONArray(java.lang.String):::ENTER
+arg0.toString one of { "foo", "stooge" }
+===========================================================================
+json.JSONObject.getJSONArray(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "foo", "stooge" }
+size(return.myArrayList[]) one of { 3, 15, 23 }
+===========================================================================
+json.JSONObject.getLong(java.lang.String):::ENTER
+this has only one value
+this.map has only one value
+===========================================================================
+json.JSONObject.getLong(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map has only one value
+===========================================================================
+json.JSONObject.getNames(java.lang.Object):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == json.Test$1Obj.class
+===========================================================================
+json.JSONObject.getNames(java.lang.Object):::EXIT671
+===========================================================================
+json.JSONObject.getNames(java.lang.Object):::EXIT
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return has only one value
+return.getClass().getName() == java.lang.String[].class
+return[] contains no nulls and has only one value, of length 3
+return[].toString == [aString, aNumber, aBoolean]
+return[].toString elements one of { "aBoolean", "aNumber", "aString" }
+size(return[]) == 3
+===========================================================================
+json.JSONObject.getNames(json.JSONObject):::ENTER
+arg0 has only one value
+arg0.map has only one value
+arg0.map.getClass().getName() == java.util.HashMap.class
+===========================================================================
+json.JSONObject.getNames(json.JSONObject):::EXIT648
+===========================================================================
+json.JSONObject.getNames(json.JSONObject):::EXIT
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.map == orig(arg0.map)
+arg0.map.getClass().getName() == orig(arg0.map.getClass().getName())
+arg0.map has only one value
+arg0.map.getClass().getName() == java.util.HashMap.class
+return has only one value
+return.getClass().getName() == java.lang.String[].class
+return[] contains no nulls and has only one value, of length 16
+return[].toString == [op, bool, double, foo, JSONArray, false, String, int, zero, JSONObject, null, true, \u2029, to, \u2028, ten]
+size(return[]) == 16
+===========================================================================
+json.JSONObject.getString(java.lang.String):::ENTER
+arg0 != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.getString(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+return != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.has(java.lang.String):::ENTER
+arg0 != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.has(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+(return == false)  ==>  (arg0.toString one of { "Status-Code", "domain", "path" })
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.has(java.lang.String):::EXIT;condition="return == true"
+return == true
+===========================================================================
+json.JSONObject.has(java.lang.String):::EXIT;condition="not(return == true)"
+arg0.toString one of { "Status-Code", "domain", "path" }
+return == false
+===========================================================================
+json.JSONObject.isNull(java.lang.String):::ENTER
+arg0 != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.isNull(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+(return == true)  ==>  (arg0.toString == "nix")
+(return == true)  ==>  (orig(this) has only one value)
+(return == true)  ==>  (this.map has only one value)
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.isNull(java.lang.String):::EXIT;condition="return == true"
+this.map has only one value
+arg0.toString == "nix"
+return == true
+orig(this) has only one value
+===========================================================================
+json.JSONObject.isNull(java.lang.String):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+json.JSONObject.isStandardProperty(java.lang.Class):::ENTER
+===========================================================================
+json.JSONObject.isStandardProperty(java.lang.Class):::EXIT
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return == true
+===========================================================================
+json.JSONObject.isStandardProperty(java.lang.Class):::EXIT;condition="return == true"
+===========================================================================
+json.JSONObject.keys():::ENTER
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.keys():::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return != null
+return.getClass().getName() == java.util.HashMap$KeyIterator.class
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+this.map.getClass().getName() != return.getClass().getName()
+json.JSONObject.NULL.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.JSONObject.length():::ENTER
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.length():::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return >= 0
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.names():::ENTER
+this has only one value
+this.map has only one value
+===========================================================================
+json.JSONObject.names():::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+this.map has only one value
+return has only one value
+return.myArrayList has only one value
+return.myArrayList[] contains no nulls and has only one value, of length 3
+return.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+return.myArrayList[].getClass().getName() elements == java.lang.String.class
+size(return.myArrayList[]) == 3
+===========================================================================
+json.JSONObject.numberToString(java.lang.Number):::ENTER
+arg0 != null
+json.JSONObject.NULL.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+json.JSONObject.numberToString(java.lang.Number):::EXIT
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return != null
+json.JSONObject.NULL.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+json.JSONObject.opt(java.lang.String):::ENTER
+arg0 != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.opt(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+this.map.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.JSONObject.optBoolean(java.lang.String):::ENTER
+arg0.toString one of { "oops", "secure" }
+===========================================================================
+json.JSONObject.optBoolean(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+(arg0.toString == "oops")  <==>  (return == false)
+(arg0.toString == "secure")  <==>  (return == true)
+arg0.toString one of { "oops", "secure" }
+===========================================================================
+json.JSONObject.optBoolean(java.lang.String):::EXIT;condition="return == true"
+this.map has only one value
+arg0.toString == "secure"
+return == true
+orig(this) has only one value
+orig(arg0) has only one value
+===========================================================================
+json.JSONObject.optBoolean(java.lang.String):::EXIT;condition="not(return == true)"
+this.map has only one value
+arg0.toString == "oops"
+return == false
+orig(this) has only one value
+orig(arg0) has only one value
+===========================================================================
+json.JSONObject.optBoolean(java.lang.String, boolean):::ENTER
+arg0.toString one of { "oops", "secure" }
+arg1 == false
+===========================================================================
+json.JSONObject.optBoolean(java.lang.String, boolean):::EXIT806
+this.map has only one value
+arg0.toString == "secure"
+return == true
+orig(this) has only one value
+orig(arg0) has only one value
+===========================================================================
+json.JSONObject.optBoolean(java.lang.String, boolean):::EXIT806;condition="return == true"
+===========================================================================
+json.JSONObject.optBoolean(java.lang.String, boolean):::EXIT808
+this.map has only one value
+arg0.toString == "oops"
+return == false
+orig(this) has only one value
+orig(arg0) has only one value
+===========================================================================
+json.JSONObject.optBoolean(java.lang.String, boolean):::EXIT808;condition="not(return == true)"
+===========================================================================
+json.JSONObject.optBoolean(java.lang.String, boolean):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+(arg0.toString == "oops")  <==>  (return == false)
+(arg0.toString == "secure")  <==>  (return == true)
+arg0.toString one of { "oops", "secure" }
+===========================================================================
+json.JSONObject.optBoolean(java.lang.String, boolean):::EXIT;condition="return == true"
+this.map has only one value
+arg0.toString == "secure"
+return == true
+orig(this) has only one value
+orig(arg0) has only one value
+===========================================================================
+json.JSONObject.optBoolean(java.lang.String, boolean):::EXIT;condition="not(return == true)"
+this.map has only one value
+arg0.toString == "oops"
+return == false
+orig(this) has only one value
+orig(arg0) has only one value
+===========================================================================
+json.JSONObject.optInt(java.lang.String):::ENTER
+this has only one value
+this.map has only one value
+arg0 has only one value
+arg0.toString == "pre"
+===========================================================================
+json.JSONObject.optInt(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map has only one value
+arg0.toString == "pre"
+return == 1
+===========================================================================
+json.JSONObject.optInt(java.lang.String, int):::ENTER
+this has only one value
+this.map has only one value
+arg0 has only one value
+arg0.toString == "pre"
+arg1 == 0
+===========================================================================
+json.JSONObject.optInt(java.lang.String, int):::EXIT888
+===========================================================================
+json.JSONObject.optInt(java.lang.String, int):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map has only one value
+arg0.toString == "pre"
+return == 1
+===========================================================================
+json.JSONObject.optJSONArray(java.lang.String):::ENTER
+arg0 has only one value
+arg0 != null
+arg0.toString == "childNodes"
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.optJSONArray(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+arg0.toString == "childNodes"
+return.myArrayList != null
+return.myArrayList[] elements != null
+size(return.myArrayList[]) >= 1
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.optString(java.lang.String):::ENTER
+arg0 != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.optString(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+return != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.optString(java.lang.String, java.lang.String):::ENTER
+arg0 != null
+arg1 has only one value
+arg1 != null
+arg1.toString == ""
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.optString(java.lang.String, java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+arg1.toString == orig(arg1.toString)
+arg1.toString == ""
+return != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.populateInternalMap(java.lang.Object, boolean):::ENTER
+this has only one value
+this.map has only one value
+arg0 has only one value
+arg0.getClass().getName() == json.Test$1Obj.class
+arg1 == false
+===========================================================================
+json.JSONObject.populateInternalMap(java.lang.Object, boolean):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+this.map has only one value
+===========================================================================
+json.JSONObject.put(java.lang.String, boolean):::ENTER
+this has only one value
+this.map has only one value
+arg0.toString one of { "false", "true" }
+===========================================================================
+json.JSONObject.put(java.lang.String, boolean):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == return.map.getClass().getName()
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map has only one value
+arg0.toString one of { "false", "true" }
+return has only one value
+return.map has only one value
+===========================================================================
+json.JSONObject.put(java.lang.String, double):::ENTER
+this has only one value
+this.map has only one value
+arg0.toString one of { "double", "zero" }
+arg1 one of { 0.0, 1.2345678901234568E29 }
+===========================================================================
+json.JSONObject.put(java.lang.String, double):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == return.map.getClass().getName()
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map has only one value
+arg0.toString one of { "double", "zero" }
+return has only one value
+return.map has only one value
+===========================================================================
+json.JSONObject.put(java.lang.String, int):::ENTER
+this has only one value
+this.map has only one value
+arg0 has only one value
+arg0.toString == "int"
+arg1 == 57
+===========================================================================
+json.JSONObject.put(java.lang.String, int):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == return.map.getClass().getName()
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map has only one value
+arg0.toString == "int"
+return has only one value
+return.map has only one value
+===========================================================================
+json.JSONObject.put(java.lang.String, java.lang.Object):::ENTER
+arg0 != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+this.map.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+json.JSONObject.put(java.lang.String, java.lang.Object):::EXIT
+this.map == return.map
+this.map == orig(this.map)
+this.map.getClass().getName() == return.map.getClass().getName()
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+return == orig(this)
+return != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+this.map.getClass().getName() != orig(arg1.getClass().getName())
+===========================================================================
+json.JSONObject.put(java.lang.String, java.util.Collection):::ENTER
+this has only one value
+this.map has only one value
+arg0 has only one value
+arg0.toString == "collection"
+arg1 == null
+===========================================================================
+json.JSONObject.put(java.lang.String, java.util.Collection):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == return.map.getClass().getName()
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map has only one value
+arg0.toString == "collection"
+return has only one value
+return.map has only one value
+===========================================================================
+json.JSONObject.put(java.lang.String, java.util.Map):::ENTER
+this has only one value
+this.map has only one value
+arg0 has only one value
+arg0.toString == "map"
+arg1 == null
+===========================================================================
+json.JSONObject.put(java.lang.String, java.util.Map):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == return.map.getClass().getName()
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map has only one value
+arg0.toString == "map"
+return has only one value
+return.map has only one value
+===========================================================================
+json.JSONObject.put(java.lang.String, long):::ENTER
+this has only one value
+this.map has only one value
+arg0 has only one value
+arg0.toString == "good sized"
+arg1 == 9223372036854775807L
+===========================================================================
+json.JSONObject.put(java.lang.String, long):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == return.map.getClass().getName()
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map has only one value
+arg0.toString == "good sized"
+return has only one value
+return.map has only one value
+===========================================================================
+json.JSONObject.putOnce(java.lang.String, java.lang.Object):::ENTER
+arg0 != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+this.map.getClass().getName() != arg1.getClass().getName()
+===========================================================================
+json.JSONObject.putOnce(java.lang.String, java.lang.Object):::EXIT
+this.map == return.map
+this.map == orig(this.map)
+this.map.getClass().getName() == return.map.getClass().getName()
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+return == orig(this)
+return != null
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+this.map.getClass().getName() != orig(arg1.getClass().getName())
+===========================================================================
+json.JSONObject.putOpt(java.lang.String, java.lang.Object):::ENTER
+this has only one value
+this.map has only one value
+arg0.toString one of { "aBoolean", "aNumber", "aString" }
+===========================================================================
+json.JSONObject.putOpt(java.lang.String, java.lang.Object):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == return.map.getClass().getName()
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.map has only one value
+arg0.toString one of { "aBoolean", "aNumber", "aString" }
+return has only one value
+return.map has only one value
+===========================================================================
+json.JSONObject.quote(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+json.JSONObject.quote(java.lang.String):::EXIT1126
+arg0.toString == ""
+return has only one value
+return.toString == "\"\""
+===========================================================================
+json.JSONObject.quote(java.lang.String):::EXIT1178
+===========================================================================
+json.JSONObject.quote(java.lang.String):::EXIT
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+return != null
+===========================================================================
+json.JSONObject.remove(java.lang.String):::ENTER
+arg0.toString one of { "Double Quotes", "No quotes", "Single Quotes" }
+===========================================================================
+json.JSONObject.remove(java.lang.String):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "Double Quotes", "No quotes", "Single Quotes" }
+return == null
+===========================================================================
+json.JSONObject.sortedKeys():::ENTER
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.JSONObject.sortedKeys():::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return != null
+return.getClass().getName() == java.util.TreeMap$KeyIterator.class
+this.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+this.map.getClass().getName() != return.getClass().getName()
+json.JSONObject.NULL.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.JSONObject.stringToValue(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+json.JSONObject.stringToValue(java.lang.String):::EXIT1212
+arg0.toString one of { "TRUE", "true" }
+return has only one value
+return.getClass().getName() == java.lang.Boolean.class
+json.JSONObject.NULL.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.JSONObject.stringToValue(java.lang.String):::EXIT1215
+arg0.toString one of { "FALSE", "false" }
+return has only one value
+return.getClass().getName() == java.lang.Boolean.class
+json.JSONObject.NULL.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.JSONObject.stringToValue(java.lang.String):::EXIT1218
+json.JSONObject.NULL == return
+json.JSONObject.NULL.getClass().getName() == return.getClass().getName()
+arg0.toString one of { "NULL", "null" }
+===========================================================================
+json.JSONObject.stringToValue(java.lang.String):::EXIT1235
+arg0.toString == "0x666"
+return has only one value
+return.getClass().getName() == java.lang.Integer.class
+orig(arg0) has only one value
+===========================================================================
+json.JSONObject.stringToValue(java.lang.String):::EXIT1242
+arg0.toString one of { "0", "0666" }
+return.getClass().getName() == java.lang.Integer.class
+===========================================================================
+json.JSONObject.stringToValue(java.lang.String):::EXIT1250
+return.getClass().getName() == java.lang.Double.class
+json.JSONObject.NULL.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.JSONObject.stringToValue(java.lang.String):::EXIT1254
+return.getClass().getName() == java.lang.Integer.class
+json.JSONObject.NULL.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.JSONObject.stringToValue(java.lang.String):::EXIT1256
+return.getClass().getName() == java.lang.Long.class
+json.JSONObject.NULL.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.JSONObject.stringToValue(java.lang.String):::EXIT1263
+return == orig(arg0)
+return.getClass().getName() == java.lang.String.class
+json.JSONObject.NULL.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.JSONObject.stringToValue(java.lang.String):::EXIT
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.toString == orig(arg0.toString)
+return != null
+===========================================================================
+json.JSONObject.testValidity(java.lang.Object):::ENTER
+arg0 != null
+===========================================================================
+json.JSONObject.testValidity(java.lang.Object):::EXIT
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+===========================================================================
+json.JSONObject.toJSONArray(json.JSONArray):::ENTER
+arg0 has only one value
+arg0.myArrayList has only one value
+arg0.myArrayList[] contains no nulls and has only one value, of length 3
+arg0.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+arg0.myArrayList[].getClass().getName() elements == java.lang.String.class
+size(arg0.myArrayList[]) == 3
+===========================================================================
+json.JSONObject.toJSONArray(json.JSONArray):::EXIT1305
+===========================================================================
+json.JSONObject.toJSONArray(json.JSONArray):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg0.myArrayList == orig(arg0.myArrayList)
+arg0.myArrayList[] == orig(arg0.myArrayList[])
+arg0.myArrayList has only one value
+arg0.myArrayList[] contains no nulls and has only one value, of length 3
+arg0.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+arg0.myArrayList[].getClass().getName() elements == java.lang.String.class
+return.myArrayList[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String]
+return.myArrayList[].getClass().getName() elements == java.lang.String.class
+size(arg0.myArrayList[]) == 3
+size(return.myArrayList[]) == 3
+===========================================================================
+json.JSONObject.toString():::ENTER
+===========================================================================
+json.JSONObject.toString():::EXIT1335
+===========================================================================
+json.JSONObject.toString():::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return != null
+===========================================================================
+json.JSONObject.toString(int):::ENTER
+arg0 one of { 2, 4 }
+===========================================================================
+json.JSONObject.toString(int):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return != null
+===========================================================================
+json.JSONObject.toString(int, int):::ENTER
+arg0 one of { 2, 4 }
+arg1 >= 0
+===========================================================================
+json.JSONObject.toString(int, int):::EXIT1376
+return has only one value
+return.toString == "{}"
+orig(arg1) >= 2
+orig(arg1) is a power of 2
+===========================================================================
+json.JSONObject.toString(int, int):::EXIT1412
+===========================================================================
+json.JSONObject.toString(int, int):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return != null
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object):::ENTER
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object):::EXIT1439
+json.JSONObject.NULL.getClass().getName() == orig(arg0.getClass().getName())
+return has only one value
+return.toString == "null"
+orig(arg0.getClass().getName()) == json.JSONObject$Null.class
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object):::EXIT1449
+return has only one value
+return.toString == "{\"A beany object\":42}"
+orig(arg0) has only one value
+orig(arg0.getClass().getName()) == json.Test$1Obj.class
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object):::EXIT1454
+orig(arg0) != null
+json.JSONObject.NULL.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object):::EXIT1458
+orig(arg0) != null
+json.JSONObject.NULL.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object):::EXIT1467
+return has only one value
+return.toString == "[\"aString\",\"aNumber\",\"aBoolean\"]"
+orig(arg0) has only one value
+orig(arg0.getClass().getName()) == java.lang.String[].class
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object):::EXIT1469
+orig(arg0) != null
+orig(arg0.getClass().getName()) == java.lang.String.class
+json.JSONObject.NULL.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object):::EXIT
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return != null
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object, int, int):::ENTER
+arg0 != null
+arg1 one of { 2, 4 }
+arg2 % arg1 == 0
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object, int, int):::EXIT1490
+json.JSONObject.NULL == orig(arg0)
+json.JSONObject.NULL.getClass().getName() == orig(arg0.getClass().getName())
+return has only one value
+return.toString == "null"
+orig(arg2) is a power of 2
+orig(arg1) <= orig(arg2)
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object, int, int):::EXIT1496
+orig(arg1) == orig(arg2)
+return has only one value
+return.toString == "{\"A beany object\":42}"
+orig(arg0) has only one value
+orig(arg0.getClass().getName()) == json.Test$1Obj.class
+orig(arg1) == 4
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object, int, int):::EXIT1503
+json.JSONObject.NULL.getClass().getName() != orig(arg0.getClass().getName())
+orig(arg1) <= orig(arg2)
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object, int, int):::EXIT1506
+return.toString one of { "false", "true" }
+orig(arg0.getClass().getName()) == java.lang.Boolean.class
+json.JSONObject.NULL.getClass().getName() != orig(arg0.getClass().getName())
+orig(arg1) <= orig(arg2)
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object, int, int):::EXIT1509
+orig(arg0.getClass().getName()) == json.JSONObject.class
+json.JSONObject.NULL.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object, int, int):::EXIT1512
+orig(arg0.getClass().getName()) == json.JSONArray.class
+json.JSONObject.NULL.getClass().getName() != orig(arg0.getClass().getName())
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object, int, int):::EXIT1521
+orig(arg1) == orig(arg2)
+return has only one value
+return.toString == "[\n        \"op\",\n        \"bool\",\n        \"double\",\n        \"foo\",\n        \"JSONArray\",\n        \"false\",\n        \"String\",\n        \"int\",\n        \"zero\",\n        \"JSONObject\",\n        \"null\",\n        \"true\",\n        \"\\\\u2029\",\n        \"to\",\n        \"\\\\u2028\",\n        \"ten\"\n    ]"
+orig(arg0) has only one value
+orig(arg0.getClass().getName()) == java.lang.String[].class
+orig(arg1) == 4
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object, int, int):::EXIT1523
+orig(arg0.getClass().getName()) == java.lang.String.class
+json.JSONObject.NULL.getClass().getName() != orig(arg0.getClass().getName())
+orig(arg1) <= orig(arg2)
+===========================================================================
+json.JSONObject.valueToString(java.lang.Object, int, int):::EXIT
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return != null
+===========================================================================
+json.JSONObject.write(java.io.Writer):::ENTER
+this has only one value
+this.map has only one value
+arg0 has only one value
+arg0.getClass().getName() == java.io.StringWriter.class
+===========================================================================
+json.JSONObject.write(java.io.Writer):::EXIT
+this.map == orig(this.map)
+this.map.getClass().getName() == orig(this.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+return.getClass().getName() == orig(arg0.getClass().getName())
+this.map has only one value
+return has only one value
+return.getClass().getName() == java.io.StringWriter.class
+===========================================================================
+json.JSONStringer:::CLASS
+===========================================================================
+json.JSONStringer:::OBJECT
+this.mode one of { 100, 105 }
+this.stack != null
+this.stack.getClass().getName() == json.JSONObject[].class
+this.top == 0
+this.writer != null
+this.writer.getClass().getName() == java.io.StringWriter.class
+size(this.stack[]) == 20
+===========================================================================
+json.JSONStringer.JSONStringer():::EXIT
+this.comma == false
+this.mode == 105
+this.stack[] contains only nulls and has only one value, of length 20
+this.stack[] elements == null
+this.stack[].getClass().getName() == [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+this.stack[].getClass().getName() elements == null
+this.stack[].map.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.stack[].map.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+===========================================================================
+json.JSONStringer.toString():::ENTER
+this.comma == true
+this.mode == 100
+===========================================================================
+json.JSONStringer.toString():::EXIT
+this.comma == orig(this.comma)
+this.mode == orig(this.mode)
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.stack[] == orig(this.stack[])
+this.top == orig(this.top)
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+this.comma == true
+this.mode == 100
+===========================================================================
+json.JSONTokener:::OBJECT
+this.index >= 0
+this.reader != null
+this.reader.getClass().getName() == java.io.StringReader.class
+this.lastChar >= 0
+===========================================================================
+json.JSONTokener.JSONTokener(java.io.Reader):::ENTER
+arg0 != null
+arg0.getClass().getName() == java.io.StringReader.class
+===========================================================================
+json.JSONTokener.JSONTokener(java.io.Reader):::EXIT
+this.reader == orig(arg0)
+this.reader.getClass().getName() == orig(arg0.getClass().getName())
+this.index == 0
+this.lastChar == 0
+this.useLastChar == false
+===========================================================================
+json.JSONTokener.JSONTokener(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+json.JSONTokener.JSONTokener(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+this.index == 0
+this.lastChar == 0
+this.useLastChar == false
+===========================================================================
+json.JSONTokener.back():::ENTER
+this.index >= 1
+this.useLastChar == false
+===========================================================================
+json.JSONTokener.back():::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.lastChar == orig(this.lastChar)
+this.useLastChar == true
+this.index - orig(this.index) + 1 == 0
+===========================================================================
+json.JSONTokener.dehexchar(char):::ENTER
+arg0 one of { 48, 52, 111 }
+===========================================================================
+json.JSONTokener.dehexchar(char):::EXIT101
+return == -1
+orig(arg0) == 111
+===========================================================================
+json.JSONTokener.dehexchar(char):::EXIT93
+return one of { 0, 4 }
+orig(arg0) one of { 48, 52 }
+===========================================================================
+json.JSONTokener.dehexchar(char):::EXIT
+return one of { -1, 0, 4 }
+===========================================================================
+json.JSONTokener.more():::ENTER
+this.useLastChar == false
+===========================================================================
+json.JSONTokener.more():::EXIT113
+this.useLastChar == orig(this.useLastChar)
+this.lastChar == 0
+this.useLastChar == false
+return == false
+orig(this.lastChar) one of { 0, 10, 62 }
+this.lastChar <= orig(this.lastChar)
+===========================================================================
+json.JSONTokener.more():::EXIT113;condition="not(return == true)"
+===========================================================================
+json.JSONTokener.more():::EXIT116
+this.useLastChar == true
+return == true
+this.lastChar != orig(this.lastChar)
+===========================================================================
+json.JSONTokener.more():::EXIT116;condition="return == true"
+===========================================================================
+json.JSONTokener.more():::EXIT
+this.index == orig(this.index)
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+(this.lastChar == 0)  <==>  (return == false)
+(this.lastChar == 0)  <==>  (this.useLastChar == false)
+(this.lastChar == 0)  ==>  (orig(this.lastChar) one of { 0, 10, 62 })
+(this.lastChar == 0)  ==>  (this.lastChar <= orig(this.lastChar))
+(this.lastChar == 0)  ==>  (this.useLastChar == orig(this.useLastChar))
+===========================================================================
+json.JSONTokener.more():::EXIT;condition="return == true"
+this.useLastChar == true
+return == true
+this.lastChar != orig(this.lastChar)
+===========================================================================
+json.JSONTokener.more():::EXIT;condition="not(return == true)"
+this.useLastChar == orig(this.useLastChar)
+this.lastChar == 0
+this.useLastChar == false
+return == false
+orig(this.lastChar) one of { 0, 10, 62 }
+this.lastChar <= orig(this.lastChar)
+===========================================================================
+json.JSONTokener.next():::ENTER
+===========================================================================
+json.JSONTokener.next():::EXIT131
+return == orig(this.lastChar)
+orig(this.useLastChar) == true
+===========================================================================
+json.JSONTokener.next():::EXIT142
+this.index == orig(this.index)
+this.useLastChar == orig(this.useLastChar)
+return == 0
+return <= orig(this.lastChar)
+===========================================================================
+json.JSONTokener.next():::EXIT146
+this.useLastChar == orig(this.useLastChar)
+this.index - orig(this.index) - 1 == 0
+===========================================================================
+json.JSONTokener.next():::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.lastChar == return
+this.index >= 1
+this.useLastChar == false
+this.index >= orig(this.index)
+===========================================================================
+json.JSONTokener.next(char):::ENTER
+this.lastChar one of { 58, 61 }
+this.useLastChar == true
+arg0 one of { 58, 61 }
+===========================================================================
+json.JSONTokener.next(char):::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.lastChar == orig(this.lastChar)
+this.lastChar one of { 58, 61 }
+this.useLastChar == false
+return one of { 58, 61 }
+this.index - orig(this.index) - 1 == 0
+===========================================================================
+json.JSONTokener.nextClean():::ENTER
+===========================================================================
+json.JSONTokener.nextClean():::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.lastChar == return
+this.index >= 1
+this.useLastChar == false
+this.index >= orig(this.index)
+===========================================================================
+json.JSONTokener.nextString(char):::ENTER
+this.lastChar == arg0
+this.lastChar one of { 34, 39 }
+this.useLastChar == false
+===========================================================================
+json.JSONTokener.nextString(char):::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.lastChar == orig(this.lastChar)
+this.lastChar == orig(arg0)
+this.useLastChar == orig(this.useLastChar)
+this.lastChar one of { 34, 39 }
+this.useLastChar == false
+return != null
+this.index > orig(this.index)
+===========================================================================
+json.JSONTokener.nextTo(char):::ENTER
+arg0 >= 0
+===========================================================================
+json.JSONTokener.nextTo(char):::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+return != null
+this.index >= orig(this.index)
+===========================================================================
+json.JSONTokener.nextTo(java.lang.String):::ENTER
+this has only one value
+this.index one of { 10, 19 }
+this.reader has only one value
+this.lastChar one of { 32, 101 }
+this.useLastChar == true
+arg0 has only one value
+arg0.toString == "=;"
+===========================================================================
+json.JSONTokener.nextTo(java.lang.String):::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.useLastChar == orig(this.useLastChar)
+arg0.toString == orig(arg0.toString)
+this.index one of { 18, 27 }
+this.reader has only one value
+this.lastChar one of { 59, 61 }
+this.useLastChar == true
+arg0.toString == "=;"
+return.toString one of { "expires", "secure" }
+===========================================================================
+json.JSONTokener.nextValue():::ENTER
+this.index >= 1
+===========================================================================
+json.JSONTokener.nextValue():::EXIT344
+this.lastChar one of { 34, 39 }
+this.useLastChar == false
+return.getClass().getName() == java.lang.String.class
+this.index > orig(this.index)
+===========================================================================
+json.JSONTokener.nextValue():::EXIT347
+this.lastChar == 125
+this.useLastChar == false
+return.getClass().getName() == json.JSONObject.class
+orig(this.lastChar) one of { 32, 58, 123 }
+this.index > orig(this.index)
+this.lastChar > orig(this.lastChar)
+===========================================================================
+json.JSONTokener.nextValue():::EXIT351
+this.lastChar == 93
+this.useLastChar == false
+return.getClass().getName() == json.JSONArray.class
+orig(this.lastChar) one of { 32, 58, 91 }
+this.index > orig(this.index)
+this.lastChar > orig(this.lastChar)
+===========================================================================
+json.JSONTokener.nextValue():::EXIT374
+this.useLastChar == true
+this.lastChar != orig(this.lastChar)
+===========================================================================
+json.JSONTokener.nextValue():::EXIT
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+return != null
+this.index >= orig(this.index)
+this.reader.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.JSONTokener.skipTo(char):::ENTER
+this has only one value
+this.index == 32
+this.reader has only one value
+this.lastChar == 125
+this.useLastChar == false
+arg0 == 123
+===========================================================================
+json.JSONTokener.skipTo(char):::EXIT403
+===========================================================================
+json.JSONTokener.skipTo(char):::EXIT
+this.index == orig(this.index)
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.index == 32
+this.reader has only one value
+this.lastChar == 123
+this.useLastChar == true
+return == 123
+===========================================================================
+json.JSONTokener.syntaxError(java.lang.String):::ENTER
+this.lastChar one of { 0, 62 }
+===========================================================================
+json.JSONTokener.syntaxError(java.lang.String):::EXIT
+this.index == orig(this.index)
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.lastChar == orig(this.lastChar)
+this.useLastChar == orig(this.useLastChar)
+arg0.toString == orig(arg0.toString)
+this.lastChar one of { 0, 62 }
+return.cause == null
+===========================================================================
+json.JSONTokener.toString():::ENTER
+this.lastChar one of { 0, 62 }
+===========================================================================
+json.JSONTokener.toString():::EXIT
+this.index == orig(this.index)
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.lastChar == orig(this.lastChar)
+this.useLastChar == orig(this.useLastChar)
+this.lastChar one of { 0, 62 }
+===========================================================================
+json.JSONWriter:::CLASS
+===========================================================================
+json.JSONWriter:::OBJECT
+this.stack != null
+this.stack.getClass().getName() == json.JSONObject[].class
+this.top >= 0
+this.writer != null
+this.writer.getClass().getName() == java.io.StringWriter.class
+size(this.stack[]) == 20
+===========================================================================
+json.JSONWriter.JSONWriter(java.io.Writer):::ENTER
+arg0.getClass().getName() == java.io.StringWriter.class
+===========================================================================
+json.JSONWriter.JSONWriter(java.io.Writer):::EXIT
+this.comma == false
+this.mode == 105
+this.stack[] contains only nulls and has only one value, of length 20
+this.stack[] elements == null
+this.stack[].getClass().getName() == [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+this.stack[].getClass().getName() elements == null
+this.stack[].map.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.stack[].map.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.top == 0
+===========================================================================
+json.JSONWriter.append(java.lang.String):::ENTER
+this.mode one of { 97, 111 }
+arg0 != null
+===========================================================================
+json.JSONWriter.append(java.lang.String):::EXIT
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.stack[] == orig(this.stack[])
+this.top == orig(this.top)
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.comma == true
+this.mode one of { 97, 107 }
+return != null
+return.comma == true
+return.mode one of { 97, 107 }
+return.stack != null
+return.stack.getClass().getName() == json.JSONObject[].class
+return.top >= 0
+return.writer != null
+return.writer.getClass().getName() == java.io.StringWriter.class
+size(return.stack[]) == 20
+this.mode <= orig(this.mode)
+===========================================================================
+json.JSONWriter.array():::ENTER
+this.mode one of { 97, 105, 111 }
+===========================================================================
+json.JSONWriter.array():::EXIT
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.stack[] == orig(this.stack[])
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+this.comma == false
+this.mode == 97
+return.comma == false
+return.mode == 97
+return.stack.getClass().getName() == json.JSONObject[].class
+return.writer.getClass().getName() == java.io.StringWriter.class
+size(return.stack[]) == 20
+this.mode <= orig(this.mode)
+this.top - orig(this.top) - 1 == 0
+===========================================================================
+json.JSONWriter.end(char, char):::ENTER
+this.mode one of { 97, 107 }
+this.top >= 1
+arg0 one of { 97, 107 }
+arg1 one of { 93, 125 }
+===========================================================================
+json.JSONWriter.end(char, char):::EXIT
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.stack[] == orig(this.stack[])
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+this.comma == true
+this.mode one of { 97, 100, 107 }
+return != null
+return.comma == true
+return.mode one of { 97, 100, 107 }
+return.stack != null
+return.stack.getClass().getName() == json.JSONObject[].class
+return.top >= 0
+return.writer != null
+return.writer.getClass().getName() == java.io.StringWriter.class
+size(return.stack[]) == 20
+this.top - orig(this.top) + 1 == 0
+===========================================================================
+json.JSONWriter.endArray():::ENTER
+this.mode == 97
+===========================================================================
+json.JSONWriter.endArray():::EXIT
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.stack[] == orig(this.stack[])
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+this.comma == true
+this.mode one of { 97, 100, 107 }
+return.comma == true
+return.mode one of { 97, 100, 107 }
+return.stack.getClass().getName() == json.JSONObject[].class
+return.writer.getClass().getName() == java.io.StringWriter.class
+size(return.stack[]) == 20
+this.mode >= orig(this.mode)
+this.top - orig(this.top) + 1 == 0
+===========================================================================
+json.JSONWriter.endObject():::ENTER
+this.mode == 107
+===========================================================================
+json.JSONWriter.endObject():::EXIT
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.stack[] == orig(this.stack[])
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+this.comma == true
+this.mode one of { 97, 100, 107 }
+return.comma == true
+return.mode one of { 97, 100, 107 }
+return.stack.getClass().getName() == json.JSONObject[].class
+return.writer.getClass().getName() == java.io.StringWriter.class
+size(return.stack[]) == 20
+this.mode <= orig(this.mode)
+this.top - orig(this.top) + 1 == 0
+===========================================================================
+json.JSONWriter.key(java.lang.String):::ENTER
+this.mode == 107
+arg0 != null
+===========================================================================
+json.JSONWriter.key(java.lang.String):::EXIT
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.stack[] == orig(this.stack[])
+this.top == orig(this.top)
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.comma == false
+this.mode == 111
+return != null
+return.comma == false
+return.mode == 111
+return.stack != null
+return.stack.getClass().getName() == json.JSONObject[].class
+return.writer != null
+return.writer.getClass().getName() == java.io.StringWriter.class
+size(return.stack[]) == 20
+===========================================================================
+json.JSONWriter.object():::ENTER
+this.mode one of { 97, 105, 111 }
+===========================================================================
+json.JSONWriter.object():::EXIT
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+size(this.stack[]) == orig(size(this.stack[]))
+this.comma == false
+this.mode == 107
+this.top >= 1
+return.comma == false
+return.mode == 107
+return.stack.getClass().getName() == json.JSONObject[].class
+return.top >= 1
+return.writer.getClass().getName() == java.io.StringWriter.class
+size(return.stack[]) == 20
+this.mode != orig(this.mode)
+this.top - orig(this.top) - 1 == 0
+===========================================================================
+json.JSONWriter.pop(char):::ENTER
+this.mode one of { 97, 107 }
+this.top >= 1
+arg0 one of { 97, 107 }
+===========================================================================
+json.JSONWriter.pop(char):::EXIT
+this.comma == orig(this.comma)
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.stack[] == orig(this.stack[])
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+this.mode one of { 97, 100, 107 }
+this.top - orig(this.top) + 1 == 0
+===========================================================================
+json.JSONWriter.push(json.JSONObject):::ENTER
+arg0.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL != null
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+===========================================================================
+json.JSONWriter.push(json.JSONObject):::EXIT
+this.comma == orig(this.comma)
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+arg0.map == orig(arg0.map)
+arg0.map.getClass().getName() == orig(arg0.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+size(this.stack[]) == orig(size(this.stack[]))
+this.mode one of { 97, 107 }
+this.top >= 1
+arg0.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL != null
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+this.top - orig(this.top) - 1 == 0
+===========================================================================
+json.JSONWriter.value(boolean):::ENTER
+this has only one value
+this.mode one of { 97, 111 }
+this.stack has only one value
+this.stack[].getClass().getName() one of { [null, null, null, json.JSONObject, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, json.JSONObject, json.JSONObject, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null] }
+this.stack[].map.getClass().getName() one of { [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, java.util.HashMap, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject], [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, java.util.HashMap, java.util.HashMap, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject] }
+this.top one of { 2, 4 }
+this.writer has only one value
+===========================================================================
+json.JSONWriter.value(boolean):::EXIT
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.stack[] == orig(this.stack[])
+this.top == orig(this.top)
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+this.comma == true
+this.mode one of { 97, 107 }
+this.stack has only one value
+this.stack[].getClass().getName() one of { [null, null, null, json.JSONObject, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, json.JSONObject, json.JSONObject, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null] }
+this.stack[].map.getClass().getName() one of { [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, java.util.HashMap, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject], [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, java.util.HashMap, java.util.HashMap, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject] }
+this.top one of { 2, 4 }
+this.writer has only one value
+return has only one value
+return.comma == true
+return.mode one of { 97, 107 }
+return.stack has only one value
+return.stack.getClass().getName() == json.JSONObject[].class
+return.stack[].getClass().getName() one of { [null, null, null, json.JSONObject, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null], [null, null, null, json.JSONObject, json.JSONObject, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null] }
+return.stack[].map.getClass().getName() one of { [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, java.util.HashMap, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject], [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, java.util.HashMap, java.util.HashMap, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject] }
+return.top one of { 2, 4 }
+return.writer has only one value
+return.writer.getClass().getName() == java.io.StringWriter.class
+size(return.stack[]) == 20
+===========================================================================
+json.JSONWriter.value(double):::ENTER
+this has only one value
+this.mode one of { 97, 111 }
+this.stack has only one value
+this.top one of { 1, 2, 4 }
+this.writer has only one value
+===========================================================================
+json.JSONWriter.value(double):::EXIT
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.stack[] == orig(this.stack[])
+this.top == orig(this.top)
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+this.comma == true
+this.mode one of { 97, 107 }
+this.stack has only one value
+this.top one of { 1, 2, 4 }
+this.writer has only one value
+return has only one value
+return.comma == true
+return.mode one of { 97, 107 }
+return.stack has only one value
+return.stack.getClass().getName() == json.JSONObject[].class
+return.top one of { 1, 2, 4 }
+return.writer has only one value
+return.writer.getClass().getName() == java.io.StringWriter.class
+size(return.stack[]) == 20
+===========================================================================
+json.JSONWriter.value(java.lang.Object):::ENTER
+this.mode one of { 97, 111 }
+===========================================================================
+json.JSONWriter.value(java.lang.Object):::EXIT
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.stack[] == orig(this.stack[])
+this.top == orig(this.top)
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+this.comma == true
+this.mode one of { 97, 107 }
+return != null
+return.comma == true
+return.mode one of { 97, 107 }
+return.stack != null
+return.stack.getClass().getName() == json.JSONObject[].class
+return.writer != null
+return.writer.getClass().getName() == java.io.StringWriter.class
+size(return.stack[]) == 20
+this.mode <= orig(this.mode)
+===========================================================================
+json.JSONWriter.value(long):::ENTER
+this has only one value
+this.comma == false
+this.mode one of { 97, 111 }
+this.stack has only one value
+this.top one of { 1, 4 }
+this.writer has only one value
+arg0 one of { 1, 42, 9223372036854775807L }
+===========================================================================
+json.JSONWriter.value(long):::EXIT
+this.stack == orig(this.stack)
+this.stack.getClass().getName() == orig(this.stack.getClass().getName())
+this.stack[] == orig(this.stack[])
+this.top == orig(this.top)
+this.writer == orig(this.writer)
+this.writer.getClass().getName() == orig(this.writer.getClass().getName())
+this.comma == true
+this.mode one of { 97, 107 }
+this.stack has only one value
+this.top one of { 1, 4 }
+this.writer has only one value
+return has only one value
+return.comma == true
+return.mode one of { 97, 107 }
+return.stack has only one value
+return.stack.getClass().getName() == json.JSONObject[].class
+return.top one of { 1, 4 }
+return.writer has only one value
+return.writer.getClass().getName() == java.io.StringWriter.class
+size(return.stack[]) == 20
+===========================================================================
+json.Test$1Obj:::OBJECT
+this has only one value
+this.aString has only one value
+this.aString != null
+this.aString.toString == "A beany object"
+this.aNumber == 42.0
+this.aBoolean == true
+===========================================================================
+json.Test$1Obj.Obj(java.lang.String, double, boolean):::ENTER
+arg0 has only one value
+arg0.toString == "A beany object"
+arg1 == 42.0
+arg2 == true
+===========================================================================
+json.Test$1Obj.Obj(java.lang.String, double, boolean):::EXIT
+this.aString == orig(arg0)
+this.aNumber == orig(arg1)
+this.aBoolean == orig(arg2)
+arg0.toString == orig(arg0.toString)
+arg0.toString == "A beany object"
+===========================================================================
+json.Test$1Obj.getBENT():::ENTER
+===========================================================================
+json.Test$1Obj.getBENT():::EXIT
+this.aString == orig(this.aString)
+this.aString.toString == orig(this.aString.toString)
+this.aNumber == orig(this.aNumber)
+this.aBoolean == orig(this.aBoolean)
+return has only one value
+return.toString == "All uppercase key"
+===========================================================================
+json.Test$1Obj.getNumber():::ENTER
+===========================================================================
+json.Test$1Obj.getNumber():::EXIT
+this.aString == orig(this.aString)
+this.aString.toString == orig(this.aString.toString)
+this.aNumber == orig(this.aNumber)
+this.aBoolean == orig(this.aBoolean)
+return == 42.0
+===========================================================================
+json.Test$1Obj.getString():::ENTER
+===========================================================================
+json.Test$1Obj.getString():::EXIT
+this.aString == orig(this.aString)
+this.aString.toString == orig(this.aString.toString)
+this.aNumber == orig(this.aNumber)
+this.aBoolean == orig(this.aBoolean)
+return has only one value
+return.toString == "A beany object"
+===========================================================================
+json.Test$1Obj.getX():::ENTER
+===========================================================================
+json.Test$1Obj.getX():::EXIT
+this.aString == orig(this.aString)
+this.aString.toString == orig(this.aString.toString)
+this.aNumber == orig(this.aNumber)
+this.aBoolean == orig(this.aBoolean)
+return has only one value
+return.toString == "x"
+===========================================================================
+json.Test$1Obj.isBoolean():::ENTER
+===========================================================================
+json.Test$1Obj.isBoolean():::EXIT
+this.aString == orig(this.aString)
+this.aString.toString == orig(this.aString.toString)
+this.aNumber == orig(this.aNumber)
+this.aBoolean == orig(this.aBoolean)
+return == true
+===========================================================================
+json.Test$1Obj.isBoolean():::EXIT;condition="return == true"
+===========================================================================
+json.Test$1Obj.toJSONString():::ENTER
+===========================================================================
+json.Test$1Obj.toJSONString():::EXIT
+this.aString == orig(this.aString)
+this.aString.toString == orig(this.aString.toString)
+this.aNumber == orig(this.aNumber)
+this.aBoolean == orig(this.aBoolean)
+return.toString == "{\"A beany object\":42}"
+===========================================================================
+json.Test.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+json.Test.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+json.XML:::CLASS
+json.XML.AMP has only one value
+json.XML.AMP != null
+json.XML.APOS has only one value
+json.XML.APOS != null
+json.XML.BANG has only one value
+json.XML.BANG != null
+json.XML.EQ has only one value
+json.XML.EQ != null
+json.XML.GT has only one value
+json.XML.GT != null
+json.XML.LT has only one value
+json.XML.LT != null
+json.XML.QUEST has only one value
+json.XML.QUEST != null
+json.XML.QUOT has only one value
+json.XML.QUOT != null
+json.XML.SLASH has only one value
+json.XML.SLASH != null
+===========================================================================
+json.XML.escape(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+json.XML.escape(java.lang.String):::EXIT
+json.XML.AMP == orig(json.XML.AMP)
+json.XML.APOS == orig(json.XML.APOS)
+json.XML.BANG == orig(json.XML.BANG)
+json.XML.EQ == orig(json.XML.EQ)
+json.XML.GT == orig(json.XML.GT)
+json.XML.LT == orig(json.XML.LT)
+json.XML.QUEST == orig(json.XML.QUEST)
+json.XML.QUOT == orig(json.XML.QUOT)
+json.XML.SLASH == orig(json.XML.SLASH)
+arg0.toString == orig(arg0.toString)
+return != null
+===========================================================================
+json.XML.noSpace(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+json.XML.noSpace(java.lang.String):::EXIT
+json.XML.AMP == orig(json.XML.AMP)
+json.XML.APOS == orig(json.XML.APOS)
+json.XML.BANG == orig(json.XML.BANG)
+json.XML.EQ == orig(json.XML.EQ)
+json.XML.GT == orig(json.XML.GT)
+json.XML.LT == orig(json.XML.LT)
+json.XML.QUEST == orig(json.XML.QUEST)
+json.XML.QUOT == orig(json.XML.QUOT)
+json.XML.SLASH == orig(json.XML.SLASH)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::ENTER
+arg0 != null
+json.XMLTokener.entity has only one value
+json.XMLTokener.entity != null
+arg0.index >= 1
+arg0.reader != null
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar == 60
+arg0.useLastChar == false
+arg1 != null
+arg1.map != null
+arg1.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL != null
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+arg0.reader.getClass().getName() != arg1.map.getClass().getName()
+arg0.reader.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+arg1.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT166
+arg0.index one of { 76, 413 }
+arg2.toString == "xml"
+return == false
+orig(arg0.index) one of { 1, 373 }
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT166;condition="not(return == true)"
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT182
+arg0.index one of { 64, 131 }
+return == false
+orig(arg0.index) == 1
+orig(arg2) == null
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT182;condition="not(return == true)"
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT188
+arg2.toString == "bCard"
+return == false
+orig(arg0.index) one of { 1, 72 }
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT188;condition="not(return == true)"
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT203
+return == true
+orig(arg2) != null
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT203;condition="return == true"
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT242
+return == false
+orig(arg2) != null
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT242;condition="not(return == true)"
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT272
+return == false
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT272;condition="not(return == true)"
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT
+json.XML.AMP == orig(json.XML.AMP)
+json.XML.APOS == orig(json.XML.APOS)
+json.XML.BANG == orig(json.XML.BANG)
+json.XML.EQ == orig(json.XML.EQ)
+json.XML.GT == orig(json.XML.GT)
+json.XML.LT == orig(json.XML.LT)
+json.XML.QUEST == orig(json.XML.QUEST)
+json.XML.QUOT == orig(json.XML.QUOT)
+json.XML.SLASH == orig(json.XML.SLASH)
+json.XMLTokener.entity == orig(json.XMLTokener.entity)
+arg0.reader == orig(arg0.reader)
+arg0.reader.getClass().getName() == orig(arg0.reader.getClass().getName())
+arg0.useLastChar == orig(arg0.useLastChar)
+arg1.map == orig(arg1.map)
+arg1.map.getClass().getName() == orig(arg1.map.getClass().getName())
+json.JSONObject.NULL == orig(json.JSONObject.NULL)
+json.JSONObject.NULL.getClass().getName() == orig(json.JSONObject.NULL.getClass().getName())
+arg2.toString == orig(arg2.toString)
+(return == false)  ==>  (orig(arg0.index) >= 1)
+(return == true)  ==>  (orig(arg2) != null)
+json.XMLTokener.entity has only one value
+json.XMLTokener.entity != null
+arg0.reader != null
+arg0.reader.getClass().getName() == java.io.StringReader.class
+arg0.lastChar == 62
+arg0.useLastChar == false
+arg1.map != null
+arg1.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL != null
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+arg0.index > orig(arg0.index)
+arg0.reader.getClass().getName() != arg1.map.getClass().getName()
+arg0.reader.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+arg1.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT;condition="return == true"
+return == true
+orig(arg2) != null
+===========================================================================
+json.XML.parse(json.XMLTokener, json.JSONObject, java.lang.String):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+json.XML.toJSONObject(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+json.XML.toJSONObject(java.lang.String):::EXIT
+json.XML.AMP == orig(json.XML.AMP)
+json.XML.APOS == orig(json.XML.APOS)
+json.XML.BANG == orig(json.XML.BANG)
+json.XML.EQ == orig(json.XML.EQ)
+json.XML.GT == orig(json.XML.GT)
+json.XML.LT == orig(json.XML.LT)
+json.XML.QUEST == orig(json.XML.QUEST)
+json.XML.QUOT == orig(json.XML.QUOT)
+json.XML.SLASH == orig(json.XML.SLASH)
+arg0.toString == orig(arg0.toString)
+return != null
+return.map != null
+return.map.getClass().getName() == java.util.HashMap.class
+json.JSONObject.NULL has only one value
+json.JSONObject.NULL != null
+json.JSONObject.NULL.getClass().getName() == json.JSONObject$Null.class
+return.map.getClass().getName() != json.JSONObject.NULL.getClass().getName()
+===========================================================================
+json.XML.toString(java.lang.Object):::ENTER
+arg0 != null
+===========================================================================
+json.XML.toString(java.lang.Object):::EXIT
+json.XML.AMP == orig(json.XML.AMP)
+json.XML.APOS == orig(json.XML.APOS)
+json.XML.BANG == orig(json.XML.BANG)
+json.XML.EQ == orig(json.XML.EQ)
+json.XML.GT == orig(json.XML.GT)
+json.XML.LT == orig(json.XML.LT)
+json.XML.QUEST == orig(json.XML.QUEST)
+json.XML.QUOT == orig(json.XML.QUOT)
+json.XML.SLASH == orig(json.XML.SLASH)
+return != null
+===========================================================================
+json.XML.toString(java.lang.Object, java.lang.String):::ENTER
+===========================================================================
+json.XML.toString(java.lang.Object, java.lang.String):::EXIT417
+orig(arg0) != null
+orig(arg0.getClass().getName()) == json.JSONObject.class
+===========================================================================
+json.XML.toString(java.lang.Object, java.lang.String):::EXIT429
+orig(arg0.getClass().getName()) == json.JSONArray.class
+orig(arg1) == null
+===========================================================================
+json.XML.toString(java.lang.Object, java.lang.String):::EXIT432
+orig(arg1) != null
+===========================================================================
+json.XML.toString(java.lang.Object, java.lang.String):::EXIT
+json.XML.AMP == orig(json.XML.AMP)
+json.XML.APOS == orig(json.XML.APOS)
+json.XML.BANG == orig(json.XML.BANG)
+json.XML.EQ == orig(json.XML.EQ)
+json.XML.GT == orig(json.XML.GT)
+json.XML.LT == orig(json.XML.LT)
+json.XML.QUEST == orig(json.XML.QUEST)
+json.XML.QUOT == orig(json.XML.QUOT)
+json.XML.SLASH == orig(json.XML.SLASH)
+arg1.toString == orig(arg1.toString)
+return != null
+===========================================================================
+json.XMLTokener:::CLASS
+json.XMLTokener.entity has only one value
+json.XMLTokener.entity != null
+===========================================================================
+json.XMLTokener:::OBJECT
+this.index >= 0
+this.reader != null
+this.reader.getClass().getName() == java.io.StringReader.class
+this.lastChar >= 0
+===========================================================================
+json.XMLTokener.XMLTokener(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+json.XMLTokener.XMLTokener(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+this.index == 0
+this.lastChar == 0
+this.useLastChar == false
+===========================================================================
+json.XMLTokener.nextCDATA():::ENTER
+this.index one of { 9, 381 }
+this.lastChar == 91
+this.useLastChar == false
+===========================================================================
+json.XMLTokener.nextCDATA():::EXIT
+json.XMLTokener.entity == orig(json.XMLTokener.entity)
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.useLastChar == orig(this.useLastChar)
+this.index one of { 76, 413 }
+this.lastChar == 62
+this.useLastChar == false
+return.toString one of { "CDATA blocks<are><supported>!", "This is a collection of test patterns and examples for org.json." }
+===========================================================================
+json.XMLTokener.nextContent():::ENTER
+this.lastChar one of { 0, 60, 62 }
+===========================================================================
+json.XMLTokener.nextContent():::EXIT102
+this.lastChar == 60
+this.useLastChar == false
+return has only one value
+return != null
+return.getClass().getName() == java.lang.Character.class
+===========================================================================
+json.XMLTokener.nextContent():::EXIT108
+this.lastChar == 60
+this.useLastChar == true
+return != null
+return.getClass().getName() == java.lang.String.class
+orig(this.lastChar) == 62
+orig(this.useLastChar) == false
+===========================================================================
+json.XMLTokener.nextContent():::EXIT99
+this.useLastChar == orig(this.useLastChar)
+this.index == 10
+this.reader has only one value
+this.lastChar == 0
+this.useLastChar == false
+return == null
+orig(this) has only one value
+orig(this.index) == 6
+orig(this.lastChar) == 62
+===========================================================================
+json.XMLTokener.nextContent():::EXIT
+json.XMLTokener.entity == orig(json.XMLTokener.entity)
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.index >= 1
+this.lastChar one of { 0, 60 }
+this.index > orig(this.index)
+this.reader.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.XMLTokener.nextEntity(char):::ENTER
+this.lastChar == 38
+this.useLastChar == false
+arg0 == 38
+===========================================================================
+json.XMLTokener.nextEntity(char):::EXIT
+json.XMLTokener.entity == orig(json.XMLTokener.entity)
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.useLastChar == orig(this.useLastChar)
+this.lastChar == 59
+this.useLastChar == false
+this.index > orig(this.index)
+this.reader.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.XMLTokener.nextMeta():::ENTER
+this.useLastChar == false
+===========================================================================
+json.XMLTokener.nextMeta():::EXIT166
+this.index one of { 64, 131 }
+this.lastChar == 62
+return has only one value
+return.getClass().getName() == java.lang.Character.class
+orig(this.index) one of { 63, 130 }
+orig(this.lastChar) == 39
+===========================================================================
+json.XMLTokener.nextMeta():::EXIT184
+this.index one of { 63, 115, 130 }
+this.lastChar == 39
+return has only one value
+return.getClass().getName() == java.lang.Boolean.class
+orig(this.index) one of { 16, 27, 115 }
+orig(this.lastChar) one of { 32, 39 }
+===========================================================================
+json.XMLTokener.nextMeta():::EXIT191
+this.lastChar == 32
+return has only one value
+return.getClass().getName() == java.lang.Boolean.class
+orig(this.lastChar) one of { 32, 68, 69 }
+===========================================================================
+json.XMLTokener.nextMeta():::EXIT
+json.XMLTokener.entity == orig(json.XMLTokener.entity)
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.useLastChar == orig(this.useLastChar)
+this.lastChar one of { 32, 39, 62 }
+this.useLastChar == false
+this.index > orig(this.index)
+this.reader.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.XMLTokener.nextToken():::ENTER
+this.index >= 1
+===========================================================================
+json.XMLTokener.nextToken():::EXIT232
+this.lastChar == 62
+this.useLastChar == false
+return has only one value
+return.getClass().getName() == java.lang.Character.class
+orig(this.index) >= 2
+this.index - orig(this.index) - 1 == 0
+this.lastChar >= orig(this.lastChar)
+===========================================================================
+json.XMLTokener.nextToken():::EXIT234
+this.lastChar == 47
+this.useLastChar == false
+return has only one value
+return.getClass().getName() == java.lang.Character.class
+this.index - orig(this.index) - 1 == 0
+===========================================================================
+json.XMLTokener.nextToken():::EXIT236
+this.lastChar == 61
+this.useLastChar == false
+return has only one value
+return.getClass().getName() == java.lang.Character.class
+orig(this.lastChar) one of { 32, 61 }
+this.lastChar >= orig(this.lastChar)
+===========================================================================
+json.XMLTokener.nextToken():::EXIT238
+this.useLastChar == orig(this.useLastChar)
+this.index one of { 2, 374 }
+this.lastChar == 33
+this.useLastChar == false
+return has only one value
+return.getClass().getName() == java.lang.Character.class
+orig(this.index) one of { 1, 373 }
+orig(this.lastChar) == 60
+===========================================================================
+json.XMLTokener.nextToken():::EXIT240
+this.useLastChar == orig(this.useLastChar)
+this.index one of { 2, 73 }
+this.lastChar == 63
+this.useLastChar == false
+return has only one value
+return.getClass().getName() == java.lang.Character.class
+orig(this.index) one of { 1, 72 }
+orig(this.lastChar) == 60
+===========================================================================
+json.XMLTokener.nextToken():::EXIT254
+this.useLastChar == orig(this.useLastChar)
+this.lastChar one of { 34, 39 }
+this.useLastChar == false
+return.getClass().getName() == java.lang.String.class
+orig(this.lastChar) == 61
+this.lastChar < orig(this.lastChar)
+===========================================================================
+json.XMLTokener.nextToken():::EXIT271
+this.useLastChar == orig(this.useLastChar)
+this.lastChar == 32
+this.useLastChar == false
+return.getClass().getName() == java.lang.String.class
+this.lastChar <= orig(this.lastChar)
+===========================================================================
+json.XMLTokener.nextToken():::EXIT275
+this.useLastChar == orig(this.useLastChar)
+this.index == 4
+this.reader has only one value
+this.lastChar == 0
+this.useLastChar == false
+return has only one value
+return.getClass().getName() == java.lang.String.class
+orig(this) has only one value
+orig(this.index) == 1
+orig(this.lastChar) == 60
+===========================================================================
+json.XMLTokener.nextToken():::EXIT284
+this.useLastChar == true
+return.getClass().getName() == java.lang.String.class
+orig(this.useLastChar) == false
+===========================================================================
+json.XMLTokener.nextToken():::EXIT
+json.XMLTokener.entity == orig(json.XMLTokener.entity)
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+this.index >= 2
+return != null
+this.index > orig(this.index)
+this.reader.getClass().getName() != return.getClass().getName()
+===========================================================================
+json.XMLTokener.skipPast(java.lang.String):::ENTER
+arg0 != null
+arg0.toString one of { "<", "?>" }
+===========================================================================
+json.XMLTokener.skipPast(java.lang.String):::EXIT345
+this.lastChar one of { 60, 62 }
+return == true
+orig(this.lastChar) one of { 10, 60, 63 }
+===========================================================================
+json.XMLTokener.skipPast(java.lang.String):::EXIT345;condition="return == true"
+===========================================================================
+json.XMLTokener.skipPast(java.lang.String):::EXIT352
+this.index one of { 110, 704 }
+this.lastChar == 0
+arg0.toString == "<"
+return == false
+orig(this.index) one of { 76, 703 }
+orig(this.lastChar) == 32
+orig(this.useLastChar) == true
+orig(arg0) has only one value
+===========================================================================
+json.XMLTokener.skipPast(java.lang.String):::EXIT352;condition="not(return == true)"
+===========================================================================
+json.XMLTokener.skipPast(java.lang.String):::EXIT
+json.XMLTokener.entity == orig(json.XMLTokener.entity)
+this.reader == orig(this.reader)
+this.reader.getClass().getName() == orig(this.reader.getClass().getName())
+arg0.toString == orig(arg0.toString)
+(this.lastChar == 0)  <==>  (orig(this.lastChar) == 32)
+(this.lastChar == 0)  <==>  (return == false)
+(this.lastChar == 0)  ==>  (arg0.toString == "<")
+(this.lastChar == 0)  ==>  (orig(arg0) has only one value)
+(this.lastChar == 0)  ==>  (orig(this.index) one of { 76, 703 })
+(this.lastChar == 0)  ==>  (orig(this.useLastChar) == true)
+(this.lastChar == 0)  ==>  (this.index one of { 110, 704 })
+(this.lastChar one of { 60, 62 })  <==>  (orig(this.lastChar) one of { 10, 60, 63 })
+(this.lastChar one of { 60, 62 })  <==>  (return == true)
+(this.lastChar one of { 60, 62 })  ==>  (arg0.toString one of { "<", "?>" })
+(this.lastChar one of { 60, 62 })  ==>  (this.index >= 1)
+this.index >= 1
+this.lastChar one of { 0, 60, 62 }
+this.useLastChar == false
+arg0.toString one of { "<", "?>" }
+this.index > orig(this.index)
+===========================================================================
+json.XMLTokener.skipPast(java.lang.String):::EXIT;condition="return == true"
+this.lastChar one of { 60, 62 }
+return == true
+orig(this.lastChar) one of { 10, 60, 63 }
+===========================================================================
+json.XMLTokener.skipPast(java.lang.String):::EXIT;condition="not(return == true)"
+this.index one of { 110, 704 }
+this.lastChar == 0
+arg0.toString == "<"
+return == false
+orig(this.index) one of { 76, 703 }
+orig(this.lastChar) == 32
+orig(this.useLastChar) == true
+orig(arg0) has only one value
+Exiting Daikon.

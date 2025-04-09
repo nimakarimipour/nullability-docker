@@ -1,0 +1,4 @@
+METHOD	org.apache.logging.log4j.message.SimpleMessage	getParameters()	null	null
+METHOD	http.SongkickConnector	executeRequest(java.net.URI)	null	null
+METHOD	http.SongkickConnector	getJsonResponse()	null	null
+METHOD	org.apache.logging.log4j.util.PropertiesUtil	getStringProperty(java.lang.String)	null	null

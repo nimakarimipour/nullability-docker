@@ -1,0 +1,6 @@
+METHOD	de.odysseus.el.ExpressionFactoryImpl	load(java.lang.Class,java.util.Properties)	null	null
+METHOD	de.odysseus.el.tree.Bindings	getVariable(int)	null	null
+METHOD	de.odysseus.el.ExpressionFactoryImpl	loadDefaultProperties()	null	null
+METHOD	de.odysseus.el.tree.impl.Scanner	keyword(java.lang.String)	null	null
+METHOD	de.odysseus.el.tree.impl.Cache	get(java.lang.String)	null	null
+METHOD	de.odysseus.el.util.SimpleContext$Variables	resolveVariable(java.lang.String)	null	null

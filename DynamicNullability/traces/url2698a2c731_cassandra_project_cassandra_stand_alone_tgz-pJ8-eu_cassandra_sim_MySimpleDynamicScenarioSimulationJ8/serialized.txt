@@ -1,0 +1,9 @@
+METHOD	com.mongodb.PooledConnectionProvider	createTimer()	null	null
+METHOD	com.mongodb.DBTCPConnector$MyPort	getPinnedRequestPortForThread()	null	null
+METHOD	org.bson.BasicBSONObject	put(java.lang.String,java.lang.Object)	null	null
+METHOD	com.mongodb.DBCollection	getDBEncoder()	null	null
+METHOD	com.mongodb.MongoOptions	getDescription()	null	null
+METHOD	com.mongodb.MongoOptions	getRequiredReplicaSetName()	null	null
+METHOD	com.mongodb.MongoOptions	getReadPreference()	null	null
+METHOD	com.mongodb.PooledConnectionProvider	createMaintenanceTask()	null	null
+METHOD	com.mongodb.DBCollection	getDBEncoderFactory()	null	null

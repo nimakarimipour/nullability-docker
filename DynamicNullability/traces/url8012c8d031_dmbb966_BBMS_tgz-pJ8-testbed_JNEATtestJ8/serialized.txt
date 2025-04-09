@@ -1,0 +1,2 @@
+FIELD	jneat.Genome	null	phenotype	null
+METHOD	utilities.FIO	newFile(java.lang.String)	null	null

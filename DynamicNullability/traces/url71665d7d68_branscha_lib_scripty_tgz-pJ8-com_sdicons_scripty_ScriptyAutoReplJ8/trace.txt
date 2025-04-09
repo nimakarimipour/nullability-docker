@@ -1,0 +1,775 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 6 times.  Unmatched entries are ignored!
+Unterminated calls:
+  com.sdicons.scripty.ScriptyAutoRepl.main(java.lang.String[]) : 1 invocation
+  com.sdicons.scripty.ScriptyCapable.addLibraryClasses(java.lang.Class[]) : 1 invocation
+  com.sdicons.scripty.repl.ReplEngine.addLibraryClasses(java.lang.Class[]) : 1 invocation
+  com.sdicons.scripty.repl.ExtensionRepositoryBuilder.addLibraryClasses(java.lang.Class[]) : 1 invocation
+  com.sdicons.scripty.repl.ExtensionRepositoryBuilder.addLibrary(java.lang.String, java.lang.Object, java.lang.Class) : 1 invocation
+  com.sdicons.scripty.repl.ExtensionRepositoryBuilder.registerClassArgList(java.lang.Class, com.sdicons.scripty.annot.ScriptyStdArgList, java.util.Map) : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+===========================================================================
+com.sdicons.scripty.ScriptyAutoRepl:::OBJECT
+this has only one value
+this.guiRepl == null
+com.sdicons.scripty.repl.ReplEngine.INPUT has only one value
+com.sdicons.scripty.repl.ReplEngine.INPUT.toString == "*input"
+com.sdicons.scripty.repl.ReplEngine.OUTPUT has only one value
+com.sdicons.scripty.repl.ReplEngine.OUTPUT.toString == "*output"
+com.sdicons.scripty.repl.ReplEngine.ERROR has only one value
+com.sdicons.scripty.repl.ReplEngine.ERROR.toString == "*error"
+com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL has only one value
+com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL.toString == "> "
+com.sdicons.scripty.repl.ReplEngine.PROMPT_CONTINUE has only one value
+com.sdicons.scripty.repl.ReplEngine.PROMPT_CONTINUE.toString == "+ > "
+this.textRepl == null
+this.forceTextMode == false
+this.replEngine has only one value
+this.replEngine.extensions has only one value
+this.replEngine.extensions.commandRepo has only one value
+this.replEngine.extensions.macroRepo has only one value
+this.replEngine.context has only one value
+this.replEngine.context.getClass().getName() == com.sdicons.scripty.parser.BasicContext.class
+this.replEngine.eval has only one value
+this.replEngine.eval.getClass().getName() == com.sdicons.scripty.parser.Eval.class
+this.replEngine.currCmd has only one value
+this.replEngine.parser has only one value
+this.replEngine.parser.pushback == null
+this.replEngine.prompt has only one value
+this.replEngine.prompt.toString == "> "
+this.replEngine.input == null
+this.replEngine.output == null
+this.replEngine.error == null
+this.replEngine.stopRequested == false
+this.replEngine.interactiveMode == true
+this.replEngine.lastResult == null
+===========================================================================
+com.sdicons.scripty.ScriptyAutoRepl.ScriptyAutoRepl():::EXIT
+===========================================================================
+com.sdicons.scripty.ScriptyCapable:::OBJECT
+com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL == this.replEngine.prompt
+this has only one value
+this.getClass().getName() == com.sdicons.scripty.ScriptyAutoRepl.class
+this.replEngine has only one value
+this.replEngine.extensions has only one value
+this.replEngine.extensions.commandRepo has only one value
+this.replEngine.extensions.macroRepo has only one value
+com.sdicons.scripty.repl.ReplEngine.INPUT has only one value
+com.sdicons.scripty.repl.ReplEngine.INPUT.toString == "*input"
+com.sdicons.scripty.repl.ReplEngine.OUTPUT has only one value
+com.sdicons.scripty.repl.ReplEngine.OUTPUT.toString == "*output"
+com.sdicons.scripty.repl.ReplEngine.ERROR has only one value
+com.sdicons.scripty.repl.ReplEngine.ERROR.toString == "*error"
+this.replEngine.context has only one value
+this.replEngine.context.getClass().getName() == com.sdicons.scripty.parser.BasicContext.class
+this.replEngine.eval has only one value
+this.replEngine.eval.getClass().getName() == com.sdicons.scripty.parser.Eval.class
+this.replEngine.currCmd has only one value
+this.replEngine.parser has only one value
+this.replEngine.parser.pushback == null
+com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL has only one value
+com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL.toString == "> "
+com.sdicons.scripty.repl.ReplEngine.PROMPT_CONTINUE has only one value
+com.sdicons.scripty.repl.ReplEngine.PROMPT_CONTINUE.toString == "+ > "
+this.replEngine.prompt.toString == "> "
+this.replEngine.input == null
+this.replEngine.output == null
+this.replEngine.error == null
+this.replEngine.stopRequested == false
+this.replEngine.interactiveMode == true
+this.replEngine.lastResult == null
+===========================================================================
+com.sdicons.scripty.ScriptyCapable.ScriptyCapable():::EXIT
+===========================================================================
+com.sdicons.scripty.ScriptyCapable.getReplEngine():::ENTER
+===========================================================================
+com.sdicons.scripty.ScriptyCapable.getReplEngine():::EXIT
+this.replEngine == return
+this.replEngine.extensions == return.extensions
+this.replEngine.extensions.commandRepo == return.extensions.commandRepo
+this.replEngine.extensions.macroRepo == return.extensions.macroRepo
+com.sdicons.scripty.repl.ReplEngine.INPUT == orig(com.sdicons.scripty.repl.ReplEngine.INPUT)
+com.sdicons.scripty.repl.ReplEngine.INPUT.toString == orig(com.sdicons.scripty.repl.ReplEngine.INPUT.toString)
+com.sdicons.scripty.repl.ReplEngine.OUTPUT == orig(com.sdicons.scripty.repl.ReplEngine.OUTPUT)
+com.sdicons.scripty.repl.ReplEngine.OUTPUT.toString == orig(com.sdicons.scripty.repl.ReplEngine.OUTPUT.toString)
+com.sdicons.scripty.repl.ReplEngine.ERROR == orig(com.sdicons.scripty.repl.ReplEngine.ERROR)
+com.sdicons.scripty.repl.ReplEngine.ERROR.toString == orig(com.sdicons.scripty.repl.ReplEngine.ERROR.toString)
+this.replEngine.context == return.context
+this.replEngine.context.getClass().getName() == return.context.getClass().getName()
+this.replEngine.eval == return.eval
+this.replEngine.eval.getClass().getName() == return.eval.getClass().getName()
+this.replEngine.currCmd == return.currCmd
+this.replEngine.parser == return.parser
+this.replEngine.parser.pushback == orig(this.replEngine.parser.pushback)
+com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL == return.prompt
+com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL == orig(com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL)
+com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL == orig(this.replEngine.prompt)
+com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL.toString == orig(com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL.toString)
+com.sdicons.scripty.repl.ReplEngine.PROMPT_CONTINUE == orig(com.sdicons.scripty.repl.ReplEngine.PROMPT_CONTINUE)
+com.sdicons.scripty.repl.ReplEngine.PROMPT_CONTINUE.toString == orig(com.sdicons.scripty.repl.ReplEngine.PROMPT_CONTINUE.toString)
+this.replEngine.prompt.toString == orig(this.replEngine.prompt.toString)
+this.replEngine.input == orig(this.replEngine.input)
+this.replEngine.output == orig(this.replEngine.output)
+this.replEngine.error == orig(this.replEngine.error)
+this.replEngine.stopRequested == return.stopRequested
+this.replEngine.interactiveMode == return.interactiveMode
+this.replEngine.lastResult == orig(this.replEngine.lastResult)
+return == orig(this.replEngine)
+return.extensions == orig(this.replEngine.extensions)
+return.extensions.commandRepo == orig(this.replEngine.extensions.commandRepo)
+return.extensions.macroRepo == orig(this.replEngine.extensions.macroRepo)
+return.context == orig(this.replEngine.context)
+return.context.getClass().getName() == orig(this.replEngine.context.getClass().getName())
+return.eval == orig(this.replEngine.eval)
+return.eval.getClass().getName() == orig(this.replEngine.eval.getClass().getName())
+return.currCmd == orig(this.replEngine.currCmd)
+return.parser == orig(this.replEngine.parser)
+return.stopRequested == orig(this.replEngine.stopRequested)
+return.interactiveMode == orig(this.replEngine.interactiveMode)
+return has only one value
+return.extensions has only one value
+return.extensions.commandRepo has only one value
+return.extensions.macroRepo has only one value
+return.context has only one value
+return.context.getClass().getName() == com.sdicons.scripty.parser.BasicContext.class
+return.eval has only one value
+return.eval.getClass().getName() == com.sdicons.scripty.parser.Eval.class
+return.currCmd has only one value
+return.parser has only one value
+return.parser.pushback == null
+return.prompt.toString == "> "
+return.input == null
+return.output == null
+return.error == null
+return.stopRequested == false
+return.interactiveMode == true
+return.lastResult == null
+===========================================================================
+com.sdicons.scripty.annot.ScriptyLibraryType:::CLASS
+com.sdicons.scripty.annot.ScriptyLibraryType.INSTANCE has only one value
+com.sdicons.scripty.annot.ScriptyLibraryType.STATIC has only one value
+com.sdicons.scripty.annot.ScriptyLibraryType.AUTO has only one value
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES has only one value
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES.getClass().getName() == com.sdicons.scripty.annot.ScriptyLibraryType[].class
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES[] contains no nulls and has only one value, of length 3
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES[].getClass().getName() == [com.sdicons.scripty.annot.ScriptyLibraryType, com.sdicons.scripty.annot.ScriptyLibraryType, com.sdicons.scripty.annot.ScriptyLibraryType]
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES[].getClass().getName() elements == com.sdicons.scripty.annot.ScriptyLibraryType.class
+size(com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES[]) == 3
+===========================================================================
+com.sdicons.scripty.annot.ScriptyLibraryType:::OBJECT
+===========================================================================
+com.sdicons.scripty.annot.ScriptyLibraryType.ScriptyLibraryType(java.lang.String, int):::ENTER
+arg0.toString one of { "AUTO", "INSTANCE", "STATIC" }
+arg1 one of { 0, 1, 2 }
+===========================================================================
+com.sdicons.scripty.annot.ScriptyLibraryType.ScriptyLibraryType(java.lang.String, int):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "AUTO", "INSTANCE", "STATIC" }
+===========================================================================
+com.sdicons.scripty.annot.ScriptyLibraryType.values():::ENTER
+===========================================================================
+com.sdicons.scripty.annot.ScriptyLibraryType.values():::EXIT
+com.sdicons.scripty.annot.ScriptyLibraryType.INSTANCE == orig(com.sdicons.scripty.annot.ScriptyLibraryType.INSTANCE)
+com.sdicons.scripty.annot.ScriptyLibraryType.STATIC == orig(com.sdicons.scripty.annot.ScriptyLibraryType.STATIC)
+com.sdicons.scripty.annot.ScriptyLibraryType.AUTO == orig(com.sdicons.scripty.annot.ScriptyLibraryType.AUTO)
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES == orig(com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES)
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES.getClass().getName() == return.getClass().getName()
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES.getClass().getName() == orig(com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES.getClass().getName())
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES[] == orig(com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES[])
+return has only one value
+return[] contains no nulls and has only one value, of length 3
+size(return[]) == 3
+===========================================================================
+com.sdicons.scripty.cmdlib.MathLibrary:::OBJECT
+this has only one value
+this.mathCtx has only one value
+===========================================================================
+com.sdicons.scripty.cmdlib.MathLibrary.MathLibrary():::EXIT
+===========================================================================
+com.sdicons.scripty.parser.AbstractEval:::OBJECT
+this has only one value
+this.getClass().getName() == com.sdicons.scripty.parser.Eval.class
+this.context has only one value
+this.context.getClass().getName() == com.sdicons.scripty.parser.BasicContext.class
+===========================================================================
+com.sdicons.scripty.parser.AbstractEval.AbstractEval(com.sdicons.scripty.parser.IContext):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == com.sdicons.scripty.parser.BasicContext.class
+===========================================================================
+com.sdicons.scripty.parser.AbstractEval.AbstractEval(com.sdicons.scripty.parser.IContext):::EXIT
+this.context == orig(arg0)
+this.context.getClass().getName() == orig(arg0.getClass().getName())
+===========================================================================
+com.sdicons.scripty.parser.BasicContext:::OBJECT
+this has only one value
+this.context has only one value
+this.context.getClass().getName() == java.util.HashMap.class
+===========================================================================
+com.sdicons.scripty.parser.BasicContext.BasicContext():::EXIT
+===========================================================================
+com.sdicons.scripty.parser.CommandRepository:::OBJECT
+this.commands.getClass().getName() == java.util.HashMap.class
+===========================================================================
+com.sdicons.scripty.parser.CommandRepository.CommandRepository():::EXIT
+===========================================================================
+com.sdicons.scripty.parser.CommandRepository.registerCommand(java.lang.String, com.sdicons.scripty.parser.ICommand):::ENTER
+this has only one value
+this.commands has only one value
+arg0.toString one of { "print", "println" }
+arg1.getClass().getName() == com.sdicons.scripty.parser.MethodCommand.class
+===========================================================================
+com.sdicons.scripty.parser.CommandRepository.registerCommand(java.lang.String, com.sdicons.scripty.parser.ICommand):::EXIT
+this.commands == orig(this.commands)
+this.commands.getClass().getName() == orig(this.commands.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.commands has only one value
+arg0.toString one of { "print", "println" }
+===========================================================================
+com.sdicons.scripty.parser.Eval:::OBJECT
+this.commands.commands.getClass().getName() == this.macros.commands.getClass().getName()
+this has only one value
+this.commands.commands.getClass().getName() == java.util.HashMap.class
+this.context has only one value
+this.context.getClass().getName() == com.sdicons.scripty.parser.BasicContext.class
+===========================================================================
+com.sdicons.scripty.parser.Eval.Eval(com.sdicons.scripty.parser.IContext):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == com.sdicons.scripty.parser.BasicContext.class
+===========================================================================
+com.sdicons.scripty.parser.Eval.Eval(com.sdicons.scripty.parser.IContext):::EXIT
+this.context == orig(arg0)
+this.context.getClass().getName() == orig(arg0.getClass().getName())
+this.commands has only one value
+this.commands.commands has only one value
+this.macros has only one value
+this.macros.commands has only one value
+===========================================================================
+com.sdicons.scripty.parser.Eval.setCommandRepo(com.sdicons.scripty.parser.CommandRepository):::ENTER
+this.commands.commands.getClass().getName() == arg0.commands.getClass().getName()
+this.commands has only one value
+this.commands.commands has only one value
+this.macros has only one value
+this.macros.commands has only one value
+arg0 has only one value
+arg0.commands has only one value
+===========================================================================
+com.sdicons.scripty.parser.Eval.setCommandRepo(com.sdicons.scripty.parser.CommandRepository):::EXIT
+this.commands == orig(arg0)
+this.commands.commands == arg0.commands
+this.commands.commands.getClass().getName() == arg0.commands.getClass().getName()
+this.macros == orig(this.macros)
+this.macros.commands == orig(this.macros.commands)
+this.macros.commands.getClass().getName() == arg0.commands.getClass().getName()
+this.context == orig(this.context)
+this.context.getClass().getName() == orig(this.context.getClass().getName())
+arg0.commands == orig(arg0.commands)
+arg0.commands.getClass().getName() == orig(this.commands.commands.getClass().getName())
+arg0.commands.getClass().getName() == orig(this.macros.commands.getClass().getName())
+arg0.commands.getClass().getName() == orig(arg0.commands.getClass().getName())
+this.commands has only one value
+this.macros has only one value
+this.macros.commands has only one value
+arg0.commands has only one value
+arg0.commands.getClass().getName() == java.util.HashMap.class
+===========================================================================
+com.sdicons.scripty.parser.Eval.setMacroRepo(com.sdicons.scripty.parser.CommandRepository):::ENTER
+this.commands.commands.getClass().getName() == arg0.commands.getClass().getName()
+this.commands has only one value
+this.commands.commands has only one value
+this.macros has only one value
+this.macros.commands has only one value
+arg0 has only one value
+arg0.commands has only one value
+===========================================================================
+com.sdicons.scripty.parser.Eval.setMacroRepo(com.sdicons.scripty.parser.CommandRepository):::EXIT
+this.commands == orig(this.commands)
+this.commands.commands == orig(this.commands.commands)
+this.commands.commands.getClass().getName() == arg0.commands.getClass().getName()
+this.macros == orig(arg0)
+this.macros.commands == arg0.commands
+this.macros.commands.getClass().getName() == arg0.commands.getClass().getName()
+this.context == orig(this.context)
+this.context.getClass().getName() == orig(this.context.getClass().getName())
+arg0.commands == orig(arg0.commands)
+arg0.commands.getClass().getName() == orig(this.commands.commands.getClass().getName())
+arg0.commands.getClass().getName() == orig(this.macros.commands.getClass().getName())
+arg0.commands.getClass().getName() == orig(arg0.commands.getClass().getName())
+this.commands has only one value
+this.commands.commands has only one value
+this.macros has only one value
+arg0.commands has only one value
+arg0.commands.getClass().getName() == java.util.HashMap.class
+===========================================================================
+com.sdicons.scripty.parser.MethodCommand:::OBJECT
+this.argList == null
+this.instance == null
+this.argMapping.mappings[].getClass().getName() == [com.sdicons.scripty.spec.map.CompleteMapping, com.sdicons.scripty.spec.map.BindingMapping]
+this.argMapping.mappings.getClass().getName() == java.util.ArrayList.class
+this.resultMapping == null
+size(this.argMapping.mappings[]) == 2
+===========================================================================
+com.sdicons.scripty.parser.MethodCommand.MethodCommand(java.lang.Object, java.lang.reflect.Method, com.sdicons.scripty.spec.args.IArgList, com.sdicons.scripty.spec.map.ArgListMapping, com.sdicons.scripty.spec.map.IResultMapping):::ENTER
+arg0 == null
+arg2 == null
+arg3.mappings[].getClass().getName() == [com.sdicons.scripty.spec.map.CompleteMapping, com.sdicons.scripty.spec.map.BindingMapping]
+arg3.mappings.getClass().getName() == java.util.ArrayList.class
+arg4 == null
+size(arg3.mappings[]) == 2
+===========================================================================
+com.sdicons.scripty.parser.MethodCommand.MethodCommand(java.lang.Object, java.lang.reflect.Method, com.sdicons.scripty.spec.args.IArgList, com.sdicons.scripty.spec.map.ArgListMapping, com.sdicons.scripty.spec.map.IResultMapping):::EXIT
+arg3.mappings == orig(arg3.mappings)
+arg3.mappings[] == orig(arg3.mappings[])
+arg3.mappings.getClass().getName() == orig(arg3.mappings.getClass().getName())
+arg3.mappings[].getClass().getName() == [com.sdicons.scripty.spec.map.CompleteMapping, com.sdicons.scripty.spec.map.BindingMapping]
+arg3.mappings.getClass().getName() == java.util.ArrayList.class
+size(arg3.mappings[]) == 2
+===========================================================================
+com.sdicons.scripty.parser.Parser:::OBJECT
+this has only one value
+this.pushback == null
+===========================================================================
+com.sdicons.scripty.parser.Parser.Parser():::EXIT
+===========================================================================
+com.sdicons.scripty.repl.ExtensionRepositoryBuilder:::OBJECT
+this.commandRepo.commands.getClass().getName() == this.macroRepo.commands.getClass().getName()
+this has only one value
+this.commandRepo has only one value
+this.commandRepo.commands has only one value
+this.commandRepo.commands.getClass().getName() == java.util.HashMap.class
+this.macroRepo has only one value
+this.macroRepo.commands has only one value
+===========================================================================
+com.sdicons.scripty.repl.ExtensionRepositoryBuilder.ExtensionRepositoryBuilder():::EXIT
+===========================================================================
+com.sdicons.scripty.repl.ExtensionRepositoryBuilder.addLibrary(java.lang.String, java.lang.Object, java.lang.Class):::ENTER
+arg0 has only one value
+arg0.toString == "System"
+arg1 == null
+arg2 has only one value
+===========================================================================
+com.sdicons.scripty.repl.ExtensionRepositoryBuilder.addLibrary(java.lang.String, java.lang.Object, java.lang.Class):::EXIT
+this.commandRepo == orig(this.commandRepo)
+this.commandRepo.commands == orig(this.commandRepo.commands)
+this.commandRepo.commands.getClass().getName() == orig(this.commandRepo.commands.getClass().getName())
+this.commandRepo.commands.getClass().getName() == orig(this.macroRepo.commands.getClass().getName())
+this.macroRepo == orig(this.macroRepo)
+this.macroRepo.commands == orig(this.macroRepo.commands)
+arg0.toString == orig(arg0.toString)
+arg0.toString == "System"
+===========================================================================
+com.sdicons.scripty.repl.ExtensionRepositoryBuilder.getCommandRepository():::ENTER
+===========================================================================
+com.sdicons.scripty.repl.ExtensionRepositoryBuilder.getCommandRepository():::EXIT
+this.commandRepo == return
+this.commandRepo.commands == return.commands
+this.commandRepo.commands.getClass().getName() == return.commands.getClass().getName()
+this.macroRepo == orig(this.macroRepo)
+this.macroRepo.commands == orig(this.macroRepo.commands)
+this.macroRepo.commands.getClass().getName() == return.commands.getClass().getName()
+return == orig(this.commandRepo)
+return.commands == orig(this.commandRepo.commands)
+return.commands.getClass().getName() == orig(this.commandRepo.commands.getClass().getName())
+return.commands.getClass().getName() == orig(this.macroRepo.commands.getClass().getName())
+return has only one value
+return.commands has only one value
+return.commands.getClass().getName() == java.util.HashMap.class
+===========================================================================
+com.sdicons.scripty.repl.ExtensionRepositoryBuilder.getMacroRepository():::ENTER
+===========================================================================
+com.sdicons.scripty.repl.ExtensionRepositoryBuilder.getMacroRepository():::EXIT
+this.commandRepo == orig(this.commandRepo)
+this.commandRepo.commands == orig(this.commandRepo.commands)
+this.commandRepo.commands.getClass().getName() == return.commands.getClass().getName()
+this.macroRepo == return
+this.macroRepo.commands == return.commands
+this.macroRepo.commands.getClass().getName() == return.commands.getClass().getName()
+return == orig(this.macroRepo)
+return.commands == orig(this.macroRepo.commands)
+return.commands.getClass().getName() == orig(this.commandRepo.commands.getClass().getName())
+return.commands.getClass().getName() == orig(this.macroRepo.commands.getClass().getName())
+return has only one value
+return.commands has only one value
+return.commands.getClass().getName() == java.util.HashMap.class
+===========================================================================
+com.sdicons.scripty.repl.ReplEngine:::CLASS
+com.sdicons.scripty.repl.ReplEngine.INPUT has only one value
+com.sdicons.scripty.repl.ReplEngine.INPUT.toString == "*input"
+com.sdicons.scripty.repl.ReplEngine.OUTPUT has only one value
+com.sdicons.scripty.repl.ReplEngine.OUTPUT.toString == "*output"
+com.sdicons.scripty.repl.ReplEngine.ERROR has only one value
+com.sdicons.scripty.repl.ReplEngine.ERROR.toString == "*error"
+com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL has only one value
+com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL.toString == "> "
+com.sdicons.scripty.repl.ReplEngine.PROMPT_CONTINUE has only one value
+com.sdicons.scripty.repl.ReplEngine.PROMPT_CONTINUE.toString == "+ > "
+===========================================================================
+com.sdicons.scripty.repl.ReplEngine:::OBJECT
+this.extensions.commandRepo.commands.getClass().getName() == this.extensions.macroRepo.commands.getClass().getName()
+com.sdicons.scripty.repl.ReplEngine.PROMPT_NORMAL == this.prompt
+this has only one value
+this.extensions has only one value
+this.extensions.commandRepo has only one value
+this.extensions.commandRepo.commands has only one value
+this.extensions.commandRepo.commands.getClass().getName() == java.util.HashMap.class
+this.extensions.macroRepo has only one value
+this.extensions.macroRepo.commands has only one value
+this.context has only one value
+this.context.getClass().getName() == com.sdicons.scripty.parser.BasicContext.class
+this.eval has only one value
+this.eval.getClass().getName() == com.sdicons.scripty.parser.Eval.class
+this.currCmd has only one value
+this.parser has only one value
+this.parser.pushback == null
+this.prompt.toString == "> "
+this.input == null
+this.output == null
+this.error == null
+this.stopRequested == false
+this.interactiveMode == true
+this.lastResult == null
+===========================================================================
+com.sdicons.scripty.repl.ReplEngine.ReplEngine():::EXIT
+===========================================================================
+com.sdicons.scripty.spec.map.ArgListMapping:::OBJECT
+this.mappings.getClass().getName() == java.util.ArrayList.class
+size(this.mappings[]) one of { 0, 1, 2 }
+===========================================================================
+com.sdicons.scripty.spec.map.ArgListMapping.ArgListMapping():::EXIT
+this.mappings[] == []
+this.mappings[].getClass().getName() == []
+===========================================================================
+com.sdicons.scripty.spec.map.ArgListMapping.addArgMapping(com.sdicons.scripty.spec.map.IArgMapping):::ENTER
+this.mappings[].getClass().getName() elements == com.sdicons.scripty.spec.map.CompleteMapping.class
+this.mappings[].getClass().getName() one of { [], [com.sdicons.scripty.spec.map.CompleteMapping] }
+size(this.mappings[]) one of { 0, 1 }
+===========================================================================
+com.sdicons.scripty.spec.map.ArgListMapping.addArgMapping(com.sdicons.scripty.spec.map.IArgMapping):::EXIT
+this.mappings == orig(this.mappings)
+this.mappings.getClass().getName() == orig(this.mappings.getClass().getName())
+size(this.mappings[])-1 == orig(size(this.mappings[]))
+this.mappings[].getClass().getName() one of { [com.sdicons.scripty.spec.map.CompleteMapping], [com.sdicons.scripty.spec.map.CompleteMapping, com.sdicons.scripty.spec.map.BindingMapping] }
+size(this.mappings[]) one of { 1, 2 }
+===========================================================================
+com.sdicons.scripty.spec.map.ArgMappingBuilderUtil.buildArgMapping(java.lang.reflect.Method, java.util.Map):::ENTER
+arg1 == null
+===========================================================================
+com.sdicons.scripty.spec.map.ArgMappingBuilderUtil.buildArgMapping(java.lang.reflect.Method, java.util.Map):::EXIT
+return.mappings[].getClass().getName() == [com.sdicons.scripty.spec.map.CompleteMapping, com.sdicons.scripty.spec.map.BindingMapping]
+return.mappings.getClass().getName() == java.util.ArrayList.class
+size(return.mappings[]) == 2
+===========================================================================
+com.sdicons.scripty.spec.map.ArgMappingBuilderUtil.buildMapping(java.lang.Class, java.lang.annotation.Annotation[], java.util.Map):::ENTER
+arg1.getClass().getName() == java.lang.annotation.Annotation[].class
+arg2 == null
+size(arg1[]) one of { 0, 1 }
+===========================================================================
+com.sdicons.scripty.spec.map.ArgMappingBuilderUtil.buildMapping(java.lang.Class, java.lang.annotation.Annotation[], java.util.Map):::EXIT69
+arg1[] == []
+return.getClass().getName() == com.sdicons.scripty.spec.map.CompleteMapping.class
+orig(arg0) has only one value
+orig(arg1) has only one value
+===========================================================================
+com.sdicons.scripty.spec.map.ArgMappingBuilderUtil.buildMapping(java.lang.Class, java.lang.annotation.Annotation[], java.util.Map):::EXIT97
+return.getClass().getName() == com.sdicons.scripty.spec.map.BindingMapping.class
+orig(arg0) has only one value
+orig(size(arg1[])) == 1
+===========================================================================
+com.sdicons.scripty.spec.map.ArgMappingBuilderUtil.buildMapping(java.lang.Class, java.lang.annotation.Annotation[], java.util.Map):::EXIT
+arg1[] == orig(arg1[])
+===========================================================================
+com.sdicons.scripty.spec.map.BindingMapping:::OBJECT
+this.binding.toString == "*output"
+this.excIfNull == false
+===========================================================================
+com.sdicons.scripty.spec.map.BindingMapping.BindingMapping(java.lang.String, boolean):::ENTER
+arg0.toString == "*output"
+arg1 == false
+===========================================================================
+com.sdicons.scripty.spec.map.BindingMapping.BindingMapping(java.lang.String, boolean):::EXIT
+arg0.toString == orig(arg0.toString)
+arg0.toString == "*output"
+===========================================================================
+com.sdicons.scripty.spec.map.CompleteMapping:::OBJECT
+===========================================================================
+com.sdicons.scripty.spec.map.CompleteMapping.CompleteMapping():::EXIT
+===========================================================================
+com.sun.proxy.$Proxy2:::CLASS
+com.sun.proxy.$Proxy2.m1 has only one value
+com.sun.proxy.$Proxy2.m1 != null
+com.sun.proxy.$Proxy2.m3 has only one value
+com.sun.proxy.$Proxy2.m3 != null
+com.sun.proxy.$Proxy2.m4 has only one value
+com.sun.proxy.$Proxy2.m4 != null
+com.sun.proxy.$Proxy2.m2 has only one value
+com.sun.proxy.$Proxy2.m2 != null
+com.sun.proxy.$Proxy2.m5 has only one value
+com.sun.proxy.$Proxy2.m5 != null
+com.sun.proxy.$Proxy2.m0 has only one value
+com.sun.proxy.$Proxy2.m0 != null
+===========================================================================
+com.sun.proxy.$Proxy2:::OBJECT
+===========================================================================
+com.sun.proxy.$Proxy2.$Proxy2(java.lang.reflect.InvocationHandler):::ENTER
+arg0.getClass().getName() == sun.reflect.annotation.AnnotationInvocationHandler.class
+===========================================================================
+com.sun.proxy.$Proxy2.$Proxy2(java.lang.reflect.InvocationHandler):::EXIT
+===========================================================================
+com.sun.proxy.$Proxy2.annotationType():::ENTER
+===========================================================================
+com.sun.proxy.$Proxy2.annotationType():::EXIT
+com.sun.proxy.$Proxy2.m1 == orig(com.sun.proxy.$Proxy2.m1)
+com.sun.proxy.$Proxy2.m3 == orig(com.sun.proxy.$Proxy2.m3)
+com.sun.proxy.$Proxy2.m4 == orig(com.sun.proxy.$Proxy2.m4)
+com.sun.proxy.$Proxy2.m2 == orig(com.sun.proxy.$Proxy2.m2)
+com.sun.proxy.$Proxy2.m5 == orig(com.sun.proxy.$Proxy2.m5)
+com.sun.proxy.$Proxy2.m0 == orig(com.sun.proxy.$Proxy2.m0)
+return has only one value
+===========================================================================
+com.sun.proxy.$Proxy2.name():::ENTER
+===========================================================================
+com.sun.proxy.$Proxy2.name():::EXIT
+com.sun.proxy.$Proxy2.m1 == orig(com.sun.proxy.$Proxy2.m1)
+com.sun.proxy.$Proxy2.m3 == orig(com.sun.proxy.$Proxy2.m3)
+com.sun.proxy.$Proxy2.m4 == orig(com.sun.proxy.$Proxy2.m4)
+com.sun.proxy.$Proxy2.m2 == orig(com.sun.proxy.$Proxy2.m2)
+com.sun.proxy.$Proxy2.m5 == orig(com.sun.proxy.$Proxy2.m5)
+com.sun.proxy.$Proxy2.m0 == orig(com.sun.proxy.$Proxy2.m0)
+return.toString one of { "", "System" }
+===========================================================================
+com.sun.proxy.$Proxy2.type():::ENTER
+===========================================================================
+com.sun.proxy.$Proxy2.type():::EXIT
+com.sun.proxy.$Proxy2.m1 == orig(com.sun.proxy.$Proxy2.m1)
+com.sun.proxy.$Proxy2.m3 == orig(com.sun.proxy.$Proxy2.m3)
+com.sun.proxy.$Proxy2.m4 == orig(com.sun.proxy.$Proxy2.m4)
+com.sun.proxy.$Proxy2.m2 == orig(com.sun.proxy.$Proxy2.m2)
+com.sun.proxy.$Proxy2.m5 == orig(com.sun.proxy.$Proxy2.m5)
+com.sun.proxy.$Proxy2.m0 == orig(com.sun.proxy.$Proxy2.m0)
+com.sdicons.scripty.annot.ScriptyLibraryType.INSTANCE has only one value
+com.sdicons.scripty.annot.ScriptyLibraryType.STATIC has only one value
+com.sdicons.scripty.annot.ScriptyLibraryType.AUTO has only one value
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES has only one value
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES.getClass().getName() == com.sdicons.scripty.annot.ScriptyLibraryType[].class
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES[] contains no nulls and has only one value, of length 3
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES[].getClass().getName() == [com.sdicons.scripty.annot.ScriptyLibraryType, com.sdicons.scripty.annot.ScriptyLibraryType, com.sdicons.scripty.annot.ScriptyLibraryType]
+com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES[].getClass().getName() elements == com.sdicons.scripty.annot.ScriptyLibraryType.class
+size(com.sdicons.scripty.annot.ScriptyLibraryType.$VALUES[]) == 3
+===========================================================================
+com.sun.proxy.$Proxy3:::CLASS
+com.sun.proxy.$Proxy3.m1 has only one value
+com.sun.proxy.$Proxy3.m3 has only one value
+com.sun.proxy.$Proxy3.m2 has only one value
+com.sun.proxy.$Proxy3.m4 has only one value
+com.sun.proxy.$Proxy3.m0 has only one value
+===========================================================================
+com.sun.proxy.$Proxy3:::OBJECT
+===========================================================================
+com.sun.proxy.$Proxy3.$Proxy3(java.lang.reflect.InvocationHandler):::ENTER
+arg0.getClass().getName() == sun.reflect.annotation.AnnotationInvocationHandler.class
+===========================================================================
+com.sun.proxy.$Proxy3.$Proxy3(java.lang.reflect.InvocationHandler):::EXIT
+===========================================================================
+com.sun.proxy.$Proxy3.annotationType():::ENTER
+===========================================================================
+com.sun.proxy.$Proxy3.annotationType():::EXIT
+com.sun.proxy.$Proxy3.m1 == orig(com.sun.proxy.$Proxy3.m1)
+com.sun.proxy.$Proxy3.m3 == orig(com.sun.proxy.$Proxy3.m3)
+com.sun.proxy.$Proxy3.m2 == orig(com.sun.proxy.$Proxy3.m2)
+com.sun.proxy.$Proxy3.m4 == orig(com.sun.proxy.$Proxy3.m4)
+com.sun.proxy.$Proxy3.m0 == orig(com.sun.proxy.$Proxy3.m0)
+return has only one value
+===========================================================================
+com.sun.proxy.$Proxy3.name():::ENTER
+===========================================================================
+com.sun.proxy.$Proxy3.name():::EXIT
+com.sun.proxy.$Proxy3.m1 == orig(com.sun.proxy.$Proxy3.m1)
+com.sun.proxy.$Proxy3.m3 == orig(com.sun.proxy.$Proxy3.m3)
+com.sun.proxy.$Proxy3.m2 == orig(com.sun.proxy.$Proxy3.m2)
+com.sun.proxy.$Proxy3.m4 == orig(com.sun.proxy.$Proxy3.m4)
+com.sun.proxy.$Proxy3.m0 == orig(com.sun.proxy.$Proxy3.m0)
+return has only one value
+return.toString == ""
+===========================================================================
+com.sun.proxy.$Proxy4:::CLASS
+com.sun.proxy.$Proxy4.m1 has only one value
+com.sun.proxy.$Proxy4.m1 != null
+com.sun.proxy.$Proxy4.m4 has only one value
+com.sun.proxy.$Proxy4.m4 != null
+com.sun.proxy.$Proxy4.m2 has only one value
+com.sun.proxy.$Proxy4.m2 != null
+com.sun.proxy.$Proxy4.m5 has only one value
+com.sun.proxy.$Proxy4.m5 != null
+com.sun.proxy.$Proxy4.m0 has only one value
+com.sun.proxy.$Proxy4.m0 != null
+com.sun.proxy.$Proxy4.m3 has only one value
+com.sun.proxy.$Proxy4.m3 != null
+===========================================================================
+com.sun.proxy.$Proxy4:::OBJECT
+===========================================================================
+com.sun.proxy.$Proxy4.$Proxy4(java.lang.reflect.InvocationHandler):::ENTER
+arg0.getClass().getName() == sun.reflect.annotation.AnnotationInvocationHandler.class
+===========================================================================
+com.sun.proxy.$Proxy4.$Proxy4(java.lang.reflect.InvocationHandler):::EXIT
+===========================================================================
+com.sun.proxy.$Proxy4.annotationType():::ENTER
+===========================================================================
+com.sun.proxy.$Proxy4.annotationType():::EXIT
+com.sun.proxy.$Proxy4.m1 == orig(com.sun.proxy.$Proxy4.m1)
+com.sun.proxy.$Proxy4.m4 == orig(com.sun.proxy.$Proxy4.m4)
+com.sun.proxy.$Proxy4.m2 == orig(com.sun.proxy.$Proxy4.m2)
+com.sun.proxy.$Proxy4.m5 == orig(com.sun.proxy.$Proxy4.m5)
+com.sun.proxy.$Proxy4.m0 == orig(com.sun.proxy.$Proxy4.m0)
+com.sun.proxy.$Proxy4.m3 == orig(com.sun.proxy.$Proxy4.m3)
+return has only one value
+===========================================================================
+com.sun.proxy.$Proxy4.unboundException():::ENTER
+===========================================================================
+com.sun.proxy.$Proxy4.unboundException():::EXIT
+com.sun.proxy.$Proxy4.m1 == orig(com.sun.proxy.$Proxy4.m1)
+com.sun.proxy.$Proxy4.m4 == orig(com.sun.proxy.$Proxy4.m4)
+com.sun.proxy.$Proxy4.m2 == orig(com.sun.proxy.$Proxy4.m2)
+com.sun.proxy.$Proxy4.m5 == orig(com.sun.proxy.$Proxy4.m5)
+com.sun.proxy.$Proxy4.m0 == orig(com.sun.proxy.$Proxy4.m0)
+com.sun.proxy.$Proxy4.m3 == orig(com.sun.proxy.$Proxy4.m3)
+return == false
+===========================================================================
+com.sun.proxy.$Proxy4.unboundException():::EXIT;condition="not(return == true)"
+===========================================================================
+com.sun.proxy.$Proxy4.value():::ENTER
+===========================================================================
+com.sun.proxy.$Proxy4.value():::EXIT
+com.sun.proxy.$Proxy4.m1 == orig(com.sun.proxy.$Proxy4.m1)
+com.sun.proxy.$Proxy4.m4 == orig(com.sun.proxy.$Proxy4.m4)
+com.sun.proxy.$Proxy4.m2 == orig(com.sun.proxy.$Proxy4.m2)
+com.sun.proxy.$Proxy4.m5 == orig(com.sun.proxy.$Proxy4.m5)
+com.sun.proxy.$Proxy4.m0 == orig(com.sun.proxy.$Proxy4.m0)
+com.sun.proxy.$Proxy4.m3 == orig(com.sun.proxy.$Proxy4.m3)
+return.toString == "*output"
+===========================================================================
+com.sun.proxy.$Proxy6:::CLASS
+com.sun.proxy.$Proxy6.m1 has only one value
+com.sun.proxy.$Proxy6.m3 has only one value
+com.sun.proxy.$Proxy6.m4 has only one value
+com.sun.proxy.$Proxy6.m6 has only one value
+com.sun.proxy.$Proxy6.m2 has only one value
+com.sun.proxy.$Proxy6.m7 has only one value
+com.sun.proxy.$Proxy6.m0 has only one value
+com.sun.proxy.$Proxy6.m5 has only one value
+===========================================================================
+com.sun.proxy.$Proxy6:::OBJECT
+===========================================================================
+com.sun.proxy.$Proxy6.$Proxy6(java.lang.reflect.InvocationHandler):::ENTER
+arg0.getClass().getName() == sun.reflect.annotation.AnnotationInvocationHandler.class
+===========================================================================
+com.sun.proxy.$Proxy6.$Proxy6(java.lang.reflect.InvocationHandler):::EXIT
+===========================================================================
+com.sun.proxy.$Proxy7:::CLASS
+com.sun.proxy.$Proxy7.m1 has only one value
+com.sun.proxy.$Proxy7.m4 has only one value
+com.sun.proxy.$Proxy7.m6 has only one value
+com.sun.proxy.$Proxy7.m2 has only one value
+com.sun.proxy.$Proxy7.m5 has only one value
+com.sun.proxy.$Proxy7.m7 has only one value
+com.sun.proxy.$Proxy7.m3 has only one value
+com.sun.proxy.$Proxy7.m0 has only one value
+===========================================================================
+com.sun.proxy.$Proxy7:::OBJECT
+===========================================================================
+com.sun.proxy.$Proxy7.$Proxy7(java.lang.reflect.InvocationHandler):::ENTER
+arg0.getClass().getName() == sun.reflect.annotation.AnnotationInvocationHandler.class
+===========================================================================
+com.sun.proxy.$Proxy7.$Proxy7(java.lang.reflect.InvocationHandler):::EXIT
+===========================================================================
+com.sun.proxy.$Proxy7.name():::ENTER
+this has only one value
+===========================================================================
+com.sun.proxy.$Proxy7.name():::EXIT
+com.sun.proxy.$Proxy7.m1 == orig(com.sun.proxy.$Proxy7.m1)
+com.sun.proxy.$Proxy7.m4 == orig(com.sun.proxy.$Proxy7.m4)
+com.sun.proxy.$Proxy7.m6 == orig(com.sun.proxy.$Proxy7.m6)
+com.sun.proxy.$Proxy7.m2 == orig(com.sun.proxy.$Proxy7.m2)
+com.sun.proxy.$Proxy7.m5 == orig(com.sun.proxy.$Proxy7.m5)
+com.sun.proxy.$Proxy7.m7 == orig(com.sun.proxy.$Proxy7.m7)
+com.sun.proxy.$Proxy7.m3 == orig(com.sun.proxy.$Proxy7.m3)
+com.sun.proxy.$Proxy7.m0 == orig(com.sun.proxy.$Proxy7.m0)
+return has only one value
+return.toString == "2numbers"
+===========================================================================
+com.sun.proxy.$Proxy8:::CLASS
+com.sun.proxy.$Proxy8.m1 has only one value
+com.sun.proxy.$Proxy8.m6 has only one value
+com.sun.proxy.$Proxy8.m5 has only one value
+com.sun.proxy.$Proxy8.m2 has only one value
+com.sun.proxy.$Proxy8.m3 has only one value
+com.sun.proxy.$Proxy8.m7 has only one value
+com.sun.proxy.$Proxy8.m9 has only one value
+com.sun.proxy.$Proxy8.m4 has only one value
+com.sun.proxy.$Proxy8.m8 has only one value
+com.sun.proxy.$Proxy8.m0 has only one value
+===========================================================================
+com.sun.proxy.$Proxy8:::OBJECT
+===========================================================================
+com.sun.proxy.$Proxy8.$Proxy8(java.lang.reflect.InvocationHandler):::ENTER
+arg0.getClass().getName() == sun.reflect.annotation.AnnotationInvocationHandler.class
+===========================================================================
+com.sun.proxy.$Proxy8.$Proxy8(java.lang.reflect.InvocationHandler):::EXIT
+===========================================================================
+com.sun.proxy.$Proxy9:::CLASS
+com.sun.proxy.$Proxy9.m1 has only one value
+com.sun.proxy.$Proxy9.m3 has only one value
+com.sun.proxy.$Proxy9.m2 has only one value
+com.sun.proxy.$Proxy9.m5 has only one value
+com.sun.proxy.$Proxy9.m4 has only one value
+com.sun.proxy.$Proxy9.m0 has only one value
+===========================================================================
+com.sun.proxy.$Proxy9:::OBJECT
+this has only one value
+===========================================================================
+com.sun.proxy.$Proxy9.$Proxy9(java.lang.reflect.InvocationHandler):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == sun.reflect.annotation.AnnotationInvocationHandler.class
+===========================================================================
+com.sun.proxy.$Proxy9.$Proxy9(java.lang.reflect.InvocationHandler):::EXIT
+===========================================================================
+com.sun.proxy.$Proxy9.annotationType():::ENTER
+===========================================================================
+com.sun.proxy.$Proxy9.annotationType():::EXIT
+com.sun.proxy.$Proxy9.m1 == orig(com.sun.proxy.$Proxy9.m1)
+com.sun.proxy.$Proxy9.m3 == orig(com.sun.proxy.$Proxy9.m3)
+com.sun.proxy.$Proxy9.m2 == orig(com.sun.proxy.$Proxy9.m2)
+com.sun.proxy.$Proxy9.m5 == orig(com.sun.proxy.$Proxy9.m5)
+com.sun.proxy.$Proxy9.m4 == orig(com.sun.proxy.$Proxy9.m4)
+com.sun.proxy.$Proxy9.m0 == orig(com.sun.proxy.$Proxy9.m0)
+return has only one value
+===========================================================================
+com.sun.proxy.$Proxy9.std():::ENTER
+===========================================================================
+com.sun.proxy.$Proxy9.std():::EXIT
+com.sun.proxy.$Proxy9.m1 == orig(com.sun.proxy.$Proxy9.m1)
+com.sun.proxy.$Proxy9.m3 == orig(com.sun.proxy.$Proxy9.m3)
+com.sun.proxy.$Proxy9.m2 == orig(com.sun.proxy.$Proxy9.m2)
+com.sun.proxy.$Proxy9.m5 == orig(com.sun.proxy.$Proxy9.m5)
+com.sun.proxy.$Proxy9.m4 == orig(com.sun.proxy.$Proxy9.m4)
+com.sun.proxy.$Proxy9.m0 == orig(com.sun.proxy.$Proxy9.m0)
+return has only one value
+return.getClass().getName() == com.sdicons.scripty.annot.ScriptyStdArgList[].class
+return[] contains no nulls and has only one value, of length 3
+size(return[]) == 3
+===========================================================================
+com.sun.proxy.$Proxy9.var():::ENTER
+===========================================================================
+com.sun.proxy.$Proxy9.var():::EXIT
+com.sun.proxy.$Proxy9.m1 == orig(com.sun.proxy.$Proxy9.m1)
+com.sun.proxy.$Proxy9.m3 == orig(com.sun.proxy.$Proxy9.m3)
+com.sun.proxy.$Proxy9.m2 == orig(com.sun.proxy.$Proxy9.m2)
+com.sun.proxy.$Proxy9.m5 == orig(com.sun.proxy.$Proxy9.m5)
+com.sun.proxy.$Proxy9.m4 == orig(com.sun.proxy.$Proxy9.m4)
+com.sun.proxy.$Proxy9.m0 == orig(com.sun.proxy.$Proxy9.m0)
+return has only one value
+return.getClass().getName() == com.sdicons.scripty.annot.ScriptyVarArgList[].class
+return[] contains no nulls and has only one value, of length 2
+size(return[]) == 2
+Exiting Daikon.

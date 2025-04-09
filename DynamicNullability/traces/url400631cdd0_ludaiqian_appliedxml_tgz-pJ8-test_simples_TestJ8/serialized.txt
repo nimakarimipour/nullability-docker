@@ -1,0 +1,16 @@
+METHOD	org.jczh.appliedxml.Serializer	getDefaultElementPrefix()	null	null
+METHOD	org.jczh.appliedxml.ObjectTypeAdapter$1	create(org.jczh.appliedxml.Serializer,com.google.gsoncode.internal.TypeToken)	null	null
+METHOD	org.jczh.appliedxml.TypeAdapters$25	create(org.jczh.appliedxml.Serializer,com.google.gsoncode.internal.TypeToken)	null	null
+METHOD	org.jczh.appliedxml.XmlWriter	symbol(char)	null	null
+METHOD	org.jczh.appliedxml.TimeTypeAdapter$1	create(org.jczh.appliedxml.Serializer,com.google.gsoncode.internal.TypeToken)	null	null
+METHOD	org.jczh.appliedxml.SqlDateTypeAdapter$1	create(org.jczh.appliedxml.Serializer,com.google.gsoncode.internal.TypeToken)	null	null
+METHOD	org.jczh.appliedxml.TypeAdapters$22	create(org.jczh.appliedxml.Serializer,com.google.gsoncode.internal.TypeToken)	null	null
+METHOD	org.jczh.appliedxml.TypeAdapters$29	create(org.jczh.appliedxml.Serializer,com.google.gsoncode.internal.TypeToken)	null	null
+METHOD	org.jczh.appliedxml.Serializer	getDefaultAttributePrefix()	null	null
+METHOD	org.jczh.appliedxml.Format	getProlog()	null	null
+METHOD	org.jczh.appliedxml.CollectionTypeAdapterFactory	create(org.jczh.appliedxml.Serializer,com.google.gsoncode.internal.TypeToken)	null	null
+METHOD	org.jczh.appliedxml.utils.ReflectUtil	extractNamespaces(java.lang.reflect.Field)	null	null
+METHOD	org.jczh.appliedxml.MapTypeAdapterFactory	create(org.jczh.appliedxml.Serializer,com.google.gsoncode.internal.TypeToken)	null	null
+METHOD	org.jczh.appliedxml.TypeAdapters$28	create(org.jczh.appliedxml.Serializer,com.google.gsoncode.internal.TypeToken)	null	null
+METHOD	org.jczh.appliedxml.ArrayTypeAdapterFactory	create(org.jczh.appliedxml.Serializer,com.google.gsoncode.internal.TypeToken)	null	null
+METHOD	org.jczh.appliedxml.DateTypeAdapter$1	create(org.jczh.appliedxml.Serializer,com.google.gsoncode.internal.TypeToken)	null	null

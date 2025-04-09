@@ -1,0 +1,16 @@
+METHOD	com.google.gson.internal.bind.SqlDateTypeAdapter$1	create(com.google.gson.Gson,com.google.gson.reflect.TypeToken)	null	null
+METHOD	com.google.gson.internal.bind.TypeAdapters$26	create(com.google.gson.Gson,com.google.gson.reflect.TypeToken)	null	null
+METHOD	com.google.gson.internal.bind.TypeAdapters$30	create(com.google.gson.Gson,com.google.gson.reflect.TypeToken)	null	null
+METHOD	com.google.gson.internal.bind.TypeAdapters$31	create(com.google.gson.Gson,com.google.gson.reflect.TypeToken)	null	null
+FIELD	rivercityransom.impl.GangsterImpl	null	chose	null
+METHOD	com.google.gson.internal.bind.MapTypeAdapterFactory	create(com.google.gson.Gson,com.google.gson.reflect.TypeToken)	null	null
+METHOD	com.google.gson.internal.Excluder	create(com.google.gson.Gson,com.google.gson.reflect.TypeToken)	null	null
+METHOD	com.google.gson.internal.bind.ArrayTypeAdapter$1	create(com.google.gson.Gson,com.google.gson.reflect.TypeToken)	null	null
+METHOD	com.google.gson.internal.ConstructorConstructor	newDefaultConstructor(java.lang.Class)	null	null
+METHOD	com.google.gson.internal.bind.DateTypeAdapter$1	create(com.google.gson.Gson,com.google.gson.reflect.TypeToken)	null	null
+METHOD	com.google.gson.internal.bind.TypeAdapters$22	create(com.google.gson.Gson,com.google.gson.reflect.TypeToken)	null	null
+FIELD	rivercityransom.impl.BlocImpl	null	objet	null
+METHOD	com.google.gson.internal.bind.TimeTypeAdapter$1	create(com.google.gson.Gson,com.google.gson.reflect.TypeToken)	null	null
+METHOD	com.google.gson.internal.bind.CollectionTypeAdapterFactory	create(com.google.gson.Gson,com.google.gson.reflect.TypeToken)	null	null
+METHOD	com.google.gson.internal.ConstructorConstructor	newDefaultImplementationConstructor(java.lang.reflect.Type,java.lang.Class)	null	null
+METHOD	com.google.gson.internal.bind.ObjectTypeAdapter$1	create(com.google.gson.Gson,com.google.gson.reflect.TypeToken)	null	null

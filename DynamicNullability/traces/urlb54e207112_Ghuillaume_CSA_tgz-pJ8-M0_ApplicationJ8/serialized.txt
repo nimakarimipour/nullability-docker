@@ -1,0 +1,2 @@
+METHOD	M2.Attachment	getReceiver(M2.Interface)	null	null
+METHOD	M2.Binding	getReceiver(M2.Interface)	null	null

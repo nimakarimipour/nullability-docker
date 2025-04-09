@@ -1,0 +1,889 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 8 times.  Unmatched entries are ignored!
+Unterminated calls:
+  kademlia.simulations.RoutingTableStateTesting.main(java.lang.String[]) : 1 invocation
+  kademlia.JKademliaNode.JKademliaNode(java.lang.String, kademlia.node.KademliaId, int) : 1 invocation
+  kademlia.JKademliaNode.JKademliaNode(java.lang.String, kademlia.node.Node, int, kademlia.KadConfiguration) : 1 invocation
+  kademlia.JKademliaNode.JKademliaNode(java.lang.String, kademlia.node.Node, int, kademlia.routing.KademliaRoutingTable, kademlia.KadConfiguration) : 1 invocation
+  kademlia.JKademliaNode.JKademliaNode(java.lang.String, kademlia.node.Node, int, kademlia.dht.KademliaDHT, kademlia.routing.KademliaRoutingTable, kademlia.KadConfiguration) : 1 invocation
+  kademlia.KadServer.KadServer(int, kademlia.message.KademliaMessageFactory, kademlia.node.Node, kademlia.KadConfiguration, kademlia.KadStatistician) : 1 invocation
+  kademlia.simulations.RoutingTableStateTesting.printRoutingTables() : 1 invocation
+  kademlia.simulations.RoutingTableStateTesting.printRoutingTable(int) : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+missing variables in newEnterExitRel:
+  parent = kademlia.simulations.RoutingTableStateTesting.printRoutingTable(int):::ENTER
+  child = kademlia.simulations.RoutingTableStateTesting.printRoutingTable(int):::EXIT
+  parent.var_infos = [Ldaikon.VarInfo;@448fa659
+parent varinfos missing from parent_to_child_map:
+   this.kads[arg0]
+   this.kads[arg0-1]
+rel.parent_to_child_map:
+    this => orig(this)
+    this.kads => orig(this.kads)
+    this.kads.getClass().getName() => orig(this.kads.getClass().getName())
+    this.kads[..] => orig(this.kads[..])
+    this.kads[..].getClass().getName() => orig(this.kads[..].getClass().getName())
+    this.kads[..].ownerId => orig(this.kads[..].ownerId)
+    this.kads[..].ownerId.toString => orig(this.kads[..].ownerId.toString)
+    this.kads[..].localNode => orig(this.kads[..].localNode)
+    this.kads[..].localNode.nodeId => orig(this.kads[..].localNode.nodeId)
+    this.kads[..].localNode.inetAddress => orig(this.kads[..].localNode.inetAddress)
+    this.kads[..].localNode.port => orig(this.kads[..].localNode.port)
+    this.kads[..].localNode.strRep => orig(this.kads[..].localNode.strRep)
+    this.kads[..].localNode.strRep.toString => orig(this.kads[..].localNode.strRep.toString)
+    this.kads[..].server => orig(this.kads[..].server)
+    this.kads[..].server.config => orig(this.kads[..].server.config)
+    this.kads[..].server.config.getClass().getName() => orig(this.kads[..].server.config.getClass().getName())
+    this.kads[..].server.socket => orig(this.kads[..].server.socket)
+    this.kads[..].server.isRunning => orig(this.kads[..].server.isRunning)
+    this.kads[..].server.receivers => orig(this.kads[..].server.receivers)
+    this.kads[..].server.receivers.getClass().getName() => orig(this.kads[..].server.receivers.getClass().getName())
+    this.kads[..].server.timer => orig(this.kads[..].server.timer)
+    this.kads[..].server.tasks => orig(this.kads[..].server.tasks)
+    this.kads[..].server.tasks.getClass().getName() => orig(this.kads[..].server.tasks.getClass().getName())
+    this.kads[..].server.localNode => orig(this.kads[..].server.localNode)
+    this.kads[..].server.messageFactory => orig(this.kads[..].server.messageFactory)
+    this.kads[..].server.messageFactory.getClass().getName() => orig(this.kads[..].server.messageFactory.getClass().getName())
+    this.kads[..].server.statistician => orig(this.kads[..].server.statistician)
+    this.kads[..].server.statistician.getClass().getName() => orig(this.kads[..].server.statistician.getClass().getName())
+    this.kads[..].dht => orig(this.kads[..].dht)
+    this.kads[..].dht.getClass().getName() => orig(this.kads[..].dht.getClass().getName())
+    this.kads[..].routingTable => orig(this.kads[..].routingTable)
+    this.kads[..].routingTable.getClass().getName() => orig(this.kads[..].routingTable.getClass().getName())
+    this.kads[..].udpPort => orig(this.kads[..].udpPort)
+    this.kads[..].config => orig(this.kads[..].config)
+    this.kads[..].config.getClass().getName() => orig(this.kads[..].config.getClass().getName())
+    this.kads[..].refreshOperationTimer => orig(this.kads[..].refreshOperationTimer)
+    this.kads[..].refreshOperationTTask => orig(this.kads[..].refreshOperationTTask)
+    this.kads[..].refreshOperationTTask.getClass().getName() => orig(this.kads[..].refreshOperationTTask.getClass().getName())
+    this.kads[..].messageFactory => orig(this.kads[..].messageFactory)
+    this.kads[..].messageFactory.localNode => orig(this.kads[..].messageFactory.localNode)
+    this.kads[..].messageFactory.localNode.getClass().getName() => orig(this.kads[..].messageFactory.localNode.getClass().getName())
+    this.kads[..].messageFactory.dht => orig(this.kads[..].messageFactory.dht)
+    this.kads[..].messageFactory.dht.getClass().getName() => orig(this.kads[..].messageFactory.dht.getClass().getName())
+    this.kads[..].messageFactory.config => orig(this.kads[..].messageFactory.config)
+    this.kads[..].messageFactory.config.getClass().getName() => orig(this.kads[..].messageFactory.config.getClass().getName())
+    this.kads[..].statistician => orig(this.kads[..].statistician)
+    this.kads[..].statistician.getClass().getName() => orig(this.kads[..].statistician.getClass().getName())
+    this.numKads => orig(this.numKads)
+    arg0 => orig(arg0)
+    size(this.kads[..]) => orig(size(this.kads[..]))
+    size(this.kads[..])-1 => orig(size(this.kads[..]))-1
+    this.kads[this.numKads] => orig(this.kads[this.numKads])
+    this.kads[this.numKads-1] => orig(this.kads[this.numKads-1])
+child.var_infos:
+    this
+    this.kads
+    this.kads.getClass().getName()
+    this.kads[..]
+    this.kads[..].getClass().getName()
+    this.kads[..].ownerId
+    this.kads[..].ownerId.toString
+    this.kads[..].localNode
+    this.kads[..].localNode.nodeId
+    this.kads[..].localNode.inetAddress
+    this.kads[..].localNode.port
+    this.kads[..].localNode.strRep
+    this.kads[..].localNode.strRep.toString
+    this.kads[..].server
+    this.kads[..].server.config
+    this.kads[..].server.config.getClass().getName()
+    this.kads[..].server.socket
+    this.kads[..].server.isRunning
+    this.kads[..].server.receivers
+    this.kads[..].server.receivers.getClass().getName()
+    this.kads[..].server.timer
+    this.kads[..].server.tasks
+    this.kads[..].server.tasks.getClass().getName()
+    this.kads[..].server.localNode
+    this.kads[..].server.messageFactory
+    this.kads[..].server.messageFactory.getClass().getName()
+    this.kads[..].server.statistician
+    this.kads[..].server.statistician.getClass().getName()
+    this.kads[..].dht
+    this.kads[..].dht.getClass().getName()
+    this.kads[..].routingTable
+    this.kads[..].routingTable.getClass().getName()
+    this.kads[..].udpPort
+    this.kads[..].config
+    this.kads[..].config.getClass().getName()
+    this.kads[..].refreshOperationTimer
+    this.kads[..].refreshOperationTTask
+    this.kads[..].refreshOperationTTask.getClass().getName()
+    this.kads[..].messageFactory
+    this.kads[..].messageFactory.localNode
+    this.kads[..].messageFactory.localNode.getClass().getName()
+    this.kads[..].messageFactory.dht
+    this.kads[..].messageFactory.dht.getClass().getName()
+    this.kads[..].messageFactory.config
+    this.kads[..].messageFactory.config.getClass().getName()
+    this.kads[..].statistician
+    this.kads[..].statistician.getClass().getName()
+    this.numKads
+    arg0
+    orig(this)
+    orig(this.kads)
+    orig(this.kads.getClass().getName())
+    orig(this.kads[..])
+    orig(this.kads[..].getClass().getName())
+    orig(this.kads[..].ownerId)
+    orig(this.kads[..].ownerId.toString)
+    orig(this.kads[..].localNode)
+    orig(this.kads[..].localNode.nodeId)
+    orig(this.kads[..].localNode.inetAddress)
+    orig(this.kads[..].localNode.port)
+    orig(this.kads[..].localNode.strRep)
+    orig(this.kads[..].localNode.strRep.toString)
+    orig(this.kads[..].server)
+    orig(this.kads[..].server.config)
+    orig(this.kads[..].server.config.getClass().getName())
+    orig(this.kads[..].server.socket)
+    orig(this.kads[..].server.isRunning)
+    orig(this.kads[..].server.receivers)
+    orig(this.kads[..].server.receivers.getClass().getName())
+    orig(this.kads[..].server.timer)
+    orig(this.kads[..].server.tasks)
+    orig(this.kads[..].server.tasks.getClass().getName())
+    orig(this.kads[..].server.localNode)
+    orig(this.kads[..].server.messageFactory)
+    orig(this.kads[..].server.messageFactory.getClass().getName())
+    orig(this.kads[..].server.statistician)
+    orig(this.kads[..].server.statistician.getClass().getName())
+    orig(this.kads[..].dht)
+    orig(this.kads[..].dht.getClass().getName())
+    orig(this.kads[..].routingTable)
+    orig(this.kads[..].routingTable.getClass().getName())
+    orig(this.kads[..].udpPort)
+    orig(this.kads[..].config)
+    orig(this.kads[..].config.getClass().getName())
+    orig(this.kads[..].refreshOperationTimer)
+    orig(this.kads[..].refreshOperationTTask)
+    orig(this.kads[..].refreshOperationTTask.getClass().getName())
+    orig(this.kads[..].messageFactory)
+    orig(this.kads[..].messageFactory.localNode)
+    orig(this.kads[..].messageFactory.localNode.getClass().getName())
+    orig(this.kads[..].messageFactory.dht)
+    orig(this.kads[..].messageFactory.dht.getClass().getName())
+    orig(this.kads[..].messageFactory.config)
+    orig(this.kads[..].messageFactory.config.getClass().getName())
+    orig(this.kads[..].statistician)
+    orig(this.kads[..].statistician.getClass().getName())
+    orig(this.numKads)
+    orig(arg0)
+    size(this.kads[..])
+    size(this.kads[..])-1
+    orig(size(this.kads[..]))
+    orig(size(this.kads[..]))-1
+    this.kads[this.numKads]
+    this.kads[this.numKads-1]
+    this.kads[orig(this.numKads)]
+    this.kads[orig(this.numKads)-1]
+    orig(this.kads[post(this.numKads)])
+    orig(this.kads[post(this.numKads)-1])
+    orig(this.kads[this.numKads])
+    orig(this.kads[this.numKads-1])
+End of diagnostics for newEnterExitRel(kademlia.simulations.RoutingTableStateTesting.printRoutingTable(int):::ENTER, kademlia.simulations.RoutingTableStateTesting.printRoutingTable(int):::EXIT)
+===========================================================================
+kademlia.DefaultConfiguration:::CLASS
+kademlia.DefaultConfiguration.LOCAL_FOLDER has only one value
+kademlia.DefaultConfiguration.LOCAL_FOLDER.toString == "kademlia"
+===========================================================================
+kademlia.DefaultConfiguration:::OBJECT
+this has only one value
+===========================================================================
+kademlia.DefaultConfiguration.DefaultConfiguration():::EXIT
+===========================================================================
+kademlia.DefaultConfiguration.k():::ENTER
+===========================================================================
+kademlia.DefaultConfiguration.k():::EXIT
+kademlia.DefaultConfiguration.LOCAL_FOLDER == orig(kademlia.DefaultConfiguration.LOCAL_FOLDER)
+kademlia.DefaultConfiguration.LOCAL_FOLDER.toString == orig(kademlia.DefaultConfiguration.LOCAL_FOLDER.toString)
+return == 5
+===========================================================================
+kademlia.Statistician:::OBJECT
+this has only one value
+this.totalDataSent == 0
+this.totalDataReceived == 0
+this.numDataSent == 0
+this.numDataReceived == 0
+this.bootstrapTime == 0
+this.numContentLookups == 0
+this.numFailedContentLookups == 0
+this.totalContentLookupTime == 0
+this.totalRouteLength == 0
+===========================================================================
+kademlia.Statistician.Statistician():::EXIT
+===========================================================================
+kademlia.dht.DHT:::OBJECT
+this has only one value
+this.contentManager.entries has only one value
+this.contentManager.entries.getClass().getName() == java.util.HashMap.class
+this.serializer == null
+this.config has only one value
+this.config.getClass().getName() == kademlia.DefaultConfiguration.class
+this.ownerId has only one value
+this.ownerId.toString == "user0"
+===========================================================================
+kademlia.dht.DHT.DHT(java.lang.String, kademlia.KadConfiguration):::ENTER
+arg0 has only one value
+arg0.toString == "user0"
+arg1 has only one value
+arg1.getClass().getName() == kademlia.DefaultConfiguration.class
+===========================================================================
+kademlia.dht.DHT.DHT(java.lang.String, kademlia.KadConfiguration):::EXIT
+this.config == orig(arg1)
+this.config.getClass().getName() == orig(arg1.getClass().getName())
+this.ownerId == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.contentManager has only one value
+arg0.toString == "user0"
+===========================================================================
+kademlia.dht.DHT.initialize():::ENTER
+this.contentManager == null
+===========================================================================
+kademlia.dht.DHT.initialize():::EXIT
+this.serializer == orig(this.serializer)
+this.config == orig(this.config)
+this.config.getClass().getName() == orig(this.config.getClass().getName())
+this.ownerId == orig(this.ownerId)
+this.ownerId.toString == orig(this.ownerId.toString)
+this.contentManager has only one value
+===========================================================================
+kademlia.dht.StoredContentManager:::OBJECT
+this has only one value
+this.entries has only one value
+this.entries.getClass().getName() == java.util.HashMap.class
+===========================================================================
+kademlia.dht.StoredContentManager.StoredContentManager():::EXIT
+===========================================================================
+kademlia.message.MessageFactory:::OBJECT
+this has only one value
+this.localNode has only one value
+this.localNode.getClass().getName() == kademlia.JKademliaNode.class
+this.dht has only one value
+this.dht.getClass().getName() == kademlia.dht.DHT.class
+this.config has only one value
+this.config.getClass().getName() == kademlia.DefaultConfiguration.class
+===========================================================================
+kademlia.message.MessageFactory.MessageFactory(kademlia.KademliaNode, kademlia.dht.KademliaDHT, kademlia.KadConfiguration):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == kademlia.JKademliaNode.class
+arg1 has only one value
+arg1.getClass().getName() == kademlia.dht.DHT.class
+arg2 has only one value
+arg2.getClass().getName() == kademlia.DefaultConfiguration.class
+===========================================================================
+kademlia.message.MessageFactory.MessageFactory(kademlia.KademliaNode, kademlia.dht.KademliaDHT, kademlia.KadConfiguration):::EXIT
+===========================================================================
+kademlia.node.KademliaId:::CLASS
+===========================================================================
+kademlia.node.KademliaId:::OBJECT
+this.keyBytes != null
+this.keyBytes[] one of { [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48] }
+this.keyBytes[] elements >= 0
+size(this.keyBytes[]) == 20
+===========================================================================
+kademlia.node.KademliaId.KademliaId(byte[]):::ENTER
+arg0 has only one value
+arg0[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+arg0[] elements == 0
+size(arg0[]) == 20
+===========================================================================
+kademlia.node.KademliaId.KademliaId(byte[]):::EXIT
+this.keyBytes == orig(arg0)
+arg0[] == orig(arg0[])
+this.keyBytes has only one value
+this.keyBytes[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+this.keyBytes[] elements == 0
+arg0[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+arg0[] elements == 0
+===========================================================================
+kademlia.node.KademliaId.KademliaId(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "HRF456789SD584567460"
+===========================================================================
+kademlia.node.KademliaId.KademliaId(java.lang.String):::EXIT
+arg0.toString == orig(arg0.toString)
+this.keyBytes has only one value
+this.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0.toString == "HRF456789SD584567460"
+===========================================================================
+kademlia.node.KademliaId.getBytes():::ENTER
+this has only one value
+this.keyBytes has only one value
+this.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+===========================================================================
+kademlia.node.KademliaId.getBytes():::EXIT
+this.keyBytes == return
+this.keyBytes[] == orig(this.keyBytes[])
+return == orig(this.keyBytes)
+this.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+return has only one value
+return[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+size(return[]) == 20
+===========================================================================
+kademlia.node.KademliaId.getDistance(kademlia.node.KademliaId):::ENTER
+this == arg0
+this.keyBytes == arg0.keyBytes
+this has only one value
+this.keyBytes has only one value
+this.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0 has only one value
+arg0.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+size(arg0.keyBytes[]) == 20
+===========================================================================
+kademlia.node.KademliaId.getDistance(kademlia.node.KademliaId):::EXIT
+this.keyBytes == arg0.keyBytes
+this.keyBytes == orig(this.keyBytes)
+this.keyBytes == orig(arg0.keyBytes)
+this.keyBytes[] == orig(this.keyBytes[])
+arg0.keyBytes[] == orig(arg0.keyBytes[])
+this.keyBytes has only one value
+this.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+return == 0
+size(arg0.keyBytes[]) == 20
+===========================================================================
+kademlia.node.KademliaId.getFirstSetBitIndex():::ENTER
+this has only one value
+this.keyBytes has only one value
+this.keyBytes[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+this.keyBytes[] elements == 0
+===========================================================================
+kademlia.node.KademliaId.getFirstSetBitIndex():::EXIT
+this.keyBytes == orig(this.keyBytes)
+this.keyBytes[] == orig(this.keyBytes[])
+this.keyBytes has only one value
+this.keyBytes[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+this.keyBytes[] elements == 0
+return == 160
+===========================================================================
+kademlia.node.KademliaId.hexRepresentation():::ENTER
+this has only one value
+this.keyBytes has only one value
+this.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+===========================================================================
+kademlia.node.KademliaId.hexRepresentation():::EXIT
+this.keyBytes == orig(this.keyBytes)
+this.keyBytes[] == orig(this.keyBytes[])
+this.keyBytes has only one value
+this.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+return has only one value
+return.toString == "4852463435363738395344353834353637343630"
+===========================================================================
+kademlia.node.KademliaId.toString():::ENTER
+this has only one value
+this.keyBytes has only one value
+this.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+===========================================================================
+kademlia.node.KademliaId.toString():::EXIT
+this.keyBytes == orig(this.keyBytes)
+this.keyBytes[] == orig(this.keyBytes[])
+this.keyBytes has only one value
+this.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+return has only one value
+return.toString == "4852463435363738395344353834353637343630"
+===========================================================================
+kademlia.node.KademliaId.xor(kademlia.node.KademliaId):::ENTER
+this == arg0
+this.keyBytes == arg0.keyBytes
+this has only one value
+this.keyBytes has only one value
+this.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0 has only one value
+arg0.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+size(arg0.keyBytes[]) == 20
+===========================================================================
+kademlia.node.KademliaId.xor(kademlia.node.KademliaId):::EXIT
+this.keyBytes == arg0.keyBytes
+this.keyBytes == orig(this.keyBytes)
+this.keyBytes == orig(arg0.keyBytes)
+this.keyBytes[] == orig(this.keyBytes[])
+arg0.keyBytes[] == orig(arg0.keyBytes[])
+this.keyBytes has only one value
+this.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+return has only one value
+return.keyBytes has only one value
+return.keyBytes[] == [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+return.keyBytes[] elements == 0
+size(arg0.keyBytes[]) == 20
+size(return.keyBytes[]) == 20
+===========================================================================
+kademlia.node.Node:::OBJECT
+this has only one value
+this.nodeId has only one value
+this.nodeId.keyBytes has only one value
+this.nodeId.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+this.inetAddress has only one value
+this.port == 1334
+this.strRep has only one value
+this.strRep.toString == "4852463435363738395344353834353637343630"
+size(this.nodeId.keyBytes[]) == 20
+===========================================================================
+kademlia.node.Node.Node(kademlia.node.KademliaId, java.net.InetAddress, int):::ENTER
+arg0 has only one value
+arg0.keyBytes has only one value
+arg0.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg1 has only one value
+arg2 == 1334
+size(arg0.keyBytes[]) == 20
+===========================================================================
+kademlia.node.Node.Node(kademlia.node.KademliaId, java.net.InetAddress, int):::EXIT
+arg0.keyBytes == orig(arg0.keyBytes)
+arg0.keyBytes[] == orig(arg0.keyBytes[])
+arg0.keyBytes has only one value
+arg0.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+size(arg0.keyBytes[]) == 20
+===========================================================================
+kademlia.node.Node.equals(java.lang.Object):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == kademlia.node.Node.class
+===========================================================================
+kademlia.node.Node.equals(java.lang.Object):::EXIT116
+===========================================================================
+kademlia.node.Node.equals(java.lang.Object):::EXIT116;condition="return == true"
+===========================================================================
+kademlia.node.Node.equals(java.lang.Object):::EXIT
+this.nodeId == orig(this.nodeId)
+this.nodeId.keyBytes == orig(this.nodeId.keyBytes)
+this.nodeId.keyBytes[] == orig(this.nodeId.keyBytes[])
+this.inetAddress == orig(this.inetAddress)
+this.port == orig(this.port)
+this.strRep == orig(this.strRep)
+this.strRep.toString == orig(this.strRep.toString)
+return == true
+===========================================================================
+kademlia.node.Node.equals(java.lang.Object):::EXIT;condition="return == true"
+===========================================================================
+kademlia.node.Node.getNodeId():::ENTER
+===========================================================================
+kademlia.node.Node.getNodeId():::EXIT
+this.nodeId == orig(this.nodeId)
+this.nodeId.keyBytes == orig(this.nodeId.keyBytes)
+this.nodeId.keyBytes[] == orig(this.nodeId.keyBytes[])
+this.inetAddress == orig(this.inetAddress)
+this.port == orig(this.port)
+this.strRep == orig(this.strRep)
+this.strRep.toString == orig(this.strRep.toString)
+return has only one value
+return.keyBytes has only one value
+return.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+size(return.keyBytes[]) == 20
+===========================================================================
+kademlia.routing.Contact:::OBJECT
+this has only one value
+this.n has only one value
+this.n.nodeId has only one value
+this.n.nodeId.keyBytes has only one value
+this.n.nodeId.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+this.n.inetAddress has only one value
+this.n.port == 1334
+this.n.strRep has only one value
+this.n.strRep.toString == "4852463435363738395344353834353637343630"
+this.lastSeen == 1743929908
+this.staleCount == 0
+size(this.n.nodeId.keyBytes[]) == 20
+===========================================================================
+kademlia.routing.Contact.Contact(kademlia.node.Node):::ENTER
+arg0 has only one value
+arg0.nodeId has only one value
+arg0.nodeId.keyBytes has only one value
+arg0.nodeId.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0.inetAddress has only one value
+arg0.port == 1334
+arg0.strRep has only one value
+arg0.strRep.toString == "4852463435363738395344353834353637343630"
+size(arg0.nodeId.keyBytes[]) == 20
+===========================================================================
+kademlia.routing.Contact.Contact(kademlia.node.Node):::EXIT
+this.n == orig(arg0)
+this.n.nodeId == arg0.nodeId
+this.n.nodeId.keyBytes == arg0.nodeId.keyBytes
+this.n.inetAddress == arg0.inetAddress
+this.n.port == arg0.port
+this.n.strRep == arg0.strRep
+arg0.nodeId == orig(arg0.nodeId)
+arg0.nodeId.keyBytes == orig(arg0.nodeId.keyBytes)
+arg0.nodeId.keyBytes[] == orig(arg0.nodeId.keyBytes[])
+arg0.inetAddress == orig(arg0.inetAddress)
+arg0.port == orig(arg0.port)
+arg0.strRep == orig(arg0.strRep)
+arg0.strRep.toString == orig(arg0.strRep.toString)
+arg0.nodeId has only one value
+arg0.nodeId.keyBytes has only one value
+arg0.nodeId.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0.inetAddress has only one value
+arg0.port == 1334
+arg0.strRep has only one value
+arg0.strRep.toString == "4852463435363738395344353834353637343630"
+size(arg0.nodeId.keyBytes[]) == 20
+===========================================================================
+kademlia.routing.Contact.compareTo(kademlia.routing.Contact):::ENTER
+this == arg0
+this.n == arg0.n
+this.n.nodeId == arg0.n.nodeId
+this.n.inetAddress == arg0.n.inetAddress
+this.n.port == arg0.n.port
+this.n.strRep == arg0.n.strRep
+this.lastSeen == arg0.lastSeen
+arg0 has only one value
+arg0.n.strRep.toString == "4852463435363738395344353834353637343630"
+arg0.staleCount == 0
+===========================================================================
+kademlia.routing.Contact.compareTo(kademlia.routing.Contact):::EXIT106
+===========================================================================
+kademlia.routing.Contact.compareTo(kademlia.routing.Contact):::EXIT
+this.n == arg0.n
+this.n == orig(this.n)
+this.n == orig(arg0.n)
+this.n.nodeId == arg0.n.nodeId
+this.n.nodeId == orig(this.n.nodeId)
+this.n.nodeId == orig(arg0.n.nodeId)
+this.n.nodeId.keyBytes == orig(this.n.nodeId.keyBytes)
+this.n.nodeId.keyBytes[] == orig(this.n.nodeId.keyBytes[])
+this.n.inetAddress == arg0.n.inetAddress
+this.n.inetAddress == orig(this.n.inetAddress)
+this.n.inetAddress == orig(arg0.n.inetAddress)
+this.n.port == arg0.n.port
+this.n.port == orig(this.n.port)
+this.n.port == orig(arg0.n.port)
+this.n.strRep == arg0.n.strRep
+this.n.strRep == orig(this.n.strRep)
+this.n.strRep == orig(arg0.n.strRep)
+this.n.strRep.toString == orig(this.n.strRep.toString)
+this.lastSeen == arg0.lastSeen
+this.lastSeen == orig(this.lastSeen)
+this.lastSeen == orig(arg0.lastSeen)
+this.staleCount == orig(this.staleCount)
+arg0.n.strRep.toString == orig(arg0.n.strRep.toString)
+arg0.staleCount == orig(arg0.staleCount)
+arg0.n.strRep.toString == "4852463435363738395344353834353637343630"
+arg0.staleCount == 0
+return == 0
+===========================================================================
+kademlia.routing.Contact.getNode():::ENTER
+===========================================================================
+kademlia.routing.Contact.getNode():::EXIT
+this.n == return
+this.n.nodeId == return.nodeId
+this.n.nodeId.keyBytes == return.nodeId.keyBytes
+this.n.nodeId.keyBytes[] == orig(this.n.nodeId.keyBytes[])
+this.n.inetAddress == return.inetAddress
+this.n.port == return.port
+this.n.strRep == return.strRep
+this.n.strRep.toString == orig(this.n.strRep.toString)
+this.lastSeen == orig(this.lastSeen)
+this.staleCount == orig(this.staleCount)
+return == orig(this.n)
+return.nodeId == orig(this.n.nodeId)
+return.nodeId.keyBytes == orig(this.n.nodeId.keyBytes)
+return.inetAddress == orig(this.n.inetAddress)
+return.port == orig(this.n.port)
+return.strRep == orig(this.n.strRep)
+return has only one value
+return.nodeId has only one value
+return.nodeId.keyBytes has only one value
+return.nodeId.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+return.inetAddress has only one value
+return.port == 1334
+return.strRep has only one value
+return.strRep.toString == "4852463435363738395344353834353637343630"
+size(return.nodeId.keyBytes[]) == 20
+===========================================================================
+kademlia.routing.JKademliaBucket:::OBJECT
+this.depth >= 0
+this.contacts != null
+this.replacementCache != null
+this.config has only one value
+this.config != null
+this.config.getClass().getName() == kademlia.DefaultConfiguration.class
+===========================================================================
+kademlia.routing.JKademliaBucket.JKademliaBucket(int, kademlia.KadConfiguration):::ENTER
+arg1 has only one value
+arg1 != null
+arg1.getClass().getName() == kademlia.DefaultConfiguration.class
+===========================================================================
+kademlia.routing.JKademliaBucket.JKademliaBucket(int, kademlia.KadConfiguration):::EXIT
+this.depth == orig(arg0)
+this.config == orig(arg1)
+this.config.getClass().getName() == orig(arg1.getClass().getName())
+===========================================================================
+kademlia.routing.JKademliaBucket.insert(kademlia.node.Node):::ENTER
+this has only one value
+this.depth == 0
+this.contacts has only one value
+this.replacementCache has only one value
+arg0 has only one value
+arg0.nodeId has only one value
+arg0.nodeId.keyBytes has only one value
+arg0.nodeId.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0.inetAddress has only one value
+arg0.port == 1334
+arg0.strRep has only one value
+arg0.strRep.toString == "4852463435363738395344353834353637343630"
+size(arg0.nodeId.keyBytes[]) == 20
+===========================================================================
+kademlia.routing.JKademliaBucket.insert(kademlia.node.Node):::EXIT
+this.depth == orig(this.depth)
+this.contacts == orig(this.contacts)
+this.replacementCache == orig(this.replacementCache)
+this.config == orig(this.config)
+this.config.getClass().getName() == orig(this.config.getClass().getName())
+arg0.nodeId == orig(arg0.nodeId)
+arg0.nodeId.keyBytes == orig(arg0.nodeId.keyBytes)
+arg0.nodeId.keyBytes[] == orig(arg0.nodeId.keyBytes[])
+arg0.inetAddress == orig(arg0.inetAddress)
+arg0.port == orig(arg0.port)
+arg0.strRep == orig(arg0.strRep)
+arg0.strRep.toString == orig(arg0.strRep.toString)
+this.depth == 0
+this.contacts has only one value
+this.replacementCache has only one value
+arg0.nodeId has only one value
+arg0.nodeId.keyBytes has only one value
+arg0.nodeId.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0.inetAddress has only one value
+arg0.port == 1334
+arg0.strRep has only one value
+arg0.strRep.toString == "4852463435363738395344353834353637343630"
+size(arg0.nodeId.keyBytes[]) == 20
+===========================================================================
+kademlia.routing.JKademliaBucket.insert(kademlia.routing.Contact):::ENTER
+this has only one value
+this.depth == 0
+this.contacts has only one value
+this.replacementCache has only one value
+arg0 has only one value
+arg0.n has only one value
+arg0.n.nodeId has only one value
+arg0.n.inetAddress has only one value
+arg0.n.port == 1334
+arg0.n.strRep has only one value
+arg0.n.strRep.toString == "4852463435363738395344353834353637343630"
+arg0.lastSeen == 1743929908
+arg0.staleCount == 0
+===========================================================================
+kademlia.routing.JKademliaBucket.insert(kademlia.routing.Contact):::EXIT
+this.depth == orig(this.depth)
+this.contacts == orig(this.contacts)
+this.replacementCache == orig(this.replacementCache)
+this.config == orig(this.config)
+this.config.getClass().getName() == orig(this.config.getClass().getName())
+arg0.n == orig(arg0.n)
+arg0.n.nodeId == orig(arg0.n.nodeId)
+arg0.n.inetAddress == orig(arg0.n.inetAddress)
+arg0.n.port == orig(arg0.n.port)
+arg0.n.strRep == orig(arg0.n.strRep)
+arg0.n.strRep.toString == orig(arg0.n.strRep.toString)
+arg0.lastSeen == orig(arg0.lastSeen)
+arg0.staleCount == orig(arg0.staleCount)
+this.depth == 0
+this.contacts has only one value
+this.replacementCache has only one value
+arg0.n has only one value
+arg0.n.nodeId has only one value
+arg0.n.inetAddress has only one value
+arg0.n.port == 1334
+arg0.n.strRep has only one value
+arg0.n.strRep.toString == "4852463435363738395344353834353637343630"
+arg0.lastSeen == 1743929908
+arg0.staleCount == 0
+===========================================================================
+kademlia.routing.JKademliaRoutingTable:::OBJECT
+this has only one value
+this.localNode has only one value
+this.localNode.nodeId has only one value
+this.localNode.nodeId.keyBytes has only one value
+this.localNode.nodeId.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+this.localNode.inetAddress has only one value
+this.localNode.port == 1334
+this.localNode.strRep has only one value
+this.localNode.strRep.toString == "4852463435363738395344353834353637343630"
+this.buckets.getClass().getName() == kademlia.routing.KademliaBucket[].class
+this.buckets[] contains no nulls and has only one value, of length 160
+this.buckets[].getClass().getName() == [kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket, kademlia.routing.JKademliaBucket]
+this.buckets[].getClass().getName() elements == kademlia.routing.JKademliaBucket.class
+this.config has only one value
+this.config.getClass().getName() == kademlia.DefaultConfiguration.class
+size(this.localNode.nodeId.keyBytes[]) == 20
+size(this.buckets[]) == 160
+===========================================================================
+kademlia.routing.JKademliaRoutingTable.JKademliaRoutingTable(kademlia.node.Node, kademlia.KadConfiguration):::ENTER
+arg0 has only one value
+arg0.nodeId has only one value
+arg0.nodeId.keyBytes has only one value
+arg0.nodeId.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0.inetAddress has only one value
+arg0.port == 1334
+arg0.strRep has only one value
+arg0.strRep.toString == "4852463435363738395344353834353637343630"
+arg1 has only one value
+arg1.getClass().getName() == kademlia.DefaultConfiguration.class
+size(arg0.nodeId.keyBytes[]) == 20
+===========================================================================
+kademlia.routing.JKademliaRoutingTable.JKademliaRoutingTable(kademlia.node.Node, kademlia.KadConfiguration):::EXIT
+this.localNode == orig(arg0)
+this.localNode.nodeId == arg0.nodeId
+this.localNode.nodeId.keyBytes == arg0.nodeId.keyBytes
+this.localNode.inetAddress == arg0.inetAddress
+this.localNode.port == arg0.port
+this.localNode.strRep == arg0.strRep
+this.config == orig(arg1)
+this.config.getClass().getName() == orig(arg1.getClass().getName())
+arg0.nodeId == orig(arg0.nodeId)
+arg0.nodeId.keyBytes == orig(arg0.nodeId.keyBytes)
+arg0.nodeId.keyBytes[] == orig(arg0.nodeId.keyBytes[])
+arg0.inetAddress == orig(arg0.inetAddress)
+arg0.port == orig(arg0.port)
+arg0.strRep == orig(arg0.strRep)
+arg0.strRep.toString == orig(arg0.strRep.toString)
+this.buckets has only one value
+arg0.nodeId has only one value
+arg0.nodeId.keyBytes has only one value
+arg0.nodeId.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0.inetAddress has only one value
+arg0.port == 1334
+arg0.strRep has only one value
+arg0.strRep.toString == "4852463435363738395344353834353637343630"
+size(arg0.nodeId.keyBytes[]) == 20
+===========================================================================
+kademlia.routing.JKademliaRoutingTable.getBucketId(kademlia.node.KademliaId):::ENTER
+this.localNode.nodeId == arg0
+this.localNode.nodeId.keyBytes == arg0.keyBytes
+this.buckets has only one value
+arg0.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+size(arg0.keyBytes[]) == 20
+===========================================================================
+kademlia.routing.JKademliaRoutingTable.getBucketId(kademlia.node.KademliaId):::EXIT
+this.localNode == orig(this.localNode)
+this.localNode.nodeId == orig(arg0)
+this.localNode.nodeId.keyBytes == arg0.keyBytes
+this.localNode.nodeId.keyBytes[] == orig(this.localNode.nodeId.keyBytes[])
+this.localNode.inetAddress == orig(this.localNode.inetAddress)
+this.localNode.port == orig(this.localNode.port)
+this.localNode.strRep == orig(this.localNode.strRep)
+this.localNode.strRep.toString == orig(this.localNode.strRep.toString)
+this.buckets == orig(this.buckets)
+this.buckets.getClass().getName() == orig(this.buckets.getClass().getName())
+this.buckets[] == orig(this.buckets[])
+this.config == orig(this.config)
+this.config.getClass().getName() == orig(this.config.getClass().getName())
+arg0.keyBytes == orig(this.localNode.nodeId.keyBytes)
+arg0.keyBytes == orig(arg0.keyBytes)
+arg0.keyBytes[] == orig(arg0.keyBytes[])
+this.buckets has only one value
+arg0.keyBytes has only one value
+arg0.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+return == 0
+orig(arg0) has only one value
+size(arg0.keyBytes[]) == 20
+===========================================================================
+kademlia.routing.JKademliaRoutingTable.initialize():::ENTER
+this.buckets == null
+===========================================================================
+kademlia.routing.JKademliaRoutingTable.initialize():::EXIT
+this.localNode == orig(this.localNode)
+this.localNode.nodeId == orig(this.localNode.nodeId)
+this.localNode.nodeId.keyBytes == orig(this.localNode.nodeId.keyBytes)
+this.localNode.nodeId.keyBytes[] == orig(this.localNode.nodeId.keyBytes[])
+this.localNode.inetAddress == orig(this.localNode.inetAddress)
+this.localNode.port == orig(this.localNode.port)
+this.localNode.strRep == orig(this.localNode.strRep)
+this.localNode.strRep.toString == orig(this.localNode.strRep.toString)
+this.config == orig(this.config)
+this.config.getClass().getName() == orig(this.config.getClass().getName())
+this.buckets has only one value
+===========================================================================
+kademlia.routing.JKademliaRoutingTable.insert(kademlia.node.Node):::ENTER
+this.localNode == arg0
+this.localNode.nodeId == arg0.nodeId
+this.localNode.nodeId.keyBytes == arg0.nodeId.keyBytes
+this.localNode.inetAddress == arg0.inetAddress
+this.localNode.port == arg0.port
+this.localNode.strRep == arg0.strRep
+this.buckets has only one value
+arg0.nodeId.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0.strRep.toString == "4852463435363738395344353834353637343630"
+size(arg0.nodeId.keyBytes[]) == 20
+===========================================================================
+kademlia.routing.JKademliaRoutingTable.insert(kademlia.node.Node):::EXIT
+this.localNode == orig(this.localNode)
+this.localNode == orig(arg0)
+this.localNode.nodeId == arg0.nodeId
+this.localNode.nodeId.keyBytes == arg0.nodeId.keyBytes
+this.localNode.nodeId.keyBytes[] == orig(this.localNode.nodeId.keyBytes[])
+this.localNode.inetAddress == arg0.inetAddress
+this.localNode.port == arg0.port
+this.localNode.strRep == arg0.strRep
+this.localNode.strRep.toString == orig(this.localNode.strRep.toString)
+this.buckets == orig(this.buckets)
+this.buckets.getClass().getName() == orig(this.buckets.getClass().getName())
+this.buckets[] == orig(this.buckets[])
+this.config == orig(this.config)
+this.config.getClass().getName() == orig(this.config.getClass().getName())
+arg0.nodeId == orig(this.localNode.nodeId)
+arg0.nodeId == orig(arg0.nodeId)
+arg0.nodeId.keyBytes == orig(this.localNode.nodeId.keyBytes)
+arg0.nodeId.keyBytes == orig(arg0.nodeId.keyBytes)
+arg0.nodeId.keyBytes[] == orig(arg0.nodeId.keyBytes[])
+arg0.inetAddress == orig(this.localNode.inetAddress)
+arg0.inetAddress == orig(arg0.inetAddress)
+arg0.port == orig(this.localNode.port)
+arg0.port == orig(arg0.port)
+arg0.strRep == orig(this.localNode.strRep)
+arg0.strRep == orig(arg0.strRep)
+arg0.strRep.toString == orig(arg0.strRep.toString)
+this.buckets has only one value
+arg0.nodeId has only one value
+arg0.nodeId.keyBytes has only one value
+arg0.nodeId.keyBytes[] == [72, 82, 70, 52, 53, 54, 55, 56, 57, 83, 68, 53, 56, 52, 53, 54, 55, 52, 54, 48]
+arg0.inetAddress has only one value
+arg0.port == 1334
+arg0.strRep has only one value
+arg0.strRep.toString == "4852463435363738395344353834353637343630"
+size(arg0.nodeId.keyBytes[]) == 20
+===========================================================================
+kademlia.simulations.RoutingTableStateTesting:::OBJECT
+this.numKads == size(this.kads[])
+this has only one value
+this.kads has only one value
+this.kads.getClass().getName() == kademlia.JKademliaNode[].class
+this.kads[] contains only nulls and has only one value, of length 10
+this.kads[] elements == null
+this.kads[].getClass().getName() == [null, null, null, null, null, null, null, null, null, null]
+this.kads[].getClass().getName() elements == null
+this.kads[].server.config.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].server.config.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.kads[].server.receivers.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].server.receivers.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.kads[].server.tasks.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].server.tasks.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.kads[].server.messageFactory.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].server.messageFactory.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.kads[].server.statistician.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].server.statistician.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.kads[].dht.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].dht.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.kads[].routingTable.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].routingTable.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.kads[].config.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].config.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.kads[].refreshOperationTTask.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].refreshOperationTTask.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.kads[].messageFactory.localNode.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].messageFactory.localNode.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.kads[].messageFactory.dht.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].messageFactory.dht.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.kads[].messageFactory.config.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].messageFactory.config.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.kads[].statistician.getClass().getName() == [daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject, daikon.chicory.NonsensicalObject]
+this.kads[].statistician.getClass().getName() elements == daikon.chicory.NonsensicalObject.class
+this.numKads == 10
+this.kads[] elements == this.kads[this.numKads-1]
+===========================================================================
+kademlia.simulations.RoutingTableStateTesting.RoutingTableStateTesting():::EXIT
+Exiting Daikon.

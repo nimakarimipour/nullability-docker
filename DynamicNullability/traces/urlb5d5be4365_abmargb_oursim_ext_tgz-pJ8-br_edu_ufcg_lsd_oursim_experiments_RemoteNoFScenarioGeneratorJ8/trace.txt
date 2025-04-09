@@ -1,0 +1,379 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator:::CLASS
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION == 10000
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.LOCALHOST_DELAY == 5.0
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.MAX_WORKERS == 4
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS has only one value
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS != null
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[] == [1, 2, 4, 20, 100]
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[] elements >= 1
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[] sorted by <
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY has only one value
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY != null
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[] == [0, 150000, 300000, 500000]
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[] elements >= 0
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[] sorted by <
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO has only one value
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO != null
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO.toString == "remote-nof"
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS has only one value
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS != null
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS.getClass().getName() == int[][].class
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS[] contains no nulls and has only one value, of length 5
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS[] elements != null
+size(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[]) == 5
+size(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[]) == 4
+size(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS[]) == 5
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[] elements < br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION
+===========================================================================
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.main(java.lang.String[]):::EXIT
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.LOCALHOST_DELAY == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.LOCALHOST_DELAY)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.MAX_WORKERS == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.MAX_WORKERS)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[] == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[])
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[] == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[])
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO.toString == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO.toString)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS.getClass().getName() == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS.getClass().getName())
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS[] == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS[])
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.run(java.util.Properties, int, int, long):::ENTER
+arg0 has only one value
+arg0 != null
+arg3 >= 0
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION % arg2 == 0
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION > arg2
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION != arg3
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.MAX_WORKERS >= arg1
+arg2 in br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[]
+arg3 in br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[]
+arg2 != arg3
+arg3 % arg2 == 0
+===========================================================================
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.run(java.util.Properties, int, int, long):::EXIT
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.LOCALHOST_DELAY == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.LOCALHOST_DELAY)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.MAX_WORKERS == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.MAX_WORKERS)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[] == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[])
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[] == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[])
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO.toString == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO.toString)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS.getClass().getName() == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS.getClass().getName())
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS[] == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS[])
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION % orig(arg2) == 0
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION > orig(arg2)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION != orig(arg3)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.MAX_WORKERS >= orig(arg1)
+orig(arg2) in br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[]
+orig(arg3) in br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[]
+===========================================================================
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.run(java.util.Properties, int, int, long, int):::ENTER
+arg0 has only one value
+arg0 != null
+arg2 >= 1
+arg3 >= 0
+arg4 >= 0
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION % arg2 == 0
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION > arg2
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION != arg3
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.MAX_WORKERS >= arg1
+arg2 in br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[]
+arg3 in br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[]
+arg2 != arg3
+arg3 % arg2 == 0
+arg4 <= size(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS[])-1
+===========================================================================
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.run(java.util.Properties, int, int, long, int):::EXIT113
+===========================================================================
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.run(java.util.Properties, int, int, long, int):::EXIT
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.LOCALHOST_DELAY == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.LOCALHOST_DELAY)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.MAX_WORKERS == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.MAX_WORKERS)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[] == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[])
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[] == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[])
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO.toString == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SCENARIO.toString)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS.getClass().getName() == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS.getClass().getName())
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS[] == orig(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS[])
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION % orig(arg2) == 0
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION > orig(arg2)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS_DURATION != orig(arg3)
+br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.MAX_WORKERS >= orig(arg1)
+orig(arg2) in br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.TASKS[]
+orig(arg3) in br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SECONDJOBDELAY[]
+orig(arg4) <= size(br.edu.ufcg.lsd.oursim.experiments.RemoteNoFScenarioGenerator.SEEDS[])-1
+===========================================================================
+br.edu.ufcg.lsd.oursim.network.DefaultWANNetwork:::CLASS
+br.edu.ufcg.lsd.oursim.network.DefaultWANNetwork.AVG_DELAY has only one value
+br.edu.ufcg.lsd.oursim.network.DefaultWANNetwork.AVG_DELAY != null
+===========================================================================
+br.edu.ufcg.lsd.oursim.network.DefaultWANNetwork.setSeed(int[]):::ENTER
+arg0 != null
+size(arg0[]) == 6
+===========================================================================
+br.edu.ufcg.lsd.oursim.network.DefaultWANNetwork.setSeed(int[]):::EXIT
+br.edu.ufcg.lsd.oursim.network.DefaultWANNetwork.AVG_DELAY == orig(br.edu.ufcg.lsd.oursim.network.DefaultWANNetwork.AVG_DELAY)
+arg0[] == orig(arg0[])
+===========================================================================
+br.edu.ufcg.lsd.oursim.util.Configuration:::CLASS
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS == br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_REPLICAS
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS == br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_SIMULTANEOUS_REPLICAS
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL == br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL == br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_PING_INTERVAL
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_LIVENESS_CHECK_INTERVAL has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_LIVENESS_CHECK_INTERVAL.toString == "LIVENESS_CHECK_TOLERANCE"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_LIVENESS_CHECK_INTERVAL has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_LIVENESS_CHECK_INTERVAL.toString == "30000"
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_FAILURE_DETECTOR has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_FAILURE_DETECTOR.toString == "USE_FAILURE_DETECTOR"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_FAILURE_DETECTOR has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_FAILURE_DETECTOR.toString == "true"
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_SPEED_HACK has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_SPEED_HACK.toString == "USE_SPEED_HACK"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_SPEED_HACK has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_SPEED_HACK.toString == "false"
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_FAILS has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_FAILS.toString == "BROKER_MAX_FAILS"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS.toString == "3"
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_REPLICAS has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_REPLICAS.toString == "BROKER_MAX_REPLICAS"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_REPLICAS.toString == "3"
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_SIMULTANEOUS_REPLICAS has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_SIMULTANEOUS_REPLICAS.toString == "BROKER_MAX_SIMULTANEOUS_REPLICAS"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_SIMULTANEOUS_REPLICAS.toString == "3"
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_SCHEDULER_INTERVAL has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_SCHEDULER_INTERVAL.toString == "BROKER_SCHEDULER_INTERVAL"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_SCHEDULER_INTERVAL has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_SCHEDULER_INTERVAL.toString == "10000"
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REQUEST_REPETITION_INTERVAL has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REQUEST_REPETITION_INTERVAL.toString == "REQUEST_REPETITION_INTERVAL"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL.toString == "120000"
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_GET_PROVIDERS_REPETITION_INTERVAL has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_GET_PROVIDERS_REPETITION_INTERVAL.toString == "GET_PROVIDERS_REPETITION_INTERVAL"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL.toString == "60000"
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL.toString == "REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL.toString == "120000"
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_NAME has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_NAME.toString == "FD_NAME"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_NAME has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_NAME.toString == "fixed"
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_TIMEOUT has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_TIMEOUT.toString == "FD_TIMEOUT"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_TIMEOUT has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_TIMEOUT.toString == "300000"
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_PING_INTERVAL has only one value
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_PING_INTERVAL.toString == "FD_PING_INTERVAL"
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_PING_INTERVAL.toString == "60000"
+===========================================================================
+br.edu.ufcg.lsd.oursim.util.Configuration.createConfiguration(java.util.Properties):::ENTER
+arg0 has only one value
+===========================================================================
+br.edu.ufcg.lsd.oursim.util.Configuration.createConfiguration(java.util.Properties):::EXIT
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_LIVENESS_CHECK_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_LIVENESS_CHECK_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_LIVENESS_CHECK_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_LIVENESS_CHECK_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_LIVENESS_CHECK_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_LIVENESS_CHECK_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_LIVENESS_CHECK_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_LIVENESS_CHECK_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_FAILURE_DETECTOR == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_FAILURE_DETECTOR)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_FAILURE_DETECTOR.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_FAILURE_DETECTOR.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_FAILURE_DETECTOR == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_FAILURE_DETECTOR)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_FAILURE_DETECTOR.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_FAILURE_DETECTOR.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_SPEED_HACK == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_SPEED_HACK)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_SPEED_HACK.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_SPEED_HACK.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_SPEED_HACK == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_SPEED_HACK)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_SPEED_HACK.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_SPEED_HACK.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_FAILS == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_FAILS)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_FAILS.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_FAILS.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_REPLICAS)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_SIMULTANEOUS_REPLICAS)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_REPLICAS == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_REPLICAS)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_REPLICAS.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_REPLICAS.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_REPLICAS.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_REPLICAS.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_SIMULTANEOUS_REPLICAS == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_SIMULTANEOUS_REPLICAS)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_SIMULTANEOUS_REPLICAS.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_SIMULTANEOUS_REPLICAS.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_SIMULTANEOUS_REPLICAS.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_SIMULTANEOUS_REPLICAS.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_SCHEDULER_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_SCHEDULER_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_SCHEDULER_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_SCHEDULER_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_SCHEDULER_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_SCHEDULER_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_SCHEDULER_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_SCHEDULER_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REQUEST_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REQUEST_REPETITION_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REQUEST_REPETITION_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REQUEST_REPETITION_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_GET_PROVIDERS_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_GET_PROVIDERS_REPETITION_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_GET_PROVIDERS_REPETITION_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_GET_PROVIDERS_REPETITION_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_PING_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_NAME == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_NAME)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_NAME.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_NAME.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_NAME == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_NAME)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_NAME.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_NAME.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_TIMEOUT == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_TIMEOUT)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_TIMEOUT.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_TIMEOUT.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_TIMEOUT == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_TIMEOUT)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_TIMEOUT.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_TIMEOUT.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_PING_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_PING_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_PING_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_PING_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_PING_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_PING_INTERVAL.toString)
+return has only one value
+===========================================================================
+br.edu.ufcg.lsd.oursim.util.Configuration.createDefaults():::ENTER
+===========================================================================
+br.edu.ufcg.lsd.oursim.util.Configuration.createDefaults():::EXIT
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_LIVENESS_CHECK_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_LIVENESS_CHECK_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_LIVENESS_CHECK_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_LIVENESS_CHECK_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_LIVENESS_CHECK_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_LIVENESS_CHECK_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_LIVENESS_CHECK_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_LIVENESS_CHECK_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_FAILURE_DETECTOR == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_FAILURE_DETECTOR)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_FAILURE_DETECTOR.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_FAILURE_DETECTOR.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_FAILURE_DETECTOR == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_FAILURE_DETECTOR)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_FAILURE_DETECTOR.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_FAILURE_DETECTOR.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_SPEED_HACK == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_SPEED_HACK)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_SPEED_HACK.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_USE_SPEED_HACK.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_SPEED_HACK == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_SPEED_HACK)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_SPEED_HACK.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_USE_SPEED_HACK.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_FAILS == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_FAILS)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_FAILS.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_FAILS.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_REPLICAS)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_SIMULTANEOUS_REPLICAS)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_FAILS.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_REPLICAS == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_REPLICAS)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_REPLICAS.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_REPLICAS.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_REPLICAS.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_REPLICAS.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_SIMULTANEOUS_REPLICAS == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_SIMULTANEOUS_REPLICAS)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_SIMULTANEOUS_REPLICAS.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_MAX_SIMULTANEOUS_REPLICAS.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_SIMULTANEOUS_REPLICAS.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_MAX_SIMULTANEOUS_REPLICAS.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_SCHEDULER_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_SCHEDULER_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_SCHEDULER_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_BROKER_SCHEDULER_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_SCHEDULER_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_SCHEDULER_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_SCHEDULER_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_BROKER_SCHEDULER_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REQUEST_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REQUEST_REPETITION_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REQUEST_REPETITION_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REQUEST_REPETITION_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REQUEST_REPETITION_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_GET_PROVIDERS_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_GET_PROVIDERS_REPETITION_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_GET_PROVIDERS_REPETITION_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_GET_PROVIDERS_REPETITION_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_PING_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_GET_PROVIDERS_REPETITION_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_REPORT_WORK_ACCOUNTING_REPETITION_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_NAME == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_NAME)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_NAME.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_NAME.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_NAME == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_NAME)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_NAME.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_NAME.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_TIMEOUT == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_TIMEOUT)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_TIMEOUT.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_TIMEOUT.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_TIMEOUT == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_TIMEOUT)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_TIMEOUT.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_TIMEOUT.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_PING_INTERVAL == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_PING_INTERVAL)
+br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_PING_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.PROP_FAILURE_DETECTOR_PING_INTERVAL.toString)
+br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_PING_INTERVAL.toString == orig(br.edu.ufcg.lsd.oursim.util.Configuration.DEF_FAILURE_DETECTOR_PING_INTERVAL.toString)
+return has only one value
+===========================================================================
+umontreal.iro.lecuyer.rng.MRG31k3p:::CLASS
+umontreal.iro.lecuyer.rng.MRG31k3p.curr_stream has only one value
+umontreal.iro.lecuyer.rng.MRG31k3p.curr_stream != null
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p0 has only one value
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p0 != null
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p0.getClass().getName() == int[][].class
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p0[] contains no nulls and has only one value, of length 3
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p0[] elements != null
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p0 has only one value
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p0 != null
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p0.getClass().getName() == int[][].class
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p0[] contains no nulls and has only one value, of length 3
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p0[] elements != null
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p72 has only one value
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p72 != null
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p72.getClass().getName() == int[][].class
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p72[] contains no nulls and has only one value, of length 3
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p72[] elements != null
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p72 has only one value
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p72 != null
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p72.getClass().getName() == int[][].class
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p72[] contains no nulls and has only one value, of length 3
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p72[] elements != null
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p134 has only one value
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p134 != null
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p134.getClass().getName() == int[][].class
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p134[] contains no nulls and has only one value, of length 3
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p134[] elements != null
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p134 has only one value
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p134 != null
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p134.getClass().getName() == int[][].class
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p134[] contains no nulls and has only one value, of length 3
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p134[] elements != null
+umontreal.iro.lecuyer.rng.RandomStreamBase.invtwo24 == 5.9604644775390625E-8
+umontreal.iro.lecuyer.rng.RandomStreamBase.EPSILON == 5.551115123125783E-17
+size(umontreal.iro.lecuyer.rng.MRG31k3p.curr_stream[]) == 6
+size(umontreal.iro.lecuyer.rng.MRG31k3p.A1p0[]) == 3
+size(umontreal.iro.lecuyer.rng.MRG31k3p.A2p0[]) == 3
+size(umontreal.iro.lecuyer.rng.MRG31k3p.A1p72[]) == 3
+size(umontreal.iro.lecuyer.rng.MRG31k3p.A2p72[]) == 3
+size(umontreal.iro.lecuyer.rng.MRG31k3p.A1p134[]) == 3
+size(umontreal.iro.lecuyer.rng.MRG31k3p.A2p134[]) == 3
+===========================================================================
+umontreal.iro.lecuyer.rng.MRG31k3p.setPackageSeed(int[]):::ENTER
+seed != null
+size(seed[]) == 6
+===========================================================================
+umontreal.iro.lecuyer.rng.MRG31k3p.setPackageSeed(int[]):::EXIT
+umontreal.iro.lecuyer.rng.MRG31k3p.curr_stream == orig(umontreal.iro.lecuyer.rng.MRG31k3p.curr_stream)
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p0 == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A1p0)
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p0.getClass().getName() == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A1p0.getClass().getName())
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p0[] == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A1p0[])
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p0 == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A2p0)
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p0.getClass().getName() == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A2p0.getClass().getName())
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p0[] == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A2p0[])
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p72 == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A1p72)
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p72.getClass().getName() == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A1p72.getClass().getName())
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p72[] == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A1p72[])
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p72 == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A2p72)
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p72.getClass().getName() == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A2p72.getClass().getName())
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p72[] == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A2p72[])
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p134 == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A1p134)
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p134.getClass().getName() == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A1p134.getClass().getName())
+umontreal.iro.lecuyer.rng.MRG31k3p.A1p134[] == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A1p134[])
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p134 == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A2p134)
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p134.getClass().getName() == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A2p134.getClass().getName())
+umontreal.iro.lecuyer.rng.MRG31k3p.A2p134[] == orig(umontreal.iro.lecuyer.rng.MRG31k3p.A2p134[])
+umontreal.iro.lecuyer.rng.RandomStreamBase.invtwo24 == orig(umontreal.iro.lecuyer.rng.RandomStreamBase.invtwo24)
+umontreal.iro.lecuyer.rng.RandomStreamBase.EPSILON == orig(umontreal.iro.lecuyer.rng.RandomStreamBase.EPSILON)
+seed[] == orig(seed[])
+size(umontreal.iro.lecuyer.rng.MRG31k3p.curr_stream[]) == orig(size(umontreal.iro.lecuyer.rng.MRG31k3p.curr_stream[]))
+Exiting Daikon.

@@ -1,0 +1,1696 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+main.java.Affirm.checkEquals(boolean, boolean):::ENTER
+===========================================================================
+main.java.Affirm.checkEquals(boolean, boolean):::EXIT
+(return == false)  ==>  (orig(arg0) == true)
+(return == false)  ==>  (orig(arg1) == false)
+(return == true)  ==>  (orig(arg0) == orig(arg1))
+===========================================================================
+main.java.Affirm.checkEquals(boolean, boolean):::EXIT;condition="return == true"
+orig(arg0) == orig(arg1)
+return == true
+===========================================================================
+main.java.Affirm.checkEquals(boolean, boolean):::EXIT;condition="not(return == true)"
+return == false
+orig(arg0) == true
+orig(arg1) == false
+===========================================================================
+main.java.Affirm.checkEquals(char, char):::ENTER
+arg0 == 97
+arg1 one of { 97, 98 }
+===========================================================================
+main.java.Affirm.checkEquals(char, char):::EXIT
+(return == false)  <==>  (orig(arg1) == 98)
+(return == true)  <==>  (orig(arg0) == orig(arg1))
+(return == true)  <==>  (orig(arg1) == 97)
+===========================================================================
+main.java.Affirm.checkEquals(char, char):::EXIT;condition="return == true"
+orig(arg0) == orig(arg1)
+return == true
+===========================================================================
+main.java.Affirm.checkEquals(char, char):::EXIT;condition="not(return == true)"
+return == false
+orig(arg1) == 98
+===========================================================================
+main.java.Affirm.checkEquals(int, int):::ENTER
+arg0 == 1
+arg1 one of { 1, 2 }
+===========================================================================
+main.java.Affirm.checkEquals(int, int):::EXIT
+(return == false)  <==>  (orig(arg1) == 2)
+(return == true)  <==>  (orig(arg0) == orig(arg1))
+(return == true)  <==>  (orig(arg1) == 1)
+===========================================================================
+main.java.Affirm.checkEquals(int, int):::EXIT;condition="return == true"
+orig(arg0) == orig(arg1)
+return == true
+===========================================================================
+main.java.Affirm.checkEquals(int, int):::EXIT;condition="not(return == true)"
+return == false
+orig(arg1) == 2
+===========================================================================
+main.java.Affirm.checkEquals(java.lang.Object, java.lang.Object):::ENTER
+arg0.getClass().getName() == arg1.getClass().getName()
+===========================================================================
+main.java.Affirm.checkEquals(java.lang.Object, java.lang.Object):::EXIT
+===========================================================================
+main.java.Affirm.checkEquals(java.lang.Object, java.lang.Object):::EXIT;condition="return == true"
+return == true
+===========================================================================
+main.java.Affirm.checkEquals(java.lang.Object, java.lang.Object):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+main.java.Affirm.checkNotEquals(boolean, boolean):::ENTER
+arg0 == true
+===========================================================================
+main.java.Affirm.checkNotEquals(boolean, boolean):::EXIT
+(return == false)  <==>  (orig(arg1) == true)
+(return == false)  ==>  (orig(arg0) == orig(arg1))
+(return == true)  <==>  (orig(arg1) == false)
+===========================================================================
+main.java.Affirm.checkNotEquals(boolean, boolean):::EXIT;condition="return == true"
+return == true
+orig(arg1) == false
+===========================================================================
+main.java.Affirm.checkNotEquals(boolean, boolean):::EXIT;condition="not(return == true)"
+orig(arg0) == orig(arg1)
+return == false
+===========================================================================
+main.java.Affirm.checkNotEquals(char, char):::ENTER
+arg0 == 97
+arg1 one of { 97, 98 }
+===========================================================================
+main.java.Affirm.checkNotEquals(char, char):::EXIT
+(return == false)  <==>  (orig(arg0) == orig(arg1))
+(return == false)  <==>  (orig(arg1) == 97)
+(return == true)  <==>  (orig(arg1) == 98)
+===========================================================================
+main.java.Affirm.checkNotEquals(char, char):::EXIT;condition="return == true"
+return == true
+orig(arg1) == 98
+===========================================================================
+main.java.Affirm.checkNotEquals(char, char):::EXIT;condition="not(return == true)"
+orig(arg0) == orig(arg1)
+return == false
+===========================================================================
+main.java.Affirm.checkNotEquals(int, int):::ENTER
+arg0 == 1
+arg1 one of { 1, 2 }
+===========================================================================
+main.java.Affirm.checkNotEquals(int, int):::EXIT
+(return == false)  <==>  (orig(arg0) == orig(arg1))
+(return == false)  <==>  (orig(arg1) == 1)
+(return == true)  <==>  (orig(arg1) == 2)
+===========================================================================
+main.java.Affirm.checkNotEquals(int, int):::EXIT;condition="return == true"
+return == true
+orig(arg1) == 2
+===========================================================================
+main.java.Affirm.checkNotEquals(int, int):::EXIT;condition="not(return == true)"
+orig(arg0) == orig(arg1)
+return == false
+===========================================================================
+main.java.Affirm.checkNotEquals(java.lang.Object, java.lang.Object):::ENTER
+arg0.getClass().getName() == arg1.getClass().getName()
+===========================================================================
+main.java.Affirm.checkNotEquals(java.lang.Object, java.lang.Object):::EXIT
+===========================================================================
+main.java.Affirm.checkNotEquals(java.lang.Object, java.lang.Object):::EXIT;condition="return == true"
+return == true
+===========================================================================
+main.java.Affirm.checkNotEquals(java.lang.Object, java.lang.Object):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+main.java.ResultPrinter:::CLASS
+main.java.ResultPrinter.instance.SEPARATOR has only one value
+main.java.ResultPrinter.instance.SEPARATOR != null
+main.java.ResultPrinter.instance.SEPARATOR.toString == "----------------"
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR has only one value
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR != null
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString == "================"
+main.java.ResultPrinter.instance.SUMMARY_HDR has only one value
+main.java.ResultPrinter.instance.SUMMARY_HDR != null
+main.java.ResultPrinter.instance.SUMMARY_HDR.toString == "[failure] Summary"
+main.java.ResultPrinter.instance.suiteName != null
+main.java.ResultPrinter.instance.buffer has only one value
+main.java.ResultPrinter.instance.buffer != null
+main.java.ResultPrinter.instance.buffer[] elements != null
+main.java.ResultPrinter.instance.buffer[].getClass().getName() elements == java.lang.String.class
+main.java.ResultPrinter.instance.failedTests == 0
+main.java.ResultPrinter.instance.errorTests == 0
+main.java.ResultPrinter.instance.okTests >= 0
+size(main.java.ResultPrinter.instance.buffer[])-1 != 0
+===========================================================================
+main.java.ResultPrinter:::OBJECT
+this.failedTests == this.errorTests
+this has only one value
+this.SEPARATOR has only one value
+this.SEPARATOR != null
+this.SEPARATOR.toString == "----------------"
+this.DOUBLE_SEPARATOR has only one value
+this.DOUBLE_SEPARATOR != null
+this.DOUBLE_SEPARATOR.toString == "================"
+this.SUMMARY_HDR has only one value
+this.SUMMARY_HDR != null
+this.SUMMARY_HDR.toString == "[failure] Summary"
+this.suiteName != null
+this.buffer has only one value
+this.buffer != null
+this.buffer[] elements != null
+this.buffer[].getClass().getName() elements == java.lang.String.class
+this.failedTests == 0
+this.okTests >= 0
+this.failedTests <= this.okTests
+===========================================================================
+main.java.ResultPrinter.ResultPrinter():::EXIT
+this.failedTests == this.okTests
+main.java.ResultPrinter.instance == null
+this.suiteName has only one value
+this.suiteName.toString == ""
+this.buffer[] == []
+this.buffer[].getClass().getName() == []
+===========================================================================
+main.java.ResultPrinter.addSuite(java.lang.String):::ENTER
+this == main.java.ResultPrinter.instance
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance.suiteName.toString one of { "", ".Test all", ".Test all.Test suite for testing Affirm" }
+main.java.ResultPrinter.instance.okTests one of { 0, 10 }
+this.suiteName.toString one of { "", ".Test all", ".Test all.Test suite for testing Affirm" }
+this.okTests one of { 0, 10 }
+arg0.toString one of { "Test all", "Test suite for testing Affirm", "Test suite for testing Test" }
+size(main.java.ResultPrinter.instance.buffer[]) one of { 0, 2, 14 }
+size(this.buffer[]) one of { 0, 2, 14 }
+===========================================================================
+main.java.ResultPrinter.addSuite(java.lang.String):::EXIT
+this.SEPARATOR == orig(this.SEPARATOR)
+this.SEPARATOR.toString == orig(this.SEPARATOR.toString)
+this.DOUBLE_SEPARATOR == orig(this.DOUBLE_SEPARATOR)
+this.DOUBLE_SEPARATOR.toString == orig(this.DOUBLE_SEPARATOR.toString)
+this.SUMMARY_HDR == orig(this.SUMMARY_HDR)
+this.SUMMARY_HDR.toString == orig(this.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance == orig(this)
+main.java.ResultPrinter.instance == orig(main.java.ResultPrinter.instance)
+main.java.ResultPrinter.instance.SEPARATOR == orig(main.java.ResultPrinter.instance.SEPARATOR)
+main.java.ResultPrinter.instance.SEPARATOR.toString == orig(main.java.ResultPrinter.instance.SEPARATOR.toString)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString)
+main.java.ResultPrinter.instance.SUMMARY_HDR == orig(main.java.ResultPrinter.instance.SUMMARY_HDR)
+main.java.ResultPrinter.instance.SUMMARY_HDR.toString == orig(main.java.ResultPrinter.instance.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance.buffer == orig(main.java.ResultPrinter.instance.buffer)
+main.java.ResultPrinter.instance.failedTests == orig(main.java.ResultPrinter.instance.failedTests)
+main.java.ResultPrinter.instance.errorTests == orig(main.java.ResultPrinter.instance.errorTests)
+main.java.ResultPrinter.instance.okTests == orig(main.java.ResultPrinter.instance.okTests)
+this.buffer == orig(this.buffer)
+this.failedTests == orig(this.failedTests)
+this.failedTests == orig(this.errorTests)
+this.okTests == orig(this.okTests)
+arg0.toString == orig(arg0.toString)
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance.suiteName.toString one of { ".Test all", ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+main.java.ResultPrinter.instance.okTests one of { 0, 10 }
+this.suiteName.toString one of { ".Test all", ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+this.okTests one of { 0, 10 }
+arg0.toString one of { "Test all", "Test suite for testing Affirm", "Test suite for testing Test" }
+size(main.java.ResultPrinter.instance.buffer[]) one of { 2, 4, 16 }
+size(this.buffer[]) one of { 2, 4, 16 }
+===========================================================================
+main.java.ResultPrinter.addTestResults(main.java.Test):::ENTER
+this == main.java.ResultPrinter.instance
+arg0.name == arg0.result.testName
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance != null
+main.java.ResultPrinter.instance.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+this.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+arg0 != null
+arg0.name != null
+arg0.result.getClass().getName() == main.java.TestResultOk.class
+arg0.result.testName != null
+arg0.fixture == null
+arg0.getClass().getName() != arg0.result.getClass().getName()
+===========================================================================
+main.java.ResultPrinter.addTestResults(main.java.Test):::EXIT
+this.SEPARATOR == orig(this.SEPARATOR)
+this.SEPARATOR.toString == orig(this.SEPARATOR.toString)
+this.DOUBLE_SEPARATOR == orig(this.DOUBLE_SEPARATOR)
+this.DOUBLE_SEPARATOR.toString == orig(this.DOUBLE_SEPARATOR.toString)
+this.SUMMARY_HDR == orig(this.SUMMARY_HDR)
+this.SUMMARY_HDR.toString == orig(this.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance == orig(this)
+main.java.ResultPrinter.instance == orig(main.java.ResultPrinter.instance)
+main.java.ResultPrinter.instance.SEPARATOR == orig(main.java.ResultPrinter.instance.SEPARATOR)
+main.java.ResultPrinter.instance.SEPARATOR.toString == orig(main.java.ResultPrinter.instance.SEPARATOR.toString)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString)
+main.java.ResultPrinter.instance.SUMMARY_HDR == orig(main.java.ResultPrinter.instance.SUMMARY_HDR)
+main.java.ResultPrinter.instance.SUMMARY_HDR.toString == orig(main.java.ResultPrinter.instance.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance.suiteName == orig(main.java.ResultPrinter.instance.suiteName)
+main.java.ResultPrinter.instance.suiteName.toString == orig(main.java.ResultPrinter.instance.suiteName.toString)
+main.java.ResultPrinter.instance.buffer == orig(main.java.ResultPrinter.instance.buffer)
+main.java.ResultPrinter.instance.failedTests == orig(main.java.ResultPrinter.instance.failedTests)
+main.java.ResultPrinter.instance.errorTests == orig(main.java.ResultPrinter.instance.errorTests)
+this.suiteName == orig(this.suiteName)
+this.suiteName.toString == orig(this.suiteName.toString)
+this.buffer == orig(this.buffer)
+this.failedTests == orig(this.failedTests)
+this.failedTests == orig(this.errorTests)
+arg0.name == arg0.result.testName
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+arg0.result == orig(arg0.result)
+arg0.result.getClass().getName() == orig(arg0.result.getClass().getName())
+arg0.result.testName == orig(arg0.result.testName)
+arg0.result.testName.toString == orig(arg0.result.testName.toString)
+arg0.fixture == orig(arg0.fixture)
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance != null
+main.java.ResultPrinter.instance.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+this.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+arg0.name != null
+arg0.result.getClass().getName() == main.java.TestResultOk.class
+arg0.result.testName != null
+arg0.fixture == null
+main.java.ResultPrinter.instance.okTests >= orig(main.java.ResultPrinter.instance.okTests)
+this.failedTests < this.okTests
+this.failedTests <= orig(this.okTests)
+this.okTests >= orig(this.okTests)
+arg0.result.getClass().getName() != orig(arg0.getClass().getName())
+size(main.java.ResultPrinter.instance.buffer[]) >= orig(size(main.java.ResultPrinter.instance.buffer[]))
+size(main.java.ResultPrinter.instance.buffer[])-1 <= orig(size(main.java.ResultPrinter.instance.buffer[]))
+size(main.java.ResultPrinter.instance.buffer[])-1 >= orig(size(main.java.ResultPrinter.instance.buffer[]))-1
+size(this.buffer[]) >= orig(size(this.buffer[]))
+size(this.buffer[])-1 <= orig(size(this.buffer[]))
+size(this.buffer[])-1 >= orig(size(this.buffer[]))-1
+===========================================================================
+main.java.ResultPrinter.getInstance():::ENTER
+main.java.ResultPrinter.instance.suiteName.toString one of { ".Test all", ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+===========================================================================
+main.java.ResultPrinter.getInstance():::EXIT
+main.java.ResultPrinter.instance == return
+main.java.ResultPrinter.instance.SEPARATOR == orig(main.java.ResultPrinter.instance.SEPARATOR)
+main.java.ResultPrinter.instance.SEPARATOR.toString == orig(main.java.ResultPrinter.instance.SEPARATOR.toString)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString)
+main.java.ResultPrinter.instance.SUMMARY_HDR == orig(main.java.ResultPrinter.instance.SUMMARY_HDR)
+main.java.ResultPrinter.instance.SUMMARY_HDR.toString == orig(main.java.ResultPrinter.instance.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance.suiteName == orig(main.java.ResultPrinter.instance.suiteName)
+main.java.ResultPrinter.instance.suiteName.toString == orig(main.java.ResultPrinter.instance.suiteName.toString)
+main.java.ResultPrinter.instance.buffer == orig(main.java.ResultPrinter.instance.buffer)
+main.java.ResultPrinter.instance.buffer[].getClass().getName() == orig(main.java.ResultPrinter.instance.buffer[].getClass().getName())
+main.java.ResultPrinter.instance.failedTests == orig(main.java.ResultPrinter.instance.failedTests)
+main.java.ResultPrinter.instance.errorTests == orig(main.java.ResultPrinter.instance.errorTests)
+main.java.ResultPrinter.instance.okTests == orig(main.java.ResultPrinter.instance.okTests)
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance != null
+return.SEPARATOR has only one value
+return.SEPARATOR != null
+return.SEPARATOR.toString == "----------------"
+return.DOUBLE_SEPARATOR has only one value
+return.DOUBLE_SEPARATOR != null
+return.DOUBLE_SEPARATOR.toString == "================"
+return.SUMMARY_HDR has only one value
+return.SUMMARY_HDR != null
+return.SUMMARY_HDR.toString == "[failure] Summary"
+return.suiteName != null
+return.buffer has only one value
+return.buffer != null
+return.buffer[] elements != null
+return.buffer[].getClass().getName() elements == java.lang.String.class
+return.failedTests == 0
+return.errorTests == 0
+return.okTests >= 0
+main.java.ResultPrinter.instance.buffer[] == orig(main.java.ResultPrinter.instance.buffer[]) (elementwise)
+main.java.ResultPrinter.instance.buffer[].getClass().getName() == orig(main.java.ResultPrinter.instance.buffer[].getClass().getName()) (elementwise)
+===========================================================================
+main.java.ResultPrinter.oneMoreTestOk():::ENTER
+this == main.java.ResultPrinter.instance
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance != null
+main.java.ResultPrinter.instance.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+this.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+===========================================================================
+main.java.ResultPrinter.oneMoreTestOk():::EXIT
+this.SEPARATOR == orig(this.SEPARATOR)
+this.SEPARATOR.toString == orig(this.SEPARATOR.toString)
+this.DOUBLE_SEPARATOR == orig(this.DOUBLE_SEPARATOR)
+this.DOUBLE_SEPARATOR.toString == orig(this.DOUBLE_SEPARATOR.toString)
+this.SUMMARY_HDR == orig(this.SUMMARY_HDR)
+this.SUMMARY_HDR.toString == orig(this.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance == orig(this)
+main.java.ResultPrinter.instance == orig(main.java.ResultPrinter.instance)
+main.java.ResultPrinter.instance.SEPARATOR == orig(main.java.ResultPrinter.instance.SEPARATOR)
+main.java.ResultPrinter.instance.SEPARATOR.toString == orig(main.java.ResultPrinter.instance.SEPARATOR.toString)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString)
+main.java.ResultPrinter.instance.SUMMARY_HDR == orig(main.java.ResultPrinter.instance.SUMMARY_HDR)
+main.java.ResultPrinter.instance.SUMMARY_HDR.toString == orig(main.java.ResultPrinter.instance.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance.suiteName == orig(main.java.ResultPrinter.instance.suiteName)
+main.java.ResultPrinter.instance.suiteName.toString == orig(main.java.ResultPrinter.instance.suiteName.toString)
+main.java.ResultPrinter.instance.buffer == orig(main.java.ResultPrinter.instance.buffer)
+main.java.ResultPrinter.instance.buffer[] == orig(main.java.ResultPrinter.instance.buffer[])
+main.java.ResultPrinter.instance.failedTests == orig(main.java.ResultPrinter.instance.failedTests)
+main.java.ResultPrinter.instance.errorTests == orig(main.java.ResultPrinter.instance.errorTests)
+this.suiteName == orig(this.suiteName)
+this.suiteName.toString == orig(this.suiteName.toString)
+this.buffer == orig(this.buffer)
+this.buffer[] == orig(this.buffer[])
+this.failedTests == orig(this.failedTests)
+this.failedTests == orig(this.errorTests)
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance != null
+main.java.ResultPrinter.instance.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+this.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+main.java.ResultPrinter.instance.okTests - orig(main.java.ResultPrinter.instance.okTests) - 1 == 0
+this.failedTests < this.okTests
+this.failedTests <= orig(this.okTests)
+this.okTests - orig(this.okTests) - 1 == 0
+===========================================================================
+main.java.ResultPrinter.print():::ENTER
+this == main.java.ResultPrinter.instance
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance.suiteName has only one value
+main.java.ResultPrinter.instance.suiteName.toString == ".Test all.Test suite for testing Affirm.Test suite for testing Test"
+main.java.ResultPrinter.instance.buffer[] contains no nulls and has only one value, of length 26
+main.java.ResultPrinter.instance.buffer[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+main.java.ResultPrinter.instance.okTests == 20
+this.suiteName has only one value
+this.suiteName.toString == ".Test all.Test suite for testing Affirm.Test suite for testing Test"
+this.buffer[] contains no nulls and has only one value, of length 26
+this.buffer[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+this.okTests == 20
+size(main.java.ResultPrinter.instance.buffer[]) == 26
+size(this.buffer[]) == 26
+===========================================================================
+main.java.ResultPrinter.print():::EXIT
+this.SEPARATOR == orig(this.SEPARATOR)
+this.SEPARATOR.toString == orig(this.SEPARATOR.toString)
+this.DOUBLE_SEPARATOR == orig(this.DOUBLE_SEPARATOR)
+this.DOUBLE_SEPARATOR.toString == orig(this.DOUBLE_SEPARATOR.toString)
+this.SUMMARY_HDR == orig(this.SUMMARY_HDR)
+this.SUMMARY_HDR.toString == orig(this.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance == orig(this)
+main.java.ResultPrinter.instance == orig(main.java.ResultPrinter.instance)
+main.java.ResultPrinter.instance.SEPARATOR == orig(main.java.ResultPrinter.instance.SEPARATOR)
+main.java.ResultPrinter.instance.SEPARATOR.toString == orig(main.java.ResultPrinter.instance.SEPARATOR.toString)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString)
+main.java.ResultPrinter.instance.SUMMARY_HDR == orig(main.java.ResultPrinter.instance.SUMMARY_HDR)
+main.java.ResultPrinter.instance.SUMMARY_HDR.toString == orig(main.java.ResultPrinter.instance.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance.suiteName == orig(main.java.ResultPrinter.instance.suiteName)
+main.java.ResultPrinter.instance.suiteName.toString == orig(main.java.ResultPrinter.instance.suiteName.toString)
+main.java.ResultPrinter.instance.buffer == orig(main.java.ResultPrinter.instance.buffer)
+main.java.ResultPrinter.instance.buffer[] == orig(main.java.ResultPrinter.instance.buffer[])
+main.java.ResultPrinter.instance.failedTests == orig(main.java.ResultPrinter.instance.failedTests)
+main.java.ResultPrinter.instance.errorTests == orig(main.java.ResultPrinter.instance.errorTests)
+main.java.ResultPrinter.instance.okTests == orig(main.java.ResultPrinter.instance.okTests)
+this.suiteName == orig(this.suiteName)
+this.suiteName.toString == orig(this.suiteName.toString)
+this.buffer == orig(this.buffer)
+this.buffer[] == orig(this.buffer[])
+this.failedTests == orig(this.failedTests)
+this.failedTests == orig(this.errorTests)
+this.okTests == orig(this.okTests)
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance.suiteName has only one value
+main.java.ResultPrinter.instance.suiteName.toString == ".Test all.Test suite for testing Affirm.Test suite for testing Test"
+main.java.ResultPrinter.instance.buffer[] contains no nulls and has only one value, of length 26
+main.java.ResultPrinter.instance.buffer[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+main.java.ResultPrinter.instance.okTests == 20
+this.suiteName has only one value
+this.suiteName.toString == ".Test all.Test suite for testing Affirm.Test suite for testing Test"
+this.buffer[] contains no nulls and has only one value, of length 26
+this.buffer[].getClass().getName() == [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String]
+this.okTests == 20
+size(main.java.ResultPrinter.instance.buffer[]) == 26
+size(this.buffer[]) == 26
+===========================================================================
+main.java.ResultPrinter.removeSuite(java.lang.String):::ENTER
+this == main.java.ResultPrinter.instance
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+main.java.ResultPrinter.instance.buffer[].getClass().getName() one of { [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String] }
+main.java.ResultPrinter.instance.okTests one of { 10, 20 }
+this.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+this.buffer[].getClass().getName() one of { [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String] }
+this.okTests one of { 10, 20 }
+arg0.toString one of { "Test all", "Test suite for testing Affirm", "Test suite for testing Test" }
+size(main.java.ResultPrinter.instance.buffer[]) one of { 14, 26 }
+size(this.buffer[]) one of { 14, 26 }
+===========================================================================
+main.java.ResultPrinter.removeSuite(java.lang.String):::EXIT
+this.SEPARATOR == orig(this.SEPARATOR)
+this.SEPARATOR.toString == orig(this.SEPARATOR.toString)
+this.DOUBLE_SEPARATOR == orig(this.DOUBLE_SEPARATOR)
+this.DOUBLE_SEPARATOR.toString == orig(this.DOUBLE_SEPARATOR.toString)
+this.SUMMARY_HDR == orig(this.SUMMARY_HDR)
+this.SUMMARY_HDR.toString == orig(this.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance == orig(this)
+main.java.ResultPrinter.instance == orig(main.java.ResultPrinter.instance)
+main.java.ResultPrinter.instance.SEPARATOR == orig(main.java.ResultPrinter.instance.SEPARATOR)
+main.java.ResultPrinter.instance.SEPARATOR.toString == orig(main.java.ResultPrinter.instance.SEPARATOR.toString)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString)
+main.java.ResultPrinter.instance.SUMMARY_HDR == orig(main.java.ResultPrinter.instance.SUMMARY_HDR)
+main.java.ResultPrinter.instance.SUMMARY_HDR.toString == orig(main.java.ResultPrinter.instance.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance.suiteName == orig(main.java.ResultPrinter.instance.suiteName)
+main.java.ResultPrinter.instance.suiteName.toString == orig(main.java.ResultPrinter.instance.suiteName.toString)
+main.java.ResultPrinter.instance.buffer == orig(main.java.ResultPrinter.instance.buffer)
+main.java.ResultPrinter.instance.buffer[] == orig(main.java.ResultPrinter.instance.buffer[])
+main.java.ResultPrinter.instance.failedTests == orig(main.java.ResultPrinter.instance.failedTests)
+main.java.ResultPrinter.instance.errorTests == orig(main.java.ResultPrinter.instance.errorTests)
+main.java.ResultPrinter.instance.okTests == orig(main.java.ResultPrinter.instance.okTests)
+this.suiteName == orig(this.suiteName)
+this.suiteName.toString == orig(this.suiteName.toString)
+this.buffer == orig(this.buffer)
+this.buffer[] == orig(this.buffer[])
+this.failedTests == orig(this.failedTests)
+this.failedTests == orig(this.errorTests)
+this.okTests == orig(this.okTests)
+arg0.toString == orig(arg0.toString)
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+main.java.ResultPrinter.instance.buffer[].getClass().getName() one of { [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String] }
+main.java.ResultPrinter.instance.okTests one of { 10, 20 }
+this.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+this.buffer[].getClass().getName() one of { [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String], [java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String] }
+this.okTests one of { 10, 20 }
+arg0.toString one of { "Test all", "Test suite for testing Affirm", "Test suite for testing Test" }
+size(main.java.ResultPrinter.instance.buffer[]) one of { 14, 26 }
+size(this.buffer[]) one of { 14, 26 }
+===========================================================================
+main.java.Test:::OBJECT
+this.name == this.result.testName
+this.name != null
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName != null
+this.fixture == null
+this.getClass().getName() != this.result.getClass().getName()
+===========================================================================
+main.java.Test.Test(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+main.java.Test.Test(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+===========================================================================
+main.java.Test.assertEquals(java.lang.String, boolean, boolean):::ENTER
+arg1 == arg2
+arg0 != null
+===========================================================================
+main.java.Test.assertEquals(java.lang.String, boolean, boolean):::EXIT
+this.name == orig(this.name)
+this.name == orig(this.result.testName)
+this.name.toString == orig(this.name.toString)
+this.result.getClass().getName() == orig(this.result.getClass().getName())
+this.result.testName.toString == orig(this.result.testName.toString)
+this.fixture == orig(this.fixture)
+arg0.toString == orig(arg0.toString)
+this.result != null
+this.result.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+main.java.Test.assertEquals(java.lang.String, char, char):::ENTER
+arg1 == arg2
+this has only one value
+this.getClass().getName() == test.java.TestEqualsCharTest.class
+this.name has only one value
+this.name.toString == "Test two chars are equal using the Test class' methods"
+this.result == null
+arg0 has only one value
+arg0.toString == "testEqualsCharTest"
+arg1 == 97
+===========================================================================
+main.java.Test.assertEquals(java.lang.String, char, char):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+arg0.toString == orig(arg0.toString)
+this.name has only one value
+this.name.toString == "Test two chars are equal using the Test class' methods"
+this.result has only one value
+this.result.testName.toString == "Test two chars are equal using the Test class' methods"
+arg0.toString == "testEqualsCharTest"
+===========================================================================
+main.java.Test.assertEquals(java.lang.String, int, int):::ENTER
+arg1 == arg2
+this has only one value
+this.getClass().getName() == test.java.TestEqualsIntTest.class
+this.name has only one value
+this.name.toString == "Test two integers are equal using the Test class' methods"
+this.result == null
+arg0 has only one value
+arg0.toString == "testEqualsIntTest"
+arg1 == 1
+===========================================================================
+main.java.Test.assertEquals(java.lang.String, int, int):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+arg0.toString == orig(arg0.toString)
+this.name has only one value
+this.name.toString == "Test two integers are equal using the Test class' methods"
+this.result has only one value
+this.result.testName.toString == "Test two integers are equal using the Test class' methods"
+arg0.toString == "testEqualsIntTest"
+===========================================================================
+main.java.Test.assertEquals(java.lang.String, java.lang.Object, java.lang.Object):::ENTER
+arg1.getClass().getName() == arg2.getClass().getName()
+this.name.toString one of { "Test two booleans are equal using the Test class' methods", "Test two floats are equal using the Test class' methods", "Test two objects are equal using the Test class' methods" }
+this.result == null
+arg0.toString one of { "testEqualsBooleanTest", "testEqualsFloatTest", "testEqualsObjectTest" }
+===========================================================================
+main.java.Test.assertEquals(java.lang.String, java.lang.Object, java.lang.Object):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+arg0.toString == orig(arg0.toString)
+this.name.toString one of { "Test two booleans are equal using the Test class' methods", "Test two floats are equal using the Test class' methods", "Test two objects are equal using the Test class' methods" }
+this.result.testName.toString one of { "Test two booleans are equal using the Test class' methods", "Test two floats are equal using the Test class' methods", "Test two objects are equal using the Test class' methods" }
+arg0.toString one of { "testEqualsBooleanTest", "testEqualsFloatTest", "testEqualsObjectTest" }
+===========================================================================
+main.java.Test.assertNotEquals(java.lang.String, boolean, boolean):::ENTER
+this has only one value
+this.getClass().getName() == test.java.TestNotEqualsBooleanTest.class
+this.name has only one value
+this.name.toString == "Test two booleans are different using the Test class' methods"
+this.result == null
+arg0 has only one value
+arg0.toString == "testNotEqualsBooleanTest"
+arg1 == true
+arg2 == false
+===========================================================================
+main.java.Test.assertNotEquals(java.lang.String, boolean, boolean):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+arg0.toString == orig(arg0.toString)
+this.name has only one value
+this.name.toString == "Test two booleans are different using the Test class' methods"
+this.result has only one value
+this.result.testName.toString == "Test two booleans are different using the Test class' methods"
+arg0.toString == "testNotEqualsBooleanTest"
+===========================================================================
+main.java.Test.assertNotEquals(java.lang.String, char, char):::ENTER
+this has only one value
+this.getClass().getName() == test.java.TestNotEqualsCharTest.class
+this.name has only one value
+this.name.toString == "Test two chars are different using the Test class' methods"
+this.result == null
+arg0 has only one value
+arg0.toString == "testNotEqualsCharTest"
+arg1 == 97
+arg2 == 98
+===========================================================================
+main.java.Test.assertNotEquals(java.lang.String, char, char):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+arg0.toString == orig(arg0.toString)
+this.name has only one value
+this.name.toString == "Test two chars are different using the Test class' methods"
+this.result has only one value
+this.result.testName.toString == "Test two chars are different using the Test class' methods"
+arg0.toString == "testNotEqualsCharTest"
+===========================================================================
+main.java.Test.assertNotEquals(java.lang.String, int, int):::ENTER
+this has only one value
+this.getClass().getName() == test.java.TestNotEqualsIntTest.class
+this.name has only one value
+this.name.toString == "Test two integers are different using the Test class' methods"
+this.result == null
+arg0 has only one value
+arg0.toString == "testNotEqualsIntTest"
+arg1 == 1
+arg2 == 2
+===========================================================================
+main.java.Test.assertNotEquals(java.lang.String, int, int):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+arg0.toString == orig(arg0.toString)
+this.name has only one value
+this.name.toString == "Test two integers are different using the Test class' methods"
+this.result has only one value
+this.result.testName.toString == "Test two integers are different using the Test class' methods"
+arg0.toString == "testNotEqualsIntTest"
+===========================================================================
+main.java.Test.assertNotEquals(java.lang.String, java.lang.Object, java.lang.Object):::ENTER
+arg1.getClass().getName() == arg2.getClass().getName()
+this.name.toString one of { "Test two floats are different using the Test class' methods", "Test two objects are different using the Test class' methods" }
+this.result == null
+arg0.toString one of { "testNotEqualsFloatTest", "testNotEqualsObjectTest" }
+===========================================================================
+main.java.Test.assertNotEquals(java.lang.String, java.lang.Object, java.lang.Object):::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+arg0.toString == orig(arg0.toString)
+this.name.toString one of { "Test two floats are different using the Test class' methods", "Test two objects are different using the Test class' methods" }
+this.result.testName.toString one of { "Test two floats are different using the Test class' methods", "Test two objects are different using the Test class' methods" }
+arg0.toString one of { "testNotEqualsFloatTest", "testNotEqualsObjectTest" }
+===========================================================================
+main.java.Test.createTestResult(boolean):::ENTER
+arg0 == true
+===========================================================================
+main.java.Test.createTestResult(boolean):::EXIT
+this.name == orig(this.name)
+this.name == orig(this.result.testName)
+this.name.toString == orig(this.name.toString)
+this.result.getClass().getName() == orig(this.result.getClass().getName())
+this.result.testName.toString == orig(this.result.testName.toString)
+this.fixture == orig(this.fixture)
+this.result != null
+this.result.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+main.java.Test.getName():::ENTER
+===========================================================================
+main.java.Test.getName():::EXIT
+this.name == return
+this.name.toString == orig(this.name.toString)
+this.result == orig(this.result)
+this.result.getClass().getName() == orig(this.result.getClass().getName())
+this.result.testName == return
+this.result.testName == orig(this.result.testName)
+this.result.testName.toString == orig(this.result.testName.toString)
+this.fixture == orig(this.fixture)
+return == orig(this.name)
+return != null
+this.result.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+main.java.Test.getResult():::ENTER
+===========================================================================
+main.java.Test.getResult():::EXIT
+this.name == return.testName
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.result == return
+this.result.getClass().getName() == return.getClass().getName()
+this.result.testName == return.testName
+this.result.testName.toString == orig(this.result.testName.toString)
+this.fixture == orig(this.fixture)
+return == orig(this.result)
+return.getClass().getName() == orig(this.result.getClass().getName())
+return.testName == orig(this.result.testName)
+return.getClass().getName() == main.java.TestResultOk.class
+return.testName != null
+return.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+main.java.Test.setUp():::ENTER
+this.result == null
+===========================================================================
+main.java.Test.setUp():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.result == orig(this.result)
+this.fixture == orig(this.fixture)
+this.result == null
+===========================================================================
+main.java.Test.tearDown():::ENTER
+===========================================================================
+main.java.Test.tearDown():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.result == orig(this.result)
+this.result.getClass().getName() == orig(this.result.getClass().getName())
+this.result.testName == orig(this.result.testName)
+this.result.testName.toString == orig(this.result.testName.toString)
+this.fixture == orig(this.fixture)
+this.result.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+main.java.TestResult:::OBJECT
+this.getClass().getName() == main.java.TestResultOk.class
+this.testName != null
+===========================================================================
+main.java.TestResult.TestResult(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+main.java.TestResult.TestResult(java.lang.String):::EXIT
+this.testName == orig(arg0)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+main.java.TestResultOk:::OBJECT
+this.testName != null
+===========================================================================
+main.java.TestResultOk.TestResultOk(java.lang.String):::ENTER
+arg0 != null
+===========================================================================
+main.java.TestResultOk.TestResultOk(java.lang.String):::EXIT
+this.testName == orig(arg0)
+arg0.toString == orig(arg0.toString)
+===========================================================================
+main.java.TestResultOk.print():::ENTER
+===========================================================================
+main.java.TestResultOk.print():::EXIT
+this.testName == orig(this.testName)
+this.testName.toString == orig(this.testName.toString)
+return != null
+===========================================================================
+main.java.TestResultOk.updateMe(main.java.ResultPrinter):::ENTER
+arg0 == main.java.ResultPrinter.instance
+arg0.SEPARATOR has only one value
+arg0.SEPARATOR != null
+arg0.SEPARATOR.toString == "----------------"
+arg0.DOUBLE_SEPARATOR has only one value
+arg0.DOUBLE_SEPARATOR != null
+arg0.DOUBLE_SEPARATOR.toString == "================"
+arg0.SUMMARY_HDR has only one value
+arg0.SUMMARY_HDR != null
+arg0.SUMMARY_HDR.toString == "[failure] Summary"
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance != null
+main.java.ResultPrinter.instance.SEPARATOR has only one value
+main.java.ResultPrinter.instance.SEPARATOR != null
+main.java.ResultPrinter.instance.SEPARATOR.toString == "----------------"
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR has only one value
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR != null
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString == "================"
+main.java.ResultPrinter.instance.SUMMARY_HDR has only one value
+main.java.ResultPrinter.instance.SUMMARY_HDR != null
+main.java.ResultPrinter.instance.SUMMARY_HDR.toString == "[failure] Summary"
+main.java.ResultPrinter.instance.suiteName != null
+main.java.ResultPrinter.instance.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+main.java.ResultPrinter.instance.buffer has only one value
+main.java.ResultPrinter.instance.buffer != null
+main.java.ResultPrinter.instance.buffer[] elements != null
+main.java.ResultPrinter.instance.buffer[].getClass().getName() elements == java.lang.String.class
+main.java.ResultPrinter.instance.failedTests == 0
+main.java.ResultPrinter.instance.errorTests == 0
+arg0.suiteName != null
+arg0.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+arg0.buffer has only one value
+arg0.buffer != null
+arg0.buffer[] elements != null
+arg0.buffer[].getClass().getName() elements == java.lang.String.class
+arg0.failedTests == 0
+arg0.errorTests == 0
+===========================================================================
+main.java.TestResultOk.updateMe(main.java.ResultPrinter):::EXIT
+this.testName == orig(this.testName)
+this.testName.toString == orig(this.testName.toString)
+arg0.SEPARATOR == orig(arg0.SEPARATOR)
+arg0.SEPARATOR.toString == orig(arg0.SEPARATOR.toString)
+arg0.DOUBLE_SEPARATOR == orig(arg0.DOUBLE_SEPARATOR)
+arg0.DOUBLE_SEPARATOR.toString == orig(arg0.DOUBLE_SEPARATOR.toString)
+arg0.SUMMARY_HDR == orig(arg0.SUMMARY_HDR)
+arg0.SUMMARY_HDR.toString == orig(arg0.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance == orig(arg0)
+main.java.ResultPrinter.instance == orig(main.java.ResultPrinter.instance)
+main.java.ResultPrinter.instance.SEPARATOR == orig(main.java.ResultPrinter.instance.SEPARATOR)
+main.java.ResultPrinter.instance.SEPARATOR.toString == orig(main.java.ResultPrinter.instance.SEPARATOR.toString)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR)
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString == orig(main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString)
+main.java.ResultPrinter.instance.SUMMARY_HDR == orig(main.java.ResultPrinter.instance.SUMMARY_HDR)
+main.java.ResultPrinter.instance.SUMMARY_HDR.toString == orig(main.java.ResultPrinter.instance.SUMMARY_HDR.toString)
+main.java.ResultPrinter.instance.suiteName == orig(main.java.ResultPrinter.instance.suiteName)
+main.java.ResultPrinter.instance.suiteName.toString == orig(main.java.ResultPrinter.instance.suiteName.toString)
+main.java.ResultPrinter.instance.buffer == orig(main.java.ResultPrinter.instance.buffer)
+main.java.ResultPrinter.instance.buffer[] == orig(main.java.ResultPrinter.instance.buffer[])
+main.java.ResultPrinter.instance.failedTests == orig(main.java.ResultPrinter.instance.failedTests)
+main.java.ResultPrinter.instance.errorTests == orig(main.java.ResultPrinter.instance.errorTests)
+arg0.suiteName == orig(arg0.suiteName)
+arg0.suiteName.toString == orig(arg0.suiteName.toString)
+arg0.buffer == orig(arg0.buffer)
+arg0.buffer[] == orig(arg0.buffer[])
+arg0.failedTests == orig(arg0.failedTests)
+arg0.errorTests == orig(arg0.errorTests)
+arg0.SEPARATOR has only one value
+arg0.SEPARATOR != null
+arg0.SEPARATOR.toString == "----------------"
+arg0.DOUBLE_SEPARATOR has only one value
+arg0.DOUBLE_SEPARATOR != null
+arg0.DOUBLE_SEPARATOR.toString == "================"
+arg0.SUMMARY_HDR has only one value
+arg0.SUMMARY_HDR != null
+arg0.SUMMARY_HDR.toString == "[failure] Summary"
+main.java.ResultPrinter.instance has only one value
+main.java.ResultPrinter.instance != null
+main.java.ResultPrinter.instance.SEPARATOR has only one value
+main.java.ResultPrinter.instance.SEPARATOR != null
+main.java.ResultPrinter.instance.SEPARATOR.toString == "----------------"
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR has only one value
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR != null
+main.java.ResultPrinter.instance.DOUBLE_SEPARATOR.toString == "================"
+main.java.ResultPrinter.instance.SUMMARY_HDR has only one value
+main.java.ResultPrinter.instance.SUMMARY_HDR != null
+main.java.ResultPrinter.instance.SUMMARY_HDR.toString == "[failure] Summary"
+main.java.ResultPrinter.instance.suiteName != null
+main.java.ResultPrinter.instance.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+main.java.ResultPrinter.instance.buffer has only one value
+main.java.ResultPrinter.instance.buffer != null
+main.java.ResultPrinter.instance.buffer[] elements != null
+main.java.ResultPrinter.instance.buffer[].getClass().getName() elements == java.lang.String.class
+main.java.ResultPrinter.instance.failedTests == 0
+main.java.ResultPrinter.instance.errorTests == 0
+arg0.suiteName != null
+arg0.suiteName.toString one of { ".Test all.Test suite for testing Affirm", ".Test all.Test suite for testing Affirm.Test suite for testing Test" }
+arg0.buffer has only one value
+arg0.buffer != null
+arg0.buffer[] elements != null
+arg0.buffer[].getClass().getName() elements == java.lang.String.class
+arg0.failedTests == 0
+arg0.errorTests == 0
+main.java.ResultPrinter.instance.okTests - orig(main.java.ResultPrinter.instance.okTests) - 1 == 0
+arg0.okTests - orig(arg0.okTests) - 1 == 0
+===========================================================================
+main.java.TestRunner:::OBJECT
+this has only one value
+===========================================================================
+main.java.TestRunner.TestRunner():::EXIT
+===========================================================================
+main.java.TestRunner.startTesting(main.java.TestSuite):::ENTER
+arg0 has only one value
+arg0.tests has only one value
+arg0.name has only one value
+arg0.name.toString == "Test all"
+arg0.result == null
+arg0.fixture == null
+===========================================================================
+main.java.TestRunner.startTesting(main.java.TestSuite):::EXIT
+arg0.tests == orig(arg0.tests)
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+arg0.result == orig(arg0.result)
+arg0.fixture == orig(arg0.fixture)
+arg0.tests has only one value
+arg0.name has only one value
+arg0.name.toString == "Test all"
+arg0.result == null
+arg0.fixture == null
+===========================================================================
+main.java.TestSuite:::OBJECT
+this.tests != null
+this.name != null
+this.name.toString one of { "Test all", "Test suite for testing Affirm", "Test suite for testing Test" }
+this.result == null
+this.fixture == null
+===========================================================================
+main.java.TestSuite.TestSuite(java.lang.String):::ENTER
+arg0.toString one of { "Test all", "Test suite for testing Affirm", "Test suite for testing Test" }
+===========================================================================
+main.java.TestSuite.TestSuite(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+arg0.toString one of { "Test all", "Test suite for testing Affirm", "Test suite for testing Test" }
+===========================================================================
+main.java.TestSuite.addTest(main.java.Test):::ENTER
+arg0 != null
+arg0.name != null
+arg0.result == null
+arg0.fixture == null
+===========================================================================
+main.java.TestSuite.addTest(main.java.Test):::EXIT
+this.tests == orig(this.tests)
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.result == orig(this.result)
+this.fixture == orig(this.fixture)
+arg0.name == orig(arg0.name)
+arg0.name.toString == orig(arg0.name.toString)
+arg0.result == orig(arg0.result)
+arg0.fixture == orig(arg0.fixture)
+arg0.name != null
+arg0.result == null
+arg0.fixture == null
+===========================================================================
+main.java.TestSuite.runTest():::ENTER
+===========================================================================
+main.java.TestSuite.runTest():::EXIT
+this.tests == orig(this.tests)
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.result == orig(this.result)
+this.fixture == orig(this.fixture)
+===========================================================================
+test.java.EqualsBooleanTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two booleans are equal"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two booleans are equal"
+this.fixture == null
+===========================================================================
+test.java.EqualsBooleanTest.EqualsBooleanTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two booleans are equal"
+===========================================================================
+test.java.EqualsBooleanTest.EqualsBooleanTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two booleans are equal"
+===========================================================================
+test.java.EqualsBooleanTest.equalsBooleanTest():::ENTER
+this.result == null
+===========================================================================
+test.java.EqualsBooleanTest.equalsBooleanTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.EqualsBooleanTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.EqualsBooleanTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.EqualsCharTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two chars are equal"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two chars are equal"
+this.fixture == null
+===========================================================================
+test.java.EqualsCharTest.EqualsCharTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two chars are equal"
+===========================================================================
+test.java.EqualsCharTest.EqualsCharTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two chars are equal"
+===========================================================================
+test.java.EqualsCharTest.equalsCharTest():::ENTER
+this.result == null
+===========================================================================
+test.java.EqualsCharTest.equalsCharTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.EqualsCharTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.EqualsCharTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.EqualsFloatTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two floats are equal"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two floats are equal"
+this.fixture == null
+===========================================================================
+test.java.EqualsFloatTest.EqualsFloatTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two floats are equal"
+===========================================================================
+test.java.EqualsFloatTest.EqualsFloatTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two floats are equal"
+===========================================================================
+test.java.EqualsFloatTest.equalsFloatTest():::ENTER
+this.result == null
+===========================================================================
+test.java.EqualsFloatTest.equalsFloatTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.EqualsFloatTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.EqualsFloatTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.EqualsIntTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two integers are equal"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two integers are equal"
+this.fixture == null
+===========================================================================
+test.java.EqualsIntTest.EqualsIntTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two integers are equal"
+===========================================================================
+test.java.EqualsIntTest.EqualsIntTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two integers are equal"
+===========================================================================
+test.java.EqualsIntTest.equalsIntTest():::ENTER
+this.result == null
+===========================================================================
+test.java.EqualsIntTest.equalsIntTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.EqualsIntTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.EqualsIntTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.EqualsObjectTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two objects are equal"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two objects are equal"
+this.fixture == null
+===========================================================================
+test.java.EqualsObjectTest.EqualsObjectTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two objects are equal"
+===========================================================================
+test.java.EqualsObjectTest.EqualsObjectTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two objects are equal"
+===========================================================================
+test.java.EqualsObjectTest.equalsObjectTest():::ENTER
+this.result == null
+===========================================================================
+test.java.EqualsObjectTest.equalsObjectTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.EqualsObjectTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.EqualsObjectTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.FrameworkTests.main(java.lang.String[]):::ENTER
+arg0 has only one value
+arg0.getClass().getName() == java.lang.String[].class
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+test.java.FrameworkTests.main(java.lang.String[]):::EXIT
+arg0[] == orig(arg0[])
+arg0[] == []
+arg0[].toString == []
+===========================================================================
+test.java.NotEqualsBooleanTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two booleans are different"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two booleans are different"
+this.fixture == null
+===========================================================================
+test.java.NotEqualsBooleanTest.NotEqualsBooleanTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two booleans are different"
+===========================================================================
+test.java.NotEqualsBooleanTest.NotEqualsBooleanTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two booleans are different"
+===========================================================================
+test.java.NotEqualsBooleanTest.notEqualsBooleanTest():::ENTER
+this.result == null
+===========================================================================
+test.java.NotEqualsBooleanTest.notEqualsBooleanTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.NotEqualsBooleanTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.NotEqualsBooleanTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.NotEqualsCharTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two chars are different"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two chars are different"
+this.fixture == null
+===========================================================================
+test.java.NotEqualsCharTest.NotEqualsCharTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two chars are different"
+===========================================================================
+test.java.NotEqualsCharTest.NotEqualsCharTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two chars are different"
+===========================================================================
+test.java.NotEqualsCharTest.notEqualsCharTest():::ENTER
+this.result == null
+===========================================================================
+test.java.NotEqualsCharTest.notEqualsCharTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.NotEqualsCharTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.NotEqualsCharTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.NotEqualsFloatTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two floats are different"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two floats are different"
+this.fixture == null
+===========================================================================
+test.java.NotEqualsFloatTest.NotEqualsFloatTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two floats are different"
+===========================================================================
+test.java.NotEqualsFloatTest.NotEqualsFloatTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two floats are different"
+===========================================================================
+test.java.NotEqualsFloatTest.notEqualsFloatTest():::ENTER
+this.result == null
+===========================================================================
+test.java.NotEqualsFloatTest.notEqualsFloatTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.NotEqualsFloatTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.NotEqualsFloatTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.NotEqualsIntTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two integers are different"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two integers are different"
+this.fixture == null
+===========================================================================
+test.java.NotEqualsIntTest.NotEqualsIntTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two integers are different"
+===========================================================================
+test.java.NotEqualsIntTest.NotEqualsIntTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two integers are different"
+===========================================================================
+test.java.NotEqualsIntTest.notEqualsIntTest():::ENTER
+this.result == null
+===========================================================================
+test.java.NotEqualsIntTest.notEqualsIntTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.NotEqualsIntTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.NotEqualsIntTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.NotEqualsObjectTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two objects are different"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two objects are different"
+this.fixture == null
+===========================================================================
+test.java.NotEqualsObjectTest.NotEqualsObjectTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two objects are different"
+===========================================================================
+test.java.NotEqualsObjectTest.NotEqualsObjectTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two objects are different"
+===========================================================================
+test.java.NotEqualsObjectTest.notEqualsObjectTest():::ENTER
+this.result == null
+===========================================================================
+test.java.NotEqualsObjectTest.notEqualsObjectTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.NotEqualsObjectTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.NotEqualsObjectTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestEqualsBooleanTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two booleans are equal using the Test class' methods"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two booleans are equal using the Test class' methods"
+this.fixture == null
+===========================================================================
+test.java.TestEqualsBooleanTest.TestEqualsBooleanTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two booleans are equal using the Test class' methods"
+===========================================================================
+test.java.TestEqualsBooleanTest.TestEqualsBooleanTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two booleans are equal using the Test class' methods"
+===========================================================================
+test.java.TestEqualsBooleanTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestEqualsBooleanTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestEqualsBooleanTest.testEqualsBooleanTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestEqualsBooleanTest.testEqualsBooleanTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestEqualsCharTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two chars are equal using the Test class' methods"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two chars are equal using the Test class' methods"
+this.fixture == null
+===========================================================================
+test.java.TestEqualsCharTest.TestEqualsCharTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two chars are equal using the Test class' methods"
+===========================================================================
+test.java.TestEqualsCharTest.TestEqualsCharTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two chars are equal using the Test class' methods"
+===========================================================================
+test.java.TestEqualsCharTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestEqualsCharTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestEqualsCharTest.testEqualsCharTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestEqualsCharTest.testEqualsCharTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestEqualsFloatTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two floats are equal using the Test class' methods"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two floats are equal using the Test class' methods"
+this.fixture == null
+===========================================================================
+test.java.TestEqualsFloatTest.TestEqualsFloatTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two floats are equal using the Test class' methods"
+===========================================================================
+test.java.TestEqualsFloatTest.TestEqualsFloatTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two floats are equal using the Test class' methods"
+===========================================================================
+test.java.TestEqualsFloatTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestEqualsFloatTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestEqualsFloatTest.testEqualsFloatTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestEqualsFloatTest.testEqualsFloatTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestEqualsIntTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two integers are equal using the Test class' methods"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two integers are equal using the Test class' methods"
+this.fixture == null
+===========================================================================
+test.java.TestEqualsIntTest.TestEqualsIntTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two integers are equal using the Test class' methods"
+===========================================================================
+test.java.TestEqualsIntTest.TestEqualsIntTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two integers are equal using the Test class' methods"
+===========================================================================
+test.java.TestEqualsIntTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestEqualsIntTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestEqualsIntTest.testEqualsIntTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestEqualsIntTest.testEqualsIntTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestEqualsObjectTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two objects are equal using the Test class' methods"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two objects are equal using the Test class' methods"
+this.fixture == null
+===========================================================================
+test.java.TestEqualsObjectTest.TestEqualsObjectTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two objects are equal using the Test class' methods"
+===========================================================================
+test.java.TestEqualsObjectTest.TestEqualsObjectTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two objects are equal using the Test class' methods"
+===========================================================================
+test.java.TestEqualsObjectTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestEqualsObjectTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestEqualsObjectTest.testEqualsObjectTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestEqualsObjectTest.testEqualsObjectTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestNotEqualsBooleanTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two booleans are different using the Test class' methods"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two booleans are different using the Test class' methods"
+this.fixture == null
+===========================================================================
+test.java.TestNotEqualsBooleanTest.TestNotEqualsBooleanTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two booleans are different using the Test class' methods"
+===========================================================================
+test.java.TestNotEqualsBooleanTest.TestNotEqualsBooleanTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two booleans are different using the Test class' methods"
+===========================================================================
+test.java.TestNotEqualsBooleanTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestNotEqualsBooleanTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestNotEqualsBooleanTest.testNotEqualsBooleanTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestNotEqualsBooleanTest.testNotEqualsBooleanTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestNotEqualsCharTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two chars are different using the Test class' methods"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two chars are different using the Test class' methods"
+this.fixture == null
+===========================================================================
+test.java.TestNotEqualsCharTest.TestNotEqualsCharTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two chars are different using the Test class' methods"
+===========================================================================
+test.java.TestNotEqualsCharTest.TestNotEqualsCharTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two chars are different using the Test class' methods"
+===========================================================================
+test.java.TestNotEqualsCharTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestNotEqualsCharTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestNotEqualsCharTest.testNotEqualsCharTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestNotEqualsCharTest.testNotEqualsCharTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestNotEqualsFloatTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two floats are different using the Test class' methods"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two floats are different using the Test class' methods"
+this.fixture == null
+===========================================================================
+test.java.TestNotEqualsFloatTest.TestNotEqualsFloatTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two floats are different using the Test class' methods"
+===========================================================================
+test.java.TestNotEqualsFloatTest.TestNotEqualsFloatTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two floats are different using the Test class' methods"
+===========================================================================
+test.java.TestNotEqualsFloatTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestNotEqualsFloatTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestNotEqualsFloatTest.testNotEqualsFloatTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestNotEqualsFloatTest.testNotEqualsFloatTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestNotEqualsIntTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two integers are different using the Test class' methods"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two integers are different using the Test class' methods"
+this.fixture == null
+===========================================================================
+test.java.TestNotEqualsIntTest.TestNotEqualsIntTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two integers are different using the Test class' methods"
+===========================================================================
+test.java.TestNotEqualsIntTest.TestNotEqualsIntTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two integers are different using the Test class' methods"
+===========================================================================
+test.java.TestNotEqualsIntTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestNotEqualsIntTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestNotEqualsIntTest.testNotEqualsIntTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestNotEqualsIntTest.testNotEqualsIntTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestNotEqualsObjectTest:::OBJECT
+this.name == this.result.testName
+this has only one value
+this.name has only one value
+this.name.toString == "Test two objects are different using the Test class' methods"
+this.result.getClass().getName() == main.java.TestResultOk.class
+this.result.testName has only one value
+this.result.testName.toString == "Test two objects are different using the Test class' methods"
+this.fixture == null
+===========================================================================
+test.java.TestNotEqualsObjectTest.TestNotEqualsObjectTest(java.lang.String):::ENTER
+arg0 has only one value
+arg0.toString == "Test two objects are different using the Test class' methods"
+===========================================================================
+test.java.TestNotEqualsObjectTest.TestNotEqualsObjectTest(java.lang.String):::EXIT
+this.name == orig(arg0)
+arg0.toString == orig(arg0.toString)
+this.result == null
+arg0.toString == "Test two objects are different using the Test class' methods"
+===========================================================================
+test.java.TestNotEqualsObjectTest.runTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestNotEqualsObjectTest.runTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+===========================================================================
+test.java.TestNotEqualsObjectTest.testNotEqualsObjectTest():::ENTER
+this.result == null
+===========================================================================
+test.java.TestNotEqualsObjectTest.testNotEqualsObjectTest():::EXIT
+this.name == orig(this.name)
+this.name.toString == orig(this.name.toString)
+this.fixture == orig(this.fixture)
+this.result has only one value
+Exiting Daikon.

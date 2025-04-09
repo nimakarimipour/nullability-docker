@@ -1,0 +1,2367 @@
+Daikon version 5.8.20, released May 14, 2024; http://plse.cs.washington.edu/daikon.
+Reading declaration files Processing trace data; reading 1 dtrace file:
+
+No return from procedure observed 4 times.  Unmatched entries are ignored!
+Unterminated calls:
+  test.test.main(java.lang.String[]) : 1 invocation
+  solver.Solver.solve(solver.Sudoku) : 1 invocation
+  solver.Solver.solveStep(solver.Sudoku) : 1 invocation
+  solver.methods.naked.pair.NakedPairBlock.getStep(solver.Sudoku) : 1 invocation
+End of report for procedures not returned from.  Unmatched entries are ignored!
+
+missing variables in newEnterExitRel:
+  parent = solver.structures.Cell$1.(solver.structures.Cell):::ENTER
+  child = solver.structures.Cell$1.(solver.structures.Cell):::EXIT
+  parent.var_infos = [Ldaikon.VarInfo;@aa633e6
+parent varinfos missing from parent_to_child_map:
+   solver.structures.Cell.this.candidates[solver.structures.Cell.this.row]
+   solver.structures.Cell.this.candidates[solver.structures.Cell.this.row-1]
+   solver.structures.Cell.this.candidates[solver.structures.Cell.this.col]
+   solver.structures.Cell.this.candidates[solver.structures.Cell.this.col-1]
+   solver.structures.Cell.this.candidates[solver.structures.Cell.this.block]
+   solver.structures.Cell.this.candidates[solver.structures.Cell.this.block-1]
+rel.parent_to_child_map:
+    solver.structures.Cell.this => orig(solver.structures.Cell.this)
+    solver.structures.Cell.this.filled => orig(solver.structures.Cell.this.filled)
+    solver.structures.Cell.this.value => orig(solver.structures.Cell.this.value)
+    solver.structures.Cell.this.candidates => orig(solver.structures.Cell.this.candidates)
+    solver.structures.Cell.this.candidates[..] => orig(solver.structures.Cell.this.candidates[..])
+    solver.structures.Cell.this.candidates[..].getClass().getName() => orig(solver.structures.Cell.this.candidates[..].getClass().getName())
+    solver.structures.Cell.this.candidates.getClass().getName() => orig(solver.structures.Cell.this.candidates.getClass().getName())
+    solver.structures.Cell.this.row => orig(solver.structures.Cell.this.row)
+    solver.structures.Cell.this.col => orig(solver.structures.Cell.this.col)
+    solver.structures.Cell.this.block => orig(solver.structures.Cell.this.block)
+    size(solver.structures.Cell.this.candidates[..]) => orig(size(solver.structures.Cell.this.candidates[..]))
+    size(solver.structures.Cell.this.candidates[..])-1 => orig(size(solver.structures.Cell.this.candidates[..]))-1
+child.var_infos:
+    this
+    solver.structures.Cell.this
+    solver.structures.Cell.this.filled
+    solver.structures.Cell.this.value
+    solver.structures.Cell.this.candidates
+    solver.structures.Cell.this.candidates[..]
+    solver.structures.Cell.this.candidates[..].getClass().getName()
+    solver.structures.Cell.this.candidates.getClass().getName()
+    solver.structures.Cell.this.row
+    solver.structures.Cell.this.col
+    solver.structures.Cell.this.block
+    orig(solver.structures.Cell.this)
+    orig(solver.structures.Cell.this.filled)
+    orig(solver.structures.Cell.this.value)
+    orig(solver.structures.Cell.this.candidates)
+    orig(solver.structures.Cell.this.candidates[..])
+    orig(solver.structures.Cell.this.candidates[..].getClass().getName())
+    orig(solver.structures.Cell.this.candidates.getClass().getName())
+    orig(solver.structures.Cell.this.row)
+    orig(solver.structures.Cell.this.col)
+    orig(solver.structures.Cell.this.block)
+    size(solver.structures.Cell.this.candidates[..])
+    size(solver.structures.Cell.this.candidates[..])-1
+    orig(size(solver.structures.Cell.this.candidates[..]))
+    orig(size(solver.structures.Cell.this.candidates[..]))-1
+End of diagnostics for newEnterExitRel(solver.structures.Cell$1.(solver.structures.Cell):::ENTER, solver.structures.Cell$1.(solver.structures.Cell):::EXIT)
+===========================================================================
+solver.SolveStep:::OBJECT
+this.cell.candidates != null
+this.cell.candidates[] elements != null
+this.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+this.cell.candidates.getClass().getName() == java.util.ArrayList.class
+this.cell.row >= 0
+this.info.toString == "ROW"
+this.params != null
+this.params.getClass().getName() == java.util.HashMap.class
+this.sm.getClass().getName() != this.cell.candidates.getClass().getName()
+this.sm.getClass().getName() != this.params.getClass().getName()
+this.cell.candidates.getClass().getName() != this.params.getClass().getName()
+this.cell.row != this.cell.col
+===========================================================================
+solver.SolveStep.SolveStep():::EXIT
+this.sm == null
+this.cell == null
+this.value == null
+this.info == null
+===========================================================================
+solver.SolveStep.apply(solver.Sudoku):::ENTER
+this.cell.candidates.getClass().getName() == arg0.cells.getClass().getName()
+this.cell.filled == false
+this.cell.value == null
+arg0 has only one value
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+size(this.cell.candidates[]) one of { 1, 3, 4 }
+size(arg0.cells[]) == 9
+this.cell.candidates.getClass().getName() in arg0.cells[].getClass().getName()
+this.cell.row < arg0.SIZE
+this.cell.col < arg0.SIZE
+this.cell.block < arg0.SIZE
+this.cell.block != arg0.BLOCK_SIZE
+===========================================================================
+solver.SolveStep.apply(solver.Sudoku):::EXIT
+this.sm == orig(this.sm)
+this.sm.getClass().getName() == orig(this.sm.getClass().getName())
+this.cell == orig(this.cell)
+this.cell.candidates.getClass().getName() == arg0.cells.getClass().getName()
+this.cell.row == orig(this.cell.row)
+this.cell.col == orig(this.cell.col)
+this.cell.block == orig(this.cell.block)
+this.value == orig(this.value)
+this.info == orig(this.info)
+this.info.toString == orig(this.info.toString)
+this.params == orig(this.params)
+this.params.getClass().getName() == orig(this.params.getClass().getName())
+arg0.SIZE == orig(arg0.SIZE)
+arg0.BLOCK_SIZE == orig(arg0.BLOCK_SIZE)
+arg0.cells == orig(arg0.cells)
+arg0.cells[] == orig(arg0.cells[])
+arg0.cells.getClass().getName() == orig(this.cell.candidates.getClass().getName())
+arg0.cells.getClass().getName() == orig(arg0.cells.getClass().getName())
+this.cell.candidates[].getClass().getName() one of { [], [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer] }
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+size(this.cell.candidates[]) one of { 0, 4 }
+size(arg0.cells[]) == 9
+this.sm.getClass().getName() != arg0.cells.getClass().getName()
+this.cell.row < arg0.SIZE
+this.cell.col < arg0.SIZE
+this.cell.block < arg0.SIZE
+this.cell.block != arg0.BLOCK_SIZE
+this.params.getClass().getName() != arg0.cells.getClass().getName()
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+size(this.cell.candidates[]) % orig(size(this.cell.candidates[])) == 0
+size(this.cell.candidates[]) <= orig(size(this.cell.candidates[]))
+orig(size(this.cell.candidates[]))-1 % size(this.cell.candidates[])-1 == 0
+size(this.cell.candidates[])-1 <= orig(size(this.cell.candidates[]))-1
+===========================================================================
+solver.SolveStep.debug():::ENTER
+this.cell.filled == false
+this.cell.value == null
+size(this.cell.candidates[]) one of { 1, 3, 4 }
+===========================================================================
+solver.SolveStep.debug():::EXIT
+this.sm == orig(this.sm)
+this.sm.getClass().getName() == orig(this.sm.getClass().getName())
+this.cell == orig(this.cell)
+this.cell.filled == orig(this.cell.filled)
+this.cell.value == orig(this.cell.value)
+this.cell.candidates == orig(this.cell.candidates)
+this.cell.candidates[] == orig(this.cell.candidates[])
+this.cell.candidates.getClass().getName() == orig(this.cell.candidates.getClass().getName())
+this.cell.row == orig(this.cell.row)
+this.cell.col == orig(this.cell.col)
+this.cell.block == orig(this.cell.block)
+this.value == orig(this.value)
+this.info == orig(this.info)
+this.info.toString == orig(this.info.toString)
+this.params == orig(this.params)
+this.params.getClass().getName() == orig(this.params.getClass().getName())
+this.cell.filled == false
+this.cell.value == null
+size(this.cell.candidates[]) one of { 1, 3, 4 }
+===========================================================================
+solver.SolveStep.setCell(solver.structures.Cell):::ENTER
+this.cell == null
+this.value == null
+this.info == null
+arg0.filled == false
+arg0.value == null
+arg0.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.candidates.getClass().getName() == java.util.ArrayList.class
+size(arg0.candidates[]) one of { 1, 3, 4 }
+this.sm.getClass().getName() != arg0.candidates.getClass().getName()
+this.params.getClass().getName() != arg0.candidates.getClass().getName()
+arg0.row != arg0.col
+===========================================================================
+solver.SolveStep.setCell(solver.structures.Cell):::EXIT
+this.sm == orig(this.sm)
+this.sm.getClass().getName() == orig(this.sm.getClass().getName())
+this.cell == orig(arg0)
+this.cell.filled == arg0.filled
+this.cell.value == this.value
+this.cell.candidates == arg0.candidates
+this.cell.candidates.getClass().getName() == arg0.candidates.getClass().getName()
+this.cell.row == arg0.row
+this.cell.col == arg0.col
+this.cell.block == arg0.block
+this.value == orig(this.value)
+this.info == orig(this.info)
+this.params == orig(this.params)
+this.params.getClass().getName() == orig(this.params.getClass().getName())
+arg0.filled == orig(arg0.filled)
+arg0.value == orig(arg0.value)
+arg0.candidates == orig(arg0.candidates)
+arg0.candidates[] == orig(arg0.candidates[])
+arg0.candidates.getClass().getName() == orig(arg0.candidates.getClass().getName())
+arg0.row == orig(arg0.row)
+arg0.col == orig(arg0.col)
+arg0.block == orig(arg0.block)
+this.value == null
+this.info == null
+arg0.filled == false
+arg0.value == null
+arg0.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.candidates.getClass().getName() == java.util.ArrayList.class
+size(this.cell.candidates[]) one of { 1, 3, 4 }
+size(arg0.candidates[]) one of { 1, 3, 4 }
+this.sm.getClass().getName() != arg0.candidates.getClass().getName()
+this.params.getClass().getName() != arg0.candidates.getClass().getName()
+arg0.row != arg0.col
+===========================================================================
+solver.SolveStep.setInfo(java.lang.String):::ENTER
+this.cell.value == this.value
+this has only one value
+this.sm has only one value
+this.sm.getClass().getName() == solver.methods.LockedCandidatesPointing.class
+this.cell has only one value
+this.cell.filled == false
+this.cell.candidates has only one value
+this.cell.candidates[] contains no nulls and has only one value, of length 4
+this.cell.candidates[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+this.cell.row == 0
+this.cell.col == 6
+this.cell.block == 2
+this.value == null
+this.info == null
+this.params has only one value
+arg0 has only one value
+arg0.toString == "ROW"
+size(this.cell.candidates[]) == 4
+===========================================================================
+solver.SolveStep.setInfo(java.lang.String):::EXIT
+this.sm == orig(this.sm)
+this.sm.getClass().getName() == orig(this.sm.getClass().getName())
+this.cell == orig(this.cell)
+this.cell.filled == orig(this.cell.filled)
+this.cell.value == this.value
+this.cell.candidates == orig(this.cell.candidates)
+this.cell.candidates[] == orig(this.cell.candidates[])
+this.cell.candidates.getClass().getName() == orig(this.cell.candidates.getClass().getName())
+this.cell.row == orig(this.cell.row)
+this.cell.col == orig(this.cell.col)
+this.cell.block == orig(this.cell.block)
+this.value == orig(this.cell.value)
+this.value == orig(this.value)
+this.info == orig(arg0)
+this.params == orig(this.params)
+this.params.getClass().getName() == orig(this.params.getClass().getName())
+arg0.toString == orig(arg0.toString)
+this.sm has only one value
+this.sm.getClass().getName() == solver.methods.LockedCandidatesPointing.class
+this.cell has only one value
+this.cell.filled == false
+this.cell.candidates has only one value
+this.cell.candidates[] contains no nulls and has only one value, of length 4
+this.cell.candidates[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+this.cell.row == 0
+this.cell.col == 6
+this.cell.block == 2
+this.value == null
+this.info has only one value
+this.params has only one value
+arg0.toString == "ROW"
+size(this.cell.candidates[]) == 4
+===========================================================================
+solver.SolveStep.setMethod(solver.methods.SolveMethod):::ENTER
+this.sm == null
+this.cell == null
+this.value == null
+this.info == null
+this.params.getClass().getName() != arg0.getClass().getName()
+===========================================================================
+solver.SolveStep.setMethod(solver.methods.SolveMethod):::EXIT
+this.sm == orig(arg0)
+this.sm.getClass().getName() == orig(arg0.getClass().getName())
+this.cell == orig(this.cell)
+this.value == orig(this.value)
+this.info == orig(this.info)
+this.params == orig(this.params)
+this.params.getClass().getName() == orig(this.params.getClass().getName())
+this.cell == null
+this.value == null
+this.info == null
+===========================================================================
+solver.SolveStep.setValue(int):::ENTER
+this.cell.value == this.value
+this.cell.filled == false
+this.cell.candidates[].getClass().getName() one of { [java.lang.Integer, java.lang.Integer, java.lang.Integer], [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer] }
+this.value == null
+this.info == null
+size(this.cell.candidates[]) one of { 3, 4 }
+===========================================================================
+solver.SolveStep.setValue(int):::EXIT
+this.sm == orig(this.sm)
+this.sm.getClass().getName() == orig(this.sm.getClass().getName())
+this.cell == orig(this.cell)
+this.cell.filled == orig(this.cell.filled)
+this.cell.value == orig(this.cell.value)
+this.cell.value == orig(this.value)
+this.cell.candidates == orig(this.cell.candidates)
+this.cell.candidates[] == orig(this.cell.candidates[])
+this.cell.candidates.getClass().getName() == orig(this.cell.candidates.getClass().getName())
+this.cell.row == orig(this.cell.row)
+this.cell.col == orig(this.cell.col)
+this.cell.block == orig(this.cell.block)
+this.info == orig(this.info)
+this.params == orig(this.params)
+this.params.getClass().getName() == orig(this.params.getClass().getName())
+this.cell.filled == false
+this.cell.value == null
+this.cell.candidates[].getClass().getName() one of { [java.lang.Integer, java.lang.Integer, java.lang.Integer], [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer] }
+this.info == null
+size(this.cell.candidates[]) one of { 3, 4 }
+===========================================================================
+solver.SolveStep.setValue(java.lang.Integer):::ENTER
+this.cell.value == this.value
+this.cell.filled == false
+this.cell.candidates[].getClass().getName() one of { [java.lang.Integer], [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer] }
+this.value == null
+size(this.cell.candidates[]) one of { 1, 4 }
+===========================================================================
+solver.SolveStep.setValue(java.lang.Integer):::EXIT
+this.sm == orig(this.sm)
+this.sm.getClass().getName() == orig(this.sm.getClass().getName())
+this.cell == orig(this.cell)
+this.cell.filled == orig(this.cell.filled)
+this.cell.value == orig(this.cell.value)
+this.cell.value == orig(this.value)
+this.cell.candidates == orig(this.cell.candidates)
+this.cell.candidates[] == orig(this.cell.candidates[])
+this.cell.candidates.getClass().getName() == orig(this.cell.candidates.getClass().getName())
+this.cell.row == orig(this.cell.row)
+this.cell.col == orig(this.cell.col)
+this.cell.block == orig(this.cell.block)
+this.value == orig(arg0)
+this.info == orig(this.info)
+this.info.toString == orig(this.info.toString)
+this.params == orig(this.params)
+this.params.getClass().getName() == orig(this.params.getClass().getName())
+this.cell.filled == false
+this.cell.value == null
+this.cell.candidates[].getClass().getName() one of { [java.lang.Integer], [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer] }
+size(this.cell.candidates[]) one of { 1, 4 }
+===========================================================================
+solver.Solver:::CLASS
+solver.Solver.methods has only one value
+solver.Solver.methods != null
+solver.Solver.methods.getClass().getName() == solver.methods.SolveMethod[].class
+solver.Solver.methods[] contains no nulls and has only one value, of length 11
+solver.Solver.methods[] elements != null
+solver.Solver.methods[].getClass().getName() == [solver.methods.NakedSingle, solver.methods.HiddenSingleCol, solver.methods.HiddenSingleRow, solver.methods.HiddenSingleBlock, solver.methods.LockedCandidatesPointing, solver.methods.naked.pair.NakedPairBlock, solver.methods.naked.pair.NakedPairCol, solver.methods.naked.pair.NakedPairRow, solver.methods.naked.n.NakedNCol, solver.methods.naked.n.NakedNRow, solver.methods.BUG]
+size(solver.Solver.methods[]) == 11
+===========================================================================
+solver.Solver:::OBJECT
+this has only one value
+===========================================================================
+solver.Solver.Solver():::EXIT
+===========================================================================
+solver.Solver.initializeCandidates(solver.Sudoku):::ENTER
+arg0 has only one value
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+size(arg0.cells[]) == 9
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.Solver.initializeCandidates(solver.Sudoku):::EXIT
+solver.Solver.methods == orig(solver.Solver.methods)
+solver.Solver.methods.getClass().getName() == orig(solver.Solver.methods.getClass().getName())
+solver.Solver.methods[] == orig(solver.Solver.methods[])
+arg0.SIZE == orig(arg0.SIZE)
+arg0.BLOCK_SIZE == orig(arg0.BLOCK_SIZE)
+arg0.cells == orig(arg0.cells)
+arg0.cells[] == orig(arg0.cells[])
+arg0.cells.getClass().getName() == orig(arg0.cells.getClass().getName())
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+size(arg0.cells[]) == 9
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.Solver.solveStep(solver.Sudoku):::ENTER
+arg0 has only one value
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+size(arg0.cells[]) == 9
+solver.Solver.methods.getClass().getName() != arg0.cells.getClass().getName()
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.Solver.solveStep(solver.Sudoku):::EXIT
+solver.Solver.methods == orig(solver.Solver.methods)
+solver.Solver.methods.getClass().getName() == orig(solver.Solver.methods.getClass().getName())
+solver.Solver.methods[] == orig(solver.Solver.methods[])
+arg0.SIZE == orig(arg0.SIZE)
+arg0.BLOCK_SIZE == orig(arg0.BLOCK_SIZE)
+arg0.cells == orig(arg0.cells)
+arg0.cells[] == orig(arg0.cells[])
+arg0.cells.getClass().getName() == return.cell.candidates.getClass().getName()
+arg0.cells.getClass().getName() == orig(arg0.cells.getClass().getName())
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+return.cell.filled == false
+return.cell.value == null
+return.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+return.info.toString == "ROW"
+return.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+size(return.cell.candidates[]) one of { 1, 3, 4 }
+solver.Solver.methods.getClass().getName() != arg0.cells.getClass().getName()
+solver.Solver.methods.getClass().getName() != return.sm.getClass().getName()
+solver.Solver.methods.getClass().getName() != return.params.getClass().getName()
+return.sm.getClass().getName() in solver.Solver.methods[].getClass().getName()
+arg0.SIZE > return.cell.row
+arg0.SIZE > return.cell.col
+arg0.SIZE > return.cell.block
+arg0.BLOCK_SIZE != return.cell.block
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+arg0.cells.getClass().getName() != return.sm.getClass().getName()
+arg0.cells.getClass().getName() != return.params.getClass().getName()
+return.sm.getClass().getName() != return.params.getClass().getName()
+return.cell.row != return.cell.col
+===========================================================================
+solver.Sudoku:::OBJECT
+this.SIZE one of { 3, 9 }
+this.BLOCK_SIZE == 3
+this.cells[] elements != null
+this.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+this.cells[].getClass().getName() elements == java.util.ArrayList.class
+this.cells.getClass().getName() == java.util.ArrayList.class
+size(this.cells[]) == 9
+this.SIZE >= this.BLOCK_SIZE
+this.cells.getClass().getName() in this.cells[].getClass().getName()
+===========================================================================
+solver.Sudoku.CIOSCA2():::EXIT
+return has only one value
+return.SIZE == 9
+return.BLOCK_SIZE == 3
+return.cells has only one value
+return.cells[] contains no nulls and has only one value, of length 9
+return.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+return.cells[].getClass().getName() elements == java.util.ArrayList.class
+return.cells.getClass().getName() == java.util.ArrayList.class
+size(return.cells[]) == 9
+return.cells.getClass().getName() in return.cells[].getClass().getName()
+===========================================================================
+solver.Sudoku.Sudoku():::EXIT
+this.SIZE == 9
+this.cells != null
+===========================================================================
+solver.Sudoku.contains(int):::ENTER
+this.SIZE == this.BLOCK_SIZE
+this.SIZE == 3
+this.cells != null
+arg0 >= 1
+===========================================================================
+solver.Sudoku.contains(int):::EXIT233
+return == true
+===========================================================================
+solver.Sudoku.contains(int):::EXIT233;condition="return == true"
+===========================================================================
+solver.Sudoku.contains(int):::EXIT236
+return == false
+===========================================================================
+solver.Sudoku.contains(int):::EXIT236;condition="not(return == true)"
+===========================================================================
+solver.Sudoku.contains(int):::EXIT
+this.SIZE == this.BLOCK_SIZE
+this.SIZE == orig(this.SIZE)
+this.SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+this.SIZE == 3
+this.cells != null
+===========================================================================
+solver.Sudoku.contains(int):::EXIT;condition="return == true"
+return == true
+===========================================================================
+solver.Sudoku.contains(int):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+solver.Sudoku.getBlock(int):::ENTER
+this has only one value
+this.SIZE == 9
+this.cells has only one value
+this.cells != null
+this.cells[] contains no nulls and has only one value, of length 9
+arg0 >= 0
+this.SIZE > arg0
+===========================================================================
+solver.Sudoku.getBlock(int):::EXIT
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == return.cells.getClass().getName()
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+this.SIZE == 9
+this.cells has only one value
+this.cells != null
+this.cells[] contains no nulls and has only one value, of length 9
+return != null
+return.SIZE == 3
+return.BLOCK_SIZE == 3
+return.cells != null
+return.cells[] elements != null
+return.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+return.cells[].getClass().getName() elements == java.util.ArrayList.class
+size(return.cells[]) == 9
+this.SIZE > orig(arg0)
+this.cells.getClass().getName() in return.cells[].getClass().getName()
+===========================================================================
+solver.Sudoku.getBlock(int, int):::ENTER
+this has only one value
+this.SIZE == 9
+this.cells has only one value
+this.cells != null
+this.cells[] contains no nulls and has only one value, of length 9
+arg0 >= 0
+arg1 >= 0
+this.SIZE > arg0
+this.SIZE > arg1
+===========================================================================
+solver.Sudoku.getBlock(int, int):::EXIT
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == return.cells.getClass().getName()
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+this.SIZE == 9
+this.cells has only one value
+this.cells != null
+this.cells[] contains no nulls and has only one value, of length 9
+return != null
+return.SIZE == 3
+return.BLOCK_SIZE == 3
+return.cells != null
+return.cells[] elements != null
+return.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+return.cells[].getClass().getName() elements == java.util.ArrayList.class
+size(return.cells[]) == 9
+this.SIZE > orig(arg0)
+this.SIZE > orig(arg1)
+this.cells.getClass().getName() in return.cells[].getClass().getName()
+===========================================================================
+solver.Sudoku.getCell(int, int):::ENTER
+this.cells != null
+arg0 >= 0
+arg1 >= 0
+this.SIZE > arg0
+this.SIZE > arg1
+===========================================================================
+solver.Sudoku.getCell(int, int):::EXIT
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == return.candidates.getClass().getName()
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+this.cells != null
+return != null
+return.candidates != null
+return.candidates[] elements != null
+return.candidates[].getClass().getName() elements == java.lang.Integer.class
+return.row >= 0
+return.col >= 0
+return.block >= 0
+this.SIZE > orig(arg0)
+this.SIZE > orig(arg1)
+return.row >= orig(arg0)
+return.col >= orig(arg1)
+===========================================================================
+solver.Sudoku.getCol(int):::ENTER
+this has only one value
+this.SIZE == 9
+this.cells has only one value
+this.cells != null
+this.cells[] contains no nulls and has only one value, of length 9
+arg0 >= 0
+this.SIZE > arg0
+===========================================================================
+solver.Sudoku.getCol(int):::EXIT
+this.SIZE == return.SIZE
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+this.SIZE == 9
+this.cells has only one value
+this.cells != null
+this.cells[] contains no nulls and has only one value, of length 9
+return != null
+return.cells != null
+return.cells[] elements != null
+return.cells[].getClass().getName() == [solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell]
+return.cells[].getClass().getName() elements == solver.structures.Cell.class
+size(return.cells[]) == 9
+this.SIZE > orig(arg0)
+===========================================================================
+solver.Sudoku.getRow(int):::ENTER
+this has only one value
+this.SIZE == 9
+this.cells has only one value
+this.cells != null
+this.cells[] contains no nulls and has only one value, of length 9
+arg0 >= 0
+this.SIZE > arg0
+===========================================================================
+solver.Sudoku.getRow(int):::EXIT
+this.SIZE == return.SIZE
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+this.SIZE == 9
+this.cells has only one value
+this.cells != null
+this.cells[] contains no nulls and has only one value, of length 9
+return != null
+return.getClass().getName() == solver.structures.SudokuRow.class
+return.cells != null
+return.cells[] elements != null
+return.cells[].getClass().getName() == [solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell]
+return.cells[].getClass().getName() elements == solver.structures.Cell.class
+size(return.cells[]) == 9
+this.SIZE > orig(arg0)
+this.cells.getClass().getName() != return.getClass().getName()
+===========================================================================
+solver.Sudoku.getSize():::ENTER
+this.cells != null
+===========================================================================
+solver.Sudoku.getSize():::EXIT
+this.SIZE == return
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+return == orig(this.SIZE)
+this.cells != null
+return one of { 3, 9 }
+this.BLOCK_SIZE <= return
+===========================================================================
+solver.Sudoku.init(java.lang.Integer[][]):::ENTER
+this.SIZE == size(arg0[])
+this has only one value
+this.SIZE == 9
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+arg0 has only one value
+arg0.getClass().getName() == java.lang.Integer[][].class
+arg0[] contains no nulls and has only one value, of length 9
+arg0[this.SIZE-1] has only one value
+arg0[this.BLOCK_SIZE] has only one value
+arg0[this.BLOCK_SIZE-1] has only one value
+===========================================================================
+solver.Sudoku.init(java.lang.Integer[][]):::EXIT
+this.SIZE == orig(this.SIZE)
+this.SIZE == orig(size(arg0[]))
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+arg0[] == orig(arg0[])
+size(this.cells[]) == orig(size(this.cells[]))
+this.SIZE == 9
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+arg0[] contains no nulls and has only one value, of length 9
+arg0[this.SIZE-1] has only one value
+arg0[this.BLOCK_SIZE] has only one value
+arg0[this.BLOCK_SIZE-1] has only one value
+===========================================================================
+solver.Sudoku.initCells():::ENTER
+this.SIZE == 9
+===========================================================================
+solver.Sudoku.initCells():::EXIT
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells[].getClass().getName() == orig(this.cells[].getClass().getName())
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+size(this.cells[]) == orig(size(this.cells[]))
+this.SIZE == 9
+this.cells != null
+this.cells[].getClass().getName() == orig(this.cells[].getClass().getName()) (elementwise)
+orig(this.cells.getClass().getName()) in this.cells[].getClass().getName()
+this.cells.getClass().getName() in orig(this.cells[].getClass().getName())
+===========================================================================
+solver.Sudoku.isSolved():::ENTER
+this has only one value
+this.SIZE == 9
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+===========================================================================
+solver.Sudoku.isSolved():::EXIT243
+===========================================================================
+solver.Sudoku.isSolved():::EXIT243;condition="not(return == true)"
+===========================================================================
+solver.Sudoku.isSolved():::EXIT
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+this.SIZE == 9
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+return == false
+===========================================================================
+solver.Sudoku.isSolved():::EXIT;condition="not(return == true)"
+===========================================================================
+solver.Sudoku.removeCandidateFromBlock(java.lang.Integer, int, int):::ENTER
+this has only one value
+this.SIZE == 9
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+this.SIZE > arg1
+this.SIZE > arg2
+arg1 != arg2
+===========================================================================
+solver.Sudoku.removeCandidateFromBlock(java.lang.Integer, int, int):::EXIT
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+this.SIZE == 9
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+this.SIZE > orig(arg1)
+this.SIZE > orig(arg2)
+===========================================================================
+solver.Sudoku.removeCandidateFromCol(java.lang.Integer, int):::ENTER
+this has only one value
+this.SIZE == 9
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+this.SIZE > arg1
+===========================================================================
+solver.Sudoku.removeCandidateFromCol(java.lang.Integer, int):::EXIT
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+this.SIZE == 9
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+this.SIZE > orig(arg1)
+===========================================================================
+solver.Sudoku.removeCandidateFromRow(java.lang.Integer, int):::ENTER
+this has only one value
+this.SIZE == 9
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+this.SIZE > arg1
+===========================================================================
+solver.Sudoku.removeCandidateFromRow(java.lang.Integer, int):::EXIT
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+this.SIZE == 9
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+this.SIZE > orig(arg1)
+===========================================================================
+solver.Sudoku.setCell(int, int, solver.structures.Cell):::ENTER
+this.cells.getClass().getName() == arg2.candidates.getClass().getName()
+this.cells != null
+arg0 >= 0
+arg1 >= 0
+arg2 != null
+arg2.candidates != null
+arg2.candidates[] elements != null
+arg2.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg2.row >= 0
+arg2.col >= 0
+arg2.block >= 0
+this.SIZE > arg0
+this.SIZE > arg1
+arg0 <= arg2.row
+arg1 <= arg2.col
+===========================================================================
+solver.Sudoku.setCell(int, int, solver.structures.Cell):::EXIT
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == arg2.candidates.getClass().getName()
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+this.cells.getClass().getName() == orig(arg2.candidates.getClass().getName())
+arg2.filled == orig(arg2.filled)
+arg2.value == orig(arg2.value)
+arg2.candidates == orig(arg2.candidates)
+arg2.candidates[] == orig(arg2.candidates[])
+arg2.row == orig(arg2.row)
+arg2.col == orig(arg2.col)
+arg2.block == orig(arg2.block)
+this.cells != null
+arg2.candidates != null
+arg2.candidates[] elements != null
+arg2.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg2.row >= 0
+arg2.col >= 0
+arg2.block >= 0
+this.SIZE > orig(arg0)
+this.SIZE > orig(arg1)
+arg2.row >= orig(arg0)
+arg2.col >= orig(arg1)
+===========================================================================
+solver.Sudoku.solveCell(solver.structures.Cell, java.lang.Integer):::ENTER
+this.cells.getClass().getName() == arg0.candidates.getClass().getName()
+this has only one value
+this.SIZE == 9
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+arg0.filled == false
+arg0.value == null
+arg0.candidates[].getClass().getName() elements == java.lang.Integer.class
+size(arg0.candidates[]) one of { 1, 3, 4 }
+this.SIZE > arg0.row
+this.SIZE > arg0.col
+this.SIZE > arg0.block
+this.BLOCK_SIZE != arg0.block
+arg0.row != arg0.col
+===========================================================================
+solver.Sudoku.solveCell(solver.structures.Cell, java.lang.Integer):::EXIT
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == arg0.candidates.getClass().getName()
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+this.cells.getClass().getName() == orig(arg0.candidates.getClass().getName())
+arg0.value == orig(arg1)
+arg0.row == orig(arg0.row)
+arg0.col == orig(arg0.col)
+arg0.block == orig(arg0.block)
+this.SIZE == 9
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+arg0.filled == true
+arg0.candidates[] == []
+arg0.candidates[].getClass().getName() == []
+this.SIZE > arg0.row
+this.SIZE > arg0.col
+this.SIZE > arg0.block
+this.BLOCK_SIZE != arg0.block
+arg0.row != arg0.col
+size(arg0.candidates[]) <= orig(size(arg0.candidates[]))-1
+===========================================================================
+solver.methods.BUG:::OBJECT
+this has only one value
+===========================================================================
+solver.methods.BUG.BUG():::EXIT
+===========================================================================
+solver.methods.HiddenSingleBlock$Freq:::OBJECT
+this.cells != null
+this.cells[] elements != null
+this.cells[].getClass().getName() elements == solver.structures.Cell.class
+this.cells.getClass().getName() == java.util.LinkedList.class
+solver.methods.HiddenSingleBlock.this has only one value
+===========================================================================
+solver.methods.HiddenSingleBlock$Freq.Freq(solver.methods.HiddenSingleBlock):::ENTER
+solver.methods.HiddenSingleBlock.this has only one value
+solver.methods.HiddenSingleBlock.this != null
+===========================================================================
+solver.methods.HiddenSingleBlock$Freq.Freq(solver.methods.HiddenSingleBlock):::EXIT
+solver.methods.HiddenSingleBlock.this == orig(solver.methods.HiddenSingleBlock.this)
+this.cells[] == []
+this.cells[].getClass().getName() == []
+===========================================================================
+solver.methods.HiddenSingleBlock$Freq.add(solver.structures.Cell):::ENTER
+arg0 != null
+arg0.filled == false
+arg0.value == null
+arg0.candidates != null
+arg0.candidates[] elements != null
+arg0.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.row >= 0
+arg0.col >= 0
+arg0.block >= 0
+size(arg0.candidates[]) >= 2
+this.cells.getClass().getName() != arg0.candidates.getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleBlock$Freq.add(solver.structures.Cell):::EXIT
+this.cells == orig(this.cells)
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+solver.methods.HiddenSingleBlock.this == orig(solver.methods.HiddenSingleBlock.this)
+arg0.filled == orig(arg0.filled)
+arg0.value == orig(arg0.value)
+arg0.candidates == orig(arg0.candidates)
+arg0.candidates[] == orig(arg0.candidates[])
+arg0.candidates.getClass().getName() == orig(arg0.candidates.getClass().getName())
+arg0.row == orig(arg0.row)
+arg0.col == orig(arg0.col)
+arg0.block == orig(arg0.block)
+size(this.cells[])-1 == orig(size(this.cells[]))
+arg0.filled == false
+arg0.value == null
+arg0.candidates != null
+arg0.candidates[] elements != null
+arg0.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.row >= 0
+arg0.col >= 0
+arg0.block >= 0
+size(this.cells[]) >= 1
+size(arg0.candidates[]) >= 2
+this.cells.getClass().getName() != arg0.candidates.getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleBlock:::OBJECT
+this has only one value
+===========================================================================
+solver.methods.HiddenSingleBlock.HiddenSingleBlock():::EXIT
+===========================================================================
+solver.methods.HiddenSingleBlock.getStep(solver.Sudoku):::ENTER
+arg0 has only one value
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+size(arg0.cells[]) == 9
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleBlock.getStep(solver.Sudoku):::EXIT60
+===========================================================================
+solver.methods.HiddenSingleBlock.getStep(solver.Sudoku):::EXIT
+arg0.SIZE == orig(arg0.SIZE)
+arg0.BLOCK_SIZE == orig(arg0.BLOCK_SIZE)
+arg0.cells == orig(arg0.cells)
+arg0.cells[] == orig(arg0.cells[])
+arg0.cells.getClass().getName() == orig(arg0.cells.getClass().getName())
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+return == null
+size(arg0.cells[]) == 9
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleCol$Freq:::OBJECT
+this.cells != null
+this.cells[] elements != null
+this.cells[].getClass().getName() elements == solver.structures.Cell.class
+this.cells.getClass().getName() == java.util.LinkedList.class
+solver.methods.HiddenSingleCol.this has only one value
+===========================================================================
+solver.methods.HiddenSingleCol$Freq.Freq(solver.methods.HiddenSingleCol):::ENTER
+solver.methods.HiddenSingleCol.this has only one value
+solver.methods.HiddenSingleCol.this != null
+===========================================================================
+solver.methods.HiddenSingleCol$Freq.Freq(solver.methods.HiddenSingleCol):::EXIT
+solver.methods.HiddenSingleCol.this == orig(solver.methods.HiddenSingleCol.this)
+this.cells[] == []
+this.cells[].getClass().getName() == []
+===========================================================================
+solver.methods.HiddenSingleCol$Freq.add(solver.structures.Cell):::ENTER
+arg0 != null
+arg0.filled == false
+arg0.value == null
+arg0.candidates != null
+arg0.candidates[] elements != null
+arg0.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.row >= 0
+arg0.col >= 0
+arg0.block >= 0
+size(arg0.candidates[]) >= 2
+this.cells.getClass().getName() != arg0.candidates.getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleCol$Freq.add(solver.structures.Cell):::EXIT
+this.cells == orig(this.cells)
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+solver.methods.HiddenSingleCol.this == orig(solver.methods.HiddenSingleCol.this)
+arg0.filled == orig(arg0.filled)
+arg0.value == orig(arg0.value)
+arg0.candidates == orig(arg0.candidates)
+arg0.candidates[] == orig(arg0.candidates[])
+arg0.candidates.getClass().getName() == orig(arg0.candidates.getClass().getName())
+arg0.row == orig(arg0.row)
+arg0.col == orig(arg0.col)
+arg0.block == orig(arg0.block)
+size(this.cells[])-1 == orig(size(this.cells[]))
+arg0.filled == false
+arg0.value == null
+arg0.candidates != null
+arg0.candidates[] elements != null
+arg0.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.row >= 0
+arg0.col >= 0
+arg0.block >= 0
+size(this.cells[]) >= 1
+size(arg0.candidates[]) >= 2
+this.cells.getClass().getName() != arg0.candidates.getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleCol:::OBJECT
+this has only one value
+===========================================================================
+solver.methods.HiddenSingleCol.HiddenSingleCol():::EXIT
+===========================================================================
+solver.methods.HiddenSingleCol.apply(solver.Sudoku, solver.SolveStep):::ENTER
+arg0.cells.getClass().getName() == arg1.cell.candidates.getClass().getName()
+arg0 has only one value
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+arg1 has only one value
+arg1.sm has only one value
+arg1.sm.getClass().getName() == solver.methods.HiddenSingleCol.class
+arg1.cell has only one value
+arg1.cell.filled == false
+arg1.cell.value == null
+arg1.cell.candidates has only one value
+arg1.cell.candidates[] contains no nulls and has only one value, of length 3
+arg1.cell.candidates[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg1.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg1.cell.row == 0
+arg1.cell.col == 7
+arg1.cell.block == 2
+arg1.value has only one value
+arg1.info == null
+arg1.params has only one value
+arg1.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+size(arg1.cell.candidates[]) == 3
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleCol.apply(solver.Sudoku, solver.SolveStep):::EXIT
+arg0.SIZE == orig(arg0.SIZE)
+arg0.BLOCK_SIZE == orig(arg0.BLOCK_SIZE)
+arg0.cells == orig(arg0.cells)
+arg0.cells[] == orig(arg0.cells[])
+arg0.cells.getClass().getName() == arg1.cell.candidates.getClass().getName()
+arg0.cells.getClass().getName() == orig(arg0.cells.getClass().getName())
+arg0.cells.getClass().getName() == orig(arg1.cell.candidates.getClass().getName())
+arg1.sm == orig(arg1.sm)
+arg1.sm.getClass().getName() == orig(arg1.sm.getClass().getName())
+arg1.cell == orig(arg1.cell)
+arg1.cell.value == arg1.value
+arg1.cell.row == orig(arg1.cell.row)
+arg1.cell.col == orig(arg1.cell.col)
+arg1.cell.block == orig(arg1.cell.block)
+arg1.value == orig(arg1.value)
+arg1.info == orig(arg1.info)
+arg1.params == orig(arg1.params)
+arg1.params.getClass().getName() == orig(arg1.params.getClass().getName())
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+arg1.sm has only one value
+arg1.sm.getClass().getName() == solver.methods.HiddenSingleCol.class
+arg1.cell has only one value
+arg1.cell.filled == true
+arg1.cell.candidates has only one value
+arg1.cell.candidates[] == []
+arg1.cell.candidates[].getClass().getName() == []
+arg1.cell.row == 0
+arg1.cell.col == 7
+arg1.cell.block == 2
+arg1.value has only one value
+arg1.info == null
+arg1.params has only one value
+arg1.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleCol.getName():::ENTER
+===========================================================================
+solver.methods.HiddenSingleCol.getName():::EXIT
+return has only one value
+return.toString == "Hidden single col"
+===========================================================================
+solver.methods.HiddenSingleCol.getStep(solver.Sudoku):::ENTER
+arg0 has only one value
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+size(arg0.cells[]) == 9
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleCol.getStep(solver.Sudoku):::EXIT55
+return has only one value
+===========================================================================
+solver.methods.HiddenSingleCol.getStep(solver.Sudoku):::EXIT59
+return == null
+===========================================================================
+solver.methods.HiddenSingleCol.getStep(solver.Sudoku):::EXIT
+arg0.SIZE == orig(arg0.SIZE)
+arg0.BLOCK_SIZE == orig(arg0.BLOCK_SIZE)
+arg0.cells == orig(arg0.cells)
+arg0.cells[] == orig(arg0.cells[])
+arg0.cells.getClass().getName() == return.cell.candidates.getClass().getName()
+arg0.cells.getClass().getName() == orig(arg0.cells.getClass().getName())
+(return has only one value)  ==>  (arg0.cells.getClass().getName() == return.cell.candidates.getClass().getName())
+(return has only one value)  ==>  (return.cell has only one value)
+(return has only one value)  ==>  (return.cell.candidates has only one value)
+(return has only one value)  ==>  (return.cell.candidates.getClass().getName() == java.util.ArrayList.class)
+(return has only one value)  ==>  (return.cell.candidates.getClass().getName() in arg0.cells[].getClass().getName())
+(return has only one value)  ==>  (return.cell.candidates[] contains no nulls and has only one value, of length 3)
+(return has only one value)  ==>  (return.cell.candidates[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer])
+(return has only one value)  ==>  (return.cell.candidates[].getClass().getName() elements == java.lang.Integer.class)
+(return has only one value)  ==>  (return.cell.value == null)
+(return has only one value)  ==>  (return.info == null)
+(return has only one value)  ==>  (return.params has only one value)
+(return has only one value)  ==>  (return.params.getClass().getName() == java.util.HashMap.class)
+(return has only one value)  ==>  (return.sm has only one value)
+(return has only one value)  ==>  (return.sm.getClass().getName() == solver.methods.HiddenSingleCol.class)
+(return has only one value)  ==>  (return.value has only one value)
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+return.sm has only one value
+return.sm.getClass().getName() == solver.methods.HiddenSingleCol.class
+return.cell has only one value
+return.cell.filled == false
+return.cell.value == null
+return.cell.candidates has only one value
+return.cell.candidates[] contains no nulls and has only one value, of length 3
+return.cell.candidates[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer]
+return.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+return.cell.candidates.getClass().getName() == java.util.ArrayList.class
+return.cell.row == 0
+return.cell.col == 7
+return.cell.block == 2
+return.value has only one value
+return.info == null
+return.params has only one value
+return.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+size(return.cell.candidates[]) == 3
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+return.cell.candidates.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleCol.printInfo(solver.SolveStep):::ENTER
+arg0 has only one value
+arg0.sm has only one value
+arg0.sm.getClass().getName() == solver.methods.HiddenSingleCol.class
+arg0.cell has only one value
+arg0.cell.filled == false
+arg0.cell.value == null
+arg0.cell.candidates has only one value
+arg0.cell.candidates[] contains no nulls and has only one value, of length 3
+arg0.cell.candidates[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg0.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.cell.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.cell.row == 0
+arg0.cell.col == 7
+arg0.cell.block == 2
+arg0.value has only one value
+arg0.info == null
+arg0.params has only one value
+arg0.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cell.candidates[]) == 3
+===========================================================================
+solver.methods.HiddenSingleCol.printInfo(solver.SolveStep):::EXIT
+arg0.sm == orig(arg0.sm)
+arg0.sm.getClass().getName() == orig(arg0.sm.getClass().getName())
+arg0.cell == orig(arg0.cell)
+arg0.cell.filled == orig(arg0.cell.filled)
+arg0.cell.value == orig(arg0.cell.value)
+arg0.cell.candidates == orig(arg0.cell.candidates)
+arg0.cell.candidates[] == orig(arg0.cell.candidates[])
+arg0.cell.candidates.getClass().getName() == orig(arg0.cell.candidates.getClass().getName())
+arg0.cell.row == orig(arg0.cell.row)
+arg0.cell.col == orig(arg0.cell.col)
+arg0.cell.block == orig(arg0.cell.block)
+arg0.value == orig(arg0.value)
+arg0.info == orig(arg0.info)
+arg0.params == orig(arg0.params)
+arg0.params.getClass().getName() == orig(arg0.params.getClass().getName())
+arg0.sm has only one value
+arg0.sm.getClass().getName() == solver.methods.HiddenSingleCol.class
+arg0.cell has only one value
+arg0.cell.filled == false
+arg0.cell.value == null
+arg0.cell.candidates has only one value
+arg0.cell.candidates[] contains no nulls and has only one value, of length 3
+arg0.cell.candidates[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg0.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.cell.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.cell.row == 0
+arg0.cell.col == 7
+arg0.cell.block == 2
+arg0.value has only one value
+arg0.info == null
+arg0.params has only one value
+arg0.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cell.candidates[]) == 3
+===========================================================================
+solver.methods.HiddenSingleRow$Freq:::OBJECT
+this.cells != null
+this.cells[] elements != null
+this.cells[].getClass().getName() elements == solver.structures.Cell.class
+this.cells.getClass().getName() == java.util.LinkedList.class
+solver.methods.HiddenSingleRow.this has only one value
+===========================================================================
+solver.methods.HiddenSingleRow$Freq.Freq(solver.methods.HiddenSingleRow):::ENTER
+solver.methods.HiddenSingleRow.this has only one value
+solver.methods.HiddenSingleRow.this != null
+===========================================================================
+solver.methods.HiddenSingleRow$Freq.Freq(solver.methods.HiddenSingleRow):::EXIT
+solver.methods.HiddenSingleRow.this == orig(solver.methods.HiddenSingleRow.this)
+this.cells[] == []
+this.cells[].getClass().getName() == []
+===========================================================================
+solver.methods.HiddenSingleRow$Freq.add(solver.structures.Cell):::ENTER
+arg0 != null
+arg0.filled == false
+arg0.value == null
+arg0.candidates != null
+arg0.candidates[] elements != null
+arg0.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.row >= 0
+arg0.col >= 0
+arg0.block >= 0
+size(arg0.candidates[]) >= 2
+this.cells.getClass().getName() != arg0.candidates.getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleRow$Freq.add(solver.structures.Cell):::EXIT
+this.cells == orig(this.cells)
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+solver.methods.HiddenSingleRow.this == orig(solver.methods.HiddenSingleRow.this)
+arg0.filled == orig(arg0.filled)
+arg0.value == orig(arg0.value)
+arg0.candidates == orig(arg0.candidates)
+arg0.candidates[] == orig(arg0.candidates[])
+arg0.candidates.getClass().getName() == orig(arg0.candidates.getClass().getName())
+arg0.row == orig(arg0.row)
+arg0.col == orig(arg0.col)
+arg0.block == orig(arg0.block)
+size(this.cells[])-1 == orig(size(this.cells[]))
+arg0.filled == false
+arg0.value == null
+arg0.candidates != null
+arg0.candidates[] elements != null
+arg0.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.row >= 0
+arg0.col >= 0
+arg0.block >= 0
+size(this.cells[]) >= 1
+size(arg0.candidates[]) >= 2
+this.cells.getClass().getName() != arg0.candidates.getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleRow:::OBJECT
+this has only one value
+===========================================================================
+solver.methods.HiddenSingleRow.HiddenSingleRow():::EXIT
+===========================================================================
+solver.methods.HiddenSingleRow.apply(solver.Sudoku, solver.SolveStep):::ENTER
+arg0.cells.getClass().getName() == arg1.cell.candidates.getClass().getName()
+arg0 has only one value
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+arg1.sm has only one value
+arg1.sm.getClass().getName() == solver.methods.HiddenSingleRow.class
+arg1.cell.filled == false
+arg1.cell.value == null
+arg1.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg1.cell.candidates[].getClass().getName() one of { [java.lang.Integer, java.lang.Integer, java.lang.Integer], [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer] }
+arg1.cell.row one of { 5, 6, 7 }
+arg1.cell.block one of { 4, 6, 8 }
+arg1.info == null
+arg1.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+size(arg1.cell.candidates[]) one of { 3, 4 }
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleRow.apply(solver.Sudoku, solver.SolveStep):::EXIT
+arg0.SIZE == orig(arg0.SIZE)
+arg0.BLOCK_SIZE == orig(arg0.BLOCK_SIZE)
+arg0.cells == orig(arg0.cells)
+arg0.cells[] == orig(arg0.cells[])
+arg0.cells.getClass().getName() == arg1.cell.candidates.getClass().getName()
+arg0.cells.getClass().getName() == orig(arg0.cells.getClass().getName())
+arg0.cells.getClass().getName() == orig(arg1.cell.candidates.getClass().getName())
+arg1.sm == orig(arg1.sm)
+arg1.sm.getClass().getName() == orig(arg1.sm.getClass().getName())
+arg1.cell == orig(arg1.cell)
+arg1.cell.value == arg1.value
+arg1.cell.row == orig(arg1.cell.row)
+arg1.cell.col == orig(arg1.cell.col)
+arg1.cell.block == orig(arg1.cell.block)
+arg1.value == orig(arg1.value)
+arg1.info == orig(arg1.info)
+arg1.params == orig(arg1.params)
+arg1.params.getClass().getName() == orig(arg1.params.getClass().getName())
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+arg1.sm has only one value
+arg1.sm.getClass().getName() == solver.methods.HiddenSingleRow.class
+arg1.cell.filled == true
+arg1.cell.candidates[] == []
+arg1.cell.candidates[].getClass().getName() == []
+arg1.cell.row one of { 5, 6, 7 }
+arg1.cell.block one of { 4, 6, 8 }
+arg1.info == null
+arg1.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleRow.getName():::ENTER
+===========================================================================
+solver.methods.HiddenSingleRow.getName():::EXIT
+return has only one value
+return.toString == "Hidden single row"
+===========================================================================
+solver.methods.HiddenSingleRow.getStep(solver.Sudoku):::ENTER
+arg0 has only one value
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+size(arg0.cells[]) == 9
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleRow.getStep(solver.Sudoku):::EXIT55
+===========================================================================
+solver.methods.HiddenSingleRow.getStep(solver.Sudoku):::EXIT59
+return == null
+===========================================================================
+solver.methods.HiddenSingleRow.getStep(solver.Sudoku):::EXIT
+arg0.SIZE == orig(arg0.SIZE)
+arg0.BLOCK_SIZE == orig(arg0.BLOCK_SIZE)
+arg0.cells == orig(arg0.cells)
+arg0.cells[] == orig(arg0.cells[])
+arg0.cells.getClass().getName() == return.cell.candidates.getClass().getName()
+arg0.cells.getClass().getName() == orig(arg0.cells.getClass().getName())
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+return.sm has only one value
+return.sm.getClass().getName() == solver.methods.HiddenSingleRow.class
+return.cell.filled == false
+return.cell.value == null
+return.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+return.cell.candidates[].getClass().getName() one of { [java.lang.Integer, java.lang.Integer, java.lang.Integer], [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer] }
+return.cell.candidates.getClass().getName() == java.util.ArrayList.class
+return.cell.row one of { 5, 6, 7 }
+return.cell.block one of { 4, 6, 8 }
+return.info == null
+return.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+size(return.cell.candidates[]) one of { 3, 4 }
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+return.cell.candidates.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.HiddenSingleRow.printInfo(solver.SolveStep):::ENTER
+arg0.sm has only one value
+arg0.sm.getClass().getName() == solver.methods.HiddenSingleRow.class
+arg0.cell.filled == false
+arg0.cell.value == null
+arg0.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.cell.candidates[].getClass().getName() one of { [java.lang.Integer, java.lang.Integer, java.lang.Integer], [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer] }
+arg0.cell.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.cell.row one of { 5, 6, 7 }
+arg0.cell.block one of { 4, 6, 8 }
+arg0.info == null
+arg0.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cell.candidates[]) one of { 3, 4 }
+===========================================================================
+solver.methods.HiddenSingleRow.printInfo(solver.SolveStep):::EXIT
+arg0.sm == orig(arg0.sm)
+arg0.sm.getClass().getName() == orig(arg0.sm.getClass().getName())
+arg0.cell == orig(arg0.cell)
+arg0.cell.filled == orig(arg0.cell.filled)
+arg0.cell.value == orig(arg0.cell.value)
+arg0.cell.candidates == orig(arg0.cell.candidates)
+arg0.cell.candidates[] == orig(arg0.cell.candidates[])
+arg0.cell.candidates.getClass().getName() == orig(arg0.cell.candidates.getClass().getName())
+arg0.cell.row == orig(arg0.cell.row)
+arg0.cell.col == orig(arg0.cell.col)
+arg0.cell.block == orig(arg0.cell.block)
+arg0.value == orig(arg0.value)
+arg0.info == orig(arg0.info)
+arg0.params == orig(arg0.params)
+arg0.params.getClass().getName() == orig(arg0.params.getClass().getName())
+arg0.sm has only one value
+arg0.sm.getClass().getName() == solver.methods.HiddenSingleRow.class
+arg0.cell.filled == false
+arg0.cell.value == null
+arg0.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.cell.candidates[].getClass().getName() one of { [java.lang.Integer, java.lang.Integer, java.lang.Integer], [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer] }
+arg0.cell.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.cell.row one of { 5, 6, 7 }
+arg0.cell.block one of { 4, 6, 8 }
+arg0.info == null
+arg0.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cell.candidates[]) one of { 3, 4 }
+===========================================================================
+solver.methods.LockedCandidatesPointing:::OBJECT
+this has only one value
+===========================================================================
+solver.methods.LockedCandidatesPointing.LockedCandidatesPointing():::EXIT
+===========================================================================
+solver.methods.LockedCandidatesPointing.apply(solver.Sudoku, solver.SolveStep):::ENTER
+arg0.cells.getClass().getName() == arg1.cell.candidates.getClass().getName()
+arg0 has only one value
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+arg1 has only one value
+arg1.sm has only one value
+arg1.sm.getClass().getName() == solver.methods.LockedCandidatesPointing.class
+arg1.cell has only one value
+arg1.cell.filled == false
+arg1.cell.value == null
+arg1.cell.candidates has only one value
+arg1.cell.candidates[] contains no nulls and has only one value, of length 4
+arg1.cell.candidates[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg1.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg1.cell.row == 0
+arg1.cell.col == 6
+arg1.cell.block == 2
+arg1.value has only one value
+arg1.info has only one value
+arg1.info.toString == "ROW"
+arg1.params has only one value
+arg1.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+size(arg1.cell.candidates[]) == 4
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.LockedCandidatesPointing.apply(solver.Sudoku, solver.SolveStep):::EXIT
+arg0.SIZE == orig(arg0.SIZE)
+arg0.BLOCK_SIZE == orig(arg0.BLOCK_SIZE)
+arg0.cells == orig(arg0.cells)
+arg0.cells[] == orig(arg0.cells[])
+arg0.cells.getClass().getName() == arg1.cell.candidates.getClass().getName()
+arg0.cells.getClass().getName() == orig(arg0.cells.getClass().getName())
+arg0.cells.getClass().getName() == orig(arg1.cell.candidates.getClass().getName())
+arg1.sm == orig(arg1.sm)
+arg1.sm.getClass().getName() == orig(arg1.sm.getClass().getName())
+arg1.cell == orig(arg1.cell)
+arg1.cell.filled == orig(arg1.cell.filled)
+arg1.cell.value == orig(arg1.cell.value)
+arg1.cell.candidates == orig(arg1.cell.candidates)
+arg1.cell.candidates[] == orig(arg1.cell.candidates[])
+arg1.cell.row == orig(arg1.cell.row)
+arg1.cell.col == orig(arg1.cell.col)
+arg1.cell.block == orig(arg1.cell.block)
+arg1.value == orig(arg1.value)
+arg1.info == orig(arg1.info)
+arg1.info.toString == orig(arg1.info.toString)
+arg1.params == orig(arg1.params)
+arg1.params.getClass().getName() == orig(arg1.params.getClass().getName())
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+arg1.sm has only one value
+arg1.sm.getClass().getName() == solver.methods.LockedCandidatesPointing.class
+arg1.cell has only one value
+arg1.cell.filled == false
+arg1.cell.value == null
+arg1.cell.candidates has only one value
+arg1.cell.candidates[] contains no nulls and has only one value, of length 4
+arg1.cell.candidates[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg1.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg1.cell.row == 0
+arg1.cell.col == 6
+arg1.cell.block == 2
+arg1.value has only one value
+arg1.info has only one value
+arg1.info.toString == "ROW"
+arg1.params has only one value
+arg1.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+size(arg1.cell.candidates[]) == 4
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.LockedCandidatesPointing.getStep(solver.Sudoku):::ENTER
+arg0 has only one value
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+size(arg0.cells[]) == 9
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.LockedCandidatesPointing.getStep(solver.Sudoku):::EXIT103
+return has only one value
+===========================================================================
+solver.methods.LockedCandidatesPointing.getStep(solver.Sudoku):::EXIT130
+return == null
+===========================================================================
+solver.methods.LockedCandidatesPointing.getStep(solver.Sudoku):::EXIT
+arg0.SIZE == orig(arg0.SIZE)
+arg0.BLOCK_SIZE == orig(arg0.BLOCK_SIZE)
+arg0.cells == orig(arg0.cells)
+arg0.cells[] == orig(arg0.cells[])
+arg0.cells.getClass().getName() == return.cell.candidates.getClass().getName()
+arg0.cells.getClass().getName() == orig(arg0.cells.getClass().getName())
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+return.sm has only one value
+return.sm.getClass().getName() == solver.methods.LockedCandidatesPointing.class
+return.cell has only one value
+return.cell.filled == false
+return.cell.value == null
+return.cell.candidates has only one value
+return.cell.candidates[] contains no nulls and has only one value, of length 4
+return.cell.candidates[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+return.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+return.cell.candidates.getClass().getName() == java.util.ArrayList.class
+return.cell.row == 0
+return.cell.col == 6
+return.cell.block == 2
+return.value has only one value
+return.info has only one value
+return.info.toString == "ROW"
+return.params has only one value
+return.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+size(return.cell.candidates[]) == 4
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+return.cell.candidates.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.LockedCandidatesPointing.printInfo(solver.SolveStep):::ENTER
+arg0 has only one value
+arg0.sm has only one value
+arg0.sm.getClass().getName() == solver.methods.LockedCandidatesPointing.class
+arg0.cell has only one value
+arg0.cell.filled == false
+arg0.cell.value == null
+arg0.cell.candidates has only one value
+arg0.cell.candidates[] contains no nulls and has only one value, of length 4
+arg0.cell.candidates[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg0.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.cell.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.cell.row == 0
+arg0.cell.col == 6
+arg0.cell.block == 2
+arg0.value has only one value
+arg0.info has only one value
+arg0.info.toString == "ROW"
+arg0.params has only one value
+arg0.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cell.candidates[]) == 4
+===========================================================================
+solver.methods.LockedCandidatesPointing.printInfo(solver.SolveStep):::EXIT
+arg0.sm == orig(arg0.sm)
+arg0.sm.getClass().getName() == orig(arg0.sm.getClass().getName())
+arg0.cell == orig(arg0.cell)
+arg0.cell.filled == orig(arg0.cell.filled)
+arg0.cell.value == orig(arg0.cell.value)
+arg0.cell.candidates == orig(arg0.cell.candidates)
+arg0.cell.candidates[] == orig(arg0.cell.candidates[])
+arg0.cell.candidates.getClass().getName() == orig(arg0.cell.candidates.getClass().getName())
+arg0.cell.row == orig(arg0.cell.row)
+arg0.cell.col == orig(arg0.cell.col)
+arg0.cell.block == orig(arg0.cell.block)
+arg0.value == orig(arg0.value)
+arg0.info == orig(arg0.info)
+arg0.info.toString == orig(arg0.info.toString)
+arg0.params == orig(arg0.params)
+arg0.params.getClass().getName() == orig(arg0.params.getClass().getName())
+arg0.sm has only one value
+arg0.sm.getClass().getName() == solver.methods.LockedCandidatesPointing.class
+arg0.cell has only one value
+arg0.cell.filled == false
+arg0.cell.value == null
+arg0.cell.candidates has only one value
+arg0.cell.candidates[] contains no nulls and has only one value, of length 4
+arg0.cell.candidates[].getClass().getName() == [java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.Integer]
+arg0.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.cell.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.cell.row == 0
+arg0.cell.col == 6
+arg0.cell.block == 2
+arg0.value has only one value
+arg0.info has only one value
+arg0.info.toString == "ROW"
+arg0.params has only one value
+arg0.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cell.candidates[]) == 4
+===========================================================================
+solver.methods.NakedSingle:::OBJECT
+this has only one value
+===========================================================================
+solver.methods.NakedSingle.NakedSingle():::EXIT
+===========================================================================
+solver.methods.NakedSingle.apply(solver.Sudoku, solver.SolveStep):::ENTER
+arg0.cells.getClass().getName() == arg1.cell.candidates.getClass().getName()
+arg0 has only one value
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+arg1.sm has only one value
+arg1.sm.getClass().getName() == solver.methods.NakedSingle.class
+arg1.cell.filled == false
+arg1.cell.value == null
+arg1.cell.candidates[].getClass().getName() == [java.lang.Integer]
+arg1.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg1.cell.row one of { 1, 3, 7 }
+arg1.cell.col one of { 3, 5, 8 }
+arg1.cell.block one of { 1, 5, 7 }
+arg1.info == null
+arg1.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+size(arg1.cell.candidates[]) == 1
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.NakedSingle.apply(solver.Sudoku, solver.SolveStep):::EXIT
+arg0.SIZE == orig(arg0.SIZE)
+arg0.BLOCK_SIZE == orig(arg0.BLOCK_SIZE)
+arg0.cells == orig(arg0.cells)
+arg0.cells[] == orig(arg0.cells[])
+arg0.cells.getClass().getName() == arg1.cell.candidates.getClass().getName()
+arg0.cells.getClass().getName() == orig(arg0.cells.getClass().getName())
+arg0.cells.getClass().getName() == orig(arg1.cell.candidates.getClass().getName())
+arg1.sm == orig(arg1.sm)
+arg1.sm.getClass().getName() == orig(arg1.sm.getClass().getName())
+arg1.cell == orig(arg1.cell)
+arg1.cell.value == arg1.value
+arg1.cell.row == orig(arg1.cell.row)
+arg1.cell.col == orig(arg1.cell.col)
+arg1.cell.block == orig(arg1.cell.block)
+arg1.value == orig(arg1.value)
+arg1.info == orig(arg1.info)
+arg1.params == orig(arg1.params)
+arg1.params.getClass().getName() == orig(arg1.params.getClass().getName())
+size(arg1.cell.candidates[]) == orig(size(arg1.cell.candidates[]))-1
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+arg1.sm has only one value
+arg1.sm.getClass().getName() == solver.methods.NakedSingle.class
+arg1.cell.filled == true
+arg1.cell.candidates[] == []
+arg1.cell.candidates[].getClass().getName() == []
+arg1.cell.row one of { 1, 3, 7 }
+arg1.cell.col one of { 3, 5, 8 }
+arg1.cell.block one of { 1, 5, 7 }
+arg1.info == null
+arg1.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.NakedSingle.getName():::ENTER
+===========================================================================
+solver.methods.NakedSingle.getName():::EXIT
+return has only one value
+return.toString == "Naked Single"
+===========================================================================
+solver.methods.NakedSingle.getStep(solver.Sudoku):::ENTER
+arg0 has only one value
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+size(arg0.cells[]) == 9
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.NakedSingle.getStep(solver.Sudoku):::EXIT37
+===========================================================================
+solver.methods.NakedSingle.getStep(solver.Sudoku):::EXIT42
+return == null
+===========================================================================
+solver.methods.NakedSingle.getStep(solver.Sudoku):::EXIT
+arg0.SIZE == orig(arg0.SIZE)
+arg0.BLOCK_SIZE == orig(arg0.BLOCK_SIZE)
+arg0.cells == orig(arg0.cells)
+arg0.cells[] == orig(arg0.cells[])
+arg0.cells.getClass().getName() == return.cell.candidates.getClass().getName()
+arg0.cells.getClass().getName() == orig(arg0.cells.getClass().getName())
+arg0.SIZE == 9
+arg0.BLOCK_SIZE == 3
+arg0.cells has only one value
+arg0.cells[] contains no nulls and has only one value, of length 9
+arg0.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+arg0.cells[].getClass().getName() elements == java.util.ArrayList.class
+arg0.cells.getClass().getName() == java.util.ArrayList.class
+return.sm has only one value
+return.sm.getClass().getName() == solver.methods.NakedSingle.class
+return.cell.filled == false
+return.cell.value == null
+return.cell.candidates[].getClass().getName() == [java.lang.Integer]
+return.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+return.cell.candidates.getClass().getName() == java.util.ArrayList.class
+return.cell.row one of { 1, 3, 7 }
+return.cell.col one of { 3, 5, 8 }
+return.cell.block one of { 1, 5, 7 }
+return.info == null
+return.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cells[]) == 9
+size(return.cell.candidates[]) == 1
+arg0.cells.getClass().getName() in arg0.cells[].getClass().getName()
+return.cell.candidates.getClass().getName() in arg0.cells[].getClass().getName()
+===========================================================================
+solver.methods.NakedSingle.printInfo(solver.SolveStep):::ENTER
+arg0.sm has only one value
+arg0.sm.getClass().getName() == solver.methods.NakedSingle.class
+arg0.cell.filled == false
+arg0.cell.value == null
+arg0.cell.candidates[].getClass().getName() == [java.lang.Integer]
+arg0.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.cell.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.cell.row one of { 1, 3, 7 }
+arg0.cell.col one of { 3, 5, 8 }
+arg0.cell.block one of { 1, 5, 7 }
+arg0.info == null
+arg0.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cell.candidates[]) == 1
+===========================================================================
+solver.methods.NakedSingle.printInfo(solver.SolveStep):::EXIT
+arg0.sm == orig(arg0.sm)
+arg0.sm.getClass().getName() == orig(arg0.sm.getClass().getName())
+arg0.cell == orig(arg0.cell)
+arg0.cell.filled == orig(arg0.cell.filled)
+arg0.cell.value == orig(arg0.cell.value)
+arg0.cell.candidates == orig(arg0.cell.candidates)
+arg0.cell.candidates[] == orig(arg0.cell.candidates[])
+arg0.cell.candidates.getClass().getName() == orig(arg0.cell.candidates.getClass().getName())
+arg0.cell.row == orig(arg0.cell.row)
+arg0.cell.col == orig(arg0.cell.col)
+arg0.cell.block == orig(arg0.cell.block)
+arg0.value == orig(arg0.value)
+arg0.info == orig(arg0.info)
+arg0.params == orig(arg0.params)
+arg0.params.getClass().getName() == orig(arg0.params.getClass().getName())
+arg0.sm has only one value
+arg0.sm.getClass().getName() == solver.methods.NakedSingle.class
+arg0.cell.filled == false
+arg0.cell.value == null
+arg0.cell.candidates[].getClass().getName() == [java.lang.Integer]
+arg0.cell.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg0.cell.candidates.getClass().getName() == java.util.ArrayList.class
+arg0.cell.row one of { 1, 3, 7 }
+arg0.cell.col one of { 3, 5, 8 }
+arg0.cell.block one of { 1, 5, 7 }
+arg0.info == null
+arg0.params.getClass().getName() == java.util.HashMap.class
+size(arg0.cell.candidates[]) == 1
+===========================================================================
+solver.methods.naked.n.NakedNCol:::OBJECT
+this has only one value
+===========================================================================
+solver.methods.naked.n.NakedNCol.NakedNCol():::EXIT
+===========================================================================
+solver.methods.naked.n.NakedNRow:::OBJECT
+this has only one value
+===========================================================================
+solver.methods.naked.n.NakedNRow.NakedNRow():::EXIT
+===========================================================================
+solver.methods.naked.pair.NakedPairBlock:::OBJECT
+this has only one value
+===========================================================================
+solver.methods.naked.pair.NakedPairBlock.NakedPairBlock():::EXIT
+===========================================================================
+solver.methods.naked.pair.NakedPairCol:::OBJECT
+===========================================================================
+solver.methods.naked.pair.NakedPairCol.NakedPairCol():::EXIT
+===========================================================================
+solver.methods.naked.pair.NakedPairRow:::OBJECT
+===========================================================================
+solver.methods.naked.pair.NakedPairRow.NakedPairRow():::EXIT
+===========================================================================
+solver.structures.Cell$1:::OBJECT
+solver.structures.Cell.this.filled == false
+solver.structures.Cell.this.value == null
+solver.structures.Cell.this.candidates != null
+solver.structures.Cell.this.candidates[] elements != null
+solver.structures.Cell.this.candidates[].getClass().getName() elements == java.lang.Integer.class
+solver.structures.Cell.this.candidates.getClass().getName() == java.util.ArrayList.class
+solver.structures.Cell.this.row >= 0
+solver.structures.Cell.this.col >= 0
+solver.structures.Cell.this.block >= 0
+size(solver.structures.Cell.this.candidates[]) >= 1
+===========================================================================
+solver.structures.Cell$1.(solver.structures.Cell):::ENTER
+solver.structures.Cell.this != null
+solver.structures.Cell.this.filled == false
+solver.structures.Cell.this.value == null
+solver.structures.Cell.this.candidates != null
+solver.structures.Cell.this.candidates[] elements != null
+solver.structures.Cell.this.candidates[].getClass().getName() elements == java.lang.Integer.class
+solver.structures.Cell.this.candidates.getClass().getName() == java.util.ArrayList.class
+solver.structures.Cell.this.row >= 0
+solver.structures.Cell.this.col >= 0
+solver.structures.Cell.this.block >= 0
+size(solver.structures.Cell.this.candidates[]) >= 1
+===========================================================================
+solver.structures.Cell$1.(solver.structures.Cell):::EXIT
+solver.structures.Cell.this == orig(solver.structures.Cell.this)
+solver.structures.Cell.this.filled == orig(solver.structures.Cell.this.filled)
+solver.structures.Cell.this.value == orig(solver.structures.Cell.this.value)
+solver.structures.Cell.this.candidates == orig(solver.structures.Cell.this.candidates)
+solver.structures.Cell.this.candidates[] == orig(solver.structures.Cell.this.candidates[])
+solver.structures.Cell.this.candidates.getClass().getName() == orig(solver.structures.Cell.this.candidates.getClass().getName())
+solver.structures.Cell.this.row == orig(solver.structures.Cell.this.row)
+solver.structures.Cell.this.col == orig(solver.structures.Cell.this.col)
+solver.structures.Cell.this.block == orig(solver.structures.Cell.this.block)
+===========================================================================
+solver.structures.Cell$1.compare(java.lang.Integer, java.lang.Integer):::ENTER
+arg0 != null
+arg1 != null
+size(solver.structures.Cell.this.candidates[]) >= 2
+===========================================================================
+solver.structures.Cell$1.compare(java.lang.Integer, java.lang.Integer):::EXIT
+solver.structures.Cell.this == orig(solver.structures.Cell.this)
+solver.structures.Cell.this.filled == orig(solver.structures.Cell.this.filled)
+solver.structures.Cell.this.value == orig(solver.structures.Cell.this.value)
+solver.structures.Cell.this.candidates == orig(solver.structures.Cell.this.candidates)
+solver.structures.Cell.this.candidates[] == orig(solver.structures.Cell.this.candidates[])
+solver.structures.Cell.this.candidates.getClass().getName() == orig(solver.structures.Cell.this.candidates.getClass().getName())
+solver.structures.Cell.this.row == orig(solver.structures.Cell.this.row)
+solver.structures.Cell.this.col == orig(solver.structures.Cell.this.col)
+solver.structures.Cell.this.block == orig(solver.structures.Cell.this.block)
+return == 1
+size(solver.structures.Cell.this.candidates[]) >= 2
+===========================================================================
+solver.structures.Cell:::OBJECT
+this.candidates != null
+this.candidates[] elements != null
+this.candidates[].getClass().getName() elements == java.lang.Integer.class
+this.candidates.getClass().getName() == java.util.ArrayList.class
+this.row >= 0
+this.col >= 0
+this.block >= 0
+===========================================================================
+solver.structures.Cell.Cell(int, int):::ENTER
+arg0 >= 0
+arg1 >= 0
+===========================================================================
+solver.structures.Cell.Cell(int, int):::EXIT
+this.row == orig(arg0)
+this.col == orig(arg1)
+this.filled == false
+this.value == null
+this.candidates[] == []
+this.candidates[].getClass().getName() == []
+===========================================================================
+solver.structures.Cell.Cell(int, int, java.lang.Integer):::ENTER
+arg1 >= 0
+arg2 != null
+===========================================================================
+solver.structures.Cell.Cell(int, int, java.lang.Integer):::EXIT
+this.value == orig(arg2)
+this.row == orig(arg0)
+this.col == orig(arg1)
+this.filled == true
+this.value != null
+this.candidates[] == []
+this.candidates[].getClass().getName() == []
+===========================================================================
+solver.structures.Cell.addCandidate(java.lang.Integer):::ENTER
+this.filled == false
+this.value == null
+arg0 != null
+===========================================================================
+solver.structures.Cell.addCandidate(java.lang.Integer):::EXIT
+this.filled == orig(this.filled)
+this.value == orig(this.value)
+this.candidates == orig(this.candidates)
+this.candidates.getClass().getName() == orig(this.candidates.getClass().getName())
+this.row == orig(this.row)
+this.col == orig(this.col)
+this.block == orig(this.block)
+size(this.candidates[])-1 == orig(size(this.candidates[]))
+this.filled == false
+this.value == null
+size(this.candidates[]) >= 1
+===========================================================================
+solver.structures.Cell.getBlock():::ENTER
+this.filled == false
+this.value == null
+size(this.candidates[]) >= 2
+===========================================================================
+solver.structures.Cell.getBlock():::EXIT
+this.filled == orig(this.filled)
+this.value == orig(this.value)
+this.candidates == orig(this.candidates)
+this.candidates[] == orig(this.candidates[])
+this.candidates.getClass().getName() == orig(this.candidates.getClass().getName())
+this.row == orig(this.row)
+this.col == orig(this.col)
+this.block == return
+return == orig(this.block)
+this.filled == false
+this.value == null
+return >= 0
+size(this.candidates[]) >= 2
+===========================================================================
+solver.structures.Cell.getCandidates():::ENTER
+===========================================================================
+solver.structures.Cell.getCandidates():::EXIT
+this.filled == orig(this.filled)
+this.value == orig(this.value)
+this.candidates == return
+this.candidates[] == orig(this.candidates[])
+this.candidates.getClass().getName() == return.getClass().getName()
+this.row == orig(this.row)
+this.col == orig(this.col)
+this.block == orig(this.block)
+return == orig(this.candidates)
+return.getClass().getName() == orig(this.candidates.getClass().getName())
+return != null
+return[] elements != null
+return[].getClass().getName() elements == java.lang.Integer.class
+return.getClass().getName() == java.util.ArrayList.class
+===========================================================================
+solver.structures.Cell.getCol():::ENTER
+===========================================================================
+solver.structures.Cell.getCol():::EXIT
+this.filled == orig(this.filled)
+this.value == orig(this.value)
+this.candidates == orig(this.candidates)
+this.candidates[] == orig(this.candidates[])
+this.candidates.getClass().getName() == orig(this.candidates.getClass().getName())
+this.row == orig(this.row)
+this.col == return
+this.block == orig(this.block)
+return == orig(this.col)
+===========================================================================
+solver.structures.Cell.getRow():::ENTER
+===========================================================================
+solver.structures.Cell.getRow():::EXIT
+this.filled == orig(this.filled)
+this.value == orig(this.value)
+this.candidates == orig(this.candidates)
+this.candidates[] == orig(this.candidates[])
+this.candidates.getClass().getName() == orig(this.candidates.getClass().getName())
+this.row == return
+this.col == orig(this.col)
+this.block == orig(this.block)
+return == orig(this.row)
+return >= 0
+===========================================================================
+solver.structures.Cell.is(int):::ENTER
+arg0 >= 1
+===========================================================================
+solver.structures.Cell.is(int):::EXIT63
+this.filled == true
+this.value != null
+this.candidates[] == []
+this.candidates[].getClass().getName() == []
+return == true
+===========================================================================
+solver.structures.Cell.is(int):::EXIT63;condition="return == true"
+===========================================================================
+solver.structures.Cell.is(int):::EXIT65
+return == false
+===========================================================================
+solver.structures.Cell.is(int):::EXIT65;condition="not(return == true)"
+===========================================================================
+solver.structures.Cell.is(int):::EXIT
+this.filled == orig(this.filled)
+this.value == orig(this.value)
+this.candidates == orig(this.candidates)
+this.candidates[] == orig(this.candidates[])
+this.candidates.getClass().getName() == orig(this.candidates.getClass().getName())
+this.row == orig(this.row)
+this.col == orig(this.col)
+this.block == orig(this.block)
+(return == false)  ==>  (this.candidates[].getClass().getName() elements == java.lang.Integer.class)
+(return == true)  ==>  (this.candidates[] == [])
+(return == true)  ==>  (this.candidates[].getClass().getName() == [])
+(return == true)  ==>  (this.filled == true)
+(return == true)  ==>  (this.value != null)
+===========================================================================
+solver.structures.Cell.is(int):::EXIT;condition="return == true"
+this.filled == true
+this.value != null
+this.candidates[] == []
+this.candidates[].getClass().getName() == []
+return == true
+===========================================================================
+solver.structures.Cell.is(int):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+solver.structures.Cell.isSolved():::ENTER
+===========================================================================
+solver.structures.Cell.isSolved():::EXIT
+this.filled == return
+this.value == orig(this.value)
+this.candidates == orig(this.candidates)
+this.candidates[] == orig(this.candidates[])
+this.candidates.getClass().getName() == orig(this.candidates.getClass().getName())
+this.row == orig(this.row)
+this.col == orig(this.col)
+this.block == orig(this.block)
+return == orig(this.filled)
+(this.value != null)  <==>  (return == true)
+(this.value != null)  ==>  (this.candidates[] == [])
+(this.value != null)  ==>  (this.candidates[].getClass().getName() == [])
+(this.value == null)  <==>  (return == false)
+(this.value == null)  ==>  (this.candidates[].getClass().getName() elements == java.lang.Integer.class)
+===========================================================================
+solver.structures.Cell.isSolved():::EXIT;condition="return == true"
+this.value != null
+this.candidates[] == []
+this.candidates[].getClass().getName() == []
+return == true
+===========================================================================
+solver.structures.Cell.isSolved():::EXIT;condition="not(return == true)"
+this.value == null
+return == false
+===========================================================================
+solver.structures.Cell.setCandidates(java.util.List):::ENTER
+this.candidates.getClass().getName() == arg0.getClass().getName()
+arg0 != null
+arg0[] == []
+arg0[].getClass().getName() == []
+===========================================================================
+solver.structures.Cell.setCandidates(java.util.List):::EXIT
+this.filled == orig(this.filled)
+this.value == orig(this.value)
+this.candidates == orig(arg0)
+this.candidates.getClass().getName() == orig(this.candidates.getClass().getName())
+this.candidates.getClass().getName() == orig(arg0.getClass().getName())
+this.row == orig(this.row)
+this.col == orig(this.col)
+this.block == orig(this.block)
+arg0[] == orig(arg0[])
+this.candidates[] == []
+this.candidates[].getClass().getName() == []
+arg0[] == []
+arg0[].getClass().getName() == []
+size(this.candidates[]) <= orig(size(this.candidates[]))
+size(this.candidates[])-1 <= orig(size(this.candidates[]))-1
+===========================================================================
+solver.structures.Cell.setSolved(boolean):::ENTER
+this.filled == false
+this.value == null
+this.candidates[] == []
+this.candidates[].getClass().getName() == []
+arg0 == true
+this.row != this.col
+===========================================================================
+solver.structures.Cell.setSolved(boolean):::EXIT
+this.filled == orig(arg0)
+this.value == orig(this.value)
+this.candidates == orig(this.candidates)
+this.candidates[] == orig(this.candidates[])
+this.candidates.getClass().getName() == orig(this.candidates.getClass().getName())
+this.row == orig(this.row)
+this.col == orig(this.col)
+this.block == orig(this.block)
+this.filled == true
+this.value == null
+this.candidates[] == []
+this.candidates[].getClass().getName() == []
+this.row != this.col
+===========================================================================
+solver.structures.Cell.setValue(java.lang.Integer):::ENTER
+this.filled == false
+this.value == null
+this.candidates[] == []
+this.candidates[].getClass().getName() == []
+this.row != this.col
+===========================================================================
+solver.structures.Cell.setValue(java.lang.Integer):::EXIT
+this.value == orig(arg0)
+this.candidates == orig(this.candidates)
+this.candidates[] == orig(this.candidates[])
+this.candidates.getClass().getName() == orig(this.candidates.getClass().getName())
+this.row == orig(this.row)
+this.col == orig(this.col)
+this.block == orig(this.block)
+this.filled == true
+this.candidates[] == []
+this.candidates[].getClass().getName() == []
+this.row != this.col
+===========================================================================
+solver.structures.Cell.sortCandidate():::ENTER
+this.filled == false
+this.value == null
+size(this.candidates[]) >= 1
+===========================================================================
+solver.structures.Cell.sortCandidate():::EXIT
+this.filled == orig(this.filled)
+this.value == orig(this.value)
+this.candidates == orig(this.candidates)
+this.candidates[] == orig(this.candidates[])
+this.candidates.getClass().getName() == orig(this.candidates.getClass().getName())
+this.row == orig(this.row)
+this.col == orig(this.col)
+this.block == orig(this.block)
+this.filled == false
+this.value == null
+size(this.candidates[]) >= 1
+===========================================================================
+solver.structures.SudokuBlock:::OBJECT
+this.SIZE == 3
+this.BLOCK_SIZE == 3
+this.cells != null
+this.cells[] elements != null
+this.cells[].getClass().getName() == [java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList]
+this.cells[].getClass().getName() elements == java.util.ArrayList.class
+this.cells.getClass().getName() == java.util.ArrayList.class
+size(this.cells[]) == 9
+this.cells.getClass().getName() in this.cells[].getClass().getName()
+===========================================================================
+solver.structures.SudokuBlock.SudokuBlock():::EXIT
+===========================================================================
+solver.structures.SudokuBlock.removeCandidate(java.lang.Integer):::ENTER
+===========================================================================
+solver.structures.SudokuBlock.removeCandidate(java.lang.Integer):::EXIT
+this.SIZE == orig(this.SIZE)
+this.BLOCK_SIZE == orig(this.BLOCK_SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells.getClass().getName() == orig(this.cells.getClass().getName())
+===========================================================================
+solver.structures.SudokuCol:::OBJECT
+this.SIZE == 9
+this.cells != null
+this.cells[] elements != null
+this.cells[].getClass().getName() == [solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell]
+this.cells[].getClass().getName() elements == solver.structures.Cell.class
+size(this.cells[]) == 9
+===========================================================================
+solver.structures.SudokuCol.SudokuCol(int):::ENTER
+arg0 == 9
+===========================================================================
+solver.structures.SudokuCol.SudokuCol(int):::EXIT
+this.SIZE == orig(arg0)
+===========================================================================
+solver.structures.SudokuRow:::OBJECT
+this.SIZE == 9
+this.cells != null
+this.cells[] elements != null
+this.cells[].getClass().getName() == [solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell]
+this.cells[].getClass().getName() elements == solver.structures.Cell.class
+size(this.cells[]) == 9
+===========================================================================
+solver.structures.SudokuRow.SudokuRow(int):::ENTER
+arg0 == 9
+===========================================================================
+solver.structures.SudokuRow.SudokuRow(int):::EXIT
+this.SIZE == orig(arg0)
+===========================================================================
+solver.structures.SudokuRowCol:::OBJECT
+this.SIZE == 9
+this.cells != null
+this.cells[] elements != null
+this.cells[].getClass().getName() == [solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell]
+this.cells[].getClass().getName() elements == solver.structures.Cell.class
+size(this.cells[]) == 9
+===========================================================================
+solver.structures.SudokuRowCol.SudokuRowCol(int):::ENTER
+arg0 == 9
+===========================================================================
+solver.structures.SudokuRowCol.SudokuRowCol(int):::EXIT
+this.SIZE == orig(arg0)
+===========================================================================
+solver.structures.SudokuRowCol.contains(int):::ENTER
+arg0 >= 1
+===========================================================================
+solver.structures.SudokuRowCol.contains(int):::EXIT21
+return == true
+===========================================================================
+solver.structures.SudokuRowCol.contains(int):::EXIT21;condition="return == true"
+===========================================================================
+solver.structures.SudokuRowCol.contains(int):::EXIT23
+return == false
+===========================================================================
+solver.structures.SudokuRowCol.contains(int):::EXIT23;condition="not(return == true)"
+===========================================================================
+solver.structures.SudokuRowCol.contains(int):::EXIT
+this.SIZE == orig(this.SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+===========================================================================
+solver.structures.SudokuRowCol.contains(int):::EXIT;condition="return == true"
+return == true
+===========================================================================
+solver.structures.SudokuRowCol.contains(int):::EXIT;condition="not(return == true)"
+return == false
+===========================================================================
+solver.structures.SudokuRowCol.getCell(int):::ENTER
+arg0 >= 0
+this.SIZE > arg0
+===========================================================================
+solver.structures.SudokuRowCol.getCell(int):::EXIT
+this.SIZE == orig(this.SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+return != null
+return.candidates != null
+return.candidates[] elements != null
+return.candidates[].getClass().getName() elements == java.lang.Integer.class
+return.candidates.getClass().getName() == java.util.ArrayList.class
+return.row >= 0
+return.col >= 0
+return.block >= 0
+size(return.candidates[])-1 != 0
+this.SIZE > return.row
+this.SIZE > return.col
+this.SIZE > return.block
+this.SIZE > orig(arg0)
+return.candidates.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+solver.structures.SudokuRowCol.getCells():::ENTER
+===========================================================================
+solver.structures.SudokuRowCol.getCells():::EXIT
+this.SIZE == orig(this.SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+return != null
+return[] elements != null
+return[].getClass().getName() == [solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell, solver.structures.Cell]
+return[].getClass().getName() elements == solver.structures.Cell.class
+return.getClass().getName() == java.util.ArrayList.class
+size(return[]) == 9
+return.getClass().getName() != orig(this.getClass().getName())
+===========================================================================
+solver.structures.SudokuRowCol.removeCandidate(java.lang.Integer):::ENTER
+arg0 != null
+===========================================================================
+solver.structures.SudokuRowCol.removeCandidate(java.lang.Integer):::EXIT
+this.SIZE == orig(this.SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+===========================================================================
+solver.structures.SudokuRowCol.removeCandidateExceptBlock(java.lang.Integer, int):::ENTER
+this has only one value
+this.getClass().getName() == solver.structures.SudokuRow.class
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+arg0 has only one value
+arg1 == 2
+===========================================================================
+solver.structures.SudokuRowCol.removeCandidateExceptBlock(java.lang.Integer, int):::EXIT
+this.SIZE == orig(this.SIZE)
+this.cells == orig(this.cells)
+this.cells[] == orig(this.cells[])
+this.cells has only one value
+this.cells[] contains no nulls and has only one value, of length 9
+===========================================================================
+solver.structures.SudokuRowCol.setCell(int, solver.structures.Cell):::ENTER
+arg0 >= 0
+arg1 != null
+arg1.candidates != null
+arg1.candidates[] elements != null
+arg1.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg1.candidates.getClass().getName() == java.util.ArrayList.class
+arg1.row >= 0
+arg1.col >= 0
+arg1.block >= 0
+this.getClass().getName() != arg1.candidates.getClass().getName()
+this.SIZE > arg0
+this.SIZE > arg1.row
+this.SIZE > arg1.col
+this.SIZE > arg1.block
+===========================================================================
+solver.structures.SudokuRowCol.setCell(int, solver.structures.Cell):::EXIT
+this.SIZE == orig(this.SIZE)
+this.cells == orig(this.cells)
+arg1.filled == orig(arg1.filled)
+arg1.value == orig(arg1.value)
+arg1.candidates == orig(arg1.candidates)
+arg1.candidates[] == orig(arg1.candidates[])
+arg1.candidates.getClass().getName() == orig(arg1.candidates.getClass().getName())
+arg1.row == orig(arg1.row)
+arg1.col == orig(arg1.col)
+arg1.block == orig(arg1.block)
+size(this.cells[]) == orig(size(this.cells[]))
+arg1.candidates != null
+arg1.candidates[] elements != null
+arg1.candidates[].getClass().getName() elements == java.lang.Integer.class
+arg1.candidates.getClass().getName() == java.util.ArrayList.class
+arg1.row >= 0
+arg1.col >= 0
+arg1.block >= 0
+this.SIZE > arg1.row
+this.SIZE > arg1.col
+this.SIZE > arg1.block
+this.SIZE > orig(arg0)
+arg1.candidates.getClass().getName() != orig(this.getClass().getName())
+Exiting Daikon.
