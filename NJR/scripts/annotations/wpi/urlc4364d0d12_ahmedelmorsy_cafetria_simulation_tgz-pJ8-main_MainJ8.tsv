@@ -1,0 +1,7 @@
+kind	class	method	param	index	uri
+PARAMETER	main.Simulation$JoiningCashierEvent	JoiningCashierEvent(simulation.queue.QueueSystem[],simulation.queue.Customer)	cashiers	0	/home/nima/Developer/NJR-ANNOTATED-RUN/wpi/urlc4364d0d12_ahmedelmorsy_cafetria_simulation_tgz-pJ8-main_MainJ8/src/main/Simulation.java
+METHOD	simulation.queue.QueueSystem	dequeue()	null	null	/home/nima/Developer/NJR-ANNOTATED-RUN/wpi/urlc4364d0d12_ahmedelmorsy_cafetria_simulation_tgz-pJ8-main_MainJ8/src/simulation/queue/QueueSystem.java
+METHOD	simulation.queue.Server	getQueueSystem()	null	null	/home/nima/Developer/NJR-ANNOTATED-RUN/wpi/urlc4364d0d12_ahmedelmorsy_cafetria_simulation_tgz-pJ8-main_MainJ8/src/simulation/queue/Server.java
+PARAMETER	simulation.queue.UniformServer	serve(simulation.queue.Customer,simulation.global.Event)	e	1	/home/nima/Developer/NJR-ANNOTATED-RUN/wpi/urlc4364d0d12_ahmedelmorsy_cafetria_simulation_tgz-pJ8-main_MainJ8/src/simulation/queue/UniformServer.java
+PARAMETER	simulation.queue.CustomServer	serve(simulation.queue.Customer,simulation.global.Event)	e	1	/home/nima/Developer/NJR-ANNOTATED-RUN/wpi/urlc4364d0d12_ahmedelmorsy_cafetria_simulation_tgz-pJ8-main_MainJ8/src/simulation/queue/CustomServer.java
+METHOD	simulation.global.Statistics	getMaxDelayInQueue(java.lang.String)	null	null	/home/nima/Developer/NJR-ANNOTATED-RUN/wpi/urlc4364d0d12_ahmedelmorsy_cafetria_simulation_tgz-pJ8-main_MainJ8/src/simulation/global/Statistics.java

@@ -1,0 +1,2379 @@
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/ASTNode.java:36: error: [NullAway] initializer method does not guarantee @NonNull field origin (line 34) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+  public ASTNode() {
+         ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/ASTNode.java:45: error: [NullAway] initializer method does not guarantee @NonNull field origin (line 34) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+  public ASTNode(Token t) {
+         ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/ASTNode.java:67: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:687: error: [NullAway] @NonNull field HiveParser_FromClauseParser$tableAllColumns_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:746: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:789: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:834: error: [NullAway] @NonNull field HiveParser_FromClauseParser$tableOrColumn_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:870: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:914: error: [NullAway] @NonNull field HiveParser_FromClauseParser$expressionList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:983: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1034: error: [NullAway] @NonNull field HiveParser_FromClauseParser$aliasList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1103: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1154: error: [NullAway] @NonNull field HiveParser_FromClauseParser$fromClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1196: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1240: error: [NullAway] @NonNull field HiveParser_FromClauseParser$joinSource_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1431: error: [NullAway] @NonNull field HiveParser_FromClauseParser$uniqueJoinSource_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1516: error: [NullAway] @NonNull field HiveParser_FromClauseParser$uniqueJoinExpr_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1600: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1649: error: [NullAway] @NonNull field HiveParser_FromClauseParser$uniqueJoinToken_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1684: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1721: error: [NullAway] @NonNull field HiveParser_FromClauseParser$joinToken_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1855: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1887: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1919: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:1969: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:2019: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:2069: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:2104: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:2143: error: [NullAway] @NonNull field HiveParser_FromClauseParser$lateralView_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:2331: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:2453: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:2520: error: [NullAway] @NonNull field HiveParser_FromClauseParser$tableAlias_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:2556: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:2600: error: [NullAway] @NonNull field HiveParser_FromClauseParser$fromSource_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:2980: error: [NullAway] @NonNull field HiveParser_FromClauseParser$tableBucketSample_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:3130: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:3183: error: [NullAway] @NonNull field HiveParser_FromClauseParser$splitSample_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:3345: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:3410: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:3458: error: [NullAway] @NonNull field HiveParser_FromClauseParser$tableSample_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:3584: error: [NullAway] @NonNull field HiveParser_FromClauseParser$tableSource_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:3722: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:3795: error: [NullAway] @NonNull field HiveParser_FromClauseParser$tableName_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:3847: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:3888: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:3935: error: [NullAway] @NonNull field HiveParser_FromClauseParser$viewName_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:4007: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:4059: error: [NullAway] @NonNull field HiveParser_FromClauseParser$subQuerySource_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:4114: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:4159: error: [NullAway] @NonNull field HiveParser_FromClauseParser$partitioningSpec_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:4260: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:4304: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:4362: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:4406: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:4444: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:4490: error: [NullAway] @NonNull field HiveParser_FromClauseParser$partitionTableFunctionSource_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:4843: error: [NullAway] @NonNull field HiveParser_FromClauseParser$partitionedTableFunction_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:5027: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:5092: error: [NullAway] @NonNull field HiveParser_FromClauseParser$whereClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:5134: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_FromClauseParser.java:5178: error: [NullAway] @NonNull field HiveParser_FromClauseParser$searchCondition_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:1033: error: [NullAway] @NonNull field HiveParser$statement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:1132: error: [NullAway] @NonNull field HiveParser$explainStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:1239: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:1289: error: [NullAway] @NonNull field HiveParser$execStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:1457: error: [NullAway] @NonNull field HiveParser$loadStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:1580: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:1640: error: [NullAway] @NonNull field HiveParser$exportStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:1709: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:1755: error: [NullAway] @NonNull field HiveParser$importStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:1882: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:1946: error: [NullAway] @NonNull field HiveParser$ddlStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2427: error: [NullAway] @NonNull field HiveParser$ifExists_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2467: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2509: error: [NullAway] @NonNull field HiveParser$restrictOrCascade_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2563: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2596: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2640: error: [NullAway] @NonNull field HiveParser$ifNotExists_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2686: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2728: error: [NullAway] @NonNull field HiveParser$storedAsDirs_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2774: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2816: error: [NullAway] @NonNull field HiveParser$orReplace_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2856: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2898: error: [NullAway] @NonNull field HiveParser$ignoreProtection_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2938: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:2980: error: [NullAway] @NonNull field HiveParser$createDatabaseStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3163: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3232: error: [NullAway] @NonNull field HiveParser$dbLocation_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3272: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3316: error: [NullAway] @NonNull field HiveParser$dbProperties_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3363: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3406: error: [NullAway] @NonNull field HiveParser$dbPropertiesList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3474: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3524: error: [NullAway] @NonNull field HiveParser$switchDatabaseStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3565: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3608: error: [NullAway] @NonNull field HiveParser$dropDatabaseStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3735: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3790: error: [NullAway] @NonNull field HiveParser$databaseComment_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3830: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:3874: error: [NullAway] @NonNull field HiveParser$createTableStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:4286: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:4417: error: [NullAway] @NonNull field HiveParser$truncateTableStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:4504: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:4553: error: [NullAway] @NonNull field HiveParser$createIndexStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:4826: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:4924: error: [NullAway] @NonNull field HiveParser$indexComment_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:4964: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5008: error: [NullAway] @NonNull field HiveParser$autoRebuild_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5054: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5096: error: [NullAway] @NonNull field HiveParser$indexTblName_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5143: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5187: error: [NullAway] @NonNull field HiveParser$indexPropertiesPrefixed_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5245: error: [NullAway] @NonNull field HiveParser$indexProperties_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5292: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5335: error: [NullAway] @NonNull field HiveParser$indexPropertiesList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5403: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5453: error: [NullAway] @NonNull field HiveParser$dropIndexStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5535: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5587: error: [NullAway] @NonNull field HiveParser$dropTableStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5656: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5705: error: [NullAway] @NonNull field HiveParser$alterStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:5848: error: [NullAway] @NonNull field HiveParser$alterTableStatementSuffix_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6074: error: [NullAway] @NonNull field HiveParser$alterViewStatementSuffix_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6228: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6264: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6300: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6344: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6391: error: [NullAway] @NonNull field HiveParser$alterIndexStatementSuffix_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6499: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6550: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6602: error: [NullAway] @NonNull field HiveParser$alterDatabaseStatementSuffix_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6657: error: [NullAway] @NonNull field HiveParser$alterDatabaseSuffixProperties_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6711: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6756: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixRename_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6809: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6855: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixAddCol_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:6957: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7014: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixRenameCol_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7144: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7205: error: [NullAway] @NonNull field HiveParser$alterStatementChangeColPosition_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7276: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7332: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixAddPartitions_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7427: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7484: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixAddPartitionsElement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7559: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixTouch_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7628: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7677: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixArchive_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7746: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7795: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixUnArchive_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7864: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7913: error: [NullAway] @NonNull field HiveParser$partitionLocation_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7953: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:7997: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixDropPartitions_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8122: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8185: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixProperties_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8302: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8371: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8424: error: [NullAway] @NonNull field HiveParser$alterViewSuffixProperties_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8541: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8610: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8663: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixSerdeProperties_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8781: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8830: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8875: error: [NullAway] @NonNull field HiveParser$tablePartitionPrefix_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8932: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:8982: error: [NullAway] @NonNull field HiveParser$alterTblPartitionStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9098: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9150: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9196: error: [NullAway] @NonNull field HiveParser$alterTblPartitionStatementSuffix_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9446: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixFileFormat_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9493: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9536: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixClusterbySortby_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9619: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9656: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9692: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9737: error: [NullAway] @NonNull field HiveParser$alterTblPartitionStatementSuffixSkewedLocation_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9790: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9833: error: [NullAway] @NonNull field HiveParser$skewedLocations_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9880: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9923: error: [NullAway] @NonNull field HiveParser$skewedLocationsList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:9991: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10041: error: [NullAway] @NonNull field HiveParser$skewedLocationMap_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10088: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10134: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixLocation_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10180: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10224: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixSkewedby_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10373: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10417: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10462: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10509: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixExchangePartition_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10575: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10622: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixProtectMode_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10657: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10700: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixRenamePart_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10747: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10790: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixMergeFiles_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10824: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10866: error: [NullAway] @NonNull field HiveParser$alterProtectMode_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10928: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:10967: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11012: error: [NullAway] @NonNull field HiveParser$alterProtectModeMode_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11079: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11130: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11169: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11213: error: [NullAway] @NonNull field HiveParser$alterStatementSuffixBucketNum_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11259: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11303: error: [NullAway] @NonNull field HiveParser$fileFormat_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11622: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11655: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11688: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11721: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11790: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11843: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:11889: error: [NullAway] @NonNull field HiveParser$tabTypeExpr_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:12245: error: [NullAway] @NonNull field HiveParser$descTabTypeExpr_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:12629: error: [NullAway] @NonNull field HiveParser$partTypeExpr_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:12686: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:12735: error: [NullAway] @NonNull field HiveParser$descPartTypeExpr_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:12792: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:12841: error: [NullAway] @NonNull field HiveParser$descStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:13896: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:14002: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:14107: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:14159: error: [NullAway] @NonNull field HiveParser$analyzeStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:14307: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:14372: error: [NullAway] @NonNull field HiveParser$showStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:14667: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:14813: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:14960: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15025: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15092: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15143: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15268: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15347: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15430: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15595: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15654: error: [NullAway] @NonNull field HiveParser$lockStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15730: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15780: error: [NullAway] @NonNull field HiveParser$lockMode_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15840: error: [NullAway] @NonNull field HiveParser$unlockStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15909: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:15958: error: [NullAway] @NonNull field HiveParser$createRoleStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16005: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16049: error: [NullAway] @NonNull field HiveParser$dropRoleStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16096: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16140: error: [NullAway] @NonNull field HiveParser$grantPrivileges_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16244: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16301: error: [NullAway] @NonNull field HiveParser$revokePrivileges_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16377: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16426: error: [NullAway] @NonNull field HiveParser$grantRole_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16519: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16570: error: [NullAway] @NonNull field HiveParser$revokeRole_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16663: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16714: error: [NullAway] @NonNull field HiveParser$showRoleGrants_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16767: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16810: error: [NullAway] @NonNull field HiveParser$showGrants_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16879: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:16928: error: [NullAway] @NonNull field HiveParser$privilegeIncludeColObject_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17067: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17130: error: [NullAway] @NonNull field HiveParser$privilegeObject_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17235: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17291: error: [NullAway] @NonNull field HiveParser$privilegeList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17359: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17409: error: [NullAway] @NonNull field HiveParser$privlegeDef_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17478: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17528: error: [NullAway] @NonNull field HiveParser$privilegeType_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17640: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17673: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17706: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17739: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17772: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17805: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17838: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17871: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17904: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:17948: error: [NullAway] @NonNull field HiveParser$principalSpecification_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18016: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18066: error: [NullAway] @NonNull field HiveParser$principalName_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18139: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18178: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18217: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18262: error: [NullAway] @NonNull field HiveParser$withOption_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18302: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18344: error: [NullAway] @NonNull field HiveParser$metastoreCheck_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18482: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18545: error: [NullAway] @NonNull field HiveParser$createFunctionStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18610: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18654: error: [NullAway] @NonNull field HiveParser$dropFunctionStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18729: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18778: error: [NullAway] @NonNull field HiveParser$createMacroStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18871: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18921: error: [NullAway] @NonNull field HiveParser$dropMacroStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:18995: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19044: error: [NullAway] @NonNull field HiveParser$createViewStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19250: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19331: error: [NullAway] @NonNull field HiveParser$viewPartition_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19390: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19433: error: [NullAway] @NonNull field HiveParser$dropViewStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19502: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19551: error: [NullAway] @NonNull field HiveParser$showStmtIdentifier_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19639: error: [NullAway] @NonNull field HiveParser$tableComment_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19679: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19723: error: [NullAway] @NonNull field HiveParser$tablePartition_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19782: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19825: error: [NullAway] @NonNull field HiveParser$tableBuckets_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19945: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:19998: error: [NullAway] @NonNull field HiveParser$tableSkewed_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20113: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20165: error: [NullAway] @NonNull field HiveParser$rowFormat_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20256: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20292: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20323: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20367: error: [NullAway] @NonNull field HiveParser$recordReader_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20424: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20455: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20499: error: [NullAway] @NonNull field HiveParser$recordWriter_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20556: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20587: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20631: error: [NullAway] @NonNull field HiveParser$rowFormatSerde_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20717: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20768: error: [NullAway] @NonNull field HiveParser$rowFormatDelimited_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20899: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:20965: error: [NullAway] @NonNull field HiveParser$tableRowFormat_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21053: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21089: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21134: error: [NullAway] @NonNull field HiveParser$tablePropertiesPrefixed_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21192: error: [NullAway] @NonNull field HiveParser$tableProperties_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21239: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21282: error: [NullAway] @NonNull field HiveParser$tablePropertiesList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21388: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21460: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21512: error: [NullAway] @NonNull field HiveParser$keyValueProperty_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21557: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21603: error: [NullAway] @NonNull field HiveParser$keyProperty_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21637: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21682: error: [NullAway] @NonNull field HiveParser$tableRowFormatFieldIdentifier_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21765: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21816: error: [NullAway] @NonNull field HiveParser$tableRowFormatCollItemsIdentifier_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21874: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21918: error: [NullAway] @NonNull field HiveParser$tableRowFormatMapKeysIdentifier_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:21976: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22020: error: [NullAway] @NonNull field HiveParser$tableRowFormatLinesIdentifier_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22072: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22116: error: [NullAway] @NonNull field HiveParser$tableFileFormat_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22500: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22533: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22566: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22599: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22668: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22751: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22801: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22847: error: [NullAway] @NonNull field HiveParser$tableLocation_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22887: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22931: error: [NullAway] @NonNull field HiveParser$columnNameTypeList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:22999: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23049: error: [NullAway] @NonNull field HiveParser$columnNameColonTypeList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23117: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23167: error: [NullAway] @NonNull field HiveParser$columnNameList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23235: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23285: error: [NullAway] @NonNull field HiveParser$columnName_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23340: error: [NullAway] @NonNull field HiveParser$columnNameOrderList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23408: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23458: error: [NullAway] @NonNull field HiveParser$skewedValueElement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23547: error: [NullAway] @NonNull field HiveParser$skewedColumnValuePairList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23615: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23665: error: [NullAway] @NonNull field HiveParser$skewedColumnValuePair_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23712: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23756: error: [NullAway] @NonNull field HiveParser$skewedColumnValues_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23824: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23874: error: [NullAway] @NonNull field HiveParser$skewedColumnValue_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:23929: error: [NullAway] @NonNull field HiveParser$skewedValueLocationElement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24018: error: [NullAway] @NonNull field HiveParser$columnNameOrder_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24088: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24143: error: [NullAway] @NonNull field HiveParser$columnNameCommentList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24211: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24261: error: [NullAway] @NonNull field HiveParser$columnNameComment_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24323: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24375: error: [NullAway] @NonNull field HiveParser$columnRefOrder_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24445: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24500: error: [NullAway] @NonNull field HiveParser$columnNameType_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24569: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24629: error: [NullAway] @NonNull field HiveParser$columnNameColonType_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24704: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24764: error: [NullAway] @NonNull field HiveParser$colType_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24819: error: [NullAway] @NonNull field HiveParser$colTypeList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24887: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:24937: error: [NullAway] @NonNull field HiveParser$type_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25099: error: [NullAway] @NonNull field HiveParser$primitiveType_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25260: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25287: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25314: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25341: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25368: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25395: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25422: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25449: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25476: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25503: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25530: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25557: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25584: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25620: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25666: error: [NullAway] @NonNull field HiveParser$listType_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25719: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25762: error: [NullAway] @NonNull field HiveParser$structType_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25815: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25858: error: [NullAway] @NonNull field HiveParser$mapType_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25924: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:25970: error: [NullAway] @NonNull field HiveParser$unionType_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:26023: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:26066: error: [NullAway] @NonNull field HiveParser$queryOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:26106: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:26148: error: [NullAway] @NonNull field HiveParser$queryStatementExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:26235: error: [NullAway] @NonNull field HiveParser$queryStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:26321: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:26387: error: [NullAway] @NonNull field HiveParser$regular_body_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:26651: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:26772: error: [NullAway] @NonNull field HiveParser$selectStatement_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:27011: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:27130: error: [NullAway] @NonNull field HiveParser$body_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:27419: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:27716: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:27835: error: [NullAway] @NonNull field HiveParser$insertClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:27947: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:27998: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:28043: error: [NullAway] @NonNull field HiveParser$destination_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:28166: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:28215: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:28254: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:28292: error: [NullAway] @NonNull field HiveParser$limitClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser.java:28332: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:687: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$groupByClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:905: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1021: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$groupingSetExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1076: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1149: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1195: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1240: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$groupByExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1295: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$havingClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1337: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1381: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$havingCondition_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1436: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$orderByClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1591: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1671: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1724: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$clusterByClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1879: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:1959: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:2012: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$partitionByClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:2167: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:2247: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:2300: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$distributeByClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:2455: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:2535: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:2588: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$sortByClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:2743: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:2823: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:2876: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$function_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:3067: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:3174: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$functionName_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:3548: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$castExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:3615: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:3660: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$caseExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:3785: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:3835: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$whenExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:3954: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4004: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$constant_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4222: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$stringLiteralSequence_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4283: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4334: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$charSetStringLiteral_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4375: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4422: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$dateLiteral_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4462: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4502: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$expression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4557: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$atomExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4607: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4759: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceFieldExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4877: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceUnaryOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4937: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$nullCondition_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:4994: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5032: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5076: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceUnaryPrefixExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5156: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceUnarySuffixExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5216: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5265: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceBitwiseXorOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5319: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceBitwiseXorExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5402: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceStarOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5462: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceStarExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5545: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedencePlusOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5605: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedencePlusExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5692: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceAmpersandOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5746: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceAmpersandExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5833: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceBitwiseOrOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5887: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceBitwiseOrExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:5974: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceEqualNegatableOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6034: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceEqualOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6253: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceEqualExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6324: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6375: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6432: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6483: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6538: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6607: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6678: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6736: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$expressions_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6816: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6857: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceNotOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6911: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceNotExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:6991: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceAndOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7045: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceAndExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7132: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceOrOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7186: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$precedenceOrExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7273: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$booleanValue_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7363: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$tableOrPartition_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7420: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7469: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$partitionSpec_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7555: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7605: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$partitionVal_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7668: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7717: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$dropPartitionSpec_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7803: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7853: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$dropPartitionVal_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7902: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:7947: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$dropPartitionOperator_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:8007: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$sysFuncNames_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:8067: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$descFuncNames_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:8401: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$identifier_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:8470: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_IdentifiersParser.java:8508: error: [NullAway] @NonNull field HiveParser_IdentifiersParser$nonReserved_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:685: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$selectClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:855: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:940: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:991: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$selectList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1059: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1101: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$selectTrfmClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1364: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1427: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$hintClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1490: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1532: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$hintList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1600: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1642: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$hintItem_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1711: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1759: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$hintName_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1831: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1858: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1885: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1912: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:1949: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$hintArgs_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:2017: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:2066: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$hintArgName_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:2120: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$selectItem_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:2268: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:2316: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$trfmClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:2617: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:2680: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$selectExpression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:2755: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$selectExpressionList_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:2823: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:2872: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$incrementalClause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:2953: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3000: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$incrementalArgs_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3089: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3215: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3360: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3422: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$betweenDate_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3469: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3515: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$startDate_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3550: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3593: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$dateArgs_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3656: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3713: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$indefinite_date_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3781: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3830: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$year_or_month_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3889: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$explicit_time_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:3959: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4011: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$window_clause_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4085: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4134: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$window_defn_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4181: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4224: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$window_specification_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4369: error: [NullAway] assigning @Nullable expression to @NonNull field
+			retval.tree = root_0;
+			            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4428: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$window_frame_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4514: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$window_range_expression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4599: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4650: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4697: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$window_value_expression_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4782: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4833: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4880: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$window_frame_start_boundary_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4955: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:4992: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:5028: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:5072: error: [NullAway] @NonNull field HiveParser_SelectClauseParser$window_frame_boundary_return.tree not initialized
+		CommonTree tree;
+		           ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:5181: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:5219: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+../original/url86119f019a_solzy_hive_parse_tgz-pJ8-org_apache_hadoop_hive_ql_parse_MainJ8/src/org/apache/hadoop/hive/ql/parse/HiveParser_SelectClauseParser.java:5288: error: [NullAway] assigning @Nullable expression to @NonNull field
+					retval.tree = root_0;
+					            ^
+    (see http://t.uber.com/nullaway )
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+594 errors

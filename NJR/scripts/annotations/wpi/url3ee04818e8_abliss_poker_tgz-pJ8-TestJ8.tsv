@@ -1,0 +1,4 @@
+kind	class	method	param	index	uri
+PARAMETER	Card	equals(java.lang.Object)	other	0	/home/nima/Developer/NJR-ANNOTATED-RUN/wpi/url3ee04818e8_abliss_poker_tgz-pJ8-TestJ8/src/Card.java
+PARAMETER	Distribution	display(java.util.Collection,int)	hands	0	/home/nima/Developer/NJR-ANNOTATED-RUN/wpi/url3ee04818e8_abliss_poker_tgz-pJ8-TestJ8/src/Distribution.java
+PARAMETER	Hand	equals(java.lang.Object)	other	0	/home/nima/Developer/NJR-ANNOTATED-RUN/wpi/url3ee04818e8_abliss_poker_tgz-pJ8-TestJ8/src/Hand.java
