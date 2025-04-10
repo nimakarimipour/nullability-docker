@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scanner>
+    <serialization active="true" />
+    <uuid>cdf58336-955f-4c56-b8bf-a30e04c1ab43</uuid>
+    <path>/opt/table_1/versions/nullaway/floating-pre/src/annotator-out/0</path>
+    <processor>
+        <LOMBOK active="true" />
+    </processor>
+    <annotations />
+</scanner>

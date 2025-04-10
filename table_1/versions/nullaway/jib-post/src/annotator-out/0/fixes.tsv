@@ -1,0 +1,2 @@
+kind	class	method	param	index	uri	reason	annotation	rootClass	rootMethod
+METHOD	com.google.cloud.tools.jib.registry.RegistryUnauthorizedException	getHttpResponseException()	null	null	/Users/nima/Developer/annotator-run/src/main/java/com/google/cloud/tools/jib/registry/RegistryUnauthorizedException.java	RETURN_NULLABLE	nullable	com.google.cloud.tools.jib.registry.RegistryUnauthorizedException	getHttpResponseException()

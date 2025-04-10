@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scanner>
+    <serialization active="false" />
+    <uuid>0a78ebf1-e9bb-4605-9721-b19de16bbc0f</uuid>
+    <path>/opt/table_1/versions/nullaway/table-csv-pre/src/annotator-out/0</path>
+    <processor>
+        <LOMBOK active="true" />
+    </processor>
+    <annotations />
+</scanner>

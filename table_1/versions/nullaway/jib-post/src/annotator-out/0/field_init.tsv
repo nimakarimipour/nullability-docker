@@ -1,0 +1,6 @@
+kind	class	method	param	index	uri	field
+METHOD	com.google.cloud.tools.jib.cache.Caches$Initializer	setBaseCacheDirectory(java.nio.file.Path)	null	null	/Users/nima/Developer/annotator-run/src/main/java/com/google/cloud/tools/jib/cache/Caches.java	baseCacheDirectory
+METHOD	com.google.cloud.tools.jib.cache.LayerMetadata	setSourceFiles(java.util.List)	null	null	/Users/nima/Developer/annotator-run/src/main/java/com/google/cloud/tools/jib/cache/LayerMetadata.java	sourceFiles
+METHOD	com.google.cloud.tools.jib.cache.json.CacheMetadataLayerPropertiesObjectTemplate	setSourceFiles(java.util.List)	null	null	/Users/nima/Developer/annotator-run/src/main/java/com/google/cloud/tools/jib/cache/json/CacheMetadataLayerPropertiesObjectTemplate.java	sourceFiles
+METHOD	com.google.cloud.tools.jib.registry.RegistryClient	setTimer(com.google.cloud.tools.jib.Timer)	null	null	/Users/nima/Developer/annotator-run/src/main/java/com/google/cloud/tools/jib/registry/RegistryClient.java	parentTimer
+METHOD	com.google.cloud.tools.jib.builder.BuildConfiguration$Builder	setTargetFormat(java.lang.Class)	null	null	/Users/nima/Developer/annotator-run/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java	targetFormat
