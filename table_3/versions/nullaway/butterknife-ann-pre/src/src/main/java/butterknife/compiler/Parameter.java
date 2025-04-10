@@ -1,7 +1,7 @@
 package butterknife.compiler;
 
 import com.squareup.javapoet.TypeName;
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 
 /**
  * Represents a parameter type and its position in the listener method.

@@ -34,7 +34,7 @@ import static org.junit.Assert.fail;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-import androidx.annotation.Nullable;
+
 
 @RunWith(RobolectricTestRunner.class)
 public class BitmapTargetActionTest {
@@ -89,17 +89,17 @@ public class BitmapTargetActionTest {
         BitmapTarget bad = new BitmapTarget() {
 
             @Override
-            public void onBitmapLoaded(Bitmap bitmap, @Nullable() Picasso.LoadedFrom from) {
+            public void onBitmapLoaded(Bitmap bitmap, @javax.annotation.Nullable Picasso.LoadedFrom from) {
                 bitmap.recycle();
             }
 
             @Override
-            public void onBitmapFailed(@Nullable() Exception e, @Nullable() Drawable errorDrawable) {
+            public void onBitmapFailed(@javax.annotation.Nullable Exception e, @javax.annotation.Nullable Drawable errorDrawable) {
                 throw new AssertionError();
             }
 
             @Override
-            public void onPrepareLoad(@Nullable() Drawable placeHolderDrawable) {
+            public void onPrepareLoad(@javax.annotation.Nullable Drawable placeHolderDrawable) {
                 throw new AssertionError();
             }
         };

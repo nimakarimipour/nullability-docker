@@ -20,7 +20,7 @@ import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import static com.squareup.picasso3.Picasso.LoadedFrom.DISK;
-import androidx.annotation.Nullable;
+
 
 public final class ResourceDrawableRequestHandler extends RequestHandler {
 
@@ -39,7 +39,7 @@ public final class ResourceDrawableRequestHandler extends RequestHandler {
     }
 
     @Override
-    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
         Drawable drawable = loader.load(request.resourceId);
         if (drawable == null) {
             callback.onError(new IllegalArgumentException("invalid resId: " + Integer.toHexString(request.resourceId)));

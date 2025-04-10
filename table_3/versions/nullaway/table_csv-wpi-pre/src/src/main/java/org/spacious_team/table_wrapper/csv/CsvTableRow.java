@@ -25,8 +25,11 @@ import static org.spacious_team.table_wrapper.api.TableCellAddress.NOT_FOUND;
 import static org.spacious_team.table_wrapper.csv.CsvTableHelper.equalsPredicate;
 
 public class CsvTableRow extends AbstractReportPageRow {
+
     private final String[] row;
+
     private final int rowNum;
+
     private final CsvTableCell[] cellsCache;
 
     public CsvTableRow(String[] row, int rowNum) {
@@ -66,11 +69,14 @@ public class CsvTableRow extends AbstractReportPageRow {
     @Override
     public Iterator<TableCell> iterator() {
         return new Iterator<>() {
+
             private int cellIndex = 0;
+
             @Override
             public boolean hasNext() {
                 return cellIndex < row.length;
             }
+
             @Override
             public TableCell next() {
                 return getCell(cellIndex++);
@@ -78,7 +84,6 @@ public class CsvTableRow extends AbstractReportPageRow {
         };
     }
 
-    
     public int getRowNum() {
         return this.rowNum;
     }

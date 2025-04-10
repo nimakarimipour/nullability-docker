@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class IngredientUnitLookup {
 
-    @Nullable
+    @javax.annotation.Nullable
     private static IngredientUnitLookup instance;
 
     private Map<String, IngredientUnit> byShorthand;

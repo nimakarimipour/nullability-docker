@@ -52,7 +52,7 @@ public class Cache2kManagerConfig implements ConfigBean<Cache2kManagerConfig, Ca
         ignoreMissingCacheConfiguration = f;
     }
 
-    @Nullable()
+    @javax.annotation.Nullable
     public String getDefaultManagerName() {
         return defaultManagerName;
     }
@@ -64,7 +64,7 @@ public class Cache2kManagerConfig implements ConfigBean<Cache2kManagerConfig, Ca
         defaultManagerName = v;
     }
 
-    @Nullable()
+    @javax.annotation.Nullable
     public String getVersion() {
         return version;
     }

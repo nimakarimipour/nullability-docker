@@ -229,7 +229,7 @@ public abstract class AbstractTable<R extends ReportPageRow> implements Table {
         return getMutableTableRow(address);
     }
 
-    @Nullable()
+    @javax.annotation.Nullable
     private MutableTableRow<R> getMutableTableRow(TableCellAddress address) {
         if (tableRange.contains(address)) {
             MutableTableRow<R> tableRow = new MutableTableRow<>(this, getCellDataAccessObject());

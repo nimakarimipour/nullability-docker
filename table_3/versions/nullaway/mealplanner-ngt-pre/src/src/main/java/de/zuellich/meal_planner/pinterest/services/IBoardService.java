@@ -14,7 +14,7 @@ public interface IBoardService {
      */
     List<Board> getBoards();
 
-    List<Pin> getPins(@Nullable() String boardId);
+    List<Pin> getPins(@javax.annotation.Nullable() String boardId);
 
     /**
      * Retrieve a listing of the boards basic properties and its pins.
@@ -22,5 +22,5 @@ public interface IBoardService {
      * @param boardId The board to retrieve.
      * @return The listing.
      */
-    BoardListing getBoardListing(@Nullable() String boardId);
+    BoardListing getBoardListing(@javax.annotation.Nullable() String boardId);
 }

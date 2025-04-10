@@ -45,5 +45,5 @@ public interface CacheOperationCompletionListener extends EventListener {
      * Errors while loading a value, will be delayed and propagated when the respective key
      * is accessed. This is subject to the resilience configuration.
      */
-    void onException(@Nullable() Throwable exception);
+    void onException(@javax.annotation.Nullable Throwable exception);
 }

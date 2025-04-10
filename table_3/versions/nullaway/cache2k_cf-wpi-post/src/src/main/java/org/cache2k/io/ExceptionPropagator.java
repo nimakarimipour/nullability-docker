@@ -1,4 +1,4 @@
-package org.cache2k.integration;
+package org.cache2k.io;
 
 /*
  * #%L

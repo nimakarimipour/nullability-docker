@@ -40,5 +40,5 @@ public interface CacheEntryRemovedListener<K, V> extends CacheEntryOperationList
      * @param entry Entry containing the last data. It is only valid to access the object during the
      *                     call of this method. The object value may become invalid afterwards.
      */
-    void onEntryRemoved(@Nullable() Cache<K, V> cache, @Nullable() CacheEntry<K, V> entry);
+    void onEntryRemoved(@javax.annotation.Nullable Cache<K, V> cache, @javax.annotation.Nullable CacheEntry<K, V> entry);
 }

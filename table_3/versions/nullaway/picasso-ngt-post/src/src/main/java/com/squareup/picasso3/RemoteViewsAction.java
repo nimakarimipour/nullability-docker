@@ -18,16 +18,16 @@ package com.squareup.picasso3;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.appwidget.AppWidgetManager;
-import android.support.annotation.Nullable;
+
 import android.support.v4.content.ContextCompat;
 import android.widget.RemoteViews;
-import androidx.annotation.Nullable;
+
 
 abstract class RemoteViewsAction extends Action<RemoteViewsAction.RemoteViewsTarget> {
 
     Target<RemoteViewsTarget> remoteWrapper;
 
-    @Nullable
+    @javax.annotation.Nullable
     Callback callback;
 
     RemoteViewsAction(Picasso picasso, Request data, Target<RemoteViewsTarget> wrapper, Callback callback) {

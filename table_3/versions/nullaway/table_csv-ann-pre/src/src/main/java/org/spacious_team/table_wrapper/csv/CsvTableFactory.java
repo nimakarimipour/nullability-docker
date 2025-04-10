@@ -22,20 +22,18 @@ import org.spacious_team.table_wrapper.api.AbstractTableFactory;
 import org.spacious_team.table_wrapper.api.ReportPage;
 import org.spacious_team.table_wrapper.api.Table;
 import org.spacious_team.table_wrapper.api.TableCellRange;
-import org.spacious_team.table_wrapper.api.TableColumnDescription;
 
 @SuppressWarnings("unused")
-public class CsvTableFactory extends AbstractTableFactory<CsvReportPage> {
+public abstract class CsvTableFactory extends AbstractTableFactory<CsvReportPage> {
 
     public CsvTableFactory() {
         super(CsvReportPage.class);
     }
 
-    @Override
-    public Table create(ReportPage reportPage,
+    public Table createe(ReportPage reportPage,
                         String tableName,
                         TableCellRange tableRange,
-                        Class<? extends TableColumnDescription> headerDescription,
+                        Class<?> headerDescription,
                         int headersRowCount) {
         return new CsvTable(
                 cast(reportPage),

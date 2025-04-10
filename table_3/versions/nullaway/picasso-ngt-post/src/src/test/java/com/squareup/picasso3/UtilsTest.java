@@ -28,7 +28,7 @@ import static com.squareup.picasso3.TestUtils.RESOURCE_TYPE_URI;
 import static com.squareup.picasso3.TestUtils.URI_1;
 import static com.squareup.picasso3.TestUtils.mockPackageResourceContext;
 import static com.squareup.picasso3.Utils.isWebPFile;
-import androidx.annotation.Nullable;
+
 
 @RunWith(RobolectricTestRunner.class)
 public class UtilsTest {

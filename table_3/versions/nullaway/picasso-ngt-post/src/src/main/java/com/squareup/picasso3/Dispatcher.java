@@ -55,7 +55,7 @@ import static com.squareup.picasso3.Utils.VERB_RETRYING;
 import static com.squareup.picasso3.Utils.getLogIdsForHunter;
 import static com.squareup.picasso3.Utils.hasPermission;
 import static com.squareup.picasso3.Utils.log;
-import androidx.annotation.Nullable;
+
 
 class Dispatcher {
 

@@ -16,7 +16,7 @@
 package com.squareup.picasso3;
 
 import android.graphics.Bitmap;
-import androidx.annotation.Nullable;
+
 
 class TestTransformation implements Transformation {
 

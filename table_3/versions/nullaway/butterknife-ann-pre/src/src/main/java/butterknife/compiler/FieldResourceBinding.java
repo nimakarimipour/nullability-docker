@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 import static java.util.Collections.singletonList;
 import static java.util.Collections.unmodifiableList;
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 
 final class FieldResourceBinding implements ResourceBinding {
 

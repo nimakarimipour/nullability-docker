@@ -29,47 +29,47 @@ public interface TableRow extends ReportPageRow, Cloneable {
 
     Table getTable();
 
-    TableCell getCell(@Nullable() TableColumnDescription column);
+    TableCell getCell(@javax.annotation.Nullable TableColumnDescription column);
 
     /**
      * Returns cell's native value
      */
-    Object getCellValue(@Nullable() TableColumnDescription column);
+    Object getCellValue(@javax.annotation.Nullable TableColumnDescription column);
 
     /**
      * @throws RuntimeException if method can't extract int value
      */
-    int getIntCellValue(@Nullable() TableColumnDescription column);
+    int getIntCellValue(@javax.annotation.Nullable TableColumnDescription column);
 
     /**
      * @throws RuntimeException if method can't extract long value
      */
-    long getLongCellValue(@Nullable() TableColumnDescription column);
+    long getLongCellValue(@javax.annotation.Nullable TableColumnDescription column);
 
     /**
      * @throws RuntimeException if method can't extract Double value
      */
-    double getDoubleCellValue(@Nullable() TableColumnDescription column);
+    double getDoubleCellValue(@javax.annotation.Nullable TableColumnDescription column);
 
     /**
      * @throws RuntimeException if method can't extract BigDecimal value
      */
-    BigDecimal getBigDecimalCellValue(@Nullable() TableColumnDescription column);
+    BigDecimal getBigDecimalCellValue(@javax.annotation.Nullable TableColumnDescription column);
 
     /**
      * @throws RuntimeException if method can't extract string value
      */
-    String getStringCellValue(@Nullable() TableColumnDescription column);
+    String getStringCellValue(@javax.annotation.Nullable TableColumnDescription column);
 
     /**
      * @throws RuntimeException if method can't extract instant value
      */
-    Instant getInstantCellValue(@Nullable() TableColumnDescription column);
+    Instant getInstantCellValue(@javax.annotation.Nullable TableColumnDescription column);
 
     /**
      * @throws RuntimeException if method can't extract local date time value
      */
-    LocalDateTime getLocalDateTimeCellValue(@Nullable() TableColumnDescription column);
+    LocalDateTime getLocalDateTimeCellValue(@javax.annotation.Nullable TableColumnDescription column);
 
     /**
      * @return return cell value or defaultValue if the cell is missing or the type does not match the expected

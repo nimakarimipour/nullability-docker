@@ -3,7 +3,7 @@ package butterknife.compiler;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 
 final class MethodViewBinding implements MemberViewBinding {
 

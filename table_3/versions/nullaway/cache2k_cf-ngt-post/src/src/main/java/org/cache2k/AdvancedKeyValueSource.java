@@ -36,5 +36,5 @@ public interface AdvancedKeyValueSource<K, V> extends KeyValueSource<K, V> {
      *
      * @see Cache#getAll(Iterable)
      */
-    Map<K, V> getAll(@Nullable() Iterable<? extends K> keys);
+    Map<K, V> getAll(@javax.annotation.Nullable Iterable<? extends K> keys);
 }

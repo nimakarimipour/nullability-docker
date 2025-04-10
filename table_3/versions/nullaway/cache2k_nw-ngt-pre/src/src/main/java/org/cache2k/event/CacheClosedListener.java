@@ -37,5 +37,5 @@ public interface CacheClosedListener extends CacheLifecycleListener {
      *              to retrieve the name and the associated manager.
      *              No operations are allowed.
      */
-    CompletableFuture<Void> onCacheClosed(@Nullable() Cache<?, ?> cache);
+    CompletableFuture<Void> onCacheClosed(@javax.annotation.Nullable Cache<?, ?> cache);
 }

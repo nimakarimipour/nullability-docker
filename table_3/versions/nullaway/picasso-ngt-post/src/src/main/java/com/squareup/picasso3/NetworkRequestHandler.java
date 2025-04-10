@@ -19,7 +19,7 @@ import android.graphics.Bitmap;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
 import java.io.IOException;
 import okhttp3.CacheControl;
 import okhttp3.Call;
@@ -28,7 +28,7 @@ import okhttp3.ResponseBody;
 import static com.squareup.picasso3.Picasso.LoadedFrom.DISK;
 import static com.squareup.picasso3.Picasso.LoadedFrom.NETWORK;
 import static com.squareup.picasso3.Utils.checkNotNull;
-import androidx.annotation.Nullable;
+
 
 final class NetworkRequestHandler extends RequestHandler {
 
@@ -55,7 +55,7 @@ final class NetworkRequestHandler extends RequestHandler {
     }
 
     @Override
-    public void load(@Nullable() Picasso picasso, final Request request, final Callback callback) {
+    public void load(@javax.annotation.Nullable Picasso picasso, final Request request, final Callback callback) {
         okhttp3.Request callRequest = createRequest(request);
         callFactory.newCall(callRequest).enqueue(new okhttp3.Callback() {
 

@@ -26,11 +26,11 @@ import android.graphics.drawable.Animatable;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.SystemClock;
-import android.support.annotation.Nullable;
+
 import android.widget.ImageView;
 import static android.graphics.Color.WHITE;
 import static com.squareup.picasso3.Picasso.LoadedFrom.MEMORY;
-import androidx.annotation.Nullable;
+
 
 final class PicassoDrawable extends BitmapDrawable {
 
@@ -82,7 +82,7 @@ final class PicassoDrawable extends BitmapDrawable {
 
     private final Picasso.LoadedFrom loadedFrom;
 
-    @Nullable
+    @javax.annotation.Nullable
     Drawable placeholder;
 
     long startTimeMillis;

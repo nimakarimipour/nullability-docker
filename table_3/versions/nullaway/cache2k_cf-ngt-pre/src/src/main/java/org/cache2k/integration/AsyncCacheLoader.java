@@ -44,7 +44,7 @@ public interface AsyncCacheLoader<K, V> {
      *
      * @since 1.4
      */
-    void load(@Nullable() K key, @Nullable() Context<K, V> context, @Nullable() Callback<V> callback) throws Exception;
+    void load(@javax.annotation.Nullable K key, @javax.annotation.Nullable Context<K, V> context, @javax.annotation.Nullable Callback<V> callback) throws Exception;
 
     /**
      * Relevant context information for a single load request.
@@ -104,7 +104,7 @@ public interface AsyncCacheLoader<K, V> {
          *
          * @throws IllegalStateException if the callback was already made
          */
-        void onLoadSuccess(@Nullable() V value);
+        void onLoadSuccess(@javax.annotation.Nullable V value);
 
         /**
          * Called if a failure happened. The exceptions is propagated to
@@ -112,6 +112,6 @@ public interface AsyncCacheLoader<K, V> {
          *
          * @throws IllegalStateException if the callback was already made
          */
-        void onLoadFailure(@Nullable() Throwable t);
+        void onLoadFailure(@javax.annotation.Nullable Throwable t);
     }
 }

@@ -82,5 +82,5 @@ public interface EntryProcessor<K, V, R> {
      *         {@link EntryProcessingException}.
      *         If an exception happens, the cache content will not be altered.
      */
-    R process(@Nullable() MutableCacheEntry<K, V> entry) throws Exception;
+    R process(@javax.annotation.Nullable MutableCacheEntry<K, V> entry) throws Exception;
 }

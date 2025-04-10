@@ -25,5 +25,5 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 public abstract class AbstractReportPage<T extends ReportPageRow> implements ReportPage {
 
     @Override
-    public abstract T getRow(@Nullable() int i);
+    public abstract T getRow(@javax.annotation.Nullable int i);
 }

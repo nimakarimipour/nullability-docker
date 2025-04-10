@@ -40,7 +40,7 @@ public abstract class CacheWriter<K, V> implements org.cache2k.io.CacheWriter<K,
      * @throws Exception if an exception occurs, the cache update will not occur and this
      *         exception will be wrapped in a {@link CacheWriterException}
      */
-    public abstract void write(@Nullable() K key, @Nullable() V value) throws Exception;
+    public abstract void write(@javax.annotation.Nullable K key, @javax.annotation.Nullable V value) throws Exception;
 
     /**
      * Called when a mapping is removed from the cache. The removal was done by
@@ -51,5 +51,5 @@ public abstract class CacheWriter<K, V> implements org.cache2k.io.CacheWriter<K,
      * @throws Exception if an exception occurs, the cache update will not occur and this
      *         exception will be wrapped in a {@link CacheWriterException}
      */
-    public abstract void delete(@Nullable() K key) throws Exception;
+    public abstract void delete(@javax.annotation.Nullable K key) throws Exception;
 }

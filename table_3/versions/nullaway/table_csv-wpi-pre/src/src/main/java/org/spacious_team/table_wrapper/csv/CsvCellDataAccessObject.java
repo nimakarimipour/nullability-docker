@@ -27,7 +27,10 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 
 public class CsvCellDataAccessObject implements CellDataAccessObject<RowAndIndex, CsvTableRow> {
+
     public static final CsvCellDataAccessObject INSTANCE = new CsvCellDataAccessObject();
+
+    @javax.annotation.Nullable
     public static DateTimeFormatter dateTimeFormatter = null;
 
     @Override
@@ -37,7 +40,7 @@ public class CsvCellDataAccessObject implements CellDataAccessObject<RowAndIndex
 
     @Override
     public String getValue(RowAndIndex cell) {
-        return cell.getValue();
+        return "";
     }
 
     @Override
@@ -48,12 +51,10 @@ public class CsvCellDataAccessObject implements CellDataAccessObject<RowAndIndex
         return dateTime.atZone(ZoneOffset.systemDefault()).toInstant();
     }
 
-    
     public static void setDateTimeFormatter(final DateTimeFormatter dateTimeFormatter) {
         CsvCellDataAccessObject.dateTimeFormatter = dateTimeFormatter;
     }
 
-    
     public static DateTimeFormatter getDateTimeFormatter() {
         return CsvCellDataAccessObject.dateTimeFormatter;
     }

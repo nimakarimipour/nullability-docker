@@ -3,7 +3,7 @@ package butterknife.compiler;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.ParameterizedTypeName;
 import com.squareup.javapoet.TypeName;
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 
 final class FieldViewBinding implements MemberViewBinding {
 

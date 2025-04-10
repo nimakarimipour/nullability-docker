@@ -1,6 +1,6 @@
 package butterknife.compiler;
 
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 import com.google.common.collect.ImmutableList;
 import com.google.errorprone.annotations.Immutable;
 import com.squareup.javapoet.ClassName;

@@ -36,5 +36,5 @@ public interface Weigher<K, V> extends Customization<K, V> {
      * @return a positive long value representing the relative weight in comparison to the other
      * entries in the cache.
      */
-    int weigh(@Nullable() K key, @Nullable() V value);
+    int weigh(@javax.annotation.Nullable K key, @javax.annotation.Nullable V value);
 }

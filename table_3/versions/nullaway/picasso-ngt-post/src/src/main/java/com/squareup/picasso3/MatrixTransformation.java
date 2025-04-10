@@ -27,7 +27,7 @@ import static android.support.media.ExifInterface.ORIENTATION_ROTATE_270;
 import static android.support.media.ExifInterface.ORIENTATION_ROTATE_90;
 import static android.support.media.ExifInterface.ORIENTATION_TRANSPOSE;
 import static android.support.media.ExifInterface.ORIENTATION_TRANSVERSE;
-import androidx.annotation.Nullable;
+
 
 final class MatrixTransformation implements Transformation {
 

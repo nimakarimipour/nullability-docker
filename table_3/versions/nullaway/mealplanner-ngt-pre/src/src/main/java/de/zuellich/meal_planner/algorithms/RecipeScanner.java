@@ -12,5 +12,5 @@ public interface RecipeScanner {
      * @return A basic recipe instance with name and source information resolved. No ingredients are
      *     added.
      */
-    Recipe parse(@Nullable() String source);
+    Recipe parse(@javax.annotation.Nullable() String source);
 }

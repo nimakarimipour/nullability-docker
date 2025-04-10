@@ -40,5 +40,5 @@ public interface CacheClosedListener extends CacheLifecycleListener {
      * @return {@code null} or a CompletableFuture, if this method uses async
      *         processing
      */
-    CompletableFuture<Void> onCacheClosed(@Nullable() Cache<?, ?> cache);
+    CompletableFuture<Void> onCacheClosed(@javax.annotation.Nullable Cache<?, ?> cache);
 }

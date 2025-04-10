@@ -24,7 +24,7 @@ import android.net.Uri;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
 import android.support.annotation.VisibleForTesting;
 import android.support.v4.content.ContextCompat;
 import android.view.Gravity;
@@ -50,7 +50,7 @@ import static com.squareup.picasso3.Utils.VERB_CREATED;
 import static com.squareup.picasso3.Utils.checkMain;
 import static com.squareup.picasso3.Utils.checkNotMain;
 import static com.squareup.picasso3.Utils.log;
-import androidx.annotation.Nullable;
+
 
 /**
  * Fluent API for building an image download request.
@@ -74,10 +74,10 @@ public class RequestCreator {
 
     private int errorResId;
 
-    @Nullable
+    @javax.annotation.Nullable
     private Drawable placeholderDrawable;
 
-    @Nullable
+    @javax.annotation.Nullable
     private Drawable errorDrawable;
 
     RequestCreator(Picasso picasso, Uri uri, int resourceId) {

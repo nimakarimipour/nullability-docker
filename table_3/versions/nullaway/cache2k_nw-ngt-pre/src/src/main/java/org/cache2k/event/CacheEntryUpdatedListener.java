@@ -45,5 +45,5 @@ public interface CacheEntryUpdatedListener<K, V> extends CacheEntryOperationList
      *                         It is only valid to access the object during the
      *                     call of this method. The object value may become invalid afterwards.
      */
-    void onEntryUpdated(@Nullable() Cache<K, V> cache, @Nullable() CacheEntry<K, V> currentEntry, @Nullable() CacheEntry<K, V> entryWithNewData);
+    void onEntryUpdated(@javax.annotation.Nullable Cache<K, V> cache, @javax.annotation.Nullable CacheEntry<K, V> currentEntry, @javax.annotation.Nullable CacheEntry<K, V> entryWithNewData);
 }

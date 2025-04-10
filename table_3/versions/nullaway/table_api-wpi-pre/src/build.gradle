@@ -62,6 +62,8 @@ dependencies {
     
     // add lombok to the annotation processor path
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    compileOnly "org.checkerframework:checker-qual:3.42.0"
 }
 
 def scanner_path = projectDir.absolutePath + "/annotator-out/scanner.xml"

@@ -16,13 +16,13 @@
 package com.squareup.picasso3;
 
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
 import android.util.Log;
 import java.io.IOException;
 import okio.Buffer;
 import okio.BufferedSink;
 import static com.squareup.picasso3.Picasso.TAG;
-import androidx.annotation.Nullable;
+
 
 /**
  * Represents all stats for a {@link Picasso} instance at a single point in time.

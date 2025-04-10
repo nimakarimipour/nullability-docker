@@ -19,7 +19,7 @@ import android.support.annotation.RestrictTo;
 import java.lang.annotation.Retention;
 import static android.support.annotation.RestrictTo.Scope.LIBRARY;
 import static java.lang.annotation.RetentionPolicy.SOURCE;
-import androidx.annotation.Nullable;
+
 
 @Retention(SOURCE)
 @RestrictTo(LIBRARY)

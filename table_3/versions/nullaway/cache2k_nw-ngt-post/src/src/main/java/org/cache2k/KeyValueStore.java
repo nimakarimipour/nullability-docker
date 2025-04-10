@@ -41,7 +41,7 @@ public interface KeyValueStore<K, V> extends AdvancedKeyValueSource<K, V> {
      * @param key key with which the specified value is associated
      * @param value value to be associated with the specified key
      */
-    void put(@Nullable() K key, @Nullable() V value);
+    void put(@javax.annotation.Nullable K key, @javax.annotation.Nullable V value);
 
     /**
      * Insert or update all elements of the map into the cache.
@@ -49,7 +49,7 @@ public interface KeyValueStore<K, V> extends AdvancedKeyValueSource<K, V> {
      * @param valueMap Map of keys with associated values to be inserted in the cache
      * @throws NullPointerException if one of the specified keys is null
      */
-    void putAll(@Nullable() Map<? extends K, ? extends V> valueMap);
+    void putAll(@javax.annotation.Nullable Map<? extends K, ? extends V> valueMap);
 
     /**
      * Remove a value from the cache that is associated with the key.
@@ -65,7 +65,7 @@ public interface KeyValueStore<K, V> extends AdvancedKeyValueSource<K, V> {
      * @see Cache#remove
      * @param key key which mapping is to be removed from the cache, not null
      */
-    void remove(@Nullable() K key);
+    void remove(@javax.annotation.Nullable K key);
 
     /**
      * Remove mappings from the cache.
@@ -73,5 +73,5 @@ public interface KeyValueStore<K, V> extends AdvancedKeyValueSource<K, V> {
      * @see Cache#removeAll
      * @param keys keys is to be removed from the cache
      */
-    void removeAll(@Nullable() Iterable<? extends K> keys);
+    void removeAll(@javax.annotation.Nullable Iterable<? extends K> keys);
 }

@@ -82,27 +82,27 @@ public class TableCellRange {
         }
 
         @Override
-        public boolean contains(@Nullable() TableCellAddress address) {
+        public boolean contains(@javax.annotation.Nullable TableCellAddress address) {
             return false;
         }
 
         @Override
-        public boolean containsRow(@Nullable() int row) {
+        public boolean containsRow(@javax.annotation.Nullable int row) {
             return false;
         }
 
         @Override
-        public boolean containsColumn(@Nullable() int column) {
+        public boolean containsColumn(@javax.annotation.Nullable int column) {
             return false;
         }
 
         @Override
-        public TableCellRange addRowsToTop(@Nullable() int number) {
+        public TableCellRange addRowsToTop(@javax.annotation.Nullable int number) {
             return this;
         }
 
         @Override
-        public TableCellRange addRowsToBottom(@Nullable() int number) {
+        public TableCellRange addRowsToBottom(@javax.annotation.Nullable int number) {
             return this;
         }
 

@@ -38,9 +38,9 @@ public interface CellDataAccessObject<C, R extends ReportPageRow> {
 
     String NO_CELL_VALUE_EXCEPTION_MESSAGE = "Cell doesn't contains value";
 
-    C getCell(@Nullable() R row, @Nullable() Integer cellIndex);
+    C getCell(@javax.annotation.Nullable R row, @javax.annotation.Nullable Integer cellIndex);
 
-    Object getValue(@Nullable() C cell);
+    Object getValue(@javax.annotation.Nullable C cell);
 
     /**
      * @throws RuntimeException if method can't extract int value
@@ -109,7 +109,7 @@ public interface CellDataAccessObject<C, R extends ReportPageRow> {
     /**
      * @throws RuntimeException if method can't extract instant value
      */
-    Instant getInstantValue(@Nullable() C cell);
+    Instant getInstantValue(@javax.annotation.Nullable C cell);
 
     /**
      * @throws RuntimeException if method can't extract local date time value
@@ -118,7 +118,7 @@ public interface CellDataAccessObject<C, R extends ReportPageRow> {
         return getInstantValue(cell).atZone(defaultZoneId).toLocalDateTime();
     }
 
-    @Nullable()
+    @javax.annotation.Nullable
     default Object getValue(R row, Integer cellIndex) {
         C cell = getCell(row, cellIndex);
         return (cell == null) ? null : getValue(cell);

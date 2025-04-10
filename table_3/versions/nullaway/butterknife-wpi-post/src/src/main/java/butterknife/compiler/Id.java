@@ -1,6 +1,6 @@
 package butterknife.compiler;
 
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.CodeBlock;
 import com.sun.tools.javac.code.Symbol;

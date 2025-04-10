@@ -5,7 +5,7 @@ import static butterknife.compiler.BindingSet.CONTEXT_COMPAT;
 import static butterknife.compiler.BindingSet.CONTEXT_COMPAT_ANDROIDX;
 import static butterknife.compiler.BindingSet.UTILS;
 import static butterknife.internal.Constants.NO_RES_ID;
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 
 final class FieldDrawableBinding implements ResourceBinding {
 

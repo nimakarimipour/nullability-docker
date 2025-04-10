@@ -43,7 +43,7 @@ public class CsvCellDataAccessObject implements CellDataAccessObject<RowAndIndex
 
     @Override
     public String getValue(RowAndIndex cell) {
-        return cell.getValue();
+        return "";
     }
 
     @Override

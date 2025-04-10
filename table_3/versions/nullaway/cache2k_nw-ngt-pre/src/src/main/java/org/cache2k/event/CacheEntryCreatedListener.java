@@ -43,5 +43,5 @@ public interface CacheEntryCreatedListener<K, V> extends CacheEntryOperationList
      * @param entry Entry containing the current data. It is only valid to access the object during
      *              the call of this method. The object value may become invalid afterwards.
      */
-    void onEntryCreated(@Nullable() Cache<K, V> cache, @Nullable() CacheEntry<K, V> entry);
+    void onEntryCreated(@javax.annotation.Nullable Cache<K, V> cache, @javax.annotation.Nullable CacheEntry<K, V> entry);
 }

@@ -64,7 +64,7 @@ public interface ReportPage {
      * @param endColumn   search columns excluding this, can handle values greater than real columns count
      * @return cell address or {@link TableCellAddress#NOT_FOUND}
      */
-    TableCellAddress find(@Nullable() Object value, @Nullable() int startRow, @Nullable() int endRow, @Nullable() int startColumn, @Nullable() int endColumn);
+    TableCellAddress find(@javax.annotation.Nullable Object value, @javax.annotation.Nullable int startRow, @javax.annotation.Nullable int endRow, @javax.annotation.Nullable int startColumn, @javax.annotation.Nullable int endColumn);
 
     /**
      * Finds cell by predicate.
@@ -107,7 +107,7 @@ public interface ReportPage {
      * @param cellValuePredicate predicate for testing cell value
      * @return cell address or {@link TableCellAddress#NOT_FOUND}
      */
-    TableCellAddress find(@Nullable() int startRow, @Nullable() int endRow, @Nullable() int startColumn, @Nullable() int endColumn, @Nullable() Predicate<Object> cellValuePredicate);
+    TableCellAddress find(@javax.annotation.Nullable int startRow, @javax.annotation.Nullable int endRow, @javax.annotation.Nullable int startColumn, @javax.annotation.Nullable int endColumn, @javax.annotation.Nullable Predicate<Object> cellValuePredicate);
 
     /**
      * Finds cell address staring with value (ignore case, trims leading spaces).
@@ -155,7 +155,7 @@ public interface ReportPage {
     /**
      * For vertical table of key-value records (table with two columns), search and return value for requested key.
      */
-    @Nullable()
+    @javax.annotation.Nullable
     default Object getNextColumnValue(String firstColumnValuePrefix) {
         TableCellAddress address = findByPrefix(firstColumnValuePrefix);
         ReportPageRow row = getRow(address.getRow());
@@ -177,14 +177,14 @@ public interface ReportPage {
      * @return row object or null is row does not exist
      * @apiNote Method impl should return {@link CellDataAccessObject} aware {@link ReportPageRow} impl
      */
-    ReportPageRow getRow(@Nullable() int i);
+    ReportPageRow getRow(@javax.annotation.Nullable int i);
 
     /**
      * @return last row contained on this page (zero-based) or -1 if no row exists
      */
     int getLastRowNum();
 
-    @Nullable()
+    @javax.annotation.Nullable
     default TableCell getCell(TableCellAddress address) {
         ReportPageRow row = getRow(address.getRow());
         return (row == null) ? null : row.getCell(address.getColumn());

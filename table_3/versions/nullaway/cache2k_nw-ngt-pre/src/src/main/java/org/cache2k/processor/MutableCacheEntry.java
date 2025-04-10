@@ -146,7 +146,7 @@ public interface MutableCacheEntry<K, V> extends CacheEntry<K, V> {
      * <p>If a writer is registered, the
      * {@link CacheWriter#write(Object, Object)} is called.
      */
-    MutableCacheEntry<K, V> setValue(@Nullable() V v);
+    MutableCacheEntry<K, V> setValue(@javax.annotation.Nullable V v);
 
     /**
      * Calls the loader unconditionally in this operation. Multiple calls to reload
@@ -188,7 +188,7 @@ public interface MutableCacheEntry<K, V> extends CacheEntry<K, V> {
      *                          the entry processor will be executed again.
      * @see ResiliencePolicy
      */
-    MutableCacheEntry<K, V> setException(@Nullable() Throwable ex);
+    MutableCacheEntry<K, V> setException(@javax.annotation.Nullable Throwable ex);
 
     /**
      * Set a new expiry time for the entry. If combined with {@link #setValue} the entry
@@ -202,7 +202,7 @@ public interface MutableCacheEntry<K, V> extends CacheEntry<K, V> {
      *                          needs to do an operation to supply it. After completion,
      *                          the entry processor will be executed again.
      */
-    MutableCacheEntry<K, V> setExpiryTime(@Nullable() long t);
+    MutableCacheEntry<K, V> setExpiryTime(@javax.annotation.Nullable long t);
 
     /**
      * Returns the effective expiry time of the current cache entry in case {@link #exists()}
@@ -238,5 +238,5 @@ public interface MutableCacheEntry<K, V> extends CacheEntry<K, V> {
      *                          needs to do an operation to supply it. After completion,
      *                          the entry processor will be executed again.
      */
-    MutableCacheEntry<K, V> setModificationTime(@Nullable() long t);
+    MutableCacheEntry<K, V> setModificationTime(@javax.annotation.Nullable long t);
 }

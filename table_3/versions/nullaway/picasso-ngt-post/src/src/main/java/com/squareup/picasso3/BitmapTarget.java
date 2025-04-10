@@ -18,9 +18,9 @@ package com.squareup.picasso3;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
 import static com.squareup.picasso3.Picasso.LoadedFrom;
-import androidx.annotation.Nullable;
+
 
 /**
  * Represents an arbitrary listener for image loading.

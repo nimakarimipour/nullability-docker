@@ -61,5 +61,5 @@ public interface CacheOperation {
      * @see org.cache2k.Weigher
      * @param entryCountOrWeight either maximum number of entries or maximum weight
      */
-    void changeCapacity(@Nullable() long entryCountOrWeight);
+    void changeCapacity(@javax.annotation.Nullable long entryCountOrWeight);
 }

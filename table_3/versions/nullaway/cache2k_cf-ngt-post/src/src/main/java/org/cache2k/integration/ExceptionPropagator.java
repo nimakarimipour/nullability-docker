@@ -34,5 +34,5 @@ public interface ExceptionPropagator<K> {
      *
      * @param exceptionInformation information when the original exception occurred.
      */
-    RuntimeException propagateException(@Nullable() K key, @Nullable() ExceptionInformation exceptionInformation);
+    RuntimeException propagateException(@javax.annotation.Nullable K key, @javax.annotation.Nullable ExceptionInformation exceptionInformation);
 }

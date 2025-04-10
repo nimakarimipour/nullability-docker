@@ -29,5 +29,5 @@ public interface FunctionalCacheLoader<K, V> extends org.cache2k.io.CacheLoader<
     /**
      * @see CacheLoader#load(Object)
      */
-    V load(@Nullable() K key) throws Exception;
+    V load(@javax.annotation.Nullable K key) throws Exception;
 }

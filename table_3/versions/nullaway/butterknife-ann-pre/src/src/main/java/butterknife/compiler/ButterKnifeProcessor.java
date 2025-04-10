@@ -80,7 +80,7 @@ import static javax.lang.model.element.ElementKind.INTERFACE;
 import static javax.lang.model.element.ElementKind.METHOD;
 import static javax.lang.model.element.Modifier.PRIVATE;
 import static javax.lang.model.element.Modifier.STATIC;
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 
 @AutoService(Processor.class)
 public final class ButterKnifeProcessor extends AbstractProcessor {

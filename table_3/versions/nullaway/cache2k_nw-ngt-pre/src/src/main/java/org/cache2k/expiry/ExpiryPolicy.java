@@ -106,5 +106,5 @@ public interface ExpiryPolicy<K, V> extends ExpiryTimeValues {
      *
      * @see ValueWithExpiryTime#getCacheExpiryTime()
      */
-    long calculateExpiryTime(@Nullable() K key, @Nullable() V value, @Nullable() long loadTime, @Nullable() CacheEntry<K, V> currentEntry);
+    long calculateExpiryTime(@javax.annotation.Nullable K key, @javax.annotation.Nullable V value, @javax.annotation.Nullable long loadTime, @javax.annotation.Nullable CacheEntry<K, V> currentEntry);
 }

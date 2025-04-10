@@ -32,5 +32,5 @@ public interface EntryMutator<K, V> extends DataAware<K, V> {
     /**
      * @see EntryProcessor#process(MutableCacheEntry)
      */
-    void mutate(@Nullable() MutableCacheEntry<K, V> entry) throws Exception;
+    void mutate(@javax.annotation.Nullable MutableCacheEntry<K, V> entry) throws Exception;
 }

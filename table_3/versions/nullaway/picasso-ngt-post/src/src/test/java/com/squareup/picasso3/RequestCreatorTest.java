@@ -71,7 +71,7 @@ import static org.mockito.Mockito.verifyZeroInteractions;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
 import static org.robolectric.Shadows.shadowOf;
-import androidx.annotation.Nullable;
+
 
 @RunWith(RobolectricTestRunner.class)
 public class RequestCreatorTest {

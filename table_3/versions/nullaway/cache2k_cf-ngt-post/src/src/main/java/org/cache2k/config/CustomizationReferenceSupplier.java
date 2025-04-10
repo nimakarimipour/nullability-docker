@@ -44,7 +44,7 @@ public final class CustomizationReferenceSupplier<T> implements CustomizationSup
     }
 
     @Override
-    public T supply(@Nullable() CacheBuildContext ignored) {
+    public T supply(@javax.annotation.Nullable CacheBuildContext ignored) {
         return object;
     }
 

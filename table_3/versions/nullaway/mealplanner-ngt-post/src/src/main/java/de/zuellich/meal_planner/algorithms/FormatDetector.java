@@ -12,7 +12,7 @@ public interface FormatDetector {
      *
      * @return True if the format is of the given type.
      */
-    boolean isSupported(@Nullable() String source);
+    boolean isSupported(@javax.annotation.Nullable String source);
 
     /**
      * Return the format supported by this detector.

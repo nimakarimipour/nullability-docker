@@ -18,8 +18,8 @@ package com.squareup.picasso3;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import androidx.annotation.Nullable;
+
+
 
 public class Target<T> {
 

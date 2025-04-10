@@ -32,12 +32,12 @@ class EmptyTableRow implements TableRow {
     private final int rowNum;
 
     @Override
-    public TableCell getCell(@Nullable() TableColumnDescription column) {
+    public TableCell getCell(@javax.annotation.Nullable TableColumnDescription column) {
         return null;
     }
 
     @Override
-    public TableCell getCell(@Nullable() int i) {
+    public TableCell getCell(@javax.annotation.Nullable int i) {
         return null;
     }
 
@@ -52,7 +52,7 @@ class EmptyTableRow implements TableRow {
     }
 
     @Override
-    public boolean rowContains(@Nullable() Object expected) {
+    public boolean rowContains(@javax.annotation.Nullable Object expected) {
         return false;
     }
 
@@ -62,42 +62,42 @@ class EmptyTableRow implements TableRow {
     }
 
     @Override
-    public Object getCellValue(@Nullable() TableColumnDescription column) {
+    public Object getCellValue(@javax.annotation.Nullable TableColumnDescription column) {
         return null;
     }
 
     @Override
-    public int getIntCellValue(@Nullable() TableColumnDescription column) {
+    public int getIntCellValue(@javax.annotation.Nullable TableColumnDescription column) {
         throw new NullPointerException("Cell not found");
     }
 
     @Override
-    public long getLongCellValue(@Nullable() TableColumnDescription column) {
+    public long getLongCellValue(@javax.annotation.Nullable TableColumnDescription column) {
         throw new NullPointerException("Cell not found");
     }
 
     @Override
-    public double getDoubleCellValue(@Nullable() TableColumnDescription column) {
+    public double getDoubleCellValue(@javax.annotation.Nullable TableColumnDescription column) {
         throw new NullPointerException("Cell not found");
     }
 
     @Override
-    public BigDecimal getBigDecimalCellValue(@Nullable() TableColumnDescription column) {
+    public BigDecimal getBigDecimalCellValue(@javax.annotation.Nullable TableColumnDescription column) {
         throw new NullPointerException("Cell not found");
     }
 
     @Override
-    public String getStringCellValue(@Nullable() TableColumnDescription column) {
+    public String getStringCellValue(@javax.annotation.Nullable TableColumnDescription column) {
         throw new NullPointerException("Cell not found");
     }
 
     @Override
-    public Instant getInstantCellValue(@Nullable() TableColumnDescription column) {
+    public Instant getInstantCellValue(@javax.annotation.Nullable TableColumnDescription column) {
         throw new NullPointerException("Cell not found");
     }
 
     @Override
-    public LocalDateTime getLocalDateTimeCellValue(@Nullable() TableColumnDescription column) {
+    public LocalDateTime getLocalDateTimeCellValue(@javax.annotation.Nullable TableColumnDescription column) {
         throw new NullPointerException("Cell not found");
     }
 

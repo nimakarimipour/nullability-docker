@@ -9,6 +9,7 @@ import java.util.Objects;
 public class Group implements Comparable<Group> {
 
 	private final int id;
+
 	
 	private final String name;
 	private final int order;

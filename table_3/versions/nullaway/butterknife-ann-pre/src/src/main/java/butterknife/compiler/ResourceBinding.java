@@ -1,7 +1,7 @@
 package butterknife.compiler;
 
 import com.squareup.javapoet.CodeBlock;
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 
 interface ResourceBinding {
 

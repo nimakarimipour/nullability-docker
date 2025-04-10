@@ -26,7 +26,7 @@ import static com.squareup.picasso3.RequestHandler.calculateInSampleSize;
 import static com.squareup.picasso3.RequestHandler.createBitmapOptions;
 import static com.squareup.picasso3.RequestHandler.requiresInSampleSize;
 import static com.squareup.picasso3.TestUtils.URI_1;
-import androidx.annotation.Nullable;
+
 
 @RunWith(RobolectricTestRunner.class)
 public class RequestHandlerTest {

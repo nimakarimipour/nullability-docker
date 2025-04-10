@@ -18,7 +18,6 @@ package com.squareup.picasso3;
 import android.graphics.Bitmap;
 import android.net.NetworkInfo;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import com.squareup.picasso3.RequestHandler.Result;
 import java.io.IOException;
 import java.io.InterruptedIOException;
@@ -41,7 +40,7 @@ import static com.squareup.picasso3.Utils.VERB_REMOVED;
 import static com.squareup.picasso3.Utils.VERB_TRANSFORMED;
 import static com.squareup.picasso3.Utils.getLogIdsForHunter;
 import static com.squareup.picasso3.Utils.log;
-import androidx.annotation.Nullable;
+
 
 class BitmapHunter implements Runnable {
 
@@ -58,12 +57,12 @@ class BitmapHunter implements Runnable {
     private static final RequestHandler ERRORING_HANDLER = new RequestHandler() {
 
         @Override
-        public boolean canHandleRequest(@Nullable() Request data) {
+        public boolean canHandleRequest(@javax.annotation.Nullable Request data) {
             return true;
         }
 
         @Override
-        public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+        public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
             callback.onError(new IllegalStateException("Unrecognized type of request: " + request));
         }
     };
@@ -84,16 +83,16 @@ class BitmapHunter implements Runnable {
 
     final RequestHandler requestHandler;
 
-    @Nullable
+    @javax.annotation.Nullable
     Action action;
 
-    @Nullable
+    @javax.annotation.Nullable
     List<Action> actions;
 
-    @Nullable
+    @javax.annotation.Nullable
     Result result;
 
-    @Nullable
+    @javax.annotation.Nullable
     Future<?> future;
 
     Exception exception;

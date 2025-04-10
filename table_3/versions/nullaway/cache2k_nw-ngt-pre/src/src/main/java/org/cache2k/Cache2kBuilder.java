@@ -121,16 +121,16 @@ public class Cache2kBuilder<K, V> implements ConfigBuilder<Cache2kBuilder<K, V>,
         return cb;
     }
 
-    @Nullable
+    @javax.annotation.Nullable
     private CacheType<K> keyType;
 
-    @Nullable
+    @javax.annotation.Nullable
     private CacheType<V> valueType;
 
-    @Nullable
+    @javax.annotation.Nullable
     private Cache2kConfig<K, V> config = null;
 
-    @Nullable
+    @javax.annotation.Nullable
     private CacheManager manager = null;
 
     private Cache2kBuilder(Cache2kConfig<K, V> cfg) {
@@ -175,7 +175,7 @@ public class Cache2kBuilder<K, V> implements ConfigBuilder<Cache2kBuilder<K, V>,
     /**
      * Bind to default manager if not set before. Read in default configuration.
      */
-    @Nullable()
+    @javax.annotation.Nullable
     private Cache2kConfig<K, V> cfg() {
         if (config == null) {
             if (manager == null) {
@@ -1005,7 +1005,7 @@ public class Cache2kBuilder<K, V> implements ConfigBuilder<Cache2kBuilder<K, V>,
     /**
      * Get the associated cache manager.
      */
-    @Nullable()
+    @javax.annotation.Nullable
     public final CacheManager getManager() {
         return manager;
     }
@@ -1021,7 +1021,7 @@ public class Cache2kBuilder<K, V> implements ConfigBuilder<Cache2kBuilder<K, V>,
      * @throws IllegalArgumentException if a configuration entry for the named cache is required but
      *         not present
      */
-    @Nullable()
+    @javax.annotation.Nullable
     public final Cache<K, V> build() {
         return CacheManager.PROVIDER.createCache(manager, cfg());
     }

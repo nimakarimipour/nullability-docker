@@ -31,5 +31,5 @@ public interface Feature {
      * Called when {@link org.cache2k.Cache2kBuilder#build} is called
      * before the actual cache creation.
      */
-    void enlist(@Nullable() CacheBuildContext<?, ?> ctx);
+    void enlist(@javax.annotation.Nullable CacheBuildContext<?, ?> ctx);
 }

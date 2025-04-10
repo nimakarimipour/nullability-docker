@@ -53,7 +53,7 @@ class CsvTableHelper {
         for (int i = startColumn; i < endColumn; i++) {
             String cell = row[i];
             if (predicate.test(cell)) {
-                return new TableCellAddress(rowNum, i);
+                return null;
             }
         }
         return NOT_FOUND;

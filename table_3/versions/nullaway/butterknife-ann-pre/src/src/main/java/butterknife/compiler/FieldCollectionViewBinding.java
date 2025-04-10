@@ -6,7 +6,7 @@ import com.squareup.javapoet.TypeName;
 import java.util.List;
 import static butterknife.compiler.BindingSet.UTILS;
 import static butterknife.compiler.BindingSet.requiresCast;
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 
 final class FieldCollectionViewBinding {
 

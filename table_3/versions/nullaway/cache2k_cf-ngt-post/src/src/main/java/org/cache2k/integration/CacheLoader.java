@@ -47,7 +47,7 @@ public abstract class CacheLoader<K, V> implements FunctionalCacheLoader<K, V> {
      * @throws Exception Unhandled exception from the loader. Exceptions are suppressed or
      *                   wrapped and rethrown via a {@link CacheLoaderException}
      */
-    public abstract V load(@Nullable() K key) throws Exception;
+    public abstract V load(@javax.annotation.Nullable K key) throws Exception;
 
     /**
      * Loads multiple values to the cache.
@@ -67,7 +67,7 @@ public abstract class CacheLoader<K, V> implements FunctionalCacheLoader<K, V> {
      *                   If an exception happens the cache may retry the load with the
      *                   single value load method.
      */
-    public Map<K, V> loadAll(@Nullable() Iterable<? extends K> keys, @Nullable() Executor executor) throws Exception {
+    public Map<K, V> loadAll(@javax.annotation.Nullable Iterable<? extends K> keys, @javax.annotation.Nullable Executor executor) throws Exception {
         throw new UnsupportedOperationException();
     }
 }

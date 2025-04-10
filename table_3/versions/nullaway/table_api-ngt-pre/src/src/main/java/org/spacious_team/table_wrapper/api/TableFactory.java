@@ -21,7 +21,7 @@ import java.util.function.Predicate;
 
 public interface TableFactory {
 
-    boolean canHandle(@Nullable() ReportPage reportPage);
+    boolean canHandle(@javax.annotation.Nullable ReportPage reportPage);
 
     /**
      * Creates table which starts with name followed by header and ends with row containing cell with text starting with
@@ -229,5 +229,5 @@ public interface TableFactory {
         providedTableName, reportPage.getTableCellRange(firstRowFinder, headersRowCount).addRowsToTop(1), headerDescription, headersRowCount);
     }
 
-    Table create(@Nullable() ReportPage reportPage, @Nullable() String tableName, @Nullable() TableCellRange tableRange, @Nullable() Class<? extends TableColumnDescription> headerDescription, @Nullable() int headersRowCount);
+    Table create(@javax.annotation.Nullable ReportPage reportPage, @javax.annotation.Nullable String tableName, @javax.annotation.Nullable TableCellRange tableRange, @javax.annotation.Nullable Class<? extends TableColumnDescription> headerDescription, @javax.annotation.Nullable int headersRowCount);
 }

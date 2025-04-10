@@ -22,7 +22,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.support.v4.graphics.BitmapCompat;
 import static android.os.Process.THREAD_PRIORITY_BACKGROUND;
-import androidx.annotation.Nullable;
+
 
 class Stats {
 

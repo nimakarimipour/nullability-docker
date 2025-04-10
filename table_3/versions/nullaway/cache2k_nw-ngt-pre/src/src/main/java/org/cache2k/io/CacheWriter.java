@@ -44,7 +44,7 @@ public interface CacheWriter<K, V> extends Customization<K, V> {
      * @throws Exception if an exception occurs, the cache update will not occur and this
      *         exception will be wrapped in a {@link CacheWriterException}
      */
-    void write(@Nullable() K key, @Nullable() V value) throws Exception;
+    void write(@javax.annotation.Nullable K key, @javax.annotation.Nullable V value) throws Exception;
 
     /**
      * Called when a mapping is removed from the cache. The removal was done by
@@ -55,5 +55,5 @@ public interface CacheWriter<K, V> extends Customization<K, V> {
      * @throws Exception if an exception occurs, the cache update will not occur and this
      *         exception will be wrapped in a {@link CacheWriterException}
      */
-    void delete(@Nullable() K key) throws Exception;
+    void delete(@javax.annotation.Nullable K key) throws Exception;
 }

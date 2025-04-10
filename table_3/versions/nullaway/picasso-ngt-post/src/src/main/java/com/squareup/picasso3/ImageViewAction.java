@@ -18,14 +18,14 @@ package com.squareup.picasso3;
 import android.content.Context;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
+
 import android.widget.ImageView;
 import static com.squareup.picasso3.Utils.checkNotNull;
-import androidx.annotation.Nullable;
+
 
 class ImageViewAction extends Action<ImageView> {
 
-    @Nullable
+    @javax.annotation.Nullable
     Callback callback;
 
     ImageViewAction(Picasso picasso, Target<ImageView> target, Request data, Callback callback) {

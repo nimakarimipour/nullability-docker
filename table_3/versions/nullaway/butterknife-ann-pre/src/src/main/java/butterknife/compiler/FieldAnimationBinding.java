@@ -2,7 +2,7 @@ package butterknife.compiler;
 
 import com.squareup.javapoet.CodeBlock;
 import static butterknife.compiler.BindingSet.ANIMATION_UTILS;
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 
 final class FieldAnimationBinding implements ResourceBinding {
 

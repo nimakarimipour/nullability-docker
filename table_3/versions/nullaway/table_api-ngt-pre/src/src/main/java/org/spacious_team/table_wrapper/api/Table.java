@@ -40,7 +40,7 @@ public interface Table extends Iterable<TableRow> {
         return getData("unknown", rowExtractor);
     }
 
-    <T> List<T> getData(@Nullable() Object report, @Nullable() Function<TableRow, T> rowExtractor);
+    <T> List<T> getData(@javax.annotation.Nullable Object report, @javax.annotation.Nullable Function<TableRow, T> rowExtractor);
 
     /**
      * Extracts objects from table without duplicate objects handling (duplicated row are both will be returned)
@@ -49,12 +49,12 @@ public interface Table extends Iterable<TableRow> {
         return getDataCollection("unknown", rowExtractor);
     }
 
-    <T> List<T> getDataCollection(@Nullable() Object report, @Nullable() Function<TableRow, Collection<T>> rowExtractor);
+    <T> List<T> getDataCollection(@javax.annotation.Nullable Object report, @javax.annotation.Nullable Function<TableRow, Collection<T>> rowExtractor);
 
     /**
      * Extracts objects from table with duplicate objects handling logic
      */
-    <T> List<T> getDataCollection(@Nullable() Object report, @Nullable() Function<TableRow, Collection<T>> rowExtractor, @Nullable() BiPredicate<T, T> equalityChecker, @Nullable() BiFunction<T, T, Collection<T>> mergeDuplicates);
+    <T> List<T> getDataCollection(@javax.annotation.Nullable Object report, @javax.annotation.Nullable Function<TableRow, Collection<T>> rowExtractor, @javax.annotation.Nullable BiPredicate<T, T> equalityChecker, @javax.annotation.Nullable BiFunction<T, T, Collection<T>> mergeDuplicates);
 
     boolean isEmpty();
 
@@ -65,7 +65,7 @@ public interface Table extends Iterable<TableRow> {
      * @return row object or null is row does not exist
      * @apiNote Method impl should return {@link CellDataAccessObject} aware {@link ReportPageRow} impl
      */
-    ReportPageRow getRow(@Nullable() int i);
+    ReportPageRow getRow(@javax.annotation.Nullable int i);
 
     /**
      * @return row containing cell with exact value or null if not found
@@ -95,5 +95,5 @@ public interface Table extends Iterable<TableRow> {
      * @param topRows positive value for inclusion, negative for exclusion
      * @param bottomRows positive value for inclusion, negative for exclusion
      */
-    Table subTable(@Nullable() int topRows, @Nullable() int bottomRows);
+    Table subTable(@javax.annotation.Nullable int topRows, @javax.annotation.Nullable int bottomRows);
 }

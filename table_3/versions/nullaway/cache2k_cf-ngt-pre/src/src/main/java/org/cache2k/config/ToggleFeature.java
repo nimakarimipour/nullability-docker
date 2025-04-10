@@ -68,7 +68,7 @@ public abstract class ToggleFeature implements SingleFeature {
     /**
      * Returns the feature instance, if present.
      */
-    @Nullable()
+    @javax.annotation.Nullable
     public static <T extends ToggleFeature> T extract(Cache2kBuilder<?, ?> builder, Class<T> featureType) {
         Iterator<Feature> it = builder.config().getFeatures().iterator();
         while (it.hasNext()) {
@@ -101,7 +101,7 @@ public abstract class ToggleFeature implements SingleFeature {
         }
     }
 
-    protected abstract void doEnlist(@Nullable() CacheBuildContext<?, ?> ctx);
+    protected abstract void doEnlist(@javax.annotation.Nullable CacheBuildContext<?, ?> ctx);
 
     public final boolean isEnabled() {
         return enabled;

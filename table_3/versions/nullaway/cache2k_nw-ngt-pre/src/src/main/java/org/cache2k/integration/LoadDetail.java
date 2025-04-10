@@ -39,7 +39,7 @@ public abstract class LoadDetail<V> {
         return (V) value;
     }
 
-    @Nullable()
+    @javax.annotation.Nullable
     public LoadDetail<V> getNextInChain() {
         if (value instanceof LoadDetail) {
             return ((LoadDetail<V>) value);

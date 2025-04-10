@@ -34,17 +34,17 @@ public interface Cache2kCoreProvider {
     /**
      * @see CacheManager#setDefaultName(String)
      */
-    void setDefaultManagerName(@Nullable() ClassLoader cl, @Nullable() String s);
+    void setDefaultManagerName(@javax.annotation.Nullable ClassLoader cl, @javax.annotation.Nullable String s);
 
     /**
      * @see CacheManager#getDefaultName()
      */
-    String getDefaultManagerName(@Nullable() ClassLoader cl);
+    String getDefaultManagerName(@javax.annotation.Nullable ClassLoader cl);
 
     /**
      * @see CacheManager#getInstance(ClassLoader, String)
      */
-    CacheManager getManager(@Nullable() ClassLoader cl, @Nullable() String name);
+    CacheManager getManager(@javax.annotation.Nullable ClassLoader cl, @javax.annotation.Nullable String name);
 
     /**
      * Default class loader, this is the class loader used to load the cache implementation.
@@ -59,17 +59,17 @@ public interface Cache2kCoreProvider {
     /**
      * Close all cache manager associated to this class loader.
      */
-    void close(@Nullable() ClassLoader l);
+    void close(@javax.annotation.Nullable ClassLoader l);
 
     /**
      * Close a specific cache manager by its name.
      */
-    void close(@Nullable() ClassLoader l, @Nullable() String managerName);
+    void close(@javax.annotation.Nullable ClassLoader l, @javax.annotation.Nullable String managerName);
 
     /**
      * Create a cache, apply external configuration before creating it.
      */
-    <K, V> Cache<K, V> createCache(@Nullable() CacheManager m, @Nullable() Cache2kConfig<K, V> cfg);
+    <K, V> Cache<K, V> createCache(@javax.annotation.Nullable CacheManager m, @javax.annotation.Nullable Cache2kConfig<K, V> cfg);
 
     /**
      * Return the effective default configuration for this manager. A different default
@@ -78,7 +78,7 @@ public interface Cache2kCoreProvider {
      * @return mutable configuration instance containing the effective configuration defaults,
      *         never {@code null}
      */
-    Cache2kConfig getDefaultConfig(@Nullable() CacheManager m);
+    Cache2kConfig getDefaultConfig(@javax.annotation.Nullable CacheManager m);
 
     /**
      * @since 2

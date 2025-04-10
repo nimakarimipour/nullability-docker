@@ -23,6 +23,7 @@ import java.util.Objects;
 import static lombok.AccessLevel.PACKAGE;
 
 public class CsvTableCell extends AbstractTableCell<CsvTableCell.RowAndIndex> {
+
     private final RowAndIndex rowAndIndex;
 
     public static CsvTableCell of(String[] row, int columnIndex) {
@@ -39,11 +40,13 @@ public class CsvTableCell extends AbstractTableCell<CsvTableCell.RowAndIndex> {
         return rowAndIndex.getColumnIndex();
     }
 
-
     static final class RowAndIndex {
+
         private final String[] row;
+
         private final int columnIndex;
 
+        @javax.annotation.Nullable()
         String getValue() {
             return checkIndex() ? row[columnIndex] : null;
         }
@@ -68,38 +71,37 @@ public class CsvTableCell extends AbstractTableCell<CsvTableCell.RowAndIndex> {
             return Objects.hashCode(getValue());
         }
 
-        
         public RowAndIndex(final String[] row, final int columnIndex) {
             this.row = row;
             this.columnIndex = columnIndex;
         }
 
-        
         public int getColumnIndex() {
             return this.columnIndex;
         }
     }
 
     @java.lang.Override
-    
     public boolean equals(final java.lang.Object o) {
-        if (o == this) return true;
-        if (!(o instanceof CsvTableCell)) return false;
+        if (o == this)
+            return true;
+        if (!(o instanceof CsvTableCell))
+            return false;
         final CsvTableCell other = (CsvTableCell) o;
-        if (!other.canEqual((java.lang.Object) this)) return false;
+        if (!other.canEqual((java.lang.Object) this))
+            return false;
         final java.lang.Object this$rowAndIndex = this.getRowAndIndex();
         final java.lang.Object other$rowAndIndex = other.getRowAndIndex();
-        if (this$rowAndIndex == null ? other$rowAndIndex != null : !this$rowAndIndex.equals(other$rowAndIndex)) return false;
+        if (this$rowAndIndex == null ? other$rowAndIndex != null : !this$rowAndIndex.equals(other$rowAndIndex))
+            return false;
         return true;
     }
 
-    
     protected boolean canEqual(final java.lang.Object other) {
         return other instanceof CsvTableCell;
     }
 
     @java.lang.Override
-    
     public int hashCode() {
         final int PRIME = 59;
         int result = 1;
@@ -108,7 +110,6 @@ public class CsvTableCell extends AbstractTableCell<CsvTableCell.RowAndIndex> {
         return result;
     }
 
-    
     RowAndIndex getRowAndIndex() {
         return this.rowAndIndex;
     }

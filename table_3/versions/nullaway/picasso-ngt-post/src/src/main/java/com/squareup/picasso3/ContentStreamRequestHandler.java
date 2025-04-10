@@ -31,7 +31,7 @@ import static android.support.media.ExifInterface.ORIENTATION_NORMAL;
 import static android.support.media.ExifInterface.TAG_ORIENTATION;
 import static com.squareup.picasso3.Picasso.LoadedFrom.DISK;
 import static com.squareup.picasso3.Utils.checkNotNull;
-import androidx.annotation.Nullable;
+
 
 class ContentStreamRequestHandler extends RequestHandler {
 
@@ -48,7 +48,7 @@ class ContentStreamRequestHandler extends RequestHandler {
     }
 
     @Override
-    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
         boolean signaledCallback = false;
         try {
             Uri requestUri = checkNotNull(request.uri, "request.uri == null");

@@ -1,6 +1,6 @@
 package butterknife.compiler;
 
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 
 /**
  * A field or method view binding.

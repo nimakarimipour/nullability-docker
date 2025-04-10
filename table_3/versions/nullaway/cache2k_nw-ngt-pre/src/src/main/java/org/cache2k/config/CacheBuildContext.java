@@ -47,5 +47,5 @@ public interface CacheBuildContext<K, V> {
      */
     Cache2kConfig<K, V> getConfig();
 
-    <T> T createCustomization(@Nullable() CustomizationSupplier<T> supplier);
+    <T> T createCustomization(@javax.annotation.Nullable CustomizationSupplier<T> supplier);
 }

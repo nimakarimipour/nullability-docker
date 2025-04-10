@@ -15,7 +15,7 @@
  */
 package com.squareup.picasso3;
 
-import androidx.annotation.Nullable;
+
 
 /**
  * Designates the policy to use for network requests.

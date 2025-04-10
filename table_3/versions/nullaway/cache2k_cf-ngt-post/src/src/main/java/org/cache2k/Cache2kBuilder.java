@@ -177,7 +177,7 @@ public class Cache2kBuilder<K, V> implements ConfigBuilder<Cache2kBuilder<K, V>,
     /**
      * Bind to default manager if not set before. Read in default configuration.
      */
-    @Nullable()
+    @javax.annotation.Nullable
     private Cache2kConfig<K, V> cfg() {
         if (config == null) {
             config = CacheManager.PROVIDER.getDefaultConfig(getManager());
@@ -1004,7 +1004,7 @@ public class Cache2kBuilder<K, V> implements ConfigBuilder<Cache2kBuilder<K, V>,
     /**
      * Get the associated cache manager.
      */
-    @Nullable()
+    @javax.annotation.Nullable
     public final CacheManager getManager() {
         if (manager == null) {
             manager = CacheManager.getInstance();

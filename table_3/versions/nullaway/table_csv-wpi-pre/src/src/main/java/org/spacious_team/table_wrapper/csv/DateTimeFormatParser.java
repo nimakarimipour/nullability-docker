@@ -15,7 +15,6 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-
 package org.spacious_team.table_wrapper.csv;
 
 import java.time.format.DateTimeFormatter;
@@ -28,15 +27,12 @@ class DateTimeFormatParser {
     private static final Map<Integer, DateTimeFormatter> dateTimeFormatters = new ConcurrentHashMap<>();
 
     static DateTimeFormatter getFor(String dateTime) {
-        return (dateTime.length() == 10) ?
-            getForDate(dateTime) :
-            getForDateTime(dateTime);
+        return (dateTime.length() == 10) ? getForDate(dateTime) : null;
     }
 
     static DateTimeFormatter getForDate(String date) {
         boolean isYearAtFirst;
         char dateSplitter;
-        
         char ch = date.charAt(date.length() - 5);
         if (!Character.isDigit(ch)) {
             // date format is DD MM YYYY
@@ -91,7 +87,7 @@ class DateTimeFormatParser {
             result = DateTimeFormatter.ofPattern(format.toString());
             dateTimeFormatters.putIfAbsent(key, result);
         }
-        return result;
+        return null;
     }
 
     /**
@@ -116,7 +112,7 @@ class DateTimeFormatParser {
             result = DateTimeFormatter.ofPattern(format.toString());
             dateTimeFormatters.putIfAbsent(key, result);
         }
-        return result;
+        return null;
     }
 
     private static void appendDate(boolean isYearAtFirst, char dateSplitter, StringBuilder format) {

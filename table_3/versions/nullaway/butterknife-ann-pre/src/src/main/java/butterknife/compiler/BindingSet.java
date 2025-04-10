@@ -34,7 +34,7 @@ import static java.util.Collections.singletonList;
 import static javax.lang.model.element.Modifier.FINAL;
 import static javax.lang.model.element.Modifier.PRIVATE;
 import static javax.lang.model.element.Modifier.PUBLIC;
-import android.support.annotation.Nullable;
+import javax.annotation.Nullable;
 
 /**
  * A set of all the bindings requested by a single type.

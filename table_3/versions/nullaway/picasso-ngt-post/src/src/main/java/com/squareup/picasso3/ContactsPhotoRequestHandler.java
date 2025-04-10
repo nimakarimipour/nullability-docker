@@ -31,7 +31,7 @@ import static android.content.ContentResolver.SCHEME_CONTENT;
 import static android.provider.ContactsContract.Contacts.openContactPhotoInputStream;
 import static com.squareup.picasso3.Picasso.LoadedFrom.DISK;
 import static com.squareup.picasso3.Utils.checkNotNull;
-import androidx.annotation.Nullable;
+
 
 class ContactsPhotoRequestHandler extends RequestHandler {
 
@@ -80,7 +80,7 @@ class ContactsPhotoRequestHandler extends RequestHandler {
     }
 
     @Override
-    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
         boolean signaledCallback = false;
         try {
             Uri requestUri = checkNotNull(request.uri, "request.uri == null");

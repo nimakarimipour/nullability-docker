@@ -46,7 +46,7 @@ public class CsvTableCell extends AbstractTableCell<CsvTableCell.RowAndIndex> {
 
         private final int columnIndex;
 
-        @Nullable()
+        @javax.annotation.Nullable()
         String getValue() {
             return checkIndex() ? row[columnIndex] : null;
         }

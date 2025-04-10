@@ -26,7 +26,6 @@ import org.spacious_team.table_wrapper.api.AbstractTable;
 import org.spacious_team.table_wrapper.api.CellDataAccessObject;
 import org.spacious_team.table_wrapper.api.Table;
 import org.spacious_team.table_wrapper.api.TableCellRange;
-import org.spacious_team.table_wrapper.api.TableColumnDescription;
 
 @ToString(callSuper = true)
 public class CsvTable extends AbstractTable<CsvTableRow> {
@@ -37,9 +36,9 @@ public class CsvTable extends AbstractTable<CsvTableRow> {
     protected CsvTable(AbstractReportPage<CsvTableRow> reportPage,
                        String tableName,
                        TableCellRange tableRange,
-                       Class<? extends TableColumnDescription> headerDescription,
+                       Class<?> headerDescription,
                        int headersRowCount) {
-        super(reportPage, tableName, tableRange, headerDescription, headersRowCount);
+        super(reportPage, tableName, tableRange, null, headersRowCount);
     }
 
     public CsvTable(AbstractTable<CsvTableRow> table, int appendDataRowsToTop, int appendDataRowsToBottom) {

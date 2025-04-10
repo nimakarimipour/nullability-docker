@@ -27,7 +27,7 @@ package org.cache2k.config;
  */
 public final class CustomizationSupplierByClassName<T> implements CustomizationSupplier<T>, ValidatingConfigBean {
 
-    @Nullable
+    @javax.annotation.Nullable
     private String className;
 
     /**
@@ -50,7 +50,7 @@ public final class CustomizationSupplierByClassName<T> implements CustomizationS
         this.className = className;
     }
 
-    @Nullable()
+    @javax.annotation.Nullable
     public String getClassName() {
         return className;
     }
@@ -72,7 +72,7 @@ public final class CustomizationSupplierByClassName<T> implements CustomizationS
     }
 
     @Override
-    @Nullable()
+    @javax.annotation.Nullable
     public T supply(CacheBuildContext<?, ?> ctx) {
         try {
             return (T) ctx.getCacheManager().getClassLoader().loadClass(className).getConstructor().newInstance();
@@ -82,7 +82,7 @@ public final class CustomizationSupplierByClassName<T> implements CustomizationS
     }
 
     @Override
-    @Nullable()
+    @javax.annotation.Nullable
     public boolean equals(Object other) {
         if (this == other)
             return true;
@@ -93,7 +93,7 @@ public final class CustomizationSupplierByClassName<T> implements CustomizationS
     }
 
     @Override
-    @Nullable()
+    @javax.annotation.Nullable
     public int hashCode() {
         if (className != null) {
             return className.hashCode();

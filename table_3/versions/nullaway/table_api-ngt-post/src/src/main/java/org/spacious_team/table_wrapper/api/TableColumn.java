@@ -38,5 +38,5 @@ public interface TableColumn {
      * @param headerRows header rows
      * @return column index of table
      */
-    int getColumnIndex(@Nullable() int firstColumnForSearch, @Nullable() ReportPageRow... headerRows);
+    int getColumnIndex(@javax.annotation.Nullable int firstColumnForSearch, @javax.annotation.Nullable ReportPageRow... headerRows);
 }

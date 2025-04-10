@@ -35,5 +35,5 @@ public interface KeyValueSource<K, V> extends DataAware<K, V> {
      *
      * @see Cache#get(Object)
      */
-    V get(@Nullable() K key);
+    V get(@javax.annotation.Nullable K key);
 }

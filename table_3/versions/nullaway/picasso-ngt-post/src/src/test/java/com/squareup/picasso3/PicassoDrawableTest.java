@@ -28,7 +28,7 @@ import static com.google.common.truth.Truth.assertThat;
 import static com.squareup.picasso3.Picasso.LoadedFrom.DISK;
 import static com.squareup.picasso3.Picasso.LoadedFrom.MEMORY;
 import static com.squareup.picasso3.TestUtils.makeBitmap;
-import androidx.annotation.Nullable;
+
 
 @RunWith(RobolectricTestRunner.class)
 public class PicassoDrawableTest {

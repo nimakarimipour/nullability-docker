@@ -43,5 +43,5 @@ public interface CustomizationSupplier<T> {
      *
      * @return created customization, never {@code null}
      */
-    T supply(@Nullable() CacheBuildContext<?, ?> buildContext);
+    T supply(@javax.annotation.Nullable CacheBuildContext<?, ?> buildContext);
 }

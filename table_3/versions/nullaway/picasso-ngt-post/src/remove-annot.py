@@ -47,7 +47,7 @@ def remove_annotations(file_path, remove_suppress_warnings):
     if nullable_matches or nonnull_matches or nonnull_strict_matches or notnull_matches or not_null_strict_matches or monotonic_nonnull_matches or (remove_suppress_warnings and suppress_warnings_matches):
         print(f'Found in {file_path}:')
         if nullable_matches:
-            print(f'  @Nullable: {len(nullable_matches)} occurrences')
+            print(f'  @javax.annotation.Nullable: {len(nullable_matches)} occurrences')
         if nonnull_matches:
             print(f'  @NonNull: {len(nonnull_matches)} occurrences')
         if nonnull_strict_matches:
@@ -93,7 +93,7 @@ if __name__ == "__main__":
     
     # Print total counts
     print("\nTotal occurrences removed:")
-    print(f'  @Nullable: {total_nullable_count}')
+    print(f'  @javax.annotation.Nullable: {total_nullable_count}')
     print(f'  @NonNull: {total_nonnull_count}')
     print(f'  @Nonnull: {total_nonnull_strict_count}')
     print(f'  @Notnull: {total_notnull_count}')

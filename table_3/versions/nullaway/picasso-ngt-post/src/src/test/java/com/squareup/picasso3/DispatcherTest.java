@@ -66,7 +66,7 @@ import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.mockito.Mockito.verifyZeroInteractions;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
-import androidx.annotation.Nullable;
+
 
 @RunWith(RobolectricTestRunner.class)
 public class DispatcherTest {
@@ -582,12 +582,12 @@ public class DispatcherTest {
     private static final RequestHandler RETRYING_REQUEST_HANDLER = new RequestHandler() {
 
         @Override
-        public boolean canHandleRequest(@Nullable() Request data) {
+        public boolean canHandleRequest(@javax.annotation.Nullable Request data) {
             return true;
         }
 
         @Override
-        public void load(@Nullable() Picasso picasso, @Nullable() Request request, @Nullable() Callback callback) {
+        public void load(@javax.annotation.Nullable Picasso picasso, @javax.annotation.Nullable Request request, @javax.annotation.Nullable Callback callback) {
         }
 
         @Override
@@ -596,7 +596,7 @@ public class DispatcherTest {
         }
 
         @Override
-        boolean shouldRetry(@Nullable() boolean airplaneMode, @Nullable() NetworkInfo info) {
+        boolean shouldRetry(@javax.annotation.Nullable boolean airplaneMode, @javax.annotation.Nullable NetworkInfo info) {
             return true;
         }
     };
@@ -604,12 +604,12 @@ public class DispatcherTest {
     private static final RequestHandler EMPTY_REQUEST_HANDLER = new RequestHandler() {
 
         @Override
-        public boolean canHandleRequest(@Nullable() Request data) {
+        public boolean canHandleRequest(@javax.annotation.Nullable Request data) {
             return false;
         }
 
         @Override
-        public void load(@Nullable() Picasso picasso, @Nullable() Request request, @Nullable() Callback callback) {
+        public void load(@javax.annotation.Nullable Picasso picasso, @javax.annotation.Nullable Request request, @javax.annotation.Nullable Callback callback) {
         }
     };
 
@@ -617,11 +617,11 @@ public class DispatcherTest {
         return new Action<Void>(null, null, data) {
 
             @Override
-            void complete(@Nullable() RequestHandler.Result result) {
+            void complete(@javax.annotation.Nullable RequestHandler.Result result) {
             }
 
             @Override
-            void error(@Nullable() Exception e) {
+            void error(@javax.annotation.Nullable Exception e) {
             }
         };
     }

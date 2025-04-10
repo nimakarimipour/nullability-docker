@@ -47,7 +47,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyZeroInteractions;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
-import androidx.annotation.Nullable;
+
 
 @RunWith(RobolectricTestRunner.class)
 public class NetworkRequestHandlerTest {
@@ -92,7 +92,7 @@ public class NetworkRequestHandlerTest {
         networkHandler.load(picasso, action.getRequest(), new RequestHandler.Callback() {
 
             @Override
-            public void onSuccess(@Nullable() Result result) {
+            public void onSuccess(@javax.annotation.Nullable Result result) {
                 try {
                     assertThat(requests.takeFirst().cacheControl().toString()).isEmpty();
                     latch.countDown();
@@ -160,7 +160,7 @@ public class NetworkRequestHandlerTest {
         networkHandler.load(picasso, action.getRequest(), new RequestHandler.Callback() {
 
             @Override
-            public void onSuccess(@Nullable() Result result) {
+            public void onSuccess(@javax.annotation.Nullable Result result) {
                 verify(stats).dispatchDownloadFinished(10);
                 latch.countDown();
             }
@@ -205,12 +205,12 @@ public class NetworkRequestHandlerTest {
         networkHandler.load(picasso, action.getRequest(), new RequestHandler.Callback() {
 
             @Override
-            public void onSuccess(@Nullable() Result result) {
+            public void onSuccess(@javax.annotation.Nullable Result result) {
                 throw new AssertionError();
             }
 
             @Override
-            public void onError(@Nullable() Throwable t) {
+            public void onError(@javax.annotation.Nullable Throwable t) {
                 verifyZeroInteractions(stats);
                 assertTrue(closed.get());
                 latch.countDown();
@@ -227,7 +227,7 @@ public class NetworkRequestHandlerTest {
         networkHandler.load(picasso, action.getRequest(), new RequestHandler.Callback() {
 
             @Override
-            public void onSuccess(@Nullable() Result result) {
+            public void onSuccess(@javax.annotation.Nullable Result result) {
                 verifyZeroInteractions(stats);
                 latch.countDown();
             }

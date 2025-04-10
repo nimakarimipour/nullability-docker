@@ -41,12 +41,12 @@ public interface ResiliencePolicy<K, V> extends ExpiryTimeValues, DataAwareCusto
     ResiliencePolicy<?, ?> DISABLED_POLICY = new ResiliencePolicy<Object, Object>() {
 
         @Override
-        public long suppressExceptionUntil(@Nullable() Object key, @Nullable() LoadExceptionInfo<Object, Object> loadExceptionInfo, @Nullable() CacheEntry<Object, Object> cachedEntry) {
+        public long suppressExceptionUntil(@javax.annotation.Nullable Object key, @javax.annotation.Nullable LoadExceptionInfo<Object, Object> loadExceptionInfo, @javax.annotation.Nullable CacheEntry<Object, Object> cachedEntry) {
             return NOW;
         }
 
         @Override
-        public long retryLoadAfter(@Nullable() Object key, @Nullable() LoadExceptionInfo<Object, Object> loadExceptionInfo) {
+        public long retryLoadAfter(@javax.annotation.Nullable Object key, @javax.annotation.Nullable LoadExceptionInfo<Object, Object> loadExceptionInfo) {
             return NOW;
         }
     };
@@ -85,11 +85,11 @@ public interface ResiliencePolicy<K, V> extends ExpiryTimeValues, DataAwareCusto
      *         If the returned time is after {@link LoadExceptionInfo#getLoadTime()}
      *         the exception will be suppressed for the ongoing operation.
      */
-    long suppressExceptionUntil(@Nullable() K key, @Nullable() LoadExceptionInfo<K, V> loadExceptionInfo, @Nullable() CacheEntry<K, V> cachedEntry);
+    long suppressExceptionUntil(@javax.annotation.Nullable K key, @javax.annotation.Nullable LoadExceptionInfo<K, V> loadExceptionInfo, @javax.annotation.Nullable CacheEntry<K, V> cachedEntry);
 
     /**
      * Called after the loader threw an exception and no previous value is available or
      * {@link #suppressExceptionUntil} returned zero.
      */
-    long retryLoadAfter(@Nullable() K key, @Nullable() LoadExceptionInfo<K, V> loadExceptionInfo);
+    long retryLoadAfter(@javax.annotation.Nullable K key, @javax.annotation.Nullable LoadExceptionInfo<K, V> loadExceptionInfo);
 }

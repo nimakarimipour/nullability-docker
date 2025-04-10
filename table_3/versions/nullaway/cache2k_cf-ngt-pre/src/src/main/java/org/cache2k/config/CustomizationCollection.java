@@ -40,7 +40,7 @@ public interface CustomizationCollection<T> extends Collection<CustomizationSupp
      * @throws IllegalArgumentException if the entry is already existing.
      */
     @Override
-    boolean add(@Nullable() CustomizationSupplier<T> e);
+    boolean add(@javax.annotation.Nullable CustomizationSupplier<T> e);
 
     /**
      * Adds all customizations to the collection.
@@ -49,5 +49,5 @@ public interface CustomizationCollection<T> extends Collection<CustomizationSupp
      * @throws IllegalArgumentException if an entry is already existing.
      */
     @Override
-    boolean addAll(@Nullable() Collection<? extends CustomizationSupplier<T>> c);
+    boolean addAll(@javax.annotation.Nullable Collection<? extends CustomizationSupplier<T>> c);
 }

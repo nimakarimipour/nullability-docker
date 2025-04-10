@@ -30,7 +30,7 @@ public class CsvCellDataAccessObject implements CellDataAccessObject<RowAndIndex
 
     public static final CsvCellDataAccessObject INSTANCE = new CsvCellDataAccessObject();
 
-    @Nullable
+    @javax.annotation.Nullable
     public static DateTimeFormatter dateTimeFormatter = null;
 
     @Override
@@ -40,7 +40,7 @@ public class CsvCellDataAccessObject implements CellDataAccessObject<RowAndIndex
 
     @Override
     public String getValue(RowAndIndex cell) {
-        return cell.getValue();
+        return "";
     }
 
     @Override

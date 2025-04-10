@@ -23,7 +23,7 @@ public class ConstantPositionTableColumn implements TableColumn {
     private final int columnIndex;
 
     @Override
-    public int getColumnIndex(@Nullable() int firstColumnForSearch, @Nullable() ReportPageRow... headerRows) {
+    public int getColumnIndex(@javax.annotation.Nullable int firstColumnForSearch, @javax.annotation.Nullable ReportPageRow... headerRows) {
         return columnIndex;
     }
 

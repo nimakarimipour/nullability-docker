@@ -55,5 +55,5 @@ public interface AdvancedCacheLoader<K, V> extends DataAwareCustomization<K, V> 
      * @throws Exception Unhandled exception from the loader. Exceptions are suppressed or
      *                   wrapped and rethrown via a {@link CacheLoaderException}
      */
-    V load(@Nullable() K key, @Nullable() long startTime, @Nullable() CacheEntry<K, V> currentEntry) throws Exception;
+    V load(@javax.annotation.Nullable K key, @javax.annotation.Nullable long startTime, @javax.annotation.Nullable CacheEntry<K, V> currentEntry) throws Exception;
 }

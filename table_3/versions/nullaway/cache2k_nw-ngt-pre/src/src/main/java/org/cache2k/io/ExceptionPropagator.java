@@ -60,5 +60,5 @@ public interface ExceptionPropagator<K> extends Customization<K, Void> {
      * @param loadExceptionInfo information of original exception and
      *                             when the original exception occurred.
      */
-    RuntimeException propagateException(@Nullable() LoadExceptionInfo<K> loadExceptionInfo);
+    RuntimeException propagateException(@javax.annotation.Nullable LoadExceptionInfo<K> loadExceptionInfo);
 }

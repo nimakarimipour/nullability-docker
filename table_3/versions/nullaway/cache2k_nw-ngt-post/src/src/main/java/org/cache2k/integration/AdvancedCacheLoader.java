@@ -49,5 +49,5 @@ public abstract class AdvancedCacheLoader<K, V> implements org.cache2k.io.Advanc
      *                   wrapped and rethrown via a {@link CacheLoaderException}
      */
     @Override
-    public abstract V load(@Nullable() K key, @Nullable() long startTime, @Nullable() CacheEntry<K, V> currentEntry) throws Exception;
+    public abstract V load(@javax.annotation.Nullable K key, @javax.annotation.Nullable long startTime, @javax.annotation.Nullable CacheEntry<K, V> currentEntry) throws Exception;
 }

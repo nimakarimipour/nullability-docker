@@ -1,1 +1,5 @@
 kind	class	method	param	index	uri	field
+METHOD	butterknife.compiler.ButterKnifeProcessor	init(javax.annotation.processing.ProcessingEnvironment)	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-wpi-pre/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java	typeUtils
+METHOD	butterknife.compiler.ButterKnifeProcessor	init(javax.annotation.processing.ProcessingEnvironment)	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-wpi-pre/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java	filer
+METHOD	butterknife.compiler.BindingSet$Builder	setParent(butterknife.compiler.BindingSet)	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-wpi-pre/src/src/main/java/butterknife/compiler/BindingSet.java	parentBinding
+METHOD	butterknife.compiler.ViewBinding$Builder	setFieldBinding(butterknife.compiler.FieldViewBinding)	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-wpi-pre/src/src/main/java/butterknife/compiler/ViewBinding.java	fieldBinding

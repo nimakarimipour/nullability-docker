@@ -36,5 +36,5 @@ public interface CacheCreatedListener extends CacheLifecycleListener {
      * @return {@code null} or a CompletableFuture, if this method uses async
      *         processing
      */
-    <K, V> CompletableFuture<Void> onCacheCreated(@Nullable() Cache<K, V> cache, @Nullable() CacheBuildContext<K, V> ctx);
+    <K, V> CompletableFuture<Void> onCacheCreated(@javax.annotation.Nullable Cache<K, V> cache, @javax.annotation.Nullable CacheBuildContext<K, V> ctx);
 }

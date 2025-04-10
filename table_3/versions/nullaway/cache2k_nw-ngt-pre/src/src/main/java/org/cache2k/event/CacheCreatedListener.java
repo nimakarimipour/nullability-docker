@@ -28,5 +28,5 @@ import java.util.concurrent.CompletableFuture;
  */
 public interface CacheCreatedListener extends CacheLifecycleListener {
 
-    <K, V> CompletableFuture<Void> onCacheCreated(@Nullable() Cache<K, V> cache, @Nullable() CacheBuildContext<K, V> ctx);
+    <K, V> CompletableFuture<Void> onCacheCreated(@javax.annotation.Nullable Cache<K, V> cache, @javax.annotation.Nullable CacheBuildContext<K, V> ctx);
 }

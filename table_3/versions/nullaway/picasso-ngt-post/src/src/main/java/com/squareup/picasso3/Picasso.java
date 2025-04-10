@@ -28,7 +28,7 @@ import android.os.Message;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
 import android.widget.ImageView;
 import android.widget.RemoteViews;
 import java.io.File;
@@ -54,7 +54,7 @@ import static com.squareup.picasso3.Utils.checkMain;
 import static com.squareup.picasso3.Utils.checkNotNull;
 import static com.squareup.picasso3.Utils.createDefaultCacheDir;
 import static com.squareup.picasso3.Utils.log;
-import androidx.annotation.Nullable;
+
 
 /**
  * Image downloading, transformation, and caching manager.
@@ -73,7 +73,7 @@ public class Picasso implements LifecycleObserver {
          * Invoked when an image has failed to load. This is useful for reporting image failures to a
          * remote analytics service, for example.
          */
-        void onImageLoadFailed(@Nullable() Picasso picasso, @Nullable() Uri uri, @Nullable() Exception exception);
+        void onImageLoadFailed(@javax.annotation.Nullable Picasso picasso, @javax.annotation.Nullable Uri uri, @javax.annotation.Nullable Exception exception);
     }
 
     /**
@@ -90,7 +90,7 @@ public class Picasso implements LifecycleObserver {
          *
          * @return The original request or a new request to replace it. Must not be null.
          */
-        Request transformRequest(@Nullable() Request request);
+        Request transformRequest(@javax.annotation.Nullable Request request);
     }
 
     /**
@@ -130,7 +130,7 @@ public class Picasso implements LifecycleObserver {
         }
     };
 
-    @Nullable
+    @javax.annotation.Nullable
     private final Listener listener;
 
     private final List<RequestTransformer> requestTransformers;
@@ -141,10 +141,10 @@ public class Picasso implements LifecycleObserver {
 
     final Dispatcher dispatcher;
 
-    @Nullable
+    @javax.annotation.Nullable
     private final okhttp3.Cache closeableCache;
 
-    @Nullable
+    @javax.annotation.Nullable
     final PlatformLruCache cache;
 
     final Stats stats;
@@ -649,16 +649,16 @@ public class Picasso implements LifecycleObserver {
 
         private final Context context;
 
-        @Nullable
+        @javax.annotation.Nullable
         private Call.Factory callFactory;
 
-        @Nullable
+        @javax.annotation.Nullable
         private ExecutorService service;
 
-        @Nullable
+        @javax.annotation.Nullable
         private PlatformLruCache cache;
 
-        @Nullable
+        @javax.annotation.Nullable
         private Listener listener;
 
         private final List<RequestTransformer> requestTransformers = new ArrayList<>();

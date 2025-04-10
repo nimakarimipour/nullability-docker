@@ -62,5 +62,5 @@ public interface ExceptionPropagator<K, V> extends DataAwareCustomization<K, V> 
      * @param loadExceptionInfo information of original exception and
      *                             when the original exception occurred.
      */
-    RuntimeException propagateException(@Nullable() LoadExceptionInfo<K, V> loadExceptionInfo);
+    RuntimeException propagateException(@javax.annotation.Nullable LoadExceptionInfo<K, V> loadExceptionInfo);
 }

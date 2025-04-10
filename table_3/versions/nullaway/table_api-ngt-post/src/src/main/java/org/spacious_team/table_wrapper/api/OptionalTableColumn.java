@@ -30,7 +30,7 @@ public class OptionalTableColumn implements TableColumn {
      * Should never be called
      */
     @Override
-    public int getColumnIndex(@Nullable() int firstColumnForSearch, @Nullable() ReportPageRow... headerRows) {
+    public int getColumnIndex(@javax.annotation.Nullable int firstColumnForSearch, @javax.annotation.Nullable ReportPageRow... headerRows) {
         return TableColumn.NOCOLUMN_INDEX;
     }
 }

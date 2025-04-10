@@ -69,12 +69,12 @@ public class CsvReportPage extends AbstractReportPage<CsvTableRow> {
     }
 
     @Override
-    public TableCellAddress find(int startRow, int endRow, int startColumn, int endColumn, @Nullable() Predicate<Object> cellValuePredicate) {
+    public TableCellAddress find(int startRow, int endRow, int startColumn, int endColumn, @javax.annotation.Nullable() Predicate<Object> cellValuePredicate) {
         return CsvTableHelper.find(rows, startRow, endRow, startColumn, endColumn, cellValuePredicate::test);
     }
 
     @Override
-    @Nullable()
+    @javax.annotation.Nullable()
     public CsvTableRow getRow(int i) {
         return (i >= rows.length) ? null : new CsvTableRow(rows[i], i);
     }
