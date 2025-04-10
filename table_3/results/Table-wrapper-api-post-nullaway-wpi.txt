@@ -1,0 +1,470 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:43: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:48: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:53: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:58: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:63: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:68: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:73: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:113: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:207: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableColumn.java:33: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableColumn.java:43: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:126: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:194: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/Table.java:41: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/Table.java:46: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/Table.java:52: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/Table.java:57: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/Table.java:63: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/Table.java:69: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/Table.java:83: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/Table.java:89: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:202: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:212: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:223: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:245: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:256: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:288: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:310: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:315: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:320: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:325: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:330: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:335: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:340: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:345: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:350: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:355: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:360: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:365: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:370: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:375: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:380: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:385: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableRow.java:34: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableRow.java:82: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableRow.java:172: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPageRow.java:29: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPageRow.java:35: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPageRow.java:41: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPageRow.java:47: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPageRow.java:54: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableCell.java:76: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableCell.java:166: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactoryRegistry.java:29: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactoryRegistry.java:39: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:36: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:46: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:58: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:68: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:79: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:90: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:101: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:125: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:150: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:160: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:173: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:185: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:197: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:208: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:220: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:233: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AnyOfTableColumn.java:33: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractReportPageRow.java:38: error: cannot find symbol
+        @org.checkerframework.dataflow.qual.Impure
+                                           ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/RelativePositionTableColumn.java:28: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/TableColumnImpl.java:38: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTableCell.java:68: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:62: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:93: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:109: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:114: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:124: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:134: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:146: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:161: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:186: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:236: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:242: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:248: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:214: error: cannot find symbol
+        @org.checkerframework.dataflow.qual.Impure
+                                           ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/MultiLineTableColumn.java:45: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-post/src/src/main/java/org/spacious_team/table_wrapper/api/MultiLineTableColumn.java:53: error: cannot find symbol
+    @org.checkerframework.dataflow.qual.Impure
+                                       ^
+  symbol:   class Impure
+  location: package org.checkerframework.dataflow.qual
+91 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 536ms
+91

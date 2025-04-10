@@ -1,0 +1,326 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/ManifestPuller.java:53: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.imageTag = imageTag;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryEndpointProperties.java:34: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.serverUrl = serverUrl;
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryEndpointProperties.java:35: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.imageName = imageName;
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/http/BlobHttpContent.java:35: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.blob = blob;
+                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/blob/BlobDescriptor.java:53: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.digest = digest;
+                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/ManifestPusher.java:44: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.imageTag = imageTag;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/ManifestPusher.java:58: warning: [NullAway] method returns @Nullable, but superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.handleResponse(@org.checkerframework.checker.initialization.qual.Initialized,@org.checkerframework.checker.nullness.qual.NonNull com.google.cloud.tools.jib.http.Response) returns @NonNull
+    public @org.checkerframework.checker.initialization.qual.FBCBottom @org.checkerframework.checker.nullness.qual.Nullable Void handleResponse(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull ManifestPusher this, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Response response) {
+                                                                                                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/BuildableManifestTemplate.java:51: warning: [NullAway] assigning @Nullable expression to @NonNull field
+            this.digest = digest;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/AuthenticationMethodRetriever.java:48: warning: [NullAway] method returns @Nullable, but superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.handleResponse(@org.checkerframework.checker.initialization.qual.Initialized,@org.checkerframework.checker.nullness.qual.NonNull com.google.cloud.tools.jib.http.Response) returns @NonNull
+    public @org.checkerframework.checker.initialization.qual.FBCBottom @org.checkerframework.checker.nullness.qual.Nullable RegistryAuthenticator handleResponse(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull AuthenticationMethodRetriever this, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Response response) {
+                                                                                                                                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/AuthenticationMethodRetriever.java:69: warning: [NullAway] method returns @Nullable, but superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.handleHttpResponseException(@org.checkerframework.checker.initialization.qual.Initialized,@org.checkerframework.checker.nullness.qual.NonNull com.google.api.client.http.HttpResponseException) returns @NonNull
+    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable RegistryAuthenticator handleHttpResponseException(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull AuthenticationMethodRetriever this, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull HttpResponseException httpResponseException) throws HttpResponseException, RegistryErrorException {
+                                                                                                                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/http/Authorization.java:35: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.token = token;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:73: warning: [NullAway] method returns @Nullable, but superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.handleResponse(@org.checkerframework.checker.initialization.qual.Initialized,@org.checkerframework.checker.nullness.qual.NonNull com.google.cloud.tools.jib.http.Response) returns @NonNull
+        public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable String handleResponse(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Initializer this, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Response response) throws RegistryErrorException {
+                                                                                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:144: warning: [NullAway] assigning @Nullable expression to @NonNull field
+            this.location = location;
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:166: warning: [NullAway] method returns @Nullable, but superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.handleResponse(@org.checkerframework.checker.initialization.qual.Initialized,@org.checkerframework.checker.nullness.qual.NonNull com.google.cloud.tools.jib.http.Response) returns @NonNull
+        public @org.checkerframework.checker.initialization.qual.FBCBottom @org.checkerframework.checker.nullness.qual.Nullable Void handleResponse(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Committer this, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Response response) {
+                                                                                                                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:190: warning: [NullAway] assigning @Nullable expression to @NonNull field
+            this.location = location;
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:197: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.blobDigest = blobDigest;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:198: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.blob = blob;
+                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPuller.java:51: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.blobDigest = blobDigest;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPuller.java:56: warning: [NullAway] method returns @Nullable, but superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.handleResponse(@org.checkerframework.checker.initialization.qual.Initialized,@org.checkerframework.checker.nullness.qual.NonNull com.google.cloud.tools.jib.http.Response) returns @NonNull
+    public @org.checkerframework.checker.initialization.qual.FBCBottom @org.checkerframework.checker.nullness.qual.Nullable Void handleResponse(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull BlobPuller this, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Response response) throws IOException, UnexpectedBlobDigestException {
+                                                                                                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryClient.java:60: warning: [NullAway] parameter message is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.builder.BuildLogger.warn(@org.checkerframework.checker.initialization.qual.Initialized,@org.checkerframework.checker.nullness.qual.Nullable java.lang.CharSequence) is @Nullable
+        public void warn(CharSequence message) {
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryClient.java:109: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.authorization = authorization;
+                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobChecker.java:49: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.blobDigest = blobDigest;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobChecker.java:65: warning: [NullAway] method returns @Nullable, but superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.handleHttpResponseException(@org.checkerframework.checker.initialization.qual.Initialized,@org.checkerframework.checker.nullness.qual.NonNull com.google.api.client.http.HttpResponseException) returns @NonNull
+    public @org.checkerframework.checker.initialization.qual.FBCBottom @org.checkerframework.checker.nullness.qual.Nullable BlobDescriptor handleHttpResponseException(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull BlobChecker this, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull HttpResponseException httpResponseException) throws RegistryErrorException, HttpResponseException {
+                                                                                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobChecker.java:80: warning: [NullAway] passing @Nullable parameter 'errors.get(0).getCode()' where @NonNull is required
+                    ErrorCodes errorCode = ErrorCodes.valueOf(errors.get(0).getCode());
+                                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryErrorExceptionBuilder.java:43: warning: [NullAway] passing @Nullable parameter 'errorCodeString' where @NonNull is required
+            ErrorCodes errorCode = ErrorCodes.valueOf(errorCodeString);
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryErrorExceptionBuilder.java:62: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.cause = cause;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryUnauthorizedException.java:36: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.registry = registry;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryUnauthorizedException.java:37: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.repository = repository;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerCredentialHelper.java:61: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.serverUrl = serverUrl;
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerCredentialHelper.java:104: warning: [NullAway] dereferenced expression ex.getMessage() is @Nullable
+            if (ex.getMessage().contains("No such file or directory") || ex.getMessage().contains("cannot find the file")) {
+                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerCredentialHelperFactory.java:28: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.registry = registry;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/RegistryCredentials.java:108: warning: [NullAway] assigning @Nullable expression to @NonNull field
+            this.authorization = authorization;
+                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/RegistryCredentials.java:141: warning: [NullAway] dereferenced expression credentials.get(registry) is @Nullable
+        return credentials.get(registry).authorization;
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/RegistryCredentials.java:153: warning: [NullAway] dereferenced expression credentials.get(registry) is @Nullable
+        return credentials.get(registry).credentialSource;
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerConfigCredentialRetriever.java:65: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.registry = registry;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerConfigCredentialRetriever.java:66: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.dockerConfigFile = dockerConfigFile;
+                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerConfigCredentialRetriever.java:73: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.dockerConfigFile = dockerConfigFile;
+                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerConfigCredentialRetriever.java:74: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.dockerCredentialHelperFactory = dockerCredentialHelperFactory;
+                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ImageLayers.java:80: warning: [NullAway] dereferenced expression layer.getBlobDescriptor().getDigest() is @Nullable
+            if (layer.getBlobDescriptor().getDigest().equals(digest)) {
+                                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ImageLayers.java:80: warning: [NullAway] dereferenced expression layer.getBlobDescriptor() is @Nullable
+            if (layer.getBlobDescriptor().getDigest().equals(digest)) {
+                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ImageLayers.java:104: warning: [NullAway] dereferenced expression layer.getBlobDescriptor() is @Nullable
+            layerDigests.add(layer.getBlobDescriptor().getDigest());
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ImageLayers.java:104: warning: [NullAway] dereferenced expression layer is @Nullable
+            layerDigests.add(layer.getBlobDescriptor().getDigest());
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ImageLayers.java:135: warning: [NullAway] dereferenced expression layer.getBlobDescriptor().getDigest() is @Nullable
+        return layer.getBlobDescriptor().getDigest().equals(lastLayer.getBlobDescriptor().getDigest());
+                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ImageLayers.java:135: warning: [NullAway] dereferenced expression layer.getBlobDescriptor() is @Nullable
+        return layer.getBlobDescriptor().getDigest().equals(lastLayer.getBlobDescriptor().getDigest());
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ImageLayers.java:135: warning: [NullAway] dereferenced expression layer is @Nullable
+        return layer.getBlobDescriptor().getDigest().equals(lastLayer.getBlobDescriptor().getDigest());
+                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ImageLayers.java:135: warning: [NullAway] dereferenced expression lastLayer.getBlobDescriptor() is @Nullable
+        return layer.getBlobDescriptor().getDigest().equals(lastLayer.getBlobDescriptor().getDigest());
+                                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/UnwrittenLayer.java:36: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.uncompressedBlob = uncompressedBlob;
+                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ReferenceLayer.java:43: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.blobDescriptor = blobDescriptor;
+                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ReferenceLayer.java:44: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.diffId = diffId;
+                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ImageReference.java:178: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.registry = registry;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ImageReference.java:179: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.repository = repository;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/ImageReference.java:180: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.tag = tag;
+                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/ImageToJsonTranslator.java:87: warning: [NullAway] dereferenced expression layer.getBlobDescriptor() is @Nullable
+                template.addLayer(layer.getBlobDescriptor().getSize(), layer.getBlobDescriptor().getDigest());
+                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/JsonToImageTranslator.java:71: warning: [NullAway] enhanced-for expression containerConfigurationTemplate.getContainerEnvironment() is @Nullable
+        for (String environmentVariable : containerConfigurationTemplate.getContainerEnvironment()) {
+                                                                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/image/LayerBuilder.java:76: warning: [NullAway] dereferenced expression sourceFile.getParent() is @Nullable
+                        Path sourceFileRelativePath = sourceFile.getParent().relativize(path);
+                                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/http/Request.java:96: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.body = builder.body;
+                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/blob/Blobs.java:64: warning: [NullAway] dereferenced expression blob is @Nullable
+        blob.writeTo(byteArrayOutputStream);
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/blob/FileBlob.java:35: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.file = file;
+                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:196: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.baseImageReference = baseImageReference;
+                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:197: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.targetImageReference = targetImageReference;
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:201: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.mainClass = mainClass;
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CachedLayer.java:50: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.contentFile = contentFile;
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CachedLayer.java:51: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.blobDescriptor = blobDescriptor;
+                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CachedLayer.java:52: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.diffId = diffId;
+                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndCacheApplicationLayersStep.java:82: warning: [NullAway] dereferenced expression cachedLayer.getBlobDescriptor() is @Nullable
+                buildConfiguration.getBuildLogger().debug(description + " built " + cachedLayer.getBlobDescriptor().getDigest());
+                                                                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/cache/Cache.java:56: warning: [NullAway] passing @Nullable parameter 'cacheDirectory' where @NonNull is required
+        CacheMetadata cacheMetadata = loadCacheMetadata(cacheDirectory);
+                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/cache/Cache.java:57: warning: [NullAway] passing @Nullable parameter 'cacheDirectory' where @NonNull is required
+        return new Cache(cacheDirectory, cacheMetadata);
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CachedLayerWithMetadata.java:34: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.metadata = metadata;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/builder/PullBaseImageStep.java:72: warning: [NullAway] dereferenced expression v22ManifestTemplate.getContainerConfiguration() is @Nullable
+                    registryClient.pullBlob(v22ManifestTemplate.getContainerConfiguration().getDigest(), containerConfigurationOutputStream);
+                                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/builder/RetrieveRegistryCredentialsStep.java:60: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.registry = registry;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/builder/RetrieveRegistryCredentialsStep.java:61: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.dockerCredentialHelperFactory = dockerCredentialHelperFactory;
+                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/builder/RetrieveRegistryCredentialsStep.java:62: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.dockerConfigCredentialRetriever = dockerConfigCredentialRetriever;
+                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/builder/PullAndCacheBaseImageLayerStep.java:54: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.layerDigest = layerDigest;
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/builder/PushBlobStep.java:56: warning: [NullAway] dereferenced expression layer.getBlobDescriptor() is @Nullable
+        DescriptorDigest layerDigest = layer.getBlobDescriptor().getDigest();
+                                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/builder/PullAndCacheBaseImageLayersStep.java:68: warning: [NullAway] dereferenced expression layer.getBlobDescriptor() is @Nullable
+                pullAndCacheBaseImageLayerFutures.add(Futures.whenAllSucceed(pullAuthorizationFuture).call(new PullAndCacheBaseImageLayerStep(buildConfiguration, cache, layer.getBlobDescriptor().getDigest(), pullAuthorizationFuture), listeningExecutorService));
+                                                                                                                                                                                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CacheMetadataTranslator.java:65: warning: [NullAway] dereferenced expression cachedLayerWithMetadata.getBlobDescriptor() is @Nullable
+            CacheMetadataLayerObjectTemplate layerObjectTemplate = new CacheMetadataLayerObjectTemplate().setSize(cachedLayerWithMetadata.getBlobDescriptor().getSize()).setDigest(cachedLayerWithMetadata.getBlobDescriptor().getDigest()).setDiffId(cachedLayerWithMetadata.getDiffId());
+                                                                                                                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CacheReader.java:95: warning: [NullAway] dereferenced expression cachedLayer.getMetadata() is @Nullable
+            FileTime cachedLayerLastModifiedTime = cachedLayer.getMetadata().getLastModifiedTime();
+                                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CacheReader.java:128: warning: [NullAway] dereferenced expression cachedLayer.getMetadata() is @Nullable
+            if (sourceFilesLastModifiedTime.compareTo(cachedLayer.getMetadata().getLastModifiedTime()) <= 0) {
+                                                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CacheWriter.java:48: warning: [NullAway] assigning @Nullable expression to @NonNull field
+        this.cache = cache;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CacheWriter.java:72: warning: [NullAway] dereferenced expression unwrittenLayer.getBlob() is @Nullable
+            DescriptorDigest diffId = unwrittenLayer.getBlob().writeTo(compressorStream).getDigest();
+                                                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CacheFiles.java:42: warning: [NullAway] dereferenced expression layerDigest is @Nullable
+        return cacheDirectory.resolve(layerDigest.getHash() + LAYER_FILE_EXTENSION);
+                                                 ^
+    (see http://t.uber.com/nullaway )
+81 warnings
+

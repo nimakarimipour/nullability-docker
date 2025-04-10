@@ -1,0 +1,100 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableColumn.java:41: error: cannot find symbol
+    int getColumnIndex(@Nullable() int firstColumnForSearch, @Nullable() ReportPageRow... headerRows);
+                        ^
+  symbol:   class Nullable
+  location: interface TableColumn
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableColumn.java:41: error: cannot find symbol
+    int getColumnIndex(@Nullable() int firstColumnForSearch, @Nullable() ReportPageRow... headerRows);
+                                                              ^
+  symbol:   class Nullable
+  location: interface TableColumn
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:24: error: cannot find symbol
+    boolean canHandle(@Nullable() ReportPage reportPage);
+                       ^
+  symbol:   class Nullable
+  location: interface TableFactory
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:232: error: cannot find symbol
+    Table create(@Nullable() ReportPage reportPage, @Nullable() String tableName, @Nullable() TableCellRange tableRange, @Nullable() Class<? extends TableColumnDescription> headerDescription, @Nullable() int headersRowCount);
+                  ^
+  symbol:   class Nullable
+  location: interface TableFactory
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:232: error: cannot find symbol
+    Table create(@Nullable() ReportPage reportPage, @Nullable() String tableName, @Nullable() TableCellRange tableRange, @Nullable() Class<? extends TableColumnDescription> headerDescription, @Nullable() int headersRowCount);
+                                                     ^
+  symbol:   class Nullable
+  location: interface TableFactory
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:232: error: cannot find symbol
+    Table create(@Nullable() ReportPage reportPage, @Nullable() String tableName, @Nullable() TableCellRange tableRange, @Nullable() Class<? extends TableColumnDescription> headerDescription, @Nullable() int headersRowCount);
+                                                                                   ^
+  symbol:   class Nullable
+  location: interface TableFactory
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:232: error: cannot find symbol
+    Table create(@Nullable() ReportPage reportPage, @Nullable() String tableName, @Nullable() TableCellRange tableRange, @Nullable() Class<? extends TableColumnDescription> headerDescription, @Nullable() int headersRowCount);
+                                                                                                                          ^
+  symbol:   class Nullable
+  location: interface TableFactory
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:232: error: cannot find symbol
+    Table create(@Nullable() ReportPage reportPage, @Nullable() String tableName, @Nullable() TableCellRange tableRange, @Nullable() Class<? extends TableColumnDescription> headerDescription, @Nullable() int headersRowCount);
+                                                                                                                                                                                                 ^
+  symbol:   class Nullable
+  location: interface TableFactory
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/ConstantPositionTableColumn.java:26: error: cannot find symbol
+    public int getColumnIndex(@Nullable() int firstColumnForSearch, @Nullable() ReportPageRow... headerRows) {
+                               ^
+  symbol:   class Nullable
+  location: class ConstantPositionTableColumn
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/ConstantPositionTableColumn.java:26: error: cannot find symbol
+    public int getColumnIndex(@Nullable() int firstColumnForSearch, @Nullable() ReportPageRow... headerRows) {
+                                                                     ^
+  symbol:   class Nullable
+  location: class ConstantPositionTableColumn
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/OptionalTableColumn.java:33: error: cannot find symbol
+    public int getColumnIndex(@Nullable() int firstColumnForSearch, @Nullable() ReportPageRow... headerRows) {
+                               ^
+  symbol:   class Nullable
+  location: class OptionalTableColumn
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/OptionalTableColumn.java:33: error: cannot find symbol
+    public int getColumnIndex(@Nullable() int firstColumnForSearch, @Nullable() ReportPageRow... headerRows) {
+                                                                     ^
+  symbol:   class Nullable
+  location: class OptionalTableColumn
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:85: error: cannot find symbol
+        public boolean contains(@Nullable() TableCellAddress address) {
+                                 ^
+  symbol:   class Nullable
+  location: class EmptyTableCellRange
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:90: error: cannot find symbol
+        public boolean containsRow(@Nullable() int row) {
+                                    ^
+  symbol:   class Nullable
+  location: class EmptyTableCellRange
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:95: error: cannot find symbol
+        public boolean containsColumn(@Nullable() int column) {
+                                       ^
+  symbol:   class Nullable
+  location: class EmptyTableCellRange
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:100: error: cannot find symbol
+        public TableCellRange addRowsToTop(@Nullable() int number) {
+                                            ^
+  symbol:   class Nullable
+  location: class EmptyTableCellRange
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableCellRange.java:105: error: cannot find symbol
+        public TableCellRange addRowsToBottom(@Nullable() int number) {
+                                               ^
+  symbol:   class Nullable
+  location: class EmptyTableCellRange
+17 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 528ms
+17

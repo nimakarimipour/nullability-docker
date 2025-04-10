@@ -1,0 +1,7 @@
+kind	class	method	param	index	uri	field
+METHOD	de.zuellich.meal_planner.datatypes.Recipe	setName(java.lang.String)	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ann-pre/src/src/main/java/de/zuellich/meal_planner/datatypes/Recipe.java	name
+METHOD	de.zuellich.meal_planner.datatypes.Recipe	setIngredients(java.util.List)	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ann-pre/src/src/main/java/de/zuellich/meal_planner/datatypes/Recipe.java	ingredients
+METHOD	de.zuellich.meal_planner.datatypes.Recipe	setSource(java.lang.String)	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ann-pre/src/src/main/java/de/zuellich/meal_planner/datatypes/Recipe.java	source
+METHOD	de.zuellich.meal_planner.algorithms.IngredientUnitLookup	setupLookupTable()	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ann-pre/src/src/main/java/de/zuellich/meal_planner/algorithms/IngredientUnitLookup.java	byShorthand
+METHOD	de.zuellich.meal_planner.algorithms.IngredientUnitLookup	setupLookupTable()	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ann-pre/src/src/main/java/de/zuellich/meal_planner/algorithms/IngredientUnitLookup.java	byPlural
+METHOD	de.zuellich.meal_planner.algorithms.IngredientUnitLookup	setupLookupTable()	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ann-pre/src/src/main/java/de/zuellich/meal_planner/algorithms/IngredientUnitLookup.java	bySingular

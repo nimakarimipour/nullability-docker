@@ -1,0 +1,313 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:24: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RemoteViewsAction.java:23: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/MemoryPolicy.java:18: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Dispatcher.java:58: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:57: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Utils.java:46: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestHandler.java:39: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:44: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/PicassoDrawable.java:32: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:53: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Action.java:19: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Callback.java:19: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Request.java:33: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Transformation.java:19: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/NetworkPolicy.java:18: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapTarget.java:23: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Target.java:21: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/PlatformLruCache.java:24: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Stats.java:25: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/StatsSnapshot.java:25: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/PicassoExecutorService.java:23: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/FetchAction.java:18: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapTargetAction.java:20: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DrawableLoader.java:21: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ContactsPhotoRequestHandler.java:32: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/AssetRequestHandler.java:28: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/SourceBufferingInputStream.java:23: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ImageViewAction.java:22: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/FileRequestHandler.java:28: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ContentStreamRequestHandler.java:32: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ResourceRequestHandler.java:23: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/MatrixTransformation.java:30: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/NetworkRequestHandler.java:29: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ResourceDrawableRequestHandler.java:23: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/GetAction.java:18: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/MediaStoreRequestHandler.java:38: error: cannot find symbol
+import androidx.annotation.Nullable;
+                          ^
+  symbol:   class Nullable
+  location: package androidx.annotation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Callback.java:25: error: cannot find symbol
+    void onError(@Nullable() Throwable t);
+                  ^
+  symbol:   class Nullable
+  location: interface Callback
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Transformation.java:31: error: cannot find symbol
+    RequestHandler.Result transform(@Nullable() RequestHandler.Result source);
+                                     ^
+  symbol:   class Nullable
+  location: interface Transformation
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RemoteViewsAction.java:29: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class RemoteViewsAction
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Action.java:39: error: cannot find symbol
+    abstract void complete(@Nullable() RequestHandler.Result result);
+                            ^
+  symbol:   class Nullable
+  location: class Action<T>
+  where T is a type-variable:
+    T extends Object declared in class Action
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Action.java:41: error: cannot find symbol
+    abstract void error(@Nullable() Exception e);
+                         ^
+  symbol:   class Nullable
+  location: class Action<T>
+  where T is a type-variable:
+    T extends Object declared in class Action
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/PicassoDrawable.java:84: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class PicassoDrawable
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/FetchAction.java:24: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class FetchAction
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/FetchAction.java:34: error: cannot find symbol
+    void complete(@Nullable() RequestHandler.Result result) {
+                   ^
+  symbol:   class Nullable
+  location: class FetchAction
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ContactsPhotoRequestHandler.java:81: error: cannot find symbol
+    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+                      ^
+  symbol:   class Nullable
+  location: class ContactsPhotoRequestHandler
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ContactsPhotoRequestHandler.java:100: error: cannot find symbol
+    @Nullable()
+     ^
+  symbol:   class Nullable
+  location: class ContactsPhotoRequestHandler
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/AssetRequestHandler.java:40: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class AssetRequestHandler
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/AssetRequestHandler.java:54: error: cannot find symbol
+    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+                      ^
+  symbol:   class Nullable
+  location: class AssetRequestHandler
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ImageViewAction.java:26: error: cannot find symbol
+    @Nullable
+     ^
+  symbol:   class Nullable
+  location: class ImageViewAction
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/FileRequestHandler.java:42: error: cannot find symbol
+    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+                      ^
+  symbol:   class Nullable
+  location: class FileRequestHandler
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ContentStreamRequestHandler.java:48: error: cannot find symbol
+    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+                      ^
+  symbol:   class Nullable
+  location: class ContentStreamRequestHandler
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ContentStreamRequestHandler.java:67: error: cannot find symbol
+    @Nullable()
+     ^
+  symbol:   class Nullable
+  location: class ContentStreamRequestHandler
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ResourceRequestHandler.java:42: error: cannot find symbol
+    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+                      ^
+  symbol:   class Nullable
+  location: class ResourceRequestHandler
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ResourceDrawableRequestHandler.java:42: error: cannot find symbol
+    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+                      ^
+  symbol:   class Nullable
+  location: class ResourceDrawableRequestHandler
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/GetAction.java:27: error: cannot find symbol
+    void complete(@Nullable() RequestHandler.Result result) {
+                   ^
+  symbol:   class Nullable
+  location: class GetAction
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/GetAction.java:31: error: cannot find symbol
+    public void error(@Nullable() Exception e) {
+                       ^
+  symbol:   class Nullable
+  location: class GetAction
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Callback.java:34: error: cannot find symbol
+        public void onError(@Nullable() Throwable t) {
+                             ^
+  symbol:   class Nullable
+  location: class EmptyCallback
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/MediaStoreRequestHandler.java:55: error: cannot find symbol
+    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+                      ^
+  symbol:   class Nullable
+  location: class MediaStoreRequestHandler
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+58 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 822ms
+58

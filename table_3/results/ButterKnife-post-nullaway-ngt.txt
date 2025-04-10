@@ -1,0 +1,283 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/FieldTypefaceBinding.java:60: error: [NullAway] parameter sdk is @NonNull, but parameter in superclass method butterknife.compiler.ResourceBinding.requiresResources(int) is @Nullable
+    public boolean requiresResources(int sdk) {
+                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/FieldTypefaceBinding.java:65: error: [NullAway] parameter sdk is @NonNull, but parameter in superclass method butterknife.compiler.ResourceBinding.render(int) is @Nullable
+    public CodeBlock render(int sdk) {
+                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:154: error: [NullAway] initializer method does not guarantee @NonNull field trees (line 142) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public synchronized void init(ProcessingEnvironment env) {
+                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:213: error: [NullAway] passing @Nullable parameter 'sdk' where @NonNull is required
+            JavaFile javaFile = binding.brewJava(sdk, debuggable, useAndroidX);
+                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:217: error: [NullAway] passing @Nullable parameter 'e.getMessage()' where @NonNull is required
+                error(typeElement, "Unable to write binding for type %s: %s", typeElement, e.getMessage());
+                                                                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:397: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s %s must not be private or static. (%s.%s)", annotationClass.getSimpleName(), targetThing, enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:401: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+        if (enclosingElement.getKind() != CLASS) {
+                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:415: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+        String qualifiedName = enclosingElement.getQualifiedName().toString();
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:437: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+        Name qualifiedName = enclosingElement.getQualifiedName();
+                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:488: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+                error(element, "@%s List must have a generic component. (%s.%s)", BindViews.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:495: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s must be a List or array. (%s.%s)", BindViews.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:505: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+                note(element, "@%s List or array with unresolved type (%s) " + "must elsewhere be generated as a View or interface. (%s.%s)", BindViews.class.getSimpleName(), viewType, enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:507: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+                error(element, "@%s List or array type must extend from View or be an interface. (%s.%s)", BindViews.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:515: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s must specify at least one ID. (%s.%s)", BindViews.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:520: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s annotation contains duplicate ID %d. (%s.%s)", BindViews.class.getSimpleName(), duplicateId, enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:528: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:538: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s field type must be 'Animation'. (%s.%s)", BindAnim.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:551: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:561: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s field type must be 'boolean'. (%s.%s)", BindBool.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:574: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:588: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s field type must be 'int' or 'ColorStateList'. (%s.%s)", BindColor.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:601: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:617: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s field type must be 'int' or 'float'. (%s.%s)", BindDimen.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:630: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:640: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s field type must be 'Bitmap'. (%s.%s)", BindBitmap.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:653: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:663: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s field type must be 'Drawable'. (%s.%s)", BindDrawable.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:677: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:678: error: [NullAway] passing @Nullable parameter 'resourceIds.get(id)' where @NonNull is required
+        builder.addResource(new FieldDrawableBinding(resourceIds.get(id), name, resourceIds.get(tint), useAndroidX));
+                                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:678: error: [NullAway] passing @Nullable parameter 'resourceIds.get(tint)' where @NonNull is required
+        builder.addResource(new FieldDrawableBinding(resourceIds.get(id), name, resourceIds.get(tint), useAndroidX));
+                                                                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:687: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s field type must be 'float'. (%s.%s)", BindFloat.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:700: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:710: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s field type must be 'Typeface'. (%s.%s)", BindFont.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:722: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s style must be NORMAL, BOLD, ITALIC, or BOLD_ITALIC. (%s.%s)", BindFont.class.getSimpleName(), enclosingElement.getQualifiedName(), name);
+                                                                                                                                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:728: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:730: error: [NullAway] passing @Nullable parameter 'style' where @NonNull is required
+        builder.addResource(new FieldTypefaceBinding(resourceId, name, style, useAndroidX));
+                                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:739: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s field type must be 'int'. (%s.%s)", BindInt.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:752: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:762: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s field type must be 'String'. (%s.%s)", BindString.class.getSimpleName(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:775: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:786: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s field type must be one of: String[], int[], CharSequence[], %s. (%s.%s)", BindArray.class.getSimpleName(), TYPED_ARRAY_TYPE, enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:799: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:889: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s annotation for method contains duplicate ID %d. (%s.%s)", annotationClass.getSimpleName(), duplicateId, enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:900: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+                        error(element, "ID-free binding must not be annotated with @Optional. (%s.%s)", enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:904: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+                    error(element, "@%s annotation contains invalid ID %d. (%s.%s)", annotationClass.getSimpleName(), id, enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:930: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s methods can have at most %s parameter(s). (%s.%s)", annotationClass.getSimpleName(), method.parameters().length, enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:940: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            error(element, "@%s methods must have a '%s' return type. (%s.%s)", annotationClass.getSimpleName(), method.returnType(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:970: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+                    builder.append("Unable to match @").append(annotationClass.getSimpleName()).append(" method arguments. (").append(enclosingElement.getQualifiedName()).append('.').append(element.getSimpleName()).append(')');
+                                                                                                                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:991: error: [NullAway] passing @Nullable parameter 'enclosingElement' where @NonNull is required
+        BindingSet.Builder builder = getOrCreateBindingBuilder(builderMap, enclosingElement);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:995: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+                error(element, "Multiple listener methods with return value specified for ID %d. (%s.%s)", entry.getKey(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                                                                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:1068: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+                return null;
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/Id.java:24: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        this(value, null);
+                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/BindingSet.java:692: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+                return null;
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/BindingSet.java:696: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+                return null;
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/BindingSet.java:715: error: [NullAway] passing @Nullable parameter 'parentBinding' where @NonNull is required
+            return new BindingSet(targetTypeName, bindingClassName, isFinal, isView, isActivity, isDialog, viewBindings.build(), collectionBindings.build(), resourceBindings.build(), parentBinding);
+                                                                                                                                                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/FieldResourceBinding.java:18: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        COLOR(new ResourceMethod(BindingSet.CONTEXT_COMPAT, "getColor", false, 1), new ResourceMethod(null, "getColor", false, 23)),
+                                                                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/FieldResourceBinding.java:19: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        COLOR_ANDROIDX(new ResourceMethod(BindingSet.CONTEXT_COMPAT_ANDROIDX, "getColor", false, 1), new ResourceMethod(null, "getColor", false, 23)),
+                                                                                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/FieldResourceBinding.java:20: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        COLOR_STATE_LIST(new ResourceMethod(BindingSet.CONTEXT_COMPAT, "getColorStateList", false, 1), new ResourceMethod(null, "getColorStateList", false, 23)),
+                                                                                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/FieldResourceBinding.java:21: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        COLOR_STATE_LIST_ANDROIDX(new ResourceMethod(BindingSet.CONTEXT_COMPAT_ANDROIDX, "getColorStateList", false, 1), new ResourceMethod(null, "getColorStateList", false, 23)),
+                                                                                                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/FieldResourceBinding.java:43: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+            methods = ImmutableList.of(new ResourceMethod(null, methodName, true, 1));
+                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/FieldResourceBinding.java:98: error: [NullAway] parameter sdk is @NonNull, but parameter in superclass method butterknife.compiler.ResourceBinding.requiresResources(int) is @Nullable
+    public boolean requiresResources(int sdk) {
+                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/FieldResourceBinding.java:103: error: [NullAway] parameter sdk is @NonNull, but parameter in superclass method butterknife.compiler.ResourceBinding.render(int) is @Nullable
+    public CodeBlock render(int sdk) {
+                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ViewBinding.java:34: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return fieldBinding;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/ViewBinding.java:118: error: [NullAway] passing @Nullable parameter 'fieldBinding' where @NonNull is required
+            return new ViewBinding(id, methodBindings, fieldBinding);
+                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/FieldDrawableBinding.java:38: error: [NullAway] parameter sdk is @NonNull, but parameter in superclass method butterknife.compiler.ResourceBinding.render(int) is @Nullable
+    public CodeBlock render(int sdk) {
+                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/FieldAnimationBinding.java:24: error: [NullAway] parameter sdk is @NonNull, but parameter in superclass method butterknife.compiler.ResourceBinding.requiresResources(int) is @Nullable
+    public boolean requiresResources(int sdk) {
+                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-post/src/src/main/java/butterknife/compiler/FieldAnimationBinding.java:29: error: [NullAway] parameter sdk is @NonNull, but parameter in superclass method butterknife.compiler.ResourceBinding.render(int) is @Nullable
+    public CodeBlock render(int sdk) {
+                                ^
+    (see http://t.uber.com/nullaway )
+67 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 731ms
+67

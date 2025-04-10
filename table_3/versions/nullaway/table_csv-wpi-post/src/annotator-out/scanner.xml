@@ -1,0 +1,9 @@
+<scanner>
+    <serialization active="true" />
+    <uuid>65ec5d32-ff0c-4c60-a205-eaa3256b9dbc</uuid>
+    <path>/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_csv-wpi-post/src/annotator-out/0</path>
+    <processor>
+        <LOMBOK active="true" />
+    </processor>
+    <annotations />
+</scanner>
