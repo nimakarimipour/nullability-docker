@@ -1,0 +1,219 @@
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:77: error: [NullAway] assigning @Nullable expression to @NonNull field
+    callback = null;
+             ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RemoteViewsAction.java:31: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    super(picasso, null, data);
+                   ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RemoteViewsAction.java:48: error: [NullAway] assigning @Nullable expression to @NonNull field
+      callback = null;
+               ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:330: error: [NullAway] passing @Nullable parameter 'networkInfo' where @NonNull is required
+    if (hunter.shouldRetry(airplaneMode, networkInfo)) {
+                                         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Picasso.java:360: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+      return new RequestCreator(this, null, 0);
+                                      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Picasso.java:384: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+      return new RequestCreator(this, null, 0);
+                                      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Picasso.java:401: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    return new RequestCreator(this, null, resourceId);
+                                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Picasso.java:597: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+      deliverAction(new RequestHandler.Result(bitmap, MEMORY), action, null);
+                                                                       ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Picasso.java:627: error: [NullAway] passing @Nullable parameter 'exception.getMessage()' where @NonNull is required
+        log(OWNER_MAIN, VERB_ERRORED, action.request.logId(), exception.getMessage());
+                                                                                  ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Picasso.java:665: error: [NullAway] initializer method does not guarantee @NonNull fields callFactory (line 653), service (line 654), cache (line 655), listener (line 656), defaultBitmapConfig (line 659) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public Builder( Context context) {
+           ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Picasso.java:810: error: [NullAway] passing @Nullable parameter 'unsharedCache' where @NonNull is required
+      return new Picasso(context, dispatcher, callFactory, unsharedCache, cache, listener,
+                                                           ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:73: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+      this(checkNotNull(bitmap, "bitmap == null"), null, loadedFrom, 0);
+                                                   ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:78: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+      this(checkNotNull(bitmap, "bitmap == null"), null, loadedFrom, exifRotation);
+                                                   ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:82: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+      this(null, checkNotNull(drawable, "drawable == null"), loadedFrom, 0);
+           ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:175: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return options;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:83: error: [NullAway] initializer method does not guarantee @NonNull fields actions (line 76), result (line 77), future (line 78), exception (line 79) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+  BitmapHunter(Picasso picasso, Dispatcher dispatcher, PlatformLruCache cache,
+  ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:254: error: [NullAway] assigning @Nullable expression to @NonNull field
+      this.action = null;
+                  ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:400: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:418: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:432: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:446: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/PicassoDrawable.java:90: error: [NullAway] initializer method does not guarantee @NonNull field placeholder (line 84) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+  PicassoDrawable(Context context, Bitmap bitmap,  Drawable placeholder,
+  ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/PicassoDrawable.java:114: error: [NullAway] assigning @Nullable expression to @NonNull field
+        placeholder = null;
+                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:71: error: [NullAway] initializer method does not guarantee @NonNull fields placeholderDrawable (line 68), errorDrawable (line 69) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+  RequestCreator(Picasso picasso,  Uri uri, int resourceId) {
+  ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:81: error: [NullAway] initializer method does not guarantee @NonNull fields placeholderDrawable (line 68), errorDrawable (line 69) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+  @VisibleForTesting RequestCreator() {
+                     ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:82: error: [NullAway] assigning @Nullable expression to @NonNull field
+    this.picasso = null;
+                 ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:83: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    this.data = new Request.Builder(null, 0, null);
+                                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:83: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    this.data = new Request.Builder(null, 0, null);
+                                             ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:408: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:430: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    fetch(null);
+          ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:531: error: [NullAway] passing @Nullable parameter 'setPlaceholder ? getPlaceholderDrawable() : null' where @NonNull is required
+      target.onPrepareLoad(setPlaceholder ? getPlaceholderDrawable() : null);
+                                          ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:546: error: [NullAway] passing @Nullable parameter 'setPlaceholder ? getPlaceholderDrawable() : null' where @NonNull is required
+    target.onPrepareLoad(setPlaceholder ? getPlaceholderDrawable() : null);
+                                        ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:559: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    into(remoteViews, viewId, notificationId, notification, null);
+                                                            ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:568: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    into(remoteViews, viewId, notificationId, notification, notificationTag, null);
+                                                                             ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:609: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    into(remoteViews, viewId, new int[] { appWidgetId }, null);
+                                                         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:618: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    into(remoteViews, viewId, appWidgetIds, null);
+                                            ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:667: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    into(target, null);
+                 ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Request.java:293: error: [NullAway] initializer method does not guarantee @NonNull fields stableKey (line 273), transformations (line 285), config (line 286), priority (line 287), tag (line 288) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public Builder( Uri uri) {
+           ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Request.java:298: error: [NullAway] initializer method does not guarantee @NonNull fields stableKey (line 273), transformations (line 285), config (line 286), priority (line 287), tag (line 288), uri (line 271) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public Builder(@DrawableRes int resourceId) {
+           ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Request.java:302: error: [NullAway] initializer method does not guarantee @NonNull fields stableKey (line 273), transformations (line 285), priority (line 287), tag (line 288) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    Builder( Uri uri, int resourceId,  Bitmap.Config bitmapConfig) {
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Request.java:308: error: [NullAway] initializer method does not guarantee @NonNull fields transformations (line 285), tag (line 288) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    Builder(Request request) {
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Request.java:370: error: [NullAway] assigning @Nullable expression to @NonNull field
+      this.uri = null;
+               ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Request.java:401: error: [NullAway] assigning @Nullable expression to @NonNull field
+      this.tag = null;
+               ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Target.java:32: error: [NullAway] assigning @Nullable expression to @NonNull field
+    this.errorDrawable = null;
+                       ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Target.java:39: error: [NullAway] assigning @Nullable expression to @NonNull field
+    this.errorDrawable = null;
+                       ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/PlatformLruCache.java:41: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return bitmapAndSize != null ? bitmapAndSize.bitmap : null;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/FetchAction.java:26: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    super(picasso, null, data);
+                   ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/FetchAction.java:45: error: [NullAway] assigning @Nullable expression to @NonNull field
+    callback = null;
+             ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/ImageViewAction.java:76: error: [NullAway] assigning @Nullable expression to @NonNull field
+      callback = null;
+               ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/GetAction.java:20: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    super(picasso, null, data);
+                   ^
+    (see http://t.uber.com/nullaway )
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /opt/table_1/versions/nullaway/picasso-post/src/src/main/java/com/squareup/picasso3/Picasso.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+50 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+50

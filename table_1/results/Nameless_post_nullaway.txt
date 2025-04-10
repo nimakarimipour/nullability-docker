@@ -1,0 +1,99 @@
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessAPI.java:151: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+		return new NamelessUser(this, id, null, false, null, false, -1L);
+		                                  ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessAPI.java:151: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+		return new NamelessUser(this, id, null, false, null, false, -1L);
+		                                               ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessAPI.java:160: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+		return new NamelessUser(this, -1, username, false, null, false, -1L);
+		                                                   ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessAPI.java:169: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+		return new NamelessUser(this, -1, null, true, uuid, false, -1L);
+		                                  ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessAPI.java:198: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+		return new NamelessUser(this, -1, null, false, null, true, discordId);
+		                                  ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessAPI.java:198: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+		return new NamelessUser(this, -1, null, false, null, true, discordId);
+		                                               ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/RequestHandler.java:81: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+		return makeConnection(urlBuilder.toString(), null);
+		                                             ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/RequestHandler.java:185: error: [NullAway] passing @Nullable parameter 'meta' where @NonNull is required
+			throw new ApiError(json.get("code").getAsInt(), meta);
+			                                                ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessUser.java:47: error: [NullAway] initializer method does not guarantee @NonNull fields _cachedUserInfo (line 33), _cachedIntegrationData (line 34) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+	NamelessUser(final  NamelessAPI api,
+	^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessUser.java:122: error: [NullAway] assigning @Nullable expression to @NonNull field
+		this._cachedUserInfo = null;
+		                     ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessUser.java:123: error: [NullAway] assigning @Nullable expression to @NonNull field
+		this._cachedIntegrationData = null;
+		                            ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessUser.java:128: error: [NullAway] assigning @Nullable expression to @NonNull field
+			this.uuid = null;
+			          ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessUser.java:130: error: [NullAway] assigning @Nullable expression to @NonNull field
+			this.username = null;
+			              ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessUser.java:470: error: [NullAway] assigning @Nullable expression to @NonNull field
+			this.uuid = null;
+			          ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/Website.java:38: error: [NullAway] assigning @Nullable expression to @NonNull field
+				this.update = null;
+				            ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/Website.java:41: error: [NullAway] assigning @Nullable expression to @NonNull field
+			this.update = null;
+			            ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/FilteredUserListBuilder.java:17: error: [NullAway] initializer method does not guarantee @NonNull field filters (line 14) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+	FilteredUserListBuilder( NamelessAPI api) {
+	^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/FilteredUserListBuilder.java:76: error: [NullAway] passing @Nullable parameter 'uuid' where @NonNull is required
+			users.add(new NamelessUser(this.api, id, username, true, uuid, false, -1L));
+			                                                         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessApiBuilder.java:28: error: [NullAway] assigning @Nullable expression to @NonNull field
+	private  ApiLogger debugLogger = null;
+	                   ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/NamelessApiBuilder.java:62: error: [NullAway] assigning @Nullable expression to @NonNull field
+			this.debugLogger = null;
+			                 ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/nameless-post/src/src/main/java/com/namelessmc/java_api/LanguageCodeMap.java:38: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+		return NAMELESS_TO_POSIX.get(language);
+		^
+    (see http://t.uber.com/nullaway )
+21 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 749ms
+21

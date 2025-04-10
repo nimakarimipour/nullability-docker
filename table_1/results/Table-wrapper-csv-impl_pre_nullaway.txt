@@ -1,0 +1,31 @@
+/opt/table_1/versions/nullaway/table-csv-pre/src/src/main/java/org/spacious_team/table_wrapper/csv/CsvReportPage.java:81: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return (i >= rows.length) ? null : new CsvTableRow(rows[i], i);
+        ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/table-csv-pre/src/src/main/java/org/spacious_team/table_wrapper/csv/CsvTableRow.java:50: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/table-csv-pre/src/src/main/java/org/spacious_team/table_wrapper/csv/CsvTableCell.java:65: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return checkIndex() ? row[columnIndex] : null;
+            ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/table-csv-pre/src/src/main/java/org/spacious_team/table_wrapper/csv/CsvCellDataAccessObject.java:33: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    public static final CsvCellDataAccessObject INSTANCE = new CsvCellDataAccessObject(null);
+                                                                                       ^
+    (see http://t.uber.com/nullaway )
+4 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+4

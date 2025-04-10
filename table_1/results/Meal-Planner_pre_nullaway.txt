@@ -1,0 +1,99 @@
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/controller/PinterestExplorer.java:81: error: [NullAway] dereferenced expression e.getCause() is @Nullable
+          System.out.println("!! Error downloading pin: " + e.getCause().getMessage());
+                                                                        ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Board.java:8: error: [NullAway] @NonNull field id not initialized
+  private String id;
+                 ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Board.java:10: error: [NullAway] @NonNull field name not initialized
+  private String name;
+                 ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Board.java:12: error: [NullAway] @NonNull field url not initialized
+  private String url;
+                 ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/BoardListing.java:11: error: [NullAway] @NonNull field board not initialized
+  private Board board;
+                ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/BoardListing.java:13: error: [NullAway] @NonNull field pins not initialized
+  private List<Pin> pins;
+                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Pin.java:24: error: [NullAway] initializer method does not guarantee @NonNull fields id (line 14), originalLink (line 17), note (line 20), name (line 22) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+  public Pin() {}
+         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Pin.java:27: error: [NullAway] initializer method does not guarantee @NonNull fields id (line 14), originalLink (line 17), note (line 20) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+  public Pin(@JsonProperty("metadata") Map<String, Object> metadata) {
+         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/algorithms/IngredientUnitLookup.java:12: error: [NullAway] @NonNull static field instance not initialized
+  private static IngredientUnitLookup instance;
+                                      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/algorithms/AmountParser.java:132: error: [NullAway] unboxing of a @Nullable value
+    return Float.parseFloat(withoutUnicodeFraction) + fractionLookup.get(usedFraction);
+                                                                        ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/BoardRequest.java:12: error: [NullAway] @NonNull field board not initialized
+  private Board board;
+                ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/PinList.java:12: error: [NullAway] @NonNull field pins not initialized
+  private List<Pin> pins;
+                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/PinList.java:15: error: [NullAway] @NonNull field page not initialized
+  private PagingInformation page;
+                            ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/PagingInformation.java:9: error: [NullAway] @NonNull field cursor not initialized
+  private String cursor;
+                 ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/PagingInformation.java:11: error: [NullAway] @NonNull field next not initialized
+  private String next;
+                 ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/BoardList.java:10: error: [NullAway] @NonNull field boards not initialized
+  private List<Board> boards;
+                      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/oauth2/ResourceConfiguration.java:20: error: [NullAway] @NonNull field clientId not initialized
+  private String clientId;
+                 ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/oauth2/ResourceConfiguration.java:23: error: [NullAway] @NonNull field clientSecret not initialized
+  private String clientSecret;
+                 ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/oauth2/ResourceConfiguration.java:26: error: [NullAway] @NonNull field accessTokenUri not initialized
+  private String accessTokenUri;
+                 ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/oauth2/ResourceConfiguration.java:29: error: [NullAway] @NonNull field authorizationUri not initialized
+  private String authorizationUri;
+                 ^
+    (see http://t.uber.com/nullaway )
+Note: /opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/config/WebConfig.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /opt/table_1/versions/nullaway/mealplanner-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Pin.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+20 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 4s
+20

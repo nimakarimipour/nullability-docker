@@ -1,0 +1,226 @@
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/ManifestPuller.java:58: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return null;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/image/json/BuildableManifestTemplate.java:54: warning: [NullAway] initializer method does not guarantee @NonNull fields mediaType (line 43), digest (line 44) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    private ContentDescriptorTemplate() {}
+            ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/AuthenticationMethodRetriever.java:38: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return null;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/AuthenticationMethodRetriever.java:50: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return null;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryAuthenticator.java:103: warning: [NullAway] initializer method does not guarantee @NonNull field authorization (line 101) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+  RegistryAuthenticator(String realm, String service, String repository)
+  ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryAuthenticator.java:59: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryAuthenticator.java:97: warning: [NullAway] @NonNull field RegistryAuthenticator$AuthenticationResponseTemplate.token not initialized
+     private String token;
+                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:57: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:75: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+          return null;
+          ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:157: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPuller.java:75: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return null;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryClient.java:74: warning: [NullAway] @NonNull static field userAgentSuffix not initialized
+   private static String userAgentSuffix;
+                         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryClient.java:224: warning: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    return callRegistryEndpoint(null, registryEndpointProvider);
+                                ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/Timer.java:87: warning: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    lap(null);
+        ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/json/ErrorEntryTemplate.java:35: warning: [NullAway] initializer method does not guarantee @NonNull fields code (line 27), message (line 28) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+  private ErrorEntryTemplate() {}
+          ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/BlobChecker.java:76: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/BlobChecker.java:91: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/BlobChecker.java:115: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return null;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryErrorExceptionBuilder.java:79: warning: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    this(method, null);
+                 ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryUnauthorizedException.java:48: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return (HttpResponseException) getCause();
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryAuthenticators.java:41: warning: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+      RegistryClient registryClient = new RegistryClient(null, serverUrl, repository);
+                                                         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerCredentialHelper.java:47: warning: [NullAway] @NonNull field DockerCredentialHelper$DockerCredentialsTemplate.Username not initialized
+     private String Username;
+                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerCredentialHelper.java:48: warning: [NullAway] @NonNull field DockerCredentialHelper$DockerCredentialsTemplate.Secret not initialized
+     private String Secret;
+                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/RegistryCredentials.java:129: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/RegistryCredentials.java:141: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/json/DockerConfigTemplate.java:71: warning: [NullAway] @NonNull field credsStore not initialized
+   private String credsStore;
+                  ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/json/DockerConfigTemplate.java:65: warning: [NullAway] @NonNull field DockerConfigTemplate$AuthTemplate.auth not initialized
+     private String auth;
+                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/json/DockerConfigTemplate.java:83: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/json/DockerConfigTemplate.java:100: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return null;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerConfigCredentialRetriever.java:83: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerConfigCredentialRetriever.java:105: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return null;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerConfigCredentialRetriever.java:113: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerConfigCredentialRetriever.java:120: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/image/Image.java:35: warning: [NullAway] @NonNull field entrypoint not initialized
+   private List<String> entrypoint;
+                        ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/image/ImageLayers.java:60: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/image/json/OCIManifestTemplate.java:73: warning: [NullAway] @NonNull field config not initialized
+   private ContentDescriptorTemplate config;
+                                     ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/image/json/V22ManifestTemplate.java:75: warning: [NullAway] @NonNull field config not initialized
+   private ContentDescriptorTemplate config;
+                                     ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/image/json/V21ManifestTemplate.java:75: warning: [NullAway] @NonNull field V21ManifestTemplate$LayerObjectTemplate.blobSum not initialized
+     private DescriptorDigest blobSum;
+                              ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/image/json/V21ManifestTemplate.java:87: warning: [NullAway] @NonNull field V21ManifestTemplate$V1CompatibilityTemplate.v1Compatibility not initialized
+     private String v1Compatibility;
+                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/image/json/ContainerConfigurationTemplate.java:73: warning: [NullAway] @NonNull field ContainerConfigurationTemplate$ConfigurationObjectTemplate.Env not initialized
+     private List<String> Env;
+                          ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/image/json/ContainerConfigurationTemplate.java:76: warning: [NullAway] @NonNull field ContainerConfigurationTemplate$ConfigurationObjectTemplate.Entrypoint not initialized
+     private List<String> Entrypoint;
+                          ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/image/LayerBuilder.java:71: warning: [NullAway] dereferenced expression sourceFile.getParent() is @Nullable
+                    Path sourceFileRelativePath = sourceFile.getParent().relativize(path);
+                                                                        ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/http/Connection.java:63: warning: [NullAway] initializer method does not guarantee @NonNull field httpResponse (line 55) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+  public Connection(URL url) {
+         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/http/Request.java:35: warning: [NullAway] @NonNull field Request$Builder.body not initialized
+     private BlobHttpContent body;
+                             ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:48: warning: [NullAway] initializer method does not guarantee @NonNull fields baseImageReference (line 36), targetImageReference (line 37), mainClass (line 41) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    private Builder(BuildLogger buildLogger) {
+            ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/cache/CacheMetadata.java:42: warning: [NullAway] initializer method does not guarantee @NonNull field sourceFiles (line 40) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+    private LayerFilter(ImageLayers<CachedLayerWithMetadata> layers) {
+            ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/builder/RetrieveRegistryCredentialsStep.java:130: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/builder/RetrieveRegistryCredentialsStep.java:159: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/cache/CacheMetadataTranslator.java:65: warning: [NullAway] passing @Nullable parameter 'layerMetadata' where @NonNull is required
+            new CachedLayerWithMetadata(cachedLayer, layerMetadata);
+                                                     ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/cache/json/CacheMetadataLayerObjectTemplate.java:36: warning: [NullAway] @NonNull field properties not initialized
+   private CacheMetadataLayerPropertiesObjectTemplate properties;
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/cache/json/CacheMetadataLayerObjectTemplate.java:46: warning: [NullAway] @NonNull field CacheMetadataLayerObjectTemplate$ReferenceObject.digest not initialized
+     private DescriptorDigest digest;
+                              ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/cache/json/CacheMetadataLayerObjectTemplate.java:47: warning: [NullAway] @NonNull field CacheMetadataLayerObjectTemplate$ReferenceObject.diffId not initialized
+     private DescriptorDigest diffId;
+                              ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/cache/CacheReader.java:115: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return newestLayerFile;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/cache/CacheReader.java:132: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/cache/CacheReader.java:157: warning: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return null;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/jib-post/src/src/main/java/com/google/cloud/tools/jib/cache/CacheWriter.java:118: warning: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    cache.addLayerToMetadata(cachedLayer, null);
+                                          ^
+    (see http://t.uber.com/nullaway )
+56 warnings
+0

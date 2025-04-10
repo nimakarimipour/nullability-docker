@@ -1,0 +1,183 @@
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/CacheEntry.java:78: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return info != null ? info.getException() : null;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:83: error: [NullAway] @NonNull field name not initialized
+   private  String name;
+                   ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:85: error: [NullAway] @NonNull field keyType not initialized
+   private  CacheType<K> keyType;
+                         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:86: error: [NullAway] @NonNull field valueType not initialized
+   private  CacheType<V> valueType;
+                         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:107: error: [NullAway] @NonNull field loaderExecutor not initialized
+   private  CustomizationSupplier<? extends Executor> loaderExecutor;
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:108: error: [NullAway] @NonNull field refreshExecutor not initialized
+   private  CustomizationSupplier<? extends Executor> refreshExecutor;
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:109: error: [NullAway] @NonNull field asyncListenerExecutor not initialized
+   private  CustomizationSupplier<? extends Executor> asyncListenerExecutor;
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:110: error: [NullAway] @NonNull field executor not initialized
+   private  CustomizationSupplier<? extends Executor> executor;
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:111: error: [NullAway] @NonNull field expiryPolicy not initialized
+   private  CustomizationSupplier<? extends ExpiryPolicy<K, V>> expiryPolicy;
+                                                                ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:112: error: [NullAway] @NonNull field resiliencePolicy not initialized
+   private  CustomizationSupplier<? extends ResiliencePolicy<K, V>> resiliencePolicy;
+                                                                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:113: error: [NullAway] @NonNull field loader not initialized
+   private  CustomizationSupplier<? extends CacheLoader<K, V>> loader;
+                                                               ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:114: error: [NullAway] @NonNull field writer not initialized
+   private  CustomizationSupplier<? extends CacheWriter<K, V>> writer;
+                                                               ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:115: error: [NullAway] @NonNull field advancedLoader not initialized
+   private  CustomizationSupplier<? extends AdvancedCacheLoader<K, V>> advancedLoader;
+                                                                       ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:116: error: [NullAway] @NonNull field asyncLoader not initialized
+   private  CustomizationSupplier<? extends AsyncCacheLoader<K, V>> asyncLoader;
+                                                                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:117: error: [NullAway] @NonNull field exceptionPropagator not initialized
+   private  CustomizationSupplier<? extends ExceptionPropagator<K>> exceptionPropagator;
+                                                                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:118: error: [NullAway] @NonNull field weigher not initialized
+   private  CustomizationSupplier<? extends Weigher<K, V>> weigher;
+                                                           ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:120: error: [NullAway] @NonNull field listeners not initialized
+   private  CustomizationCollection<CacheEntryOperationListener<K, V>> listeners;
+                                                                       ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:121: error: [NullAway] @NonNull field asyncListeners not initialized
+   private  CustomizationCollection<CacheEntryOperationListener<K, V>> asyncListeners;
+                                                                       ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:122: error: [NullAway] @NonNull field lifecycleListeners not initialized
+   private  Collection<CustomizationSupplier<CacheLifecycleListener>> lifecycleListeners;
+                                                                      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:123: error: [NullAway] @NonNull field features not initialized
+   private  Set<Feature> features;
+                         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:124: error: [NullAway] @NonNull field sections not initialized
+   private  SectionContainer sections;
+                             ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:88: error: [NullAway] assigning @Nullable expression to @NonNull field
+   private  Duration expireAfterWrite = null;
+                     ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:89: error: [NullAway] assigning @Nullable expression to @NonNull field
+   private  Duration timerLag = null;
+                     ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:223: error: [NullAway] assigning @Nullable expression to @NonNull field
+      valueType = null;
+                ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:242: error: [NullAway] assigning @Nullable expression to @NonNull field
+      valueType = null;
+                ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:686: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:136: error: [NullAway] initializer method does not guarantee @NonNull fields keyType (line 131), valueType (line 132) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+  private Cache2kBuilder(Cache2kConfig<K, V> cfg) {
+          ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:108: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    return new Cache2kBuilder(null, null);
+                              ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:108: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    return new Cache2kBuilder(null, null);
+                                    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:133: error: [NullAway] assigning @Nullable expression to @NonNull field
+   private  Cache2kConfig<K, V> config = null;
+                                ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:134: error: [NullAway] assigning @Nullable expression to @NonNull field
+   private  CacheManager manager = null;
+                         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/io/ResiliencePolicy.java:59: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+    b.config().setResiliencePolicy(null);
+                                   ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/SectionContainer.java:69: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return sectionType.cast(section);
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/integration/LoadDetail.java:51: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return null;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/ToggleFeature.java:85: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return null;
+    ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/CustomizationSupplierByClassName.java:39: error: [NullAway] initializer method does not guarantee @NonNull field className (line 34) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+  public CustomizationSupplierByClassName() { }
+         ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kManagerConfig.java:34: error: [NullAway] assigning @Nullable expression to @NonNull field
+   private  String version = null;
+                   ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/Cache2kManagerConfig.java:35: error: [NullAway] assigning @Nullable expression to @NonNull field
+   private  String defaultManagerName = null;
+                   ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/CacheTypeCapture.java:104: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/CacheTypeCapture.java:109: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+/opt/table_1/versions/nullaway/cache2k-cf-pre/src/src/main/java/org/cache2k/config/CacheTypeCapture.java:114: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return null;
+      ^
+    (see http://t.uber.com/nullaway )
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+41 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 961ms
+41
