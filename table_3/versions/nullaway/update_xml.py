@@ -23,6 +23,12 @@ def process_annotator_out_dir(dirpath):
         abs_zero_path = os.path.abspath(zero_dir)
         update_path_in_xml(scanner_xml, abs_zero_path)
         update_path_in_xml(nullaway_xml, abs_zero_path)
+        
+    checker_xml = os.path.join(dirpath, "checker.xml")
+    if os.path.isdir(zero_dir) and os.path.isfile(scanner_xml) and os.path.isfile(checker_xml):
+        abs_zero_path = os.path.abspath(zero_dir)
+        update_path_in_xml(scanner_xml, abs_zero_path)
+        update_path_in_xml(checker_xml, abs_zero_path)
 
 def walk_and_process(base_dir):
     for root, dirs, files in os.walk(base_dir):
