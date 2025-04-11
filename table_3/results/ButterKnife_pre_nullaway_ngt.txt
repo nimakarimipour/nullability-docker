@@ -238,11 +238,51 @@
       methods = ImmutableList.of(new ResourceMethod(null, methodName, true, 1));
                                                     ^
     (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-pre/src/src/main/java/butterknife/compiler/ViewBinding.java:34: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return methodBindings;
+    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-pre/src/src/main/java/butterknife/compiler/ViewBinding.java:42: error: [NullAway] dereferenced expression methodBindings is @Nullable
+    for (Map<ListenerMethod, Set<MethodViewBinding>> methodBinding : methodBindings.values()) {
+                                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-pre/src/src/main/java/butterknife/compiler/ViewBinding.java:55: error: [NullAway] dereferenced expression methodBindings is @Nullable
+    return methodBindings.isEmpty() && fieldBinding != null;
+                         ^
+    (see http://t.uber.com/nullaway )
 /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-pre/src/src/main/java/butterknife/compiler/ViewBinding.java:79: error: [NullAway] initializer method does not guarantee @NonNull field fieldBinding (line 77) is initialized along all control-flow paths (remember to check for exceptions or early returns).
     Builder(Id id) {
     ^
     (see http://t.uber.com/nullaway )
-61 errors
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-pre/src/src/main/java/butterknife/compiler/ViewBinding.java:113: error: [NullAway] passing @Nullable parameter 'id' where @NonNull is required
+      return new ViewBinding(id, methodBindings, fieldBinding);
+                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-pre/src/src/main/java/butterknife/compiler/FieldViewBinding.java:21: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return name;
+    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-pre/src/src/main/java/butterknife/compiler/FieldViewBinding.java:25: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return type;
+    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-pre/src/src/main/java/butterknife/compiler/FieldViewBinding.java:32: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return (ClassName) type;
+    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-pre/src/src/main/java/butterknife/compiler/Parameter.java:24: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return type;
+    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-pre/src/src/main/java/butterknife/compiler/Parameter.java:28: error: [NullAway] dereferenced expression type is @Nullable
+    return !type.toString().equals(toType);
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ngt-pre/src/src/main/java/butterknife/compiler/FieldDrawableBinding.java:32: error: [NullAway] dereferenced expression tintAttributeId is @Nullable
+    if (tintAttributeId.value != NO_RES_ID) {
+                       ^
+    (see http://t.uber.com/nullaway )
+71 errors
 
 FAILURE: Build failed with an exception.
 
@@ -255,5 +295,5 @@ Run with --stacktrace option to get the stack trace. Run with --info or --debug 
 
 * Get more help at https://help.gradle.org
 
-BUILD FAILED in 768ms
-61
+BUILD FAILED in 703ms
+71

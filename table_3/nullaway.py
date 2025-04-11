@@ -39,4 +39,4 @@ for benchmark in names.keys():
         append_count_of_nullaway_errors(f"{OUTPUT_DIR}/{names[benchmark]}_pre_nullaway_{tool}.txt")
         # post
         os.system(f"cd versions/nullaway/{benchmark}-{tool}-post/src && ./gradlew build -x test --rerun-tasks 2> {OUTPUT_DIR}/{names[benchmark]}_post_nullaway_{tool}.txt")
-        append_count_of_nullaway_errors(f"{OUTPUT_DIR}/{names[benchmark]})_post_nullaway_{tool}.txt")
+        append_count_of_nullaway_errors(f"{OUTPUT_DIR}/{names[benchmark]}_post_nullaway_{tool}.txt")

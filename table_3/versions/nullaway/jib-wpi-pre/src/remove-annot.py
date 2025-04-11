@@ -23,7 +23,7 @@ def remove_annotations(file_path, remove_suppress_warnings):
     nonnull_strict_pattern = r'@\bNonnull\b'
     notnull_pattern = r'@\bNotnull\b'
     not_null_strict_pattern = r'@\bNotNull\b'  # Added for @NotNull
-    monotonic_nonnull_pattern = r'@\bMonotonicNonNull\b'
+    monotonic_nonnull_pattern = r'@\bNullable\b'
     suppress_warnings_pattern = r'@\bSuppressWarnings\b\([^\)]*\)'
     
     # Find all matches for logging
@@ -57,7 +57,7 @@ def remove_annotations(file_path, remove_suppress_warnings):
         if not_null_strict_matches:
             print(f'  @NotNull: {len(not_null_strict_matches)} occurrences')  # Added for @NotNull
         if monotonic_nonnull_matches:
-            print(f'  @MonotonicNonNull: {len(monotonic_nonnull_matches)} occurrences')
+            print(f'  @Nullable: {len(monotonic_nonnull_matches)} occurrences')
         if remove_suppress_warnings and suppress_warnings_matches:
             print(f'  @SuppressWarnings: {len(suppress_warnings_matches)} occurrences')
     
@@ -98,6 +98,6 @@ if __name__ == "__main__":
     print(f'  @Nonnull: {total_nonnull_strict_count}')
     print(f'  @Notnull: {total_notnull_count}')
     print(f'  @NotNull: {total_not_null_strict_count}')  # Added for @NotNull
-    print(f'  @MonotonicNonNull: {total_monotonic_nonnull_count}')
+    print(f'  @Nullable: {total_monotonic_nonnull_count}')
     if args.remove_suppress_warnings:
         print(f'  @SuppressWarnings: {total_suppress_warnings_count}')

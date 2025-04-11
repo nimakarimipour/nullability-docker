@@ -1,13 +1,15 @@
 package butterknife.compiler;
 
+import javax.annotation.Nullable;
+
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.ParameterizedTypeName;
 import com.squareup.javapoet.TypeName;
 
 final class FieldViewBinding implements MemberViewBinding {
-  private final String name;
-  private final TypeName type;
-  private final boolean required;
+  @Nullable private final String name;
+  @Nullable private final TypeName type;
+  @Nullable private final boolean required;
 
   FieldViewBinding(String name, TypeName type, boolean required) {
     this.name = name;

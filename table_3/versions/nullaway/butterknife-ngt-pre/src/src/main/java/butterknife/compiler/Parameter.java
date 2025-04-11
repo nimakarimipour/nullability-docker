@@ -1,5 +1,7 @@
 package butterknife.compiler;
 
+import javax.annotation.Nullable;
+
 import com.squareup.javapoet.TypeName;
 
 /** Represents a parameter type and its position in the listener method. */
@@ -7,7 +9,7 @@ final class Parameter {
   static final Parameter[] NONE = new Parameter[0];
 
   private final int listenerPosition;
-  private final TypeName type;
+  @Nullable private final TypeName type;
 
   Parameter(int listenerPosition, TypeName type) {
     this.listenerPosition = listenerPosition;

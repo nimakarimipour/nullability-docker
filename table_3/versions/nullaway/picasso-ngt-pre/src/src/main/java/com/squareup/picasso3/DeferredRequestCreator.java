@@ -25,10 +25,10 @@ import android.widget.ImageView;
 
 class DeferredRequestCreator implements OnPreDrawListener, OnAttachStateChangeListener {
 
-    private final RequestCreator creator;
+    @javax.annotation.Nullable private final RequestCreator creator;
 
     @VisibleForTesting
-    final ImageView target;
+    @javax.annotation.Nullable final ImageView target;
 
     @VisibleForTesting
     Callback callback;

@@ -10,7 +10,7 @@ import static butterknife.internal.Constants.NO_RES_ID;
 final class FieldDrawableBinding implements ResourceBinding {
   private final Id id;
   private final String name;
-  private final Id tintAttributeId;
+  @javax.annotation.Nullable private final Id tintAttributeId;
   private final boolean androidX;
 
   FieldDrawableBinding(Id id, String name, Id tintAttributeId, boolean useAndroidX) {
