@@ -87,7 +87,7 @@ RUN cd /opt/nullability-inference-comparison-tools/java/AnnotUtils && ./gradlew 
 # install Daikon, make daikonparent dir
 RUN mkdir -p /opt/daikonparent
 RUN wget -P /opt/daikonparent http://plse.cs.washington.edu/daikon/download/daikon-5.8.20.tar.gz
-RUN tar -xzf /opt/daikonparent/daikon-5.8.20.tar.gz -C /opt/daikonparent
+RUN tar -xzf /opt/daikonparent-/daikon-5.8.20.tar.gz -C /opt/daikonparent
 ENV DAIKONDIR=/opt/daikonparent/daikon-5.8.20
 RUN echo "source $DAIKONDIR/scripts/daikon.bashrc" >> /root/.bashrc
 
