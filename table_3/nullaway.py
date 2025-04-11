@@ -35,8 +35,8 @@ for benchmark in names.keys():
     print(names[benchmark]) # Print the value
     for tool in ["ann", "wpi", "ngt"]:
         # pre
-        os.system(f"cd versions/nullaway/{benchmark}-{tool}-pre/src && ./gradlew build -x test --rerun-tasks 2> {OUTPUT_DIR}/{names[benchmark]}-pre-nullaway-{tool}.txt")
-        append_count_of_nullaway_errors(f"{OUTPUT_DIR}/{names[benchmark]}-pre-nullaway-{tool}.txt")
+        os.system(f"cd versions/nullaway/{benchmark}-{tool}-pre/src && ./gradlew build -x test --rerun-tasks 2> {OUTPUT_DIR}/{names[benchmark]}_pre_nullaway_{tool}.txt")
+        append_count_of_nullaway_errors(f"{OUTPUT_DIR}/{names[benchmark]}_pre_nullaway_{tool}.txt")
         # post
-        os.system(f"cd versions/nullaway/{benchmark}-{tool}-post/src && ./gradlew build -x test --rerun-tasks 2> {OUTPUT_DIR}/{names[benchmark]}-post-nullaway-{tool}.txt")
-        append_count_of_nullaway_errors(f"{OUTPUT_DIR}/{names[benchmark]}-post-nullaway-{tool}.txt")
+        os.system(f"cd versions/nullaway/{benchmark}-{tool}-post/src && ./gradlew build -x test --rerun-tasks 2> {OUTPUT_DIR}/{names[benchmark]}_post_nullaway_{tool}.txt")
+        append_count_of_nullaway_errors(f"{OUTPUT_DIR}/{names[benchmark]})_post_nullaway_{tool}.txt")
