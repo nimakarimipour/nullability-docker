@@ -1,0 +1,141 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/UiUtils.java:204: warning: [deprecation] BitmapDrawable(Bitmap) in BitmapDrawable has been deprecated
+            return new BitmapDrawable(bitmap);
+                   ^
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/UiUtils.java:175: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/UiUtils.java:202: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialActionItem.java:101: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialActionItem.java:182: error: [NullAway] initializer method does not guarantee @NonNull field mLabel (line 154) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+        public Builder(@IdRes int id, @DrawableRes int fabImageResource) {
+               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialActionItem.java:195: error: [NullAway] initializer method does not guarantee @NonNull field mLabel (line 154) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+        public Builder(@IdRes int id, Drawable drawable) {
+               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialActionItem.java:258: error: [NullAway] passing @Nullable parameter 'this.mFabImageDrawable' where @NonNull is required
+        dest.writeParcelable(UiUtils.getBitmapFromDrawable(this.mFabImageDrawable), flags);
+                                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:94: error: [NullAway] parameter actionItem is @NonNull, but parameter in superclass method com.leinardi.android.speeddial.SpeedDialView.OnActionSelectedListener.onActionSelected(com.leinardi.android.speeddial.SpeedDialActionItem) is @Nullable
+        public boolean onActionSelected(SpeedDialActionItem actionItem) {
+                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:109: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        init(context, null);
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:153: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        show(null);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:161: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        hide(null);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:174: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return mOverlayLayout;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:292: error: [NullAway] passing @Nullable parameter 'findFabWithLabelViewById(idRes)' where @NonNull is required
+        return removeActionItem(findFabWithLabelViewById(idRes));
+                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:321: error: [NullAway] passing @Nullable parameter 'findFabWithLabelViewById(newSpeedDialActionItem.getId())' where @NonNull is required
+            removeActionItem(findFabWithLabelViewById(newSpeedDialActionItem.getId()), null, false);
+                                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:321: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+            removeActionItem(findFabWithLabelViewById(newSpeedDialActionItem.getId()), null, false);
+                                                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:322: error: [NullAway] passing @Nullable parameter 'findFabWithLabelViewById(oldSpeedDialActionItem.getId())' where @NonNull is required
+            removeActionItem(findFabWithLabelViewById(oldSpeedDialActionItem.getId()), null, false);
+                                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:322: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+            removeActionItem(findFabWithLabelViewById(oldSpeedDialActionItem.getId()), null, false);
+                                                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:463: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:468: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        return removeActionItem(view, null, true);
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:543: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+            newView = new FabWithLabelView(new ContextThemeWrapper(getContext(), theme), null, theme);
+                                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:707: error: [NullAway] initializer method does not guarantee @NonNull field mInternalAutoHideListener (line 703) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+        public SnackbarBehavior() {
+               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialView.java:712: error: [NullAway] initializer method does not guarantee @NonNull field mInternalAutoHideListener (line 703) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+        public SnackbarBehavior(Context context, AttributeSet attrs) {
+               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/FabWithLabelView.java:66: error: [NullAway] initializer method does not guarantee @NonNull field mSpeedDialActionItem (line 58) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public FabWithLabelView(Context context) {
+           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/FabWithLabelView.java:71: error: [NullAway] initializer method does not guarantee @NonNull field mSpeedDialActionItem (line 58) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public FabWithLabelView(Context context, AttributeSet attrs) {
+           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/FabWithLabelView.java:76: error: [NullAway] initializer method does not guarantee @NonNull field mSpeedDialActionItem (line 58) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public FabWithLabelView(Context context, AttributeSet attrs, int defStyleAttr) {
+           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/FabWithLabelView.java:68: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        init(context, null);
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/FabWithLabelView.java:181: error: [NullAway] dereferenced expression mOnActionSelectedListener is @Nullable
+                    mOnActionSelectedListener.onActionSelected(getSpeedDialActionItem());
+                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/FabWithLabelView.java:189: error: [NullAway] dereferenced expression mOnActionSelectedListener is @Nullable
+                        mOnActionSelectedListener.onActionSelected(getSpeedDialActionItem());
+                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialOverlayLayout.java:40: error: [NullAway] initializer method does not guarantee @NonNull field mClickListener (line 38) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public SpeedDialOverlayLayout(Context context) {
+           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialOverlayLayout.java:44: error: [NullAway] initializer method does not guarantee @NonNull field mClickListener (line 38) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public SpeedDialOverlayLayout(Context context, AttributeSet attrs) {
+           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ngt-pre/src/library/src/main/java/com/leinardi/android/speeddial/SpeedDialOverlayLayout.java:49: error: [NullAway] initializer method does not guarantee @NonNull field mClickListener (line 38) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public SpeedDialOverlayLayout(Context context, AttributeSet attrs, @AttrRes int defStyleAttr) {
+           ^
+    (see http://t.uber.com/nullaway )
+30 errors
+1 warning
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':library:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+30

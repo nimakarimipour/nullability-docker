@@ -1,0 +1,9 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ann-post/src/library/src/main/java/com/leinardi/android/speeddial/UiUtils.java:233: warning: [deprecation] BitmapDrawable(Bitmap) in BitmapDrawable has been deprecated
+            return new BitmapDrawable(bitmap);
+                   ^
+1 warning
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ann-post/src/library/src/main/java/com/leinardi/android/speeddial/UiUtils.java:233: warning: [deprecation] BitmapDrawable(Bitmap) in BitmapDrawable has been deprecated
+            return new BitmapDrawable(bitmap);
+                   ^
+1 warning
+0
