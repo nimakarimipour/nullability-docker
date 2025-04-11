@@ -25,10 +25,10 @@ import java.io.OutputStream;
 @org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
 class WriterBlob implements Blob {
 
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull BlobWriter writer;
+    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable BlobWriter writer;
 
     @org.checkerframework.dataflow.qual.SideEffectFree
-    WriterBlob(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull BlobWriter writer) {
+    WriterBlob(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable BlobWriter writer) {
         this.writer = writer;
     }
 

@@ -38,12 +38,12 @@ class AuthenticatePushStep implements Callable<Authorization> {
 
     private static final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull String DESCRIPTION = "Authenticating with push to %s";
 
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull BuildConfiguration buildConfiguration;
+    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable BuildConfiguration buildConfiguration;
 
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull ListenableFuture<Authorization> registryCredentialsFuture;
+    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable ListenableFuture<Authorization> registryCredentialsFuture;
 
     @org.checkerframework.dataflow.qual.SideEffectFree
-    AuthenticatePushStep(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull BuildConfiguration buildConfiguration, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull ListenableFuture<Authorization> registryCredentialsFuture) {
+    AuthenticatePushStep(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable BuildConfiguration buildConfiguration, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable ListenableFuture<Authorization> registryCredentialsFuture) {
         this.buildConfiguration = buildConfiguration;
         this.registryCredentialsFuture = registryCredentialsFuture;
     }

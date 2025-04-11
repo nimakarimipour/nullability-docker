@@ -40,7 +40,7 @@ public class BlobDescriptor {
      * to an {@link OutputStream}. Does not close either streams.
      */
     @org.checkerframework.dataflow.qual.Impure
-    static @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull BlobDescriptor fromPipe(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull InputStream inputStream, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull OutputStream outputStream) throws IOException {
+    static @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable BlobDescriptor fromPipe(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull InputStream inputStream, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull OutputStream outputStream) throws IOException {
         CountingDigestOutputStream countingDigestOutputStream = new CountingDigestOutputStream(outputStream);
         ByteStreams.copy(inputStream, countingDigestOutputStream);
         countingDigestOutputStream.flush();
