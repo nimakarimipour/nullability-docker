@@ -7,9 +7,9 @@ import os
 import shutil
 
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
-SOURCE = "annotator"
+SOURCE = "original"
 BENCHMARKS_FOLDER = f"../{SOURCE}"
-RESULTS_FOLDER = f"nullaway/{SOURCE}"
+RESULTS_FOLDER = f"checkers/nullaway/"
 COMPILED_CLASSES_FOLDER = "classes"
 SRC_FILES = "srcs.txt"
 ERRORPRONE_DIR = "tools/error_prone"
@@ -41,13 +41,8 @@ if not os.path.exists(RESULTS_FOLDER):
 java_11_incompatible = []
 with open('../java_11_incompatible.txt', 'r') as file:
     java_11_incompatible = file.read().splitlines()
-    
-tool_incompatible = []
-with open('../{}_incompatible.txt'.format(SOURCE), 'r') as file:
-    tool_incompatible = file.read().splitlines()
-    tool_incompatible = [x.split(" ")[0] for x in tool_incompatible]
 
-to_skip = java_11_incompatible + tool_incompatible
+to_skip = java_11_incompatible
 
 #Loop through the benchmarks
 print("Completed Benchmarks")

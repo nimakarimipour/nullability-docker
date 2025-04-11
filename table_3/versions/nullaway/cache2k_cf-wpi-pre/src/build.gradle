@@ -1,0 +1,92 @@
+// // Top-level build.gradle (Project-level)
+// buildscript {
+//     repositories {
+//         google()
+//         mavenCentral()
+//     }
+//     dependencies {
+//         classpath 'com.android.tools.build:gradle:7.0.4' // or the latest version
+//         classpath 'com.android.application:com.android.application.gradle.plugin:7.0.4' // or the latest version
+//     }
+// }
+
+plugins {
+    id "java"
+    id "net.ltgt.errorprone" version "2.0.2"
+    // id 'org.checkerframework' version '0.6.43'
+}
+
+// apply plugin: 'com.android.application'
+
+// apply plugin: 'org.checkerframework'
+
+
+// android {
+//     namespace "org.example"
+//     compileSdkVersion 31
+//     defaultConfig {
+//         applicationId "com.example.myapp"
+//         minSdkVersion 21
+//         targetSdkVersion 31
+//         versionCode 1
+//         versionName "1.0"
+
+//         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//     }
+
+//     buildTypes {
+//         release {
+//             minifyEnabled false
+//             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//         }
+//     }
+// }
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    compileOnly "com.google.code.findbugs:jsr305:3.0.2"
+    compileOnly "org.jetbrains.kotlin:kotlin-annotations-jvm:1.4.10"
+    compileOnly "org.checkerframework:checker-qual:3.43.0"
+
+    // ErrorProne and NullAway
+    errorprone "com.uber.nullaway:nullaway:0.10.20"
+    errorprone "edu.ucr.cs.riple.annot-util:AnnotLocator:0.1"
+    errorprone "edu.ucr.cs.riple.annotator:annotator-scanner:1.3.14"
+    errorprone "com.google.errorprone:error_prone_core:2.29.2"
+    compileOnly "com.google.code.findbugs:jsr305:3.0.2"
+    compileOnly "com.uber.nullaway:nullaway-annotations:0.10.20"
+
+    compileOnly 'org.checkerframework:checker-qual:3.42.0'
+
+    // checkerFramework 'org.checkerframework:checker:3.43.0'
+}
+
+def scanner_path = projectDir.absolutePath + "/annotator-out/scanner.xml"
+def nullaway_path = projectDir.absolutePath + "/annotator-out/nullaway.xml"
+
+import net.ltgt.gradle.errorprone.CheckSeverity
+tasks.withType(JavaCompile) {
+    options.errorprone.disableAllChecks = true
+    options.errorprone {
+        check("NullAway", CheckSeverity.ERROR)
+        check("AnnotatorScanner", CheckSeverity.ERROR)
+        check("AnnotLocator", CheckSeverity.ERROR)
+        option("NullAway:AnnotatedPackages", "org.cache2k")
+        option("NullAway:SerializeFixMetadata", "true")
+        option("NullAway:FixSerializationConfigPath", nullaway_path)
+        option("AnnotatorScanner:ConfigPath",  scanner_path)
+    }
+    // Set max errors to 10000
+    options.compilerArgs += ["-Xmaxerrs", "10000"]    
+}
+
+// checkerFramework {
+//   checkers = [
+//     'org.checkerframework.checker.nullness.NullnessChecker',
+//   ]
+// }

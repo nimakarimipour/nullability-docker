@@ -1,0 +1,451 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:61: error: [NullAway] dereferenced expression target is @Nullable
+        ViewTreeObserver vto = target.getViewTreeObserver();
+                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:72: error: [NullAway] dereferenced expression this.creator is @Nullable
+        this.creator.unfit().resize(width, height).into(target, callback);
+                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:77: error: [NullAway] dereferenced expression creator is @Nullable
+        creator.clearTag();
+               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:78: error: [NullAway] assigning @Nullable expression to @NonNull field
+        callback = null;
+                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:79: error: [NullAway] dereferenced expression target is @Nullable
+        target.removeOnAttachStateChangeListener(this);
+              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:87: error: [NullAway] dereferenced expression creator is @Nullable
+        return creator.getTag();
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RemoteViewsAction.java:33: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        super(picasso, null, data);
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RemoteViewsAction.java:39: error: [NullAway] parameter result is @NonNull, but parameter in superclass method com.squareup.picasso3.Action.complete(com.squareup.picasso3.RequestHandler.Result) is @Nullable
+    void complete(RequestHandler.Result result) {
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RemoteViewsAction.java:57: error: [NullAway] parameter e is @NonNull, but parameter in superclass method com.squareup.picasso3.Action.error(java.lang.Exception) is @Nullable
+    public void error(Exception e) {
+                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Dispatcher.java:330: error: [NullAway] passing @Nullable parameter 'networkInfo' where @NonNull is required
+        if (hunter.shouldRetry(airplaneMode, networkInfo)) {
+                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Dispatcher.java:348: error: [NullAway] passing @Nullable parameter 'hunter.data.memoryPolicy' where @NonNull is required
+        if (shouldWriteToMemoryCache(hunter.data.memoryPolicy)) {
+                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:357: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+            return new RequestCreator(this, null, 0);
+                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:380: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+            return new RequestCreator(this, null, 0);
+                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:396: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        return new RequestCreator(this, null, resourceId);
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:403: error: [NullAway] dereferenced expression cache is @Nullable
+        cache.clear();
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:414: error: [NullAway] dereferenced expression cache is @Nullable
+            cache.clearKeyUri(uri.toString());
+                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:491: error: [NullAway] dereferenced expression cache is @Nullable
+        cache.clear();
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:546: error: [NullAway] dereferenced expression cache is @Nullable
+        Bitmap cached = cache.get(key);
+                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:552: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return cached;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:583: error: [NullAway] passing @Nullable parameter 'action.request.memoryPolicy' where @NonNull is required
+        if (shouldReadFromMemoryCache(action.request.memoryPolicy)) {
+                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:588: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+            deliverAction(new RequestHandler.Result(bitmap, MEMORY), action, null);
+                                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:616: error: [NullAway] passing @Nullable parameter 'e.getMessage()' where @NonNull is required
+                log(OWNER_MAIN, VERB_ERRORED, action.request.logId(), e.getMessage());
+                                                                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:670: error: [NullAway] initializer method does not guarantee @NonNull field defaultBitmapConfig (line 661) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+        public Builder(Context context) {
+               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:808: error: [NullAway] passing @Nullable parameter 'unsharedCache' where @NonNull is required
+            return new Picasso(context, dispatcher, callFactory, unsharedCache, cache, listener, requestTransformers, requestHandlers, stats, defaultBitmapConfig, indicatorsEnabled, loggingEnabled);
+                                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java:808: error: [NullAway] passing @Nullable parameter 'listener' where @NonNull is required
+            return new Picasso(context, dispatcher, callFactory, unsharedCache, cache, listener, requestTransformers, requestHandlers, stats, defaultBitmapConfig, indicatorsEnabled, loggingEnabled);
+                                                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestHandler.java:79: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+            this(checkNotNull(bitmap, "bitmap == null"), null, loadedFrom, 0);
+                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestHandler.java:83: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+            this(checkNotNull(bitmap, "bitmap == null"), null, loadedFrom, exifRotation);
+                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestHandler.java:87: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+            this(null, checkNotNull(drawable, "drawable == null"), loadedFrom, 0);
+                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestHandler.java:102: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return bitmap;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestHandler.java:174: error: [NullAway] assigning @Nullable expression to @NonNull field
+                options.inPreferredConfig = data.config;
+                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestHandler.java:177: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return options;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:104: error: [NullAway] initializer method does not guarantee @NonNull fields result (line 93), exception (line 98) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    BitmapHunter(Picasso picasso, Dispatcher dispatcher, PlatformLruCache cache, Stats stats, Action action, RequestHandler requestHandler) {
+    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:66: error: [NullAway] parameter request is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.load(com.squareup.picasso3.Picasso,com.squareup.picasso3.Request,com.squareup.picasso3.RequestHandler.Callback) is @Nullable
+        public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
+                                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:157: error: [NullAway] passing @Nullable parameter 'data.memoryPolicy' where @NonNull is required
+        if (shouldReadFromMemoryCache(data.memoryPolicy)) {
+                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:177: error: [NullAway] parameter result is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.Callback.onSuccess(com.squareup.picasso3.RequestHandler.Result) is @Nullable
+                public void onSuccess(Result result) {
+                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:183: error: [NullAway] parameter t is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.Callback.onError(java.lang.Throwable) is @Nullable
+                public void onError(Throwable t) {
+                                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:208: error: [NullAway] dereferenced expression result is @Nullable
+        Bitmap bitmap = result.getBitmap();
+                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:214: error: [NullAway] dereferenced expression data.transformations is @Nullable
+            List<Transformation> transformations = new ArrayList<>(data.transformations.size() + 1);
+                                                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:286: error: [NullAway] dereferenced expression actions is @Nullable
+            for (int i = 0, n = actions.size(); i < n; i++) {
+                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:330: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return action;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:338: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return actions;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:388: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+                return null;
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:404: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+                return null;
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:415: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+                return null;
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:426: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+                return null;
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:93: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.picasso = null;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:94: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        this.data = new Request.Builder(null, 0, null);
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:94: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        this.data = new Request.Builder(null, 0, null);
+                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:412: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:416: error: [NullAway] passing @Nullable parameter 'picasso.cache' where @NonNull is required
+        RequestHandler.Result result = forRequest(picasso, picasso.dispatcher, picasso.cache, picasso.stats, action).hunt();
+                                                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:418: error: [NullAway] passing @Nullable parameter 'request.memoryPolicy' where @NonNull is required
+        if (bitmap != null && shouldWriteToMemoryCache(request.memoryPolicy)) {
+                                                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:419: error: [NullAway] dereferenced expression picasso.cache is @Nullable
+            picasso.cache.set(request.key, bitmap);
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:431: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        fetch(null);
+              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:454: error: [NullAway] passing @Nullable parameter 'request.memoryPolicy' where @NonNull is required
+            if (shouldReadFromMemoryCache(request.memoryPolicy)) {
+                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:526: error: [NullAway] passing @Nullable parameter 'setPlaceholder ? getPlaceholderDrawable() : null' where @NonNull is required
+            target.onPrepareLoad(setPlaceholder ? getPlaceholderDrawable() : null);
+                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:530: error: [NullAway] passing @Nullable parameter 'request.memoryPolicy' where @NonNull is required
+        if (shouldReadFromMemoryCache(request.memoryPolicy)) {
+                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:538: error: [NullAway] passing @Nullable parameter 'setPlaceholder ? getPlaceholderDrawable() : null' where @NonNull is required
+        target.onPrepareLoad(setPlaceholder ? getPlaceholderDrawable() : null);
+                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:539: error: [NullAway] passing @Nullable parameter 'errorDrawable' where @NonNull is required
+        Target<BitmapTarget> wrapper = new Target<>(target, errorResId, errorDrawable, noFade);
+                                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:549: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        into(remoteViews, viewId, notificationId, notification, null);
+                                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:557: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        into(remoteViews, viewId, notificationId, notification, notificationTag, null);
+                                                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:589: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        into(remoteViews, viewId, new int[] { appWidgetId }, null);
+                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:597: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        into(remoteViews, viewId, appWidgetIds, null);
+                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:638: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        into(target, null);
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:679: error: [NullAway] passing @Nullable parameter 'request.memoryPolicy' where @NonNull is required
+        if (shouldReadFromMemoryCache(request.memoryPolicy)) {
+                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:697: error: [NullAway] passing @Nullable parameter 'errorDrawable' where @NonNull is required
+        Target<ImageView> wrapper = new Target<>(target, errorResId, errorDrawable, noFade);
+                                                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:703: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return placeholderResId == 0 ? placeholderDrawable : ContextCompat.getDrawable(picasso.context, placeholderResId);
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RequestCreator.java:731: error: [NullAway] passing @Nullable parameter 'request.memoryPolicy' where @NonNull is required
+        if (shouldReadFromMemoryCache(request.memoryPolicy)) {
+                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Action.java:72: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return request.priority;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Request.java:216: error: [NullAway] dereferenced expression transformations is @Nullable
+        if (!transformations.isEmpty()) {
+                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Request.java:318: error: [NullAway] dereferenced expression data.transformations is @Nullable
+        for (int i = 0, count = data.transformations.size(); i < count; i++) {
+                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Request.java:497: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return tag;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Target.java:36: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.errorDrawable = null;
+                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Target.java:43: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.errorDrawable = null;
+                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/FetchAction.java:28: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        super(picasso, null, data);
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/FetchAction.java:41: error: [NullAway] parameter e is @NonNull, but parameter in superclass method com.squareup.picasso3.Action.error(java.lang.Exception) is @Nullable
+    void error(Exception e) {
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapTargetAction.java:29: error: [NullAway] parameter result is @NonNull, but parameter in superclass method com.squareup.picasso3.Action.complete(com.squareup.picasso3.RequestHandler.Result) is @Nullable
+    void complete(RequestHandler.Result result) {
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapTargetAction.java:44: error: [NullAway] parameter e is @NonNull, but parameter in superclass method com.squareup.picasso3.Action.error(java.lang.Exception) is @Nullable
+    void error(Exception e) {
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ContactsPhotoRequestHandler.java:75: error: [NullAway] parameter data is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.canHandleRequest(com.squareup.picasso3.Request) is @Nullable
+    public boolean canHandleRequest(Request data) {
+                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ContactsPhotoRequestHandler.java:77: error: [NullAway] dereferenced expression uri is @Nullable
+        return (SCHEME_CONTENT.equals(uri.getScheme()) && ContactsContract.Contacts.CONTENT_URI.getHost().equals(uri.getHost()) && matcher.match(data.uri) != UriMatcher.NO_MATCH);
+                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ContactsPhotoRequestHandler.java:81: error: [NullAway] parameter request is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.load(com.squareup.picasso3.Picasso,com.squareup.picasso3.Request,com.squareup.picasso3.RequestHandler.Callback) is @Nullable
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
+                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/AssetRequestHandler.java:48: error: [NullAway] parameter data is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.canHandleRequest(com.squareup.picasso3.Request) is @Nullable
+    public boolean canHandleRequest(Request data) {
+                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/AssetRequestHandler.java:50: error: [NullAway] dereferenced expression uri is @Nullable
+        return (SCHEME_FILE.equals(uri.getScheme()) && !uri.getPathSegments().isEmpty() && ANDROID_ASSET.equals(uri.getPathSegments().get(0)));
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/AssetRequestHandler.java:54: error: [NullAway] parameter request is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.load(com.squareup.picasso3.Picasso,com.squareup.picasso3.Request,com.squareup.picasso3.RequestHandler.Callback) is @Nullable
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
+                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/AssetRequestHandler.java:83: error: [NullAway] dereferenced expression request.uri is @Nullable
+        return request.uri.toString().substring(ASSET_PREFIX_LENGTH);
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ImageViewAction.java:35: error: [NullAway] parameter result is @NonNull, but parameter in superclass method com.squareup.picasso3.Action.complete(com.squareup.picasso3.RequestHandler.Result) is @Nullable
+    public void complete(RequestHandler.Result result) {
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ImageViewAction.java:49: error: [NullAway] parameter e is @NonNull, but parameter in superclass method com.squareup.picasso3.Action.error(java.lang.Exception) is @Nullable
+    public void error(Exception e) {
+                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/FileRequestHandler.java:38: error: [NullAway] dereferenced expression data.uri is @Nullable
+        return SCHEME_FILE.equals(data.uri.getScheme());
+                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/FileRequestHandler.java:46: error: [NullAway] passing @Nullable parameter 'source' where @NonNull is required
+            Bitmap bitmap = decodeStream(source, request);
+                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/FileRequestHandler.java:59: error: [NullAway] dereferenced expression request.uri is @Nullable
+        ExifInterface exifInterface = new ExifInterface(request.uri.getPath());
+                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ContentStreamRequestHandler.java:43: error: [NullAway] parameter data is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.canHandleRequest(com.squareup.picasso3.Request) is @Nullable
+    public boolean canHandleRequest(Request data) {
+                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ContentStreamRequestHandler.java:44: error: [NullAway] dereferenced expression data.uri is @Nullable
+        return SCHEME_CONTENT.equals(data.uri.getScheme());
+                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ContentStreamRequestHandler.java:48: error: [NullAway] parameter request is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.load(com.squareup.picasso3.Picasso,com.squareup.picasso3.Request,com.squareup.picasso3.RequestHandler.Callback) is @Nullable
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
+                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ResourceRequestHandler.java:34: error: [NullAway] parameter data is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.canHandleRequest(com.squareup.picasso3.Request) is @Nullable
+    public boolean canHandleRequest(Request data) {
+                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ResourceRequestHandler.java:42: error: [NullAway] parameter request is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.load(com.squareup.picasso3.Picasso,com.squareup.picasso3.Request,com.squareup.picasso3.RequestHandler.Callback) is @Nullable
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
+                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/MatrixTransformation.java:41: error: [NullAway] parameter source is @NonNull, but parameter in superclass method com.squareup.picasso3.Transformation.transform(com.squareup.picasso3.RequestHandler.Result) is @Nullable
+    public RequestHandler.Result transform(RequestHandler.Result source) {
+                                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/NetworkRequestHandler.java:47: error: [NullAway] parameter data is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.canHandleRequest(com.squareup.picasso3.Request) is @Nullable
+    public boolean canHandleRequest(Request data) {
+                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/NetworkRequestHandler.java:48: error: [NullAway] dereferenced expression data.uri is @Nullable
+        String scheme = data.uri.getScheme();
+                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/NetworkRequestHandler.java:53: error: [NullAway] parameter request is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.load(com.squareup.picasso3.Picasso,com.squareup.picasso3.Request,com.squareup.picasso3.RequestHandler.Callback) is @Nullable
+    public void load(@javax.annotation.Nullable Picasso picasso, final Request request, final Callback callback) {
+                                                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/NetworkRequestHandler.java:60: error: [NullAway] passing @Nullable parameter 'request.networkPolicy' where @NonNull is required
+                    callback.onError(new ResponseException(response.code(), request.networkPolicy));
+                                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/NetworkRequestHandler.java:99: error: [NullAway] parameter airplaneMode is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.shouldRetry(boolean,android.net.NetworkInfo) is @Nullable
+    boolean shouldRetry(boolean airplaneMode, NetworkInfo info) {
+                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/NetworkRequestHandler.java:125: error: [NullAway] dereferenced expression request.uri is @Nullable
+        okhttp3.Request.Builder builder = new okhttp3.Request.Builder().url(request.uri.toString());
+                                                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ResourceDrawableRequestHandler.java:37: error: [NullAway] parameter data is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.canHandleRequest(com.squareup.picasso3.Request) is @Nullable
+    public boolean canHandleRequest(Request data) {
+                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ResourceDrawableRequestHandler.java:42: error: [NullAway] parameter request is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.load(com.squareup.picasso3.Picasso,com.squareup.picasso3.Request,com.squareup.picasso3.RequestHandler.Callback) is @Nullable
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
+                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/ResourceDrawableRequestHandler.java:59: error: [NullAway] parameter resId is @NonNull, but parameter in superclass method com.squareup.picasso3.DrawableLoader.load(int) is @Nullable
+            public Drawable load(int resId) {
+                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/GetAction.java:23: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        super(picasso, null, data);
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/MediaStoreRequestHandler.java:51: error: [NullAway] dereferenced expression uri is @Nullable
+        return (SCHEME_CONTENT.equals(uri.getScheme()) && MediaStore.AUTHORITY.equals(uri.getAuthority()));
+                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/MediaStoreRequestHandler.java:66: error: [NullAway] passing @Nullable parameter 'source' where @NonNull is required
+                    Bitmap bitmap = decodeStream(source, request);
+                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/MediaStoreRequestHandler.java:91: error: [NullAway] passing @Nullable parameter 'source' where @NonNull is required
+            Bitmap bitmap = decodeStream(source, request);
+                                         ^
+    (see http://t.uber.com/nullaway )
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+108 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileReleaseJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+108

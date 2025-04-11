@@ -13,6 +13,7 @@ RUN export JAVA_HOME
 RUN apt-get install curl -y
 RUN apt-get install zip -y
 RUN apt-get install wget -y
+RUN apt-get install cloc -y
 
 # Install Maven
 ARG MAVEN_VERSION=3.9.9
@@ -36,9 +37,6 @@ RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
 
 ENV MAVEN_HOME=/usr/share/maven
 ENV MAVEN_CONFIG="$USER_HOME_DIR/.m2"
-
-# update
-RUN apt-get update -y
 
 # Install Python 3 and pip
 RUN apt-get install -y python3 python3-pip
@@ -78,7 +76,13 @@ COPY ./Benchmarks /opt/Benchmarks
 COPY ./table_1/ /opt/table_1/
 COPY ./table_2/ /opt/table_2/
 COPY ./table_3/ /opt/table_3/
+RUN python3 /opt/table_3/versions/nullaway/update_xml.py
 
+# Copy ErrorReduction
+COPY ./ErrorReduction /opt/error-reduction
+
+# Copy manual invesigations
+COPY ./ManualInvestigation /opt/manual-investigations
 
 # copy tools
 COPY ./nullability-inference-comparison-tools /opt/nullability-inference-comparison-tools

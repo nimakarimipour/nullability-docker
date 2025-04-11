@@ -1,0 +1,9 @@
+<scanner>
+    <serialization active="true" />
+    <uuid>cdf58336-955f-4c56-b8bf-a30e04c1ab43</uuid>
+    <path>/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/floating-ann-post/src/annotator-out/0</path>
+    <processor>
+        <LOMBOK active="true" />
+    </processor>
+    <annotations />
+</scanner>

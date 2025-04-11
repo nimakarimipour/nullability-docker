@@ -1,0 +1,65 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:45: error: [NullAway] unboxing of a @Nullable value
+        return getCell(getCellIndex(column));
+                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:45: error: [NullAway] passing @Nullable parameter 'getCellIndex(column)' where @NonNull is required
+        return getCell(getCellIndex(column));
+                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:132: error: [NullAway] passing @Nullable parameter 'row' where @NonNull is required
+        C cell = getCell(row, cellIndex);
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:141: error: [NullAway] passing @Nullable parameter 'row' where @NonNull is required
+        C cell = requireNonNull(getCell(row, cellIndex), "Cell not found");
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:150: error: [NullAway] passing @Nullable parameter 'row' where @NonNull is required
+        C cell = requireNonNull(getCell(row, cellIndex), "Cell not found");
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:159: error: [NullAway] passing @Nullable parameter 'row' where @NonNull is required
+        C cell = requireNonNull(getCell(row, cellIndex), "Cell not found");
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:168: error: [NullAway] passing @Nullable parameter 'row' where @NonNull is required
+        C cell = requireNonNull(getCell(row, cellIndex), "Cell not found");
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:177: error: [NullAway] passing @Nullable parameter 'row' where @NonNull is required
+        C cell = requireNonNull(getCell(row, cellIndex), "Cell not found");
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:186: error: [NullAway] passing @Nullable parameter 'row' where @NonNull is required
+        C cell = requireNonNull(getCell(row, cellIndex), "Cell not found");
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/api/CellDataAccessObject.java:195: error: [NullAway] passing @Nullable parameter 'row' where @NonNull is required
+        C cell = requireNonNull(getCell(row, cellIndex), "Cell not found");
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:110: error: [NullAway] dereferenced expression reportPage.getCell(tableNameCell) is @Nullable
+                    tableName = reportPage.getCell(tableNameCell).getStringValue();
+                                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:134: error: [NullAway] dereferenced expression reportPage.getCell(tableNameCell) is @Nullable
+                    tableName = reportPage.getCell(tableNameCell).getStringValue();
+                                                                 ^
+    (see http://t.uber.com/nullaway )
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+12 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 835ms
+12

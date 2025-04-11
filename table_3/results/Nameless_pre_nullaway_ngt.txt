@@ -1,0 +1,99 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/NamelessAPI.java:141: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        return new NamelessUser(this, id, null, false, null, false, -1L);
+                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/NamelessAPI.java:141: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        return new NamelessUser(this, id, null, false, null, false, -1L);
+                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/NamelessAPI.java:150: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        return new NamelessUser(this, -1, username, false, null, false, -1L);
+                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/NamelessAPI.java:159: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        return new NamelessUser(this, -1, null, true, uuid, false, -1L);
+                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/NamelessAPI.java:188: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        return new NamelessUser(this, -1, null, false, null, true, discordId);
+                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/NamelessAPI.java:188: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        return new NamelessUser(this, -1, null, false, null, true, discordId);
+                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/RequestHandler.java:75: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        return makeConnection(urlBuilder.toString(), null);
+                                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/RequestHandler.java:160: error: [NullAway] passing @Nullable parameter 'meta' where @NonNull is required
+            throw new ApiError(json.get("code").getAsInt(), meta);
+                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/NamelessUser.java:56: error: [NullAway] initializer method does not guarantee @NonNull fields _cachedUserInfo (line 42), _cachedIntegrationData (line 44) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    NamelessUser(final NamelessAPI api, final int id, final String username, boolean uuidKnown, UUID uuid, boolean discordIdKnown, long discordId) {
+    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/NamelessUser.java:118: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this._cachedUserInfo = null;
+                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/NamelessUser.java:119: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this._cachedIntegrationData = null;
+                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/NamelessUser.java:124: error: [NullAway] assigning @Nullable expression to @NonNull field
+            this.uuid = null;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/NamelessUser.java:439: error: [NullAway] assigning @Nullable expression to @NonNull field
+            this.uuid = null;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/Website.java:34: error: [NullAway] assigning @Nullable expression to @NonNull field
+                this.update = null;
+                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/Website.java:37: error: [NullAway] assigning @Nullable expression to @NonNull field
+            this.update = null;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/FilteredUserListBuilder.java:81: error: [NullAway] passing @Nullable parameter 'uuid' where @NonNull is required
+            users.add(new NamelessUser(this.api, id, username, true, uuid, false, -1L));
+                                                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/NamelessApiBuilder.java:160: error: [NullAway] passing @Nullable parameter 'this.debugLogger' where @NonNull is required
+        return new NamelessAPI(new RequestHandler(this.apiUrl, this.httpClientBuilder.build(), this.gsonBuilder.create(), this.debugLogger, this.responseSizeLimit), this.apiUrl, this.apiKey);
+                                                                                                                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/logger/PrintStreamLogger.java:19: error: [NullAway] parameter string is @NonNull, but parameter in superclass method com.namelessmc.java_api.logger.ApiLogger.log(java.lang.String) is @Nullable
+    public void log(final String string) {
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/logger/Slf4jLogger.java:17: error: [NullAway] parameter string is @NonNull, but parameter in superclass method com.namelessmc.java_api.logger.ApiLogger.log(java.lang.String) is @Nullable
+    public void log(final String string) {
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/logger/JavaLoggerLogger.java:21: error: [NullAway] parameter string is @NonNull, but parameter in superclass method com.namelessmc.java_api.logger.ApiLogger.log(java.lang.String) is @Nullable
+    public void log(final String string) {
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ngt-pre/src/src/main/java/com/namelessmc/java_api/LanguageCodeMap.java:37: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return NAMELESS_TO_POSIX.get(language);
+        ^
+    (see http://t.uber.com/nullaway )
+21 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 646ms
+21

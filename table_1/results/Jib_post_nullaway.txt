@@ -222,5 +222,5 @@
     cache.addLayerToMetadata(cachedLayer, null);
                                           ^
     (see http://t.uber.com/nullaway )
-56 warnings
-0
+56 errors
+56

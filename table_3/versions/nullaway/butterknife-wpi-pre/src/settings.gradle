@@ -1,0 +1,3 @@
+rootProject.name = 'annotator-run'
+
+include 'butterknife-annotations'

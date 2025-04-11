@@ -1,0 +1,23 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_csv-ann-pre/src/src/main/java/org/spacious_team/table_wrapper/csv/CsvTableHelper.java:56: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+                return null;
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_csv-ann-pre/src/src/main/java/org/spacious_team/table_wrapper/csv/CsvCellDataAccessObject.java:41: error: [NullAway] dereferenced expression row.getCell(cellIndex) is @Nullable
+        return row.getCell(cellIndex).getRowAndIndex();
+                                     ^
+    (see http://t.uber.com/nullaway )
+2 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 815ms
+2

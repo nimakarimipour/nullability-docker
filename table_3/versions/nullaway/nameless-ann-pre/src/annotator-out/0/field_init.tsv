@@ -1,0 +1,4 @@
+kind	class	method	param	index	uri	field
+METHOD	com.namelessmc.java_api.NamelessUser	getId()	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ann-pre/src/src/main/java/com/namelessmc/java_api/NamelessUser.java	id
+METHOD	com.namelessmc.java_api.FilteredUserListBuilder	all()	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ann-pre/src/src/main/java/com/namelessmc/java_api/FilteredUserListBuilder.java	operator
+METHOD	com.namelessmc.java_api.FilteredUserListBuilder	any()	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/nameless-ann-pre/src/src/main/java/com/namelessmc/java_api/FilteredUserListBuilder.java	operator

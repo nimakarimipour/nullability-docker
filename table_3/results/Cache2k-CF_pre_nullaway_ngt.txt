@@ -1,0 +1,487 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:82: error: [NullAway] @NonNull field name not initialized
+    private String name;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:86: error: [NullAway] @NonNull field keyType not initialized
+    private CacheType<K> keyType;
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:88: error: [NullAway] @NonNull field valueType not initialized
+    private CacheType<V> valueType;
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:124: error: [NullAway] @NonNull field loaderExecutor not initialized
+    private CustomizationSupplier<? extends Executor> loaderExecutor;
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:126: error: [NullAway] @NonNull field refreshExecutor not initialized
+    private CustomizationSupplier<? extends Executor> refreshExecutor;
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:128: error: [NullAway] @NonNull field asyncListenerExecutor not initialized
+    private CustomizationSupplier<? extends Executor> asyncListenerExecutor;
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:130: error: [NullAway] @NonNull field executor not initialized
+    private CustomizationSupplier<? extends Executor> executor;
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:132: error: [NullAway] @NonNull field expiryPolicy not initialized
+    private CustomizationSupplier<? extends ExpiryPolicy<K, V>> expiryPolicy;
+                                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:134: error: [NullAway] @NonNull field resiliencePolicy not initialized
+    private CustomizationSupplier<? extends ResiliencePolicy<K, V>> resiliencePolicy;
+                                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:136: error: [NullAway] @NonNull field loader not initialized
+    private CustomizationSupplier<? extends CacheLoader<K, V>> loader;
+                                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:138: error: [NullAway] @NonNull field writer not initialized
+    private CustomizationSupplier<? extends CacheWriter<K, V>> writer;
+                                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:140: error: [NullAway] @NonNull field advancedLoader not initialized
+    private CustomizationSupplier<? extends AdvancedCacheLoader<K, V>> advancedLoader;
+                                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:142: error: [NullAway] @NonNull field asyncLoader not initialized
+    private CustomizationSupplier<? extends AsyncCacheLoader<K, V>> asyncLoader;
+                                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:144: error: [NullAway] @NonNull field exceptionPropagator not initialized
+    private CustomizationSupplier<? extends ExceptionPropagator<K>> exceptionPropagator;
+                                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:146: error: [NullAway] @NonNull field weigher not initialized
+    private CustomizationSupplier<? extends Weigher<K, V>> weigher;
+                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:260: error: [NullAway] assigning @Nullable expression to @NonNull field
+            valueType = null;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:279: error: [NullAway] assigning @Nullable expression to @NonNull field
+            valueType = null;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:376: error: [NullAway] method returns @Nullable, but superclass method org.cache2k.config.ConfigWithSections.getSections() returns @NonNull
+    public SectionContainer getSections() {
+                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:389: error: [NullAway] dereferenced expression getSections() is @Nullable
+        getSections().addAll(c);
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:504: error: [NullAway] dereferenced expression getListeners() is @Nullable
+        getListeners().addAll(c);
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:535: error: [NullAway] dereferenced expression getAsyncListeners() is @Nullable
+        getAsyncListeners().addAll(c);
+                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:566: error: [NullAway] dereferenced expression getLifecycleListeners() is @Nullable
+        getLifecycleListeners().addAll(c);
+                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:583: error: [NullAway] dereferenced expression getFeatures() is @Nullable
+        getFeatures().addAll(v);
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/Cache2kConfig.java:726: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:102: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        return new Cache2kBuilder(null, null);
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:102: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        return new Cache2kBuilder(null, null);
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:219: error: [NullAway] dereferenced expression me.cfg() is @Nullable
+        me.cfg().setKeyType(CacheType.of(t));
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:231: error: [NullAway] dereferenced expression me.cfg() is @Nullable
+        me.cfg().setValueType(CacheType.of(t));
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:244: error: [NullAway] dereferenced expression me.cfg() is @Nullable
+        me.cfg().setKeyType(t);
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:256: error: [NullAway] dereferenced expression me.cfg() is @Nullable
+        me.cfg().setValueType(t);
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:278: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setName(uniqueName + '~' + clazz.getName() + "." + fieldName);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:294: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setName(clazz.getName() + "." + fieldName);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:306: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setName(clazz.getName());
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:338: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setName(v);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:350: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setKeepDataAfterExpired(v);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:365: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setEntryCapacity(v);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:384: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setEternal(v);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:410: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setExpireAfterWrite(toDuration(v, u));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:419: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setTimerLag(toDuration(v, u));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:436: error: [NullAway] parameter newInfo is @NonNull, but parameter in superclass method org.cache2k.io.ExceptionPropagator.propagateException(org.cache2k.io.LoadExceptionInfo<K>) is @Nullable
+            public RuntimeException propagateException(LoadExceptionInfo<K> newInfo) {
+                                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:481: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setExceptionPropagator(wrapCustomizationInstance(ep));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:498: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.io.AsyncCacheLoader.load(K,org.cache2k.io.AsyncCacheLoader.Context<K,V>,org.cache2k.io.AsyncCacheLoader.Callback<V>) is @Nullable
+            public void load(K key, Context<K, V> context, Callback<V> callback) throws Exception {
+                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:529: error: [NullAway] parameter value is @NonNull, but parameter in superclass method org.cache2k.integration.AsyncCacheLoader.Callback.onLoadSuccess(V) is @Nullable
+                    public void onLoadSuccess(V value) {
+                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:534: error: [NullAway] parameter t is @NonNull, but parameter in superclass method org.cache2k.integration.AsyncCacheLoader.Callback.onLoadFailure(java.lang.Throwable) is @Nullable
+                    public void onLoadFailure(Throwable t) {
+                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:552: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setLoader(wrapCustomizationInstance(l));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:563: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setAdvancedLoader(wrapCustomizationInstance(l));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:575: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setAsyncLoader(wrapCustomizationInstance(l));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:585: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setAdvancedLoader((CustomizationSupplier<AdvancedCacheLoader<K, V>>) (Object) wrapCustomizationInstance(l));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:595: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setAdvancedLoader((CustomizationSupplier<AdvancedCacheLoader<K, V>>) (Object) wrapCustomizationInstance(l));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:604: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setWriter(wrapCustomizationInstance(w));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:613: error: [NullAway] dereferenced expression cfg().getLifecycleListeners() is @Nullable
+        cfg().getLifecycleListeners().add(wrapCustomizationInstance(listener));
+                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:613: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().getLifecycleListeners().add(wrapCustomizationInstance(listener));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:626: error: [NullAway] dereferenced expression cfg().getListeners() is @Nullable
+        cfg().getListeners().add(wrapCustomizationInstance(listener));
+                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:626: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().getListeners().add(wrapCustomizationInstance(listener));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:638: error: [NullAway] dereferenced expression cfg().getAsyncListeners() is @Nullable
+        cfg().getAsyncListeners().add(wrapCustomizationInstance(listener));
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:638: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().getAsyncListeners().add(wrapCustomizationInstance(listener));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:650: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setExpiryPolicy(wrapCustomizationInstance(c));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:676: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setRefreshAhead(f);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:688: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setSharpExpiry(f);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:704: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setLoaderThreadCount(v);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:719: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setStoreByReference(v);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:729: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setResiliencePolicy(wrapCustomizationInstance(v));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:734: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setResiliencePolicy(v);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:745: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setStrictEviction(flag);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:761: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setPermitNullValues(flag);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:771: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setDisableStatistics(flag);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:782: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setRecordModificationTime(flag);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:795: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setBoostConcurrency(f);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:806: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setDisableMonitoring(f);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:817: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setLoaderExecutor(new CustomizationReferenceSupplier<Executor>(v));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:833: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setRefreshExecutor(new CustomizationReferenceSupplier<Executor>(v));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:843: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setExecutor(new CustomizationReferenceSupplier<Executor>(v));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:854: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setAsyncListenerExecutor(new CustomizationReferenceSupplier<Executor>(v));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:864: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setWeigher(new CustomizationReferenceSupplier<Weigher<K, V>>(v));
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:879: error: [NullAway] dereferenced expression cfg() is @Nullable
+        cfg().setMaximumWeight(v);
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:916: error: [NullAway] dereferenced expression cfg().getSections() is @Nullable
+        CFG section = cfg().getSections().getSection(configSectionClass);
+                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:916: error: [NullAway] dereferenced expression cfg() is @Nullable
+        CFG section = cfg().getSections().getSection(configSectionClass);
+                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/Cache2kBuilder.java:1000: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return cfg();
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/io/ResiliencePolicy.java:59: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        b.config().setResiliencePolicy(null);
+                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/SectionContainer.java:65: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return sectionType.cast(section);
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/ToggleFeature.java:49: error: [NullAway] dereferenced expression builder.config().getFeatures() is @Nullable
+            builder.config().getFeatures().add(feature);
+                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/ToggleFeature.java:60: error: [NullAway] dereferenced expression builder.config().getFeatures() is @Nullable
+        Iterator<Feature> it = builder.config().getFeatures().iterator();
+                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/ToggleFeature.java:73: error: [NullAway] dereferenced expression builder.config().getFeatures() is @Nullable
+        Iterator<Feature> it = builder.config().getFeatures().iterator();
+                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/ToggleFeature.java:98: error: [NullAway] parameter ctx is @NonNull, but parameter in superclass method org.cache2k.config.Feature.enlist(org.cache2k.config.CacheBuildContext<?,?>) is @Nullable
+    public final void enlist(CacheBuildContext<?, ?> ctx) {
+                                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/CustomizationSupplierByClassName.java:78: error: [NullAway] method returns @Nullable, but superclass method org.cache2k.config.CustomizationSupplier.supply(org.cache2k.config.CacheBuildContext<?,?>) returns @NonNull
+    public T supply(CacheBuildContext<?, ?> ctx) {
+             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/DefaultCustomizationCollection.java:57: error: [NullAway] parameter entry is @NonNull, but parameter in superclass method org.cache2k.config.CustomizationCollection.add(org.cache2k.config.CustomizationSupplier<T>) is @Nullable
+    public boolean add(final CustomizationSupplier<T> entry) {
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/CacheTypeCapture.java:99: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/CacheTypeCapture.java:104: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/config/CacheTypeCapture.java:109: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:51: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.get(K) is @Nullable
+    public V get(K key) {
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:56: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.getEntry(K) is @Nullable
+    public CacheEntry<K, V> getEntry(K key) {
+                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:61: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.peek(K) is @Nullable
+    public V peek(K key) {
+                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:66: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.peekEntry(K) is @Nullable
+    public CacheEntry<K, V> peekEntry(K key) {
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:71: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.containsKey(K) is @Nullable
+    public boolean containsKey(K key) {
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:76: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.put(K,V) is @Nullable
+    public void put(K key, V value) {
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:81: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.computeIfAbsent(K,java.util.concurrent.Callable<V>) is @Nullable
+    public V computeIfAbsent(K key, Callable<V> callable) {
+                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:86: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.putIfAbsent(K,V) is @Nullable
+    public boolean putIfAbsent(K key, V value) {
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:91: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.peekAndReplace(K,V) is @Nullable
+    public V peekAndReplace(K key, V value) {
+                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:96: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.replace(K,V) is @Nullable
+    public boolean replace(K key, V value) {
+                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:101: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.replaceIfEquals(K,V,V) is @Nullable
+    public boolean replaceIfEquals(K key, V oldValue, V newValue) {
+                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:106: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.peekAndRemove(K) is @Nullable
+    public V peekAndRemove(K key) {
+                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:111: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.containsAndRemove(K) is @Nullable
+    public boolean containsAndRemove(K key) {
+                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:116: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.remove(K) is @Nullable
+    public void remove(K key) {
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:121: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.removeIfEquals(K,V) is @Nullable
+    public boolean removeIfEquals(K key, V expectedValue) {
+                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:126: error: [NullAway] parameter keys is @NonNull, but parameter in superclass method org.cache2k.Cache.removeAll(java.lang.Iterable<? extends K>) is @Nullable
+    public void removeAll(Iterable<? extends K> keys) {
+                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:131: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.peekAndPut(K,V) is @Nullable
+    public V peekAndPut(K key, V value) {
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:136: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.expireAt(K,long) is @Nullable
+    public void expireAt(K key, long millis) {
+                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:141: error: [NullAway] parameter keys is @NonNull, but parameter in superclass method org.cache2k.Cache.loadAll(java.lang.Iterable<? extends K>,org.cache2k.CacheOperationCompletionListener) is @Nullable
+    public void loadAll(Iterable<? extends K> keys, CacheOperationCompletionListener listener) {
+                                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:146: error: [NullAway] parameter keys is @NonNull, but parameter in superclass method org.cache2k.Cache.reloadAll(java.lang.Iterable<? extends K>,org.cache2k.CacheOperationCompletionListener) is @Nullable
+    public void reloadAll(Iterable<? extends K> keys, CacheOperationCompletionListener listener) {
+                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:151: error: [NullAway] parameter keys is @NonNull, but parameter in superclass method org.cache2k.Cache.loadAll(java.lang.Iterable<? extends K>) is @Nullable
+    public CompletableFuture<Void> loadAll(Iterable<? extends K> keys) {
+                                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:156: error: [NullAway] parameter keys is @NonNull, but parameter in superclass method org.cache2k.Cache.reloadAll(java.lang.Iterable<? extends K>) is @Nullable
+    public CompletableFuture<Void> reloadAll(Iterable<? extends K> keys) {
+                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:161: error: [NullAway] parameter key is @NonNull, but parameter in superclass method org.cache2k.Cache.<R>invoke(K,org.cache2k.processor.EntryProcessor<K,V,R>) is @Nullable
+    public <R> R invoke(K key, EntryProcessor<K, V, R> processor) {
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:171: error: [NullAway] parameter keys is @NonNull, but parameter in superclass method org.cache2k.Cache.<R>invokeAll(java.lang.Iterable<? extends K>,org.cache2k.processor.EntryProcessor<K,V,R>) is @Nullable
+    public <R> Map<K, EntryProcessingResult<R>> invokeAll(Iterable<? extends K> keys, EntryProcessor<K, V, R> entryProcessor) {
+                                                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:181: error: [NullAway] parameter keys is @NonNull, but parameter in superclass method org.cache2k.Cache.getAll(java.lang.Iterable<? extends K>) is @Nullable
+    public Map<K, V> getAll(Iterable<? extends K> keys) {
+                                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:186: error: [NullAway] parameter keys is @NonNull, but parameter in superclass method org.cache2k.Cache.peekAll(java.lang.Iterable<? extends K>) is @Nullable
+    public Map<K, V> peekAll(Iterable<? extends K> keys) {
+                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:191: error: [NullAway] parameter valueMap is @NonNull, but parameter in superclass method org.cache2k.Cache.putAll(java.util.Map<? extends K,? extends V>) is @Nullable
+    public void putAll(Map<? extends K, ? extends V> valueMap) {
+                                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_cf-ngt-pre/src/src/main/java/org/cache2k/ForwardingCache.java:231: error: [NullAway] parameter type is @NonNull, but parameter in superclass method org.cache2k.Cache.<T>requestInterface(java.lang.Class<T>) is @Nullable
+    public <X> X requestInterface(Class<X> type) {
+                                           ^
+    (see http://t.uber.com/nullaway )
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+117 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 683ms
+117

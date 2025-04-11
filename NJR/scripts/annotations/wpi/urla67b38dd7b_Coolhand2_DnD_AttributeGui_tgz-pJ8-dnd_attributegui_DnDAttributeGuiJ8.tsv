@@ -1,3 +1,0 @@
-kind	class	method	param	index	uri
-METHOD	dnd.attributegui.Character	getAttributes()	null	null	/home/nima/Developer/NJR-ANNOTATED-RUN/wpi/urla67b38dd7b_Coolhand2_DnD_AttributeGui_tgz-pJ8-dnd_attributegui_DnDAttributeGuiJ8/src/dnd/attributegui/Character.java
-PARAMETER	dnd.attributegui.ui.ResultPanel	updateValues(int[])	attributes	0	/home/nima/Developer/NJR-ANNOTATED-RUN/wpi/urla67b38dd7b_Coolhand2_DnD_AttributeGui_tgz-pJ8-dnd_attributegui_DnDAttributeGuiJ8/src/dnd/attributegui/ui/ResultPanel.java

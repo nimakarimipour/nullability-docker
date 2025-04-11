@@ -1,0 +1,39 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_csv-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/csv/CsvTableHelper.java:50: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+                return null;
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_csv-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/csv/CsvTableRow.java:44: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_csv-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/csv/DateTimeFormatParser.java:30: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return (dateTime.length() == 10) ? getForDate(dateTime) : null;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_csv-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/csv/DateTimeFormatParser.java:90: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_csv-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/csv/DateTimeFormatParser.java:115: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_csv-wpi-pre/src/src/main/java/org/spacious_team/table_wrapper/csv/CsvCellDataAccessObject.java:59: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return CsvCellDataAccessObject.dateTimeFormatter;
+        ^
+    (see http://t.uber.com/nullaway )
+6 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 673ms
+6

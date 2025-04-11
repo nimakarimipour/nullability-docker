@@ -1,0 +1,43 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-post/src/src/main/java/de/zuellich/meal_planner/controller/PinterestExplorer.java:78: error: [NullAway] dereferenced expression e.getCause() is @Nullable
+                    System.out.println("!! Error downloading pin: " + e.getCause().getMessage());
+                                                                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-post/src/src/main/java/de/zuellich/meal_planner/algorithms/schema_org/SchemaOrgRecipeScanner.java:19: error: [NullAway] parameter source is @NonNull, but parameter in superclass method de.zuellich.meal_planner.algorithms.RecipeScanner.parse(java.lang.String) is @Nullable
+    public Recipe parse(String source) {
+                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-post/src/src/main/java/de/zuellich/meal_planner/algorithms/schema_org/SchemaOrgQuirksModeFormatDetector.java:23: error: [NullAway] parameter source is @NonNull, but parameter in superclass method de.zuellich.meal_planner.algorithms.FormatDetector.isSupported(java.lang.String) is @Nullable
+    public boolean isSupported(String source) {
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-post/src/src/main/java/de/zuellich/meal_planner/algorithms/schema_org/SchemaOrgFormatDetector.java:27: error: [NullAway] parameter htmlSource is @NonNull, but parameter in superclass method de.zuellich.meal_planner.algorithms.FormatDetector.isSupported(java.lang.String) is @Nullable
+    public boolean isSupported(String htmlSource) {
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-post/src/src/main/java/de/zuellich/meal_planner/pinterest/services/BoardService.java:50: error: [NullAway] parameter boardId is @NonNull, but parameter in superclass method de.zuellich.meal_planner.pinterest.services.IBoardService.getPins(java.lang.String) is @Nullable
+    public List<Pin> getPins(String boardId) {
+                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-post/src/src/main/java/de/zuellich/meal_planner/pinterest/services/BoardService.java:72: error: [NullAway] parameter boardId is @NonNull, but parameter in superclass method de.zuellich.meal_planner.pinterest.services.IBoardService.getBoardListing(java.lang.String) is @Nullable
+    public BoardListing getBoardListing(String boardId) {
+                                               ^
+    (see http://t.uber.com/nullaway )
+Note: /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-post/src/src/main/java/de/zuellich/meal_planner/config/WebConfig.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-post/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Pin.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+6 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 766ms
+6

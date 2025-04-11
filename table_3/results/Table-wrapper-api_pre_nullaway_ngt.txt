@@ -1,0 +1,137 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:126: error: [NullAway] initializer method does not guarantee @NonNull field row (line 39) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public MutableTableRow(final Table table, final CellDataAccessObject<?, T> dao) {
+           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:41: error: [NullAway] parameter column is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableRow.getCell(org.spacious_team.table_wrapper.api.TableColumnDescription) is @Nullable
+    public TableCell getCell(TableColumnDescription column) {
+                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:46: error: [NullAway] parameter i is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.ReportPageRow.getCell(int) is @Nullable
+    public TableCell getCell(int i) {
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:66: error: [NullAway] parameter expected is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.ReportPageRow.rowContains(java.lang.Object) is @Nullable
+    public boolean rowContains(Object expected) {
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:75: error: [NullAway] parameter column is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableRow.getCellValue(org.spacious_team.table_wrapper.api.TableColumnDescription) is @Nullable
+    public Object getCellValue(TableColumnDescription column) {
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:76: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return dao.getValue(row, getCellIndex(column));
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:79: error: [NullAway] parameter column is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableRow.getIntCellValue(org.spacious_team.table_wrapper.api.TableColumnDescription) is @Nullable
+    public int getIntCellValue(TableColumnDescription column) {
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:83: error: [NullAway] parameter column is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableRow.getLongCellValue(org.spacious_team.table_wrapper.api.TableColumnDescription) is @Nullable
+    public long getLongCellValue(TableColumnDescription column) {
+                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:87: error: [NullAway] parameter column is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableRow.getDoubleCellValue(org.spacious_team.table_wrapper.api.TableColumnDescription) is @Nullable
+    public double getDoubleCellValue(TableColumnDescription column) {
+                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:91: error: [NullAway] parameter column is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableRow.getBigDecimalCellValue(org.spacious_team.table_wrapper.api.TableColumnDescription) is @Nullable
+    public BigDecimal getBigDecimalCellValue(TableColumnDescription column) {
+                                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:95: error: [NullAway] parameter column is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableRow.getStringCellValue(org.spacious_team.table_wrapper.api.TableColumnDescription) is @Nullable
+    public String getStringCellValue(TableColumnDescription column) {
+                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:99: error: [NullAway] parameter column is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableRow.getInstantCellValue(org.spacious_team.table_wrapper.api.TableColumnDescription) is @Nullable
+    public Instant getInstantCellValue(TableColumnDescription column) {
+                                                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:103: error: [NullAway] parameter column is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableRow.getLocalDateTimeCellValue(org.spacious_team.table_wrapper.api.TableColumnDescription) is @Nullable
+    public LocalDateTime getLocalDateTimeCellValue(TableColumnDescription column) {
+                                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:108: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return table.getHeaderDescription().get(column.getColumn());
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:101: error: [NullAway] dereferenced expression reportPage.getCell(tableNameCell) is @Nullable
+                    tableName = reportPage.getCell(tableNameCell).getStringValue();
+                                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableFactory.java:124: error: [NullAway] dereferenced expression reportPage.getCell(tableNameCell) is @Nullable
+                    tableName = reportPage.getCell(tableNameCell).getStringValue();
+                                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/AnyOfTableColumn.java:32: error: [NullAway] parameter firstColumnForSearch is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableColumn.getColumnIndex(int,org.spacious_team.table_wrapper.api.ReportPageRow...) is @Nullable
+    public int getColumnIndex(int firstColumnForSearch, ReportPageRow... headerRows) {
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/RelativePositionTableColumn.java:28: error: [NullAway] parameter firstColumnForSearch is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableColumn.getColumnIndex(int,org.spacious_team.table_wrapper.api.ReportPageRow...) is @Nullable
+    public int getColumnIndex(int firstColumnForSearch, ReportPageRow... headerRows) {
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/TableColumnImpl.java:39: error: [NullAway] parameter firstColumnForSearch is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableColumn.getColumnIndex(int,org.spacious_team.table_wrapper.api.ReportPageRow...) is @Nullable
+    public int getColumnIndex(int firstColumnForSearch, ReportPageRow... headerRows) {
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTableFactory.java:30: error: [NullAway] parameter reportPage is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableFactory.canHandle(org.spacious_team.table_wrapper.api.ReportPage) is @Nullable
+    public boolean canHandle(ReportPage reportPage) {
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:36: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:41: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/EmptyTableRow.java:66: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:106: error: [NullAway] parameter report is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.Table.<T>getData(java.lang.Object,java.util.function.Function<org.spacious_team.table_wrapper.api.TableRow,T>) is @Nullable
+    public <T> List<T> getData(Object report, Function<TableRow, T> rowExtractor) {
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:115: error: [NullAway] parameter report is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.Table.<T>getDataCollection(java.lang.Object,java.util.function.Function<org.spacious_team.table_wrapper.api.TableRow,java.util.Collection<T>>) is @Nullable
+    public <T> List<T> getDataCollection(Object report, Function<TableRow, Collection<T>> rowExtractor) {
+                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:124: error: [NullAway] parameter report is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.Table.<T>getDataCollection(java.lang.Object,java.util.function.Function<org.spacious_team.table_wrapper.api.TableRow,java.util.Collection<T>>,java.util.function.BiPredicate<T,T>,java.util.function.BiFunction<T,T,java.util.Collection<T>>) is @Nullable
+    public <T> List<T> getDataCollection(Object report, Function<TableRow, Collection<T>> rowExtractor, BiPredicate<T, T> equalityChecker, BiFunction<T, T, Collection<T>> mergeDuplicates) {
+                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:216: error: [NullAway] parameter i is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.Table.getRow(int) is @Nullable
+    public R getRow(int i) {
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:223: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return getMutableTableRow(address);
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/AbstractTable.java:229: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return getMutableTableRow(address);
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ngt-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MultiLineTableColumn.java:51: error: [NullAway] parameter firstColumnForSearch is @NonNull, but parameter in superclass method org.spacious_team.table_wrapper.api.TableColumn.getColumnIndex(int,org.spacious_team.table_wrapper.api.ReportPageRow...) is @Nullable
+    public int getColumnIndex(int firstColumnForSearch, ReportPageRow... headerRows) {
+                                  ^
+    (see http://t.uber.com/nullaway )
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+30 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 952ms
+30
