@@ -29,10 +29,12 @@ def append_count_of_nullaway_errors(path):
                 
 
 for benchmark in names.keys():
-    print(names[benchmark]) # Print the value
+    print(f"Running NullAway on benchmark: {names[benchmark]}")
     # pre
+    print("Running on PreV version")
     os.system("cd versions/nullaway/{}-pre/src && ./gradlew build -x test --rerun-tasks 2> /opt/table_1/results/{}_pre_nullaway.txt".format(benchmark, names[benchmark]))
     append_count_of_nullaway_errors("/opt/table_1/results/{}_pre_nullaway.txt".format(names[benchmark]))
     # post
+    print("Running on PostV version")
     os.system("cd versions/nullaway/{}-post/src && ./gradlew build -x test --rerun-tasks 2> /opt/table_1/results/{}_post_nullaway.txt".format(benchmark, names[benchmark]))
     append_count_of_nullaway_errors("/opt/table_1/results/{}_post_nullaway.txt".format(names[benchmark]))

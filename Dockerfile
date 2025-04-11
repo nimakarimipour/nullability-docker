@@ -3,8 +3,7 @@ FROM openjdk:11
 LABEL maintainer="Nima Karimipour <karimipour.nima@gmail.com>"
 
 # Install basic software support
-RUN apt-get update && \
-    apt-get install --yes software-properties-common
+RUN apt-get update && apt-get install --yes software-properties-common
 
 ENV JAVA_HOME=/usr/local/openjdk-11
 RUN export JAVA_HOME
@@ -14,6 +13,7 @@ RUN apt-get install curl -y
 RUN apt-get install zip -y
 RUN apt-get install wget -y
 RUN apt-get install cloc -y
+RUN apt-get install -y psmisc && rm -rf /var/lib/apt/lists/*
 
 # Install Maven
 ARG MAVEN_VERSION=3.9.9
@@ -39,7 +39,7 @@ ENV MAVEN_HOME=/usr/share/maven
 ENV MAVEN_CONFIG="$USER_HOME_DIR/.m2"
 
 # Install Python 3 and pip
-RUN apt-get install -y python3 python3-pip
+RUN apt-get update && apt-get install -y python3 python3-pip
 RUN ln -sf /usr/bin/python3 /usr/bin/python
 
 # Install git

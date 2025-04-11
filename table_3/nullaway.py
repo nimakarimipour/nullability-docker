@@ -14,8 +14,7 @@ names = {
     "table_csv" : "Table-wrapper-csv-impl",
 }
 
-# OUTPUT_DIR = "/opt/table_3/results"
-OUTPUT_DIR = "/home/nima/Desktop/nullability-docker/table_3/results"
+OUTPUT_DIR = "/opt/table_3/results"
 
 def append_count_of_nullaway_errors(path):
     # start from last line stop at line with format regex "X errors" and extract the number
@@ -34,11 +33,13 @@ def append_count_of_nullaway_errors(path):
                 
 
 for benchmark in names.keys():
-    print(names[benchmark]) # Print the value
     for tool in ["ann", "wpi", "ngt"]:
+        print(f"Running NullAway on benchmark: {names[benchmark]} with tool: {tool.upper()}")
         # pre
+        print("Running on PreV version")
         os.system(f"cd versions/nullaway/{benchmark}-{tool}-pre/src && ./gradlew build -x test --rerun-tasks 2> {OUTPUT_DIR}/{names[benchmark]}_pre_nullaway_{tool}.txt")
         append_count_of_nullaway_errors(f"{OUTPUT_DIR}/{names[benchmark]}_pre_nullaway_{tool}.txt")
         # post
+        print("Running on PostV version")
         os.system(f"cd versions/nullaway/{benchmark}-{tool}-post/src && ./gradlew build -x test --rerun-tasks 2> {OUTPUT_DIR}/{names[benchmark]}_post_nullaway_{tool}.txt")
         append_count_of_nullaway_errors(f"{OUTPUT_DIR}/{names[benchmark]}_post_nullaway_{tool}.txt")
