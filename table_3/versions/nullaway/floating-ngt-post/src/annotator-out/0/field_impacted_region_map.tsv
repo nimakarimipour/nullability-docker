@@ -330,6 +330,8 @@ com.leinardi.android.speeddial.FabWithLabelView	setSpeedDialActionItem(com.leina
 com.leinardi.android.speeddial.FabWithLabelView	setOnActionSelectedListener(com.leinardi.android.speeddial.SpeedDialView.OnActionSelectedListener)	mOnActionSelectedListener	com.leinardi.android.speeddial.FabWithLabelView	SOURCE
 com.leinardi.android.speeddial.FabWithLabelView	setOnActionSelectedListener(com.leinardi.android.speeddial.SpeedDialView.OnActionSelectedListener)	mOnActionSelectedListener	com.leinardi.android.speeddial.FabWithLabelView	SOURCE
 com.leinardi.android.speeddial.FabWithLabelView$1	onClick(android.view.View)	mOnActionSelectedListener	com.leinardi.android.speeddial.FabWithLabelView	SOURCE
+com.leinardi.android.speeddial.FabWithLabelView$1	onClick(android.view.View)	mOnActionSelectedListener	com.leinardi.android.speeddial.FabWithLabelView	SOURCE
+com.leinardi.android.speeddial.FabWithLabelView$2	onClick(android.view.View)	mOnActionSelectedListener	com.leinardi.android.speeddial.FabWithLabelView	SOURCE
 com.leinardi.android.speeddial.FabWithLabelView$2	onClick(android.view.View)	mOnActionSelectedListener	com.leinardi.android.speeddial.FabWithLabelView	SOURCE
 com.leinardi.android.speeddial.FabWithLabelView	init(android.content.Context,android.util.AttributeSet)	sd_fab_with_label_view	com.leinardi.android.speeddial.R$layout	SOURCE
 com.leinardi.android.speeddial.FabWithLabelView	init(android.content.Context,android.util.AttributeSet)	this	com.leinardi.android.speeddial.FabWithLabelView	SOURCE
