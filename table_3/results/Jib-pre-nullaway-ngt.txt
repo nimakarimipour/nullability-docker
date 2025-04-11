@@ -1,0 +1,363 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/ManifestPuller.java:57: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/ManifestPuller.java:78: error: [NullAway] parameter response is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.handleResponse(com.google.cloud.tools.jib.http.Response) is @Nullable
+    public T handleResponse(Response response) throws IOException, UnknownManifestFormatException {
+                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/ManifestPuller.java:83: error: [NullAway] parameter apiRouteBase is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.getApiRoute(java.lang.String) is @Nullable
+    public URL getApiRoute(String apiRouteBase) throws MalformedURLException {
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/ManifestPusher.java:62: error: [NullAway] parameter apiRouteBase is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.getApiRoute(java.lang.String) is @Nullable
+    public URL getApiRoute(String apiRouteBase) throws MalformedURLException {
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/BuildableManifestTemplate.java:57: error: [NullAway] initializer method does not guarantee @NonNull fields mediaType (line 42), digest (line 44) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+        private ContentDescriptorTemplate() {
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/AuthenticationMethodRetriever.java:38: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/AuthenticationMethodRetriever.java:49: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/AuthenticationMethodRetriever.java:53: error: [NullAway] parameter apiRouteBase is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.getApiRoute(java.lang.String) is @Nullable
+    public URL getApiRoute(String apiRouteBase) throws MalformedURLException {
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryAuthenticator.java:55: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryAuthenticator.java:86: error: [NullAway] @NonNull field RegistryAuthenticator$AuthenticationResponseTemplate.token not initialized
+        private String token;
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:59: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:72: error: [NullAway] parameter response is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.handleResponse(com.google.cloud.tools.jib.http.Response) is @Nullable
+        public String handleResponse(Response response) throws RegistryErrorException {
+                                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:76: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+                    return null;
+                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:85: error: [NullAway] parameter apiRouteBase is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.getApiRoute(java.lang.String) is @Nullable
+        public URL getApiRoute(String apiRouteBase) throws MalformedURLException {
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:121: error: [NullAway] parameter response is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.handleResponse(com.google.cloud.tools.jib.http.Response) is @Nullable
+        public String handleResponse(Response response) throws RegistryException {
+                                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPusher.java:155: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPuller.java:56: error: [NullAway] method returns @Nullable, but superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.handleResponse(com.google.cloud.tools.jib.http.Response) returns @NonNull
+    public Void handleResponse(Response response) throws IOException, UnexpectedBlobDigestException {
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPuller.java:68: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPuller.java:77: error: [NullAway] parameter apiRouteBase is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.getApiRoute(java.lang.String) is @Nullable
+    public URL getApiRoute(String apiRouteBase) throws MalformedURLException {
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryClient.java:214: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        return callRegistryEndpoint(null, registryEndpointProvider);
+                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/Timer.java:54: error: [NullAway] passing @Nullable parameter 'buildLogger' where @NonNull is required
+        return new Timer(buildLogger, label, depth + 1);
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/Timer.java:82: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        lap(null);
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/json/ErrorEntryTemplate.java:35: error: [NullAway] initializer method does not guarantee @NonNull fields code (line 26), message (line 28) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    private ErrorEntryTemplate() {
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobChecker.java:54: error: [NullAway] parameter response is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.handleResponse(com.google.cloud.tools.jib.http.Response) is @Nullable
+    public BlobDescriptor handleResponse(Response response) throws RegistryErrorException {
+                                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobChecker.java:72: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobChecker.java:80: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+                        return null;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobChecker.java:92: error: [NullAway] parameter apiRouteBase is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.registry.RegistryEndpointProvider.getApiRoute(java.lang.String) is @Nullable
+    public URL getApiRoute(String apiRouteBase) throws MalformedURLException {
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/BlobChecker.java:98: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return null;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryErrorExceptionBuilder.java:70: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        this(method, null);
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryUnauthorizedException.java:52: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return (HttpResponseException) getCause();
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryAuthenticators.java:37: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+            RegistryClient registryClient = new RegistryClient(null, serverUrl, repository);
+                                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerCredentialHelper.java:49: error: [NullAway] @NonNull field DockerCredentialHelper$DockerCredentialsTemplate.Username not initialized
+        private String Username;
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerCredentialHelper.java:51: error: [NullAway] @NonNull field DockerCredentialHelper$DockerCredentialsTemplate.Secret not initialized
+        private String Secret;
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerCredentialHelper.java:103: error: [NullAway] dereferenced expression ex.getMessage() is @Nullable
+            if (ex.getMessage().contains("No such file or directory") || ex.getMessage().contains("cannot find the file")) {
+                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/RegistryCredentials.java:130: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/RegistryCredentials.java:132: error: [NullAway] dereferenced expression credentials.get(registry) is @Nullable
+        return credentials.get(registry).authorization;
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/RegistryCredentials.java:141: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/RegistryCredentials.java:143: error: [NullAway] dereferenced expression credentials.get(registry) is @Nullable
+        return credentials.get(registry).credentialSource;
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/json/DockerConfigTemplate.java:66: error: [NullAway] @NonNull field DockerConfigTemplate$AuthTemplate.auth not initialized
+        private String auth;
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/json/DockerConfigTemplate.java:88: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerConfigCredentialRetriever.java:105: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerConfigCredentialRetriever.java:111: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/Image.java:42: error: [NullAway] @NonNull field entrypoint not initialized
+    private List<String> entrypoint;
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/ImageLayers.java:72: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/OCIManifestTemplate.java:80: error: [NullAway] @NonNull field config not initialized
+    private ContentDescriptorTemplate config;
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/OCIManifestTemplate.java:108: error: [NullAway] parameter size is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.image.json.BuildableManifestTemplate.setContainerConfiguration(long,com.google.cloud.tools.jib.image.DescriptorDigest) is @Nullable
+    public void setContainerConfiguration(long size, DescriptorDigest digest) {
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/OCIManifestTemplate.java:113: error: [NullAway] parameter size is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.image.json.BuildableManifestTemplate.addLayer(long,com.google.cloud.tools.jib.image.DescriptorDigest) is @Nullable
+    public void addLayer(long size, DescriptorDigest digest) {
+                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/V22ManifestTemplate.java:80: error: [NullAway] @NonNull field config not initialized
+    private ContentDescriptorTemplate config;
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/V22ManifestTemplate.java:108: error: [NullAway] parameter size is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.image.json.BuildableManifestTemplate.setContainerConfiguration(long,com.google.cloud.tools.jib.image.DescriptorDigest) is @Nullable
+    public void setContainerConfiguration(long size, DescriptorDigest digest) {
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/V22ManifestTemplate.java:113: error: [NullAway] parameter size is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.image.json.BuildableManifestTemplate.addLayer(long,com.google.cloud.tools.jib.image.DescriptorDigest) is @Nullable
+    public void addLayer(long size, DescriptorDigest digest) {
+                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/V21ManifestTemplate.java:76: error: [NullAway] @NonNull field V21ManifestTemplate$LayerObjectTemplate.blobSum not initialized
+        private DescriptorDigest blobSum;
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/V21ManifestTemplate.java:89: error: [NullAway] @NonNull field V21ManifestTemplate$V1CompatibilityTemplate.v1Compatibility not initialized
+        private String v1Compatibility;
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/ContainerConfigurationTemplate.java:84: error: [NullAway] @NonNull field ContainerConfigurationTemplate$ConfigurationObjectTemplate.Env not initialized
+        private List<String> Env;
+                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/ContainerConfigurationTemplate.java:89: error: [NullAway] @NonNull field ContainerConfigurationTemplate$ConfigurationObjectTemplate.Entrypoint not initialized
+        private List<String> Entrypoint;
+                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/image/LayerBuilder.java:74: error: [NullAway] dereferenced expression sourceFile.getParent() is @Nullable
+                        Path sourceFileRelativePath = sourceFile.getParent().relativize(path);
+                                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/http/Request.java:41: error: [NullAway] @NonNull field Request$Builder.body not initialized
+        private BlobHttpContent body;
+                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/tar/TarStreamBuilder.java:72: error: [NullAway] passing @Nullable parameter 'outputStream' where @NonNull is required
+        return Blobs.from(outputStream -> writeEntriesAsTarArchive(Collections.unmodifiableList(entries), outputStream));
+                                                                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/blob/StringBlob.java:37: error: [NullAway] parameter outputStream is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.blob.Blob.writeTo(java.io.OutputStream) is @Nullable
+    public BlobDescriptor writeTo(OutputStream outputStream) throws IOException {
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/blob/WriterBlob.java:35: error: [NullAway] parameter outputStream is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.blob.Blob.writeTo(java.io.OutputStream) is @Nullable
+    public BlobDescriptor writeTo(OutputStream outputStream) throws IOException {
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/blob/FileBlob.java:38: error: [NullAway] parameter outputStream is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.blob.Blob.writeTo(java.io.OutputStream) is @Nullable
+    public BlobDescriptor writeTo(OutputStream outputStream) throws IOException {
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/blob/InputStreamBlob.java:40: error: [NullAway] parameter outputStream is @NonNull, but parameter in superclass method com.google.cloud.tools.jib.blob.Blob.writeTo(java.io.OutputStream) is @Nullable
+    public BlobDescriptor writeTo(OutputStream outputStream) throws IOException {
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:139: error: [NullAway] passing @Nullable parameter 'baseImageReference' where @NonNull is required
+                    return new BuildConfiguration(buildLogger, baseImageReference, targetImageReference, credentialHelperNames, knownRegistryCredentials, enableReproducibleBuilds, mainClass, jvmFlags, environmentMap, targetFormat);
+                                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:139: error: [NullAway] passing @Nullable parameter 'targetImageReference' where @NonNull is required
+                    return new BuildConfiguration(buildLogger, baseImageReference, targetImageReference, credentialHelperNames, knownRegistryCredentials, enableReproducibleBuilds, mainClass, jvmFlags, environmentMap, targetFormat);
+                                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:139: error: [NullAway] passing @Nullable parameter 'credentialHelperNames' where @NonNull is required
+                    return new BuildConfiguration(buildLogger, baseImageReference, targetImageReference, credentialHelperNames, knownRegistryCredentials, enableReproducibleBuilds, mainClass, jvmFlags, environmentMap, targetFormat);
+                                                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:139: error: [NullAway] passing @Nullable parameter 'knownRegistryCredentials' where @NonNull is required
+                    return new BuildConfiguration(buildLogger, baseImageReference, targetImageReference, credentialHelperNames, knownRegistryCredentials, enableReproducibleBuilds, mainClass, jvmFlags, environmentMap, targetFormat);
+                                                                                                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:139: error: [NullAway] passing @Nullable parameter 'mainClass' where @NonNull is required
+                    return new BuildConfiguration(buildLogger, baseImageReference, targetImageReference, credentialHelperNames, knownRegistryCredentials, enableReproducibleBuilds, mainClass, jvmFlags, environmentMap, targetFormat);
+                                                                                                                                                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:139: error: [NullAway] passing @Nullable parameter 'jvmFlags' where @NonNull is required
+                    return new BuildConfiguration(buildLogger, baseImageReference, targetImageReference, credentialHelperNames, knownRegistryCredentials, enableReproducibleBuilds, mainClass, jvmFlags, environmentMap, targetFormat);
+                                                                                                                                                                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:139: error: [NullAway] passing @Nullable parameter 'environmentMap' where @NonNull is required
+                    return new BuildConfiguration(buildLogger, baseImageReference, targetImageReference, credentialHelperNames, knownRegistryCredentials, enableReproducibleBuilds, mainClass, jvmFlags, environmentMap, targetFormat);
+                                                                                                                                                                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:212: error: [NullAway] dereferenced expression baseImageReference is @Nullable
+        return baseImageReference.getRegistry();
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:216: error: [NullAway] dereferenced expression baseImageReference is @Nullable
+        return baseImageReference.getRepository();
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:220: error: [NullAway] dereferenced expression baseImageReference is @Nullable
+        return baseImageReference.getTag();
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:224: error: [NullAway] dereferenced expression targetImageReference is @Nullable
+        return targetImageReference.getRegistry();
+                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:228: error: [NullAway] dereferenced expression targetImageReference is @Nullable
+        return targetImageReference.getRepository();
+                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:232: error: [NullAway] dereferenced expression targetImageReference is @Nullable
+        return targetImageReference.getTag();
+                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:236: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return knownRegistryCredentials;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:240: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return credentialHelperNames;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:248: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return mainClass;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:252: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return jvmFlags;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:256: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return environmentMap;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/RetrieveRegistryCredentialsStep.java:104: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/builder/RetrieveRegistryCredentialsStep.java:121: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return null;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CacheMetadataTranslator.java:48: error: [NullAway] passing @Nullable parameter 'layerMetadata' where @NonNull is required
+                CachedLayerWithMetadata cachedLayerWithMetadata = new CachedLayerWithMetadata(cachedLayer, layerMetadata);
+                                                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/cache/json/CacheMetadataLayerObjectTemplate.java:39: error: [NullAway] @NonNull field properties not initialized
+    private CacheMetadataLayerPropertiesObjectTemplate properties;
+                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/cache/json/CacheMetadataLayerObjectTemplate.java:50: error: [NullAway] @NonNull field CacheMetadataLayerObjectTemplate$ReferenceObject.digest not initialized
+        private DescriptorDigest digest;
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/cache/json/CacheMetadataLayerObjectTemplate.java:52: error: [NullAway] @NonNull field CacheMetadataLayerObjectTemplate$ReferenceObject.diffId not initialized
+        private DescriptorDigest diffId;
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CacheReader.java:97: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return newestLayerFile;
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ngt-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CacheWriter.java:103: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
+        cache.addLayerToMetadata(cachedLayer, null);
+                                              ^
+    (see http://t.uber.com/nullaway )
+87 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 840ms
+87

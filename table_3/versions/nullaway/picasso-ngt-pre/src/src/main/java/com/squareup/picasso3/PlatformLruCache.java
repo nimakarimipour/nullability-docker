@@ -21,7 +21,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.graphics.BitmapCompat;
 import android.util.LruCache;
 import static com.squareup.picasso3.Request.KEY_SEPARATOR;
-import androidx.annotation.Nullable;
+
 
 /**
  * A memory cache which uses a least-recently used eviction policy.
@@ -43,7 +43,7 @@ final class PlatformLruCache {
         };
     }
 
-    @Nullable()
+    @javax.annotation.Nullable
     public Bitmap get(String key) {
         BitmapAndSize bitmapAndSize = cache.get(key);
         return bitmapAndSize != null ? bitmapAndSize.bitmap : null;
@@ -115,7 +115,7 @@ final class PlatformLruCache {
 
     static final class BitmapAndSize {
 
-        @Nullable
+        @javax.annotation.Nullable
         final Bitmap bitmap;
 
         final int byteCount;

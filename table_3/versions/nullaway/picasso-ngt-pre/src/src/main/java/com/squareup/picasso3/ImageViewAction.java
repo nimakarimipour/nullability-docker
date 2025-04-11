@@ -19,11 +19,11 @@ import android.content.Context;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
-import androidx.annotation.Nullable;
+
 
 class ImageViewAction extends Action<ImageView> {
 
-    @Nullable
+    @javax.annotation.Nullable
     Callback callback;
 
     ImageViewAction(Picasso picasso, Target<ImageView> target, Request data, Callback callback) {

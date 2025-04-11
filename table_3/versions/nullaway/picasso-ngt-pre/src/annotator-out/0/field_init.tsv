@@ -1,4 +1,4 @@
 kind	class	method	param	index	uri	field
-METHOD	com.squareup.picasso3.BitmapHunter	hunt()	null	null	/Users/nima/Developer/annotator-run/src/main/java/com/squareup/picasso3/BitmapHunter.java	data
-METHOD	com.squareup.picasso3.AssetRequestHandler	initializeIfFirstTime()	null	null	/Users/nima/Developer/annotator-run/src/main/java/com/squareup/picasso3/AssetRequestHandler.java	assetManager
-METHOD	com.squareup.picasso3.SourceBufferingInputStream	reset()	null	null	/Users/nima/Developer/annotator-run/src/main/java/com/squareup/picasso3/SourceBufferingInputStream.java	markPosition
+METHOD	com.squareup.picasso3.Picasso$Builder	defaultBitmapConfig(android.graphics.Bitmap.Config)	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java	defaultBitmapConfig
+METHOD	com.squareup.picasso3.BitmapHunter	hunt()	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/BitmapHunter.java	data
+METHOD	com.squareup.picasso3.SourceBufferingInputStream	reset()	null	null	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/SourceBufferingInputStream.java	markPosition

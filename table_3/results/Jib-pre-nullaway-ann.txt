@@ -1,0 +1,63 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ann-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/BuildableManifestTemplate.java:67: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+      return digest;
+      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ann-pre/src/src/main/java/com/google/cloud/tools/jib/registry/json/ErrorEntryTemplate.java:38: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return code;
+    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ann-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/DockerCredentialHelper.java:116: error: [NullAway] dereferenced expression ex.getMessage() is @Nullable
+      if (ex.getMessage().contains("No such file or directory")
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ann-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/RegistryCredentials.java:131: error: [NullAway] dereferenced expression credentials.get(registry) is @Nullable
+    return credentials.get(registry).authorization;
+                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ann-pre/src/src/main/java/com/google/cloud/tools/jib/registry/credentials/RegistryCredentials.java:143: error: [NullAway] dereferenced expression credentials.get(registry) is @Nullable
+    return credentials.get(registry).credentialSource;
+                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ann-pre/src/src/main/java/com/google/cloud/tools/jib/image/json/JsonToImageTranslator.java:82: error: [NullAway] enhanced-for expression containerConfigurationTemplate.getContainerEnvironment() is @Nullable
+    for (String environmentVariable : containerConfigurationTemplate.getContainerEnvironment()) {
+                                                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ann-pre/src/src/main/java/com/google/cloud/tools/jib/image/LayerBuilder.java:71: error: [NullAway] dereferenced expression sourceFile.getParent() is @Nullable
+                    Path sourceFileRelativePath = sourceFile.getParent().relativize(path);
+                                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ann-pre/src/src/main/java/com/google/cloud/tools/jib/builder/BuildConfiguration.java:48: error: [NullAway] initializer method does not guarantee @NonNull fields baseImageReference (line 36), targetImageReference (line 37) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    private Builder(BuildLogger buildLogger) {
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ann-pre/src/src/main/java/com/google/cloud/tools/jib/cache/CachedLayerWithMetadata.java:35: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return metadata;
+    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ann-pre/src/src/main/java/com/google/cloud/tools/jib/builder/PullBaseImageStep.java:69: error: [NullAway] dereferenced expression manifestTemplate is @Nullable
+      switch (manifestTemplate.getSchemaVersion()) {
+                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ann-pre/src/src/main/java/com/google/cloud/tools/jib/builder/PullBaseImageStep.java:79: error: [NullAway] dereferenced expression v22ManifestTemplate.getContainerConfiguration() is @Nullable
+              v22ManifestTemplate.getContainerConfiguration().getDigest(),
+                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-ann-pre/src/src/main/java/com/google/cloud/tools/jib/cache/json/CacheMetadataLayerObjectTemplate.java:55: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+    return reference.digest;
+    ^
+    (see http://t.uber.com/nullaway )
+12 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 852ms
+12

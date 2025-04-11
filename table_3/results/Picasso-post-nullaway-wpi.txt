@@ -1,0 +1,507 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RemoteViewsAction.java:90: error: [NullAway] assigning @Nullable expression to @NonNull field
+            this.remoteViews = remoteViews;
+                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RemoteViewsAction.java:139: error: [NullAway] assigning @Nullable expression to @NonNull field
+            this.notificationTag = notificationTag;
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:124: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.service = service;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:132: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.stats = stats;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:209: error: [NullAway] dereferenced expression action.getPicasso() is @Nullable
+            if (action.getPicasso().loggingEnabled) {
+                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:220: error: [NullAway] dereferenced expression action.getPicasso() is @Nullable
+            if (action.getPicasso().loggingEnabled) {
+                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:231: error: [NullAway] dereferenced expression action.getPicasso() is @Nullable
+        if (action.getPicasso().loggingEnabled) {
+                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:244: error: [NullAway] dereferenced expression action.getPicasso() is @Nullable
+                if (action.getPicasso().loggingEnabled) {
+                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:245: error: [NullAway] dereferenced expression action.getRequest() is @Nullable
+                    log(OWNER_DISPATCHER, VERB_CANCELED, action.getRequest().logId());
+                                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:251: error: [NullAway] dereferenced expression action.getPicasso() is @Nullable
+            if (action.getPicasso().loggingEnabled) {
+                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:252: error: [NullAway] dereferenced expression action.getRequest() is @Nullable
+                log(OWNER_DISPATCHER, VERB_CANCELED, action.getRequest().logId(), "because paused request got canceled");
+                                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:256: error: [NullAway] dereferenced expression remove.getPicasso() is @Nullable
+        if (remove != null && remove.getPicasso().loggingEnabled) {
+                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:257: error: [NullAway] dereferenced expression remove.getRequest() is @Nullable
+            log(OWNER_DISPATCHER, VERB_CANCELED, remove.getRequest().logId(), "from replaying");
+                                                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:271: error: [NullAway] dereferenced expression hunter.getPicasso() is @Nullable
+            boolean loggingEnabled = hunter.getPicasso().loggingEnabled;
+                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:348: error: [NullAway] dereferenced expression hunter.getPicasso() is @Nullable
+            if (hunter.getPicasso().loggingEnabled) {
+                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:405: error: [NullAway] dereferenced expression action.getPicasso() is @Nullable
+                if (action.getPicasso().loggingEnabled) {
+                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:406: error: [NullAway] dereferenced expression action.getRequest() is @Nullable
+                    log(OWNER_DISPATCHER, VERB_REPLAYING, action.getRequest().logId());
+                                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Dispatcher.java:455: error: [NullAway] dereferenced expression picasso is @Nullable
+        if (picasso.loggingEnabled) {
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:164: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.context = context;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:165: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.dispatcher = dispatcher;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:166: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.closeableCache = closeableCache;
+                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:168: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.listener = listener;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:170: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.defaultBitmapConfig = defaultBitmapConfig;
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:188: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.stats = stats;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:218: error: [NullAway] passing @Nullable parameter 'view' where @NonNull is required
+        checkNotNull(view, "view == null");
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:228: error: [NullAway] passing @Nullable parameter 'target' where @NonNull is required
+        checkNotNull(target, "target == null");
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:239: error: [NullAway] passing @Nullable parameter 'remoteViews' where @NonNull is required
+        checkNotNull(remoteViews, "remoteViews == null");
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:252: error: [NullAway] passing @Nullable parameter 'tag' where @NonNull is required
+        checkNotNull(tag, "tag == null");
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:257: error: [NullAway] dereferenced expression tag is @Nullable
+            if (tag.equals(action.getTag())) {
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:265: error: [NullAway] dereferenced expression tag is @Nullable
+            if (tag.equals(deferredRequestCreator.getTag())) {
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:595: error: [NullAway] dereferenced expression hunter.getData() is @Nullable
+        Uri uri = checkNotNull(hunter.getData().uri, "uri == null");
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:648: error: [NullAway] passing @Nullable parameter 'e' where @NonNull is required
+            Exception exception = checkNotNull(e, "e == null");
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:704: error: [NullAway] passing @Nullable parameter 'context' where @NonNull is required
+            checkNotNull(context, "context == null");
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:705: error: [NullAway] dereferenced expression context is @Nullable
+            this.context = context.getApplicationContext();
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:726: error: [NullAway] passing @Nullable parameter 'client' where @NonNull is required
+            checkNotNull(client, "client == null");
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:738: error: [NullAway] passing @Nullable parameter 'factory' where @NonNull is required
+            checkNotNull(factory, "factory == null");
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:750: error: [NullAway] passing @Nullable parameter 'executorService' where @NonNull is required
+            checkNotNull(executorService, "executorService == null");
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:776: error: [NullAway] passing @Nullable parameter 'listener' where @NonNull is required
+            checkNotNull(listener, "listener == null");
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:789: error: [NullAway] passing @Nullable parameter 'transformer' where @NonNull is required
+            checkNotNull(transformer, "transformer == null");
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java:802: error: [NullAway] passing @Nullable parameter 'requestHandler' where @NonNull is required
+            checkNotNull(requestHandler, "requestHandler == null");
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Utils.java:264: error: [NullAway] dereferenced expression data is @Nullable
+        if (data.resourceId != 0 || data.uri == null) {
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Utils.java:292: error: [NullAway] dereferenced expression data is @Nullable
+        if (data.resourceId != 0 || data.uri == null) {
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Utils.java:293: error: [NullAway] dereferenced expression context is @Nullable
+            return context.getResources();
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Utils.java:299: error: [NullAway] dereferenced expression context is @Nullable
+            PackageManager pm = context.getPackageManager();
+                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:79: error: [NullAway] passing @Nullable parameter 'bitmap' where @NonNull is required
+            this(checkNotNull(bitmap, "bitmap == null"), null, loadedFrom, 0);
+                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:84: error: [NullAway] passing @Nullable parameter 'bitmap' where @NonNull is required
+            this(checkNotNull(bitmap, "bitmap == null"), null, loadedFrom, exifRotation);
+                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:94: error: [NullAway] assigning @Nullable expression to @NonNull field
+            this.bitmap = bitmap;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:95: error: [NullAway] assigning @Nullable expression to @NonNull field
+            this.drawable = drawable;
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:180: error: [NullAway] dereferenced expression data is @Nullable
+        final boolean justBounds = data.hasSize();
+                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:201: error: [NullAway] dereferenced expression options is @Nullable
+        calculateInSampleSize(reqWidth, reqHeight, options.outWidth, options.outHeight, options, request);
+                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:206: error: [NullAway] dereferenced expression options is @Nullable
+        options.inSampleSize = getSampleSize(reqWidth, reqHeight, width, height, request);
+               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:252: error: [NullAway] dereferenced expression request is @Nullable
+        boolean isPurgeable = request.purgeable && Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP;
+                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:263: error: [NullAway] passing @Nullable parameter 'options' where @NonNull is required
+                RequestHandler.calculateInSampleSize(request.targetWidth, request.targetHeight, checkNotNull(options, "options == null"), request);
+                                                                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:270: error: [NullAway] passing @Nullable parameter 'options' where @NonNull is required
+                RequestHandler.calculateInSampleSize(request.targetWidth, request.targetHeight, checkNotNull(options, "options == null"), request);
+                                                                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:293: error: [NullAway] dereferenced expression context is @Nullable
+        ImageDecoder.Source imageSource = ImageDecoder.createSource(context.getResources(), request.resourceId);
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:293: error: [NullAway] dereferenced expression request is @Nullable
+        ImageDecoder.Source imageSource = ImageDecoder.createSource(context.getResources(), request.resourceId);
+                                                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:302: error: [NullAway] dereferenced expression request is @Nullable
+            calculateInSampleSize(request.targetWidth, request.targetHeight, checkNotNull(options, "options == null"), request);
+                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:302: error: [NullAway] passing @Nullable parameter 'options' where @NonNull is required
+            calculateInSampleSize(request.targetWidth, request.targetHeight, checkNotNull(options, "options == null"), request);
+                                                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestHandler.java:313: error: [NullAway] dereferenced expression request is @Nullable
+                if (request.hasSize()) {
+                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:59: error: [NullAway] parameter data is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.canHandleRequest(@org.checkerframework.checker.initialization.qual.Initialized,@org.checkerframework.checker.nullness.qual.Nullable com.squareup.picasso3.Request) is @Nullable
+        public boolean canHandleRequest(Request data) {
+                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:63: error: [NullAway] parameter picasso is @NonNull, but parameter in superclass method com.squareup.picasso3.RequestHandler.load(@org.checkerframework.checker.initialization.qual.Initialized,@org.checkerframework.checker.nullness.qual.Nullable com.squareup.picasso3.Picasso,@org.checkerframework.checker.initialization.qual.Initialized,@org.checkerframework.checker.nullness.qual.Nullable com.squareup.picasso3.Request,@org.checkerframework.checker.initialization.qual.Initialized,@org.checkerframework.checker.nullness.qual.NonNull com.squareup.picasso3.RequestHandler.Callback) is @Nullable
+        public void load(Picasso picasso, Request request, Callback callback) {
+                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:101: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.picasso = picasso;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:102: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.dispatcher = dispatcher;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:104: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.stats = stats;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:107: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.data = action.getRequest();
+                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:109: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.requestHandler = requestHandler;
+                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:110: error: [NullAway] dereferenced expression requestHandler is @Nullable
+        this.retryCount = requestHandler.getRetryCount();
+                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:217: error: [NullAway] dereferenced expression result is @Nullable
+            bitmap = result.getBitmap();
+                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:248: error: [NullAway] dereferenced expression actionPriority is @Nullable
+        if (actionPriority.ordinal() > priority.ordinal()) {
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:248: error: [NullAway] dereferenced expression priority is @Nullable
+        if (actionPriority.ordinal() > priority.ordinal()) {
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:288: error: [NullAway] dereferenced expression actionPriority is @Nullable
+                if (actionPriority.ordinal() > newPriority.ordinal()) {
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:288: error: [NullAway] dereferenced expression newPriority is @Nullable
+                if (actionPriority.ordinal() > newPriority.ordinal()) {
+                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:363: error: [NullAway] dereferenced expression data is @Nullable
+        String name = data.getName();
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:373: error: [NullAway] dereferenced expression picasso is @Nullable
+        List<RequestHandler> requestHandlers = picasso.getRequestHandlers();
+                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/BitmapHunter.java:392: error: [NullAway] dereferenced expression picasso is @Nullable
+                if (picasso.loggingEnabled) {
+                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/PicassoDrawable.java:97: error: [NullAway] dereferenced expression context is @Nullable
+        super(context.getResources(), bitmap);
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:83: error: [NullAway] dereferenced expression picasso is @Nullable
+        if (picasso.shutdown) {
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:92: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.picasso = null;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:391: error: [NullAway] passing @Nullable parameter 'additional' where @NonNull is required
+        data.memoryPolicy(policy, additional);
+                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/RequestCreator.java:401: error: [NullAway] passing @Nullable parameter 'additional' where @NonNull is required
+        data.networkPolicy(policy, additional);
+                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Action.java:37: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.picasso = picasso;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Action.java:38: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.request = request;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Action.java:39: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.wrapper = wrapper;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Request.java:170: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.uri = builder.uri;
+                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Request.java:172: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.stableKey = builder.stableKey;
+                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Request.java:190: error: [NullAway] passing @Nullable parameter 'builder.priority' where @NonNull is required
+        this.priority = checkNotNull(builder.priority, "priority == null");
+                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Request.java:196: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.tag = builder.tag;
+                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Request.java:391: error: [NullAway] assigning @Nullable expression to @NonNull field
+            this.config = bitmapConfig;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Request.java:671: error: [NullAway] passing @Nullable parameter 'priority' where @NonNull is required
+            checkNotNull(priority, "priority == null");
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Request.java:686: error: [NullAway] passing @Nullable parameter 'transformation' where @NonNull is required
+            checkNotNull(transformation, "transformation == null");
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Request.java:687: error: [NullAway] dereferenced expression transformation is @Nullable
+            if (transformation.key() == null) {
+                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Request.java:704: error: [NullAway] passing @Nullable parameter 'transformations' where @NonNull is required
+            checkNotNull(transformations, "transformations == null");
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Request.java:705: error: [NullAway] dereferenced expression transformations is @Nullable
+            for (int i = 0, size = transformations.size(); i < size; i++) {
+                                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Target.java:38: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.errorDrawable = null;
+                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Target.java:46: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.errorDrawable = null;
+                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Target.java:62: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.errorDrawable = errorDrawable;
+                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/PicassoExecutorService.java:63: error: [NullAway] dereferenced expression p2 is @Nullable
+            return (p1 == p2 ? hunter.sequence - other.hunter.sequence : p2.ordinal() - p1.ordinal());
+                                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/PicassoExecutorService.java:63: error: [NullAway] dereferenced expression p1 is @Nullable
+            return (p1 == p2 ? hunter.sequence - other.hunter.sequence : p2.ordinal() - p1.ordinal());
+                                                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/ContactsPhotoRequestHandler.java:74: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.context = context;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/ContactsPhotoRequestHandler.java:79: error: [NullAway] dereferenced expression data is @Nullable
+        final Uri uri = data.uri;
+                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/ContactsPhotoRequestHandler.java:87: error: [NullAway] dereferenced expression request is @Nullable
+            Uri requestUri = checkNotNull(request.uri, "request.uri == null");
+                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/AssetRequestHandler.java:45: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.context = context;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/AssetRequestHandler.java:50: error: [NullAway] dereferenced expression data is @Nullable
+        Uri uri = data.uri;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/AssetRequestHandler.java:90: error: [NullAway] dereferenced expression request is @Nullable
+        Uri uri = checkNotNull(request.uri, "request.uri == null");
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/FileRequestHandler.java:42: error: [NullAway] dereferenced expression data is @Nullable
+        Uri uri = data.uri;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/FileRequestHandler.java:50: error: [NullAway] dereferenced expression request is @Nullable
+            Uri requestUri = checkNotNull(request.uri, "request.uri == null");
+                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/FileRequestHandler.java:65: error: [NullAway] dereferenced expression uri is @Nullable
+        String path = uri.getPath();
+                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/ContentStreamRequestHandler.java:42: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.context = context;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/ContentStreamRequestHandler.java:47: error: [NullAway] dereferenced expression data is @Nullable
+        Uri uri = data.uri;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/ContentStreamRequestHandler.java:55: error: [NullAway] dereferenced expression request is @Nullable
+            Uri requestUri = checkNotNull(request.uri, "request.uri == null");
+                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/ResourceRequestHandler.java:31: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.context = context;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/ResourceRequestHandler.java:36: error: [NullAway] dereferenced expression data is @Nullable
+        if (data.resourceId != 0 && !isXmlResource(context.getResources(), data.resourceId)) {
+                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/NetworkRequestHandler.java:46: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.stats = stats;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/NetworkRequestHandler.java:51: error: [NullAway] dereferenced expression data is @Nullable
+        Uri uri = data.uri;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/NetworkRequestHandler.java:65: error: [NullAway] dereferenced expression request is @Nullable
+                    callback.onError(new ResponseException(response.code(), request.networkPolicy));
+                                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/NetworkRequestHandler.java:115: error: [NullAway] dereferenced expression request is @Nullable
+        int networkPolicy = request.networkPolicy;
+                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/ResourceDrawableRequestHandler.java:33: error: [NullAway] assigning @Nullable expression to @NonNull field
+        this.context = context;
+                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/ResourceDrawableRequestHandler.java:39: error: [NullAway] dereferenced expression data is @Nullable
+        return data.resourceId != 0 && isXmlResource(context.getResources(), data.resourceId);
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/ResourceDrawableRequestHandler.java:44: error: [NullAway] dereferenced expression request is @Nullable
+        Drawable drawable = loader.load(request.resourceId);
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/MediaStoreRequestHandler.java:52: error: [NullAway] dereferenced expression data is @Nullable
+        final Uri uri = data.uri;
+                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/MediaStoreRequestHandler.java:61: error: [NullAway] dereferenced expression request is @Nullable
+            Uri requestUri = checkNotNull(request.uri, "request.uri == null");
+                                                 ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/MediaStoreRequestHandler.java:75: error: [NullAway] passing @Nullable parameter 'createBitmapOptions(request)' where @NonNull is required
+                BitmapFactory.Options options = checkNotNull(createBitmapOptions(request), "options == null");
+                                                                                ^
+    (see http://t.uber.com/nullaway )
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-wpi-post/src/src/main/java/com/squareup/picasso3/Picasso.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+122 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileReleaseJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 1s
+122

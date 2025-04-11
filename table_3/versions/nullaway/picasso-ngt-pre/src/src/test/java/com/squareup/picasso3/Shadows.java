@@ -7,7 +7,7 @@ import android.provider.MediaStore;
 import org.robolectric.annotation.Implementation;
 import org.robolectric.annotation.Implements;
 import static com.squareup.picasso3.TestUtils.makeBitmap;
-import androidx.annotation.Nullable;
+
 
 final class Shadows {
 
@@ -15,7 +15,7 @@ final class Shadows {
     public static class ShadowVideoThumbnails {
 
         @Implementation
-        public static Bitmap getThumbnail(@Nullable() ContentResolver cr, @Nullable() long origId, @Nullable() int kind, @Nullable() BitmapFactory.Options options) {
+        public static Bitmap getThumbnail(@javax.annotation.Nullable ContentResolver cr, @javax.annotation.Nullable long origId, @javax.annotation.Nullable int kind, @javax.annotation.Nullable BitmapFactory.Options options) {
             return makeBitmap();
         }
 
@@ -27,7 +27,7 @@ final class Shadows {
     public static class ShadowImageThumbnails {
 
         @Implementation
-        public static Bitmap getThumbnail(@Nullable() ContentResolver cr, @Nullable() long origId, @Nullable() int kind, @Nullable() BitmapFactory.Options options) {
+        public static Bitmap getThumbnail(@javax.annotation.Nullable ContentResolver cr, @javax.annotation.Nullable long origId, @javax.annotation.Nullable int kind, @javax.annotation.Nullable BitmapFactory.Options options) {
             return makeBitmap(20, 20);
         }
 

@@ -225,5 +225,5 @@ Execution failed for task ':library:compileDebugJavaWithJavac'.
 
 * Get more help at https://help.gradle.org
 
-BUILD FAILED in 886ms
+BUILD FAILED in 830ms
 0

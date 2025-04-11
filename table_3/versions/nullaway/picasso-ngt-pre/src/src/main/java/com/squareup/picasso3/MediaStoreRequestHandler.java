@@ -35,7 +35,7 @@ import static com.squareup.picasso3.MediaStoreRequestHandler.PicassoKind.FULL;
 import static com.squareup.picasso3.MediaStoreRequestHandler.PicassoKind.MICRO;
 import static com.squareup.picasso3.MediaStoreRequestHandler.PicassoKind.MINI;
 import static com.squareup.picasso3.Picasso.LoadedFrom.DISK;
-import androidx.annotation.Nullable;
+
 
 class MediaStoreRequestHandler extends ContentStreamRequestHandler {
 
@@ -52,7 +52,7 @@ class MediaStoreRequestHandler extends ContentStreamRequestHandler {
     }
 
     @Override
-    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
         boolean signaledCallback = false;
         try {
             ContentResolver contentResolver = context.getContentResolver();

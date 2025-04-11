@@ -2,7 +2,7 @@ package com.squareup.picasso3;
 
 import org.junit.Test;
 import static com.google.common.truth.Truth.assertThat;
-import androidx.annotation.Nullable;
+
 
 public class MemoryPolicyTest {
 

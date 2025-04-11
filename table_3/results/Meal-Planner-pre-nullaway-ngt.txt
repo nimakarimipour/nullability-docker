@@ -1,0 +1,115 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/controller/PinterestExplorer.java:78: error: [NullAway] dereferenced expression e.getCause() is @Nullable
+                    System.out.println("!! Error downloading pin: " + e.getCause().getMessage());
+                                                                                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Board.java:9: error: [NullAway] @NonNull field id not initialized
+    private String id;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Board.java:11: error: [NullAway] @NonNull field name not initialized
+    private String name;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Board.java:13: error: [NullAway] @NonNull field url not initialized
+    private String url;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/BoardListing.java:11: error: [NullAway] @NonNull field board not initialized
+    private Board board;
+                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/BoardListing.java:13: error: [NullAway] @NonNull field pins not initialized
+    private List<Pin> pins;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Pin.java:29: error: [NullAway] initializer method does not guarantee @NonNull fields id (line 17), originalLink (line 22), note (line 25), name (line 27) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public Pin() {
+           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Pin.java:33: error: [NullAway] initializer method does not guarantee @NonNull fields id (line 17), originalLink (line 22), note (line 25) are initialized along all control-flow paths (remember to check for exceptions or early returns).
+    public Pin(@JsonProperty("metadata") Map<String, Object> metadata) {
+           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/algorithms/AmountParser.java:129: error: [NullAway] unboxing of a @Nullable value
+        return Float.parseFloat(withoutUnicodeFraction) + fractionLookup.get(usedFraction);
+                                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/algorithms/schema_org/SchemaOrgRecipeScanner.java:19: error: [NullAway] parameter source is @NonNull, but parameter in superclass method de.zuellich.meal_planner.algorithms.RecipeScanner.parse(java.lang.String) is @Nullable
+    public Recipe parse(String source) {
+                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/algorithms/schema_org/SchemaOrgQuirksModeFormatDetector.java:23: error: [NullAway] parameter source is @NonNull, but parameter in superclass method de.zuellich.meal_planner.algorithms.FormatDetector.isSupported(java.lang.String) is @Nullable
+    public boolean isSupported(String source) {
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/algorithms/schema_org/SchemaOrgFormatDetector.java:27: error: [NullAway] parameter htmlSource is @NonNull, but parameter in superclass method de.zuellich.meal_planner.algorithms.FormatDetector.isSupported(java.lang.String) is @Nullable
+    public boolean isSupported(String htmlSource) {
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/BoardRequest.java:12: error: [NullAway] @NonNull field board not initialized
+    private Board board;
+                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/PinList.java:13: error: [NullAway] @NonNull field pins not initialized
+    private List<Pin> pins;
+                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/PinList.java:16: error: [NullAway] @NonNull field page not initialized
+    private PagingInformation page;
+                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/PagingInformation.java:10: error: [NullAway] @NonNull field cursor not initialized
+    private String cursor;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/PagingInformation.java:12: error: [NullAway] @NonNull field next not initialized
+    private String next;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/BoardList.java:12: error: [NullAway] @NonNull field boards not initialized
+    private List<Board> boards;
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/services/BoardService.java:50: error: [NullAway] parameter boardId is @NonNull, but parameter in superclass method de.zuellich.meal_planner.pinterest.services.IBoardService.getPins(java.lang.String) is @Nullable
+    public List<Pin> getPins(String boardId) {
+                                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/services/BoardService.java:72: error: [NullAway] parameter boardId is @NonNull, but parameter in superclass method de.zuellich.meal_planner.pinterest.services.IBoardService.getBoardListing(java.lang.String) is @Nullable
+    public BoardListing getBoardListing(String boardId) {
+                                               ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/oauth2/ResourceConfiguration.java:20: error: [NullAway] @NonNull field clientId not initialized
+    private String clientId;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/oauth2/ResourceConfiguration.java:23: error: [NullAway] @NonNull field clientSecret not initialized
+    private String clientSecret;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/oauth2/ResourceConfiguration.java:26: error: [NullAway] @NonNull field accessTokenUri not initialized
+    private String accessTokenUri;
+                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/oauth2/ResourceConfiguration.java:29: error: [NullAway] @NonNull field authorizationUri not initialized
+    private String authorizationUri;
+                   ^
+    (see http://t.uber.com/nullaway )
+Note: /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/config/WebConfig.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/mealplanner-ngt-pre/src/src/main/java/de/zuellich/meal_planner/pinterest/datatypes/Pin.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+24 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 644ms
+24

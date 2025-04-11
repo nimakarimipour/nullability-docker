@@ -89,7 +89,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
 import static org.robolectric.Shadows.shadowOf;
-import androidx.annotation.Nullable;
+
 
 @RunWith(RobolectricTestRunner.class)
 public final class BitmapHunterTest {
@@ -956,7 +956,7 @@ public final class BitmapHunterTest {
         Transformation badTransformation = new Transformation() {
 
             @Override
-            public RequestHandler.Result transform(@Nullable() RequestHandler.Result source) {
+            public RequestHandler.Result transform(@javax.annotation.Nullable RequestHandler.Result source) {
                 throw new NullPointerException("hello");
             }
 
@@ -982,7 +982,7 @@ public final class BitmapHunterTest {
         Transformation badTransformation = new Transformation() {
 
             @Override
-            public RequestHandler.Result transform(@Nullable() RequestHandler.Result source) {
+            public RequestHandler.Result transform(@javax.annotation.Nullable RequestHandler.Result source) {
                 return null;
             }
 
@@ -1008,7 +1008,7 @@ public final class BitmapHunterTest {
         Transformation badTransformation = new Transformation() {
 
             @Override
-            public RequestHandler.Result transform(@Nullable() RequestHandler.Result source) {
+            public RequestHandler.Result transform(@javax.annotation.Nullable RequestHandler.Result source) {
                 // Should recycle source.
                 return new RequestHandler.Result(Bitmap.createBitmap(10, 10, ARGB_8888), MEMORY, 0);
             }
@@ -1076,7 +1076,7 @@ public final class BitmapHunterTest {
 
         private final Bitmap bitmap;
 
-        @Nullable
+        @javax.annotation.Nullable
         private final Exception exception;
 
         TestableRequestHandler(Bitmap bitmap, Exception exception) {
@@ -1085,12 +1085,12 @@ public final class BitmapHunterTest {
         }
 
         @Override
-        public boolean canHandleRequest(@Nullable() Request data) {
+        public boolean canHandleRequest(@javax.annotation.Nullable Request data) {
             return true;
         }
 
         @Override
-        public void load(@Nullable() Picasso picasso, @Nullable() Request request, Callback callback) {
+        public void load(@javax.annotation.Nullable Picasso picasso, @javax.annotation.Nullable Request request, Callback callback) {
             if (exception != null) {
                 callback.onError(exception);
             } else {
@@ -1118,7 +1118,7 @@ public final class BitmapHunterTest {
         }
 
         @Override
-        public void load(@Nullable() Picasso picasso, @Nullable() Request request, Callback callback) {
+        public void load(@javax.annotation.Nullable Picasso picasso, @javax.annotation.Nullable Request request, Callback callback) {
             callback.onError(new OutOfMemoryError());
         }
     }
@@ -1131,7 +1131,7 @@ public final class BitmapHunterTest {
         }
 
         @Override
-        public void load(@Nullable() Picasso picasso, @Nullable() Request request, Callback callback) {
+        public void load(@javax.annotation.Nullable Picasso picasso, @javax.annotation.Nullable Request request, Callback callback) {
             callback.onSuccess(new Result(bitmap, MEMORY));
         }
     }

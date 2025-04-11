@@ -1,0 +1,29 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ann-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:37: error: [NullAway] initializer method does not guarantee @NonNull field row (line 43) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+@Data
+^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ann-pre/src/src/main/java/org/spacious_team/table_wrapper/api/MutableTableRow.java:115: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return table.getHeaderDescription()
+        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/table_api-ann-pre/src/src/main/java/org/spacious_team/table_wrapper/api/ReportPage.java:198: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+        return (row == null) ? null : row.getCell(address.getColumn());
+        ^
+    (see http://t.uber.com/nullaway )
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 850ms
+3

@@ -15,7 +15,7 @@
  */
 package com.squareup.picasso3;
 
-import androidx.annotation.Nullable;
+
 
 class GetAction extends Action<Void> {
 
@@ -24,10 +24,10 @@ class GetAction extends Action<Void> {
     }
 
     @Override
-    void complete(@Nullable() RequestHandler.Result result) {
+    void complete(@javax.annotation.Nullable RequestHandler.Result result) {
     }
 
     @Override
-    public void error(@Nullable() Exception e) {
+    public void error(@javax.annotation.Nullable Exception e) {
     }
 }

@@ -17,5 +17,5 @@ Execution failed for task ':library:compileDebugJavaWithJavac'.
 
 * Get more help at https://help.gradle.org
 
-BUILD FAILED in 770ms
+BUILD FAILED in 720ms
 0

@@ -63,7 +63,7 @@ import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.mockito.Mockito.verifyZeroInteractions;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
-import androidx.annotation.Nullable;
+
 
 @RunWith(RobolectricTestRunner.class)
 // Works around https://github.com/robolectric/robolectric/issues/2566.
@@ -211,12 +211,12 @@ public final class PicassoTest {
         Action<Object> action = new Action<Object>(mockPicasso(), new Target<>(null), request) {
 
             @Override
-            void complete(@Nullable() RequestHandler.Result result) {
+            void complete(@javax.annotation.Nullable RequestHandler.Result result) {
                 fail("Test execution should not call this method");
             }
 
             @Override
-            void error(@Nullable() Exception e) {
+            void error(@javax.annotation.Nullable Exception e) {
                 fail("Test execution should not call this method");
             }
         };
@@ -237,7 +237,7 @@ public final class PicassoTest {
             }
 
             @Override
-            void error(@Nullable() Exception e) {
+            void error(@javax.annotation.Nullable Exception e) {
                 fail("Reading from memory cache should not throw an exception");
             }
         };
@@ -427,7 +427,7 @@ public final class PicassoTest {
         RequestTransformer brokenTransformer = new RequestTransformer() {
 
             @Override
-            public Request transformRequest(@Nullable() Request request) {
+            public Request transformRequest(@javax.annotation.Nullable Request request) {
                 return null;
             }
         };

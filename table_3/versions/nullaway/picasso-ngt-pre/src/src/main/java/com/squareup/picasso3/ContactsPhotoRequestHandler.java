@@ -29,7 +29,7 @@ import okio.Source;
 import static android.content.ContentResolver.SCHEME_CONTENT;
 import static android.provider.ContactsContract.Contacts.openContactPhotoInputStream;
 import static com.squareup.picasso3.Picasso.LoadedFrom.DISK;
-import androidx.annotation.Nullable;
+
 
 class ContactsPhotoRequestHandler extends RequestHandler {
 
@@ -78,7 +78,7 @@ class ContactsPhotoRequestHandler extends RequestHandler {
     }
 
     @Override
-    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
         boolean signaledCallback = false;
         try {
             Source source = getSource(request);
@@ -97,7 +97,7 @@ class ContactsPhotoRequestHandler extends RequestHandler {
         }
     }
 
-    @Nullable()
+    @javax.annotation.Nullable
     private Source getSource(Request data) throws IOException {
         ContentResolver contentResolver = context.getContentResolver();
         Uri uri = data.uri;

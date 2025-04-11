@@ -25,7 +25,7 @@ import okio.Okio;
 import okio.Source;
 import static android.content.ContentResolver.SCHEME_FILE;
 import static com.squareup.picasso3.Picasso.LoadedFrom.DISK;
-import androidx.annotation.Nullable;
+
 
 class AssetRequestHandler extends RequestHandler {
 
@@ -37,7 +37,7 @@ class AssetRequestHandler extends RequestHandler {
 
     private final Object lock = new Object();
 
-    @Nullable
+    @javax.annotation.Nullable
     private volatile AssetManager assetManager;
 
     AssetRequestHandler(Context context) {
@@ -51,7 +51,7 @@ class AssetRequestHandler extends RequestHandler {
     }
 
     @Override
-    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
         if (assetManager == null) {
             synchronized (lock) {
                 if (assetManager == null) {

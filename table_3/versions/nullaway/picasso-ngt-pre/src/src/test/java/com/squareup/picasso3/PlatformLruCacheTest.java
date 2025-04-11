@@ -26,7 +26,7 @@ import org.robolectric.RobolectricTestRunner;
 import static android.graphics.Bitmap.Config.ALPHA_8;
 import static com.google.common.truth.Truth.assertThat;
 import static junit.framework.Assert.fail;
-import androidx.annotation.Nullable;
+
 
 @RunWith(RobolectricTestRunner.class)
 public class PlatformLruCacheTest {

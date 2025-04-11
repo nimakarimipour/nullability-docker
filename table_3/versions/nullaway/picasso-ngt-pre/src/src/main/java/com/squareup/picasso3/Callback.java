@@ -16,13 +16,13 @@
 package com.squareup.picasso3;
 
 import android.support.annotation.NonNull;
-import androidx.annotation.Nullable;
+
 
 public interface Callback {
 
     void onSuccess();
 
-    void onError(@Nullable() Throwable t);
+    void onError(@javax.annotation.Nullable Throwable t);
 
     class EmptyCallback implements Callback {
 
@@ -31,7 +31,7 @@ public interface Callback {
         }
 
         @Override
-        public void onError(@Nullable() Throwable t) {
+        public void onError(@javax.annotation.Nullable Throwable t) {
         }
     }
 }

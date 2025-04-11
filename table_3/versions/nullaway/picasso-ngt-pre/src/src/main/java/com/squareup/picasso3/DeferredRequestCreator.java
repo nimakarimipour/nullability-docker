@@ -21,7 +21,7 @@ import android.view.View.OnAttachStateChangeListener;
 import android.view.ViewTreeObserver;
 import android.view.ViewTreeObserver.OnPreDrawListener;
 import android.widget.ImageView;
-import androidx.annotation.Nullable;
+
 
 class DeferredRequestCreator implements OnPreDrawListener, OnAttachStateChangeListener {
 

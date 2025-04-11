@@ -36,7 +36,7 @@ import okio.BufferedSource;
 import okio.Okio;
 import okio.Source;
 import static com.squareup.picasso3.Utils.checkNotNull;
-import androidx.annotation.Nullable;
+
 
 /**
  * {@code RequestHandler} allows you to extend Picasso to load images in ways that are not
@@ -68,7 +68,7 @@ public abstract class RequestHandler {
 
         private final Picasso.LoadedFrom loadedFrom;
 
-        @Nullable
+        @javax.annotation.Nullable
         private final Bitmap bitmap;
 
         private final Drawable drawable;
@@ -129,27 +129,27 @@ public abstract class RequestHandler {
 
     public interface Callback {
 
-        void onSuccess(@Nullable() Result result);
+        void onSuccess(@javax.annotation.Nullable Result result);
 
-        void onError(@Nullable() Throwable t);
+        void onError(@javax.annotation.Nullable Throwable t);
     }
 
     /**
      * Whether or not this {@link RequestHandler} can handle a request with the given {@link Request}.
      */
-    public abstract boolean canHandleRequest(@Nullable() Request data);
+    public abstract boolean canHandleRequest(@javax.annotation.Nullable Request data);
 
     /**
      * Loads an image for the given {@link Request}.
      * @param request the data from which the image should be resolved.
      */
-    public abstract void load(@Nullable() Picasso picasso, @Nullable() Request request, @Nullable() Callback callback) throws IOException;
+    public abstract void load(@javax.annotation.Nullable Picasso picasso, @javax.annotation.Nullable Request request, @javax.annotation.Nullable Callback callback) throws IOException;
 
     int getRetryCount() {
         return 0;
     }
 
-    boolean shouldRetry(@Nullable() boolean airplaneMode, @Nullable() NetworkInfo info) {
+    boolean shouldRetry(@javax.annotation.Nullable boolean airplaneMode, @javax.annotation.Nullable NetworkInfo info) {
         return false;
     }
 

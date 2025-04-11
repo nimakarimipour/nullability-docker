@@ -29,7 +29,7 @@ import static android.content.ContentResolver.SCHEME_CONTENT;
 import static android.support.media.ExifInterface.ORIENTATION_NORMAL;
 import static android.support.media.ExifInterface.TAG_ORIENTATION;
 import static com.squareup.picasso3.Picasso.LoadedFrom.DISK;
-import androidx.annotation.Nullable;
+
 
 class ContentStreamRequestHandler extends RequestHandler {
 
@@ -45,7 +45,7 @@ class ContentStreamRequestHandler extends RequestHandler {
     }
 
     @Override
-    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
         boolean signaledCallback = false;
         try {
             Source source = getSource(request);
@@ -64,7 +64,7 @@ class ContentStreamRequestHandler extends RequestHandler {
         }
     }
 
-    @Nullable()
+    @javax.annotation.Nullable
     Source getSource(Request request) throws FileNotFoundException {
         ContentResolver contentResolver = context.getContentResolver();
         InputStream inputStream = contentResolver.openInputStream(request.uri);

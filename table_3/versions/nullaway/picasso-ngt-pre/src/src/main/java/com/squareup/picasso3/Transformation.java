@@ -16,7 +16,7 @@
 package com.squareup.picasso3;
 
 import android.support.annotation.NonNull;
-import androidx.annotation.Nullable;
+
 
 /**
  * Image transformation.
@@ -28,7 +28,7 @@ public interface Transformation {
      * call {@link android.graphics.Bitmap#recycle()} on {@code source}. You may return the original
      * if no transformation is required.
      */
-    RequestHandler.Result transform(@Nullable() RequestHandler.Result source);
+    RequestHandler.Result transform(@javax.annotation.Nullable RequestHandler.Result source);
 
     /**
      * Returns a unique key for the transformation, used for caching purposes. If the transformation

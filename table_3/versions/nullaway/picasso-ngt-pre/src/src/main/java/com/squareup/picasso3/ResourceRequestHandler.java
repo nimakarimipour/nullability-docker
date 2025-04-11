@@ -20,7 +20,7 @@ import android.graphics.Bitmap;
 import android.support.annotation.NonNull;
 import static android.content.ContentResolver.SCHEME_ANDROID_RESOURCE;
 import static com.squareup.picasso3.Picasso.LoadedFrom.DISK;
-import androidx.annotation.Nullable;
+
 
 class ResourceRequestHandler extends RequestHandler {
 
@@ -39,7 +39,7 @@ class ResourceRequestHandler extends RequestHandler {
     }
 
     @Override
-    public void load(@Nullable() Picasso picasso, Request request, Callback callback) {
+    public void load(@javax.annotation.Nullable Picasso picasso, Request request, Callback callback) {
         boolean signaledCallback = false;
         try {
             Bitmap bitmap = decodeResource(context, request);

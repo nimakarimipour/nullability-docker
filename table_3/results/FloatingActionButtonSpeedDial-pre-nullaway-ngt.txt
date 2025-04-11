@@ -49,8 +49,7 @@ java.lang.AssertionError: com.google.errorprone.scanner.ErrorProneInjector$Provi
 	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:279)
 	at org.gradle.api.tasks.compile.JavaCompile.performIncrementalCompilation(JavaCompile.java:165)
 	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:146)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at jdk.internal.reflect.GeneratedMethodAccessor1418.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
@@ -186,21 +185,21 @@ Caused by: com.google.errorprone.scanner.ErrorProneInjector$ProvisionException: 
 	at com.google.errorprone.scanner.ScannerSupplierImpl.get(ScannerSupplierImpl.java:74)
 	at com.google.errorprone.scanner.ScannerSupplierImpl.get(ScannerSupplierImpl.java:37)
 	at com.google.errorprone.ErrorProneAnalyzer.lambda$scansPlugins$2(ErrorProneAnalyzer.java:154)
-	... 167 more
+	... 166 more
 Caused by: java.lang.reflect.InvocationTargetException
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at com.google.errorprone.scanner.ErrorProneInjector.getInstance(ErrorProneInjector.java:90)
-	... 179 more
+	... 178 more
 Caused by: java.lang.RuntimeException: Could not serialize output version
 	at com.uber.nullaway.fixserialization.Serializer.serializeVersion(Serializer.java:140)
 	at com.uber.nullaway.fixserialization.Serializer.<init>(Serializer.java:69)
 	at com.uber.nullaway.fixserialization.FixSerializationConfig.<init>(FixSerializationConfig.java:130)
 	at com.uber.nullaway.ErrorProneCLIFlagsConfig.<init>(ErrorProneCLIFlagsConfig.java:261)
 	at com.uber.nullaway.NullAway.<init>(NullAway.java:291)
-	... 184 more
+	... 183 more
 Caused by: java.nio.file.NoSuchFileException: /opt/table_1/versions/nullaway/floating-post/src/annotator-out/0/serialization_version.txt
 	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
@@ -210,7 +209,7 @@ Caused by: java.nio.file.NoSuchFileException: /opt/table_1/versions/nullaway/flo
 	at java.base/java.nio.file.Files.newOutputStream(Files.java:220)
 	at java.base/java.nio.file.Files.newBufferedWriter(Files.java:2920)
 	at com.uber.nullaway.fixserialization.Serializer.serializeVersion(Serializer.java:137)
-	... 188 more
+	... 187 more
 
 FAILURE: Build failed with an exception.
 
@@ -225,5 +224,5 @@ Execution failed for task ':library:compileDebugJavaWithJavac'.
 
 * Get more help at https://help.gradle.org
 
-BUILD FAILED in 813ms
+BUILD FAILED in 857ms
 0

@@ -1,0 +1,151 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:131: error: [NullAway] initializer method does not guarantee @NonNull field trees (line 123) is initialized along all control-flow paths (remember to check for exceptions or early returns).
+  @Override public synchronized void init(ProcessingEnvironment env) {
+                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:394: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          annotationClass.getSimpleName(), targetThing, enclosingElement.getQualifiedName(),
+                                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:400: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+    if (enclosingElement.getKind() != CLASS) {
+                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:421: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+    String qualifiedName = enclosingElement.getQualifiedName().toString();
+                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:451: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+    Name qualifiedName = enclosingElement.getQualifiedName();
+                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:517: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            BindViews.class.getSimpleName(), enclosingElement.getQualifiedName(),
+                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:526: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          enclosingElement.getQualifiedName(), element.getSimpleName());
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:539: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            BindViews.class.getSimpleName(), viewType, enclosingElement.getQualifiedName(),
+                                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:543: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            BindViews.class.getSimpleName(), enclosingElement.getQualifiedName(),
+                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:554: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          enclosingElement.getQualifiedName(), element.getSimpleName());
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:561: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          BindViews.class.getSimpleName(), duplicateId, enclosingElement.getQualifiedName(),
+                                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:588: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          BindAnim.class.getSimpleName(), enclosingElement.getQualifiedName(),
+                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:620: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          BindBool.class.getSimpleName(), enclosingElement.getQualifiedName(),
+                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:656: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          BindColor.class.getSimpleName(), enclosingElement.getQualifiedName(),
+                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:701: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          BindDimen.class.getSimpleName(), enclosingElement.getQualifiedName(),
+                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:733: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          BindBitmap.class.getSimpleName(), enclosingElement.getQualifiedName(),
+                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:765: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          BindDrawable.class.getSimpleName(), enclosingElement.getQualifiedName(),
+                                                              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:799: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          BindFloat.class.getSimpleName(), enclosingElement.getQualifiedName(),
+                                                           ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:831: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          BindFont.class.getSimpleName(), enclosingElement.getQualifiedName(),
+                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:848: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          BindFont.class.getSimpleName(), enclosingElement.getQualifiedName(), name);
+                                                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:871: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          enclosingElement.getQualifiedName(), element.getSimpleName());
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:902: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          BindString.class.getSimpleName(), enclosingElement.getQualifiedName(),
+                                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:936: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          BindArray.class.getSimpleName(), TYPED_ARRAY_TYPE, enclosingElement.getQualifiedName(),
+                                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:1053: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          annotationClass.getSimpleName(), duplicateId, enclosingElement.getQualifiedName(),
+                                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:1070: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+                enclosingElement.getQualifiedName(), element.getSimpleName());
+                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:1075: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+              annotationClass.getSimpleName(), id, enclosingElement.getQualifiedName(),
+                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:1112: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          enclosingElement.getQualifiedName(), element.getSimpleName());
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:1125: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+          enclosingElement.getQualifiedName(), element.getSimpleName());
+                          ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:1164: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+              .append(enclosingElement.getQualifiedName())
+                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:1205: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+            entry.getKey(), enclosingElement.getQualifiedName(), element.getSimpleName());
+                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/ButterKnifeProcessor.java:1301: error: [NullAway] dereferenced expression args is @Nullable
+    if (args.length > 0) {
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/BindingSet.java:684: error: [NullAway] dereferenced expression enclosingElement is @Nullable
+    TypeMirror typeMirror = enclosingElement.asType();
+                                            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/FieldDrawableBinding.java:18: error: [NullAway] assigning @Nullable expression to @NonNull field
+    this.id = id;
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/butterknife-ann-post/src/src/main/java/butterknife/compiler/FieldDrawableBinding.java:33: error: [NullAway] dereferenced expression tintAttributeId is @Nullable
+    if (tintAttributeId.value != NO_RES_ID) {
+                       ^
+    (see http://t.uber.com/nullaway )
+34 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 774ms
+34

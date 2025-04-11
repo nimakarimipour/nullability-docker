@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import static com.squareup.picasso3.Utils.MAIN_THREAD_KEY_BUILDER;
 import static com.squareup.picasso3.Utils.checkNotNull;
-import androidx.annotation.Nullable;
+
 
 /**
  * Immutable data about an image and the transformations that will be applied to it.
@@ -57,13 +57,13 @@ public final class Request {
     /**
      * The {@link MemoryPolicy} to use for this request.
      */
-    @Nullable
+    @javax.annotation.Nullable
     final int memoryPolicy;
 
     /**
      * The {@link NetworkPolicy} to use for this request.
      */
-    @Nullable
+    @javax.annotation.Nullable
     final int networkPolicy;
 
     /**
@@ -71,7 +71,7 @@ public final class Request {
      * <p>
      * This is mutually exclusive with {@link #resourceId}.
      */
-    @Nullable
+    @javax.annotation.Nullable
     public final Uri uri;
 
     /**
@@ -85,13 +85,13 @@ public final class Request {
      * Optional stable key for this request to be used instead of the URI or resource ID when
      * caching. Two requests with the same value are considered to be for the same resource.
      */
-    @Nullable
+    @javax.annotation.Nullable
     public final String stableKey;
 
     /**
      * List of custom transformations to be applied after the built-in transformations.
      */
-    @Nullable
+    @javax.annotation.Nullable
     final List<Transformation> transformations;
 
     /**
@@ -153,13 +153,13 @@ public final class Request {
     /**
      * Target image config for decoding.
      */
-    @Nullable
+    @javax.annotation.Nullable
     public final Bitmap.Config config;
 
     /**
      * The priority of this request.
      */
-    @Nullable
+    @javax.annotation.Nullable
     public final Priority priority;
 
     /**
@@ -170,7 +170,7 @@ public final class Request {
     /**
      * User-provided value to track this request.
      */
-    @Nullable
+    @javax.annotation.Nullable
     public final Object tag;
 
     Request(Builder builder) {
@@ -327,12 +327,12 @@ public final class Request {
      */
     public static final class Builder {
 
-        @Nullable
+        @javax.annotation.Nullable
         Uri uri;
 
         int resourceId;
 
-        @Nullable
+        @javax.annotation.Nullable
         String stableKey;
 
         int targetWidth;
@@ -357,22 +357,22 @@ public final class Request {
 
         boolean purgeable;
 
-        @Nullable
+        @javax.annotation.Nullable
         List<Transformation> transformations;
 
-        @Nullable
+        @javax.annotation.Nullable
         Bitmap.Config config;
 
-        @Nullable
+        @javax.annotation.Nullable
         Priority priority;
 
-        @Nullable
+        @javax.annotation.Nullable
         Object tag;
 
-        @Nullable
+        @javax.annotation.Nullable
         int memoryPolicy;
 
-        @Nullable
+        @javax.annotation.Nullable
         int networkPolicy;
 
         /**

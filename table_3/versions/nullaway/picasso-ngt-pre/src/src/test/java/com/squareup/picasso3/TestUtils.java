@@ -53,7 +53,7 @@ import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import androidx.annotation.Nullable;
+
 
 class TestUtils {
 
@@ -150,7 +150,7 @@ class TestUtils {
         doAnswer(new Answer<Void>() {
 
             @Override
-            @Nullable()
+            @javax.annotation.Nullable
             public Void answer(InvocationOnMock invocation) {
                 Object[] args = invocation.getArguments();
                 ((TypedValue) args[1]).string = resValueString;
@@ -285,12 +285,12 @@ class TestUtils {
         RequestHandler requestHandler = new RequestHandler() {
 
             @Override
-            public boolean canHandleRequest(@Nullable() Request data) {
+            public boolean canHandleRequest(@javax.annotation.Nullable Request data) {
                 return true;
             }
 
             @Override
-            public void load(@Nullable() Picasso picasso, @Nullable() Request request, Callback callback) {
+            public void load(@javax.annotation.Nullable Picasso picasso, @javax.annotation.Nullable Request request, Callback callback) {
                 Bitmap defaultResult = makeBitmap();
                 RequestHandler.Result result = new RequestHandler.Result(defaultResult, MEMORY);
                 callback.onSuccess(result);
@@ -317,7 +317,7 @@ class TestUtils {
         return new DrawableLoader() {
 
             @Override
-            public Drawable load(@Nullable() int resId) {
+            public Drawable load(@javax.annotation.Nullable int resId) {
                 return drawable;
             }
         };
@@ -326,7 +326,7 @@ class TestUtils {
     static final Call.Factory UNUSED_CALL_FACTORY = new Call.Factory() {
 
         @Override
-        public Call newCall(@Nullable() okhttp3.Request request) {
+        public Call newCall(@javax.annotation.Nullable okhttp3.Request request) {
             throw new AssertionError();
         }
     };

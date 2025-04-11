@@ -10,7 +10,7 @@ import org.mockito.Mock;
 import org.robolectric.RobolectricTestRunner;
 import static com.google.common.truth.Truth.assertThat;
 import static org.mockito.MockitoAnnotations.initMocks;
-import androidx.annotation.Nullable;
+
 
 @RunWith(RobolectricTestRunner.class)
 public class AssetRequestHandlerTest {

@@ -16,7 +16,7 @@
 package com.squareup.picasso3;
 
 import static com.squareup.picasso3.Picasso.Priority;
-import androidx.annotation.Nullable;
+
 
 abstract class Action<T> {
 
@@ -36,9 +36,9 @@ abstract class Action<T> {
         this.wrapper = wrapper;
     }
 
-    abstract void complete(@Nullable() RequestHandler.Result result);
+    abstract void complete(@javax.annotation.Nullable RequestHandler.Result result);
 
-    abstract void error(@Nullable() Exception e);
+    abstract void error(@javax.annotation.Nullable Exception e);
 
     void cancel() {
         cancelled = true;
