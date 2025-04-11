@@ -23,7 +23,9 @@ def append_count_of_nullaway_errors(path):
     with open(path, 'r') as f:
         lines = f.readlines()
         for line in lines[::-1]:
-            if "errors" in line:
+            if "errors" in line or "error" in line:
+                if(len(line.split(" ")) != 2):
+                    continue
                 num = line.split(" ")[0]
                 break
     # append the number to the file

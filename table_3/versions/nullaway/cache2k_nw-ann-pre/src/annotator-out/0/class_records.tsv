@@ -17,7 +17,6 @@ org.cache2k.AdvancedKeyValueSource	/home/nima/Desktop/nullability-docker/table_3
 org.cache2k.KeyValueSource	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/KeyValueSource.java
 org.cache2k.CacheOperationCompletionListener	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/CacheOperationCompletionListener.java
 org.cache2k.processor.EntryProcessor	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/processor/EntryProcessor.java
-org.cache2k.processor.EntryMutator	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/processor/EntryMutator.java
 org.cache2k.processor.EntryProcessingResult	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/processor/EntryProcessingResult.java
 org.cache2k.CacheManager	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/CacheManager.java
 org.cache2k.spi.Cache2kCoreProvider	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/spi/Cache2kCoreProvider.java
@@ -44,7 +43,6 @@ org.cache2k.io.AsyncCacheLoader$Context	/home/nima/Desktop/nullability-docker/ta
 org.cache2k.io.AsyncCacheLoader$Callback	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/io/AsyncCacheLoader.java
 org.cache2k.config.CustomizationCollection	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/config/CustomizationCollection.java
 org.cache2k.event.CacheLifecycleListener	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/event/CacheLifecycleListener.java
-org.cache2k.event.CacheLifecycleListener$1	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/event/CacheLifecycleListener.java
 org.cache2k.config.Feature	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/config/Feature.java
 org.cache2k.config.SectionContainer	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/config/SectionContainer.java
 org.cache2k.config.ConfigSection	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/config/ConfigSection.java
@@ -99,6 +97,7 @@ org.cache2k.config.CacheTypeCapture$BaseType	/home/nima/Desktop/nullability-dock
 org.cache2k.config.CacheTypeCapture$OfClass	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/config/CacheTypeCapture.java
 org.cache2k.config.CacheTypeCapture$OfArray	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/config/CacheTypeCapture.java
 org.cache2k.config.CacheTypeCapture$OfGeneric	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/config/CacheTypeCapture.java
+org.cache2k.processor.EntryMutator	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/processor/EntryMutator.java
 org.cache2k.processor.RestartException	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/processor/RestartException.java
 org.cache2k.processor.EntryProcessingException	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/processor/EntryProcessingException.java
 org.cache2k.ForwardingCache	/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/cache2k_nw-ann-pre/src/src/main/java/org/cache2k/ForwardingCache.java

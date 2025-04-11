@@ -21,10 +21,10 @@ package org.cache2k.config;
  */
 
 import org.cache2k.Cache2kBuilder;
-import org.cache2k.annotation.Nullable;
 
 import java.lang.reflect.ParameterizedType;
 import java.util.Arrays;
+import javax.annotation.Nullable;
 
 /**
  * Helper class to capture generic types into a type descriptor. This is used to provide
@@ -52,17 +52,17 @@ public class CacheTypeCapture<T> implements CacheType<T> {
   protected CacheTypeCapture() { }
 
   @Override
-  public  CacheType<?> getComponentType() {
+  public CacheType<?> getComponentType() {
     return descriptor.getComponentType();
   }
 
-  @Override
-  public  Class<T> getType() {
+  @Nullable @Override
+  public Class<T> getType() {
     return descriptor.getType();
   }
 
-  @Override
-  public  CacheType<?>[] getTypeArguments() {
+  @Nullable @Override
+  public CacheType<?>[] getTypeArguments() {
     return descriptor.getTypeArguments();
   }
 
@@ -99,18 +99,18 @@ public class CacheTypeCapture<T> implements CacheType<T> {
 
   private abstract static class BaseType<T> implements CacheType<T> {
 
-    @Override
-    public  CacheType<?> getComponentType() {
+    @Nullable @Override
+    public CacheType<?> getComponentType() {
       return null;
     }
 
-    @Override
-     public Class<T> getType() {
+    @Nullable @Override
+    public Class<T> getType() {
       return null;
     }
 
-    @Override
-    public  CacheType<?>[] getTypeArguments() {
+    @Nullable @Override
+    public CacheType<?>[] getTypeArguments() {
       return null;
     }
 
@@ -203,8 +203,7 @@ public class CacheTypeCapture<T> implements CacheType<T> {
       return componentType;
     }
 
-    
-    private static int countDimensions(CacheType<?> td) {
+    static int countDimensions(CacheType<?> td) {
       int cnt = 0;
       while (td.isArray()) {
         td = td.getComponentType();
@@ -213,8 +212,7 @@ public class CacheTypeCapture<T> implements CacheType<T> {
       return cnt;
     }
 
-    
-    static Class<?> finalPrimitiveType(CacheType<?> td) {
+    @Nullable static Class<?> finalPrimitiveType(CacheType<?> td) {
       while (td.isArray()) {
         td = td.getComponentType();
       }

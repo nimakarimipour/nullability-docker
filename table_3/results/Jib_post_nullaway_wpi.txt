@@ -70,6 +70,10 @@
     public @org.checkerframework.checker.initialization.qual.FBCBottom @org.checkerframework.checker.nullness.qual.Nullable Void handleResponse(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull BlobPuller this, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Response response) throws IOException, UnexpectedBlobDigestException {
                                                                                                                                  ^
     (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/registry/BlobPuller.java:60: error: [NullAway] dereferenced expression receivedBlobDescriptor is @Nullable
+            if (!blobDigest.equals(receivedBlobDescriptor.getDigest())) {
+                                                         ^
+    (see http://t.uber.com/nullaway )
 /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/registry/RegistryClient.java:109: error: [NullAway] assigning @Nullable expression to @NonNull field
         this.authorization = authorization;
                            ^
@@ -194,6 +198,14 @@
         this.body = builder.body;
                   ^
     (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/blob/StringBlob.java:40: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return BlobDescriptor.fromPipe(stringInputStream, outputStream);
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/blob/WriterBlob.java:38: error: [NullAway] dereferenced expression writer is @Nullable
+        writer.writeTo(countingDigestOutputStream);
+              ^
+    (see http://t.uber.com/nullaway )
 /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/blob/Blobs.java:64: error: [NullAway] dereferenced expression blob is @Nullable
         blob.writeTo(byteArrayOutputStream);
             ^
@@ -201,6 +213,14 @@
 /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/blob/FileBlob.java:35: error: [NullAway] assigning @Nullable expression to @NonNull field
         this.file = file;
                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/blob/FileBlob.java:41: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return BlobDescriptor.fromPipe(fileStream, outputStream);
+            ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/blob/InputStreamBlob.java:47: error: [NullAway] returning @Nullable expression from method with @NonNull return type
+            return BlobDescriptor.fromPipe(inputStream, outputStream);
+            ^
     (see http://t.uber.com/nullaway )
 /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/cache/CachedLayer.java:50: error: [NullAway] assigning @Nullable expression to @NonNull field
         this.contentFile = contentFile;
@@ -213,6 +233,50 @@
 /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/cache/CachedLayer.java:52: error: [NullAway] assigning @Nullable expression to @NonNull field
         this.diffId = diffId;
                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndPushContainerConfigurationStep.java:75: error: [NullAway] passing @Nullable parameter 'pullBaseImageLayerFuturesFuture' where @NonNull is required
+        afterBaseImageLayerFuturesFutureDependencies.addAll(NonBlockingFutures.get(pullBaseImageLayerFuturesFuture));
+                                                                                   ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndPushContainerConfigurationStep.java:86: error: [NullAway] dereferenced expression buildConfiguration is @Nullable
+        try (Timer timer = new Timer(buildConfiguration.getBuildLogger(), DESCRIPTION)) {
+                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndPushContainerConfigurationStep.java:87: error: [NullAway] passing @Nullable parameter 'pushAuthorizationFuture' where @NonNull is required
+            RegistryClient registryClient = new RegistryClient(NonBlockingFutures.get(pushAuthorizationFuture), buildConfiguration.getTargetRegistry(), buildConfiguration.getTargetRepository()).setTimer(timer);
+                                                                                      ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndPushContainerConfigurationStep.java:90: error: [NullAway] passing @Nullable parameter 'pullBaseImageLayerFuturesFuture' where @NonNull is required
+            for (Future<CachedLayer> cachedLayerFuture : NonBlockingFutures.get(pullBaseImageLayerFuturesFuture)) {
+                                                                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndPushContainerConfigurationStep.java:93: error: [NullAway] enhanced-for expression buildApplicationLayerFutures is @Nullable
+            for (Future<CachedLayer> cachedLayerFuture : buildApplicationLayerFutures) {
+                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndPushContainerConfigurationStep.java:97: error: [NullAway] passing @Nullable parameter 'entrypoint' where @NonNull is required
+            image.setEntrypoint(entrypoint);
+                                ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndCacheApplicationLayersStep.java:60: error: [NullAway] dereferenced expression buildConfiguration is @Nullable
+        try (Timer ignored = new Timer(buildConfiguration.getBuildLogger(), DESCRIPTION)) {
+                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndCacheApplicationLayersStep.java:62: error: [NullAway] dereferenced expression sourceFilesConfiguration is @Nullable
+            applicationLayerFutures.add(buildAndCacheLayerAsync("dependencies", sourceFilesConfiguration.getDependenciesFiles(), sourceFilesConfiguration.getDependenciesPathOnImage()));
+                                                                                                        ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndCacheApplicationLayersStep.java:72: error: [NullAway] dereferenced expression listeningExecutorService is @Nullable
+        return listeningExecutorService.submit(() -> {
+                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndCacheApplicationLayersStep.java:73: error: [NullAway] dereferenced expression buildConfiguration is @Nullable
+            try (Timer ignored = new Timer(buildConfiguration.getBuildLogger(), description)) {
+                                                             ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndCacheApplicationLayersStep.java:75: error: [NullAway] passing @Nullable parameter 'cache' where @NonNull is required
+                CachedLayer cachedLayer = new CacheReader(cache).getUpToDateLayerBySourceFiles(sourceFiles);
+                                                          ^
     (see http://t.uber.com/nullaway )
 /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/BuildAndCacheApplicationLayersStep.java:82: error: [NullAway] dereferenced expression cachedLayer.getBlobDescriptor() is @Nullable
                 buildConfiguration.getBuildLogger().debug(description + " built " + cachedLayer.getBlobDescriptor().getDigest());
@@ -246,6 +310,18 @@
         this.layerDigest = layerDigest;
                          ^
     (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/AuthenticatePushStep.java:56: error: [NullAway] dereferenced expression buildConfiguration is @Nullable
+        try (Timer ignored = new Timer(buildConfiguration.getBuildLogger(), String.format(DESCRIPTION, buildConfiguration.getTargetRegistry()))) {
+                                                         ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/AuthenticatePushStep.java:57: error: [NullAway] passing @Nullable parameter 'registryCredentialsFuture' where @NonNull is required
+            Authorization registryCredentials = NonBlockingFutures.get(registryCredentialsFuture);
+                                                                       ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/AuthenticatePushStep.java:62: error: [NullAway] passing @Nullable parameter 'registryCredentialsFuture' where @NonNull is required
+            return registryAuthenticator.setAuthorization(NonBlockingFutures.get(registryCredentialsFuture)).authenticatePush();
+                                                                                 ^
+    (see http://t.uber.com/nullaway )
 /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/builder/PushBlobStep.java:56: error: [NullAway] dereferenced expression layer.getBlobDescriptor() is @Nullable
         DescriptorDigest layerDigest = layer.getBlobDescriptor().getDigest();
                                                                 ^
@@ -262,6 +338,10 @@
         this.cache = cache;
                    ^
     (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/cache/CacheWriter.java:72: error: [NullAway] dereferenced expression unwrittenLayer.getBlob().writeTo(compressorStream) is @Nullable
+            DescriptorDigest diffId = unwrittenLayer.getBlob().writeTo(compressorStream).getDigest();
+                                                                                        ^
+    (see http://t.uber.com/nullaway )
 /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/jib-wpi-post/src/src/main/java/com/google/cloud/tools/jib/cache/CacheWriter.java:72: error: [NullAway] dereferenced expression unwrittenLayer.getBlob() is @Nullable
             DescriptorDigest diffId = unwrittenLayer.getBlob().writeTo(compressorStream).getDigest();
                                                               ^
@@ -270,7 +350,7 @@
         return cacheDirectory.resolve(layerDigest.getHash() + LAYER_FILE_EXTENSION);
                                                  ^
     (see http://t.uber.com/nullaway )
-68 errors
+88 errors
 
 FAILURE: Build failed with an exception.
 
@@ -283,5 +363,5 @@ Run with --stacktrace option to get the stack trace. Run with --info or --debug 
 
 * Get more help at https://help.gradle.org
 
-BUILD FAILED in 867ms
-68
+BUILD FAILED in 945ms
+88

@@ -3,36 +3,31 @@ package butterknife.compiler;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import javax.annotation.Nullable;
 
 final class MethodViewBinding implements MemberViewBinding {
+  private final String name;
+  private final List<Parameter> parameters;
+  private final boolean required;
 
-    private final String name;
+  MethodViewBinding(String name, List<Parameter> parameters, boolean required) {
+    this.name = name;
+    this.parameters = Collections.unmodifiableList(new ArrayList<>(parameters));
+    this.required = required;
+  }
 
-    private final List<Parameter> parameters;
+  public String getName() {
+    return name;
+  }
 
-    private final boolean required;
+  public List<Parameter> getParameters() {
+    return parameters;
+  }
 
-    MethodViewBinding(String name, List<Parameter> parameters, boolean required) {
-        this.name = name;
-        this.parameters = Collections.unmodifiableList(new ArrayList<>(parameters));
-        this.required = required;
-    }
+  @Override public String getDescription() {
+    return "method '" + name + "'";
+  }
 
-    public String getName() {
-        return name;
-    }
-
-    public List<Parameter> getParameters() {
-        return parameters;
-    }
-
-    @Override
-    public String getDescription() {
-        return "method '" + name + "'";
-    }
-
-    public boolean isRequired() {
-        return required;
-    }
+  public boolean isRequired() {
+    return required;
+  }
 }

@@ -1,33 +1,28 @@
 package butterknife.compiler;
 
 import com.squareup.javapoet.TypeName;
-import javax.annotation.Nullable;
 
-/**
- * Represents a parameter type and its position in the listener method.
- */
+/** Represents a parameter type and its position in the listener method. */
 final class Parameter {
+  static final Parameter[] NONE = new Parameter[0];
 
-    static final Parameter[] NONE = new Parameter[0];
+  private final int listenerPosition;
+  private final TypeName type;
 
-    private final int listenerPosition;
+  Parameter(int listenerPosition, TypeName type) {
+    this.listenerPosition = listenerPosition;
+    this.type = type;
+  }
 
-    private final TypeName type;
+  int getListenerPosition() {
+    return listenerPosition;
+  }
 
-    Parameter(int listenerPosition, TypeName type) {
-        this.listenerPosition = listenerPosition;
-        this.type = type;
-    }
+  TypeName getType() {
+    return type;
+  }
 
-    int getListenerPosition() {
-        return listenerPosition;
-    }
-
-    TypeName getType() {
-        return type;
-    }
-
-    public boolean requiresCast(String toType) {
-        return !type.toString().equals(toType);
-    }
+  public boolean requiresCast(String toType) {
+    return !type.toString().equals(toType);
+  }
 }

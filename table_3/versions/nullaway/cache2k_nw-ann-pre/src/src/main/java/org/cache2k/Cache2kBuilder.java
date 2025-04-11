@@ -20,7 +20,6 @@ package org.cache2k;
  * #L%
  */
 
-import org.cache2k.annotation.Nullable;
 import org.cache2k.config.Cache2kConfig;
 import org.cache2k.config.CacheType;
 import org.cache2k.config.ConfigBean;
@@ -55,6 +54,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 import static org.cache2k.config.Cache2kConfig.checkNull;
+import javax.annotation.Nullable;
 
 /**
  * Builder to create a {@link Cache} instance. The usage is:
@@ -128,10 +128,10 @@ public class Cache2kBuilder<K, V>
     return cb;
   }
 
-  private  CacheType<K> keyType;
-  private  CacheType<V> valueType;
-  private  Cache2kConfig<K, V> config = null;
-  private  CacheManager manager = null;
+  @Nullable private CacheType<K> keyType;
+  @Nullable private CacheType<V> valueType;
+  @Nullable private Cache2kConfig<K, V> config = null;
+  @Nullable private CacheManager manager = null;
 
   private Cache2kBuilder(Cache2kConfig<K, V> cfg) {
     withConfig(cfg);
@@ -165,7 +165,7 @@ public class Cache2kBuilder<K, V>
     }
   }
 
-  private Cache2kBuilder( CacheType<K> keyType,  CacheType<V> valueType) {
+  private Cache2kBuilder(@Nullable CacheType<K> keyType, @Nullable CacheType<V> valueType) {
     this.keyType = keyType;
     this.valueType = valueType;
   }
@@ -180,7 +180,10 @@ public class Cache2kBuilder<K, V>
   
   private Cache2kConfig<K, V> cfg() {
     if (config == null) {
-      config = CacheManager.PROVIDER.getDefaultConfig(getManager());
+      if (manager == null) {
+        manager = CacheManager.getInstance();
+      }
+      config = CacheManager.PROVIDER.getDefaultConfig(manager);
       if (keyType != null) {
         config.setKeyType(keyType);
       }
@@ -972,8 +975,7 @@ public class Cache2kBuilder<K, V>
    */
   public <B extends ConfigBuilder<B, CFG>,
           CFG extends ConfigBean<CFG, B>>
-  Cache2kBuilder<K, V> setup(Function<Cache2kBuilder<K, V>, CFG> enabler,
-                             Consumer<B> builderAction) {
+  Cache2kBuilder<K, V> setup(Function<Cache2kBuilder<K, V>, CFG> enabler, Consumer<B> builderAction) {
     builderAction.accept(enabler.apply(this).builder());
     return this;
   }
@@ -1021,10 +1023,7 @@ public class Cache2kBuilder<K, V>
   /**
    * Get the associated cache manager.
    */
-  public final CacheManager getManager() {
-    if (manager == null) {
-      manager = CacheManager.getInstance();
-    }
+  @Nullable public final CacheManager getManager() {
     return manager;
   }
 
@@ -1040,7 +1039,7 @@ public class Cache2kBuilder<K, V>
    *         not present
    */
   public final Cache<K, V> build() {
-    return CacheManager.PROVIDER.createCache(getManager(), cfg());
+    return CacheManager.PROVIDER.createCache(manager, cfg());
   }
 
 }
