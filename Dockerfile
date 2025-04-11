@@ -76,6 +76,7 @@ COPY ./Benchmarks /opt/Benchmarks
 COPY ./table_1/ /opt/table_1/
 RUN mkdir -p /opt/table_2
 COPY ./table_3/ /opt/table_3/
+RUN python3 /opt/table_3/versions/nullaway/update_xml.py
 
 # Copy ErrorReduction
 COPY ./ErrorReduction /opt/error-reduction
