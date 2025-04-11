@@ -13,6 +13,7 @@ RUN export JAVA_HOME
 RUN apt-get install curl -y
 RUN apt-get install zip -y
 RUN apt-get install wget -y
+RUN apt-get install cloc -y
 
 # Install Maven
 ARG MAVEN_VERSION=3.9.9
@@ -36,9 +37,6 @@ RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
 
 ENV MAVEN_HOME=/usr/share/maven
 ENV MAVEN_CONFIG="$USER_HOME_DIR/.m2"
-
-# update
-RUN apt-get update -y
 
 # Install Python 3 and pip
 RUN apt-get install -y python3 python3-pip
@@ -79,6 +77,11 @@ COPY ./table_1/ /opt/table_1/
 RUN mkdir -p /opt/table_2
 COPY ./table_3/ /opt/table_3/
 
+# Copy ErrorReduction
+COPY ./ErrorReduction /opt/error-reduction
+
+# Copy manual invesigations
+COPY ./ManualInvestigation /opt/manual-investigations
 
 # copy tools
 COPY ./nullability-inference-comparison-tools /opt/nullability-inference-comparison-tools
@@ -87,7 +90,7 @@ RUN cd /opt/nullability-inference-comparison-tools/java/AnnotUtils && ./gradlew 
 # install Daikon, make daikonparent dir
 RUN mkdir -p /opt/daikonparent
 RUN wget -P /opt/daikonparent http://plse.cs.washington.edu/daikon/download/daikon-5.8.20.tar.gz
-RUN tar -xzf /opt/daikonparent-/daikon-5.8.20.tar.gz -C /opt/daikonparent
+RUN tar -xzf /opt/daikonparent/daikon-5.8.20.tar.gz -C /opt/daikonparent
 ENV DAIKONDIR=/opt/daikonparent/daikon-5.8.20
 RUN echo "source $DAIKONDIR/scripts/daikon.bashrc" >> /root/.bashrc
 
