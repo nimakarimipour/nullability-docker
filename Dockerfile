@@ -76,7 +76,7 @@ COPY ./Benchmarks /opt/Benchmarks
 
 # Bias study tables
 COPY ./table_1/ /opt/table_1/
-RUN mkdir -p /opt/table_2
+COPY ./table_2/ /opt/table_2/
 COPY ./table_3/ /opt/table_3/
 
 
