@@ -39,21 +39,21 @@ public class BuildConfiguration {
 
         private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.MonotonicNonNull ImageReference targetImageReference;
 
-        private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<String> credentialHelperNames = new ArrayList<>();
+        private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable List<String> credentialHelperNames = new ArrayList<>();
 
-        private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull RegistryCredentials knownRegistryCredentials = RegistryCredentials.none();
+        private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable RegistryCredentials knownRegistryCredentials = RegistryCredentials.none();
 
-        private  @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull boolean enableReproducibleBuilds = true;
+        private  @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable boolean enableReproducibleBuilds = true;
 
         private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.MonotonicNonNull String mainClass;
 
-        private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<String> jvmFlags = new ArrayList<>();
+        private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable List<String> jvmFlags = new ArrayList<>();
 
-        private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Map<String, String> environmentMap = new HashMap<>();
+        private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable Map<String, String> environmentMap = new HashMap<>();
 
-        private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Class<? extends BuildableManifestTemplate> targetFormat = V22ManifestTemplate.class;
+        private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable Class<? extends BuildableManifestTemplate> targetFormat = V22ManifestTemplate.class;
 
-        private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull BuildLogger buildLogger;
+        private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable BuildLogger buildLogger;
 
         @org.checkerframework.dataflow.qual.SideEffectFree
         private Builder(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull BuildLogger buildLogger) {

@@ -82,7 +82,7 @@ public class OCIManifestTemplate implements BuildableManifestTemplate {
     /**
      * The list of layer references.
      */
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<ContentDescriptorTemplate> layers = new ArrayList<>();
+    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable List<ContentDescriptorTemplate> layers = new ArrayList<>();
 
     @org.checkerframework.dataflow.qual.Pure
     public  @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull int getSchemaVersion(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull OCIManifestTemplate this) {

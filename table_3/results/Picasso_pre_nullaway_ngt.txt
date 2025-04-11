@@ -1,6 +1,26 @@
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:61: error: [NullAway] dereferenced expression target is @Nullable
+        ViewTreeObserver vto = target.getViewTreeObserver();
+                                     ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:72: error: [NullAway] dereferenced expression this.creator is @Nullable
+        this.creator.unfit().resize(width, height).into(target, callback);
+                    ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:77: error: [NullAway] dereferenced expression creator is @Nullable
+        creator.clearTag();
+               ^
+    (see http://t.uber.com/nullaway )
 /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:78: error: [NullAway] assigning @Nullable expression to @NonNull field
         callback = null;
                  ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:79: error: [NullAway] dereferenced expression target is @Nullable
+        target.removeOnAttachStateChangeListener(this);
+              ^
+    (see http://t.uber.com/nullaway )
+/home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/DeferredRequestCreator.java:87: error: [NullAway] dereferenced expression creator is @Nullable
+        return creator.getTag();
+                      ^
     (see http://t.uber.com/nullaway )
 /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/RemoteViewsAction.java:33: error: [NullAway] passing @Nullable parameter 'null' where @NonNull is required
         super(picasso, null, data);
@@ -414,12 +434,12 @@ Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 Note: /home/nima/Desktop/nullability-docker/table_3/versions/nullaway/picasso-ngt-pre/src/src/main/java/com/squareup/picasso3/Picasso.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-103 errors
+108 errors
 
 FAILURE: Build failed with an exception.
 
 * What went wrong:
-Execution failed for task ':compileReleaseJavaWithJavac'.
+Execution failed for task ':compileDebugJavaWithJavac'.
 > Compilation failed; see the compiler error output for details.
 
 * Try:
@@ -428,4 +448,4 @@ Run with --stacktrace option to get the stack trace. Run with --info or --debug 
 * Get more help at https://help.gradle.org
 
 BUILD FAILED in 1s
-103
+108

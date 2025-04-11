@@ -39,13 +39,13 @@ import java.lang.reflect.InvocationTargetException;
 @org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
 public class ImageToJsonTranslator {
 
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Image image;
+    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable Image image;
 
     /**
      * Instantiate with an {@link Image} that should not be modified afterwards.
      */
     @org.checkerframework.dataflow.qual.SideEffectFree
-    public ImageToJsonTranslator(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Image image) {
+    public ImageToJsonTranslator(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable Image image) {
         this.image = image;
     }
 

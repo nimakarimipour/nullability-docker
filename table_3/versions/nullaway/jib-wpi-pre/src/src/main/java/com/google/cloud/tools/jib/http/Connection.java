@@ -50,14 +50,14 @@ public class Connection implements Closeable {
      * @see <a
      *     href="https://github.com/google/google-http-java-client/issues/39">https://github.com/google/google-http-java-client/issues/39</a>
      */
-    private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull HttpRequestFactory requestFactory = new ApacheHttpTransport().createRequestFactory();
+    private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable HttpRequestFactory requestFactory = new ApacheHttpTransport().createRequestFactory();
 
     private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.MonotonicNonNull HttpResponse httpResponse;
 
     /**
      * The URL to send the request to.
      */
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull GenericUrl url;
+    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable GenericUrl url;
 
     /**
      * Make sure to wrap with a try-with-resource to ensure that the connection is closed after usage.
@@ -79,7 +79,7 @@ public class Connection implements Closeable {
      * Sends the request with method GET.
      */
     @org.checkerframework.dataflow.qual.Impure
-    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Response get(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Request request) throws IOException {
+    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable Response get(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Request request) throws IOException {
         return send(HttpMethods.GET, request);
     }
 
@@ -87,7 +87,7 @@ public class Connection implements Closeable {
      * Sends the request with method POST.
      */
     @org.checkerframework.dataflow.qual.Impure
-    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Response post(Request request) throws IOException {
+    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable Response post(Request request) throws IOException {
         return send(HttpMethods.POST, request);
     }
 
@@ -95,7 +95,7 @@ public class Connection implements Closeable {
      * Sends the request with method PUT.
      */
     @org.checkerframework.dataflow.qual.Impure
-    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Response put(Request request) throws IOException {
+    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable Response put(Request request) throws IOException {
         return send(HttpMethods.PUT, request);
     }
 
@@ -103,7 +103,7 @@ public class Connection implements Closeable {
      * Sends the request.
      */
     @org.checkerframework.dataflow.qual.Impure
-    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Response send(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull String httpMethod, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Request request) throws IOException {
+    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable Response send(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull String httpMethod, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Request request) throws IOException {
         httpResponse = requestFactory.buildRequest(httpMethod, url, request.getHttpContent()).setHeaders(request.getHeaders()).execute();
         return new Response(httpResponse);
     }

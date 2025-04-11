@@ -40,7 +40,7 @@ class LayerMetadata {
     /**
      * The paths to the source files that the layer was constructed from.
      */
-    private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<String> sourceFiles;
+    private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable List<String> sourceFiles;
 
     /**
      * The last time the layer was constructed.

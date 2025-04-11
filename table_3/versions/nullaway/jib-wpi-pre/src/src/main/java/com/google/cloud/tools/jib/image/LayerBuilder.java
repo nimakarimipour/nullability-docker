@@ -39,20 +39,20 @@ public class LayerBuilder {
      * <p>The source files are specified as a list instead of a set to define the order in which they
      * are added.
      */
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<Path> sourceFiles;
+    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable List<Path> sourceFiles;
 
     /**
      * The Unix-style path of the file in the partial filesystem changeset.
      */
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull String extractionPath;
+    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable String extractionPath;
 
     /**
      * Enable reproducible features when building the tar
      */
-    private final  @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull boolean enableReproducibleBuilds;
+    private final  @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable boolean enableReproducibleBuilds;
 
     @org.checkerframework.dataflow.qual.SideEffectFree
-    public LayerBuilder(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<Path> sourceFiles, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull String extractionPath,  @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull boolean enableReproducibleBuilds) {
+    public LayerBuilder(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable List<Path> sourceFiles, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable String extractionPath, @org.checkerframework.checker.nullness.qual.Nullable boolean enableReproducibleBuilds) {
         this.sourceFiles = new ArrayList<>(sourceFiles);
         this.extractionPath = extractionPath;
         this.enableReproducibleBuilds = enableReproducibleBuilds;
@@ -98,7 +98,7 @@ public class LayerBuilder {
 
     // Sort list and strip out all non-reproducible elements from tar archive entries.
     @org.checkerframework.dataflow.qual.Impure
-    private void makeListReproducible(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<TarArchiveEntry> entries) {
+    private void makeListReproducible(@org.checkerframework.checker.nullness.qual.Nullable List<TarArchiveEntry> entries) {
         entries.sort(Comparator.comparing(TarArchiveEntry::getName));
         for (TarArchiveEntry entry : entries) {
             entry.setModTime(0);
@@ -110,7 +110,7 @@ public class LayerBuilder {
     }
 
     @org.checkerframework.dataflow.qual.Impure
-    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<Path> getSourceFiles() {
+    public @org.checkerframework.checker.nullness.qual.Nullable List<Path> getSourceFiles() {
         return Collections.unmodifiableList(sourceFiles);
     }
 }

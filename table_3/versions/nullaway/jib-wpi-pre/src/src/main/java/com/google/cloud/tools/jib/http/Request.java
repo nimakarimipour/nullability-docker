@@ -28,7 +28,7 @@ public class Request {
     /**
      * The HTTP request headers.
      */
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull HttpHeaders headers;
+    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable HttpHeaders headers;
 
     /**
      * The HTTP request body.
@@ -37,7 +37,7 @@ public class Request {
 
     public static class Builder {
 
-        private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull HttpHeaders headers = new HttpHeaders().setAccept("*/*");
+        private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable HttpHeaders headers = new HttpHeaders().setAccept("*/*");
 
         private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable BlobHttpContent body;
 
