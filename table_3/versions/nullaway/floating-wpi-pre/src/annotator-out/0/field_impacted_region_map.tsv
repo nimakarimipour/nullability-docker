@@ -95,6 +95,8 @@ com.leinardi.android.speeddial.SpeedDialActionItem$Builder	setTheme(int)	this	co
 com.leinardi.android.speeddial.SpeedDialActionItem$Builder	create()	this	com.leinardi.android.speeddial.SpeedDialActionItem$Builder	SOURCE
 com.leinardi.android.speeddial.SpeedDialActionItem$Builder	setFabSize(int)	mFabSize	com.leinardi.android.speeddial.SpeedDialActionItem$Builder	SOURCE
 com.leinardi.android.speeddial.SpeedDialActionItem$Builder	setFabSize(int)	this	com.leinardi.android.speeddial.SpeedDialActionItem$Builder	SOURCE
+com.leinardi.android.speeddial.SpeedDialActionItem	describeContents()	this	com.leinardi.android.speeddial.SpeedDialActionItem	SOURCE
+com.leinardi.android.speeddial.SpeedDialActionItem	writeToParcel(android.os.Parcel,int)	this	com.leinardi.android.speeddial.SpeedDialActionItem	SOURCE
 com.leinardi.android.speeddial.SpeedDialActionItem	writeToParcel(android.os.Parcel,int)	mId	com.leinardi.android.speeddial.SpeedDialActionItem	SOURCE
 com.leinardi.android.speeddial.SpeedDialActionItem	writeToParcel(android.os.Parcel,int)	this	com.leinardi.android.speeddial.SpeedDialActionItem	SOURCE
 com.leinardi.android.speeddial.SpeedDialActionItem	writeToParcel(android.os.Parcel,int)	mLabel	com.leinardi.android.speeddial.SpeedDialActionItem	SOURCE
