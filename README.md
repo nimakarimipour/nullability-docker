@@ -235,17 +235,40 @@ Like Table 1, annotations and `@SuppressWarnings` are removed before running inf
 
 ## Error Reduction (Figure 5)
 
-Contains the result of error reduction analysis:
+__Error reduction__ is one of the three primary proxies we use to evaluate the quality of annotations produced by the three inference tools, particularly in the absence of a ground truth. We applied all three inference tools across the full set of NJR benchmarks. For each benchmark, we compared the effectiveness of the inferred annotations by measuring the reduction in reported errors from two checkers `NullAway` and `CFNullness` between the pre- and post-annotation versions. This comparison reflects how well the annotations inferred by each tool help reduce the number of warnings.
 
+#### Structure
+- `NJR/original`: contains the original set of benchmarks with no annotations inferred.
+- `error-reduction/annotator`: NJR benchmarks including the annotations inferred by `Annotator`.
+- `error-reduction/wpi`: NJR benchmarks including the annotations inferred by `WPI`.
+- `error-reduction/nullgtn`: NJR benchmarks including the annotations inferred by `NullGTN`.
+- `error-reduction/reduction.csv`: Result of running checkers on the output of inference tools for both checkers.
+
+#### Running the experiment
+To compute the percentage of reduction for each tool, run:
 ```
-ErrorReduction/NJR Benchmarks - Reduction.csv
+cd error-reduction && ./reduction.sh
 ```
 
+For a fresh run of checkers on all inference outputs, run:
+```
+cd error-reduction && ./reduction.sh --fresh
+```
+
+in `error-reduction/scripts` we included some helper scripts for further exploration:
+- `run_cfnullness.py`: To rerun CFNullness on all benchmarks with all inference tools outputs.
+- `run_nullaway.py`: To rerun NullAway on all benchmarks with all inference tools outputs.
+- `run_annot_serializer`: To serialize all annotations infered by the inference tools, the correspondong results will be at `scripts/annotations/tool/<benchmarks.tsv>
+
+To retun inference, run: (Please note, depending on the configuration of system running docker, this can take up to few days!)
+```
+cd error-reduction && ./inference.sh --fresh
+```
 ---
 
-## Manual Investigation (Figure 4)
+## Annotation Quality (Figure 4)
 
-This section presents the results of a manual investigation of the quality of annotations produced by all inference tools. It is divided into two parts. Section A reports on a comparison between tools where one marked a location as nullable while the others did not. Section B reports on a comparison between tools where one did not mark a location as nullable while the other did.
+__Annotation Quality__ is one of the three proxies used to assess the quality of inferred annotations on benchmarks where ground truth is unavailable. We selected the NJR benchmark for this experiment and used manual analysis to evaluate whether the inferred annotations align with what a programmer would consider acceptable or reflective of their intent. Specifically, we examined 300 annotation locations: 150 where two tools marked a location as `@Nullable` but the third did not, and another 150 where two tools did not mark a location as `@Nullable` while the third did. The results of this investigation are presented in two parts: Section A covers cases where one tool inferred a nullable annotation while the others did not, and Section B covers the reverse—cases where one tool did not infer `@Nullable` while the others did.
 
 The result of Section A can be found at:
 `manual-investigation/NJR Benchmarks - Annotation Analysis (1 v 2).csv`
@@ -270,7 +293,7 @@ PARAMETER	hobo.State	equals(java.lang.Object)	o	0	url1f1de5fc71_cooijmanstim_hob
 
 The `Status` column indicates whether the tool that disagreed with the others made the correct or incorrect decision, using the values `correct` or`wrong`.
 The `Comment` column provides a brief justification for that judgment.
----
+S
 
 ## Dynamic Nullability
 
