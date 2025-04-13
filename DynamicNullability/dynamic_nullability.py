@@ -187,7 +187,7 @@ def run_daikon_on_njr_benchmarks():
             + benchmark_results_folder
             + "/0.txt 2>&1"
         )
-        print("Execting benchmark...")
+        print("Executing benchmark...")
         execute(run_command)
 
         run_command = (

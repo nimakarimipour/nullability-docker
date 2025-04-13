@@ -3,7 +3,7 @@
 You should have received two files along with
 this README:
 * `paper.pdf`. This file is a copy of the accepted paper.
-* `Pre-And-Post-Commits-Decision.docx`
+* `Pre-And-Post-Commits-Decision.docx`. Documents the selected pre- and post-check commits used in all experiments (Tables 1–3), including discussions and justifications for each choice. 
 * `nullability-comp.tar`. is a Open Container image. You can run
 it using a tool like [Docker](https://www.docker.com/).
 
@@ -29,14 +29,6 @@ it using a tool like [Docker](https://www.docker.com/).
 
    This will launch a shell inside the container.
 
-4. Navigate to the workspace:
-
-   All relevant files are located under `/opt`:
-
-   ```bash
-   cd /opt
-   ```
-
 ## Directory Structure
 
 Inside `/opt`, you will find the following folders:
@@ -50,37 +42,6 @@ Inside `/opt`, you will find the following folders:
 
 ---
 
----
-
-## Table 1
-
-This section corresponds to **Table 1** of the paper and addresses **Research Question 2 (RQ2)**:
-
-> Do the code changes, if they exist, improve the effectiveness of nullability checkers?
-
-To answer this, we compare the number of errors emitted by nullability checkers on the **pre-check** and **post-check** versions of each benchmark. Unlike Table 3, no inference tools are used in this experiment. We simply run the checkers on the original code before and after developers made changes for nullability verification.
-
-All nullability annotations and `@SuppressWarnings` are removed beforehand to ensure that the results reflect the effect of **structural code changes** rather than added annotations.
-
-> In this setup, we only run the checkers on the **raw pre-check and post-check versions** (after removing annotations), without any inferred annotations.
-
----
-
-### To View Results:
-
-```bash
-./table_1.sh
-```
-
-### To Rebuild from Scratch:
-
-```bash
-./table_1.sh fresh
-```
-
-Running from scratch can take up to 1 hour. It will reprocess all benchmarks, strip annotations and suppressions, and rerun the checkers on both code versions to measure the number of emitted errors.
-
----
 
 ## Table 2: Manual Categorization of Code Changes
 
@@ -88,7 +49,7 @@ This section corresponds to **Table 2** of the paper and addresses **Research Qu
 
 > When developers verify their code using a nullability checker, do they make code changes beyond adding annotations? If so, what kinds of changes do they make?
 
-📁 **All scripts and files described below are located in** `./opt/table_2/`.
+📁 **All scripts and files described below are located in** `table_2/`.
 
 ---
 
@@ -102,7 +63,6 @@ To answer this question, we analyzed a set of open-source Java projects by compa
 
 1. **Select Benchmarks:**
    - We selected the projects from prior type reconstruction experiments, as described in Section 3.1.1 of the paper.
-   - These benchmarks include a diverse set of real-world Java projects where developers adopted nullability checking tools.
 
 2. **Identify Pre- and Post-Check Commits:**
    - For each benchmark, we identified two representative commits:
@@ -210,7 +170,7 @@ From this, we compute:
 To run the full pipeline from scratch:
 
 ```bash
-./table_2.sh fresh
+./table_2.sh --fresh
 ```
 
 This command will:
@@ -232,7 +192,7 @@ python3 scripts/show_results.py
 
 ### Generated Files and Folders
 
-After running the pipeline, the following outputs will be available inside `./opt/table_2/results/`:
+After running the pipeline, the following outputs will be available inside `table_2/results/`:
 
 - `counts/` – Contains `{project}_counts.txt` files with annotation statistics (pre vs. post)
 - `diffs/` – Contains raw diffs between pre- and post-check versions (after annotation and comment removal)
@@ -242,6 +202,34 @@ After running the pipeline, the following outputs will be available inside `./op
 These files form the basis of **Table 2** in the paper.
 
 ---
+
+## Table 1
+
+This section corresponds to **Table 1** of the paper and addresses **Research Question 2 (RQ2)**:
+
+> Do the code changes, if they exist, improve the effectiveness of nullability checkers?
+
+To answer this, we compare the number of errors emitted by nullability checkers on the **pre-check** and **post-check** versions of each benchmark. Unlike Table 3, no inference tools are used in this experiment. We simply run the checkers on the original code before and after developers made changes for nullability verification.
+
+All nullability annotations and `@SuppressWarnings` are removed beforehand to ensure that the results reflect the effect of **structural code changes** rather than added annotations.
+
+> In this setup, we only run the checkers on the **raw pre-check and post-check versions** (after removing annotations), without any inferred annotations.
+
+---
+
+### To View Results:
+
+```bash
+./table_1.sh
+```
+
+### For a fresh run:
+
+```bash
+./table_1.sh --fresh
+```
+
+Running from scratch can take up to 1 hour. It will reprocess all benchmarks, strip annotations and suppressions, and rerun the checkers on both code versions to measure the number of emitted errors.
 
 ---
 
@@ -264,7 +252,7 @@ For both the **pre-check** and **post-check** versions of each benchmark, we per
 3. **Run nullability checkers** on the annotated code produced by each inference tool.
 4. **Record the number of errors** emitted by each checker on the inferred code.
 
-> 📌 The numbers reported in Table 3 represent the **number of errors** emitted by the checkers after inference—based on running the tools on cleaned (annotation-free) versions of the pre- and post-check code. A lower number indicates better inference performance.
+> The numbers reported in Table 3 represent the **number of errors** emitted by the checkers after inference—based on running the tools on cleaned (annotation-free) versions of the pre- and post-check code. A lower number indicates better inference performance.
 
 ---
 
@@ -303,15 +291,17 @@ Each combination is run on both the **pre-check** and **post-check** versions of
 ### To Recreate from Scratch:
 
 ```bash
-./table_3.sh fresh
+./table_3.sh --fresh
 ```
 
 This will remove existing annotations, run all inference tools, apply both checkers to the inferred versions, and record the number of emitted **errors**—exactly as reported in **Table 3** of the paper.
 
 ---
----
 
 ## Error Reduction (Figure 5)
+
+> RQ5 What are the comparative results of the different nullability inference tools when evaluated
+using the proposed standardized evaluation methodology? (Part 1)
 
 __Error reduction__ is one of the three primary proxies we use to evaluate the quality of annotations produced by the three inference tools, particularly in the absence of a ground truth. We applied all three inference tools across the full set of NJR benchmarks. For each benchmark, we compared the effectiveness of the inferred annotations by measuring the reduction in reported errors from two checkers `NullAway` and `CFNullness` between the pre- and post-annotation versions. This comparison reflects how well the annotations inferred by each tool help reduce the number of warnings.
 
@@ -333,18 +323,23 @@ For a fresh run of checkers on all inference outputs, run:
 cd error-reduction && ./reduction.sh --fresh
 ```
 
-in `error-reduction/scripts` we included some helper scripts for further exploration:
-- `run_cfnullness.py`: To rerun CFNullness on all benchmarks with all inference tools outputs.
-- `run_nullaway.py`: To rerun NullAway on all benchmarks with all inference tools outputs.
-- `run_annot_serializer`: To serialize all annotations infered by the inference tools, the correspondong results will be at `scripts/annotations/tool/<benchmarks.tsv>
+With the experiment above we can reproduce all the data needed to answer `RQ5 - part1` and assess the quality of annotations with respect to error reduction.
 
-To retun inference, run: (Please note, depending on the configuration of system running docker, this can take up to few days!)
-```
-cd error-reduction && ./inference.sh --fresh
-```
+##### Optinal
+
+in `error-reduction/` we included some helper scripts for further exploration:
+- `scripts/run_cfnullness.py`: To rerun CFNullness on all benchmarks with all inference tools outputs.
+- `scripts/run_nullaway.py`: To rerun NullAway on all benchmarks with all inference tools outputs.
+- `scripts/run_annot_serializer.py`: To serialize all annotations infered by the inference tools, the correspondong results will be at `scripts/annotations/tool/<benchmarks.tsv>
+
+- `inference.sh`: To rerun inference. (Please note, depending on the configuration of system running docker, this can take up to few days!)
+
 ---
 
 ## Annotation Quality (Figure 4)
+
+> RQ5 What are the comparative results of the different nullability inference tools when evaluated
+using the proposed standardized evaluation methodology? (Part 2)
 
 __Annotation Quality__ is one of the three proxies used to assess the quality of inferred annotations on benchmarks where ground truth is unavailable. We selected the NJR benchmark for this experiment and used manual analysis to evaluate whether the inferred annotations align with what a programmer would consider acceptable or reflective of their intent. Specifically, we examined 300 annotation locations: 150 where two tools marked a location as `@Nullable` but the third did not, and another 150 where two tools did not mark a location as `@Nullable` while the third did. The results of this investigation are presented in two parts: Section A covers cases where one tool inferred a nullable annotation while the others did not, and Section B covers the reverse—cases where one tool did not infer `@Nullable` while the others did.
 
@@ -371,9 +366,12 @@ PARAMETER	hobo.State	equals(java.lang.Object)	o	0	url1f1de5fc71_cooijmanstim_hob
 
 The `Status` column indicates whether the tool that disagreed with the others made the correct or incorrect decision, using the values `correct` or`wrong`.
 The `Comment` column provides a brief justification for that judgment.
-S
+
 
 ## Dynamic Nullability
+
+> RQ5 What are the comparative results of the different nullability inference tools when evaluated
+using the proposed standardized evaluation methodology? (Part 3)
 
 This directory contains the scripts used to rerun the dynamic nullability experiment. The scripts execute all benchmarks using the Daikon invariant detection tool and collect every program element that became null at any point during execution. After generating these dynamic traces, we compare them against the locations inferred as `@Nullable` by the inference tools. We then compute, for each tool, the number of locations that were incorrectly left unmarked as `@Nullable`.
 
@@ -395,7 +393,7 @@ PARAMETER	hobo.State	equals(java.lang.Object)	o	0	url1f1de5fc71_cooijmanstim_hob
 To run the dynamic nullability experiment, run the command below:
 ```shell
 cd dynamic-nullability
-python3 python3 dynamic_nullability.py
+python3 dynamic_nullability.py
 ```
 
 This script parses the cached dynamic traces to extract the detected nullable locations, and compares them against the locations inferred as `@Nullable` by each tool.
@@ -421,14 +419,14 @@ wpi: 99.03846153846155%
 To reproduce the generated traces using daikon, run the script below:
 ```shell
 cd dynamic-nullability
-python3 python3 dynamic_nullability.py --fresh
+python3 dynamic_nullability.py --fresh
 ```
 
 You should see output below
 ```
 ...
 Processing Benchmark: url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8
-Execting benchmark...
+Executing benchmark...
 Executing DynComp...
 Executing Chicory...
 Executing Daikon...

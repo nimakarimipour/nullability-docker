@@ -5,7 +5,7 @@ ROOT_DIR=$(pwd)
 
 # Check if the first argument is "fresh"
 IS_FRESH=false
-if [[ "$1" == "fresh" ]]; then
+if [[ "$1" == "--fresh" ]]; then
   IS_FRESH=true
   echo "> Fresh run requested. Cleaning up old data..."
 
